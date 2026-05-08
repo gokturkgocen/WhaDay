@@ -1,24 +1,22 @@
-# WhaDay 🗓️✨
+# WhaDay
 
-WhaDay is a premium, beautifully designed mobile application that highlights significant international days, national holidays, and meaningful observances. Built with **React Native (Expo)**, it features a stunning UI with glassmorphism effects, dynamic background themes, and seamless animations.
+WhaDay is a React Native / Expo app for browsing international days, national
+holidays and observances in Turkish and English.
 
-![WhaDay Cover](https://via.placeholder.com/1000x500.png?text=WhaDay+-+A+Premium+Calendar+Experience)
+The project focuses on a small daily-use experience: date-aware content,
+localized copy, animated background themes, reminders and shareable story
+cards.
 
-## ✨ Features
+## Features
 
-- **Premium UI/UX:** High-end glassmorphism design with deep blur and inner shadows.
-- **Dynamic Backgrounds:** 5 distinct animated themes:
-  - 🌈 **Classic Blobs:** Soft, breathing organic shapes.
-  - 🌌 **Aurora:** Fluid mesh gradients.
-  - 🎬 **Cinematic Grain:** Deep colors with fine film grain.
-  - 🗺️ **Topography:** Moving 3D topographic lines.
-  - ✨ **Atmosphere:** Sunbeams by day, stardust by night.
-- **Synchronized Animations:** Global animation system for a seamless, "Apple-like" paging experience.
-- **Multi-language Support:** Full content in Turkish and English with automatic device language detection.
-- **Smart Notifications:** Daily reminders to keep you updated on the day's significance.
-- **Story Sharing:** 9:16 optimized card sharing for Instagram and other social platforms.
+- **Daily observance feed** with localized Turkish / English content.
+- **Theme variants** for animated backgrounds: blobs, aurora, cinematic grain,
+  topography and atmosphere.
+- **Reminder notifications** for the current day.
+- **9:16 story card sharing** for social apps.
+- **Expo-based workflow** for iOS / Android development.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -45,7 +43,7 @@ WhaDay is a premium, beautifully designed mobile application that highlights sig
 
 ---
 
-## 🛡️ License
+## License
 
 Copyright © 2026 Gokturk Gocen. All rights reserved.
 
@@ -53,7 +51,9 @@ This project is proprietary. No part of this repository may be reproduced, distr
 
 ---
 
-## 🍎 iOS Widget Note (Upcoming)
-This project is moving to a full native development environment on macOS to implement **iOS Widgets** and **Dynamic Island** support. Stay tuned!
+## Roadmap
 
-Developed with ❤️ by [Gokturk Gocen](https://github.com/gokturkgocen)
+The next native step is iOS widgets / Dynamic Island support, which requires
+moving beyond the pure Expo Go workflow.
+
+Developed by [Göktürk Göçen](https://github.com/gokturkgocen).
