@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import HomeScreen from './src/screens/HomeScreen';
 import CalendarScreen from './src/screens/CalendarScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
 import type { DayEvent } from './src/hooks/useDayEvent';
 import {
   requestNotificationPermission,
-  scheduleMorningNotification,
   scheduleEveningNotification,
+  scheduleMorningNotification,
 } from './src/utils/notifications';
 import { ThemeProvider } from './src/hooks/ThemeContext';
-import SettingsScreen from './src/screens/SettingsScreen';
 
 type Screen = 'home' | 'calendar' | 'settings';
 

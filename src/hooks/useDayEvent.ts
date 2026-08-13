@@ -1,6 +1,6 @@
 import enData from '../data/en.json';
 import trData from '../data/tr.json';
-import { getLocales } from 'expo-localization';
+import { getLocales } from 'react-native-localize';
 
 export interface DayEvent {
     id: string;

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
     View,
     Text,
@@ -6,22 +6,23 @@ import {
     StatusBar,
     TouchableOpacity,
     Platform,
-    Linking,
     Animated,
     FlatList,
     Dimensions,
+    Share,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import * as Sharing from 'expo-sharing';
-import * as Haptics from 'expo-haptics';
+import LinearGradient from 'react-native-linear-gradient';
 import ViewShot from 'react-native-view-shot';
+import { Settings } from 'lucide-react-native';
+import { useTheme } from '../hooks/ThemeContext';
 import { useTodayEvent, getDateLocale, getDeviceLanguage } from '../hooks/useDayEvent';
 import { getStrings } from '../utils/strings';
 import { getThemeForCategory } from '../utils/themes';
+import { triggerLightImpact, triggerMediumImpact } from '../utils/haptics';
+import { saveDayToWidget } from '../modules/SharedWidgetData';
 import GlassCard from '../components/GlassCard';
 import BackgroundRenderer from '../components/BackgroundRenderer';
 import ActionButtons from '../components/ActionButtons';
-import { Settings } from 'lucide-react-native';
 import type { DayEvent } from '../hooks/useDayEvent';
 import enData from '../data/en.json';
 import trData from '../data/tr.json';
@@ -36,6 +37,7 @@ interface HomeScreenProps {
 const { width } = Dimensions.get('window');
 
 export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay, selectedDay }: HomeScreenProps) {
+    const { theme: backgroundTheme } = useTheme();
     const todayEvent = useTodayEvent();
     const displayEvent = selectedDay ?? todayEvent;
 
@@ -45,74 +47,39 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
     const theme = getThemeForCategory(displayEvent?.category);
 
     const shareCardRef = useRef<ViewShot>(null);
-    const flatListRef = useRef<any>(null);
+    const flatListRef = useRef<FlatList<DayEvent>>(null);
     const days: DayEvent[] = lang === 'tr' ? trData : enData;
 
-    // === Scroll ve Tema İnterpolasyonu ===
-    const scrollX = useRef(new Animated.Value(days.findIndex(d => d.id === displayEvent?.id) * width)).current;
-
-    // Scroll değişimini dinle (Native Driver ile 60fps)
-    const onScroll = Animated.event(
-        [{ nativeEvent: { contentOffset: { x: scrollX } } }],
-        { useNativeDriver: true }
-    );
-
-    // === Scroll ve Paging ===
-    // LOCAL activeIndex state: sadece scroll BITTIKTEN sonra guncellenir.
-    // Bu sayede scroll SIRASINDA hicbir state degisimi olmaz → freeze yok!
-    const [activeIndex, setActiveIndex] = useState(
-        Math.max(0, days.findIndex(d => d.id === displayEvent?.id))
-    );
+    const initialIndex = Math.max(0, days.findIndex((day) => day.id === displayEvent?.id));
+    const scrollX = useRef(new Animated.Value(initialIndex * width)).current;
+    const [activeIndex, setActiveIndex] = useState(initialIndex);
     const activeIndexRef = useRef(activeIndex);
-    const initialIndexRef = useRef(activeIndex);
+    const initialIndexRef = useRef(initialIndex);
 
-    const onSelectDayRef = useRef(onSelectDay);
-    useEffect(() => { onSelectDayRef.current = onSelectDay; }, [onSelectDay]);
-
-    const onMomentumScrollEnd = (e: any) => {
-        const index = Math.round(e.nativeEvent.contentOffset.x / width);
-        if (index !== activeIndexRef.current) {
-            activeIndexRef.current = index;
-            setActiveIndex(index);
-            const event = days[index];
-            if (event) onSelectDayRef.current(event);
-        }
-    };
-
-    // Takvimden seçildiginde poza git
-    useEffect(() => {
-        const index = days.findIndex(d => d.id === selectedDay?.id);
-        if (index !== -1 && flatListRef.current && index !== activeIndexRef.current) {
-            flatListRef.current.scrollToIndex({ index, animated: false });
-            activeIndexRef.current = index;
-            setActiveIndex(index);
-        }
-    }, [selectedDay?.id]);
-
-    // === Giriş Animasyonları (RN Animated — 60fps native driver) ===
     const headerOpacity = useRef(new Animated.Value(0)).current;
     const cardTranslateY = useRef(new Animated.Value(50)).current;
     const cardOpacity = useRef(new Animated.Value(0)).current;
     const emojiScale = useRef(new Animated.Value(0.5)).current;
     const buttonOpacity = useRef(new Animated.Value(0)).current;
+    const onSelectDayRef = useRef(onSelectDay);
 
     useEffect(() => {
-        // Reset
-        headerOpacity.setValue(0);
-        cardTranslateY.setValue(50);
-        cardOpacity.setValue(0);
-        emojiScale.setValue(0.5);
-        buttonOpacity.setValue(0);
+        onSelectDayRef.current = onSelectDay;
+    }, [onSelectDay]);
 
-        // Staggered entrance
+    useEffect(() => {
+        if (displayEvent) {
+            saveDayToWidget(displayEvent, backgroundTheme, theme);
+        }
+    }, [backgroundTheme, displayEvent, theme]);
+
+    useEffect(() => {
         Animated.stagger(150, [
-            // Header fade in
             Animated.timing(headerOpacity, {
                 toValue: 1,
                 duration: 500,
                 useNativeDriver: true,
             }),
-            // Card slide up + fade
             Animated.parallel([
                 Animated.spring(cardTranslateY, {
                     toValue: 0,
@@ -126,54 +93,72 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                     useNativeDriver: true,
                 }),
             ]),
-            // Emoji bounce
             Animated.spring(emojiScale, {
                 toValue: 1,
                 damping: 6,
                 stiffness: 120,
                 useNativeDriver: true,
             }),
-            // Button fade in
             Animated.timing(buttonOpacity, {
                 toValue: 1,
                 duration: 350,
                 useNativeDriver: true,
             }),
         ]).start();
-    }, []); // SADECE MOUNT OLDUĞUNDA. Swipe yapıldığında her şeyin baştan gelmesi "göz kırpma" hatasına yol açar.
+    }, [buttonOpacity, cardOpacity, cardTranslateY, emojiScale, headerOpacity]);
 
-    // === Paylaşım ===
-    const handleShare = async () => {
-        if (!displayEvent || !shareCardRef.current?.capture) return;
-        try {
-            await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-            const uri = await shareCardRef.current.capture();
+    useEffect(() => {
+        const index = days.findIndex((day) => day.id === selectedDay?.id);
+        if (index !== -1 && flatListRef.current && index !== activeIndexRef.current) {
+            flatListRef.current.scrollToIndex({ index, animated: false });
+            activeIndexRef.current = index;
+            setActiveIndex(index);
+            scrollX.setValue(index * width);
+        }
+    }, [days, scrollX, selectedDay?.id]);
 
-            const canOpenIG = await Linking.canOpenURL('instagram://');
-            if (canOpenIG) {
-                await Sharing.shareAsync(uri, { mimeType: 'image/png', UTI: 'public.png' });
-            } else {
-                await Sharing.shareAsync(uri, { mimeType: 'image/png', dialogTitle: displayEvent.title });
-            }
-        } catch (e) {
-            console.log('Share error:', e);
+    const onScroll = Animated.event(
+        [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+        { useNativeDriver: true },
+    );
+
+    const onMomentumScrollEnd = (event: any) => {
+        const index = Math.round(event.nativeEvent.contentOffset.x / width);
+        if (index !== activeIndexRef.current) {
+            activeIndexRef.current = index;
+            setActiveIndex(index);
+            const day = days[index];
+            if (day) onSelectDayRef.current(day);
         }
     };
 
-    // === Window (Donma Engeli: tüm günler her zaman rendered, opacity ile görünmez kılınıyor) ===
+    const handleShare = async () => {
+        if (!displayEvent || !shareCardRef.current?.capture) return;
+
+        try {
+            triggerMediumImpact();
+            const uri = await shareCardRef.current.capture();
+            await Share.share({
+                title: displayEvent.title,
+                message: displayEvent.sharingHook || displayEvent.title,
+                url: uri,
+            });
+        } catch (error) {
+            console.log('Share error:', error);
+        }
+    };
+
     const now = new Date();
     const prevIndex = Math.max(0, activeIndex - 1);
     const nextIndex = Math.min(days.length - 1, activeIndex + 1);
     const activeIndices = Array.from(new Set([prevIndex, activeIndex, nextIndex]));
 
-
     return (
         <View style={styles.container}>
             <StatusBar barStyle="light-content" />
 
-            {/* Dinamik Arka Plan Katmanları (Scroll Pozisyonuna Doğrudan Bağlı) */}
             <View style={[StyleSheet.absoluteFill, { zIndex: -1 }]}>
-                {activeIndices.map(index => {
+                {activeIndices.map((index) => {
                     const item = days[index];
                     const itemTheme = getThemeForCategory(item.category);
                     const opacity = scrollX.interpolate({
@@ -181,8 +166,9 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                         outputRange: [0, 1, 0],
                         extrapolate: 'clamp',
                     });
+
                     return (
-                        <Animated.View key={`bg-${index}`} style={[StyleSheet.absoluteFill, { opacity }]}>
+                        <Animated.View key={`bg-${item.id}`} style={[StyleSheet.absoluteFill, { opacity }]}>
                             <BackgroundRenderer themeColors={itemTheme} />
                         </Animated.View>
                     );
@@ -192,11 +178,11 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
             <Animated.View style={[styles.header, { opacity: headerOpacity, zIndex: 10 }]}>
                 <View>
                     <Text style={styles.logo}>WhaDay</Text>
-                    <View style={{ height: 26, justifyContent: 'center' }}>
-                        {activeIndices.map(index => {
+                    <View style={styles.dateSlot}>
+                        {activeIndices.map((index) => {
                             const item = days[index];
                             const itemDate = new Date(now.getFullYear(), item.month - 1, item.day);
-                            const dStr = itemDate.toLocaleDateString(dateLocale, {
+                            const dateText = itemDate.toLocaleDateString(dateLocale, {
                                 weekday: 'long',
                                 month: 'long',
                                 day: 'numeric',
@@ -206,12 +192,13 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                                 outputRange: [0, 1, 0],
                                 extrapolate: 'clamp',
                             });
+
                             return (
                                 <Animated.Text
-                                    key={`date-${index}`}
+                                    key={`date-${item.id}`}
                                     style={[styles.dateText, { position: 'absolute', opacity }]}
                                 >
-                                    {dStr}
+                                    {dateText}
                                 </Animated.Text>
                             );
                         })}
@@ -219,14 +206,28 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                 </View>
 
                 <View style={styles.headerActions}>
-                    <TouchableOpacity onPress={onOpenSettings} style={styles.iconBtn} activeOpacity={0.6}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            triggerLightImpact();
+                            onOpenSettings();
+                        }}
+                        style={styles.iconBtn}
+                        activeOpacity={0.6}
+                    >
                         <Settings color="rgba(255,255,255,0.8)" size={22} strokeWidth={2} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={onOpenCalendar} style={styles.iconBtn} activeOpacity={0.6}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            triggerLightImpact();
+                            onOpenCalendar();
+                        }}
+                        style={styles.iconBtn}
+                        activeOpacity={0.6}
+                    >
                         <View style={styles.gridIcon}>
                             {[...Array(9)].map((_, i) => (
-                                <View key={i} style={[styles.gridDot, { backgroundColor: 'rgba(255,255,255,0.6)' }]} />
+                                <View key={i} style={styles.gridDot} />
                             ))}
                         </View>
                     </TouchableOpacity>
@@ -246,16 +247,15 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                     horizontal
                     pagingEnabled
                     showsHorizontalScrollIndicator={false}
-                    bounces={true}
+                    bounces
                     initialScrollIndex={initialIndexRef.current}
-                    getItemLayout={(data, index) => ({ length: width, offset: width * index, index })}
+                    getItemLayout={(_, index) => ({ length: width, offset: width * index, index })}
                     onScroll={onScroll}
-                    onScrollBeginDrag={() => { }}
                     onMomentumScrollEnd={onMomentumScrollEnd}
                     scrollEventThrottle={16}
                     windowSize={3}
                     renderItem={({ item }) => (
-                        <View style={{ width, paddingHorizontal: 28, justifyContent: 'center' }}>
+                        <View style={styles.page}>
                             <GlassCard>
                                 <Animated.Text style={[styles.emoji, { transform: [{ scale: emojiScale }] }]}>
                                     {item.emoji}
@@ -268,8 +268,8 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                 />
             </Animated.View>
 
-            <Animated.View style={{ opacity: buttonOpacity, zIndex: 10, height: 130 }}>
-                {activeIndices.map(index => {
+            <Animated.View style={[styles.buttonArea, { opacity: buttonOpacity, zIndex: 10 }]}>
+                {activeIndices.map((index) => {
                     const item = days[index];
                     const itemTheme = getThemeForCategory(item.category);
                     const opacity = scrollX.interpolate({
@@ -277,10 +277,11 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                         outputRange: [0, 1, 0],
                         extrapolate: 'clamp',
                     });
+
                     return (
                         <Animated.View
-                            key={`btn-${index}`}
-                            style={{ position: 'absolute', width: '100%', bottom: 0, opacity }}
+                            key={`btn-${item.id}`}
+                            style={[styles.buttonLayer, { opacity }]}
                             pointerEvents={index === activeIndex ? 'auto' : 'none'}
                         >
                             <ActionButtons
@@ -306,9 +307,9 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                         <View style={[styles.sBlob, styles.sBlobSm, { backgroundColor: theme.blob3, bottom: -40, right: 60 }]} />
 
                         <View style={styles.sGlass}>
-                            <Text style={styles.sEmoji}>{displayEvent?.emoji ?? '🤔'}</Text>
-                            <Text style={styles.sTitle}>{displayEvent?.title ?? ''}</Text>
-                            <Text style={styles.sDesc}>{displayEvent?.description ?? ''}</Text>
+                            <Text style={styles.sEmoji}>{displayEvent?.emoji ?? '✨'}</Text>
+                            <Text style={styles.sTitle}>{displayEvent?.title ?? ui.noEventTitle}</Text>
+                            <Text style={styles.sDesc}>{displayEvent?.description ?? ui.noEventDesc}</Text>
                         </View>
 
                         <View style={styles.sBrand}>
@@ -317,7 +318,8 @@ export default function HomeScreen({ onOpenCalendar, onOpenSettings, onSelectDay
                             </View>
                             <Text style={styles.sBrandName}>WhaDay</Text>
                             <Text style={styles.sBrandDate}>
-                                {new Date(now.getFullYear(), (displayEvent?.month || 1) - 1, displayEvent?.day || 1).toLocaleDateString(dateLocale, { month: 'long', day: 'numeric' })}
+                                {new Date(now.getFullYear(), (displayEvent?.month || 1) - 1, displayEvent?.day || 1)
+                                    .toLocaleDateString(dateLocale, { month: 'long', day: 'numeric' })}
                             </Text>
                         </View>
                     </LinearGradient>
@@ -342,7 +344,10 @@ const styles = StyleSheet.create({
         fontSize: 32,
         fontWeight: '800',
         color: '#ffffff',
-        letterSpacing: -0.5,
+    },
+    dateSlot: {
+        height: 26,
+        justifyContent: 'center',
     },
     dateText: {
         fontSize: 15,
@@ -379,19 +384,27 @@ const styles = StyleSheet.create({
         width: 4,
         height: 4,
         borderRadius: 2,
+        backgroundColor: 'rgba(255,255,255,0.6)',
     },
     cardArea: {
         flex: 1,
         justifyContent: 'center',
     },
-    emoji: { fontSize: 72, marginBottom: 16 },
+    page: {
+        width,
+        paddingHorizontal: 28,
+        justifyContent: 'center',
+    },
+    emoji: {
+        fontSize: 72,
+        marginBottom: 16,
+    },
     title: {
         fontSize: 30,
         fontWeight: '800',
         color: '#ffffff',
         textAlign: 'center',
         lineHeight: 36,
-        letterSpacing: -0.3,
     },
     description: {
         fontSize: 16,
@@ -402,8 +415,19 @@ const styles = StyleSheet.create({
         paddingHorizontal: 8,
         fontWeight: '400',
     },
-    // === Paylaşım kartı (9:16) ===
-    offscreen: { position: 'absolute', left: -9999, top: -9999 },
+    buttonArea: {
+        height: 130,
+    },
+    buttonLayer: {
+        position: 'absolute',
+        width: '100%',
+        bottom: 0,
+    },
+    offscreen: {
+        position: 'absolute',
+        left: -9999,
+        top: -9999,
+    },
     sCard: {
         width: 1080,
         height: 1920,
@@ -417,8 +441,14 @@ const styles = StyleSheet.create({
         borderRadius: 999,
         opacity: 0.3,
     },
-    sBlobMd: { width: 300, height: 300 },
-    sBlobSm: { width: 220, height: 220 },
+    sBlobMd: {
+        width: 300,
+        height: 300,
+    },
+    sBlobSm: {
+        width: 220,
+        height: 220,
+    },
     sGlass: {
         marginHorizontal: 36,
         borderRadius: 50,
@@ -429,14 +459,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 56,
         alignItems: 'center',
     },
-    sEmoji: { fontSize: 130, marginBottom: 36 },
+    sEmoji: {
+        fontSize: 130,
+        marginBottom: 36,
+    },
     sTitle: {
         fontSize: 80,
         fontWeight: '800',
         color: '#ffffff',
         textAlign: 'center',
         lineHeight: 92,
-        letterSpacing: -0.5,
         marginBottom: 28,
     },
     sDesc: {
@@ -445,14 +477,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         lineHeight: 56,
         fontWeight: '400',
-    },
-    sHook: {
-        fontSize: 32,
-        color: 'rgba(255,255,255,0.5)',
-        textAlign: 'center',
-        marginTop: 50,
-        fontWeight: '600',
-        fontStyle: 'italic',
     },
     sBrand: {
         position: 'absolute',

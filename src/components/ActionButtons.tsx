@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native';
-import { BlurView } from 'expo-blur';
-import * as Haptics from 'expo-haptics';
+import AppBlur from './AppBlur';
+import { triggerLightImpact, triggerMediumImpact } from '../utils/haptics';
 
 interface ActionButtonsProps {
     primaryLabel: string;
@@ -18,13 +18,13 @@ export default function ActionButtons({
     onSecondaryPress,
     accentColor,
 }: ActionButtonsProps) {
-    const handlePrimary = async () => {
-        await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    const handlePrimary = () => {
+        triggerMediumImpact();
         onPrimaryPress();
     };
 
-    const handleSecondary = async () => {
-        await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    const handleSecondary = () => {
+        triggerLightImpact();
         onSecondaryPress();
     };
 
@@ -37,10 +37,8 @@ export default function ActionButtons({
             </TouchableOpacity>
 
             <TouchableOpacity onPress={handleSecondary} activeOpacity={0.6}>
-                <View style={styles.secondaryBtn}>
-                    <BlurView intensity={25} tint="dark" style={styles.secondaryBlur}>
-                        <Text style={styles.secondaryText}>{secondaryLabel}</Text>
-                    </BlurView>
+                <View style={[styles.secondaryBtn, { backgroundColor: 'rgba(255,255,255,0.08)' }]}>
+                    <Text style={styles.secondaryText}>{secondaryLabel}</Text>
                 </View>
             </TouchableOpacity>
         </View>
@@ -71,20 +69,18 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     secondaryBtn: {
+        paddingVertical: 14,
+        paddingHorizontal: 28,
         borderRadius: 16,
         overflow: 'hidden',
         borderWidth: 0.5,
         borderColor: 'rgba(255,255,255,0.12)',
-    },
-    secondaryBlur: {
-        paddingVertical: 14,
-        paddingHorizontal: 28,
         alignItems: 'center',
     },
     secondaryText: {
         fontSize: 15,
         fontWeight: '600',
-        color: 'rgba(255,255,255,0.5)',
+        color: 'rgba(255,255,255,0.7)',
         letterSpacing: 0.3,
     },
 });

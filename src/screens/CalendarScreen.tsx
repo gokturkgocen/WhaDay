@@ -8,12 +8,10 @@ import {
     Platform,
     StatusBar,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import { BlurView } from 'expo-blur';
-import { getDeviceLanguage, getDateLocale } from '../hooks/useDayEvent';
-import { getStrings } from '../utils/strings';
+import LinearGradient from 'react-native-linear-gradient';
+import AppBlur from '../components/AppBlur';
+import { getDeviceLanguage } from '../hooks/useDayEvent';
 import { getThemeForCategory } from '../utils/themes';
-
 import enData from '../data/en.json';
 import trData from '../data/tr.json';
 import type { DayEvent } from '../hooks/useDayEvent';
@@ -24,20 +22,18 @@ interface CalendarScreenProps {
     selectedDay?: DayEvent | null;
 }
 
+const monthNames: Record<string, string[]> = {
+    tr: ['', 'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
+    en: ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+};
+
 export default function CalendarScreen({ onBack, onSelectDay, selectedDay }: CalendarScreenProps) {
     const lang = getDeviceLanguage();
-    const dateLocale = getDateLocale();
     const days: DayEvent[] = lang === 'tr' ? trData : enData;
-    const ui = getStrings(lang);
 
     const now = new Date();
     const todayMonth = now.getMonth() + 1;
     const todayDay = now.getDate();
-
-    const monthNames: Record<string, string[]> = {
-        tr: ['', 'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
-        en: ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    };
 
     const grouped = days.reduce((acc, day) => {
         if (!acc[day.month]) acc[day.month] = [];
@@ -52,12 +48,11 @@ export default function CalendarScreen({ onBack, onSelectDay, selectedDay }: Cal
 
     const tryScrollToToday = () => {
         if (hasScrolled.current) return;
-        const mY = monthYRefs.current[todayMonth];
-        const dY = todayDayYRef.current;
-        if (mY !== undefined && dY !== null && scrollViewRef.current) {
+        const monthY = monthYRefs.current[todayMonth];
+        const dayY = todayDayYRef.current;
+        if (monthY !== undefined && dayY !== null && scrollViewRef.current) {
             hasScrolled.current = true;
-            // Biraz boşluk bırakarak güne odaklansın
-            scrollViewRef.current.scrollTo({ y: Math.max(0, mY + dY - 20), animated: false });
+            scrollViewRef.current.scrollTo({ y: Math.max(0, monthY + dayY - 20), animated: false });
         }
     };
 
@@ -69,14 +64,11 @@ export default function CalendarScreen({ onBack, onSelectDay, selectedDay }: Cal
                 style={StyleSheet.absoluteFill}
             />
 
-            {/* Header */}
             <View style={styles.header}>
                 <TouchableOpacity onPress={onBack} style={styles.backButton}>
-                    <Text style={styles.backText}>← </Text>
+                    <Text style={styles.backText}>←</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>
-                    {lang === 'tr' ? 'Takvim' : 'Calendar'}
-                </Text>
+                <Text style={styles.headerTitle}>{lang === 'tr' ? 'Takvim' : 'Calendar'}</Text>
                 <View style={{ width: 40 }} />
             </View>
 
@@ -94,8 +86,8 @@ export default function CalendarScreen({ onBack, onSelectDay, selectedDay }: Cal
                         <View
                             key={month}
                             style={styles.monthSection}
-                            onLayout={(e) => {
-                                monthYRefs.current[month] = e.nativeEvent.layout.y;
+                            onLayout={(event) => {
+                                monthYRefs.current[month] = event.nativeEvent.layout.y;
                                 if (month === todayMonth) tryScrollToToday();
                             }}
                         >
@@ -110,24 +102,21 @@ export default function CalendarScreen({ onBack, onSelectDay, selectedDay }: Cal
                                 return (
                                     <View
                                         key={event.id}
-                                        onLayout={(e) => {
+                                        onLayout={(layoutEvent) => {
                                             if (isToday) {
-                                                todayDayYRef.current = e.nativeEvent.layout.y;
+                                                todayDayYRef.current = layoutEvent.nativeEvent.layout.y;
                                                 tryScrollToToday();
                                             }
                                         }}
                                     >
-                                        <TouchableOpacity
-                                            onPress={() => onSelectDay(event)}
-                                            activeOpacity={0.7}
-                                        >
+                                        <TouchableOpacity onPress={() => onSelectDay(event)} activeOpacity={0.7}>
                                             <View style={[
                                                 styles.dayCard,
                                                 isSelected && { borderColor: theme.accent, borderWidth: 1.5 },
                                             ]}>
-                                                <BlurView intensity={20} tint="dark" style={styles.dayBlur}>
+                                                <AppBlur intensity={20} tint="dark" style={styles.dayBlur}>
                                                     <View style={styles.dayRow}>
-                                                        <View style={[styles.dayBadge, { backgroundColor: theme.accent + '30' }]}>
+                                                        <View style={[styles.dayBadge, { backgroundColor: `${theme.accent}30` }]}>
                                                             <Text style={styles.dayNumber}>{event.day}</Text>
                                                         </View>
                                                         <View style={styles.dayInfo}>
@@ -142,7 +131,7 @@ export default function CalendarScreen({ onBack, onSelectDay, selectedDay }: Cal
                                                             </View>
                                                         ) : null}
                                                     </View>
-                                                </BlurView>
+                                                </AppBlur>
                                             </View>
                                         </TouchableOpacity>
                                     </View>

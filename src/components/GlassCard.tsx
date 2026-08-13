@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { BlurView } from 'expo-blur';
+import AppBlur from './AppBlur';
 
 interface GlassCardProps {
     children: React.ReactNode;
@@ -11,9 +11,9 @@ export default function GlassCard({ children, intensity = 65 }: GlassCardProps) 
     return (
         <View style={styles.wrapper}>
             <View style={styles.innerShadowTop} />
-            <BlurView intensity={intensity} tint="systemChromeMaterialDark" style={styles.blur}>
+            <AppBlur intensity={intensity} tint="systemChromeMaterialDark" style={styles.blur}>
                 <View style={styles.inner}>{children}</View>
-            </BlurView>
+            </AppBlur>
             <View style={styles.innerShadowBottom} />
         </View>
     );

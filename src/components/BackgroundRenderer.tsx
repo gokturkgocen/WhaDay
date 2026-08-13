@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 import { useTheme } from '../hooks/ThemeContext';
 import AnimatedBackground from './AnimatedBackground';
 import ThemeAurora from './themes/ThemeAurora';
@@ -28,7 +28,7 @@ export default function BackgroundRenderer({ themeColors }: BackgroundRendererPr
 
     return (
         <View style={StyleSheet.absoluteFill} pointerEvents="none">
-            <LinearGradient colors={themeColors.gradient} style={StyleSheet.absoluteFill} />
+            <LinearGradient colors={[...themeColors.gradient]} style={StyleSheet.absoluteFill} />
 
             {theme === 'classic' ? (
                 <AnimatedBackground

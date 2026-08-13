@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Animated, StyleSheet, Dimensions } from 'react-native';
-import { BlurView } from 'expo-blur';
+import AppBlur from '../AppBlur';
 import { timer12s, timer15s, timer18s } from './GlobalAnim';
 
 const { width, height } = Dimensions.get('window');
@@ -52,8 +52,8 @@ export default function ThemeAurora({ blob1Color, blob2Color, blob3Color }: Auro
             <MovingBlob color={blob2Color} size={width * 1.2} startX={width * 0.1} startY={height * 0.4} moveX={-width * 0.4} moveY={-height * 0.3} timer={timer15s} />
             <MovingBlob color={blob3Color} size={width} startX={-width * 0.2} startY={height * 0.6} moveX={width * 0.5} moveY={-height * 0.1} timer={timer18s} />
 
-            <BlurView intensity={100} tint="systemChromeMaterialDark" style={StyleSheet.absoluteFill} />
-            <BlurView intensity={100} tint="default" style={StyleSheet.absoluteFill} />
+            <AppBlur intensity={100} tint="systemChromeMaterialDark" style={StyleSheet.absoluteFill} />
+            <AppBlur intensity={100} tint="default" style={StyleSheet.absoluteFill} />
         </View>
     );
 }

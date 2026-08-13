@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { BlurView } from 'expo-blur';
+import AppBlur from './AppBlur';
 
 interface GlassButtonProps {
     label: string;
@@ -11,7 +11,7 @@ interface GlassButtonProps {
 export default function GlassButton({ label, onPress, variant = 'primary' }: GlassButtonProps) {
     return (
         <TouchableOpacity onPress={onPress} activeOpacity={0.7} style={styles.wrapper}>
-            <BlurView
+            <AppBlur
                 intensity={variant === 'primary' ? 60 : 30}
                 tint="light"
                 style={styles.blur}
@@ -27,7 +27,7 @@ export default function GlassButton({ label, onPress, variant = 'primary' }: Gla
                         {label}
                     </Text>
                 </View>
-            </BlurView>
+            </AppBlur>
         </TouchableOpacity>
     );
 }
