@@ -24,6 +24,7 @@ targets:
       path: WhaDayNative/Info.plist
       properties:
         CFBundleDisplayName: WhaDay
+        ITSAppUsesNonExemptEncryption: false
         LSApplicationQueriesSchemes: [instagram-stories]
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
@@ -32,6 +33,9 @@ targets:
         UIViewControllerBasedStatusBarAppearance: false
     entitlements:
       path: WhaDayNative/WhaDayNative.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.gokturkgocen.whadayapp
     settings:
       base:
         PRODUCT_NAME: WhaDayNative
@@ -54,6 +58,9 @@ targets:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     entitlements:
       path: WhaDayWidget/WhaDayWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.gokturkgocen.whadayapp
     settings:
       base:
         PRODUCT_NAME: "$(TARGET_NAME)"
