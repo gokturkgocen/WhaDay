@@ -499,10 +499,10 @@ struct EditorialContent {
         ),
         "08-08": pair(
             trFact: "İnsanlar kedileri evcilleştirdiğini sanıyor. Kedilerin bu konuda farklı bir anlatısı var.",
-            trPrompt: "Bir kedi çalışanına gönder",
+            trPrompt: "Bir kedi insanına gönder",
             trMessage: "Bugün Dünya Kedi Günü. Patronuna benden selam söyle. 🐈 — WhaDay",
             enFact: "Humans think they domesticated cats. Cats tell that story very differently.",
-            enPrompt: "Send to a cat employee",
+            enPrompt: "Send to a cat person",
             enMessage: "It's International Cat Day. Say hi to your boss for me. 🐈 — WhaDay",
             tone: .playful
         ),
