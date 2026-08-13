@@ -38,11 +38,11 @@ struct ActionButtons: View {
 
             Button {
                 Haptics.triggerLight()
-                activeShare = .story
+                shareStory()
             } label: {
                 HStack(spacing: 9) {
                     Image(systemName: "rectangle.portrait.on.rectangle.portrait")
-                    Text(DayEventStore.language == "tr" ? "Story için hazırla" : "Create a Story")
+                    Text(storyButtonTitle)
                 }
                 .font(.system(size: 14, weight: .bold, design: .rounded))
                 .foregroundStyle(onBackdropColor)
@@ -64,6 +64,21 @@ struct ActionButtons: View {
             ActivityShareView(items: shareItems(for: destination))
                 .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
+        }
+    }
+
+    private var storyButtonTitle: String {
+        if InstagramStorySharer.isAvailable {
+            return DayEventStore.language == "tr" ? "Instagram Story’ye gönder" : "Send to Instagram Stories"
+        }
+        return DayEventStore.language == "tr" ? "Story için hazırla" : "Create a Story"
+    }
+
+    private func shareStory() {
+        guard let storyImage else { return }
+        Task { @MainActor in
+            if await InstagramStorySharer.share(image: storyImage) { return }
+            activeShare = .story
         }
     }
 

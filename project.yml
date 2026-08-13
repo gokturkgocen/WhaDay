@@ -24,6 +24,7 @@ targets:
       path: WhaDayNative/Info.plist
       properties:
         CFBundleDisplayName: WhaDay
+        LSApplicationQueriesSchemes: [instagram-stories]
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
         UIRequiredDeviceCapabilities: [arm64]
