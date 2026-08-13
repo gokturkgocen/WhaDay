@@ -34,6 +34,35 @@ final class EditorialContentTests: XCTestCase {
         add(messageAttachment)
     }
 
+    @MainActor
+    func testSensitiveStoryCardRendersAsANote() throws {
+        let event = DayEvent(
+            id: "12-10",
+            month: 12,
+            day: 10,
+            title: "Dünya İnsan Hakları Günü",
+            description: "Placeholder",
+            emoji: "🕊️",
+            category: "peace",
+            sharingHook: "Placeholder"
+        )
+        let image = try XCTUnwrap(
+            ShareCardRenderer.render(
+                event: event,
+                colors: ThemeColors.forCategory(event.category),
+                format: .story
+            )
+        )
+
+        XCTAssertEqual(image.cgImage?.width, 1080)
+        XCTAssertEqual(image.cgImage?.height, 1920)
+
+        let attachment = XCTAttachment(image: image)
+        attachment.name = "WhaDay-Sensitive-Story-Preview"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+
     func testCuratedLefthandersCopyIsPersonalAndSpecific() {
         let event = DayEvent(
             id: "08-13",
@@ -117,10 +146,32 @@ final class EditorialContentTests: XCTestCase {
         }
     }
 
+    func testSensitiveDaysUseANoteInsteadOfAnExcuse() throws {
+        let event = try XCTUnwrap(DayEventStore.event(month: 2, day: 6))
+        let copy = EditorialContent.forEvent(event)
+
+        XCTAssertTrue(copy.eyebrow.contains("NOT") || copy.eyebrow.contains("NOTE"))
+        XCTAssertFalse(copy.prompt.localizedCaseInsensitiveContains("aklına gelen"))
+        XCTAssertFalse(copy.prompt.localizedCaseInsensitiveContains("person you thought"))
+    }
+
     func testCalendarDataContainsLeapDayAndUniqueIdentifiers() {
         XCTAssertEqual(DayEventStore.days.count, 366)
         XCTAssertNotNil(DayEventStore.event(month: 2, day: 29))
         XCTAssertEqual(Set(DayEventStore.days.map(\.id)).count, DayEventStore.days.count)
+    }
+
+    func testMovingObservancesAreNotStoredAsPermanentDates() {
+        let titles = DayEventStore.days.map(\.title)
+        let retiredMovingTitles = [
+            "World Maritime Day", "Dünya Denizcilik Günü",
+            "International Day of Cooperatives", "Uluslararası Kooperatifler Günü",
+            "World Day of Remembrance for Road Traffic Victims", "Dünya Trafik Kazası Kurbanlarını Anma Günü"
+        ]
+
+        for title in retiredMovingTitles {
+            XCTAssertFalse(titles.contains(title), title)
+        }
     }
 
     private func makeEvent(id: String, title: String, category: String) -> DayEvent {

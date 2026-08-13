@@ -1863,11 +1863,11 @@
     "id": "07-05",
     "month": 7,
     "day": 5,
-    "title": "International Day of Cooperatives",
-    "description": "International Day of Cooperatives: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
-    "emoji": "🔔",
-    "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "title": "Workaholics Day",
+    "description": "A playful reminder for people who are always working to step away from the list and take a short break.",
+    "emoji": "💻",
+    "category": "wellness",
+    "sharingHook": "Share with a friend who never clocks off"
   },
   {
     "id": "07-06",
@@ -2673,11 +2673,11 @@
     "id": "09-24",
     "month": 9,
     "day": 24,
-    "title": "World Maritime Day",
-    "description": "World Maritime Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
-    "emoji": "🔔",
-    "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "title": "World Gorilla Day",
+    "description": "A global awareness day focused on gorillas and efforts to protect their natural habitats.",
+    "emoji": "🦍",
+    "category": "nature",
+    "sharingHook": "Share with someone who cares about wildlife"
   },
   {
     "id": "09-25",
@@ -3213,11 +3213,11 @@
     "id": "11-17",
     "month": 11,
     "day": 17,
-    "title": "World Day of Remembrance for Road Traffic Victims",
-    "description": "World Day of Remembrance for Road Traffic Victims: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
-    "emoji": "☮️",
-    "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "title": "World Prematurity Day",
+    "description": "A day highlighting the needs, care and lived experiences of babies born preterm and their families.",
+    "emoji": "💜",
+    "category": "wellness",
+    "sharingHook": "Share with care and context"
   },
   {
     "id": "11-18",

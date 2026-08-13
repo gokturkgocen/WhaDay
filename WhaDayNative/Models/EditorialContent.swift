@@ -24,6 +24,22 @@ struct EditorialContent {
             return language == "tr" ? curated.tr : curated.en
         }
 
+        if let verified = verifiedFacts[event.id] {
+            return EditorialContent(
+                eyebrow: tone == .remembrance
+                    ? (language == "tr" ? "BUGÜNÜN NOTU" : "TODAY'S NOTE")
+                    : (language == "tr" ? "BUGÜNÜN BAHANESİ" : "TODAY'S EXCUSE"),
+                fact: language == "tr" ? verified.tr : verified.en,
+                prompt: language == "tr"
+                    ? fallbackPromptTR(for: event, tone: tone, lens: lens)
+                    : fallbackPromptEN(for: event, tone: tone, lens: lens),
+                shareMessage: language == "tr"
+                    ? fallbackMessageTR(for: event, tone: tone, lens: lens)
+                    : fallbackMessageEN(for: event, tone: tone, lens: lens),
+                tone: tone
+            )
+        }
+
         if language == "tr" {
             return EditorialContent(
                 eyebrow: tone == .remembrance ? "BUGÜNÜN NOTU" : "BUGÜNÜN BAHANESİ",
@@ -44,6 +60,8 @@ struct EditorialContent {
     }
 
     private static func tone(for event: DayEvent) -> EditorialTone {
+        if verifiedFacts[event.id] != nil { return .remembrance }
+
         let normalized = event.title.lowercased()
         let remembranceWords = [
             "victim", "violence", "war", "holocaust", "suicide", "slavery", "terror",
@@ -71,7 +89,7 @@ struct EditorialContent {
 
         let groups: [(Lens, [String])] = [
             (.food, ["pizza", "nutella", "oreo", "kahve", "coffee", "çay", "tea", "süt", "milk", "turta", "pie", "makarna", "pasta", "patates", "potato", "kek", "cake", "şeker", "candy", "bacon", "tahıl", "cereal", "baklagil", "food", "gıda", "ton balığı"]),
-            (.animal, ["kedi", "cat", "köpek", "dog", "panda", "penguen", "penguin", "kaplan", "tiger", "aslan", "lion", "fil", "elephant", "arı", "bee", "yaban hayat", "wildlife", "hayvan", "animal", "markhor", "kar leoparı", "sivrisinek"]),
+            (.animal, ["kedi", "cat", "köpek", "dog", "panda", "penguen", "penguin", "kaplan", "tiger", "aslan", "lion", "goril", "gorilla", "fil", "elephant", "arı", "bee", "yaban hayat", "wildlife", "hayvan", "animal", "markhor", "kar leoparı", "sivrisinek"]),
             (.books, ["kitap", "book", "şiir", "poetry", "okuma", "reading", "yazar", "author", "roald dahl", "harry potter", "winnie the pooh"]),
             (.music, ["müzik", "music", "piyano", "piano", "caz", "jazz", "radyo", "radio", "ses günü", "voice day", "steelpan", "cecilia"]),
             (.screen, ["star wars", "geleceğe dönüş", "back to the future", "barbie", "video oyunu", "video game", "televizyon", "television", "animasyon", "animation", "tiyatro", "theatre", "theater", "emoji"]),
@@ -83,11 +101,11 @@ struct EditorialContent {
             (.love, ["sevgili", "valentine", "gül günü", "rose day", "evlilik teklifi", "proposal", "öpme", "kiss"]),
             (.language, ["dil günü", "language day", "anadil", "mother language", "çeviri", "translation", "okuryazarlık", "literacy", "braille", "işaret dilleri", "sign languages"]),
             (.profession, ["öğretmen", "teacher", "eczacı", "pharmacist", "hakim", "judge", "tesisat", "plumb", "denizci", "seafarer", "gönüllü", "volunteer", "barış gücü", "peacekeeper", "işletmeler", "enterprises"]),
-            (.health, ["sağlık", "health", "hastalık", "disease", "parkinson", "diyabet", "diabetes", "epilepsi", "epilepsy", "hemofili", "haemophilia", "hemophilia", "tüberküloz", "tuberculosis", "sıtma", "malaria", "hepatit", "hepatitis", "aids", "hiv", "zatürre", "pneumonia", "osteoporoz", "osteoporosis", "menopoz", "menopause", "hijyen", "hygiene", "ruh sağlığı", "mental health", "otizm", "autism", "engelli", "disability"]),
+            (.health, ["sağlık", "health", "hastalık", "disease", "prematüre", "prematurity", "parkinson", "diyabet", "diabetes", "epilepsi", "epilepsy", "hemofili", "haemophilia", "hemophilia", "tüberküloz", "tuberculosis", "sıtma", "malaria", "hepatit", "hepatitis", "aids", "hiv", "zatürre", "pneumonia", "osteoporoz", "osteoporosis", "menopoz", "menopause", "hijyen", "hygiene", "ruh sağlığı", "mental health", "otizm", "autism", "engelli", "disability"]),
             (.equality, ["eşit", "equal", "ayrımcılık", "discrimination", "hakları", "rights", "özgürlük", "freedom", "görünürlük", "visibility", "lgbtq", "lezbiyen", "lesbian", "interseks", "intersex", "sosyal adalet", "social justice", "hoşgörü", "tolerance", "kadınlar günü", "women's day", "kız çocukları"]),
             (.country, ["bağımsızlık", "independence", "ulusal gün", "national day", "devlet günü", "statehood", "kurtuluş günü", "liberation day", "zafer günü", "victory day", "kanada günü", "bastille", "devrim günü"]),
             (.faith, ["aziz", "saint", "azize", "noel", "christmas", "epifani", "epiphany", "meryem", "nirvana", "ramazan", "easter", "festivali", "festival", "yortusu", "bayramı"]),
-            (.rest, ["uyku", "sleep", "banyo", "bath", "iç barış", "inner peace", "kendine bakım", "self-care", "dikkatli an", "mindful", "barışçıl duruş", "açıklık anı", "şükran", "gratitude", "düşünme günü", "thinking day"]),
+            (.rest, ["uyku", "sleep", "banyo", "bath", "işkolik", "workaholic", "iç barış", "inner peace", "kendine bakım", "self-care", "dikkatli an", "mindful", "barışçıl duruş", "açıklık anı", "şükran", "gratitude", "düşünme günü", "thinking day"]),
             (.play, ["şapka", "hat day", "puantiye", "polka dot", "hiçbir şey", "nothing day", "şaka", "fools", "korsan", "pirate", "gökdelen", "skyscraper", "tick tock", "festivus"])
         ]
 
@@ -248,6 +266,154 @@ struct EditorialContent {
         let tr: EditorialContent
         let en: EditorialContent
     }
+
+    private struct BilingualFact {
+        let tr: String
+        let en: String
+    }
+
+    private static let verifiedFacts: [String: BilingualFact] = [
+        "01-27": BilingualFact(
+            tr: "Hatırlamak geçmişte kalmak değildir; antisemitizmin, nefretin ve insanlıktan çıkarmanın bugünkü biçimlerini de fark etmektir.",
+            en: "Remembrance is not only about the past; it also means recognizing antisemitism, hatred and dehumanization today."
+        ),
+        "02-06": BilingualFact(
+            tr: "Kadın genital mutilasyonu sağlık sorunu olmanın yanında, kız çocukları ve kadınlara yönelik bir insan hakları ihlalidir.",
+            en: "Female genital mutilation is both a serious health issue and a violation of the human rights of girls and women."
+        ),
+        "02-12": BilingualFact(
+            tr: "Şiddet içeren aşırıcılıkla mücadele, korkuyu büyütmeden insan haklarını, eğitimi ve toplumsal dayanışmayı güçlendirmeyi gerektirir.",
+            en: "Preventing violent extremism means strengthening human rights, education and social cohesion without amplifying fear."
+        ),
+        "03-01": BilingualFact(
+            tr: "Hiç kimse kimliği, görünüşü, sağlığı ya da yaşam koşulları nedeniyle daha az hakka sahip değildir.",
+            en: "No one deserves fewer rights because of their identity, appearance, health or circumstances."
+        ),
+        "03-05": BilingualFact(
+            tr: "Silahların yayılmasını önlemek yalnızca devletlerin değil, güvenli bir gelecek isteyen herkesin meselesidir.",
+            en: "Preventing the spread of weapons concerns everyone who wants a safer future, not only governments."
+        ),
+        "03-15": BilingualFact(
+            tr: "İslamofobiyle mücadele; önyargıya, nefrete ve Müslümanlara yönelik ayrımcılığa sessiz kalmamayı gerektirir.",
+            en: "Combating Islamophobia means refusing to stay silent about prejudice, hatred and discrimination against Muslims."
+        ),
+        "03-25": BilingualFact(
+            tr: "Köleleştirilen milyonlarca insanı anmak, köleliğin mirasının bugünkü eşitsizliklerde nasıl sürdüğünü de görmeyi gerektirir.",
+            en: "Remembering millions of enslaved people also means seeing how slavery's legacy continues through inequality today."
+        ),
+        "04-02": BilingualFact(
+            tr: "Otistik bireyleri yalnızca fark etmek değil; dinlemek, farklı iletişim biçimlerine alan açmak ve kapsayıcılığı büyütmek önemli.",
+            en: "It is not enough to notice autistic people; listening, respecting different communication and building inclusion matter."
+        ),
+        "04-04": BilingualFact(
+            tr: "Mayınlar çatışma bittikten yıllar sonra bile siviller için tehdit olmaya devam eder; temizleme çalışmaları hayat kurtarır.",
+            en: "Landmines can threaten civilians long after conflict ends; mine clearance and assistance save lives."
+        ),
+        "04-29": BilingualFact(
+            tr: "Depremlerde hayatını kaybedenleri anmak, güvenli yapılar ve hazırlık konusunda ortak sorumluluğumuzu da hatırlatır.",
+            en: "Remembering people lost to earthquakes also recalls our shared responsibility for safer buildings and preparedness."
+        ),
+        "05-08": BilingualFact(
+            tr: "İkinci Dünya Savaşı'nda hayatını kaybedenleri anmak, barışın korunması için hafıza ve iş birliğinin değerini hatırlatır.",
+            en: "Remembering those lost in the Second World War underlines the value of memory and cooperation in protecting peace."
+        ),
+        "06-04": BilingualFact(
+            tr: "Savaş ve çatışmanın hiçbir çocuğun güvenliğini, eğitimini ve geleceğini elinden almaması gerektiğini hatırlatıyor.",
+            en: "War and conflict should never take away a child's safety, education or future."
+        ),
+        "06-12": BilingualFact(
+            tr: "Her çocuk güvenli bir çocukluk, eğitim ve oyun hakkına sahiptir; ağır ve tehlikeli işlere değil.",
+            en: "Every child deserves safety, education and play — not dangerous or exploitative work."
+        ),
+        "06-13": BilingualFact(
+            tr: "Albinizmli bireylerin yaşam deneyimlerini dinlemek, damgalama ve ayrımcılıkla mücadeleyi görünür kılar.",
+            en: "Listening to people with albinism makes the fight against stigma and discrimination more visible."
+        ),
+        "06-15": BilingualFact(
+            tr: "Yaşlılara yönelik ihmal, ekonomik sömürü ve şiddet çoğu zaman görünmez kalır; fark etmek korumanın ilk adımıdır.",
+            en: "Neglect, financial exploitation and violence against older people often remain hidden; noticing is the first step."
+        ),
+        "06-18": BilingualFact(
+            tr: "Nefret söylemi yalnızca kelimelerden ibaret değildir; insanları hedef hâline getirir ve birlikte yaşama zeminini aşındırır.",
+            en: "Hate speech is more than words; it targets people and erodes the ground for living together."
+        ),
+        "06-19": BilingualFact(
+            tr: "Çatışmalarda cinsel şiddet kaçınılmaz değildir; mağdurların sesi, güvenliği ve adalete erişimi merkeze alınmalıdır.",
+            en: "Sexual violence in conflict is not inevitable; survivors' voices, safety and access to justice must come first."
+        ),
+        "06-20": BilingualFact(
+            tr: "Mülteci olmak bir tercih değil; güvenli bir yaşam aramak zorunda kalmaktır. Onur ve haklar sınırda sona ermez.",
+            en: "Being a refugee is not a choice but a search for safety. Dignity and rights do not end at a border."
+        ),
+        "08-02": BilingualFact(
+            tr: "Nazi döneminde öldürülen Romanları anmak, Romanlara yönelik nefret ve ayrımcılığın bugün de karşısında durmayı gerektirir.",
+            en: "Remembering Roma murdered under the Nazis also means opposing anti-Roma hatred and discrimination today."
+        ),
+        "08-21": BilingualFact(
+            tr: "Terör saldırılarından etkilenenlerin kayıplarını, yaşamlarını ve haklarını sayıların ötesinde hatırlama günü.",
+            en: "A day to remember the lives, losses and rights of people affected by terrorism beyond the statistics."
+        ),
+        "08-22": BilingualFact(
+            tr: "Hiç kimse inancı ya da inançsızlığı nedeniyle şiddetin hedefi olmamalı; vicdan özgürlüğü herkes içindir.",
+            en: "No one should face violence because of belief or non-belief; freedom of conscience belongs to everyone."
+        ),
+        "08-23": BilingualFact(
+            tr: "Köle ticaretine direnenleri ve hayatları ellerinden alınanları anmak, özgürlük mücadelesinin hafızasını canlı tutar.",
+            en: "Remembering those who resisted the slave trade and those whose lives were taken keeps the struggle for freedom alive."
+        ),
+        "08-29": BilingualFact(
+            tr: "Nükleer denemelerin insanlar ve çevre üzerinde bıraktığı uzun süreli zararı hatırlamak, tekrarını önlemenin parçasıdır.",
+            en: "Remembering the lasting harm of nuclear tests to people and the environment is part of preventing their return."
+        ),
+        "08-30": BilingualFact(
+            tr: "Zorla kaybedilenlerin aileleri cevap, hakikat ve adalet aramaya devam eder; belirsizlik de başlı başına bir acıdır.",
+            en: "Families of the forcibly disappeared continue to seek truth and justice; uncertainty is itself a form of suffering."
+        ),
+        "09-09": BilingualFact(
+            tr: "Okullar çatışmanın hedefi değil, çocukların güvende öğrenebildiği yerler olmalıdır.",
+            en: "Schools should never be targets in conflict; they should remain places where children can learn safely."
+        ),
+        "09-10": BilingualFact(
+            tr: "Bir mesaj her şeyi çözmeyebilir; ama yargısız dinlemek ve profesyonel desteğe ulaşmayı kolaylaştırmak önemlidir.",
+            en: "One message may not solve everything, but listening without judgment and helping someone reach professional support matter."
+        ),
+        "09-11": BilingualFact(
+            tr: "11 Eylül saldırılarında hayatını kaybedenleri, yakınlarını ve olayın uzun süreli etkilerini saygıyla anma günü.",
+            en: "A day to remember those killed in the September 11 attacks, their loved ones and the lasting impact with care."
+        ),
+        "11-18": BilingualFact(
+            tr: "Çocuklara yönelik cinsel istismarı önlemek; güvenli alanlar kurmayı, çocukları dinlemeyi ve sorumluluğu yetişkinlerin almasını gerektirir.",
+            en: "Preventing child sexual abuse requires safe environments, listening to children and adults taking responsibility."
+        ),
+        "11-17": BilingualFact(
+            tr: "Prematüre doğan bebekler ve aileleri için doğru bakım, güvenilir bilgi ve uzun süreli destek büyük önem taşır.",
+            en: "For babies born preterm and their families, appropriate care, reliable information and long-term support matter greatly."
+        ),
+        "11-25": BilingualFact(
+            tr: "Kadınlara yönelik şiddet özel bir mesele değil, önlenebilir bir insan hakları ihlalidir.",
+            en: "Violence against women is not a private matter; it is a preventable human rights violation."
+        ),
+        "11-30": BilingualFact(
+            tr: "Kimyasal silah mağdurlarını anmak, bu silahların hiçbir koşulda yeniden kullanılmaması gerektiğini hatırlatır.",
+            en: "Remembering victims of chemical warfare reinforces that these weapons must never be used again."
+        ),
+        "12-01": BilingualFact(
+            tr: "HIV hakkında doğru bilgi, teste ve tedaviye erişim kadar damgalama ve ayrımcılıkla mücadele de hayat kurtarır.",
+            en: "Accurate HIV information, access to testing and treatment, and fighting stigma all save lives."
+        ),
+        "12-02": BilingualFact(
+            tr: "Kölelik geçmişte kalmış tek bir düzen değil; zorla çalıştırma ve insan ticareti gibi biçimlerle mücadele bugün de sürüyor.",
+            en: "Slavery is not only a system from the past; the fight continues against forced labour and human trafficking today."
+        ),
+        "12-03": BilingualFact(
+            tr: "Erişilebilirlik bir iyilik değil, haktır. Engeller çoğu zaman bireylerde değil, onları dışarıda bırakan sistemlerdedir.",
+            en: "Accessibility is a right, not a favour. Barriers often lie in systems that exclude people, not in individuals."
+        ),
+        "12-10": BilingualFact(
+            tr: "İnsan hakları yalnızca bazı insanlar için ya da iyi zamanlarda geçerli değildir; herkes için ve her gün gereklidir.",
+            en: "Human rights are not only for some people or for easy times; they belong to everyone, every day."
+        )
+    ]
 
     private static let curated: [String: Pair] = [
         "01-02": pair(
@@ -601,6 +767,24 @@ struct EditorialContent {
             enMessage: "It's Bacon Day. One last round of applause for the pan before the year ends. 🥓 — WhaDay",
             tone: .playful
         ),
+        "07-05": pair(
+            trFact: "Yapılacaklar listesi senden kaçmıyor. Bugün bilgisayarı biraz erken kapatmayı başarı sayabiliriz.",
+            trPrompt: "Mesaiyi kapatamayan arkadaşına gönder",
+            trMessage: "Bugün İşkolikler Günü. Bu mesajı okuyorsan en azından otuz saniye mola verdin. 💻 — WhaDay",
+            enFact: "The to-do list is not going anywhere. Closing the laptop a little early counts as an achievement today.",
+            enPrompt: "Send to a friend who never clocks off",
+            enMessage: "It's Workaholics Day. If you're reading this, you took at least a thirty-second break. 💻 — WhaDay",
+            tone: .playful
+        ),
+        "09-24": pair(
+            trFact: "Güçlü görünümlerinin ardında aile bağları kuvvetli, yaşam alanları korunmaya ihtiyaç duyan yakın akrabalarımız var.",
+            trPrompt: "Vahşi yaşamı seven birine gönder",
+            trMessage: "Bugün Dünya Goril Günü. Güçlü olanın da korunmaya ihtiyacı var. 🦍 — WhaDay",
+            enFact: "Behind their powerful appearance are close relatives with strong family bonds and habitats that need protection.",
+            enPrompt: "Send to someone who loves wildlife",
+            enMessage: "It's World Gorilla Day. Even the powerful need protection. 🦍 — WhaDay",
+            tone: .curious
+        ),
         "12-31": pair(
             trFact: "Bir yıl daha kapanıyor. En iyi anları sakla, geri kalanını gece yarısında bırak.",
             trPrompt: "Yeni yıla birlikte gireceğin kişiye gönder",
@@ -661,8 +845,8 @@ enum EditorialSymbol {
         "01-02": "🚀", "01-03": "😴", "01-16": "🛋️", "01-18": "🍯", "01-20": "🐧", "01-21": "🫂", "01-29": "🧩", "02-05": "🍫",
         "02-09": "🍕", "02-14": "❤️", "02-29": "🦓", "03-14": "🥧", "04-01": "👀",
         "03-06": "🍪", "03-09": "🎀", "03-16": "🐼", "03-20": "☀️", "05-04": "🌌", "05-06": "🍽️",
-        "05-20": "🐝", "05-21": "🫖", "07-02": "🛸", "07-08": "🎮", "07-17": "😶", "07-30": "🫶", "07-31": "⚡️",
-        "08-08": "🐈", "08-13": "✋", "08-26": "🐕", "09-19": "🏴‍☠️", "10-01": "☕️", "10-21": "⚡️",
+        "05-20": "🐝", "05-21": "🫖", "07-02": "🛸", "07-05": "💻", "07-08": "🎮", "07-17": "😶", "07-30": "🫶", "07-31": "⚡️",
+        "08-08": "🐈", "08-13": "✋", "08-26": "🐕", "09-19": "🏴‍☠️", "09-24": "🦍", "10-01": "☕️", "10-21": "⚡️",
         "10-25": "🍝", "10-31": "🎃", "11-13": "💛", "11-19": "🚽", "12-23": "✦", "12-29": "⏳", "12-30": "🥓", "12-31": "✨"
     ]
 }

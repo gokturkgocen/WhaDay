@@ -139,12 +139,20 @@ struct ShareCardView: View {
                 Capsule()
                     .fill(Color(hex: colors.secondary))
                     .frame(width: 22, height: 4)
-                Text(DayEventStore.language == "tr" ? "GÜNÜN BAHANESİ" : "TODAY'S EXCUSE")
+                Text(footerLabel)
                     .font(.system(size: 9, weight: .bold, design: .monospaced))
                     .tracking(0.8)
                     .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.52))
             }
         }
+    }
+
+    private var footerLabel: String {
+        let isRemembrance = editorial?.tone == .remembrance
+        if DayEventStore.language == "tr" {
+            return isRemembrance ? "GÜNÜN NOTU" : "GÜNÜN BAHANESİ"
+        }
+        return isRemembrance ? "TODAY'S NOTE" : "TODAY'S EXCUSE"
     }
 
     private var glowField: some View {
