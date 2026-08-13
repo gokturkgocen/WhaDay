@@ -1,962 +1,3412 @@
 [
-    {
-        "id": "2-25",
-        "month": 2,
-        "day": 25,
-        "title": "Quiet Day",
-        "description": "A day to embrace silence, reduce noise, and create intentional moments of calm for your mind and soul.",
-        "emoji": "🤫",
-        "category": "wellness",
-        "sharingHook": "Send this to your loudest friend 🤫"
-    },
-    {
-        "id": "2-26",
-        "month": 2,
-        "day": 26,
-        "title": "Carpe Diem Day",
-        "description": "Seize the day! Stop overthinking and start doing that one thing you've been putting off forever.",
-        "emoji": "⚡",
-        "category": "motivation",
-        "sharingHook": "Send this to your 'I'll do it tomorrow' friend ⚡"
-    },
-    {
-        "id": "2-27",
-        "month": 2,
-        "day": 27,
-        "title": "International Polar Bear Day",
-        "description": "Raise awareness about the majestic polar bears and the challenges they face due to climate change.",
-        "emoji": "🐻‍❄️",
-        "category": "nature",
-        "sharingHook": "Share with a nature lover 🐻‍❄️"
-    },
-    {
-        "id": "2-28",
-        "month": 2,
-        "day": 28,
-        "title": "Rare Disease Day",
-        "description": "A global day to raise awareness about rare diseases and improve access to treatment for those affected.",
-        "emoji": "🎗️",
-        "category": "awareness",
-        "sharingHook": "Raise awareness — share on your story 🎗️"
-    },
-    {
-        "id": "3-1",
-        "month": 3,
-        "day": 1,
-        "title": "World Compliment Day",
-        "description": "The most positive day in the world! Give someone a genuine compliment and watch their face light up.",
-        "emoji": "💬",
-        "category": "social",
-        "sharingHook": "Send a compliment to someone who deserves it 💬"
-    },
-    {
-        "id": "3-2",
-        "month": 3,
-        "day": 2,
-        "title": "Old Stuff Day",
-        "description": "Dig into your closet and rediscover things you forgot you loved. One person's old stuff is another's treasure.",
-        "emoji": "🗄️",
-        "category": "lifestyle",
-        "sharingHook": "What did you find in your closet? 🗄️"
-    },
-    {
-        "id": "3-3",
-        "month": 3,
-        "day": 3,
-        "title": "World Wildlife Day",
-        "description": "Celebrate the wild beauty of our planet. Every creature is an irreplaceable piece of our ecosystem.",
-        "emoji": "🦁",
-        "category": "nature",
-        "sharingHook": "Send this to an animal lover 🦁"
-    },
-    {
-        "id": "3-4",
-        "month": 3,
-        "day": 4,
-        "title": "One-Word Story Day",
-        "description": "Describe your day in one word. Sometimes the most powerful stories are hidden in a single word.",
-        "emoji": "✍️",
-        "category": "creative",
-        "sharingHook": "Describe your day in one word ✍️"
-    },
-    {
-        "id": "3-5",
-        "month": 3,
-        "day": 5,
-        "title": "Random Act of Kindness Day",
-        "description": "Do something kind for a stranger. Buy a coffee, hold the door, or simply smile. Small things leave big marks.",
-        "emoji": "💛",
-        "category": "social",
-        "sharingHook": "What was your kind act today? 💛"
-    },
-    {
-        "id": "3-6",
-        "month": 3,
-        "day": 6,
-        "title": "Dentist's Day",
-        "description": "Celebrating the architects of our smiles! When was the last time you booked a checkup?",
-        "emoji": "🦷",
-        "category": "health",
-        "sharingHook": "Send a thank you to your dentist 🦷"
-    },
-    {
-        "id": "3-7",
-        "month": 3,
-        "day": 7,
-        "title": "Mental Health Awareness Day",
-        "description": "Care for your mind as much as your body. Ask yourself 'How am I really doing?' and answer honestly.",
-        "emoji": "🧠",
-        "category": "wellness",
-        "sharingHook": "Call someone and ask how they're doing 🧠"
-    },
-    {
-        "id": "3-8",
-        "month": 3,
-        "day": 8,
-        "title": "International Women's Day",
-        "description": "Celebrate the strong women in your life. Equality isn't a luxury — it's a fundamental right.",
-        "emoji": "💜",
-        "category": "awareness",
-        "sharingHook": "Send this to a strong woman in your life 💜"
-    },
-    {
-        "id": "3-9",
-        "month": 3,
-        "day": 9,
-        "title": "DJ Day",
-        "description": "Put on your headphones — today is your stage! Share your favorite song with your friends.",
-        "emoji": "🎧",
-        "category": "fun",
-        "sharingHook": "Share your song of the day 🎧"
-    },
-    {
-        "id": "3-10",
-        "month": 3,
-        "day": 10,
-        "title": "Day of Awesomeness",
-        "description": "Today is the day to feel proud of yourself. Even small wins got you here. You're doing great.",
-        "emoji": "🔥",
-        "category": "motivation",
-        "sharingHook": "Send this to someone awesome 🔥"
-    },
-    {
-        "id": "3-11",
-        "month": 3,
-        "day": 11,
-        "title": "Write Your Dream Day",
-        "description": "Grab a paper and write down your biggest dream. Writing it down brings it one step closer to reality.",
-        "emoji": "📝",
-        "category": "motivation",
-        "sharingHook": "Write your biggest dream in one sentence 📝"
-    },
-    {
-        "id": "3-12",
-        "month": 3,
-        "day": 12,
-        "title": "Plant a Flower Day",
-        "description": "Plant a seed, add a breath of life to nature. Even a small pot can change the world.",
-        "emoji": "🌱",
-        "category": "nature",
-        "sharingHook": "What did you plant today? 🌱"
-    },
-    {
-        "id": "3-13",
-        "month": 3,
-        "day": 13,
-        "title": "Nap Day",
-        "description": "A 20-minute nap can be as refreshing as 3 hours of sleep. Close your eyes, you have permission.",
-        "emoji": "😴",
-        "category": "wellness",
-        "sharingHook": "Send this to someone who needs sleep 😴"
-    },
-    {
-        "id": "3-14",
-        "month": 3,
-        "day": 14,
-        "title": "Pi Day",
-        "description": "3.14159... Celebrating math's most mysterious number! The universe's order is hidden behind a number.",
-        "emoji": "🥧",
-        "category": "science",
-        "sharingHook": "Send this to a math lover 🥧"
-    },
-    {
-        "id": "3-15",
-        "month": 3,
-        "day": 15,
-        "title": "World Consumer Rights Day",
-        "description": "An informed consumer is a powerful consumer. Know your rights, don't hesitate to question.",
-        "emoji": "🛡️",
-        "category": "awareness",
-        "sharingHook": "Know your rights, share this 🛡️"
-    },
-    {
-        "id": "3-16",
-        "month": 3,
-        "day": 16,
-        "title": "Panda Day",
-        "description": "The world's cutest ambassadors! Celebrating everyone's favorite bamboo-munching bears.",
-        "emoji": "🐼",
-        "category": "nature",
-        "sharingHook": "Send this to someone as cute as a panda 🐼"
-    },
-    {
-        "id": "3-17",
-        "month": 3,
-        "day": 17,
-        "title": "St. Patrick's Day",
-        "description": "A day of green, luck, and celebration! The Irish spirit wraps around the whole world today.",
-        "emoji": "☘️",
-        "category": "culture",
-        "sharingHook": "Send this to your luckiest friend ☘️"
-    },
-    {
-        "id": "3-18",
-        "month": 3,
-        "day": 18,
-        "title": "Global Recycling Day",
-        "description": "One person's trash is the planet's treasure. Recycle today and help build a circular economy.",
-        "emoji": "♻️",
-        "category": "awareness",
-        "sharingHook": "Do you recycle? Share this ♻️"
-    },
-    {
-        "id": "3-19",
-        "month": 3,
-        "day": 19,
-        "title": "Father's Day",
-        "description": "Dads always look strong but they need hugs too. Send your dad a message today.",
-        "emoji": "👨‍👧",
-        "category": "social",
-        "sharingHook": "Call your dad today 👨‍👧"
-    },
-    {
-        "id": "3-20",
-        "month": 3,
-        "day": 20,
-        "title": "International Day of Happiness",
-        "description": "The UN's official day of happiness! The secret to happiness: enjoy the present moment.",
-        "emoji": "😊",
-        "category": "wellness",
-        "sharingHook": "Send this to someone who makes you happy 😊"
-    },
-    {
-        "id": "3-21",
-        "month": 3,
-        "day": 21,
-        "title": "World Poetry Day",
-        "description": "When words dance, poetry is born. Write a few lines today, or read a poem you love.",
-        "emoji": "🪶",
-        "category": "creative",
-        "sharingHook": "Share your favorite verse 🪶"
-    },
-    {
-        "id": "3-22",
-        "month": 3,
-        "day": 22,
-        "title": "World Water Day",
-        "description": "Every drop counts. 25% of the world's population can't access clean water. Don't waste it.",
-        "emoji": "💧",
-        "category": "awareness",
-        "sharingHook": "Every drop matters — share this 💧"
-    },
-    {
-        "id": "3-23",
-        "month": 3,
-        "day": 23,
-        "title": "World Meteorological Day",
-        "description": "You check the weather every day — but do you think about climate? Understanding our planet starts with caring.",
-        "emoji": "🌦️",
-        "category": "science",
-        "sharingHook": "What's your weather today? 🌦️"
-    },
-    {
-        "id": "3-24",
-        "month": 3,
-        "day": 24,
-        "title": "Honesty Day",
-        "description": "Today, speak only truth. Be honest with yourself, your friends, and the world. Honesty sets you free.",
-        "emoji": "🪞",
-        "category": "wellness",
-        "sharingHook": "Look in the mirror and be honest 🪞"
-    },
-    {
-        "id": "3-25",
-        "month": 3,
-        "day": 25,
-        "title": "International Waffle Day",
-        "description": "Crispy outside, fluffy inside... Treat yourself to a waffle today. You absolutely deserve it!",
-        "emoji": "🧇",
-        "category": "fun",
-        "sharingHook": "Tag someone you'd share a waffle with 🧇"
-    },
-    {
-        "id": "3-26",
-        "month": 3,
-        "day": 26,
-        "title": "Epilepsy Awareness Day",
-        "description": "50 million people worldwide live with epilepsy. Wear purple today and raise awareness.",
-        "emoji": "💜",
-        "category": "awareness",
-        "sharingHook": "Wear purple, raise awareness 💜"
-    },
-    {
-        "id": "3-27",
-        "month": 3,
-        "day": 27,
-        "title": "World Theatre Day",
-        "description": "The stage lights are on! Theatre is the mirror of the human soul. When was the last time you saw a play?",
-        "emoji": "🎭",
-        "category": "culture",
-        "sharingHook": "Send this to a theatre lover 🎭"
-    },
-    {
-        "id": "3-28",
-        "month": 3,
-        "day": 28,
-        "title": "Digital Detox Day",
-        "description": "Put your phone down for 1 hour. Look out the window, breathe deeply. Real life is beyond the screen.",
-        "emoji": "📵",
-        "category": "wellness",
-        "sharingHook": "Send this to your most screen-addicted friend 📵"
-    },
-    {
-        "id": "3-29",
-        "month": 3,
-        "day": 29,
-        "title": "Take a Walk in the Park Day",
-        "description": "A 20-minute walk in nature reduces stress by 40%. Get up and walk into the green.",
-        "emoji": "🌳",
-        "category": "wellness",
-        "sharingHook": "Invite your walk buddy 🌳"
-    },
-    {
-        "id": "3-30",
-        "month": 3,
-        "day": 30,
-        "title": "Doctor's Day",
-        "description": "Celebrating lifesavers. Send a thank you message to a doctor — that small text will brighten their whole day.",
-        "emoji": "🩺",
-        "category": "social",
-        "sharingHook": "Thank a doctor you know 🩺"
-    },
-    {
-        "id": "3-31",
-        "month": 3,
-        "day": 31,
-        "title": "World Backup Day",
-        "description": "Back up your photos, your memories! Everything can vanish in an instant. Take 5 minutes — future you will be grateful.",
-        "emoji": "☁️",
-        "category": "tech",
-        "sharingHook": "Send this to someone who never backs up ☁️"
-    },
-    {
-        "id": "4-1",
-        "month": 4,
-        "day": 1,
-        "title": "April Fools' Day",
-        "description": "Watch out! Today everyone has a joke on their tongue and a surprise in their pocket. Remember: laughter is the best medicine.",
-        "emoji": "🤡",
-        "category": "social",
-        "sharingHook": "Send this to your prankster friend 🤡"
-    },
-    {
-        "id": "4-2",
-        "month": 4,
-        "day": 2,
-        "title": "World Autism Awareness Day",
-        "description": "Embracing differences. Autism is not a deficit, it's a different perspective. Be aware, be supportive.",
-        "emoji": "🧩",
-        "category": "awareness",
-        "sharingHook": "Share on your story for awareness 🧩"
-    },
-    {
-        "id": "4-3",
-        "month": 4,
-        "day": 3,
-        "title": "Find a Rainbow Day",
-        "description": "Turn your eyes to the sky! Today we celebrate nature's most colorful surprise, representing hope and luck.",
-        "emoji": "🌈",
-        "category": "nature",
-        "sharingHook": "Send this to a hopeful friend 🌈"
-    },
-    {
-        "id": "4-4",
-        "month": 4,
-        "day": 4,
-        "title": "World Stray Animals Day",
-        "description": "Let's be the voice for our friends on the street. A bowl of water, a bowl of food; it means the world to them.",
-        "emoji": "🐾",
-        "category": "nature",
-        "sharingHook": "Send this to a fellow animal lover 🐾"
-    },
-    {
-        "id": "4-5",
-        "month": 4,
-        "day": 5,
-        "title": "Lawyers' Day",
-        "description": "Celebrating the defenders of law and justice. Thanks to the lawyers who are the foundation of the justice system.",
-        "emoji": "⚖️",
-        "category": "social",
-        "sharingHook": "Send a celebration to your lawyer friend ⚖️"
-    },
-    {
-        "id": "4-6",
-        "month": 4,
-        "day": 6,
-        "title": "Int. Day of Sport for Development and Peace",
-        "description": "One step closer to peace through the unifying power of sport! Move today, feel the team spirit, and celebrate friendship.",
-        "emoji": "🏅",
-        "category": "social",
-        "sharingHook": "Send this to your teammate 🏅"
-    },
-    {
-        "id": "4-7",
-        "month": 4,
-        "day": 7,
-        "title": "World Health Day",
-        "description": "Our health is our greatest asset. Take care of yourself, nourish your soul and body.",
-        "emoji": "🍎",
-        "category": "wellness",
-        "sharingHook": "Send this to a friend who needs self-care 🍎"
-    },
-    {
-        "id": "4-8",
-        "month": 4,
-        "day": 8,
-        "title": "Zoo Lovers Day",
-        "description": "Time to meet the ambassadors of the wild. Explore the world of animals and remember the importance of biodiversity.",
-        "emoji": "🦒",
-        "category": "nature",
-        "sharingHook": "Send this to a wildlife enthusiast 🦒"
-    },
-    {
-        "id": "4-9",
-        "month": 4,
-        "day": 9,
-        "title": "Name Yourself Day",
-        "description": "What would it be if you chose a new name for yourself today? Celebrate your identity or just ask to be called by a different name for fun.",
-        "emoji": "🏷️",
-        "category": "social",
-        "sharingHook": "Send this to a friend searching for a new name 🏷️"
-    },
-    {
-        "id": "4-10",
-        "month": 4,
-        "day": 10,
-        "title": "Siblings Day",
-        "description": "Call that person you call 'sibling', whether related or not. Strengthen your bonds, refresh your memories.",
-        "emoji": "👫",
-        "category": "social",
-        "sharingHook": "Send this to your 'sibling' 👫"
-    },
-    {
-        "id": "4-11",
-        "month": 4,
-        "day": 11,
-        "title": "National Pet Day",
-        "description": "Time to spoil the four-legged heroes of unconditional love! Give them an extra treat or take them for a long walk.",
-        "emoji": "🐶",
-        "category": "nature",
-        "sharingHook": "Send this to a fellow pet lover 🐶"
-    },
-    {
-        "id": "4-12",
-        "month": 4,
-        "day": 12,
-        "title": "International Day of Human Space Flight",
-        "description": "The day we went beyond the planet's boundaries! Celebrating humanity's space adventure. Our goal is always the stars.",
-        "emoji": "🚀",
-        "category": "tech",
-        "sharingHook": "Send this to a dreamer 🚀"
-    },
-    {
-        "id": "4-13",
-        "month": 4,
-        "day": 13,
-        "title": "Scrabble Day",
-        "description": "For the power of words! Refresh your mind today, connect the letters, and let your vocabulary speak.",
-        "emoji": "🔠",
-        "category": "creative",
-        "sharingHook": "Send this to a word game master 🔠"
-    },
-    {
-        "id": "4-14",
-        "month": 4,
-        "day": 14,
-        "title": "Look Up at the Sky Day",
-        "description": "Raise your head and feel the infinity. Find peace by watching the dance of clouds by day and the glitter of stars by night.",
-        "emoji": "🌌",
-        "category": "nature",
-        "sharingHook": "Send this to a dreamer friend 🌌"
-    },
-    {
-        "id": "4-15",
-        "month": 4,
-        "day": 15,
-        "title": "World Art Day",
-        "description": "Art washes away from the soul the dust of everyday life. Visit an exhibition, paint a picture, or just appreciate beauty today.",
-        "emoji": "🎨",
-        "category": "creative",
-        "sharingHook": "Send this to an artistic soul 🎨"
-    },
-    {
-        "id": "4-16",
-        "month": 4,
-        "day": 16,
-        "title": "World Voice Day",
-        "description": "Celebrate the magic of the voice! Sing your favorite song at the top of your lungs or just be thankful to hear the voices of your loved ones.",
-        "emoji": "🗣️",
-        "category": "creative",
-        "sharingHook": "Send this to a friend with a beautiful voice 🗣️"
-    },
-    {
-        "id": "4-17",
-        "month": 4,
-        "day": 17,
-        "title": "World Hemophilia Day",
-        "description": "Joining hands to raise awareness and improve treatment. Knowledge is the best weapon in dealing with hemophilia.",
-        "emoji": "🩸",
-        "category": "awareness",
-        "sharingHook": "Support awareness 🩸"
-    },
-    {
-        "id": "4-18",
-        "month": 4,
-        "day": 18,
-        "title": "World Heritage Day",
-        "description": "A journey into the collective memories of humanity. Let's protect historical sites and carry the wisdom of the past into the future.",
-        "emoji": "🏛️",
-        "category": "social",
-        "sharingHook": "Send this to a history enthusiast 🏛️"
-    },
-    {
-        "id": "4-19",
-        "month": 4,
-        "day": 19,
-        "title": "Garlic Day",
-        "description": "The sharp-scented source of healing in kitchens! Today, add a little extra garlic to your meals and toast to your health.",
-        "emoji": "🧄",
-        "category": "lifestyle",
-        "sharingHook": "Send this to a cooking lover 🧄"
-    },
-    {
-        "id": "4-20",
-        "month": 4,
-        "day": 20,
-        "title": "Volunteer Recognition Day",
-        "description": "Thanks to the heroes who make the world more beautiful without expecting anything in return. Today, show your gratitude to a volunteer.",
-        "emoji": "🤝",
-        "category": "social",
-        "sharingHook": "Thank a helpful friend 🤝"
-    },
-    {
-        "id": "4-21",
-        "month": 4,
-        "day": 21,
-        "title": "World Creativity and Innovation Day",
-        "description": "Push the boundaries, step out of the box! Creativity is the most fun way to change the world.",
-        "emoji": "💡",
-        "category": "creative",
-        "sharingHook": "Send this to a friend with brilliant ideas 💡"
-    },
-    {
-        "id": "4-22",
-        "month": 4,
-        "day": 22,
-        "title": "Earth Day",
-        "description": "We must protect this blue planet we call home. Today, take a small step for the world, a giant leap for your future.",
-        "emoji": "🌎",
-        "category": "nature",
-        "sharingHook": "Send this to a nature lover 🌎"
-    },
-    {
-        "id": "4-23",
-        "month": 4,
-        "day": 23,
-        "title": "World Book Day",
-        "description": "Celebrating the magic of books and the joy of reading. Open a book, open a new world.",
-        "emoji": "📚",
-        "category": "creative",
-        "sharingHook": "Share your current read 📚"
-    },
-    {
-        "id": "4-24",
-        "month": 4,
-        "day": 24,
-        "title": "Fashion Revolution Day",
-        "description": "Ask 'Who made my clothes?'. Support ethical fashion, make sustainable choices, and add meaning to your style.",
-        "emoji": "👗",
-        "category": "lifestyle",
-        "sharingHook": "Send this to a stylish friend 👗"
-    },
-    {
-        "id": "4-25",
-        "month": 4,
-        "day": 25,
-        "title": "World Penguin Day",
-        "description": "Saluting the elegant gentlemen and ladies of Antarctica. It's our duty to protect their habitats.",
-        "emoji": "🐧",
-        "category": "nature",
-        "sharingHook": "Send this to a penguin fan 🐧"
-    },
-    {
-        "id": "4-26",
-        "month": 4,
-        "day": 26,
-        "title": "World Pilots' Day",
-        "description": "Celebrating the masters of the sky. Saluting all pilots who ensure we fly safely!",
-        "emoji": "👨‍✈️",
-        "category": "tech",
-        "sharingHook": "Send this to a sky lover 👨‍✈️"
-    },
-    {
-        "id": "4-27",
-        "month": 4,
-        "day": 27,
-        "title": "World Design Day",
-        "description": "Celebrating the designers who make the world more beautiful and functional. Good design makes life easier.",
-        "emoji": "📐",
-        "category": "creative",
-        "sharingHook": "Send this to your designer friend 📐"
-    },
-    {
-        "id": "4-28",
-        "month": 4,
-        "day": 28,
-        "title": "World Occupational Safety and Health Day",
-        "description": "Working safely and healthily is everyone's right. Pay attention to safety rules today and prioritize your well-being.",
-        "emoji": "👷",
-        "category": "social",
-        "sharingHook": "Send this to a hard-working colleague 👷"
-    },
-    {
-        "id": "4-29",
-        "month": 4,
-        "day": 29,
-        "title": "International Dance Day",
-        "description": "Feel the music, get caught in the rhythm! Dance is a language that starts where words end.",
-        "emoji": "💃",
-        "category": "social",
-        "sharingHook": "Send this to a friend who needs to move 💃"
-    },
-    {
-        "id": "4-30",
-        "month": 4,
-        "day": 30,
-        "title": "International Jazz Day",
-        "description": "The music of improvisation and freedom. Put on a jazz track today and change the tempo of your day.",
-        "emoji": "🎷",
-        "category": "social",
-        "sharingHook": "Send this to a jazz lover 🎷"
-    },
-    {
-        "id": "5-1",
-        "month": 5,
-        "day": 1,
-        "title": "Labor Day",
-        "description": "Celebrating the value of hard work and solidarity. Saluting everyone who produces, works, and makes the world go 'round!",
-        "emoji": "👷",
-        "category": "social",
-        "sharingHook": "Send a celebration to a hard-working friend 👷"
-    },
-    {
-        "id": "5-2",
-        "month": 5,
-        "day": 2,
-        "title": "World Baby Day",
-        "description": "The purest joy of our future! Today we celebrate the innocence of babies and the light they bring to our lives.",
-        "emoji": "👶",
-        "category": "social",
-        "sharingHook": "Send this to new parents 👶"
-    },
-    {
-        "id": "5-3",
-        "month": 5,
-        "day": 3,
-        "title": "World Press Freedom Day",
-        "description": "For a world where truths cannot be silenced! Remembering the importance of a free press and the right to information.",
-        "emoji": "🗞️",
-        "category": "awareness",
-        "sharingHook": "Send this to a friend seeking the truth 🗞️"
-    },
-    {
-        "id": "5-4",
-        "month": 5,
-        "day": 4,
-        "title": "Star Wars Day",
-        "description": "May the Force be with you! Celebrating the most epic story in the galaxy and saluting the Jedi within us.",
-        "emoji": "✨",
-        "category": "social",
-        "sharingHook": "May the 4th be with you! ✨"
-    },
-    {
-        "id": "5-5",
-        "month": 5,
-        "day": 5,
-        "title": "World Hand Hygiene Day",
-        "description": "Keep those hands crystal clean! Protecting our health through simple, vital habits. Wash away the germs.",
-        "emoji": "🧼",
-        "category": "wellness",
-        "sharingHook": "Don't forget to wash those hands! 🧼"
-    },
-    {
-        "id": "5-6",
-        "month": 5,
-        "day": 6,
-        "title": "International No Diet Day",
-        "description": "Eat that last slice today! Love your body, set aside the restrictions, and enjoy the flavor.",
-        "emoji": "🍕",
-        "category": "lifestyle",
-        "sharingHook": "No diet today, share the love! 🍕"
-    },
-    {
-        "id": "5-7",
-        "month": 5,
-        "day": 7,
-        "title": "World Password Day",
-        "description": "Strengthen your digital fortresses! Update your passwords, refresh your security, and roam the cyber world in peace.",
-        "emoji": "🔑",
-        "category": "tech",
-        "sharingHook": "Send this to a friend whose password is '1234' 🔑"
-    },
-    {
-        "id": "5-8",
-        "month": 5,
-        "day": 8,
-        "title": "World Red Cross and Red Crescent Day",
-        "description": "The helping hand in dark times. Celebrating the volunteers and donors who stand by humanity in its toughest moments.",
-        "emoji": "🏥",
-        "category": "awareness",
-        "sharingHook": "Support humanitarian aid 🏥"
-    },
-    {
-        "id": "5-9",
-        "month": 5,
-        "day": 9,
-        "title": "Europe Day",
-        "description": "A dream of a continent in peace and unity. Remembering the importance of cultural diversity and shared values.",
-        "emoji": "🇪🇺",
-        "category": "social",
-        "sharingHook": "Send some European vibes to a traveler 🇪🇺"
-    },
-    {
-        "id": "5-10",
-        "month": 5,
-        "day": 10,
-        "title": "Clean Up Your Room Day",
-        "description": "End the mess! Organize your belongings, freshen your space; a tidy room means a tidy mind.",
-        "emoji": "🧹",
-        "category": "lifestyle",
-        "sharingHook": "Send a hint to your messy friend 🧹"
-    },
-    {
-        "id": "5-11",
-        "month": 5,
-        "day": 11,
-        "title": "Eat What You Want Day",
-        "description": "Forget calorie counting! Eat whatever you crave today; nourish your soul with your favorite flavors.",
-        "emoji": "🍔",
-        "category": "lifestyle",
-        "sharingHook": "Invite your food buddy to lunch 🍔"
-    },
-    {
-        "id": "5-12",
-        "month": 5,
-        "day": 12,
-        "title": "International Nurses Day",
-        "description": "Embodiments of compassion and patience. Our deep thanks to the hidden heroes of our health system.",
-        "emoji": "👩‍⚕️",
-        "category": "social",
-        "sharingHook": "Thank a nurse you know 👩‍⚕️"
-    },
-    {
-        "id": "5-13",
-        "month": 5,
-        "day": 13,
-        "title": "World Cocktail Day",
-        "description": "Raise a glass to creativity! Try a new mix or enjoy a classic flavor.",
-        "emoji": "🍹",
-        "category": "social",
-        "sharingHook": "Bring on the Friday evening vibes 🍹"
-    },
-    {
-        "id": "5-14",
-        "month": 5,
-        "day": 14,
-        "title": "World Farmers Day",
-        "description": "Their hard work is in every bite we eat. We are grateful to the farmers who till the earth.",
-        "emoji": "🚜",
-        "category": "social",
-        "sharingHook": "Send this to a healthy eater 🚜"
-    },
-    {
-        "id": "5-15",
-        "month": 5,
-        "day": 15,
-        "title": "International Day of Families",
-        "description": "Our safest harbor. Call your family today, spend time with them, and feel the power of love.",
-        "emoji": "🏠",
-        "category": "social",
-        "sharingHook": "Tell your family how much you love them 🏠"
-    },
-    {
-        "id": "5-16",
-        "month": 5,
-        "day": 16,
-        "title": "Love a Tree Day",
-        "description": "Hug the lungs of nature! Plant a sapling today or just find peace in the shade of a tree.",
-        "emoji": "🌳",
-        "category": "nature",
-        "sharingHook": "Send this to a nature lover 🌳"
-    },
-    {
-        "id": "5-17",
-        "month": 5,
-        "day": 17,
-        "title": "World Telecommunication Day",
-        "description": "Technology that connects the world! Celebrating access to information and saluting communication that removes borders.",
-        "emoji": "📶",
-        "category": "tech",
-        "sharingHook": "Send this to someone who never leaves WhatsApp 📶"
-    },
-    {
-        "id": "5-18",
-        "month": 5,
-        "day": 18,
-        "title": "International Museum Day",
-        "description": "Get lost in the corridors of history and art. Discovering the heritage of the past broadens your horizon.",
-        "emoji": "🏛️",
-        "category": "creative",
-        "sharingHook": "Invite a friend on a cultural tour 🏛️"
-    },
-    {
-        "id": "5-19",
-        "month": 5,
-        "day": 19,
-        "title": "Youth and Sports Day",
-        "description": "The day the torch of liberation was lit! Walking towards the future with the energy of youth and the spirit of sports.",
-        "emoji": "🇹🇷",
-        "category": "social",
-        "sharingHook": "Share the celebration! 🇹🇷"
-    },
-    {
-        "id": "5-20",
-        "month": 5,
-        "day": 20,
-        "title": "World Bee Day",
-        "description": "Small but mighty workers of the ecosystem. No bees, no life! Let's protect them and nature.",
-        "emoji": "🐝",
-        "category": "nature",
-        "sharingHook": "Send this to a protector of nature 🐝"
-    },
-    {
-        "id": "5-21",
-        "month": 5,
-        "day": 21,
-        "title": "International Tea Day",
-        "description": "A glass of peace. Celebrating tea, the warmest companion of conversations. Brew yourself some good tea today.",
-        "emoji": "☕",
-        "category": "social",
-        "sharingHook": "Send this to a tea lover ☕"
-    },
-    {
-        "id": "5-22",
-        "month": 5,
-        "day": 22,
-        "title": "Int. Day for Biological Diversity",
-        "description": "All living things on our planet are part of a whole. It's everyone's duty to protect this immense diversity.",
-        "emoji": "🌿",
-        "category": "nature",
-        "sharingHook": "Share for a green future 🌿"
-    },
-    {
-        "id": "5-23",
-        "month": 5,
-        "day": 23,
-        "title": "World Turtle Day",
-        "description": "Wisdom that comes with slow steps. We promise to protect these ancient creatures of the seas and lands.",
-        "emoji": "🐢",
-        "category": "nature",
-        "sharingHook": "For those who go slow but steady 🐢"
-    },
-    {
-        "id": "5-24",
-        "month": 5,
-        "day": 24,
-        "title": "Scavenger Hunt Day",
-        "description": "Release your inner explorer! Discover new places today, embark on mini-adventures, and find the hidden treasures of life.",
-        "emoji": "🗺️",
-        "category": "creative",
-        "sharingHook": "Send this to an adventure seeker 🗺️"
-    },
-    {
-        "id": "5-25",
-        "month": 5,
-        "day": 25,
-        "title": "Towel Day",
-        "description": "Don't panic and carry your towel! Celebrate this fun day with fans of The Hitchhiker's Guide to the Galaxy.",
-        "emoji": "🛀",
-        "category": "social",
-        "sharingHook": "42! Don't forget your towel ✨"
-    },
-    {
-        "id": "5-26",
-        "month": 5,
-        "day": 26,
-        "title": "Paper Airplane Day",
-        "description": "Give wings to your dreams! Take a piece of paper, fold your plane, and let it fly. Let the furthest flyer be your dream.",
-        "emoji": "✈️",
-        "category": "creative",
-        "sharingHook": "Send this to a childhood friend ✈️"
-    },
-    {
-        "id": "5-27",
-        "month": 5,
-        "day": 27,
-        "title": "Sunscreen Day",
-        "description": "Love your skin, protect yourself! Don't forget to take precautions against the sun's harmful rays as summer approaches.",
-        "emoji": "☀️",
-        "category": "wellness",
-        "sharingHook": "Remind those making holiday plans ☀️"
-    },
-    {
-        "id": "5-28",
-        "month": 5,
-        "day": 28,
-        "title": "International Hamburger Day",
-        "description": "Get ready for a flavor explosion! Enjoy your favorite hamburger today.",
-        "emoji": "🍔",
-        "category": "lifestyle",
-        "sharingHook": "Send this to a hamburger monster 🍔"
-    },
-    {
-        "id": "5-29",
-        "month": 5,
-        "day": 29,
-        "title": "Conquest of Istanbul",
-        "description": "The day an era ended and a new one began. Celebrating this immense victory that changed the course of history.",
-        "emoji": "🏰",
-        "category": "social",
-        "sharingHook": "Send this to Istanbul lovers 🏰"
-    },
-    {
-        "id": "5-30",
-        "month": 5,
-        "day": 30,
-        "title": "Water a Flower Day",
-        "description": "Give life with a small touch. Water your plants, thank nature, and green your surroundings.",
-        "emoji": "🌻",
-        "category": "nature",
-        "sharingHook": "Remind a friend who lets flowers wither 🌻"
-    },
-    {
-        "id": "5-31",
-        "month": 5,
-        "day": 31,
-        "title": "World No Tobacco Day",
-        "description": "Take a deep breath, take a healthy step. Choose fresh air over smoking and protect your future.",
-        "emoji": "🚭",
-        "category": "wellness",
-        "sharingHook": "Share for a new beginning 🚭"
-    }
+  {
+    "id": "01-01",
+    "month": 1,
+    "day": 1,
+    "title": "New Year's Day",
+    "description": "New Year's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎉",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-02",
+    "month": 1,
+    "day": 2,
+    "title": "National Science Fiction Day",
+    "description": "National Science Fiction Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔬",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "01-03",
+    "month": 1,
+    "day": 3,
+    "title": "Festival of Sleep Day",
+    "description": "Festival of Sleep Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "😴",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-04",
+    "month": 1,
+    "day": 4,
+    "title": "World Braille Day",
+    "description": "World Braille Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-05",
+    "month": 1,
+    "day": 5,
+    "title": "Twelfth Day of Christmas / Twelfth Night",
+    "description": "Twelfth Day of Christmas / Twelfth Night: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎄",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-06",
+    "month": 1,
+    "day": 6,
+    "title": "Epiphany / Theophany",
+    "description": "Epiphany / Theophany: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-07",
+    "month": 1,
+    "day": 7,
+    "title": "Orthodox Christmas Day",
+    "description": "Orthodox Christmas Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎄",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-08",
+    "month": 1,
+    "day": 8,
+    "title": "National Bubble Bath Day",
+    "description": "National Bubble Bath Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-09",
+    "month": 1,
+    "day": 9,
+    "title": "National Static Electricity Day",
+    "description": "National Static Electricity Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-10",
+    "month": 1,
+    "day": 10,
+    "title": "Houseplant Appreciation Day",
+    "description": "Houseplant Appreciation Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-11",
+    "month": 1,
+    "day": 11,
+    "title": "National Milk Day",
+    "description": "National Milk Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-12",
+    "month": 1,
+    "day": 12,
+    "title": "Kiss a Ginger Day",
+    "description": "Kiss a Ginger Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-13",
+    "month": 1,
+    "day": 13,
+    "title": "Old New Year",
+    "description": "Old New Year: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎉",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-14",
+    "month": 1,
+    "day": 14,
+    "title": "World Logic Day",
+    "description": "World Logic Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-15",
+    "month": 1,
+    "day": 15,
+    "title": "National Hat Day",
+    "description": "National Hat Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-16",
+    "month": 1,
+    "day": 16,
+    "title": "National Nothing Day",
+    "description": "National Nothing Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-17",
+    "month": 1,
+    "day": 17,
+    "title": "National Kid Inventors' Day",
+    "description": "National Kid Inventors' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-18",
+    "month": 1,
+    "day": 18,
+    "title": "National Winnie the Pooh Day",
+    "description": "National Winnie the Pooh Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-19",
+    "month": 1,
+    "day": 19,
+    "title": "Orthodox Epiphany (Theophany)",
+    "description": "Orthodox Epiphany (Theophany): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-20",
+    "month": 1,
+    "day": 20,
+    "title": "Penguin Awareness Day",
+    "description": "Penguin Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-21",
+    "month": 1,
+    "day": 21,
+    "title": "National Hugging Day",
+    "description": "National Hugging Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-22",
+    "month": 1,
+    "day": 22,
+    "title": "National Polka Dot Day",
+    "description": "National Polka Dot Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-23",
+    "month": 1,
+    "day": 23,
+    "title": "National Pie Day",
+    "description": "National Pie Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-24",
+    "month": 1,
+    "day": 24,
+    "title": "International Day of Education",
+    "description": "International Day of Education: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "📚",
+    "category": "knowledge",
+    "sharingHook": "Learn something new"
+  },
+  {
+    "id": "01-25",
+    "month": 1,
+    "day": 25,
+    "title": "Burns Night",
+    "description": "Burns Night: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-26",
+    "month": 1,
+    "day": 26,
+    "title": "International Day of Clean Energy",
+    "description": "International Day of Clean Energy: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-27",
+    "month": 1,
+    "day": 27,
+    "title": "International Day of Commemoration in Memory of the Victims of the Holocaust",
+    "description": "International Day of Commemoration in Memory of the Victims of the Holocaust: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "01-28",
+    "month": 1,
+    "day": 28,
+    "title": "International Day of Peaceful Coexistence",
+    "description": "International Day of Peaceful Coexistence: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "01-29",
+    "month": 1,
+    "day": 29,
+    "title": "National Puzzle Day",
+    "description": "National Puzzle Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "01-30",
+    "month": 1,
+    "day": 30,
+    "title": "School Day of Nonviolence and Peace (DENIP)",
+    "description": "School Day of Nonviolence and Peace (DENIP): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "01-31",
+    "month": 1,
+    "day": 31,
+    "title": "Feast of Saint John Bosco",
+    "description": "Feast of Saint John Bosco: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-01",
+    "month": 2,
+    "day": 1,
+    "title": "World Hijab Day",
+    "description": "World Hijab Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-02",
+    "month": 2,
+    "day": 2,
+    "title": "World Wetlands Day",
+    "description": "World Wetlands Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-03",
+    "month": 2,
+    "day": 3,
+    "title": "Four Chaplains Day",
+    "description": "Four Chaplains Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-04",
+    "month": 2,
+    "day": 4,
+    "title": "International Day of Human Fraternity",
+    "description": "International Day of Human Fraternity: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-05",
+    "month": 2,
+    "day": 5,
+    "title": "World Nutella Day",
+    "description": "World Nutella Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-06",
+    "month": 2,
+    "day": 6,
+    "title": "International Day of Zero Tolerance to Female Genital Mutilation",
+    "description": "International Day of Zero Tolerance to Female Genital Mutilation: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-07",
+    "month": 2,
+    "day": 7,
+    "title": "Rose Day (Valentine's Week)",
+    "description": "Rose Day (Valentine's Week): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💕",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-08",
+    "month": 2,
+    "day": 8,
+    "title": "Propose Day (Valentine's Week)",
+    "description": "Propose Day (Valentine's Week): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💕",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-09",
+    "month": 2,
+    "day": 9,
+    "title": "National Pizza Day",
+    "description": "National Pizza Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-10",
+    "month": 2,
+    "day": 10,
+    "title": "World Pulses Day",
+    "description": "World Pulses Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-11",
+    "month": 2,
+    "day": 11,
+    "title": "International Day of Women and Girls in Science",
+    "description": "International Day of Women and Girls in Science: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👩",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-12",
+    "month": 2,
+    "day": 12,
+    "title": "International Day for the Prevention of Violent Extremism as and when Conducive to Terrorism",
+    "description": "International Day for the Prevention of Violent Extremism as and when Conducive to Terrorism: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-13",
+    "month": 2,
+    "day": 13,
+    "title": "World Radio Day",
+    "description": "World Radio Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-14",
+    "month": 2,
+    "day": 14,
+    "title": "Valentine's Day",
+    "description": "Valentine's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💕",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-15",
+    "month": 2,
+    "day": 15,
+    "title": "Parinirvana Day (Nirvana Day)",
+    "description": "Parinirvana Day (Nirvana Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-16",
+    "month": 2,
+    "day": 16,
+    "title": "Restoration of Lithuania's Statehood Day",
+    "description": "Restoration of Lithuania's Statehood Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-17",
+    "month": 2,
+    "day": 17,
+    "title": "Global Tourism Resilience Day",
+    "description": "Global Tourism Resilience Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-18",
+    "month": 2,
+    "day": 18,
+    "title": "National Battery Day",
+    "description": "National Battery Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-19",
+    "month": 2,
+    "day": 19,
+    "title": "Iwo Jima Day",
+    "description": "Iwo Jima Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-20",
+    "month": 2,
+    "day": 20,
+    "title": "World Day of Social Justice",
+    "description": "World Day of Social Justice: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-21",
+    "month": 2,
+    "day": 21,
+    "title": "International Mother Language Day",
+    "description": "International Mother Language Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "02-22",
+    "month": 2,
+    "day": 22,
+    "title": "World Thinking Day",
+    "description": "World Thinking Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-23",
+    "month": 2,
+    "day": 23,
+    "title": "Defender of the Fatherland Day",
+    "description": "Defender of the Fatherland Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-24",
+    "month": 2,
+    "day": 24,
+    "title": "Independence Day (Estonia)",
+    "description": "Independence Day (Estonia): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-25",
+    "month": 2,
+    "day": 25,
+    "title": "People Power Day (EDSA Anniversary)",
+    "description": "People Power Day (EDSA Anniversary): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-26",
+    "month": 2,
+    "day": 26,
+    "title": "Liberation Day (Kuwait)",
+    "description": "Liberation Day (Kuwait): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-27",
+    "month": 2,
+    "day": 27,
+    "title": "World NGO Day",
+    "description": "World NGO Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "02-28",
+    "month": 2,
+    "day": 28,
+    "title": "National Science Day (India)",
+    "description": "National Science Day (India): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔬",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "02-29",
+    "month": 2,
+    "day": 29,
+    "title": "Rare Disease Day",
+    "description": "Rare Disease Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💪",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "03-01",
+    "month": 3,
+    "day": 1,
+    "title": "Zero Discrimination Day",
+    "description": "Zero Discrimination Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-02",
+    "month": 3,
+    "day": 2,
+    "title": "International Rescue Cat Day",
+    "description": "International Rescue Cat Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-03",
+    "month": 3,
+    "day": 3,
+    "title": "World Wildlife Day",
+    "description": "World Wildlife Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌿",
+    "category": "nature",
+    "sharingHook": "Share nature's beauty"
+  },
+  {
+    "id": "03-04",
+    "month": 3,
+    "day": 4,
+    "title": "World Engineering Day for Sustainable Development",
+    "description": "World Engineering Day for Sustainable Development: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "03-05",
+    "month": 3,
+    "day": 5,
+    "title": "International Day for Disarmament and Non-Proliferation Awareness",
+    "description": "International Day for Disarmament and Non-Proliferation Awareness: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-06",
+    "month": 3,
+    "day": 6,
+    "title": "National Oreo Cookie Day",
+    "description": "National Oreo Cookie Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-07",
+    "month": 3,
+    "day": 7,
+    "title": "National Cereal Day",
+    "description": "National Cereal Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-08",
+    "month": 3,
+    "day": 8,
+    "title": "International Women's Day",
+    "description": "International Women's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👩",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-09",
+    "month": 3,
+    "day": 9,
+    "title": "National Barbie Day",
+    "description": "National Barbie Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-10",
+    "month": 3,
+    "day": 10,
+    "title": "International Day of Women Judges",
+    "description": "International Day of Women Judges: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👩",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-11",
+    "month": 3,
+    "day": 11,
+    "title": "World Plumbing Day",
+    "description": "World Plumbing Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-12",
+    "month": 3,
+    "day": 12,
+    "title": "World Day Against Cyber-Censorship",
+    "description": "World Day Against Cyber-Censorship: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-13",
+    "month": 3,
+    "day": 13,
+    "title": "National Elephant Day (Thailand)",
+    "description": "National Elephant Day (Thailand): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-14",
+    "month": 3,
+    "day": 14,
+    "title": "International Day of Mathematics (Pi Day)",
+    "description": "International Day of Mathematics (Pi Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔬",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "03-15",
+    "month": 3,
+    "day": 15,
+    "title": "International Day to Combat Islamophobia",
+    "description": "International Day to Combat Islamophobia: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-16",
+    "month": 3,
+    "day": 16,
+    "title": "National Panda Day",
+    "description": "National Panda Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-17",
+    "month": 3,
+    "day": 17,
+    "title": "Saint Patrick's Day",
+    "description": "Saint Patrick's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-18",
+    "month": 3,
+    "day": 18,
+    "title": "Global Recycling Day",
+    "description": "Global Recycling Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-19",
+    "month": 3,
+    "day": 19,
+    "title": "Saint Joseph's Day",
+    "description": "Saint Joseph's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-20",
+    "month": 3,
+    "day": 20,
+    "title": "International Day of Happiness",
+    "description": "International Day of Happiness: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-21",
+    "month": 3,
+    "day": 21,
+    "title": "World Poetry Day",
+    "description": "World Poetry Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-22",
+    "month": 3,
+    "day": 22,
+    "title": "World Water Day",
+    "description": "World Water Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💧",
+    "category": "nature",
+    "sharingHook": "Share nature's beauty"
+  },
+  {
+    "id": "03-23",
+    "month": 3,
+    "day": 23,
+    "title": "World Meteorological Day",
+    "description": "World Meteorological Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-24",
+    "month": 3,
+    "day": 24,
+    "title": "World Tuberculosis Day",
+    "description": "World Tuberculosis Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-25",
+    "month": 3,
+    "day": 25,
+    "title": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
+    "description": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "03-26",
+    "month": 3,
+    "day": 26,
+    "title": "Purple Day (Epilepsy Awareness)",
+    "description": "Purple Day (Epilepsy Awareness): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-27",
+    "month": 3,
+    "day": 27,
+    "title": "World Theatre Day",
+    "description": "World Theatre Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "03-28",
+    "month": 3,
+    "day": 28,
+    "title": "Teachers' Day (Czech Republic & Slovakia)",
+    "description": "Teachers' Day (Czech Republic & Slovakia): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-29",
+    "month": 3,
+    "day": 29,
+    "title": "World Piano Day",
+    "description": "World Piano Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-30",
+    "month": 3,
+    "day": 30,
+    "title": "International Day of Zero Waste",
+    "description": "International Day of Zero Waste: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "03-31",
+    "month": 3,
+    "day": 31,
+    "title": "International Transgender Day of Visibility",
+    "description": "International Transgender Day of Visibility: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-01",
+    "month": 4,
+    "day": 1,
+    "title": "April Fools' Day",
+    "description": "April Fools' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-02",
+    "month": 4,
+    "day": 2,
+    "title": "World Autism Awareness Day",
+    "description": "World Autism Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-04",
+    "month": 4,
+    "day": 4,
+    "title": "International Day for Mine Awareness and Assistance in Mine Action",
+    "description": "International Day for Mine Awareness and Assistance in Mine Action: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "✊",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "04-05",
+    "month": 4,
+    "day": 5,
+    "title": "International Day of Conscience",
+    "description": "International Day of Conscience: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔬",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "04-06",
+    "month": 4,
+    "day": 6,
+    "title": "International Day of Sport for Development and Peace",
+    "description": "International Day of Sport for Development and Peace: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "04-07",
+    "month": 4,
+    "day": 7,
+    "title": "World Health Day",
+    "description": "World Health Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🏥",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "04-08",
+    "month": 4,
+    "day": 8,
+    "title": "International Romani Day",
+    "description": "International Romani Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-10",
+    "month": 4,
+    "day": 10,
+    "title": "Siblings Day",
+    "description": "Siblings Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-11",
+    "month": 4,
+    "day": 11,
+    "title": "World Parkinson's Day",
+    "description": "World Parkinson's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-12",
+    "month": 4,
+    "day": 12,
+    "title": "International Day of Human Space Flight",
+    "description": "International Day of Human Space Flight: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💡",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "04-13",
+    "month": 4,
+    "day": 13,
+    "title": "Songkran (Tay Yeni Yılı)",
+    "description": "Songkran (Tay Yeni Yılı): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-14",
+    "month": 4,
+    "day": 14,
+    "title": "World Chagas Disease Day",
+    "description": "World Chagas Disease Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💪",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "04-15",
+    "month": 4,
+    "day": 15,
+    "title": "International Wellness Day",
+    "description": "International Wellness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💪",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "04-16",
+    "month": 4,
+    "day": 16,
+    "title": "World Voice Day",
+    "description": "World Voice Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-17",
+    "month": 4,
+    "day": 17,
+    "title": "World Hemophilia Day",
+    "description": "World Hemophilia Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-18",
+    "month": 4,
+    "day": 18,
+    "title": "International Day For Monuments and Sites (World Heritage Day)",
+    "description": "International Day For Monuments and Sites (World Heritage Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "04-20",
+    "month": 4,
+    "day": 20,
+    "title": "UN Chinese Language Day",
+    "description": "UN Chinese Language Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "04-21",
+    "month": 4,
+    "day": 21,
+    "title": "World Creativity and Innovation Day",
+    "description": "World Creativity and Innovation Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-22",
+    "month": 4,
+    "day": 22,
+    "title": "International Mother Earth Day (Earth Day)",
+    "description": "International Mother Earth Day (Earth Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎨",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-23",
+    "month": 4,
+    "day": 23,
+    "title": "World Book and Copyright Day",
+    "description": "World Book and Copyright Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "📚",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-24",
+    "month": 4,
+    "day": 24,
+    "title": "International Day of Multilateralism and Diplomacy for Peace",
+    "description": "International Day of Multilateralism and Diplomacy for Peace: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "04-25",
+    "month": 4,
+    "day": 25,
+    "title": "World Malaria Day",
+    "description": "World Malaria Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-26",
+    "month": 4,
+    "day": 26,
+    "title": "World Intellectual Property Day",
+    "description": "World Intellectual Property Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-28",
+    "month": 4,
+    "day": 28,
+    "title": "World Day for Safety and Health at Work",
+    "description": "World Day for Safety and Health at Work: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🏥",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "04-29",
+    "month": 4,
+    "day": 29,
+    "title": "International Day in Memory of the Victims of Earthquakes",
+    "description": "International Day in Memory of the Victims of Earthquakes: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎨",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "04-30",
+    "month": 4,
+    "day": 30,
+    "title": "International Jazz Day",
+    "description": "International Jazz Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-01",
+    "month": 5,
+    "day": 1,
+    "title": "International Workers' Day / May Day",
+    "description": "International Workers' Day / May Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "✊",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "05-02",
+    "month": 5,
+    "day": 2,
+    "title": "World Tuna Day",
+    "description": "World Tuna Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-03",
+    "month": 5,
+    "day": 3,
+    "title": "World Press Freedom Day",
+    "description": "World Press Freedom Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-04",
+    "month": 5,
+    "day": 4,
+    "title": "Star Wars Day (\"May the 4th\")",
+    "description": "Star Wars Day (\"May the 4th\"): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-05",
+    "month": 5,
+    "day": 5,
+    "title": "World Portuguese Language Day",
+    "description": "World Portuguese Language Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "05-06",
+    "month": 5,
+    "day": 6,
+    "title": "International No Diet Day",
+    "description": "International No Diet Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💪",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "05-08",
+    "month": 5,
+    "day": 8,
+    "title": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War",
+    "description": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-09",
+    "month": 5,
+    "day": 9,
+    "title": "Victory Day (WWII Europe)",
+    "description": "Victory Day (WWII Europe): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-10",
+    "month": 5,
+    "day": 10,
+    "title": "International Day of Argania",
+    "description": "International Day of Argania: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-12",
+    "month": 5,
+    "day": 12,
+    "title": "International Day of Plant Health",
+    "description": "International Day of Plant Health: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🏥",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "05-15",
+    "month": 5,
+    "day": 15,
+    "title": "International Day of Families",
+    "description": "International Day of Families: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🤝",
+    "category": "community",
+    "sharingHook": "Be part of community"
+  },
+  {
+    "id": "05-16",
+    "month": 5,
+    "day": 16,
+    "title": "International Day of Light",
+    "description": "International Day of Light: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "💡",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-17",
+    "month": 5,
+    "day": 17,
+    "title": "World Telecommunication and Information Society Day",
+    "description": "World Telecommunication and Information Society Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🤝",
+    "category": "community",
+    "sharingHook": "Be part of community"
+  },
+  {
+    "id": "05-18",
+    "month": 5,
+    "day": 18,
+    "title": "International Museum Day",
+    "description": "International Museum Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "05-19",
+    "month": 5,
+    "day": 19,
+    "title": "World Fair Play Day",
+    "description": "World Fair Play Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-20",
+    "month": 5,
+    "day": 20,
+    "title": "World Bee Day",
+    "description": "World Bee Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-21",
+    "month": 5,
+    "day": 21,
+    "title": "International Tea Day",
+    "description": "International Tea Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-22",
+    "month": 5,
+    "day": 22,
+    "title": "International Day for Biological Diversity",
+    "description": "International Day for Biological Diversity: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌈",
+    "category": "diversity",
+    "sharingHook": "Celebrate diversity"
+  },
+  {
+    "id": "05-23",
+    "month": 5,
+    "day": 23,
+    "title": "International Day to End Obstetric Fistula",
+    "description": "International Day to End Obstetric Fistula: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-24",
+    "month": 5,
+    "day": 24,
+    "title": "International Day of the Markhor",
+    "description": "International Day of the Markhor: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-25",
+    "month": 5,
+    "day": 25,
+    "title": "World Football Day",
+    "description": "World Football Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "⚽",
+    "category": "sport",
+    "sharingHook": "Stay active"
+  },
+  {
+    "id": "05-28",
+    "month": 5,
+    "day": 28,
+    "title": "Menstrual Hygiene Day",
+    "description": "Menstrual Hygiene Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-29",
+    "month": 5,
+    "day": 29,
+    "title": "International Day of United Nations Peacekeepers",
+    "description": "International Day of United Nations Peacekeepers: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "05-30",
+    "month": 5,
+    "day": 30,
+    "title": "International Day of Potato",
+    "description": "International Day of Potato: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "05-31",
+    "month": 5,
+    "day": 31,
+    "title": "World No-Tobacco Day",
+    "description": "World No-Tobacco Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-01",
+    "month": 6,
+    "day": 1,
+    "title": "Global Day of Parents",
+    "description": "Global Day of Parents: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-02",
+    "month": 6,
+    "day": 2,
+    "title": "International Sex Workers' Day",
+    "description": "International Sex Workers' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "✊",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "06-03",
+    "month": 6,
+    "day": 3,
+    "title": "World Bicycle Day",
+    "description": "World Bicycle Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-04",
+    "month": 6,
+    "day": 4,
+    "title": "International Day of Innocent Children Victims of Aggression",
+    "description": "International Day of Innocent Children Victims of Aggression: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👶",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "06-05",
+    "month": 6,
+    "day": 5,
+    "title": "World Environment Day",
+    "description": "World Environment Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "nature",
+    "sharingHook": "Share nature's beauty"
+  },
+  {
+    "id": "06-06",
+    "month": 6,
+    "day": 6,
+    "title": "UN Russian Language Day",
+    "description": "UN Russian Language Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "06-07",
+    "month": 6,
+    "day": 7,
+    "title": "World Food Safety Day",
+    "description": "World Food Safety Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🍽️",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-08",
+    "month": 6,
+    "day": 8,
+    "title": "World Oceans Day",
+    "description": "World Oceans Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌊",
+    "category": "nature",
+    "sharingHook": "Share nature's beauty"
+  },
+  {
+    "id": "06-10",
+    "month": 6,
+    "day": 10,
+    "title": "International Day for Dialogue among Civilizations",
+    "description": "International Day for Dialogue among Civilizations: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-11",
+    "month": 6,
+    "day": 11,
+    "title": "International Day of Play",
+    "description": "International Day of Play: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-12",
+    "month": 6,
+    "day": 12,
+    "title": "World Day Against Child Labour",
+    "description": "World Day Against Child Labour: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-13",
+    "month": 6,
+    "day": 13,
+    "title": "International Albinism Awareness Day",
+    "description": "International Albinism Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-14",
+    "month": 6,
+    "day": 14,
+    "title": "World Blood Donor Day",
+    "description": "World Blood Donor Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-15",
+    "month": 6,
+    "day": 15,
+    "title": "World Elder Abuse Awareness Day",
+    "description": "World Elder Abuse Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-16",
+    "month": 6,
+    "day": 16,
+    "title": "International Day of Family Remittances",
+    "description": "International Day of Family Remittances: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-17",
+    "month": 6,
+    "day": 17,
+    "title": "World Day to Combat Desertification and Drought",
+    "description": "World Day to Combat Desertification and Drought: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-18",
+    "month": 6,
+    "day": 18,
+    "title": "International Day for Countering Hate Speech",
+    "description": "International Day for Countering Hate Speech: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-19",
+    "month": 6,
+    "day": 19,
+    "title": "International Day for the Elimination of Sexual Violence in Conflict",
+    "description": "International Day for the Elimination of Sexual Violence in Conflict: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "06-20",
+    "month": 6,
+    "day": 20,
+    "title": "World Refugee Day",
+    "description": "World Refugee Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-21",
+    "month": 6,
+    "day": 21,
+    "title": "International Day of Yoga",
+    "description": "International Day of Yoga: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-22",
+    "month": 6,
+    "day": 22,
+    "title": "World Rainforest Day",
+    "description": "World Rainforest Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌲",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-23",
+    "month": 6,
+    "day": 23,
+    "title": "International Widows' Day",
+    "description": "International Widows' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-24",
+    "month": 6,
+    "day": 24,
+    "title": "International Day of Women in Diplomacy",
+    "description": "International Day of Women in Diplomacy: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👩",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-25",
+    "month": 6,
+    "day": 25,
+    "title": "Day of the Seafarer",
+    "description": "Day of the Seafarer: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-26",
+    "month": 6,
+    "day": 26,
+    "title": "International Day against Drug Abuse and Illicit Trafficking",
+    "description": "International Day against Drug Abuse and Illicit Trafficking: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-27",
+    "month": 6,
+    "day": 27,
+    "title": "Micro-, Small and Medium-sized Enterprises Day",
+    "description": "Micro-, Small and Medium-sized Enterprises Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-28",
+    "month": 6,
+    "day": 28,
+    "title": "International LGBTQ+ Pride Day",
+    "description": "International LGBTQ+ Pride Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌈",
+    "category": "diversity",
+    "sharingHook": "Celebrate diversity"
+  },
+  {
+    "id": "06-29",
+    "month": 6,
+    "day": 29,
+    "title": "International Day of the Tropics",
+    "description": "International Day of the Tropics: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "06-30",
+    "month": 6,
+    "day": 30,
+    "title": "International Asteroid Day",
+    "description": "International Asteroid Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-01",
+    "month": 7,
+    "day": 1,
+    "title": "Canada Day",
+    "description": "Canada Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-02",
+    "month": 7,
+    "day": 2,
+    "title": "World UFO Day",
+    "description": "World UFO Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-03",
+    "month": 7,
+    "day": 3,
+    "title": "International Plastic Bag Free Day",
+    "description": "International Plastic Bag Free Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-04",
+    "month": 7,
+    "day": 4,
+    "title": "Independence Day (United States)",
+    "description": "Independence Day (United States): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-05",
+    "month": 7,
+    "day": 5,
+    "title": "International Day of Cooperatives",
+    "description": "International Day of Cooperatives: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-06",
+    "month": 7,
+    "day": 6,
+    "title": "World Rural Development Day",
+    "description": "World Rural Development Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "07-07",
+    "month": 7,
+    "day": 7,
+    "title": "World Kiswahili Language Day",
+    "description": "World Kiswahili Language Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "07-08",
+    "month": 7,
+    "day": 8,
+    "title": "National Video Game Day",
+    "description": "National Video Game Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-09",
+    "month": 7,
+    "day": 9,
+    "title": "Independence Day (Argentina)",
+    "description": "Independence Day (Argentina): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-10",
+    "month": 7,
+    "day": 10,
+    "title": "Nikola Tesla Day",
+    "description": "Nikola Tesla Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-11",
+    "month": 7,
+    "day": 11,
+    "title": "World Population Day",
+    "description": "World Population Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-12",
+    "month": 7,
+    "day": 12,
+    "title": "International Day of Combating Sand and Dust Storms",
+    "description": "International Day of Combating Sand and Dust Storms: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-13",
+    "month": 7,
+    "day": 13,
+    "title": "Statehood Day (Montenegro)",
+    "description": "Statehood Day (Montenegro): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-14",
+    "month": 7,
+    "day": 14,
+    "title": "Bastille Day",
+    "description": "Bastille Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-15",
+    "month": 7,
+    "day": 15,
+    "title": "World Youth Skills Day",
+    "description": "World Youth Skills Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-16",
+    "month": 7,
+    "day": 16,
+    "title": "Our Lady of Mount Carmel",
+    "description": "Our Lady of Mount Carmel: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-17",
+    "month": 7,
+    "day": 17,
+    "title": "World Emoji Day",
+    "description": "World Emoji Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-18",
+    "month": 7,
+    "day": 18,
+    "title": "Nelson Mandela International Day",
+    "description": "Nelson Mandela International Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-19",
+    "month": 7,
+    "day": 19,
+    "title": "Liberation Day / Sandinista Day (Nicaragua)",
+    "description": "Liberation Day / Sandinista Day (Nicaragua): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-20",
+    "month": 7,
+    "day": 20,
+    "title": "International Moon Day",
+    "description": "International Moon Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-21",
+    "month": 7,
+    "day": 21,
+    "title": "Belgian National Day",
+    "description": "Belgian National Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-22",
+    "month": 7,
+    "day": 22,
+    "title": "Pi Approximation Day",
+    "description": "Pi Approximation Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-23",
+    "month": 7,
+    "day": 23,
+    "title": "Revolution Day (Egypt)",
+    "description": "Revolution Day (Egypt): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-24",
+    "month": 7,
+    "day": 24,
+    "title": "Simón Bolívar Day",
+    "description": "Simón Bolívar Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-25",
+    "month": 7,
+    "day": 25,
+    "title": "World Drowning Prevention Day",
+    "description": "World Drowning Prevention Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-26",
+    "month": 7,
+    "day": 26,
+    "title": "Esperanto Day",
+    "description": "Esperanto Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-27",
+    "month": 7,
+    "day": 27,
+    "title": "National Sleepy Head Day (Finland)",
+    "description": "National Sleepy Head Day (Finland): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "😴",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-28",
+    "month": 7,
+    "day": 28,
+    "title": "World Hepatitis Day",
+    "description": "World Hepatitis Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-29",
+    "month": 7,
+    "day": 29,
+    "title": "International Tiger Day",
+    "description": "International Tiger Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-30",
+    "month": 7,
+    "day": 30,
+    "title": "International Day of Friendship",
+    "description": "International Day of Friendship: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "07-31",
+    "month": 7,
+    "day": 31,
+    "title": "Harry Potter's Birthday",
+    "description": "Harry Potter's Birthday: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-01",
+    "month": 8,
+    "day": 1,
+    "title": "World Breastfeeding Week (başlangıç)",
+    "description": "World Breastfeeding Week (başlangıç): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-02",
+    "month": 8,
+    "day": 2,
+    "title": "Roma Holocaust Memorial Day",
+    "description": "Roma Holocaust Memorial Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "08-06",
+    "month": 8,
+    "day": 6,
+    "title": "International Day of Awareness of the Special Development Needs and Challenges of Landlocked Developing Countries",
+    "description": "International Day of Awareness of the Special Development Needs and Challenges of Landlocked Developing Countries: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "08-08",
+    "month": 8,
+    "day": 8,
+    "title": "International Cat Day",
+    "description": "International Cat Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-09",
+    "month": 8,
+    "day": 9,
+    "title": "International Day of the World's Indigenous Peoples",
+    "description": "International Day of the World's Indigenous Peoples: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌈",
+    "category": "diversity",
+    "sharingHook": "Celebrate diversity"
+  },
+  {
+    "id": "08-10",
+    "month": 8,
+    "day": 10,
+    "title": "World Lion Day",
+    "description": "World Lion Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-11",
+    "month": 8,
+    "day": 11,
+    "title": "World Steelpan Day",
+    "description": "World Steelpan Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-12",
+    "month": 8,
+    "day": 12,
+    "title": "International Youth Day",
+    "description": "International Youth Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-13",
+    "month": 8,
+    "day": 13,
+    "title": "International Lefthanders Day",
+    "description": "International Lefthanders Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-14",
+    "month": 8,
+    "day": 14,
+    "title": "Independence Day (Pakistan)",
+    "description": "Independence Day (Pakistan): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-15",
+    "month": 8,
+    "day": 15,
+    "title": "Assumption of Mary",
+    "description": "Assumption of Mary: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-17",
+    "month": 8,
+    "day": 17,
+    "title": "Independence Day (Indonesia)",
+    "description": "Independence Day (Indonesia): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-19",
+    "month": 8,
+    "day": 19,
+    "title": "World Humanitarian Day",
+    "description": "World Humanitarian Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-20",
+    "month": 8,
+    "day": 20,
+    "title": "World Mosquito Day",
+    "description": "World Mosquito Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-21",
+    "month": 8,
+    "day": 21,
+    "title": "International Day of Remembrance and Tribute to the Victims of Terrorism",
+    "description": "International Day of Remembrance and Tribute to the Victims of Terrorism: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "08-22",
+    "month": 8,
+    "day": 22,
+    "title": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief",
+    "description": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "08-23",
+    "month": 8,
+    "day": 23,
+    "title": "International Day for the Remembrance of the Slave Trade and its Abolition",
+    "description": "International Day for the Remembrance of the Slave Trade and its Abolition: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-24",
+    "month": 8,
+    "day": 24,
+    "title": "Independence Day (Ukraine)",
+    "description": "Independence Day (Ukraine): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-26",
+    "month": 8,
+    "day": 26,
+    "title": "International Dog Day",
+    "description": "International Dog Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-27",
+    "month": 8,
+    "day": 27,
+    "title": "World Lake Day",
+    "description": "World Lake Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-29",
+    "month": 8,
+    "day": 29,
+    "title": "International Day against Nuclear Tests",
+    "description": "International Day against Nuclear Tests: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-30",
+    "month": 8,
+    "day": 30,
+    "title": "International Day of the Victims of Enforced Disappearances",
+    "description": "International Day of the Victims of Enforced Disappearances: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "08-31",
+    "month": 8,
+    "day": 31,
+    "title": "International Day for People of African Descent",
+    "description": "International Day for People of African Descent: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-01",
+    "month": 9,
+    "day": 1,
+    "title": "Knowledge Day",
+    "description": "Knowledge Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-02",
+    "month": 9,
+    "day": 2,
+    "title": "Victory over Japan Day (V-J Day)",
+    "description": "Victory over Japan Day (V-J Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-03",
+    "month": 9,
+    "day": 3,
+    "title": "Skyscraper Day",
+    "description": "Skyscraper Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-04",
+    "month": 9,
+    "day": 4,
+    "title": "National Wildlife Day",
+    "description": "National Wildlife Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🌿",
+    "category": "nature",
+    "sharingHook": "Share nature's beauty"
+  },
+  {
+    "id": "09-05",
+    "month": 9,
+    "day": 5,
+    "title": "International Day of Charity",
+    "description": "International Day of Charity: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-06",
+    "month": 9,
+    "day": 6,
+    "title": "National Read a Book Day",
+    "description": "National Read a Book Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "📚",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-07",
+    "month": 9,
+    "day": 7,
+    "title": "International Day of Clean Air for Blue Skies",
+    "description": "International Day of Clean Air for Blue Skies: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-08",
+    "month": 9,
+    "day": 8,
+    "title": "International Literacy Day",
+    "description": "International Literacy Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "📚",
+    "category": "knowledge",
+    "sharingHook": "Learn something new"
+  },
+  {
+    "id": "09-09",
+    "month": 9,
+    "day": 9,
+    "title": "International Day to Protect Education from Attack",
+    "description": "International Day to Protect Education from Attack: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "📚",
+    "category": "knowledge",
+    "sharingHook": "Learn something new"
+  },
+  {
+    "id": "09-10",
+    "month": 9,
+    "day": 10,
+    "title": "World Suicide Prevention Day",
+    "description": "World Suicide Prevention Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-11",
+    "month": 9,
+    "day": 11,
+    "title": "September 11 attacks anniversary",
+    "description": "September 11 attacks anniversary: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-12",
+    "month": 9,
+    "day": 12,
+    "title": "United Nations Day for South-South Cooperation",
+    "description": "United Nations Day for South-South Cooperation: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-13",
+    "month": 9,
+    "day": 13,
+    "title": "Roald Dahl Day",
+    "description": "Roald Dahl Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-14",
+    "month": 9,
+    "day": 14,
+    "title": "Exaltation of the Holy Cross",
+    "description": "Exaltation of the Holy Cross: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-15",
+    "month": 9,
+    "day": 15,
+    "title": "International Day of Democracy",
+    "description": "International Day of Democracy: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-16",
+    "month": 9,
+    "day": 16,
+    "title": "International Day for the Preservation of the Ozone Layer",
+    "description": "International Day for the Preservation of the Ozone Layer: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-17",
+    "month": 9,
+    "day": 17,
+    "title": "World Patient Safety Day",
+    "description": "World Patient Safety Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-18",
+    "month": 9,
+    "day": 18,
+    "title": "International Equal Pay Day",
+    "description": "International Equal Pay Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-19",
+    "month": 9,
+    "day": 19,
+    "title": "International Talk Like a Pirate Day",
+    "description": "International Talk Like a Pirate Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-20",
+    "month": 9,
+    "day": 20,
+    "title": "World Cleanup Day",
+    "description": "World Cleanup Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-21",
+    "month": 9,
+    "day": 21,
+    "title": "International Day of Peace",
+    "description": "International Day of Peace: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "09-22",
+    "month": 9,
+    "day": 22,
+    "title": "World Car Free Day",
+    "description": "World Car Free Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-23",
+    "month": 9,
+    "day": 23,
+    "title": "International Day of Sign Languages",
+    "description": "International Day of Sign Languages: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "09-24",
+    "month": 9,
+    "day": 24,
+    "title": "World Maritime Day",
+    "description": "World Maritime Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-25",
+    "month": 9,
+    "day": 25,
+    "title": "World Pharmacists Day",
+    "description": "World Pharmacists Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-26",
+    "month": 9,
+    "day": 26,
+    "title": "International Day for the Total Elimination of Nuclear Weapons",
+    "description": "International Day for the Total Elimination of Nuclear Weapons: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-27",
+    "month": 9,
+    "day": 27,
+    "title": "World Tourism Day",
+    "description": "World Tourism Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-28",
+    "month": 9,
+    "day": 28,
+    "title": "International Day for Universal Access to Information",
+    "description": "International Day for Universal Access to Information: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-29",
+    "month": 9,
+    "day": 29,
+    "title": "International Day of Awareness of Food Loss and Waste",
+    "description": "International Day of Awareness of Food Loss and Waste: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🍽️",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "09-30",
+    "month": 9,
+    "day": 30,
+    "title": "International Translation Day",
+    "description": "International Translation Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-01",
+    "month": 10,
+    "day": 1,
+    "title": "International Coffee Day",
+    "description": "International Coffee Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☕",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-02",
+    "month": 10,
+    "day": 2,
+    "title": "International Day of Non-Violence",
+    "description": "International Day of Non-Violence: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "10-03",
+    "month": 10,
+    "day": 3,
+    "title": "Mean Girls Day",
+    "description": "Mean Girls Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-04",
+    "month": 10,
+    "day": 4,
+    "title": "World Space Week (başlangıç, 4–10 Ekim)",
+    "description": "World Space Week (başlangıç, 4–10 Ekim): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🚀",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "10-05",
+    "month": 10,
+    "day": 5,
+    "title": "World Teachers' Day",
+    "description": "World Teachers' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-06",
+    "month": 10,
+    "day": 6,
+    "title": "World Cerebral Palsy Day",
+    "description": "World Cerebral Palsy Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-07",
+    "month": 10,
+    "day": 7,
+    "title": "World Cotton Day",
+    "description": "World Cotton Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-08",
+    "month": 10,
+    "day": 8,
+    "title": "International Lesbian Day",
+    "description": "International Lesbian Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-09",
+    "month": 10,
+    "day": 9,
+    "title": "World Post Day",
+    "description": "World Post Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-10",
+    "month": 10,
+    "day": 10,
+    "title": "World Mental Health Day",
+    "description": "World Mental Health Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "10-11",
+    "month": 10,
+    "day": 11,
+    "title": "International Day of the Girl Child",
+    "description": "International Day of the Girl Child: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-12",
+    "month": 10,
+    "day": 12,
+    "title": "Fiesta Nacional de España / Día de la Hispanidad",
+    "description": "Fiesta Nacional de España / Día de la Hispanidad: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-13",
+    "month": 10,
+    "day": 13,
+    "title": "International Day for Disaster Risk Reduction",
+    "description": "International Day for Disaster Risk Reduction: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-14",
+    "month": 10,
+    "day": 14,
+    "title": "World Standards Day",
+    "description": "World Standards Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-15",
+    "month": 10,
+    "day": 15,
+    "title": "International Day of Rural Women",
+    "description": "International Day of Rural Women: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👩",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-16",
+    "month": 10,
+    "day": 16,
+    "title": "World Food Day",
+    "description": "World Food Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🍽️",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-17",
+    "month": 10,
+    "day": 17,
+    "title": "International Day for the Eradication of Poverty",
+    "description": "International Day for the Eradication of Poverty: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-18",
+    "month": 10,
+    "day": 18,
+    "title": "World Menopause Day",
+    "description": "World Menopause Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-20",
+    "month": 10,
+    "day": 20,
+    "title": "World Osteoporosis Day",
+    "description": "World Osteoporosis Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-21",
+    "month": 10,
+    "day": 21,
+    "title": "Back to the Future Day",
+    "description": "Back to the Future Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-22",
+    "month": 10,
+    "day": 22,
+    "title": "International Stuttering Awareness Day",
+    "description": "International Stuttering Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-23",
+    "month": 10,
+    "day": 23,
+    "title": "International Day of the Snow Leopard",
+    "description": "International Day of the Snow Leopard: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-24",
+    "month": 10,
+    "day": 24,
+    "title": "United Nations Day",
+    "description": "United Nations Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-25",
+    "month": 10,
+    "day": 25,
+    "title": "World Pasta Day",
+    "description": "World Pasta Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-26",
+    "month": 10,
+    "day": 26,
+    "title": "Intersex Awareness Day",
+    "description": "Intersex Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-27",
+    "month": 10,
+    "day": 27,
+    "title": "World Day for Audiovisual Heritage",
+    "description": "World Day for Audiovisual Heritage: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "10-28",
+    "month": 10,
+    "day": 28,
+    "title": "International Animation Day",
+    "description": "International Animation Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-29",
+    "month": 10,
+    "day": 29,
+    "title": "International Day of Care and Support",
+    "description": "International Day of Care and Support: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "10-31",
+    "month": 10,
+    "day": 31,
+    "title": "Halloween",
+    "description": "Halloween: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👻",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-01",
+    "month": 11,
+    "day": 1,
+    "title": "All Saints' Day",
+    "description": "All Saints' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-02",
+    "month": 11,
+    "day": 2,
+    "title": "International Day to End Impunity for Crimes against Journalists",
+    "description": "International Day to End Impunity for Crimes against Journalists: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-05",
+    "month": 11,
+    "day": 5,
+    "title": "World Tsunami Awareness Day",
+    "description": "World Tsunami Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-06",
+    "month": 11,
+    "day": 6,
+    "title": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
+    "description": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "11-07",
+    "month": 11,
+    "day": 7,
+    "title": "International Inuit Day",
+    "description": "International Inuit Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-08",
+    "month": 11,
+    "day": 8,
+    "title": "World Town Planning Day",
+    "description": "World Town Planning Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-09",
+    "month": 11,
+    "day": 9,
+    "title": "World Freedom Day",
+    "description": "World Freedom Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-10",
+    "month": 11,
+    "day": 10,
+    "title": "World Science Day for Peace and Development",
+    "description": "World Science Day for Peace and Development: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "11-11",
+    "month": 11,
+    "day": 11,
+    "title": "Armistice Day / Remembrance Day / Veterans Day",
+    "description": "Armistice Day / Remembrance Day / Veterans Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-12",
+    "month": 11,
+    "day": 12,
+    "title": "World Pneumonia Day",
+    "description": "World Pneumonia Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-13",
+    "month": 11,
+    "day": 13,
+    "title": "World Kindness Day",
+    "description": "World Kindness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-14",
+    "month": 11,
+    "day": 14,
+    "title": "World Diabetes Day",
+    "description": "World Diabetes Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-15",
+    "month": 11,
+    "day": 15,
+    "title": "International Day for the Prevention of and Fight against All Forms of Transnational Organized Crime",
+    "description": "International Day for the Prevention of and Fight against All Forms of Transnational Organized Crime: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-16",
+    "month": 11,
+    "day": 16,
+    "title": "International Day for Tolerance",
+    "description": "International Day for Tolerance: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-17",
+    "month": 11,
+    "day": 17,
+    "title": "World Day of Remembrance for Road Traffic Victims",
+    "description": "World Day of Remembrance for Road Traffic Victims: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "11-18",
+    "month": 11,
+    "day": 18,
+    "title": "World Day for the Prevention of and Healing from Child Sexual Exploitation, Abuse and Violence",
+    "description": "World Day for the Prevention of and Healing from Child Sexual Exploitation, Abuse and Violence: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-19",
+    "month": 11,
+    "day": 19,
+    "title": "World Toilet Day",
+    "description": "World Toilet Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-20",
+    "month": 11,
+    "day": 20,
+    "title": "World Children's Day",
+    "description": "World Children's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👶",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-21",
+    "month": 11,
+    "day": 21,
+    "title": "World Television Day",
+    "description": "World Television Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-22",
+    "month": 11,
+    "day": 22,
+    "title": "St. Cecilia's Day",
+    "description": "St. Cecilia's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-24",
+    "month": 11,
+    "day": 24,
+    "title": "World Conjoined Twins Day",
+    "description": "World Conjoined Twins Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-25",
+    "month": 11,
+    "day": 25,
+    "title": "International Day for the Elimination of Violence against Women",
+    "description": "International Day for the Elimination of Violence against Women: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👩",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-26",
+    "month": 11,
+    "day": 26,
+    "title": "World Sustainable Transport Day",
+    "description": "World Sustainable Transport Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "⚽",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "11-27",
+    "month": 11,
+    "day": 27,
+    "title": "International Day of Engagement in Science for Sustainable Development",
+    "description": "International Day of Engagement in Science for Sustainable Development: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "science",
+    "sharingHook": "Engage with science"
+  },
+  {
+    "id": "11-29",
+    "month": 11,
+    "day": 29,
+    "title": "International Day of Solidarity with the Palestinian People",
+    "description": "International Day of Solidarity with the Palestinian People: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🤝",
+    "category": "community",
+    "sharingHook": "Be part of community"
+  },
+  {
+    "id": "11-30",
+    "month": 11,
+    "day": 30,
+    "title": "Day of Remembrance for all Victims of Chemical Warfare",
+    "description": "Day of Remembrance for all Victims of Chemical Warfare: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "☮️",
+    "category": "peace",
+    "sharingHook": "Be a voice for peace"
+  },
+  {
+    "id": "12-01",
+    "month": 12,
+    "day": 1,
+    "title": "World AIDS Day",
+    "description": "World AIDS Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-02",
+    "month": 12,
+    "day": 2,
+    "title": "International Day for the Abolition of Slavery",
+    "description": "International Day for the Abolition of Slavery: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-03",
+    "month": 12,
+    "day": 3,
+    "title": "International Day of Persons with Disabilities",
+    "description": "International Day of Persons with Disabilities: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-04",
+    "month": 12,
+    "day": 4,
+    "title": "International Day of Banks",
+    "description": "International Day of Banks: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-05",
+    "month": 12,
+    "day": 5,
+    "title": "International Volunteer Day for Economic and Social Development",
+    "description": "International Volunteer Day for Economic and Social Development: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "👨",
+    "category": "action",
+    "sharingHook": "Take positive action"
+  },
+  {
+    "id": "12-06",
+    "month": 12,
+    "day": 6,
+    "title": "Saint Nicholas Day",
+    "description": "Saint Nicholas Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-07",
+    "month": 12,
+    "day": 7,
+    "title": "International Civil Aviation Day",
+    "description": "International Civil Aviation Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-08",
+    "month": 12,
+    "day": 8,
+    "title": "Feast of the Immaculate Conception",
+    "description": "Feast of the Immaculate Conception: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-09",
+    "month": 12,
+    "day": 9,
+    "title": "International Anti-Corruption Day",
+    "description": "International Anti-Corruption Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-10",
+    "month": 12,
+    "day": 10,
+    "title": "Human Rights Day",
+    "description": "Human Rights Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-11",
+    "month": 12,
+    "day": 11,
+    "title": "International Mountain Day",
+    "description": "International Mountain Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-12",
+    "month": 12,
+    "day": 12,
+    "title": "International Universal Health Coverage Day",
+    "description": "International Universal Health Coverage Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🏥",
+    "category": "wellness",
+    "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "12-13",
+    "month": 12,
+    "day": 13,
+    "title": "Saint Lucy's Day",
+    "description": "Saint Lucy's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-14",
+    "month": 12,
+    "day": 14,
+    "title": "International Day against Colonialism in All its Forms and Manifestations",
+    "description": "International Day against Colonialism in All its Forms and Manifestations: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-15",
+    "month": 12,
+    "day": 15,
+    "title": "World Turkic Language Family Day",
+    "description": "World Turkic Language Family Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "12-16",
+    "month": 12,
+    "day": 16,
+    "title": "Las Posadas (başlangıcı)",
+    "description": "Las Posadas (başlangıcı): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-17",
+    "month": 12,
+    "day": 17,
+    "title": "Wright Brothers Day",
+    "description": "Wright Brothers Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-18",
+    "month": 12,
+    "day": 18,
+    "title": "International Migrants Day",
+    "description": "International Migrants Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-19",
+    "month": 12,
+    "day": 19,
+    "title": "National Hard Candy Day",
+    "description": "National Hard Candy Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-20",
+    "month": 12,
+    "day": 20,
+    "title": "International Human Solidarity Day",
+    "description": "International Human Solidarity Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🤝",
+    "category": "community",
+    "sharingHook": "Be part of community"
+  },
+  {
+    "id": "12-21",
+    "month": 12,
+    "day": 21,
+    "title": "World Basketball Day",
+    "description": "World Basketball Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "⚽",
+    "category": "sport",
+    "sharingHook": "Stay active"
+  },
+  {
+    "id": "12-22",
+    "month": 12,
+    "day": 22,
+    "title": "Dongzhi Festival",
+    "description": "Dongzhi Festival: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-23",
+    "month": 12,
+    "day": 23,
+    "title": "Festivus",
+    "description": "Festivus: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎭",
+    "category": "culture",
+    "sharingHook": "Explore culture"
+  },
+  {
+    "id": "12-24",
+    "month": 12,
+    "day": 24,
+    "title": "Christmas Eve",
+    "description": "Christmas Eve: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎄",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-25",
+    "month": 12,
+    "day": 25,
+    "title": "Christmas Day",
+    "description": "Christmas Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎄",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-26",
+    "month": 12,
+    "day": 26,
+    "title": "Boxing Day",
+    "description": "Boxing Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-27",
+    "month": 12,
+    "day": 27,
+    "title": "National Fruitcake Day",
+    "description": "National Fruitcake Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-28",
+    "month": 12,
+    "day": 28,
+    "title": "Day of the Holy Innocents",
+    "description": "Day of the Holy Innocents: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-29",
+    "month": 12,
+    "day": 29,
+    "title": "Tick Tock Day",
+    "description": "Tick Tock Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-30",
+    "month": 12,
+    "day": 30,
+    "title": "Bacon Day",
+    "description": "Bacon Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🔔",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "12-31",
+    "month": 12,
+    "day": 31,
+    "title": "New Year's Eve",
+    "description": "New Year's Eve: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "emoji": "🎉",
+    "category": "awareness",
+    "sharingHook": "Raise awareness"
+  }
 ]
