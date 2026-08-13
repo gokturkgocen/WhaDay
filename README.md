@@ -1,18 +1,21 @@
 # WhaDay
 
-Native React Native iOS app for daily themed moments and shareable story cards.
+Native iOS app (SwiftUI) for daily themed moments and shareable story cards, with a home-screen
+WidgetKit widget.
 
 ## Development
 
-```sh
-npm install
-npm run pods
-npm run ios
-```
-
-## Checks
+Requires [xcodegen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`).
 
 ```sh
-npm run typecheck
-npx react-native bundle --platform ios --dev false --entry-file index.ts --bundle-output /tmp/whaday-main.jsbundle --assets-dest /tmp/whaday-assets
+xcodegen generate
+open WhaDay.xcodeproj
 ```
+
+`WhaDay.xcodeproj` is generated from `project.yml` and is not checked in — never edit it directly;
+edit `project.yml` and re-run `xcodegen generate` instead.
+
+## Structure
+
+- `WhaDayNative/` — main app target (SwiftUI)
+- `WhaDayWidget/` — WidgetKit extension, synced with the app via an App Group
