@@ -590,16 +590,6 @@
     "sharingHook": "Engage with science"
   },
   {
-    "id": "02-29",
-    "month": 2,
-    "day": 29,
-    "title": "Rare Disease Day",
-    "description": "Rare Disease Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
-    "emoji": "💪",
-    "category": "wellness",
-    "sharingHook": "Take care of your health"
-  },
-  {
     "id": "03-01",
     "month": 3,
     "day": 1,
@@ -930,6 +920,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "04-03",
+    "month": 4,
+    "day": 3,
+    "title": "Moment of Clarity",
+    "description": "Pause to reflect on what truly matters today.",
+    "emoji": "💭",
+    "category": "reflection",
+    "sharingHook": "Take a moment to reflect"
+  },
+  {
     "id": "04-04",
     "month": 4,
     "day": 4,
@@ -978,6 +978,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-09",
+    "month": 4,
+    "day": 9,
+    "title": "Peaceful Pause",
+    "description": "Embrace stillness and find your inner peace.",
+    "emoji": "🧘",
+    "category": "mindfulness",
+    "sharingHook": "Embrace stillness"
   },
   {
     "id": "04-10",
@@ -1070,6 +1080,16 @@
     "sharingHook": "Explore culture"
   },
   {
+    "id": "04-19",
+    "month": 4,
+    "day": 19,
+    "title": "Inner Strength",
+    "description": "Feel your power within and trust yourself today.",
+    "emoji": "💪",
+    "category": "growth",
+    "sharingHook": "Feel your power within"
+  },
+  {
     "id": "04-20",
     "month": 4,
     "day": 20,
@@ -1138,6 +1158,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "04-27",
+    "month": 4,
+    "day": 27,
+    "title": "Connection",
+    "description": "Reach out and connect meaningfully with others.",
+    "emoji": "🤝",
+    "category": "awareness",
+    "sharingHook": "Connect with others"
   },
   {
     "id": "04-28",
@@ -1230,6 +1260,16 @@
     "sharingHook": "Take care of your health"
   },
   {
+    "id": "05-07",
+    "month": 5,
+    "day": 7,
+    "title": "Gratitude Day",
+    "description": "Count your blessings and feel appreciation.",
+    "emoji": "🙏",
+    "category": "reflection",
+    "sharingHook": "Count your blessings"
+  },
+  {
     "id": "05-08",
     "month": 5,
     "day": 8,
@@ -1260,6 +1300,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "05-11",
+    "month": 5,
+    "day": 11,
+    "title": "Mindful Moment",
+    "description": "Be fully present in this very moment.",
+    "emoji": "🌸",
+    "category": "mindfulness",
+    "sharingHook": "Be fully present"
+  },
+  {
     "id": "05-12",
     "month": 5,
     "day": 12,
@@ -1268,6 +1318,26 @@
     "emoji": "🏥",
     "category": "wellness",
     "sharingHook": "Take care of your health"
+  },
+  {
+    "id": "05-13",
+    "month": 5,
+    "day": 13,
+    "title": "Growth Journey",
+    "description": "Embrace your growth and celebrate progress.",
+    "emoji": "🌱",
+    "category": "growth",
+    "sharingHook": "Embrace your growth"
+  },
+  {
+    "id": "05-14",
+    "month": 5,
+    "day": 14,
+    "title": "Self-Care Time",
+    "description": "Prioritize yourself and nurture your well-being.",
+    "emoji": "☀️",
+    "category": "awareness",
+    "sharingHook": "Prioritize yourself"
   },
   {
     "id": "05-15",
@@ -1378,6 +1448,26 @@
     "emoji": "⚽",
     "category": "sport",
     "sharingHook": "Stay active"
+  },
+  {
+    "id": "05-26",
+    "month": 5,
+    "day": 26,
+    "title": "Daily Wonder",
+    "description": "Find wonder and magic in everyday moments.",
+    "emoji": "✨",
+    "category": "awareness",
+    "sharingHook": "Find wonder in today"
+  },
+  {
+    "id": "05-27",
+    "month": 5,
+    "day": 27,
+    "title": "Inner Peace",
+    "description": "Seek inner harmony and tranquility within.",
+    "emoji": "☮️",
+    "category": "mindfulness",
+    "sharingHook": "Seek inner harmony"
   },
   {
     "id": "05-28",
@@ -1498,6 +1588,16 @@
     "emoji": "🌊",
     "category": "nature",
     "sharingHook": "Share nature's beauty"
+  },
+  {
+    "id": "06-09",
+    "month": 6,
+    "day": 9,
+    "title": "Life Balance",
+    "description": "Find balance between work and well-being.",
+    "emoji": "⚖️",
+    "category": "reflection",
+    "sharingHook": "Find your balance"
   },
   {
     "id": "06-10",
@@ -2040,6 +2140,36 @@
     "sharingHook": "Be a voice for peace"
   },
   {
+    "id": "08-03",
+    "month": 8,
+    "day": 3,
+    "title": "Creative Spirit",
+    "description": "Unleash your creativity and express yourself.",
+    "emoji": "🎨",
+    "category": "growth",
+    "sharingHook": "Unleash creativity"
+  },
+  {
+    "id": "08-04",
+    "month": 8,
+    "day": 4,
+    "title": "Positive Vibes",
+    "description": "Spread positivity and embrace optimism today.",
+    "emoji": "⭐",
+    "category": "awareness",
+    "sharingHook": "Spread positivity"
+  },
+  {
+    "id": "08-05",
+    "month": 8,
+    "day": 5,
+    "title": "Personal Power",
+    "description": "Own your strength and believe in yourself.",
+    "emoji": "🔥",
+    "category": "growth",
+    "sharingHook": "Own your strength"
+  },
+  {
     "id": "08-06",
     "month": 8,
     "day": 6,
@@ -2048,6 +2178,16 @@
     "emoji": "👨",
     "category": "action",
     "sharingHook": "Take positive action"
+  },
+  {
+    "id": "08-07",
+    "month": 8,
+    "day": 7,
+    "title": "Mindful Living",
+    "description": "Live with intention and conscious awareness.",
+    "emoji": "🌿",
+    "category": "mindfulness",
+    "sharingHook": "Live with intention"
   },
   {
     "id": "08-08",
@@ -2130,6 +2270,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "08-16",
+    "month": 8,
+    "day": 16,
+    "title": "Grateful Heart",
+    "description": "Appreciate blessings and feel deep gratitude.",
+    "emoji": "💖",
+    "category": "reflection",
+    "sharingHook": "Appreciate blessings"
+  },
+  {
     "id": "08-17",
     "month": 8,
     "day": 17,
@@ -2138,6 +2288,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-18",
+    "month": 8,
+    "day": 18,
+    "title": "Self Discovery",
+    "description": "Know yourself better and explore your truth.",
+    "emoji": "🔍",
+    "category": "growth",
+    "sharingHook": "Know yourself better"
   },
   {
     "id": "08-19",
@@ -2200,6 +2360,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "08-25",
+    "month": 8,
+    "day": 25,
+    "title": "Joy & Laughter",
+    "description": "Celebrate joy and find happiness today.",
+    "emoji": "😄",
+    "category": "awareness",
+    "sharingHook": "Celebrate joy"
+  },
+  {
     "id": "08-26",
     "month": 8,
     "day": 26,
@@ -2218,6 +2388,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "08-28",
+    "month": 8,
+    "day": 28,
+    "title": "Renewed Energy",
+    "description": "Recharge yourself and refresh your spirit.",
+    "emoji": "⚡",
+    "category": "mindfulness",
+    "sharingHook": "Recharge yourself"
   },
   {
     "id": "08-29",
@@ -2730,6 +2910,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "10-19",
+    "month": 10,
+    "day": 19,
+    "title": "Peaceful Wisdom",
+    "description": "Seek wisdom and embrace quiet understanding.",
+    "emoji": "🌙",
+    "category": "reflection",
+    "sharingHook": "Seek wisdom"
+  },
+  {
     "id": "10-20",
     "month": 10,
     "day": 20,
@@ -2830,6 +3020,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "10-30",
+    "month": 10,
+    "day": 30,
+    "title": "Boundless Potential",
+    "description": "Believe in yourself and your unlimited potential.",
+    "emoji": "🚀",
+    "category": "growth",
+    "sharingHook": "Believe in yourself"
+  },
+  {
     "id": "10-31",
     "month": 10,
     "day": 31,
@@ -2858,6 +3058,26 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
+  },
+  {
+    "id": "11-03",
+    "month": 11,
+    "day": 3,
+    "title": "Thankful Thoughts",
+    "description": "Express gratitude and cultivate thankfulness.",
+    "emoji": "🙏",
+    "category": "awareness",
+    "sharingHook": "Express gratitude"
+  },
+  {
+    "id": "11-04",
+    "month": 11,
+    "day": 4,
+    "title": "Radiant Light",
+    "description": "Be your light and shine brightly for others.",
+    "emoji": "💫",
+    "category": "mindfulness",
+    "sharingHook": "Be your light"
   },
   {
     "id": "11-05",
@@ -3040,6 +3260,16 @@
     "sharingHook": "Raise awareness"
   },
   {
+    "id": "11-23",
+    "month": 11,
+    "day": 23,
+    "title": "Hope & Dreams",
+    "description": "Chase your dreams and nurture hopeful vision.",
+    "emoji": "🌟",
+    "category": "growth",
+    "sharingHook": "Chase your dreams"
+  },
+  {
     "id": "11-24",
     "month": 11,
     "day": 24,
@@ -3078,6 +3308,16 @@
     "emoji": "👨",
     "category": "science",
     "sharingHook": "Engage with science"
+  },
+  {
+    "id": "11-28",
+    "month": 11,
+    "day": 28,
+    "title": "Transformation",
+    "description": "Embrace change and celebrate your transformation.",
+    "emoji": "🦋",
+    "category": "reflection",
+    "sharingHook": "Embrace change"
   },
   {
     "id": "11-29",

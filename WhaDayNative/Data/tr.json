@@ -590,16 +590,6 @@
     "sharingHook": "Bilime ilgi göster"
   },
   {
-    "id": "02-29",
-    "month": 2,
-    "day": 29,
-    "title": "Nadir Hastalıklar Günü",
-    "description": "Nadir Hastalıklar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
-    "emoji": "💪",
-    "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
-  },
-  {
     "id": "03-01",
     "month": 3,
     "day": 1,
@@ -930,6 +920,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "04-03",
+    "month": 4,
+    "day": 3,
+    "title": "Açıklık Anı",
+    "description": "Bugün neyin önemli olduğunu düşünmek için dur.",
+    "emoji": "💭",
+    "category": "reflection",
+    "sharingHook": "Düşünme zamanı yap"
+  },
+  {
     "id": "04-04",
     "month": 4,
     "day": 4,
@@ -978,6 +978,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Farkındalık yayarak bilgilendir"
+  },
+  {
+    "id": "04-09",
+    "month": 4,
+    "day": 9,
+    "title": "Barışçıl Duruş",
+    "description": "Sakinliği kucakla ve iç barışını bul.",
+    "emoji": "🧘",
+    "category": "mindfulness",
+    "sharingHook": "Barışa ulaş"
   },
   {
     "id": "04-10",
@@ -1070,6 +1080,16 @@
     "sharingHook": "Kültürü keşfet ve öğren"
   },
   {
+    "id": "04-19",
+    "month": 4,
+    "day": 19,
+    "title": "İç Güç",
+    "description": "İçindeki gücü hisset ve kendine güven.",
+    "emoji": "💪",
+    "category": "growth",
+    "sharingHook": "Gücüne inan"
+  },
+  {
     "id": "04-20",
     "month": 4,
     "day": 20,
@@ -1138,6 +1158,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Farkındalık yayarak bilgilendir"
+  },
+  {
+    "id": "04-27",
+    "month": 4,
+    "day": 27,
+    "title": "Bağlantı",
+    "description": "Diğerleriyle anlamlı biçimde bağlan.",
+    "emoji": "🤝",
+    "category": "awareness",
+    "sharingHook": "Bağlan ve paylaş"
   },
   {
     "id": "04-28",
@@ -1230,6 +1260,16 @@
     "sharingHook": "Sağlığına dikkat et"
   },
   {
+    "id": "05-07",
+    "month": 5,
+    "day": 7,
+    "title": "Şükran Günü",
+    "description": "Nimetlerini say ve minnet duy.",
+    "emoji": "🙏",
+    "category": "reflection",
+    "sharingHook": "Minnet duy"
+  },
+  {
     "id": "05-08",
     "month": 5,
     "day": 8,
@@ -1260,6 +1300,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "05-11",
+    "month": 5,
+    "day": 11,
+    "title": "Dikkatli Anı",
+    "description": "Bu anın içinde tamamen burada ol.",
+    "emoji": "🌸",
+    "category": "mindfulness",
+    "sharingHook": "Şu ana dikkat et"
+  },
+  {
     "id": "05-12",
     "month": 5,
     "day": 12,
@@ -1268,6 +1318,26 @@
     "emoji": "🏥",
     "category": "wellness",
     "sharingHook": "Sağlığına dikkat et"
+  },
+  {
+    "id": "05-13",
+    "month": 5,
+    "day": 13,
+    "title": "Büyüme Yolculuğu",
+    "description": "Büyümeni kucakla ve ilerlemeyi kutla.",
+    "emoji": "🌱",
+    "category": "growth",
+    "sharingHook": "Gelişimi kutla"
+  },
+  {
+    "id": "05-14",
+    "month": 5,
+    "day": 14,
+    "title": "Kendine Bakım Zamanı",
+    "description": "Kendine öncelik ver ve iyiliğini besle.",
+    "emoji": "☀️",
+    "category": "awareness",
+    "sharingHook": "Kendine bakım yap"
   },
   {
     "id": "05-15",
@@ -1378,6 +1448,26 @@
     "emoji": "⚽",
     "category": "sport",
     "sharingHook": "Aktif yaşa"
+  },
+  {
+    "id": "05-26",
+    "month": 5,
+    "day": 26,
+    "title": "Günlük Harika",
+    "description": "Günlük anılarda harika bul.",
+    "emoji": "✨",
+    "category": "awareness",
+    "sharingHook": "Günlüğü seç"
+  },
+  {
+    "id": "05-27",
+    "month": 5,
+    "day": 27,
+    "title": "İç Barış",
+    "description": "İçinde uyum ve huzur ara.",
+    "emoji": "☮️",
+    "category": "mindfulness",
+    "sharingHook": "Huzura ulaş"
   },
   {
     "id": "05-28",
@@ -1498,6 +1588,16 @@
     "emoji": "🌊",
     "category": "nature",
     "sharingHook": "Doğanın güzelliğini paylaş"
+  },
+  {
+    "id": "06-09",
+    "month": 6,
+    "day": 9,
+    "title": "Yaşam Dengesi",
+    "description": "Çalışma ve sağlık arasında denge bul.",
+    "emoji": "⚖️",
+    "category": "reflection",
+    "sharingHook": "Dengelemeyi öğren"
   },
   {
     "id": "06-10",
@@ -2040,6 +2140,36 @@
     "sharingHook": "Barış için bir ses ol"
   },
   {
+    "id": "08-03",
+    "month": 8,
+    "day": 3,
+    "title": "Yaratıcı Ruh",
+    "description": "Yaratıcılığını serbest bırak ve kendini ifade et.",
+    "emoji": "🎨",
+    "category": "growth",
+    "sharingHook": "Yaratıcı ol"
+  },
+  {
+    "id": "08-04",
+    "month": 8,
+    "day": 4,
+    "title": "Olumlu Enerji",
+    "description": "Olumluluğu yay ve iyimserliği kucakla.",
+    "emoji": "⭐",
+    "category": "awareness",
+    "sharingHook": "Olumlu ol"
+  },
+  {
+    "id": "08-05",
+    "month": 8,
+    "day": 5,
+    "title": "Kişisel Güç",
+    "description": "Gücüne sahip ol ve kendine güven.",
+    "emoji": "🔥",
+    "category": "growth",
+    "sharingHook": "Gücü sahiplen"
+  },
+  {
     "id": "08-06",
     "month": 8,
     "day": 6,
@@ -2048,6 +2178,16 @@
     "emoji": "👨",
     "category": "action",
     "sharingHook": "Olumlu bir eylem al"
+  },
+  {
+    "id": "08-07",
+    "month": 8,
+    "day": 7,
+    "title": "Bilinçli Yaşam",
+    "description": "Kasıtla ve bilinçli farkındalıkla yaşa.",
+    "emoji": "🌿",
+    "category": "mindfulness",
+    "sharingHook": "Bilinçli yaşa"
   },
   {
     "id": "08-08",
@@ -2130,6 +2270,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "08-16",
+    "month": 8,
+    "day": 16,
+    "title": "Şükran Kalbı",
+    "description": "Nimetleri takdir et ve derin minnet duy.",
+    "emoji": "💖",
+    "category": "reflection",
+    "sharingHook": "Takdir etmeyi seç"
+  },
+  {
     "id": "08-17",
     "month": 8,
     "day": 17,
@@ -2138,6 +2288,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Farkındalık yayarak bilgilendir"
+  },
+  {
+    "id": "08-18",
+    "month": 8,
+    "day": 18,
+    "title": "Kendini Keşfet",
+    "description": "Kendini daha iyi tanı ve gerçeğini keşfet.",
+    "emoji": "🔍",
+    "category": "growth",
+    "sharingHook": "Kendini keşfet"
   },
   {
     "id": "08-19",
@@ -2200,6 +2360,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "08-25",
+    "month": 8,
+    "day": 25,
+    "title": "Sevinç & Gülüş",
+    "description": "Sevinci kutla ve bugün mutluluğu bul.",
+    "emoji": "😄",
+    "category": "awareness",
+    "sharingHook": "Sevinç kutla"
+  },
+  {
     "id": "08-26",
     "month": 8,
     "day": 26,
@@ -2218,6 +2388,16 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Farkındalık yayarak bilgilendir"
+  },
+  {
+    "id": "08-28",
+    "month": 8,
+    "day": 28,
+    "title": "Yenilenen Enerji",
+    "description": "Kendini yenile ve ruhunu tazele.",
+    "emoji": "⚡",
+    "category": "mindfulness",
+    "sharingHook": "Enerji yükle"
   },
   {
     "id": "08-29",
@@ -2730,6 +2910,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "10-19",
+    "month": 10,
+    "day": 19,
+    "title": "Barışçıl Bilgelik",
+    "description": "Bilgelik ara ve sessiz anlayışı kucakla.",
+    "emoji": "🌙",
+    "category": "reflection",
+    "sharingHook": "Bilge ol"
+  },
+  {
     "id": "10-20",
     "month": 10,
     "day": 20,
@@ -2830,6 +3020,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "10-30",
+    "month": 10,
+    "day": 30,
+    "title": "Sınırsız Potansiyel",
+    "description": "Kendine ve sınırsız potansiyeline inan.",
+    "emoji": "🚀",
+    "category": "growth",
+    "sharingHook": "Potansiyeline inan"
+  },
+  {
     "id": "10-31",
     "month": 10,
     "day": 31,
@@ -2858,6 +3058,26 @@
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Farkındalık yayarak bilgilendir"
+  },
+  {
+    "id": "11-03",
+    "month": 11,
+    "day": 3,
+    "title": "Teşekkür Düşünceler",
+    "description": "Şükran ifade et ve teşekkürü yetiştir.",
+    "emoji": "🙏",
+    "category": "awareness",
+    "sharingHook": "Teşekkür et"
+  },
+  {
+    "id": "11-04",
+    "month": 11,
+    "day": 4,
+    "title": "Parlayan Işık",
+    "description": "Senin ışığın ol ve başkaları için parlayan ol.",
+    "emoji": "💫",
+    "category": "mindfulness",
+    "sharingHook": "Işık ol"
   },
   {
     "id": "11-05",
@@ -3040,6 +3260,16 @@
     "sharingHook": "Farkındalık yayarak bilgilendir"
   },
   {
+    "id": "11-23",
+    "month": 11,
+    "day": 23,
+    "title": "Umut & Rüyalar",
+    "description": "Rüyalarının peşinden git ve ümidi besle.",
+    "emoji": "🌟",
+    "category": "growth",
+    "sharingHook": "Rüyaları sürürdür"
+  },
+  {
     "id": "11-24",
     "month": 11,
     "day": 24,
@@ -3078,6 +3308,16 @@
     "emoji": "👨",
     "category": "science",
     "sharingHook": "Bilime ilgi göster"
+  },
+  {
+    "id": "11-28",
+    "month": 11,
+    "day": 28,
+    "title": "Dönüşüm",
+    "description": "Değişimi kucakla ve dönüşümünü kutla.",
+    "emoji": "🦋",
+    "category": "reflection",
+    "sharingHook": "Değişimi kabul et"
   },
   {
     "id": "11-29",
