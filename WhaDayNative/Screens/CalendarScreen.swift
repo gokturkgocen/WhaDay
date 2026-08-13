@@ -51,23 +51,24 @@ struct CalendarScreen: View {
     private var header: some View {
         HStack {
             Button { onBack() } label: {
-                Text("←")
-                    .font(.system(size: 20))
+                Image(systemName: "chevron.left")
+                    .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(.white)
-                    .frame(width: 40, height: 40)
+                    .frame(width: 44, height: 44)
                     .background(Color.white.opacity(0.1))
                     .clipShape(Circle())
             }
             Spacer()
             Text(DayEventStore.language == "tr" ? "Takvim" : "Calendar")
-                .font(.system(size: 20, weight: .bold))
+                .font(.system(size: 24, weight: .bold, design: .default))
+                .tracking(0.5)
                 .foregroundStyle(.white)
             Spacer()
-            Color.clear.frame(width: 40, height: 40)
+            Color.clear.frame(width: 44, height: 44)
         }
         .padding(.horizontal, 20)
         .padding(.top, 70)
-        .padding(.bottom, 16)
+        .padding(.bottom, 24)
     }
 
     private func monthSection(_ group: (month: Int, events: [DayEvent])) -> some View {

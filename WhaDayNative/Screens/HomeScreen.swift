@@ -64,14 +64,16 @@ struct HomeScreen: View {
 
     private var header: some View {
         HStack(alignment: .top) {
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 6) {
                 Text("WhaDay")
-                    .font(.system(size: 32, weight: .heavy))
+                    .font(.system(size: 36, weight: .black, design: .default))
+                    .tracking(0.5)
                     .foregroundStyle(.white)
                 if let event = activeEvent {
                     Text(formattedDate(for: event))
-                        .font(.system(size: 15, weight: .medium))
-                        .foregroundStyle(.white.opacity(0.5))
+                        .font(.system(size: 14, weight: .semibold, design: .default))
+                        .tracking(0.3)
+                        .foregroundStyle(.white.opacity(0.6))
                 }
             }
 
@@ -137,24 +139,29 @@ struct HomeScreen: View {
             Spacer()
             GlassCard {
                 Text(day.emoji)
-                    .font(.system(size: 72))
-                    .padding(.bottom, 16)
+                    .font(.system(size: 88))
+                    .padding(.bottom, 24)
+                    .lineLimit(1)
                 Text(day.title)
-                    .font(.system(size: 30, weight: .heavy))
+                    .font(.system(size: 32, weight: .bold, design: .default))
+                    .tracking(-0.5)
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
                     .fixedSize(horizontal: false, vertical: true)
                 Text(day.description)
-                    .font(.system(size: 16))
-                    .foregroundStyle(.white.opacity(0.7))
+                    .font(.system(size: 17, weight: .regular, design: .default))
+                    .tracking(0.2)
+                    .lineSpacing(2)
+                    .foregroundStyle(.white.opacity(0.75))
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
                     .fixedSize(horizontal: false, vertical: true)
-                    .padding(.top, 14)
+                    .padding(.top, 20)
             }
             Spacer()
         }
+        .transition(.opacity.combined(with: .scale(scale: 0.95)))
     }
 
     private func formattedDate(for event: DayEvent) -> String {

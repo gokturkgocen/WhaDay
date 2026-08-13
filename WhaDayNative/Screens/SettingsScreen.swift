@@ -42,24 +42,24 @@ struct SettingsScreen: View {
     private var header: some View {
         HStack {
             Button { onBack() } label: {
-                Text("←")
-                    .font(.system(size: 24, weight: .light))
-                    .foregroundStyle(.white.opacity(0.8))
+                Image(systemName: "chevron.left")
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundStyle(.white)
                     .frame(width: 44, height: 44)
                     .background(Color.white.opacity(0.1))
-                    .overlay(RoundedRectangle(cornerRadius: 14).strokeBorder(Color.white.opacity(0.2), lineWidth: 0.5))
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .clipShape(Circle())
             }
             Spacer()
-            Text("Ayarlar")
-                .font(.system(size: 20, weight: .bold))
+            Text(DayEventStore.language == "tr" ? "Ayarlar" : "Settings")
+                .font(.system(size: 24, weight: .bold, design: .default))
+                .tracking(0.5)
                 .foregroundStyle(.white)
             Spacer()
             Color.clear.frame(width: 44, height: 44)
         }
-        .padding(.horizontal, 24)
+        .padding(.horizontal, 20)
         .padding(.top, 70)
-        .padding(.bottom, 20)
+        .padding(.bottom, 24)
     }
 
     private func themeRow(_ theme: BackgroundTheme) -> some View {

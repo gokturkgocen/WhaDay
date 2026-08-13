@@ -8,37 +8,49 @@ struct ActionButtons: View {
     let accentColor: Color
 
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 14) {
             shareLink(label: primaryLabel, haptic: Haptics.triggerMedium) {
                 Text(primaryLabel)
-                    .font(.system(size: 17, weight: .bold))
+                    .font(.system(size: 18, weight: .bold, design: .default))
+                    .tracking(0.3)
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 18)
-                    .background(accentColor.opacity(0.3))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(accentColor.opacity(0.6), lineWidth: 0.5)
+                    .padding(.vertical, 16)
+                    .background(
+                        LinearGradient(
+                            gradient: Gradient(colors: [
+                                accentColor.opacity(0.5),
+                                accentColor.opacity(0.3)
+                            ]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
                     )
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 24)
+                            .strokeBorder(accentColor.opacity(0.7), lineWidth: 1)
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 24))
+                    .shadow(color: accentColor.opacity(0.3), radius: 12, x: 0, y: 4)
             }
 
             shareLink(label: secondaryLabel, haptic: Haptics.triggerLight) {
                 Text(secondaryLabel)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(.white.opacity(0.7))
+                    .font(.system(size: 16, weight: .semibold, design: .default))
+                    .tracking(0.2)
+                    .foregroundStyle(.white.opacity(0.85))
+                    .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .padding(.horizontal, 28)
-                    .background(Color.white.opacity(0.08))
+                    .background(Color.white.opacity(0.1))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 16)
-                            .strokeBorder(Color.white.opacity(0.12), lineWidth: 0.5)
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(Color.white.opacity(0.2), lineWidth: 1)
                     )
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
             }
         }
-        .padding(.horizontal, 28)
-        .padding(.bottom, 48)
+        .padding(.horizontal, 24)
+        .padding(.bottom, 52)
     }
 
     @ViewBuilder
@@ -51,8 +63,11 @@ struct ActionButtons: View {
                 content()
             }
             .simultaneousGesture(TapGesture().onEnded { haptic() })
+            .transition(.opacity)
         } else {
-            content().opacity(0.5)
+            content()
+                .opacity(0.5)
+                .allowsHitTesting(false)
         }
     }
 }

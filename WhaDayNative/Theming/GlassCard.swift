@@ -7,22 +7,40 @@ struct GlassCard<Content: View>: View {
         VStack {
             content()
         }
-        .padding(32)
+        .padding(40)
         .frame(maxWidth: .infinity)
-        .background(.regularMaterial.opacity(0.9))
+        .background(
+            ZStack {
+                Color.white.opacity(0.05)
+                Color.black.opacity(0.2)
+            }
+        )
+        .background(.thickMaterial.opacity(0.7))
         .environment(\.colorScheme, .dark)
         .overlay(
             VStack {
-                Rectangle().fill(Color.white.opacity(0.15)).frame(height: 1)
+                Rectangle().fill(Color.white.opacity(0.2)).frame(height: 0.5)
                 Spacer()
-                Rectangle().fill(Color.black.opacity(0.3)).frame(height: 1)
+                Rectangle().fill(Color.black.opacity(0.4)).frame(height: 0.5)
             }
         )
-        .clipShape(RoundedRectangle(cornerRadius: 28))
+        .clipShape(RoundedRectangle(cornerRadius: 32))
         .overlay(
-            RoundedRectangle(cornerRadius: 28)
-                .strokeBorder(Color.white.opacity(0.4), lineWidth: 0.5)
+            RoundedRectangle(cornerRadius: 32)
+                .strokeBorder(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color.white.opacity(0.5),
+                            Color.white.opacity(0.2)
+                        ]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1
+                )
         )
-        .padding(.horizontal, 24)
+        .shadow(color: Color.black.opacity(0.25), radius: 20, x: 0, y: 8)
+        .shadow(color: Color.black.opacity(0.12), radius: 8, x: 0, y: 2)
+        .padding(.horizontal, 20)
     }
 }
