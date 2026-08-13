@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DayContextSheet: View {
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var personalLibrary: PersonalDayLibrary
 
     let event: DayEvent
     let colors: ThemeColors
@@ -18,6 +19,7 @@ struct DayContextSheet: View {
                     header
                     identityCard
                     contextCard
+                    saveCard
                     sourceCard
                 }
                 .padding(.horizontal, 20)
@@ -25,6 +27,42 @@ struct DayContextSheet: View {
             }
             .scrollIndicators(.hidden)
         }
+    }
+
+    private var saveCard: some View {
+        Button {
+            Haptics.triggerMedium()
+            personalLibrary.toggle(event)
+        } label: {
+            HStack(spacing: 13) {
+                Image(systemName: personalLibrary.isSaved(event) ? "bookmark.fill" : "bookmark")
+                    .font(.system(size: 19, weight: .black))
+                    .foregroundStyle(Color(hex: colors.ink))
+                    .frame(width: 44, height: 44)
+                    .background(Color(hex: colors.accent))
+                    .clipShape(Circle())
+
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(personalLibrary.isSaved(event)
+                         ? (DayEventStore.language == "tr" ? "Sonra göndermek için kaydedildi" : "Saved to send later")
+                         : (DayEventStore.language == "tr" ? "Sonra göndermek için kaydet" : "Save to send later"))
+                        .font(.system(size: 14, weight: .black, design: .rounded))
+
+                    Text(DayEventStore.language == "tr"
+                         ? "Yalnızca bu cihazda saklanır."
+                         : "Stored only on this device.")
+                        .font(.system(size: 11, weight: .semibold, design: .rounded))
+                        .opacity(0.56)
+                }
+
+                Spacer()
+
+                Image(systemName: personalLibrary.isSaved(event) ? "checkmark" : "plus")
+                    .font(.system(size: 13, weight: .black))
+            }
+        }
+        .buttonStyle(.plain)
+        .contextCard(colors: colors)
     }
 
     private var header: some View {

@@ -101,6 +101,7 @@ struct DayProvenance: Equatable {
         let terms = [
             "yılbaşı", "noel", "christmas", "epifani", "epiphany", "aziz", "saint",
             "bayram", "easter", "paskalya", "festivus", "halloween", "cadılar",
+            "meryem", "mary", "assumption", "ortodoks", "orthodox",
             "bağımsızlık", "independence", "ulusal gün", "national day", "zafer günü"
         ]
         return terms.contains(where: title.contains)

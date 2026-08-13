@@ -113,6 +113,65 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertTrue(suggestions.contains(where: { $0.note != nil }))
     }
 
+    func testWeeklyPicksCrossTheYearBoundaryWithoutRepeatingDays() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = try XCTUnwrap(TimeZone(secondsFromGMT: 0))
+        let start = try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 12, day: 29)))
+
+        let picks = WeeklyPicks.make(from: start, calendar: calendar)
+        let allowedIDs = Set(["12-29", "12-30", "12-31", "01-01", "01-02", "01-03", "01-04"])
+
+        XCTAssertEqual(picks.count, 3)
+        XCTAssertEqual(Set(picks.map(\.id)).count, picks.count)
+        XCTAssertTrue(picks.allSatisfy { allowedIDs.contains($0.id) })
+        XCTAssertEqual(picks.map(\.dayOffset), picks.map(\.dayOffset).sorted())
+    }
+
+    func testWeeklyPicksNeverUseRemembranceCopyAsEngagementBait() {
+        let remembrance = makeEvent(id: "08-13", title: "Savaş Kurbanlarını Anma Günü", category: "awareness")
+        let candidates = [
+            remembrance,
+            makeEvent(id: "08-14", title: "Pizza Günü", category: "fun"),
+            makeEvent(id: "08-15", title: "Dünya Kedi Günü", category: "social"),
+            makeEvent(id: "08-16", title: "Bilim Günü", category: "science")
+        ]
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let start = calendar.date(from: DateComponents(year: 2026, month: 8, day: 13))!
+
+        let picks = WeeklyPicks.make(from: start, calendar: calendar, events: candidates)
+
+        XCTAssertFalse(picks.contains(where: { $0.event.id == remembrance.id }))
+    }
+
+    func testWeeklyPicksPreferRelationalDaysOverCountryAndFaithDates() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = try XCTUnwrap(TimeZone(secondsFromGMT: 0))
+        let start = try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 8, day: 13)))
+
+        let picks = WeeklyPicks.make(from: start, calendar: calendar)
+
+        XCTAssertEqual(picks.map(\.id), ["08-13", "08-16", "08-18"])
+    }
+
+    @MainActor
+    func testSavedDaysRemainOnDeviceAndCanBeRemoved() throws {
+        let suiteName = "WhaDayTests.\(UUID().uuidString)"
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: suiteName))
+        defer { defaults.removePersistentDomain(forName: suiteName) }
+        let event = try XCTUnwrap(DayEventStore.event(month: 8, day: 13))
+
+        let firstStore = PersonalDayLibrary(defaults: defaults)
+        firstStore.toggle(event)
+        XCTAssertTrue(firstStore.isSaved(event))
+
+        let restoredStore = PersonalDayLibrary(defaults: defaults)
+        XCTAssertTrue(restoredStore.isSaved(event))
+
+        restoredStore.toggle(event)
+        XCTAssertFalse(restoredStore.isSaved(event))
+    }
+
     func testCuratedLefthandersCopyIsPersonalAndSpecific() {
         let event = DayEvent(
             id: "08-13",
