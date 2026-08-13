@@ -7,7 +7,7 @@ struct GlassCard<Content: View>: View {
         VStack {
             content()
         }
-        .padding(40)
+        .padding(28)
         .frame(maxWidth: .infinity)
         .background(
             ZStack {

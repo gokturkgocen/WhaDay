@@ -49,8 +49,8 @@ struct ActionButtons: View {
                     .clipShape(RoundedRectangle(cornerRadius: 20))
             }
         }
-        .padding(.horizontal, 24)
-        .padding(.bottom, 52)
+        .padding(.horizontal, 20)
+        .padding(.bottom, 40)
     }
 
     @ViewBuilder
