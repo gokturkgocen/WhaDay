@@ -2,9 +2,10 @@
 
 Native iOS app (SwiftUI) that turns each calendar day into a reason to text someone.
 
-The app includes a daily card, a source/status layer, one calm morning reminder, a WidgetKit
-widget, and a Share Studio that produces channel-specific message and Story cards in three
-visual styles. It does not request contact access or require an account.
+The app includes a daily card, a weekly shortlist of shareable days, an on-device
+"send later" library, a source/status layer, one calm morning reminder, a WidgetKit widget,
+and a Share Studio that produces channel-specific message and Story cards in three visual
+styles. It does not request contact access or require an account.
 
 ## Development
 

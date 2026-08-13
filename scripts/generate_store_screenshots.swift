@@ -12,16 +12,17 @@ struct StoreShot {
 }
 
 let arguments = CommandLine.arguments
-guard arguments.count == 3 else {
-    fputs("Usage: generate_store_screenshots.swift <raw-dir> <output-dir>\n", stderr)
+guard arguments.count == 3 || arguments.count == 4 else {
+    fputs("Usage: generate_store_screenshots.swift <raw-dir> <output-dir> [tr|en]\n", stderr)
     exit(2)
 }
 
 let rawDirectory = URL(fileURLWithPath: arguments[1], isDirectory: true)
 let outputDirectory = URL(fileURLWithPath: arguments[2], isDirectory: true)
+let language = arguments.count == 4 ? arguments[3] : "tr"
 try FileManager.default.createDirectory(at: outputDirectory, withIntermediateDirectories: true)
 
-let shots = [
+let turkishShots = [
     StoreShot(
         source: "01-home-tr.png",
         output: "01-bugun-ne-gunuymus.jpg",
@@ -30,27 +31,79 @@ let shots = [
         accent: NSColor(calibratedRed: 0.49, green: 0.90, blue: 1.00, alpha: 1)
     ),
     StoreShot(
-        source: "03-cat-day-tr.png",
-        output: "02-aklina-biri-geldiyse.jpg",
-        kicker: "GÖR · HATIRLA · GÖNDER",
-        headline: "Aklına biri geldiyse\nbahane hazır.",
+        source: "02-discover-tr.png",
+        output: "02-bu-hafta-atmaliklar.jpg",
+        kicker: "HAZIR HAFTALIK SEÇKİ",
+        headline: "Takvim seçsin.\nSen gönder.",
         accent: NSColor(calibratedRed: 0.85, green: 1.00, blue: 0.40, alpha: 1)
     ),
     StoreShot(
-        source: "02-calendar-tr.png",
-        output: "03-365-gun.jpg",
+        source: "03-calendar-tr.png",
+        output: "03-366-gun.jpg",
         kicker: "TÜM YIL TEK YERDE",
-        headline: "365 gün.\nTek kaydırma.",
+        headline: "366 gün.\nTek kaydırma.",
         accent: NSColor(calibratedRed: 0.56, green: 0.52, blue: 1.00, alpha: 1)
     ),
     StoreShot(
+        source: "04-share-studio-tr.png",
+        output: "04-story-ve-mesaj.jpg",
+        kicker: "3 ESTETİK TASARIM",
+        headline: "Story’ye de\nmesaja da hazır.",
+        accent: NSColor(calibratedRed: 0.97, green: 0.55, blue: 0.83, alpha: 1)
+    ),
+    StoreShot(
         source: "05-settings-tr.png",
-        output: "04-her-sabah-surpriz.jpg",
+        output: "05-her-sabah-surpriz.jpg",
         kicker: "İSTEĞE BAĞLI HATIRLATICI",
         headline: "Her sabah küçük\nbir sürpriz.",
         accent: NSColor(calibratedRed: 1.00, green: 0.70, blue: 0.38, alpha: 1)
     )
 ]
+
+let englishShots = [
+    StoreShot(
+        source: "01-home-en.png",
+        output: "01-what-day-is-it.jpg",
+        kicker: "A NEW DISCOVERY DAILY",
+        headline: "What day\nis it today?",
+        accent: NSColor(calibratedRed: 0.49, green: 0.90, blue: 1.00, alpha: 1)
+    ),
+    StoreShot(
+        source: "02-discover-en.png",
+        output: "02-calendar-picks.jpg",
+        kicker: "READY WEEKLY PICKS",
+        headline: "Let the calendar pick.\nYou send.",
+        accent: NSColor(calibratedRed: 0.85, green: 1.00, blue: 0.40, alpha: 1)
+    ),
+    StoreShot(
+        source: "03-calendar-en.png",
+        output: "03-366-days.jpg",
+        kicker: "THE WHOLE YEAR IN ONE PLACE",
+        headline: "366 days.\nOne swipe.",
+        accent: NSColor(calibratedRed: 0.56, green: 0.52, blue: 1.00, alpha: 1)
+    ),
+    StoreShot(
+        source: "04-share-studio-en.png",
+        output: "04-story-and-message.jpg",
+        kicker: "3 DISTINCT STYLES",
+        headline: "Ready for Stories.\nReady for messages.",
+        accent: NSColor(calibratedRed: 0.97, green: 0.55, blue: 0.83, alpha: 1)
+    ),
+    StoreShot(
+        source: "05-settings-en.png",
+        output: "05-morning-surprise.jpg",
+        kicker: "OPTIONAL REMINDER",
+        headline: "A tiny surprise\nevery morning.",
+        accent: NSColor(calibratedRed: 1.00, green: 0.70, blue: 0.38, alpha: 1)
+    )
+]
+
+guard language == "tr" || language == "en" else {
+    fputs("Unsupported language: \(language)\n", stderr)
+    exit(2)
+}
+
+let shots = language == "en" ? englishShots : turkishShots
 
 let canvasSize = NSSize(width: 1320, height: 2868)
 let screenshotRect = NSRect(x: 175, y: 72, width: 970, height: 2107)
