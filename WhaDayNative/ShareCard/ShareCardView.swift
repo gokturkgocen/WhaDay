@@ -1,8 +1,19 @@
 import SwiftUI
 
-enum ShareCardFormat {
+enum ShareCardFormat: String, CaseIterable, Identifiable {
     case story
     case message
+
+    var id: String { rawValue }
+
+    var title: String {
+        switch (self, DayEventStore.language) {
+        case (.story, "tr"): return "Story"
+        case (.message, "tr"): return "Mesaj"
+        case (.story, _): return "Story"
+        case (.message, _): return "Message"
+        }
+    }
 
     var canvasSize: CGSize {
         switch self {
@@ -12,10 +23,45 @@ enum ShareCardFormat {
     }
 }
 
+enum ShareCardStyle: String, CaseIterable, Identifiable {
+    case editorial
+    case midnight
+    case poster
+
+    var id: String { rawValue }
+
+    var title: String {
+        switch (self, DayEventStore.language) {
+        case (.editorial, "tr"): return "Almanak"
+        case (.midnight, "tr"): return "Gece Notu"
+        case (.poster, "tr"): return "Poster"
+        case (.editorial, _): return "Almanac"
+        case (.midnight, _): return "Midnight Note"
+        case (.poster, _): return "Poster"
+        }
+    }
+}
+
 struct ShareCardView: View {
     let event: DayEvent?
     let colors: ThemeColors
     let format: ShareCardFormat
+    let style: ShareCardStyle
+    let personalNote: String?
+
+    init(
+        event: DayEvent?,
+        colors: ThemeColors,
+        format: ShareCardFormat,
+        style: ShareCardStyle = .editorial,
+        personalNote: String? = nil
+    ) {
+        self.event = event
+        self.colors = colors
+        self.format = format
+        self.style = style
+        self.personalNote = personalNote
+    }
 
     private var editorial: EditorialContent? { event.map(EditorialContent.forEvent) }
 
@@ -45,7 +91,7 @@ struct ShareCardView: View {
             VStack(alignment: .leading, spacing: 0) {
                 cardHeader
                 Spacer(minLength: format == .story ? 34 : 20)
-                vividCard
+                selectedCard
                 Spacer(minLength: format == .story ? 28 : 18)
                 cardFooter
             }
@@ -53,6 +99,18 @@ struct ShareCardView: View {
         }
         .frame(width: format.canvasSize.width, height: format.canvasSize.height)
         .clipped()
+    }
+
+    @ViewBuilder
+    private var selectedCard: some View {
+        switch style {
+        case .editorial:
+            vividCard
+        case .midnight:
+            midnightCard
+        case .poster:
+            posterCard
+        }
     }
 
     private var cardHeader: some View {
@@ -128,9 +186,100 @@ struct ShareCardView: View {
         .shadow(color: Color(hex: colors.accent).opacity(0.30), radius: 28, x: 0, y: 16)
     }
 
+    private var midnightCard: some View {
+        VStack(alignment: .leading, spacing: format == .story ? 22 : 15) {
+            HStack {
+                Text(editorial?.eyebrow ?? "WHADAY")
+                    .font(.system(size: 9, weight: .black, design: .rounded))
+                    .tracking(1.4)
+                    .foregroundStyle(Color(hex: colors.secondary))
+
+                Spacer()
+
+                Text(event.map(EditorialSymbol.forEvent) ?? "✦")
+                    .font(.system(size: format == .story ? 42 : 34))
+            }
+
+            Text(event?.title ?? Strings.noEventTitle)
+                .font(.system(size: titleSize - 2, weight: .black, design: .rounded))
+                .tracking(-1.5)
+                .foregroundStyle(Color(hex: colors.onBackdrop))
+                .lineLimit(format == .story ? 5 : 4)
+                .minimumScaleFactor(0.58)
+
+            Capsule()
+                .fill(Color(hex: colors.accent))
+                .frame(width: 48, height: 4)
+
+            Text(editorial?.fact ?? Strings.noEventDesc)
+                .font(.system(size: format == .story ? 15 : 12.5, weight: .semibold, design: .rounded))
+                .lineSpacing(3)
+                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.68))
+                .lineLimit(format == .story ? 6 : 4)
+                .minimumScaleFactor(0.72)
+        }
+        .padding(format == .story ? 26 : 21)
+        .background(Color(hex: colors.backdropRaised).opacity(0.96))
+        .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .strokeBorder(Color(hex: colors.accent).opacity(0.34), lineWidth: 1)
+        )
+        .shadow(color: Color.black.opacity(0.34), radius: 24, x: 0, y: 14)
+    }
+
+    private var posterCard: some View {
+        ZStack(alignment: .topLeading) {
+            LinearGradient(
+                colors: [Color(hex: colors.paper), Color(hex: colors.secondary)],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+
+            Text(event.map(EditorialSymbol.forEvent) ?? "✦")
+                .font(.system(size: format == .story ? 150 : 112))
+                .opacity(0.16)
+                .rotationEffect(.degrees(11))
+                .offset(x: format == .story ? 142 : 168, y: -30)
+
+            VStack(alignment: .leading, spacing: format == .story ? 20 : 13) {
+                Text(dateText.uppercased())
+                    .font(.system(size: 10, weight: .black, design: .monospaced))
+                    .tracking(1.4)
+
+                Spacer(minLength: format == .story ? 56 : 24)
+
+                Text(event?.title ?? Strings.noEventTitle)
+                    .font(.system(size: titleSize + 1, weight: .black, design: .rounded))
+                    .tracking(-1.8)
+                    .lineLimit(format == .story ? 5 : 4)
+                    .minimumScaleFactor(0.55)
+
+                Rectangle()
+                    .fill(Color(hex: colors.ink))
+                    .frame(height: 2)
+
+                Text(editorial?.fact ?? Strings.noEventDesc)
+                    .font(.system(size: format == .story ? 15 : 12.5, weight: .bold, design: .rounded))
+                    .lineSpacing(3)
+                    .lineLimit(format == .story ? 5 : 4)
+                    .minimumScaleFactor(0.7)
+                    .opacity(0.75)
+            }
+            .foregroundStyle(Color(hex: colors.ink))
+            .padding(format == .story ? 25 : 20)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.22), lineWidth: 1)
+        )
+        .shadow(color: Color(hex: colors.accent).opacity(0.28), radius: 26, x: 0, y: 16)
+    }
+
     private var cardFooter: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(editorial?.prompt ?? Strings.shareOnStory)
+            Text(personalNote ?? editorial?.prompt ?? Strings.shareOnStory)
                 .font(.system(size: format == .story ? 16 : 13, weight: .black, design: .rounded))
                 .foregroundStyle(Color(hex: colors.onBackdrop))
                 .lineLimit(2)

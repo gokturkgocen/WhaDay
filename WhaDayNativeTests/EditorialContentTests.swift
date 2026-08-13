@@ -63,6 +63,56 @@ final class EditorialContentTests: XCTestCase {
         add(attachment)
     }
 
+    @MainActor
+    func testEveryShareStyleRendersForEveryChannel() throws {
+        let event = DayEvent(
+            id: "08-13",
+            month: 8,
+            day: 13,
+            title: "Dünya Solaklar Günü",
+            description: "Placeholder",
+            emoji: "✋",
+            category: "awareness",
+            sharingHook: "Placeholder"
+        )
+        let colors = ThemeColors.forCategory(event.category)
+
+        for style in ShareCardStyle.allCases {
+            for format in ShareCardFormat.allCases {
+                let image = try XCTUnwrap(
+                    ShareCardRenderer.render(
+                        event: event,
+                        colors: colors,
+                        format: format,
+                        style: style,
+                        personalNote: "Bunu görünce aklıma sen geldin."
+                    )
+                )
+                XCTAssertEqual(image.cgImage?.width, Int(format.canvasSize.width * 3))
+                XCTAssertEqual(image.cgImage?.height, Int(format.canvasSize.height * 3))
+            }
+        }
+    }
+
+    func testProvenanceDoesNotPresentPlayfulDaysAsOfficial() throws {
+        let official = try XCTUnwrap(DayEventStore.event(month: 1, day: 24))
+        let playful = try XCTUnwrap(DayEventStore.event(month: 1, day: 16))
+
+        XCTAssertTrue(DayProvenance.forEvent(official).isOfficial)
+        XCTAssertNotNil(DayProvenance.forEvent(official).sourceURL)
+        XCTAssertFalse(DayProvenance.forEvent(playful).isOfficial)
+        XCTAssertNil(DayProvenance.forEvent(playful).sourceURL)
+    }
+
+    func testSharePersonalizationAlwaysOffersAPlainCard() throws {
+        let event = try XCTUnwrap(DayEventStore.event(month: 8, day: 13))
+        let suggestions = SharePersonalization.suggestions(for: event)
+
+        XCTAssertEqual(suggestions.count, 3)
+        XCTAssertTrue(suggestions.contains(where: { $0.note == nil }))
+        XCTAssertTrue(suggestions.contains(where: { $0.note != nil }))
+    }
+
     func testCuratedLefthandersCopyIsPersonalAndSpecific() {
         let event = DayEvent(
             id: "08-13",

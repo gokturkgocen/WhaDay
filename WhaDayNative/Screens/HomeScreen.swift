@@ -6,8 +6,7 @@ struct HomeScreen: View {
     let onOpenSettings: () -> Void
 
     @State private var activeID: String?
-    @State private var storyImage: UIImage?
-    @State private var messageImage: UIImage?
+    @State private var contextEvent: DayEvent?
     @State private var appeared = false
 
     private let days = DayEventStore.days
@@ -33,12 +32,9 @@ struct HomeScreen: View {
 
                 if let event = activeEvent {
                     ActionButtons(
+                        event: event,
                         prompt: EditorialContent.forEvent(event).prompt,
-                        storyImage: storyImage,
-                        messageImage: messageImage,
-                        accentColor: Color(hex: themeColors.accent),
-                        inkColor: Color(hex: themeColors.ink),
-                        onBackdropColor: Color(hex: themeColors.onBackdrop)
+                        colors: themeColors
                     )
                 }
             }
@@ -55,14 +51,17 @@ struct HomeScreen: View {
         .onChange(of: activeID) { _, _ in
             syncSideEffects(for: activeEvent)
         }
+        .sheet(item: $contextEvent) { event in
+            DayContextSheet(event: event, colors: ThemeColors.forCategory(event.category))
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+                .presentationCornerRadius(32)
+        }
     }
 
     private func syncSideEffects(for event: DayEvent?) {
         selectedDay = event
         WidgetDataWriter.save(event: event)
-        let colors = ThemeColors.forCategory(event?.category)
-        storyImage = ShareCardRenderer.render(event: event, colors: colors, format: .story)
-        messageImage = ShareCardRenderer.render(event: event, colors: colors, format: .message)
     }
 
     private var header: some View {
@@ -183,6 +182,25 @@ struct HomeScreen: View {
                     .minimumScaleFactor(0.86)
 
                 Spacer(minLength: 16)
+
+                Button {
+                    Haptics.triggerLight()
+                    contextEvent = day
+                } label: {
+                    HStack(spacing: 7) {
+                        Image(systemName: DayProvenance.forEvent(day).isOfficial ? "checkmark.seal.fill" : "info.circle.fill")
+                        Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
+                    }
+                    .font(.system(size: 12, weight: .black, design: .rounded))
+                    .foregroundStyle(Color(hex: colors.ink).opacity(0.80))
+                    .padding(.horizontal, 12)
+                    .frame(height: 34)
+                    .background(Color(hex: colors.ink).opacity(0.10))
+                    .clipShape(Capsule())
+                }
+                .buttonStyle(.plain)
+
+                Spacer(minLength: 12)
 
                 HStack(spacing: 8) {
                     BrandMark(color: Color(hex: colors.accent))

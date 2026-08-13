@@ -1,17 +1,16 @@
 import Foundation
 import UserNotifications
 
-/// Local notification scheduling for the morning ("today is X") and evening ("tomorrow is X")
-/// reminders.
+/// One calm, social morning reminder per day.
 ///
-/// iOS caps pending local notifications at 64/app. This schedules a rolling ~30-day window
-/// (2 notifications/day = 60 requests) and re-runs on every relevant foreground rather than
+/// iOS caps pending local notifications at 64/app. This schedules a rolling ~60-day window
+/// and re-runs on every relevant foreground rather than
 /// registering one request per day of content — a straight port of the RN version (which only
 /// ever looked 7 days ahead) would silently start failing once the day-content gap is filled
 /// toward covering the full year.
 @MainActor
 enum NotificationScheduler {
-    private static let daysAhead = 30
+    private static let daysAhead = 60
     private static let center = UNUserNotificationCenter.current()
 
     static func requestPermission() async -> Bool {
@@ -41,16 +40,7 @@ enum NotificationScheduler {
 
             if let event = DayEventStore.event(month: month, day: day) {
                 await add(tag: "morning", event: event, fireDay: date, hour: 9,
-                          title: morningTitle(event), body: EditorialContent.forEvent(event).fact)
-            }
-
-            guard let tomorrow = calendar.date(byAdding: .day, value: 1, to: date) else { continue }
-            let tMonth = calendar.component(.month, from: tomorrow)
-            let tDay = calendar.component(.day, from: tomorrow)
-
-            if let event = DayEventStore.event(month: tMonth, day: tDay) {
-                await add(tag: "evening", event: event, fireDay: date, hour: 21,
-                          title: eveningTitle(event), body: eveningBody(event))
+                          title: morningTitle(event), body: morningBody(event))
             }
         }
     }
@@ -80,22 +70,22 @@ enum NotificationScheduler {
 
     private static func morningTitle(_ event: DayEvent) -> String {
         let symbol = EditorialSymbol.forEvent(event)
+        let editorial = EditorialContent.forEvent(event)
+        if editorial.tone == .remembrance {
+            return DayEventStore.language == "tr"
+                ? "\(symbol) Bugünün notu"
+                : "\(symbol) Today's note"
+        }
         return DayEventStore.language == "tr"
-            ? "\(symbol) Bugün: \(event.title)"
-            : "\(symbol) Today: \(event.title)"
+            ? "\(symbol) Bugün birine yazmak için bahanen var"
+            : "\(symbol) You have a reason to text someone today"
     }
 
-    private static func eveningTitle(_ event: DayEvent) -> String {
-        let symbol = EditorialSymbol.forEvent(event)
-        return DayEventStore.language == "tr"
-            ? "\(symbol) Yarın: \(event.title)"
-            : "\(symbol) Tomorrow: \(event.title)"
-    }
-
-    private static func eveningBody(_ event: DayEvent) -> String {
-        let prompt = EditorialContent.forEvent(event).prompt
-        return DayEventStore.language == "tr"
-            ? "Kart hazır. Yarın kime göndereceğini şimdiden düşün. \(prompt)."
-            : "The card is ready. Decide who gets it tomorrow. \(prompt)."
+    private static func morningBody(_ event: DayEvent) -> String {
+        let editorial = EditorialContent.forEvent(event)
+        if editorial.tone == .remembrance {
+            return "\(event.title). \(editorial.fact)"
+        }
+        return "\(event.title) · \(editorial.prompt)"
     }
 }

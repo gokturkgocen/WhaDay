@@ -78,8 +78,8 @@ struct SettingsScreen: View {
                 .font(.system(size: 17, weight: .black, design: .rounded))
 
             Text(DayEventStore.language == "tr"
-                 ? "Sabah bugünün, akşam yarının kartını sessizce hatırlatalım."
-                 : "Get a gentle reminder for today in the morning and tomorrow in the evening.")
+                 ? "Her sabah, o gün kime yazabileceğini hatırlatan tek bir kart."
+                 : "One calm morning card with a reason to text someone that day.")
                 .font(.system(size: 14, weight: .semibold, design: .rounded))
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.62))
 
