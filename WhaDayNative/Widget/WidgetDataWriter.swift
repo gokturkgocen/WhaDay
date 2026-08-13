@@ -4,19 +4,22 @@ import Foundation
 enum WidgetDataWriter {
     private static let appGroupID = "group.com.gokturkgocen.whadayapp"
 
-    static func save(event: DayEvent?, theme: BackgroundTheme, colors: ThemeColors) {
+    static func save(event: DayEvent?) {
         guard let defaults = UserDefaults(suiteName: appGroupID) else { return }
 
-        defaults.set(event?.emoji ?? "✨", forKey: "widgetEmoji")
-        defaults.set(event?.title ?? "WhaDay", forKey: "widgetTitle")
-        defaults.set(theme.rawValue, forKey: "widgetTheme")
-        defaults.set(colors.gradient[0], forKey: "widgetGradientStart")
-        defaults.set(colors.gradient[1], forKey: "widgetGradientMid")
-        defaults.set(colors.gradient[2], forKey: "widgetGradientEnd")
-        defaults.set(colors.blob1, forKey: "widgetBlob1")
-        defaults.set(colors.blob2, forKey: "widgetBlob2")
-        defaults.set(colors.blob3, forKey: "widgetBlob3")
-        defaults.set(colors.accent, forKey: "widgetAccent")
+        let currentEvent = DayEventStore.today() ?? event
+        let currentColors = ThemeColors.forCategory(currentEvent?.category)
+
+        defaults.set(currentEvent.map(EditorialSymbol.forEvent) ?? "✦", forKey: "widgetEmoji")
+        defaults.set(currentEvent?.title ?? "WhaDay", forKey: "widgetTitle")
+        defaults.set(DayEventStore.language, forKey: "widgetLanguage")
+        if let data = try? JSONEncoder().encode(DayEventStore.days) {
+            defaults.set(data, forKey: "widgetDays")
+        }
+        defaults.set(currentColors.paper, forKey: "widgetPaper")
+        defaults.set(currentColors.ink, forKey: "widgetInk")
+        defaults.set(currentColors.secondary, forKey: "widgetSecondary")
+        defaults.set(currentColors.accent, forKey: "widgetAccent")
 
         WidgetCenter.shared.reloadTimelines(ofKind: "WhaDayWidget")
     }

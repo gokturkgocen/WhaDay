@@ -18,6 +18,16 @@ enum NotificationScheduler {
         (try? await center.requestAuthorization(options: [.alert, .sound, .badge])) ?? false
     }
 
+    static func scheduleIfAuthorized() async {
+        let settings = await center.notificationSettings()
+        guard settings.authorizationStatus == .authorized || settings.authorizationStatus == .provisional else { return }
+        await scheduleAll()
+    }
+
+    static func authorizationStatus() async -> UNAuthorizationStatus {
+        await center.notificationSettings().authorizationStatus
+    }
+
     static func scheduleAll() async {
         center.removeAllPendingNotificationRequests()
 
@@ -31,7 +41,7 @@ enum NotificationScheduler {
 
             if let event = DayEventStore.event(month: month, day: day) {
                 await add(tag: "morning", event: event, fireDay: date, hour: 9,
-                          title: morningTitle(event), body: event.description)
+                          title: morningTitle(event), body: EditorialContent.forEvent(event).fact)
             }
 
             guard let tomorrow = calendar.date(byAdding: .day, value: 1, to: date) else { continue }
@@ -40,7 +50,7 @@ enum NotificationScheduler {
 
             if let event = DayEventStore.event(month: tMonth, day: tDay) {
                 await add(tag: "evening", event: event, fireDay: date, hour: 21,
-                          title: eveningTitle(event), body: eveningBody)
+                          title: eveningTitle(event), body: eveningBody(event))
             }
         }
     }
@@ -69,18 +79,23 @@ enum NotificationScheduler {
     }
 
     private static func morningTitle(_ event: DayEvent) -> String {
-        DayEventStore.language == "tr"
-            ? "\(event.emoji) Bugün \(event.title)!"
-            : "\(event.emoji) Today is \(event.title)!"
+        let symbol = EditorialSymbol.forEvent(event)
+        return DayEventStore.language == "tr"
+            ? "\(symbol) Bugün: \(event.title)"
+            : "\(symbol) Today: \(event.title)"
     }
 
     private static func eveningTitle(_ event: DayEvent) -> String {
-        DayEventStore.language == "tr"
-            ? "\(event.emoji) Yarın \(event.title)!"
-            : "\(event.emoji) Tomorrow is \(event.title)!"
+        let symbol = EditorialSymbol.forEvent(event)
+        return DayEventStore.language == "tr"
+            ? "\(symbol) Yarın: \(event.title)"
+            : "\(symbol) Tomorrow: \(event.title)"
     }
 
-    private static var eveningBody: String {
-        DayEventStore.language == "tr" ? "Yarın için hazırlan!" : "Don't forget about tomorrow!"
+    private static func eveningBody(_ event: DayEvent) -> String {
+        let prompt = EditorialContent.forEvent(event).prompt
+        return DayEventStore.language == "tr"
+            ? "Kart hazır. Yarın kime göndereceğini şimdiden düşün. \(prompt)."
+            : "The card is ready. Decide who gets it tomorrow. \(prompt)."
     }
 }

@@ -57,3 +57,14 @@ targets:
       base:
         PRODUCT_NAME: "$(TARGET_NAME)"
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.WhaDayWidget
+
+  WhaDayNativeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: WhaDayNativeTests
+    dependencies:
+      - target: WhaDayNative
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.tests

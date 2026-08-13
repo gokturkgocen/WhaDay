@@ -1,73 +1,97 @@
 import SwiftUI
+import UIKit
 
 struct ActionButtons: View {
-    let primaryLabel: String
-    let secondaryLabel: String
-    let shareImage: UIImage?
-    let shareTitle: String
+    let prompt: String
+    let storyImage: UIImage?
+    let messageImage: UIImage?
     let accentColor: Color
+    let inkColor: Color
+    let onBackdropColor: Color
+
+    @State private var activeShare: ShareDestination?
 
     var body: some View {
-        VStack(spacing: 14) {
-            shareLink(label: primaryLabel, haptic: Haptics.triggerMedium) {
-                Text(primaryLabel)
-                    .font(.system(size: 18, weight: .bold, design: .default))
-                    .tracking(0.3)
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 16)
-                    .background(
-                        LinearGradient(
-                            gradient: Gradient(colors: [
-                                accentColor.opacity(0.5),
-                                accentColor.opacity(0.3)
-                            ]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 24)
-                            .strokeBorder(accentColor.opacity(0.7), lineWidth: 1)
-                    )
-                    .clipShape(RoundedRectangle(cornerRadius: 24))
-                    .shadow(color: accentColor.opacity(0.3), radius: 12, x: 0, y: 4)
+        VStack(spacing: 10) {
+            Button {
+                Haptics.triggerMedium()
+                activeShare = .message
+            } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "paperplane.fill")
+                    Text(prompt)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.78)
+                    Spacer(minLength: 4)
+                    Image(systemName: "arrow.up.right")
+                        .font(.system(size: 13, weight: .black))
+                }
+                .font(.system(size: 16, weight: .black, design: .rounded))
+                .foregroundStyle(inkColor)
+                .padding(.horizontal, 20)
+                .frame(maxWidth: .infinity, minHeight: 56)
+                .background(accentColor)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .shadow(color: accentColor.opacity(0.22), radius: 18, x: 0, y: 9)
             }
+            .disabled(messageImage == nil)
 
-            shareLink(label: secondaryLabel, haptic: Haptics.triggerLight) {
-                Text(secondaryLabel)
-                    .font(.system(size: 16, weight: .semibold, design: .default))
-                    .tracking(0.2)
-                    .foregroundStyle(.white.opacity(0.85))
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .background(Color.white.opacity(0.1))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(Color.white.opacity(0.2), lineWidth: 1)
-                    )
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+            Button {
+                Haptics.triggerLight()
+                activeShare = .story
+            } label: {
+                HStack(spacing: 9) {
+                    Image(systemName: "rectangle.portrait.on.rectangle.portrait")
+                    Text(DayEventStore.language == "tr" ? "Story için hazırla" : "Create a Story")
+                }
+                .font(.system(size: 14, weight: .bold, design: .rounded))
+                .foregroundStyle(onBackdropColor)
+                .frame(maxWidth: .infinity, minHeight: 43)
+                .background(Color.white.opacity(0.07))
+                .clipShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 17, style: .continuous)
+                        .strokeBorder(Color.white.opacity(0.14), lineWidth: 1)
+                )
             }
+            .disabled(storyImage == nil)
         }
+        .buttonStyle(.plain)
         .padding(.horizontal, 20)
-        .padding(.bottom, 40)
-    }
-
-    @ViewBuilder
-    private func shareLink<Label: View>(label: String, haptic: @escaping () -> Void, @ViewBuilder content: () -> Label) -> some View {
-        if let shareImage {
-            ShareLink(
-                item: Image(uiImage: shareImage),
-                preview: SharePreview(shareTitle, image: Image(uiImage: shareImage))
-            ) {
-                content()
-            }
-            .simultaneousGesture(TapGesture().onEnded { haptic() })
-            .transition(.opacity)
-        } else {
-            content()
-                .opacity(0.5)
-                .allowsHitTesting(false)
+        .padding(.top, 8)
+        .padding(.bottom, 12)
+        .sheet(item: $activeShare) { destination in
+            ActivityShareView(items: shareItems(for: destination))
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
         }
     }
+
+    private func shareItems(for destination: ShareDestination) -> [Any] {
+        switch destination {
+        case .story:
+            if let storyImage { return [storyImage] }
+            return []
+        case .message:
+            if let messageImage { return [messageImage] }
+            return []
+        }
+    }
+}
+
+private enum ShareDestination: String, Identifiable {
+    case story
+    case message
+
+    var id: String { rawValue }
+}
+
+private struct ActivityShareView: UIViewControllerRepresentable {
+    let items: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }

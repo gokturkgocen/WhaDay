@@ -5,6 +5,7 @@ private enum Screen {
 }
 
 struct RootView: View {
+    @Environment(\.scenePhase) private var scenePhase
     @State private var screen: Screen = .home
     @State private var selectedDay: DayEvent?
 
@@ -35,9 +36,11 @@ struct RootView: View {
         }
         .task {
             Haptics.prepare()
-            if await NotificationScheduler.requestPermission() {
-                await NotificationScheduler.scheduleAll()
-            }
+            await NotificationScheduler.scheduleIfAuthorized()
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            guard newPhase == .active else { return }
+            Task { await NotificationScheduler.scheduleIfAuthorized() }
         }
     }
 }
