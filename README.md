@@ -19,6 +19,10 @@ open WhaDay.xcodeproj
 `WhaDay.xcodeproj` is generated from `project.yml` and is not checked in — never edit it directly;
 edit `project.yml` and re-run `xcodegen generate` instead.
 
+The binding 1.0 product scope and completion gates are documented in
+[`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md). Implementation progress
+is tracked in [`docs/DEVELOPMENT_ROADMAP.md`](docs/DEVELOPMENT_ROADMAP.md).
+
 ## Structure
 
 - `WhaDayNative/` — main app target (SwiftUI)
