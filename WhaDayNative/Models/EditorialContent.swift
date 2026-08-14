@@ -26,6 +26,20 @@ struct EditorialContent {
             return language == "tr" ? curated.tr : curated.en
         }
 
+        if event.metadata?.reviewState == .curated {
+            return EditorialContent(
+                eyebrow: tone == .remembrance
+                    ? (language == "tr" ? "BUGÜNÜN NOTU" : "TODAY'S NOTE")
+                    : (language == "tr" ? "BUGÜNÜN BAHANESİ" : "TODAY'S EXCUSE"),
+                fact: event.description,
+                prompt: event.sharingHook,
+                shareMessage: language == "tr"
+                    ? "Bugün \(event.title). Bu notu seninle paylaşmak istedim. — WhaDay"
+                    : "Today is \(event.title). I wanted to share this note with you. — WhaDay",
+                tone: tone
+            )
+        }
+
         if let verified = verifiedFacts[event.id] {
             return EditorialContent(
                 eyebrow: tone == .remembrance
@@ -62,7 +76,7 @@ struct EditorialContent {
     }
 
     private static func tone(for event: DayEvent) -> EditorialTone {
-        if event.sensitivity == .remembrance { return .remembrance }
+        if event.sensitivity != .standard { return .remembrance }
         if verifiedFacts[event.id] != nil { return .remembrance }
 
         let normalized = event.title.lowercased()
@@ -391,10 +405,6 @@ struct EditorialContent {
         "11-18": BilingualFact(
             tr: "Çocuklara yönelik cinsel istismarı önlemek; güvenli alanlar kurmayı, çocukları dinlemeyi ve sorumluluğu yetişkinlerin almasını gerektirir.",
             en: "Preventing child sexual abuse requires safe environments, listening to children and adults taking responsibility."
-        ),
-        "11-17": BilingualFact(
-            tr: "Prematüre doğan bebekler ve aileleri için doğru bakım, güvenilir bilgi ve uzun süreli destek büyük önem taşır.",
-            en: "For babies born preterm and their families, appropriate care, reliable information and long-term support matter greatly."
         ),
         "11-25": BilingualFact(
             tr: "Kadınlara yönelik şiddet özel bir mesele değil, önlenebilir bir insan hakları ihlalidir.",

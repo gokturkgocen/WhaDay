@@ -89,6 +89,7 @@ private let metadataByID = Dictionary(uniqueKeysWithValues: metadata.map { ($0.i
 private let allIDs = Set(tr.map(\.id)).union(en.map(\.id)).union(metadata.map(\.id))
 
 private var structuralIssues: [String] = []
+private var semanticSafetyIssues: [String] = []
 if tr.count != trByID.count { structuralIssues.append("Turkish IDs are not unique") }
 if en.count != enByID.count { structuralIssues.append("English IDs are not unique") }
 if metadata.count != metadataByID.count { structuralIssues.append("Metadata IDs are not unique") }
@@ -117,6 +118,38 @@ for id in allIDs.sorted() {
         }
         if !source.url.hasPrefix("https://") || !isValidCheckDate(source.checkedAt) {
             structuralIssues.append("\(id) has an unverified official source")
+        }
+    }
+
+    if record.sensitivity != "standard" && record.shareability > 2 {
+        semanticSafetyIssues.append("\(id) is sensitive but has shareability \(record.shareability)")
+    }
+
+    let combinedTitle = "\(trDay.title) \(enDay.title)".lowercased()
+    let sensitiveTitleSignals = [
+        "abuse", "aggression", "chemical warfare", "child labour", "disappearance",
+        "earthquake victims", "extremism", "genital mutilation", "hate speech", "holocaust",
+        "islamophobia", "nuclear tests", "refugee", "sexual violence", "slavery", "suicide",
+        "terrorism", "violence against", "ayrımcılık", "cinsel şiddet", "çocuk işçiliği",
+        "deprem kurban", "istismar", "islamofobi", "kadın sünnet", "kimyasal savaş",
+        "köle", "mülteci", "nefret söylemi", "nükleer deneme", "soykırım", "şiddet",
+        "terör", "zorla kaybed"
+    ]
+    let isPositiveNonviolenceTitle = combinedTitle.contains("non-violence")
+        || combinedTitle.contains("nonviolence")
+        || combinedTitle.contains("şiddetsizlik")
+    if record.sensitivity == "standard", !isPositiveNonviolenceTitle,
+       sensitiveTitleSignals.contains(where: combinedTitle.contains) {
+        semanticSafetyIssues.append("\(id) has a sensitive title but standard metadata")
+    }
+
+    if record.reviewState == "curated" {
+        let hasLegacyDescription = trDay.description.contains("Dünya çapında kutlanan ve anılan önemli bir gün")
+            || enDay.description.localizedCaseInsensitiveContains("A globally celebrated and observed day")
+        let hasLegacyHook = trDay.sharingHook == "Farkındalık yayarak bilgilendir"
+            || enDay.sharingHook == "Raise awareness"
+        if hasLegacyDescription || hasLegacyHook {
+            semanticSafetyIssues.append("\(id) is curated but still contains legacy copy")
         }
     }
 }
@@ -161,6 +194,7 @@ private var report: [String] = [
     "| English records | \(en.count) |",
     "| Metadata records | \(metadata.count) |",
     "| Structural issues | \(structuralIssues.count) |",
+    "| Semantic safety issues | \(semanticSafetyIssues.count) |",
     "| Verified primary sources | \(verifiedSources) |",
     "| Turkish generic descriptions | \(genericTR) |",
     "| English generic descriptions | \(genericEN) |",
@@ -175,6 +209,14 @@ if structuralIssues.isEmpty {
 } else {
     report.append(contentsOf: ["## Structural issues", ""])
     report.append(contentsOf: structuralIssues.map { "- \($0)" })
+    report.append("")
+}
+
+if semanticSafetyIssues.isEmpty {
+    report.append(contentsOf: ["## Semantic safety issues", "", "None.", ""])
+} else {
+    report.append(contentsOf: ["## Semantic safety issues", ""])
+    report.append(contentsOf: semanticSafetyIssues.map { "- \($0)" })
     report.append("")
 }
 
@@ -202,7 +244,7 @@ report.append(contentsOf: [
     "",
     "## Release-candidate rule",
     "",
-    "The strict audit passes only when structural issues are zero, every record is curated, and generic legacy description/hook counts are zero."
+    "The strict audit passes only when structural and semantic safety issues are zero, every record is curated, and generic legacy description/hook counts are zero."
 ])
 
 private let rendered = report.joined(separator: "\n") + "\n"
@@ -216,7 +258,7 @@ if CommandLine.arguments.contains("--write") {
 print(rendered)
 
 if CommandLine.arguments.contains("--strict") {
-    let strictFailures = structuralIssues.count + unreviewed.count + genericTR + genericEN + defaultHookTR + defaultHookEN
+    let strictFailures = structuralIssues.count + semanticSafetyIssues.count + unreviewed.count + genericTR + genericEN + defaultHookTR + defaultHookEN
     if strictFailures > 0 {
         fputs("Strict audit failed with \(strictFailures) unresolved checks.\n", stderr)
         exit(1)

@@ -345,6 +345,43 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertFalse(copy.prompt.localizedCaseInsensitiveContains("person you thought"))
     }
 
+    func testCuratedSafetyCopyComesFromTheReviewedLocalizedCorpus() throws {
+        let event = try XCTUnwrap(DayEventStore.event(month: 11, day: 15))
+        let copy = EditorialContent.forEvent(event)
+
+        XCTAssertEqual(copy.fact, event.description)
+        XCTAssertEqual(copy.prompt, event.sharingHook)
+        XCTAssertEqual(event.metadata?.reviewState, .curated)
+        XCTAssertEqual(event.contentCategory, .civilSociety)
+        XCTAssertEqual(event.sensitivity, .considerate)
+        XCTAssertLessThanOrEqual(event.shareability, 2)
+        XCTAssertTrue(copy.eyebrow.contains("NOT") || copy.eyebrow.contains("NOTE"))
+    }
+
+    func testEveryNonstandardDayUsesNoteLanguageAndBlocksPromotion() {
+        for event in DayEventStore.days where event.sensitivity != .standard {
+            let copy = EditorialContent.forEvent(event)
+            XCTAssertTrue(
+                copy.eyebrow.contains("NOT") || copy.eyebrow.contains("NOTE"),
+                event.id
+            )
+            XCTAssertFalse(event.metadata?.canBePromotedForEngagement ?? true, event.id)
+        }
+    }
+
+    func testNovemberSeventeenUsesReviewedWhaDayPromptInsteadOfOutdatedPrematurityDate() throws {
+        let event = try XCTUnwrap(DayEventStore.event(month: 11, day: 17))
+        let copy = EditorialContent.forEvent(event)
+
+        XCTAssertEqual(event.title, "İlk Mesajı Atma Günü")
+        XCTAssertEqual(event.authority, .editorial)
+        XCTAssertEqual(event.sensitivity, .standard)
+        XCTAssertEqual(event.shareability, 5)
+        XCTAssertEqual(event.metadata?.reviewState, .curated)
+        XCTAssertEqual(copy.fact, event.description)
+        XCTAssertFalse(copy.fact.localizedCaseInsensitiveContains("premat"))
+    }
+
     func testCalendarDataContainsLeapDayAndUniqueIdentifiers() {
         XCTAssertEqual(DayEventStore.days.count, 366)
         XCTAssertNotNil(DayEventStore.event(month: 2, day: 29))

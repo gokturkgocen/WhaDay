@@ -43,8 +43,8 @@
     "id": "01-05",
     "month": 1,
     "day": 5,
-    "title": "Twelfth Day of Christmas / Twelfth Night",
-    "description": "Twelfth Day of Christmas / Twelfth Night: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "title": "Twelfth Day of Christmas \/ Twelfth Night",
+    "description": "Twelfth Day of Christmas \/ Twelfth Night: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
     "emoji": "🎄",
     "category": "awareness",
     "sharingHook": "Raise awareness"
@@ -53,8 +53,8 @@
     "id": "01-06",
     "month": 1,
     "day": 6,
-    "title": "Epiphany / Theophany",
-    "description": "Epiphany / Theophany: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "title": "Epiphany \/ Theophany",
+    "description": "Epiphany \/ Theophany: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
@@ -264,10 +264,10 @@
     "month": 1,
     "day": 27,
     "title": "International Day of Commemoration in Memory of the Victims of the Holocaust",
-    "description": "International Day of Commemoration in Memory of the Victims of the Holocaust: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembrance is not only about the past; it also means recognizing antisemitism, hatred and dehumanization today.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share with care to keep memory alive"
   },
   {
     "id": "01-28",
@@ -364,10 +364,10 @@
     "month": 2,
     "day": 6,
     "title": "International Day of Zero Tolerance to Female Genital Mutilation",
-    "description": "International Day of Zero Tolerance to Female Genital Mutilation: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Female genital mutilation is both a serious health issue and a violation of the human rights of girls and women.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share accurate information with survivors in mind"
   },
   {
     "id": "02-07",
@@ -424,10 +424,10 @@
     "month": 2,
     "day": 12,
     "title": "International Day for the Prevention of Violent Extremism as and when Conducive to Terrorism",
-    "description": "International Day for the Prevention of Violent Extremism as and when Conducive to Terrorism: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Preventing violent extremism means strengthening human rights, education and social cohesion without amplifying fear.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share to strengthen solidarity, not fear"
   },
   {
     "id": "02-13",
@@ -604,10 +604,10 @@
     "month": 3,
     "day": 1,
     "title": "Zero Discrimination Day",
-    "description": "Zero Discrimination Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "No one deserves fewer rights because of their identity, appearance, health or circumstances.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share to speak up against discrimination"
   },
   {
     "id": "03-02",
@@ -644,10 +644,10 @@
     "month": 3,
     "day": 5,
     "title": "International Day for Disarmament and Non-Proliferation Awareness",
-    "description": "International Day for Disarmament and Non-Proliferation Awareness: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Preventing the spread of weapons concerns everyone who wants a safer future, not only governments.",
     "emoji": "👨",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with context for peace and security"
   },
   {
     "id": "03-06",
@@ -744,10 +744,10 @@
     "month": 3,
     "day": 15,
     "title": "International Day to Combat Islamophobia",
-    "description": "International Day to Combat Islamophobia: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Combating Islamophobia means refusing to stay silent about prejudice, hatred and discrimination against Muslims.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share in solidarity against hatred"
   },
   {
     "id": "03-16",
@@ -834,30 +834,30 @@
     "month": 3,
     "day": 24,
     "title": "World Tuberculosis Day",
-    "description": "World Tuberculosis Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Tuberculosis is preventable and curable; access to reliable information, early diagnosis and care saves lives.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with reliable health information"
   },
   {
     "id": "03-25",
     "month": 3,
     "day": 25,
     "title": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
-    "description": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering millions of enslaved people also means seeing how slavery's legacy continues through inequality today.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share its history and continuing legacy with care"
   },
   {
     "id": "03-26",
     "month": 3,
     "day": 26,
     "title": "Purple Day (Epilepsy Awareness)",
-    "description": "Purple Day (Epilepsy Awareness): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Purple Day calls attention to lived experience with epilepsy, challenges myths and grows support for the community.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Amplify the epilepsy community with care"
   },
   {
     "id": "03-27",
@@ -924,10 +924,10 @@
     "month": 4,
     "day": 2,
     "title": "World Autism Awareness Day",
-    "description": "World Autism Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "It is not enough to notice autistic people; listening, respecting different communication and building inclusion matter.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share by centering autistic voices"
   },
   {
     "id": "04-03",
@@ -944,10 +944,10 @@
     "month": 4,
     "day": 4,
     "title": "International Day for Mine Awareness and Assistance in Mine Action",
-    "description": "International Day for Mine Awareness and Assistance in Mine Action: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Landmines can threaten civilians long after conflict ends; mine clearance and victim assistance save lives.",
     "emoji": "✊",
     "category": "action",
-    "sharingHook": "Take positive action"
+    "sharingHook": "Share with civilians and solutions in focus"
   },
   {
     "id": "04-05",
@@ -974,10 +974,10 @@
     "month": 4,
     "day": 7,
     "title": "World Health Day",
-    "description": "World Health Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "World Health Day is a reminder that everyone should be able to reach quality health care without discrimination or financial barriers.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Take care of your health"
+    "sharingHook": "Share the right to health with reliable context"
   },
   {
     "id": "04-08",
@@ -1014,10 +1014,10 @@
     "month": 4,
     "day": 11,
     "title": "World Parkinson's Day",
-    "description": "World Parkinson's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Parkinson's is not experienced in one single way; listening to people and care partners reveals the daily reality beyond symptoms.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share by centering lived experience"
   },
   {
     "id": "04-12",
@@ -1074,10 +1074,10 @@
     "month": 4,
     "day": 17,
     "title": "World Hemophilia Day",
-    "description": "World Hemophilia Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "For haemophilia and other inherited bleeding disorders, access to diagnosis, appropriate care and treatment directly affects quality of life.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share for reliable information and access to care"
   },
   {
     "id": "04-18",
@@ -1154,10 +1154,10 @@
     "month": 4,
     "day": 25,
     "title": "World Malaria Day",
-    "description": "World Malaria Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Malaria is preventable and curable; equitable access to prevention, diagnosis and effective treatment is essential.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with verified health information"
   },
   {
     "id": "04-26",
@@ -1194,10 +1194,10 @@
     "month": 4,
     "day": 29,
     "title": "International Day in Memory of the Victims of Earthquakes",
-    "description": "International Day in Memory of the Victims of Earthquakes: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering people lost to earthquakes also recalls our shared responsibility for safer buildings and preparedness.",
     "emoji": "🎨",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share with care for remembrance and preparedness"
   },
   {
     "id": "04-30",
@@ -1213,8 +1213,8 @@
     "id": "05-01",
     "month": 5,
     "day": 1,
-    "title": "International Workers' Day / May Day",
-    "description": "International Workers' Day / May Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "title": "International Workers' Day \/ May Day",
+    "description": "International Workers' Day \/ May Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
     "emoji": "✊",
     "category": "action",
     "sharingHook": "Take positive action"
@@ -1284,10 +1284,10 @@
     "month": 5,
     "day": 8,
     "title": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War",
-    "description": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering those lost in the Second World War underlines the value of memory and cooperation in protecting peace.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the memory of peace with care"
   },
   {
     "id": "05-09",
@@ -1484,10 +1484,10 @@
     "month": 5,
     "day": 28,
     "title": "Menstrual Hygiene Day",
-    "description": "Menstrual Hygiene Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Open, accurate conversation about menstrual health reduces stigma and highlights access to safe products, water and health care.",
     "emoji": "👨",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share accurate information, not stigma"
   },
   {
     "id": "05-29",
@@ -1554,10 +1554,10 @@
     "month": 6,
     "day": 4,
     "title": "International Day of Innocent Children Victims of Aggression",
-    "description": "International Day of Innocent Children Victims of Aggression: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "War and conflict should never take away a child's safety, education or future.",
     "emoji": "👶",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share with care for children's safety"
   },
   {
     "id": "06-05",
@@ -1634,10 +1634,10 @@
     "month": 6,
     "day": 12,
     "title": "World Day Against Child Labour",
-    "description": "World Day Against Child Labour: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Every child deserves safety, education and play — not dangerous or exploitative work.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with context for children's rights"
   },
   {
     "id": "06-13",
@@ -1664,10 +1664,10 @@
     "month": 6,
     "day": 15,
     "title": "World Elder Abuse Awareness Day",
-    "description": "World Elder Abuse Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Neglect, financial exploitation and violence against older people often remain hidden; noticing is the first step.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with older people's dignity in focus"
   },
   {
     "id": "06-16",
@@ -1694,30 +1694,30 @@
     "month": 6,
     "day": 18,
     "title": "International Day for Countering Hate Speech",
-    "description": "International Day for Countering Hate Speech: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Hate speech is more than words; it targets people and erodes the ground for living together.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share to challenge hate without amplifying it"
   },
   {
     "id": "06-19",
     "month": 6,
     "day": 19,
     "title": "International Day for the Elimination of Sexual Violence in Conflict",
-    "description": "International Day for the Elimination of Sexual Violence in Conflict: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Sexual violence in conflict is not inevitable; survivors' voices, safety and access to justice must come first.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share with care and survivors in focus"
   },
   {
     "id": "06-20",
     "month": 6,
     "day": 20,
     "title": "World Refugee Day",
-    "description": "World Refugee Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Being a refugee is not a choice but a search for safety. Dignity and rights do not end at a border.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with human dignity at the center"
   },
   {
     "id": "06-21",
@@ -1774,10 +1774,10 @@
     "month": 6,
     "day": 26,
     "title": "International Day against Drug Abuse and Illicit Trafficking",
-    "description": "International Day against Drug Abuse and Illicit Trafficking: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "An effective response to drugs centers evidence-based prevention, harm reduction, treatment and human rights instead of stigma.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share verified information without stigma"
   },
   {
     "id": "06-27",
@@ -2003,8 +2003,8 @@
     "id": "07-19",
     "month": 7,
     "day": 19,
-    "title": "Liberation Day / Sandinista Day (Nicaragua)",
-    "description": "Liberation Day / Sandinista Day (Nicaragua): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "title": "Liberation Day \/ Sandinista Day (Nicaragua)",
+    "description": "Liberation Day \/ Sandinista Day (Nicaragua): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
@@ -2094,10 +2094,10 @@
     "month": 7,
     "day": 28,
     "title": "World Hepatitis Day",
-    "description": "World Hepatitis Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Accurate information, access to testing and treatment, and stigma-free care reduce the burden of viral hepatitis.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with reliable health sources"
   },
   {
     "id": "07-29",
@@ -2144,10 +2144,10 @@
     "month": 8,
     "day": 2,
     "title": "Roma Holocaust Memorial Day",
-    "description": "Roma Holocaust Memorial Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering Roma murdered under the Nazis also means opposing anti-Roma hatred and discrimination today.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share Roma remembrance with care"
   },
   {
     "id": "08-03",
@@ -2334,30 +2334,30 @@
     "month": 8,
     "day": 21,
     "title": "International Day of Remembrance and Tribute to the Victims of Terrorism",
-    "description": "International Day of Remembrance and Tribute to the Victims of Terrorism: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A day to remember the lives, losses and rights of people affected by terrorism beyond the statistics.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Remember victims and survivors with care"
   },
   {
     "id": "08-22",
     "month": 8,
     "day": 22,
     "title": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief",
-    "description": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "No one should face violence because of belief or non-belief; freedom of conscience belongs to everyone.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share with care for freedom of belief and conscience"
   },
   {
     "id": "08-23",
     "month": 8,
     "day": 23,
     "title": "International Day for the Remembrance of the Slave Trade and its Abolition",
-    "description": "International Day for the Remembrance of the Slave Trade and its Abolition: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering those who resisted the slave trade and those whose lives were taken keeps the struggle for freedom alive.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Remember resistance and loss with care"
   },
   {
     "id": "08-24",
@@ -2414,20 +2414,20 @@
     "month": 8,
     "day": 29,
     "title": "International Day against Nuclear Tests",
-    "description": "International Day against Nuclear Tests: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering the lasting harm of nuclear tests to people and the environment is part of preventing their return.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the impact of nuclear tests with context"
   },
   {
     "id": "08-30",
     "month": 8,
     "day": 30,
     "title": "International Day of the Victims of Enforced Disappearances",
-    "description": "International Day of the Victims of Enforced Disappearances: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Families of the forcibly disappeared continue to seek truth and justice; uncertainty is itself a form of suffering.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share the call for truth and justice with care"
   },
   {
     "id": "08-31",
@@ -2524,30 +2524,30 @@
     "month": 9,
     "day": 9,
     "title": "International Day to Protect Education from Attack",
-    "description": "International Day to Protect Education from Attack: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Schools should never be targets in conflict; they should remain places where children can learn safely.",
     "emoji": "📚",
     "category": "knowledge",
-    "sharingHook": "Learn something new"
+    "sharingHook": "Share with care for safe education"
   },
   {
     "id": "09-10",
     "month": 9,
     "day": 10,
     "title": "World Suicide Prevention Day",
-    "description": "World Suicide Prevention Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "One message may not solve everything, but listening without judgment and helping someone reach professional support matter.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share a reminder to listen and connect to support"
   },
   {
     "id": "09-11",
     "month": 9,
     "day": 11,
     "title": "September 11 attacks anniversary",
-    "description": "September 11 attacks anniversary: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A day to remember those killed in the September 11 attacks, their loved ones and the lasting impact with care.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Remember those lost and their loved ones with care"
   },
   {
     "id": "09-12",
@@ -2604,10 +2604,10 @@
     "month": 9,
     "day": 17,
     "title": "World Patient Safety Day",
-    "description": "World Patient Safety Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Patient safety means reducing preventable harm, listening to patients and supporting open communication with health workers.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share verified information for safer care"
   },
   {
     "id": "09-18",
@@ -2754,10 +2754,10 @@
     "month": 10,
     "day": 2,
     "title": "International Day of Non-Violence",
-    "description": "International Day of Non-Violence: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Observed on Mahatma Gandhi's birthday, 2 October highlights the power of confronting conflict and injustice without violence.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Send to someone who believes in peaceful change"
   },
   {
     "id": "10-03",
@@ -2834,10 +2834,10 @@
     "month": 10,
     "day": 10,
     "title": "World Mental Health Day",
-    "description": "World Mental Health Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Mental health is health; speaking without stigma and being able to reach professional support when needed both matter.",
     "emoji": "👨",
     "category": "wellness",
-    "sharingHook": "Take care of your health"
+    "sharingHook": "Share in reliable, stigma-free language"
   },
   {
     "id": "10-11",
@@ -2853,8 +2853,8 @@
     "id": "10-12",
     "month": 10,
     "day": 12,
-    "title": "Fiesta Nacional de España / Día de la Hispanidad",
-    "description": "Fiesta Nacional de España / Día de la Hispanidad: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "title": "Fiesta Nacional de España \/ Día de la Hispanidad",
+    "description": "Fiesta Nacional de España \/ Día de la Hispanidad: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
@@ -2914,10 +2914,10 @@
     "month": 10,
     "day": 18,
     "title": "World Menopause Day",
-    "description": "World Menopause Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Menopause differs from person to person; reliable information, appropriate health support and open conversation can help.",
     "emoji": "👨",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share reliable information with lived experience in mind"
   },
   {
     "id": "10-19",
@@ -2934,10 +2934,10 @@
     "month": 10,
     "day": 20,
     "title": "World Osteoporosis Day",
-    "description": "World Osteoporosis Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Bone health matters throughout life; knowing risks and reaching appropriate assessment and treatment can help prevent fractures.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share bone-health information from reliable sources"
   },
   {
     "id": "10-21",
@@ -3153,8 +3153,8 @@
     "id": "11-11",
     "month": 11,
     "day": 11,
-    "title": "Armistice Day / Remembrance Day / Veterans Day",
-    "description": "Armistice Day / Remembrance Day / Veterans Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "title": "Armistice Day \/ Remembrance Day \/ Veterans Day",
+    "description": "Armistice Day \/ Remembrance Day \/ Veterans Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Raise awareness"
@@ -3164,10 +3164,10 @@
     "month": 11,
     "day": 12,
     "title": "World Pneumonia Day",
-    "description": "World Pneumonia Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Pneumonia is preventable and treatable; access to vaccination, early diagnosis, appropriate treatment and oxygen when needed saves lives.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with verified health information"
   },
   {
     "id": "11-13",
@@ -3184,20 +3184,20 @@
     "month": 11,
     "day": 14,
     "title": "World Diabetes Day",
-    "description": "World Diabetes Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Living with diabetes requires continuous decisions and care; access to accurate information, diagnosis, insulin and regular health services is critical.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share reliable information about diabetes"
   },
   {
     "id": "11-15",
     "month": 11,
     "day": 15,
     "title": "International Day for the Prevention of and Fight against All Forms of Transnational Organized Crime",
-    "description": "International Day for the Prevention of and Fight against All Forms of Transnational Organized Crime: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Transnational organized crime exploits people through trafficking in persons, weapons and drugs while weakening communities and the rule of law.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with verified context, without sensationalism"
   },
   {
     "id": "11-16",
@@ -3213,21 +3213,21 @@
     "id": "11-17",
     "month": 11,
     "day": 17,
-    "title": "World Prematurity Day",
-    "description": "A day highlighting the needs, care and lived experiences of babies born preterm and their families.",
-    "emoji": "💜",
-    "category": "wellness",
-    "sharingHook": "Share with care and context"
+    "title": "Text First Day",
+    "description": "A small nudge from the WhaDay calendar: send the first message to someone you have been meaning to text.",
+    "emoji": "💬",
+    "category": "social",
+    "sharingHook": "Send to someone you've been meaning to text"
   },
   {
     "id": "11-18",
     "month": 11,
     "day": 18,
     "title": "World Day for the Prevention of and Healing from Child Sexual Exploitation, Abuse and Violence",
-    "description": "World Day for the Prevention of and Healing from Child Sexual Exploitation, Abuse and Violence: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Preventing child sexual abuse requires safe environments, listening to children and adults taking responsibility.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with children's safety at the center"
   },
   {
     "id": "11-19",
@@ -3294,10 +3294,10 @@
     "month": 11,
     "day": 25,
     "title": "International Day for the Elimination of Violence against Women",
-    "description": "International Day for the Elimination of Violence against Women: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Violence against women is not a private matter; it is a preventable human rights violation.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share against violence with survivors in mind"
   },
   {
     "id": "11-26",
@@ -3344,10 +3344,10 @@
     "month": 11,
     "day": 30,
     "title": "Day of Remembrance for all Victims of Chemical Warfare",
-    "description": "Day of Remembrance for all Victims of Chemical Warfare: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Remembering victims of chemical warfare reinforces that these weapons must never be used again.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share to remember victims with care"
   },
   {
     "id": "12-01",
@@ -3364,10 +3364,10 @@
     "month": 12,
     "day": 2,
     "title": "International Day for the Abolition of Slavery",
-    "description": "International Day for the Abolition of Slavery: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Slavery is not only a system from the past; the fight continues against forced labour and human trafficking today.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share today's forms of exploitation with context"
   },
   {
     "id": "12-03",
@@ -3444,10 +3444,10 @@
     "month": 12,
     "day": 10,
     "title": "Human Rights Day",
-    "description": "Human Rights Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Human rights are not only for some people or for easy times; they belong to everyone, every day.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the reminder that rights belong to everyone"
   },
   {
     "id": "12-11",
@@ -3464,10 +3464,10 @@
     "month": 12,
     "day": 12,
     "title": "International Universal Health Coverage Day",
-    "description": "International Universal Health Coverage Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Universal health coverage means everyone can access the quality health services they need without financial hardship.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Take care of your health"
+    "sharingHook": "Share for equitable access to health care"
   },
   {
     "id": "12-13",

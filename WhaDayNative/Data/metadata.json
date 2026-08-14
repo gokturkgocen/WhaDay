@@ -368,7 +368,7 @@
     "authority" : "official",
     "category" : "remembrance",
     "id" : "01-27",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
@@ -501,13 +501,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "02-06",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/international-day-zero-tolerance-female-genital-mutilation"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -588,13 +593,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "02-12",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/prevention-extremism-when-conducive-terrorism-day"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -845,13 +855,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "03-01",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations / UNAIDS",
+      "url" : "https://www.un.org/en/observances/zero-discrimination-day"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -897,13 +912,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "03-05",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/disarmament-non-proliferation-awareness-day"
+    },
     "symbol" : "👨"
   },
   {
@@ -1027,13 +1047,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "03-15",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/anti-islamophobia-day"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -1156,39 +1181,54 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "03-24",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-tb-day"
+    },
     "symbol" : "☀️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "03-25",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/transatlantic-slave-trade"
+    },
     "symbol" : "☮️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "03-26",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "The Anita Kaufmann Foundation",
+      "url" : "https://purpledayeveryday.org/"
+    },
     "symbol" : "☀️"
   },
   {
@@ -1276,7 +1316,7 @@
     "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "04-02",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
@@ -1304,13 +1344,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "04-04",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/mine-awareness-day"
+    },
     "symbol" : "✊"
   },
   {
@@ -1346,7 +1391,7 @@
     "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "04-07",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
@@ -1400,13 +1445,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "04-11",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Parkinson's Europe",
+      "url" : "https://parkinsonseurope.org/campaigns/world-parkinsons-day/"
+    },
     "symbol" : "☀️"
   },
   {
@@ -1479,13 +1529,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "04-17",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Federation of Hemophilia",
+      "url" : "https://wfh.org/world-hemophilia-day/"
+    },
     "symbol" : "☀️"
   },
   {
@@ -1593,13 +1648,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "04-25",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-malaria-day"
+    },
     "symbol" : "☀️"
   },
   {
@@ -1645,13 +1705,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "04-29",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/earthquake-victims-day"
+    },
     "symbol" : "🎨"
   },
   {
@@ -1767,13 +1832,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "05-08",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/second-world-war-remembrance-days"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -2035,13 +2105,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "05-28",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Menstrual Hygiene Day",
+      "url" : "https://www.menstrualhygieneday.org/"
+    },
     "symbol" : "👨"
   },
   {
@@ -2127,13 +2202,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "06-04",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/child-victim-day"
+    },
     "symbol" : "👶"
   },
   {
@@ -2241,13 +2321,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "06-12",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Labour Organization",
+      "url" : "https://www.ilo.org/topics-and-sectors/child-labour/world-day-against-child-labour"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -2285,13 +2370,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "06-15",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://social.desa.un.org/issues/ageing/world-elder-abuse-awareness-day"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -2331,26 +2421,36 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "06-18",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/countering-hate-speech"
+    },
     "symbol" : "🕊️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "06-19",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/end-sexual-violence-in-conflict-day/"
+    },
     "symbol" : "☮️"
   },
   {
@@ -2358,12 +2458,12 @@
       "careful-sharing"
     ],
     "authority" : "official",
-    "category" : "remembrance",
+    "category" : "civil-society",
     "id" : "06-20",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "sensitivity" : "considerate",
+    "shareability" : 2,
     "source" : {
       "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
@@ -2448,16 +2548,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "06-26",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/end-drug-abuse-day"
+    },
+    "symbol" : "🛡️"
   },
   {
     "audience" : [
@@ -2880,13 +2985,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "07-28",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-hepatitis-day"
+    },
     "symbol" : "☀️"
   },
   {
@@ -2947,13 +3057,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "remembrance",
     "id" : "08-02",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Council of Europe",
+      "url" : "https://www.coe.int/en/web/roma-genocide/2-august-roma-genocide-remembrance-day"
+    },
     "symbol" : "☮️"
   },
   {
@@ -3212,39 +3327,54 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "08-21",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/terrorism-victims-day"
+    },
     "symbol" : "☮️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "08-22",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/religious-based-violence-victims-day"
+    },
     "symbol" : "☮️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "08-23",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/slave-trade-remembrance"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -3317,26 +3447,36 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "08-29",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/end-nuclear-tests-day"
+    },
     "symbol" : "🕊️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "08-30",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/victims-enforced-disappearance"
+    },
     "symbol" : "☮️"
   },
   {
@@ -3464,7 +3604,7 @@
     "authority" : "official",
     "category" : "remembrance",
     "id" : "09-09",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
@@ -3479,26 +3619,36 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "remembrance",
+    "authority" : "cultural",
+    "category" : "health-and-awareness",
     "id" : "09-10",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization / IASP",
+      "url" : "https://www.who.int/campaigns/world-suicide-prevention-day"
+    },
     "symbol" : "🕊️"
   },
   {
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "remembrance",
     "id" : "09-11",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "National September 11 Memorial & Museum",
+      "url" : "https://www.911memorial.org/plan-your-own-911-anniversary-observance"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -3575,13 +3725,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "09-17",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-patient-safety-day"
+    },
     "symbol" : "☀️"
   },
   {
@@ -3773,15 +3928,21 @@
   },
   {
     "audience" : [
+      "community",
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "10-02",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/non-violence-day"
+    },
     "symbol" : "☮️"
   },
   {
@@ -3883,7 +4044,7 @@
     "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "10-10",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
@@ -4005,13 +4166,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "10-18",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Menopause Society",
+      "url" : "https://www.imsociety.org/education/world-menopause-day-2025/"
+    },
     "symbol" : "👨"
   },
   {
@@ -4031,13 +4197,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "10-20",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Osteoporosis Foundation",
+      "url" : "https://www.worldosteoporosisday.org/get-involved"
+    },
     "symbol" : "☀️"
   },
   {
@@ -4338,13 +4509,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "health-and-awareness",
     "id" : "11-12",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/health-topics/pneumonia"
+    },
     "symbol" : "☀️"
   },
   {
@@ -4366,27 +4542,37 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "11-14",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-diabetes-day"
+    },
     "symbol" : "☀️"
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "11-15",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/international-day-prevention-and-fight-against-all-forms-transnational-organized-crime"
+    },
+    "symbol" : "🛡️"
   },
   {
     "audience" : [
@@ -4403,16 +4589,16 @@
   },
   {
     "audience" : [
-      "careful-sharing"
+      "friend"
     ],
     "authority" : "editorial",
-    "category" : "health-and-awareness",
+    "category" : "relationships",
     "id" : "11-17",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
-    "sensitivity" : "considerate",
-    "shareability" : 2,
-    "symbol" : "💜"
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💬"
   },
   {
     "audience" : [
@@ -4421,7 +4607,7 @@
     "authority" : "official",
     "category" : "remembrance",
     "id" : "11-18",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
@@ -4517,13 +4703,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "11-25",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/ending-violence-against-women-day"
+    },
     "symbol" : "👩"
   },
   {
@@ -4582,13 +4773,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "11-30",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Organisation for the Prohibition of Chemical Weapons",
+      "url" : "https://www.opcw.org/remembrance"
+    },
     "symbol" : "☮️"
   },
   {
@@ -4613,13 +4809,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "remembrance",
     "id" : "12-02",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "remembrance",
     "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/slavery-abolition-day"
+    },
     "symbol" : "🕊️"
   },
   {
@@ -4725,12 +4926,12 @@
       "careful-sharing"
     ],
     "authority" : "official",
-    "category" : "remembrance",
+    "category" : "civil-society",
     "id" : "12-10",
-    "reviewState" : "needs-safety-review",
+    "reviewState" : "curated",
     "scope" : "international",
-    "sensitivity" : "remembrance",
-    "shareability" : 1,
+    "sensitivity" : "considerate",
+    "shareability" : 2,
     "source" : {
       "checkedAt" : "2026-08-14",
       "organization" : "UNESCO",
@@ -4755,13 +4956,18 @@
     "audience" : [
       "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "health-and-awareness",
     "id" : "12-12",
-    "reviewState" : "needs-safety-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "considerate",
     "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/universal-health-coverage-day"
+    },
     "symbol" : "🏥"
   },
   {

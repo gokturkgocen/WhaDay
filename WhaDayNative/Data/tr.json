@@ -264,10 +264,10 @@
     "month": 1,
     "day": 27,
     "title": "Holokost Kurbanlarını Anma Uluslararası Günü",
-    "description": "Holokost Kurbanlarını Anma Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hatırlamak geçmişte kalmak değildir; antisemitizmin, nefretin ve insanlıktan çıkarmanın bugünkü biçimlerini de fark etmektir.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Hafızayı canlı tutmak için saygıyla paylaş"
   },
   {
     "id": "01-28",
@@ -364,10 +364,10 @@
     "month": 2,
     "day": 6,
     "title": "Kadın Sünnetine Sıfır Tolerans Uluslararası Günü",
-    "description": "Kadın Sünnetine Sıfır Tolerans Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kadın genital mutilasyonu sağlık sorunu olmanın yanında, kız çocukları ve kadınlara yönelik bir insan hakları ihlalidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Doğru bilgiyle ve mağdurları gözeterek paylaş"
   },
   {
     "id": "02-07",
@@ -424,10 +424,10 @@
     "month": 2,
     "day": 12,
     "title": "Şiddet İçeren Aşırıcılığın (Terörizme Yol Açtığı Ölçüde) Önlenmesi Uluslararası Günü",
-    "description": "Şiddet İçeren Aşırıcılığın (Terörizme Yol Açtığı Ölçüde) Önlenmesi Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Şiddet içeren aşırıcılıkla mücadele, korkuyu büyütmeden insan haklarını, eğitimi ve toplumsal dayanışmayı güçlendirmeyi gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Korkuyu değil dayanışmayı büyütmek için paylaş"
   },
   {
     "id": "02-13",
@@ -604,10 +604,10 @@
     "month": 3,
     "day": 1,
     "title": "Sıfır Ayrımcılık Günü",
-    "description": "Sıfır Ayrımcılık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hiç kimse kimliği, görünüşü, sağlığı ya da yaşam koşulları nedeniyle daha az hakka sahip değildir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Ayrımcılığa karşı ses vermek için paylaş"
   },
   {
     "id": "03-02",
@@ -644,10 +644,10 @@
     "month": 3,
     "day": 5,
     "title": "Silahsızlanma ve Silahların Yayılmasının Önlenmesi Konusunda Farkındalık Uluslararası Günü",
-    "description": "Silahsızlanma ve Silahların Yayılmasının Önlenmesi Konusunda Farkındalık Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Silahların yayılmasını önlemek yalnızca devletlerin değil, güvenli bir gelecek isteyen herkesin meselesidir.",
     "emoji": "👨",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Barış ve güvenlik için bağlamıyla paylaş"
   },
   {
     "id": "03-06",
@@ -744,10 +744,10 @@
     "month": 3,
     "day": 15,
     "title": "İslamofobiyle Mücadele Uluslararası Günü",
-    "description": "İslamofobiyle Mücadele Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İslamofobiyle mücadele; önyargıya, nefrete ve Müslümanlara yönelik ayrımcılığa sessiz kalmamayı gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Nefrete karşı dayanışmayla paylaş"
   },
   {
     "id": "03-16",
@@ -834,30 +834,30 @@
     "month": 3,
     "day": 24,
     "title": "Dünya Tüberküloz (Verem) Günü",
-    "description": "Dünya Tüberküloz (Verem) Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tüberküloz önlenebilir ve tedavi edilebilir; doğru bilgiye, erken tanıya ve sağlık hizmetlerine erişim hayat kurtarır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Güvenilir sağlık bilgisiyle paylaş"
   },
   {
     "id": "03-25",
     "month": 3,
     "day": 25,
     "title": "Köleliğin ve Transatlantik Köle Ticaretinin Kurbanlarını Anma Uluslararası Günü",
-    "description": "Köleliğin ve Transatlantik Köle Ticaretinin Kurbanlarını Anma Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Köleleştirilen milyonlarca insanı anmak, köleliğin mirasının bugünkü eşitsizliklerde nasıl sürdüğünü de görmeyi gerektirir.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Tarihi ve bugünkü mirasını saygıyla paylaş"
   },
   {
     "id": "03-26",
     "month": 3,
     "day": 26,
     "title": "Mor Gün (Epilepsi Farkındalık Günü)",
-    "description": "Mor Gün (Epilepsi Farkındalık Günü): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mor Gün, epilepsiyle yaşayanların deneyimlerini görünür kılmak, yanlış inanışları azaltmak ve desteği büyütmek için bir çağrı.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Epilepsi topluluğunun sesini özenle büyüt"
   },
   {
     "id": "03-27",
@@ -924,10 +924,10 @@
     "month": 4,
     "day": 2,
     "title": "Dünya Otizm Farkındalık Günü",
-    "description": "Dünya Otizm Farkındalık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Otistik bireyleri yalnızca fark etmek değil; dinlemek, farklı iletişim biçimlerine alan açmak ve kapsayıcılığı büyütmek önemli.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Otistik bireyleri dinleyerek paylaş"
   },
   {
     "id": "04-03",
@@ -944,10 +944,10 @@
     "month": 4,
     "day": 4,
     "title": "Uluslararası Mayın Farkındalığı ve Mayın Eylemine Yardım Günü",
-    "description": "Uluslararası Mayın Farkındalığı ve Mayın Eylemine Yardım Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mayınlar çatışma bittikten yıllar sonra bile siviller için tehdit olmaya devam eder; temizleme çalışmaları ve mağdur desteği hayat kurtarır.",
     "emoji": "✊",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Sivilleri ve çözüm çalışmalarını gözeterek paylaş"
   },
   {
     "id": "04-05",
@@ -974,10 +974,10 @@
     "month": 4,
     "day": 7,
     "title": "Dünya Sağlık Günü",
-    "description": "Dünya Sağlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Sağlık Günü, herkesin nitelikli sağlık hizmetine ayrımcılık ve maddi engel olmadan erişebilmesi gerektiğini hatırlatır.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Sağlık hakkını güvenilir bilgiyle paylaş"
   },
   {
     "id": "04-08",
@@ -1014,10 +1014,10 @@
     "month": 4,
     "day": 11,
     "title": "Dünya Parkinson Günü",
-    "description": "Dünya Parkinson Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Parkinson tek tip yaşanmaz; yaşayanları ve bakım verenleri dinlemek, belirtiler kadar gündelik deneyimi de anlamaya yardımcı olur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yaşayanların deneyimini merkeze alarak paylaş"
   },
   {
     "id": "04-12",
@@ -1074,10 +1074,10 @@
     "month": 4,
     "day": 17,
     "title": "Dünya Hemofili Günü",
-    "description": "Dünya Hemofili Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hemofili ve diğer kalıtsal kanama bozukluklarında tanıya, uygun bakıma ve tedaviye erişim yaşam kalitesini doğrudan etkiler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Güvenilir bilgi ve bakım erişimi için paylaş"
   },
   {
     "id": "04-18",
@@ -1154,10 +1154,10 @@
     "month": 4,
     "day": 25,
     "title": "Dünya Sıtma Günü",
-    "description": "Dünya Sıtma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sıtma önlenebilir ve tedavi edilebilir; korunma araçlarına, tanıya ve etkili tedaviye eşit erişim belirleyicidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Doğrulanmış sağlık bilgisiyle paylaş"
   },
   {
     "id": "04-26",
@@ -1194,10 +1194,10 @@
     "month": 4,
     "day": 29,
     "title": "Deprem Kurbanlarını Anma Uluslararası Günü",
-    "description": "Deprem Kurbanlarını Anma Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Depremlerde hayatını kaybedenleri anmak, güvenli yapılar ve hazırlık konusunda ortak sorumluluğumuzu da hatırlatır.",
     "emoji": "🎨",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Hafıza ve hazırlık için saygıyla paylaş"
   },
   {
     "id": "04-30",
@@ -1284,10 +1284,10 @@
     "month": 5,
     "day": 8,
     "title": "İkinci Dünya Savaşı'nda Hayatını Kaybedenler için Anma ve Uzlaşma Zamanı",
-    "description": "İkinci Dünya Savaşı'nda Hayatını Kaybedenler için Anma ve Uzlaşma Zamanı: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İkinci Dünya Savaşı'nda hayatını kaybedenleri anmak, barışın korunması için hafıza ve iş birliğinin değerini hatırlatır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Barışın hafızasını saygıyla paylaş"
   },
   {
     "id": "05-09",
@@ -1484,10 +1484,10 @@
     "month": 5,
     "day": 28,
     "title": "Menstrual Hijyen Günü",
-    "description": "Menstrual Hijyen Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Adet sağlığı hakkında açık ve doğru konuşmak; damgalamayı azaltır, güvenli ürünlere, suya ve sağlık hizmetlerine erişimi görünür kılar.",
     "emoji": "👨",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tabuları değil doğru bilgiyi çoğalt"
   },
   {
     "id": "05-29",
@@ -1554,10 +1554,10 @@
     "month": 6,
     "day": 4,
     "title": "Saldırıya Uğrayan Masum Çocuklar Uluslararası Günü",
-    "description": "Saldırıya Uğrayan Masum Çocuklar Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Savaş ve çatışmanın hiçbir çocuğun güvenliğini, eğitimini ve geleceğini elinden almaması gerektiğini hatırlatıyor.",
     "emoji": "👶",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Çocukların güvenliği için özenle paylaş"
   },
   {
     "id": "06-05",
@@ -1634,10 +1634,10 @@
     "month": 6,
     "day": 12,
     "title": "Dünya Çocuk İşçiliğiyle Mücadele Günü",
-    "description": "Dünya Çocuk İşçiliğiyle Mücadele Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Her çocuk güvenli bir çocukluk, eğitim ve oyun hakkına sahiptir; ağır ve tehlikeli işlere değil.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çocukların hakları için bağlamıyla paylaş"
   },
   {
     "id": "06-13",
@@ -1664,10 +1664,10 @@
     "month": 6,
     "day": 15,
     "title": "Dünya Yaşlı İstismarı Farkındalık Günü",
-    "description": "Dünya Yaşlı İstismarı Farkındalık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yaşlılara yönelik ihmal, ekonomik sömürü ve şiddet çoğu zaman görünmez kalır; fark etmek korumanın ilk adımıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yaşlıların onurunu gözeterek paylaş"
   },
   {
     "id": "06-16",
@@ -1694,30 +1694,30 @@
     "month": 6,
     "day": 18,
     "title": "Nefret Söylemiyle Mücadele Uluslararası Günü",
-    "description": "Nefret Söylemiyle Mücadele Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Nefret söylemi yalnızca kelimelerden ibaret değildir; insanları hedef hâline getirir ve birlikte yaşama zeminini aşındırır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Nefreti büyütmeden karşı durmak için paylaş"
   },
   {
     "id": "06-19",
     "month": 6,
     "day": 19,
     "title": "Çatışmalarda Cinsel Şiddetin Ortadan Kaldırılması Uluslararası Günü",
-    "description": "Çatışmalarda Cinsel Şiddetin Ortadan Kaldırılması Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çatışmalarda cinsel şiddet kaçınılmaz değildir; hayatta kalanların sesi, güvenliği ve adalete erişimi merkeze alınmalıdır.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Hayatta kalanları gözeterek, özenle paylaş"
   },
   {
     "id": "06-20",
     "month": 6,
     "day": 20,
     "title": "Dünya Mülteciler Günü",
-    "description": "Dünya Mülteciler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mülteci olmak bir tercih değil; güvenli bir yaşam aramak zorunda kalmaktır. Onur ve haklar sınırda sona ermez.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İnsan onurunu merkeze alarak paylaş"
   },
   {
     "id": "06-21",
@@ -1774,10 +1774,10 @@
     "month": 6,
     "day": 26,
     "title": "Uyuşturucu Kullanımı ve Kaçakçılığıyla Uluslararası Mücadele Günü",
-    "description": "Uyuşturucu Kullanımı ve Kaçakçılığıyla Uluslararası Mücadele Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Uyuşturucu sorununa etkili yanıt; damgalama yerine bilimsel önleme, zarar azaltma, tedavi ve insan haklarını merkeze alır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Damgalamadan, doğrulanmış bilgiyle paylaş"
   },
   {
     "id": "06-27",
@@ -2094,10 +2094,10 @@
     "month": 7,
     "day": 28,
     "title": "Dünya Hepatit Günü",
-    "description": "Dünya Hepatit Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Viral hepatit hakkında doğru bilgi, test ve tedaviye erişim ile damgalamadan uzak sağlık hizmetleri hastalığın yükünü azaltır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Güvenilir sağlık kaynaklarıyla paylaş"
   },
   {
     "id": "07-29",
@@ -2144,10 +2144,10 @@
     "month": 8,
     "day": 2,
     "title": "Roman Soykırımını Anma Günü",
-    "description": "Roman Soykırımını Anma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Nazi döneminde öldürülen Romanları anmak, Romanlara yönelik nefret ve ayrımcılığın bugün de karşısında durmayı gerektirir.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Roman hafızasını saygıyla görünür kıl"
   },
   {
     "id": "08-03",
@@ -2334,30 +2334,30 @@
     "month": 8,
     "day": 21,
     "title": "Terörizm Mağdurlarını Anma ve Saygı Günü",
-    "description": "Terörizm Mağdurlarını Anma ve Saygı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Terör saldırılarından etkilenenlerin kayıplarını, yaşamlarını ve haklarını sayıların ötesinde hatırlama günü.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Mağdur ve hayatta kalanları saygıyla an"
   },
   {
     "id": "08-22",
     "month": 8,
     "day": 22,
     "title": "Din veya İnanca Dayalı Şiddet Eylemlerinin Mağdurlarını Anma Günü",
-    "description": "Din veya İnanca Dayalı Şiddet Eylemlerinin Mağdurlarını Anma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hiç kimse inancı ya da inançsızlığı nedeniyle şiddetin hedefi olmamalı; vicdan özgürlüğü herkes içindir.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "İnanç ve vicdan özgürlüğü için saygıyla paylaş"
   },
   {
     "id": "08-23",
     "month": 8,
     "day": 23,
     "title": "Köle Ticaretinin Anılması ve Kaldırılması Günü",
-    "description": "Köle Ticaretinin Anılması ve Kaldırılması Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Köle ticaretine direnenleri ve hayatları ellerinden alınanları anmak, özgürlük mücadelesinin hafızasını canlı tutar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Direnişi ve kayıpları saygıyla hatırla"
   },
   {
     "id": "08-24",
@@ -2414,20 +2414,20 @@
     "month": 8,
     "day": 29,
     "title": "Uluslararası Nükleer Denemelere Karşı Gün",
-    "description": "Uluslararası Nükleer Denemelere Karşı Gün: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Nükleer denemelerin insanlar ve çevre üzerinde bıraktığı uzun süreli zararı hatırlamak, tekrarını önlemenin parçasıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Nükleer denemelerin etkisini bağlamıyla paylaş"
   },
   {
     "id": "08-30",
     "month": 8,
     "day": 30,
     "title": "Zorla Kaybedilmelerin Mağdurları için Uluslararası Gün",
-    "description": "Zorla Kaybedilmelerin Mağdurları için Uluslararası Gün: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Zorla kaybedilenlerin aileleri cevap, hakikat ve adalet aramaya devam eder; belirsizlik de başlı başına bir acıdır.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Hakikat ve adalet talebini saygıyla paylaş"
   },
   {
     "id": "08-31",
@@ -2524,30 +2524,30 @@
     "month": 9,
     "day": 9,
     "title": "Eğitimi Saldırılardan Koruma Uluslararası Günü",
-    "description": "Eğitimi Saldırılardan Koruma Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Okullar çatışmanın hedefi değil, çocukların güvende öğrenebildiği yerler olmalıdır.",
     "emoji": "📚",
     "category": "knowledge",
-    "sharingHook": "Yeni bilgi öğren"
+    "sharingHook": "Eğitimin güvenliği için özenle paylaş"
   },
   {
     "id": "09-10",
     "month": 9,
     "day": 10,
     "title": "Dünya İntiharı Önleme Günü",
-    "description": "Dünya İntiharı Önleme Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bir mesaj her şeyi çözmeyebilir; ama yargısız dinlemek ve profesyonel desteğe ulaşmayı kolaylaştırmak önemlidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yargılamadan dinlemeyi ve desteği hatırlat"
   },
   {
     "id": "09-11",
     "month": 9,
     "day": 11,
     "title": "11 Eylül Saldırıları Yıldönümü",
-    "description": "11 Eylül Saldırıları Yıldönümü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "11 Eylül saldırılarında hayatını kaybedenleri, yakınlarını ve olayın uzun süreli etkilerini saygıyla anma günü.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kayıpları ve yakınlarını saygıyla an"
   },
   {
     "id": "09-12",
@@ -2604,10 +2604,10 @@
     "month": 9,
     "day": 17,
     "title": "Dünya Hasta Güvenliği Günü",
-    "description": "Dünya Hasta Güvenliği Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hasta güvenliği; önlenebilir zararı azaltmayı, hastaları dinlemeyi ve sağlık çalışanlarıyla açık iletişim kurmayı gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Güvenli bakım için doğrulanmış bilgiyle paylaş"
   },
   {
     "id": "09-18",
@@ -2754,10 +2754,10 @@
     "month": 10,
     "day": 2,
     "title": "Uluslararası Şiddetsizlik Günü",
-    "description": "Uluslararası Şiddetsizlik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "2 Ekim, Mahatma Gandhi'nin doğum gününde; çatışma ve adaletsizliğe şiddete başvurmadan karşı koymanın gücünü hatırlatır.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Barışçıl değişime inanan birine gönder"
   },
   {
     "id": "10-03",
@@ -2834,10 +2834,10 @@
     "month": 10,
     "day": 10,
     "title": "Dünya Ruh Sağlığı Günü",
-    "description": "Dünya Ruh Sağlığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ruh sağlığı da sağlıktır; damgalamadan konuşmak ve ihtiyaç olduğunda profesyonel desteğe erişebilmek önemlidir.",
     "emoji": "👨",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Yargısız ve güvenilir bir dille paylaş"
   },
   {
     "id": "10-11",
@@ -2914,10 +2914,10 @@
     "month": 10,
     "day": 18,
     "title": "Dünya Menopoz Günü",
-    "description": "Dünya Menopoz Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Menopoz deneyimi kişiden kişiye değişir; güvenilir bilgi, uygun sağlık desteği ve açık iletişim bu dönemi kolaylaştırabilir.",
     "emoji": "👨",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Güvenilir bilgiyle ve deneyimleri gözeterek paylaş"
   },
   {
     "id": "10-19",
@@ -2934,10 +2934,10 @@
     "month": 10,
     "day": 20,
     "title": "Dünya Osteoporoz Günü",
-    "description": "Dünya Osteoporoz Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kemik sağlığı yaşam boyu önem taşır; riskleri bilmek, uygun değerlendirme ve tedaviye erişmek kırıkları önlemeye yardımcı olabilir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kemik sağlığı bilgisini güvenilir kaynakla paylaş"
   },
   {
     "id": "10-21",
@@ -3154,7 +3154,7 @@
     "month": 11,
     "day": 11,
     "title": "Ateşkes ve Anma Günü",
-    "description": "Ateşkes Günü / Anma Günü (ülkeye göre farklı adlandırılır): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ateşkes Günü \/ Anma Günü (ülkeye göre farklı adlandırılır): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
     "emoji": "🔔",
     "category": "awareness",
     "sharingHook": "Farkındalık yayarak bilgilendir"
@@ -3164,10 +3164,10 @@
     "month": 11,
     "day": 12,
     "title": "Dünya Zatürre Günü",
-    "description": "Dünya Zatürre Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Zatürre önlenebilir ve tedavi edilebilir; aşıya, erken tanıya, uygun tedaviye ve gerektiğinde oksijene erişim hayat kurtarır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Doğrulanmış sağlık bilgisiyle paylaş"
   },
   {
     "id": "11-13",
@@ -3184,20 +3184,20 @@
     "month": 11,
     "day": 14,
     "title": "Dünya Diyabet Günü",
-    "description": "Dünya Diyabet Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Diyabetle yaşamak sürekli karar ve bakım gerektirir; doğru bilgiye, tanıya, insüline ve düzenli sağlık hizmetine erişim kritiktir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Diyabet hakkında güvenilir bilgiyle paylaş"
   },
   {
     "id": "11-15",
     "month": 11,
     "day": 15,
     "title": "Sınıraşan Örgütlü Suçun Her Türüyle Mücadele ve Önlenmesi Uluslararası Günü",
-    "description": "Sınıraşan Örgütlü Suçun Her Türüyle Mücadele ve Önlenmesi Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sınıraşan örgütlü suç; insan ticareti, silah ve uyuşturucu kaçakçılığı gibi yollarla insanları sömürür, toplumları ve hukukun üstünlüğünü zayıflatır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Konuyu büyütmeden, doğrulanmış bağlamla paylaş"
   },
   {
     "id": "11-16",
@@ -3213,21 +3213,21 @@
     "id": "11-17",
     "month": 11,
     "day": 17,
-    "title": "Dünya Prematüre Günü",
-    "description": "Prematüre doğan bebeklerin ve ailelerinin ihtiyaçlarına, bakımına ve yaşam deneyimlerine dikkat çeken bir gün.",
-    "emoji": "💜",
-    "category": "wellness",
-    "sharingHook": "Bilgiyle ve özenle paylaş"
+    "title": "İlk Mesajı Atma Günü",
+    "description": "WhaDay takviminden küçük bir dürtü: uzun zamandır yazmayı düşündüğün kişiye ilk mesajı bugün sen at.",
+    "emoji": "💬",
+    "category": "social",
+    "sharingHook": "Uzun zamandır yazmadığın kişiye gönder"
   },
   {
     "id": "11-18",
     "month": 11,
     "day": 18,
     "title": "Çocuklara Yönelik Cinsel İstismarın, Sömürünün ve Şiddetin Önlenmesi ve İyileştirilmesi Dünya Günü",
-    "description": "Çocuklara Yönelik Cinsel İstismarın, Sömürünün ve Şiddetin Önlenmesi ve İyileştirilmesi Dünya Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çocuklara yönelik cinsel istismarı önlemek; güvenli alanlar kurmayı, çocukları dinlemeyi ve sorumluluğu yetişkinlerin almasını gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çocukların güvenliğini merkeze alarak paylaş"
   },
   {
     "id": "11-19",
@@ -3294,10 +3294,10 @@
     "month": 11,
     "day": 25,
     "title": "Kadına Yönelik Şiddete Karşı Uluslararası Mücadele Günü",
-    "description": "Kadına Yönelik Şiddete Karşı Uluslararası Mücadele Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kadınlara yönelik şiddet özel bir mesele değil, önlenebilir bir insan hakları ihlalidir.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şiddete karşı, mağdurları gözeterek paylaş"
   },
   {
     "id": "11-26",
@@ -3344,10 +3344,10 @@
     "month": 11,
     "day": 30,
     "title": "Kimyasal Savaş Mağdurlarını Anma Günü",
-    "description": "Kimyasal Savaş Mağdurlarını Anma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kimyasal silah mağdurlarını anmak, bu silahların hiçbir koşulda yeniden kullanılmaması gerektiğini hatırlatır.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Mağdurları saygıyla anmak için paylaş"
   },
   {
     "id": "12-01",
@@ -3364,10 +3364,10 @@
     "month": 12,
     "day": 2,
     "title": "Uluslararası Köleliğin Kaldırılması Günü",
-    "description": "Uluslararası Köleliğin Kaldırılması Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kölelik geçmişte kalmış tek bir düzen değil; zorla çalıştırma ve insan ticareti gibi biçimlerle mücadele bugün de sürüyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Günümüzdeki sömürü biçimlerini bağlamıyla paylaş"
   },
   {
     "id": "12-03",
@@ -3444,10 +3444,10 @@
     "month": 12,
     "day": 10,
     "title": "Dünya İnsan Hakları Günü",
-    "description": "Dünya İnsan Hakları Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnsan hakları yalnızca bazı insanlar için ya da iyi zamanlarda geçerli değildir; herkes için ve her gün gereklidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Hakların herkes için olduğunu hatırlat"
   },
   {
     "id": "12-11",
@@ -3464,10 +3464,10 @@
     "month": 12,
     "day": 12,
     "title": "Dünya Evrensel Sağlık Kapsayıcılığı Günü",
-    "description": "Dünya Evrensel Sağlık Kapsayıcılığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Evrensel sağlık güvencesi, herkesin ihtiyaç duyduğu nitelikli sağlık hizmetine maddi zorluk yaşamadan erişebilmesi demektir.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Sağlık hizmetine eşit erişim için paylaş"
   },
   {
     "id": "12-13",
