@@ -154,7 +154,8 @@ for id in allIDs.sorted() {
         "world maritime day", "dünya denizcilik günü",
         "international day of cooperatives", "uluslararası kooperatifler günü",
         "world day of remembrance for road traffic victims", "dünya trafik kazası kurbanlarını anma günü",
-        "rare disease day", "nadir hastalıklar günü"
+        "rare disease day", "nadir hastalıklar günü",
+        "dongzhi festival", "dongzhi festivali"
     ]
     if movingObservanceTitles.contains(where: combinedTitle.contains) {
         semanticSafetyIssues.append("\(id) stores a moving observance as a permanent date")

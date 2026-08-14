@@ -7,10 +7,10 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 4,
     "symbol" : "🎉"
   },
   {
@@ -65,7 +65,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-05",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -79,7 +79,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-06",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -93,7 +93,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-07",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -177,8 +177,8 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-13",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "symbol" : "🎉"
@@ -263,7 +263,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-19",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -353,10 +353,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-25",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Scottish Poetry Library",
+      "url" : "https://www.scottishpoetrylibrary.org.uk/poet/robert-burns/"
+    },
     "symbol" : "✨"
   },
   {
@@ -452,7 +457,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "01-31",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -699,7 +704,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "02-15",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -849,10 +854,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "02-24",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Republic of Estonia",
+      "url" : "https://www.eesti.ee/"
+    },
     "symbol" : "✨"
   },
   {
@@ -881,7 +891,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "02-26",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -1206,10 +1216,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "03-17",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of Ireland",
+      "url" : "https://www.ireland.ie/en/stpatricks-day/"
+    },
     "symbol" : "✨"
   },
   {
@@ -1238,7 +1253,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "03-19",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -1665,10 +1680,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "04-13",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Tourism Authority of Thailand",
+      "url" : "https://www.tourismthailand.org/"
+    },
     "symbol" : "✨"
   },
   {
@@ -2098,16 +2118,20 @@
   },
   {
     "audience" : [
-      "observer",
-      "community"
+      "careful-sharing"
     ],
     "authority" : "cultural",
-    "category" : "celebrations",
+    "category" : "remembrance",
     "id" : "05-09",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
-    "sensitivity" : "standard",
-    "shareability" : 3,
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Imperial War Museums",
+      "url" : "https://www.iwm.org.uk/history/what-you-need-to-know-about-ve-day"
+    },
     "symbol" : "✨"
   },
   {
@@ -3026,15 +3050,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "observer",
+      "community"
     ],
     "authority" : "cultural",
-    "category" : "playful",
+    "category" : "celebrations",
     "id" : "07-01",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of Canada",
+      "url" : "https://www.canada.ca/en/canadian-heritage/campaigns/canada-day.html"
+    },
     "symbol" : "✦"
   },
   {
@@ -3052,15 +3082,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "animals-and-nature",
     "id" : "07-03",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Zero Waste Europe",
+      "url" : "https://zerowasteeurope.eu/"
+    },
     "symbol" : "✦"
   },
   {
@@ -3071,10 +3106,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-04",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "US National Archives",
+      "url" : "https://www.archives.gov/founding-docs/declaration"
+    },
     "symbol" : "✨"
   },
   {
@@ -3092,28 +3132,38 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "animals-and-nature",
     "id" : "07-06",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "👨"
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "culture-and-arts",
     "id" : "07-07",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎭"
   },
   {
@@ -3137,49 +3187,69 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-09",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of Argentina",
+      "url" : "https://www.argentina.gob.ar/"
+    },
     "symbol" : "✨"
   },
   {
     "audience" : [
-      "curious-friend"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "science-and-curiosity",
     "id" : "07-10",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Nikola Tesla Museum",
+      "url" : "https://tesla-museum.org/en/"
+    },
     "symbol" : "💡"
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "07-11",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "animals-and-nature",
     "id" : "07-12",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -3190,7 +3260,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-13",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -3204,10 +3274,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-14",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of France",
+      "url" : "https://www.elysee.fr/en/french-presidency/bastille-day-14-july"
+    },
     "symbol" : "✨"
   },
   {
@@ -3237,7 +3312,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-16",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -3282,7 +3357,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-19",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -3290,15 +3365,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "science-and-curiosity",
     "id" : "07-20",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -3309,7 +3389,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-21",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -3337,7 +3417,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "07-23",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -3345,15 +3425,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "07-24",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Encyclopaedia Britannica",
+      "url" : "https://www.britannica.com/biography/Simon-Bolivar"
+    },
     "symbol" : "✦"
   },
   {
@@ -3422,15 +3507,20 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "07-29",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "WWF",
+      "url" : "https://tigers.panda.org/"
+    },
     "symbol" : "🌿"
   },
   {
@@ -3546,15 +3636,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "08-06",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "👨"
   },
   {
@@ -3605,28 +3700,38 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "08-10",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Lion Day",
+      "url" : "https://www.worldlionday.com/"
+    },
     "symbol" : "🌿"
   },
   {
     "audience" : [
-      "culture-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "08-11",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎨"
   },
   {
@@ -3669,10 +3774,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "08-14",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of Pakistan",
+      "url" : "https://pakistan.gov.pk/"
+    },
     "symbol" : "✨"
   },
   {
@@ -3683,7 +3793,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "08-15",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -3711,10 +3821,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "08-17",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of Indonesia",
+      "url" : "https://indonesia.go.id/"
+    },
     "symbol" : "✨"
   },
   {
@@ -3751,15 +3866,20 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "animals-and-nature",
+    "authority" : "cultural",
+    "category" : "health-and-awareness",
     "id" : "08-20",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 4,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "London School of Hygiene and Tropical Medicine",
+      "url" : "https://www.lshtm.ac.uk/newsevents/events/world-mosquito-day"
+    },
     "symbol" : "🌿"
   },
   {
@@ -3824,10 +3944,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "08-24",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Government of Ukraine",
+      "url" : "https://www.kmu.gov.ua/en"
+    },
     "symbol" : "✨"
   },
   {
@@ -3860,15 +3985,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "animals-and-nature",
     "id" : "08-27",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -3941,29 +4071,38 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "09-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "culture-specific",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
-      "observer",
-      "community"
+      "careful-sharing"
     ],
     "authority" : "cultural",
-    "category" : "celebrations",
+    "category" : "remembrance",
     "id" : "09-02",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
-    "sensitivity" : "standard",
-    "shareability" : 3,
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "US National Archives",
+      "url" : "https://www.archives.gov/milestone-documents/surrender-of-japan"
+    },
     "symbol" : "✨"
   },
   {
@@ -3982,28 +4121,39 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "09-04",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "National Wildlife Day",
+      "url" : "https://nationalwildlifeday.com/"
+    },
     "symbol" : "🌿"
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "relationships",
     "id" : "09-05",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -4022,28 +4172,38 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "09-07",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🌿"
   },
   {
     "audience" : [
-      "culture-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "09-08",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "📚"
   },
   {
@@ -4134,41 +4294,56 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "09-14",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "culture-specific",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Vatican News",
+      "url" : "https://www.vaticannews.va/en/liturgical-holidays/feast-of-the-exaltation-of-the-holy-cross.html"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
       "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "civil-society",
     "id" : "09-15",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🤝"
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "09-16",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🌿"
   },
   {
@@ -4222,15 +4397,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "animals-and-nature",
     "id" : "09-20",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -4253,28 +4433,38 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "animals-and-nature",
     "id" : "09-22",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "European Mobility Week",
+      "url" : "https://mobilityweek.eu/"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
-      "culture-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "09-23",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎭"
   },
   {
@@ -4293,15 +4483,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "professions",
     "id" : "09-25",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Pharmaceutical Federation",
+      "url" : "https://www.fip.org/world-pharmacists-day"
+    },
     "symbol" : "✦"
   },
   {
@@ -4324,54 +4519,74 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "09-27",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "09-28",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
-      "food-companion"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "food-and-drink",
     "id" : "09-29",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🍽️"
   },
   {
     "audience" : [
-      "culture-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "09-30",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎨"
   },
   {
@@ -4428,28 +4643,39 @@
   },
   {
     "audience" : [
-      "curious-friend"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "science-and-curiosity",
     "id" : "10-04",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🚀"
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "relationships",
     "id" : "10-05",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -4472,15 +4698,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "animals-and-nature",
     "id" : "10-07",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -4498,16 +4729,20 @@
   },
   {
     "audience" : [
-      "colleague",
-      "professional"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "professions",
     "id" : "10-09",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🤝"
   },
   {
@@ -4548,16 +4783,15 @@
   },
   {
     "audience" : [
-      "observer",
-      "community"
+      "careful-sharing"
     ],
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "10-12",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
-    "sensitivity" : "standard",
-    "shareability" : 3,
+    "sensitivity" : "considerate",
+    "shareability" : 2,
     "symbol" : "✨"
   },
   {
@@ -4580,15 +4814,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "civil-society",
     "id" : "10-14",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "ISO",
+      "url" : "https://www.iso.org/world-standards-day.html"
+    },
     "symbol" : "✦"
   },
   {
@@ -4728,15 +4967,20 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "10-23",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🌿"
   },
   {
@@ -4791,41 +5035,57 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "culture-and-arts",
     "id" : "10-27",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎭"
   },
   {
     "audience" : [
-      "culture-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "culture-and-arts",
     "id" : "10-28",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "ASIFA",
+      "url" : "https://asifa.net/international-animation-day/"
+    },
     "symbol" : "🎨"
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "relationships",
     "id" : "10-29",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
@@ -4857,15 +5117,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "11-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "culture-specific",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Vatican",
+      "url" : "https://www.vatican.va/"
+    },
     "symbol" : "✦"
   },
   {
@@ -4952,54 +5217,74 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "11-07",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
-  },
-  {
-    "audience" : [
-      "friend"
-    ],
-    "authority" : "editorial",
-    "category" : "playful",
-    "id" : "11-08",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Inuit Circumpolar Council",
+      "url" : "https://www.inuitcircumpolar.com/international-inuit-day/"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
       "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
+    "category" : "civil-society",
+    "id" : "11-08",
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "ISOCARP",
+      "url" : "https://isocarp.org/activities/world-town-planning-day/"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "cultural",
     "category" : "civil-society",
     "id" : "11-09",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "The American Presidency Project",
+      "url" : "https://www.presidency.ucsb.edu/documents/proclamation-8171-world-freedom-day-2007"
+    },
     "symbol" : "🤝"
   },
   {
     "audience" : [
-      "curious-friend"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "science-and-curiosity",
     "id" : "11-10",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "👨"
   },
   {
@@ -5093,13 +5378,18 @@
     "audience" : [
       "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "civil-society",
     "id" : "11-16",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🤝"
   },
   {
@@ -5154,29 +5444,38 @@
   {
     "audience" : [
       "friend",
-      "family",
-      "partner"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "relationships",
     "id" : "11-20",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "👶"
   },
   {
     "audience" : [
-      "culture-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "11-21",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎨"
   },
   {
@@ -5187,7 +5486,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "11-22",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -5245,28 +5544,38 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "11-26",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "⚽"
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "science-and-curiosity",
     "id" : "11-27",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "👨"
   },
   {
@@ -5375,28 +5684,39 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "12-04",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "✦"
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "relationships",
     "id" : "12-05",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "👨"
   },
   {
@@ -5407,7 +5727,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-06",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -5415,15 +5735,20 @@
   },
   {
     "audience" : [
-      "curious-friend"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "science-and-curiosity",
     "id" : "12-07",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "💡"
   },
   {
@@ -5434,7 +5759,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-08",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -5478,15 +5803,20 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "12-11",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🌿"
   },
   {
@@ -5515,7 +5845,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-13",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -5541,15 +5871,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "culture-and-arts",
     "id" : "12-15",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🎭"
   },
   {
@@ -5560,23 +5895,33 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-16",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Smithsonian Institution",
+      "url" : "https://americanhistory.si.edu/explore/stories/las-posadas"
+    },
     "symbol" : "✨"
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "science-and-curiosity",
     "id" : "12-17",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "US Library of Congress",
+      "url" : "https://www.loc.gov/item/today-in-history/december-17/"
+    },
     "symbol" : "✦"
   },
   {
@@ -5613,42 +5958,54 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "relationships",
     "id" : "12-20",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "🤝"
   },
   {
     "audience" : [
-      "teammate"
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "sport-and-movement",
     "id" : "12-21",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
     "symbol" : "⚽"
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "12-22",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
-    "symbol" : "✦"
+    "symbol" : "🍲"
   },
   {
     "audience" : [
@@ -5671,7 +6028,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-24",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -5685,7 +6042,7 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-25",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "culture-specific",
     "sensitivity" : "standard",
     "shareability" : 3,
@@ -5699,10 +6056,15 @@
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-26",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Encyclopaedia Britannica",
+      "url" : "https://www.britannica.com/topic/Boxing-Day"
+    },
     "symbol" : "✨"
   },
   {

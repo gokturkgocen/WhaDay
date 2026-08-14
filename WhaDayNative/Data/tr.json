@@ -4,10 +4,10 @@
     "month": 1,
     "day": 1,
     "title": "Yılbaşı",
-    "description": "Yılbaşı: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yeni yıl, farklı takvim ve geleneklerde farklı tarihlerde başlasa da 1 Ocak dünyanın büyük bölümünde yeni bir sayfa açmanın ortak simgesidir.",
     "emoji": "🎉",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bu yılın ilk güzel haberini paylaşmak istediğin kişiye gönder"
   },
   {
     "id": "01-02",
@@ -44,30 +44,30 @@
     "month": 1,
     "day": 5,
     "title": "Onikinci Gece",
-    "description": "Onikinci Gece: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Onikinci Gece, Batı Hristiyan geleneklerinde Noel döneminin sonunu ve Epifani arifesini işaretler; kutlama biçimleri ülkeye göre değişir.",
     "emoji": "🎄",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili gelenek bağlamında paylaş"
   },
   {
     "id": "01-06",
     "month": 1,
     "day": 6,
     "title": "Epifani (Vaftiz Bayramı)",
-    "description": "Epifani (Vaftiz Bayramı): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Epifani, Batı Hristiyanlığında Müneccimlerin İsa'yı ziyaretini; birçok Doğu geleneğinde ise İsa'nın vaftizini öne çıkaran dinî bayramdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İnanç ve gelenek bağlamına saygıyla paylaş"
   },
   {
     "id": "01-07",
     "month": 1,
     "day": 7,
     "title": "Ortodoks Noeli",
-    "description": "Ortodoks Noeli: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Jülyen takvimini izleyen bazı Ortodoks kiliseleri Noel'i 7 Ocak'ta kutlar; bütün Ortodoks topluluklar aynı tarihi kullanmaz.",
     "emoji": "🎄",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kutlayan birine kendi geleneğine saygıyla gönder"
   },
   {
     "id": "01-08",
@@ -123,11 +123,11 @@
     "id": "01-13",
     "month": 1,
     "day": 13,
-    "title": "Eski Yılbaşı (Jülyen Takvimi)",
-    "description": "Eski Yılbaşı (Jülyen Takvimi): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "title": "Eski Yılbaşı Gecesi",
+    "description": "Eski Yılbaşı Gecesi, Jülyen takvimi ile Gregoryen takvimi arasındaki fark nedeniyle bazı Doğu Avrupa ve Balkan topluluklarında 13 Ocak gecesi kutlanır.",
     "emoji": "🎉",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yeni yılı ikinci kez karşılayacak kişiye gönder"
   },
   {
     "id": "01-14",
@@ -184,10 +184,10 @@
     "month": 1,
     "day": 19,
     "title": "Ortodoks Vaftiz Yortusu (Teofani)",
-    "description": "Ortodoks Vaftiz Yortusu (Teofani): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Jülyen takvimini izleyen bazı Ortodoks geleneklerinde 19 Ocak, İsa'nın vaftizini anan Teofani bayramıdır; su kutsama törenleriyle ilişkilidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili Ortodoks geleneği içinde paylaş"
   },
   {
     "id": "01-20",
@@ -244,10 +244,10 @@
     "month": 1,
     "day": 25,
     "title": "Burns Gecesi",
-    "description": "Burns Gecesi: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Burns Gecesi, İskoç şair Robert Burns'ün doğum gününde şiir, konuşmalar, müzik ve geleneksel bir akşam yemeğiyle kutlanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şiirle sofrayı aynı anda seven kişiye gönder"
   },
   {
     "id": "01-26",
@@ -304,10 +304,10 @@
     "month": 1,
     "day": 31,
     "title": "Aziz (Don) Bosco Günü",
-    "description": "Aziz (Don) Bosco Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Katolik gelenekte Aziz Don Bosco'nun yortu günü; yaşamını gençlerin eğitimine ve desteğine adayan rahip ve eğitimciyi anar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Gençlere yol açan bir eğitimciye gönder"
   },
   {
     "id": "02-01",
@@ -454,10 +454,10 @@
     "month": 2,
     "day": 15,
     "title": "Parinirvana (Nirvana) Günü",
-    "description": "Parinirvana (Nirvana) Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Parinirvana Günü, birçok Mahayana Budist geleneğinde Buda'nın ölümünü ve nihai nirvanaya erişmesini tefekkürle anar; tarih bazı topluluklarda değişebilir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili Budist gelenek bağlamında paylaş"
   },
   {
     "id": "02-16",
@@ -544,10 +544,10 @@
     "month": 2,
     "day": 24,
     "title": "Estonya Bağımsızlık Günü",
-    "description": "Estonya Bağımsızlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "24 Şubat, Estonya'nın 1918'de bağımsızlığını ilan ettiği tarihtir; bayrak törenleri ve ülke çapındaki etkinliklerle kutlanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Estonya'yla bağı olan birine gönder"
   },
   {
     "id": "02-25",
@@ -564,10 +564,10 @@
     "month": 2,
     "day": 26,
     "title": "Kuveyt Kurtuluş Günü",
-    "description": "Kuveyt Kurtuluş Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kuveyt Kurtuluş Günü, ülkenin 1991'de Irak işgalinden kurtuluşunu anan ulusal gündür; Bağımsızlık Günü'nün hemen ardından gelir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kuveyt'le bağı olan biriyle tarihsel bağlamında paylaş"
   },
   {
     "id": "02-27",
@@ -764,10 +764,10 @@
     "month": 3,
     "day": 17,
     "title": "Aziz Patrick Günü",
-    "description": "Aziz Patrick Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aziz Patrick Günü, İrlanda'nın koruyucu azizini anan dinî bir günden küresel ölçekte İrlanda kültürü ve diasporasını kutlayan bir güne dönüştü.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bugün yeşile bürünecek kişiye gönder"
   },
   {
     "id": "03-18",
@@ -784,10 +784,10 @@
     "month": 3,
     "day": 19,
     "title": "Aziz Yusuf Günü",
-    "description": "Aziz Yusuf Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aziz Yusuf Günü, Katolik gelenekte Meryem'in eşi ve İsa'nın dünyevi babası kabul edilen Yusuf'u anar; yerel gelenekler büyük çeşitlilik gösterir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili inanç ve yerel gelenek bağlamında paylaş"
   },
   {
     "id": "03-20",
@@ -1034,10 +1034,10 @@
     "month": 4,
     "day": 13,
     "title": "Songkran Su Festivali",
-    "description": "Songkran — TR karşılığı yaygın değil: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Songkran, Tayland yeni yılının başlangıcını suyla arınma, aile ziyaretleri ve bugün ünlü su kutlamalarıyla işaretler; festival genellikle birkaç gün sürer.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Su savaşında yanında olmak isteyeceğin kişiye gönder"
   },
   {
     "id": "04-14",
@@ -1293,11 +1293,11 @@
     "id": "05-09",
     "month": 5,
     "day": 9,
-    "title": "Avrupa’da Zafer Günü",
-    "description": "9 Mayıs Zafer Günü (çeviri; Türkiye'nin 30 Ağustos Zafer Bayramı ile karıştırılmamalı): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "title": "Zafer Günü (9 Mayıs Geleneği)",
+    "description": "9 Mayıs Zafer Günü, Rusya ve bazı eski Sovyet ülkelerinde Nazi Almanyası'nın yenilgisini ve İkinci Dünya Savaşı'nın ağır kayıplarını anar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Savaşın kayıplarını tarihsel bağlamıyla ve saygıyla an"
   },
   {
     "id": "05-10",
@@ -1824,10 +1824,10 @@
     "month": 7,
     "day": 1,
     "title": "Kanada Günü",
-    "description": "Kanada Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kanada Günü, 1 Temmuz 1867'de Kanada Konfederasyonu'nun kurulmasını işaretler; kutlamalar ülkenin sömürge ve Yerli halklar tarihine dair tartışmaları da taşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kanada'yla bağı olan biriyle bağlamını bilerek paylaş"
   },
   {
     "id": "07-02",
@@ -1844,20 +1844,20 @@
     "month": 7,
     "day": 3,
     "title": "Uluslararası Plastik Poşetsiz Gün",
-    "description": "Uluslararası Plastik Poşetsiz Gün: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Plastik poşetin birkaç dakikalık kolaylığı, doğada yıllarca kalan atığa dönüşebilir. Yeniden kullanılabilir çanta küçük ama tekrarlanan bir seçimdir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çantasında her zaman bez çanta taşıyan kişiye gönder"
   },
   {
     "id": "07-04",
     "month": 7,
     "day": 4,
     "title": "ABD Bağımsızlık Günü",
-    "description": "ABD Bağımsızlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "4 Temmuz, on üç koloninin 1776 Bağımsızlık Bildirgesi'ni kabul ettiği tarihi anan Amerika Birleşik Devletleri ulusal günüdür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "ABD'yle bağı olan birine gönder"
   },
   {
     "id": "07-05",
@@ -1874,20 +1874,20 @@
     "month": 7,
     "day": 6,
     "title": "Dünya Kırsal Kalkınma Günü",
-    "description": "Dünya Kırsal Kalkınma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kırsal kalkınma; tarımın ötesinde sağlık, eğitim, bağlantı, güvenli altyapı ve yerel karar gücüne eşit erişim demektir.",
     "emoji": "👨",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Kırsal yaşamın geleceğini önemseyen biriyle paylaş"
   },
   {
     "id": "07-07",
     "month": 7,
     "day": 7,
     "title": "Dünya Kiswahili Dili Günü",
-    "description": "Dünya Kiswahili Dili Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kiswahili, Doğu ve Orta Afrika'da milyonları birbirine bağlayan ve Afrika Birliği'nin çalışma dilleri arasında yer alan güçlü bir ortak dildir.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Sana 'habari' diye selam verecek kişiye gönder"
   },
   {
     "id": "07-08",
@@ -1904,60 +1904,60 @@
     "month": 7,
     "day": 9,
     "title": "Arjantin Bağımsızlık Günü",
-    "description": "Arjantin Bağımsızlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "9 Temmuz, Arjantin Kongresi'nin 1816'da İspanya'dan bağımsızlığı ilan ettiği tarihi işaretleyen ulusal gündür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Arjantin'le bağı olan birine gönder"
   },
   {
     "id": "07-10",
     "month": 7,
     "day": 10,
     "title": "Nikola Tesla Günü",
-    "description": "Nikola Tesla Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Nikola Tesla'nın doğum günü, alternatif akım sistemlerinden kablosuz iletişim fikirlerine uzanan bilimsel hayal gücünü hatırlatır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Aklı sürekli gelecekte çalışan kişiye gönder"
   },
   {
     "id": "07-11",
     "month": 7,
     "day": 11,
     "title": "Dünya Nüfus Günü",
-    "description": "Dünya Nüfus Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Nüfus Günü, nüfus sayılarını değil; üreme sağlığına, eğitime, fırsata ve kendi yaşamı hakkında karar verme hakkına eşit erişimi merkeze alır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Hakları ve insan onurunu merkeze alarak paylaş"
   },
   {
     "id": "07-12",
     "month": 7,
     "day": 12,
     "title": "Uluslararası Kum ve Toz Fırtınalarıyla Mücadele Günü",
-    "description": "Uluslararası Kum ve Toz Fırtınalarıyla Mücadele Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kum ve toz fırtınaları sağlığı, tarımı ve ulaşımı sınırlar ötesinde etkiler; erken uyarı ve arazi yönetimi ortak hazırlığın parçalarıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İklim risklerini doğrulanmış bilgiyle paylaş"
   },
   {
     "id": "07-13",
     "month": 7,
     "day": 13,
     "title": "Karadağ Devlet Günü",
-    "description": "Karadağ Devlet Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Karadağ Devlet Günü, 1878'de bağımsızlığının uluslararası tanınmasını ve 1941'de işgale karşı başlayan ayaklanmayı aynı tarihte anar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Karadağ'la bağı olan biriyle tarihsel bağlamında paylaş"
   },
   {
     "id": "07-14",
     "month": 7,
     "day": 14,
     "title": "Bastille Günü (Fransa Ulusal Bayramı)",
-    "description": "Bastille Günü (Fransa Ulusal Bayramı): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Fransa Ulusal Bayramı, 1789 Bastille Baskını ile 1790 Federasyon Bayramı'nın mirasını; törenler, buluşmalar ve havai fişeklerle taşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Fransa'yla bağı olan ya da Paris'i özleyen kişiye gönder"
   },
   {
     "id": "07-15",
@@ -1974,10 +1974,10 @@
     "month": 7,
     "day": 16,
     "title": "Karmel Dağı Meryem Ana Bayramı",
-    "description": "Karmel Dağı Meryem Ana Bayramı: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Karmel Dağı Meryem Ana Bayramı, Katolik gelenekte Karmelit tarikatının Meryem'e bağlılığını anan ve farklı ülkelerde yerel törenlerle yaşatılan gündür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili Katolik gelenek bağlamında paylaş"
   },
   {
     "id": "07-17",
@@ -2004,30 +2004,30 @@
     "month": 7,
     "day": 19,
     "title": "Nikaragua Kurtuluş Günü",
-    "description": "Nikaragua Kurtuluş Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "19 Temmuz, Nikaragua'da Somoza yönetiminin 1979'da devrilmesini anan siyasi ve ulusal gündür; anlamı güncel siyasette farklı yorumlanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Nikaragua'nın tarihsel ve siyasi bağlamını gözeterek paylaş"
   },
   {
     "id": "07-20",
     "month": 7,
     "day": 20,
     "title": "Uluslararası Ay Günü",
-    "description": "Uluslararası Ay Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "20 Temmuz 1969'da Apollo 11 Ay'a indi; Uluslararası Ay Günü, bu adımı ve Ay araştırmalarının ortak geleceğini hatırlatır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Ay'a bakınca hâlâ heyecanlanan kişiye gönder"
   },
   {
     "id": "07-21",
     "month": 7,
     "day": 21,
     "title": "Belçika Ulusal Günü",
-    "description": "Belçika Ulusal Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Belçika Ulusal Günü, I. Léopold'un 21 Temmuz 1831'de anayasal kral olarak yemin etmesini işaretler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Belçika'yla bağı olan ya da waffle planı yapan kişiye gönder"
   },
   {
     "id": "07-22",
@@ -2044,20 +2044,20 @@
     "month": 7,
     "day": 23,
     "title": "Mısır Devrim Günü",
-    "description": "Mısır Devrim Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mısır Devrim Günü, Hür Subaylar hareketinin 23 Temmuz 1952'de monarşiyi deviren hareketini anan ulusal gündür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Mısır tarihine meraklı biriyle bağlamını bilerek paylaş"
   },
   {
     "id": "07-24",
     "month": 7,
     "day": 24,
     "title": "Simón Bolívar Günü",
-    "description": "Simón Bolívar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "24 Temmuz, Güney Amerika'nın bağımsızlık mücadelelerinde belirleyici rol oynayan Simón Bolívar'ın doğum günüdür; mirası bölgede farklı biçimlerde yorumlanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Latin Amerika tarihine meraklı biriyle paylaş"
   },
   {
     "id": "07-25",
@@ -2104,10 +2104,10 @@
     "month": 7,
     "day": 29,
     "title": "Uluslararası Kaplan Günü",
-    "description": "Uluslararası Kaplan Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kaplanlar sağlıklı orman ekosistemlerinin göstergeleridir; yaşam alanı kaybı ve yasa dışı ticaret, vahşi popülasyonları tehdit etmeyi sürdürüyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kaplanları yalnız ekranda değil doğada da görmek isteyen kişiye gönder"
   },
   {
     "id": "07-30",
@@ -2184,10 +2184,10 @@
     "month": 8,
     "day": 6,
     "title": "Denize Kıyısı Olmayan Gelişmekte Olan Ülkelerin Özel Kalkınma İhtiyaçlarına İlişkin Farkındalık Günü",
-    "description": "Denize Kıyısı Olmayan Gelişmekte Olan Ülkelerin Özel Kalkınma İhtiyaçlarına İlişkin Farkındalık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Denize kıyısı olmayan gelişmekte olan ülkeler, küresel pazarlara ulaşırken daha uzun ve maliyetli taşıma yollarıyla karşılaşır; bağlantı ve adil ticaret kritik önemdedir.",
     "emoji": "👨",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Coğrafyanın fırsatı belirlememesi gerektiğini düşünen biriyle paylaş"
   },
   {
     "id": "08-07",
@@ -2224,20 +2224,20 @@
     "month": 8,
     "day": 10,
     "title": "Dünya Aslan Günü",
-    "description": "Dünya Aslan Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aslanlar yaşam alanı kaybı, insan-yaban hayatı çatışması ve kaçak avcılık baskısıyla karşı karşıya; koruma yerel topluluklarla birlikte yürüdüğünde güçlenir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Aslanların sesinin doğada kalmasını isteyen kişiye gönder"
   },
   {
     "id": "08-11",
     "month": 8,
     "day": 11,
     "title": "Dünya Steelpan (Çelik Trampet) Günü",
-    "description": "Dünya Steelpan (Çelik Trampet) Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Trinidad ve Tobago'da doğan steelpan, petrol varillerinden akort edilen yüzeylerle kurulan ve bugün dünya sahnelerinde duyulan özgün bir çalgıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Ritmi duyunca yerinde duramayan kişiye gönder"
   },
   {
     "id": "08-12",
@@ -2264,20 +2264,20 @@
     "month": 8,
     "day": 14,
     "title": "Pakistan Bağımsızlık Günü",
-    "description": "Pakistan Bağımsızlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Pakistan Bağımsızlık Günü, ülkenin 1947'de Britanya yönetiminden ayrılarak kurulmasını işaretler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Pakistan'la bağı olan birine gönder"
   },
   {
     "id": "08-15",
     "month": 8,
     "day": 15,
     "title": "Meryem'in Göğe Alınışı (Assumption) Günü",
-    "description": "Meryem'in Göğe Alınışı (Assumption) Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Meryem'in Göğe Alınışı, Katolik inancında Meryem'in yaşamının sonunda bedeni ve ruhuyla göğe alındığını kutlayan önemli bir bayramdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili Katolik inanç bağlamında paylaş"
   },
   {
     "id": "08-16",
@@ -2294,10 +2294,10 @@
     "month": 8,
     "day": 17,
     "title": "Endonezya Bağımsızlık Günü",
-    "description": "Endonezya Bağımsızlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Endonezya Bağımsızlık Günü, Sukarno ve Mohammad Hatta'nın 17 Ağustos 1945'te bağımsızlığı ilan ettiği tarihi işaretler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Endonezya'yla bağı olan birine gönder"
   },
   {
     "id": "08-18",
@@ -2324,10 +2324,10 @@
     "month": 8,
     "day": 20,
     "title": "Dünya Sivrisinek Günü",
-    "description": "Dünya Sivrisinek Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Sivrisinek Günü, Ronald Ross'un 1897'de sivrisineklerin sıtma bulaşındaki rolünü gösteren keşfini anar; vektör kontrolü hâlâ hayat kurtarır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sivrisinekleri yalnız sinir bozucu sanan kişiye gönder"
   },
   {
     "id": "08-21",
@@ -2364,10 +2364,10 @@
     "month": 8,
     "day": 24,
     "title": "Ukrayna Bağımsızlık Günü",
-    "description": "Ukrayna Bağımsızlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ukrayna Bağımsızlık Günü, parlamentonun 24 Ağustos 1991'de bağımsızlık ilanını kabul ettiği tarihi işaretler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Ukrayna'yla bağı olan birine dayanışmayla gönder"
   },
   {
     "id": "08-25",
@@ -2394,10 +2394,10 @@
     "month": 8,
     "day": 27,
     "title": "Dünya Göller Günü",
-    "description": "Dünya Göller Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Göller içme suyu, canlı yaşamı, iklim dengesi ve yerel geçim için önemlidir; kirlilik ve aşırı kullanım kıyının çok ötesini etkiler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "En güzel göl anını paylaştığın kişiye gönder"
   },
   {
     "id": "08-28",
@@ -2443,21 +2443,21 @@
     "id": "09-01",
     "month": 9,
     "day": 1,
-    "title": "Bilgi Günü",
-    "description": "Bilgi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "title": "Bilgi Günü (Eski Sovyet Coğrafyası)",
+    "description": "Bilgi Günü, Rusya ve bazı eski Sovyet ülkelerinde yeni eğitim yılının başlangıcını; çiçekler, ilk dersler ve okul törenleriyle işaretler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İlk okul gününü hâlâ hatırlayan kişiye gönder"
   },
   {
     "id": "09-02",
     "month": 9,
     "day": 2,
-    "title": "Japonya'ya Karşı Zafer Günü",
-    "description": "Japonya'ya Karşı Zafer Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "title": "İkinci Dünya Savaşı'nın Sona Erişini Anma",
+    "description": "2 Eylül 1945'te Japonya'nın resmî teslim belgesi imzalandı ve İkinci Dünya Savaşı sona erdi; gün savaşın tüm kayıplarını tarihsel bağlamıyla anmak için ele alınmalı.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Savaşın kayıplarını ve sona erişini saygıyla an"
   },
   {
     "id": "09-03",
@@ -2474,20 +2474,20 @@
     "month": 9,
     "day": 4,
     "title": "Ulusal Yaban Hayatı Günü",
-    "description": "Ulusal Yaban Hayatı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "ABD merkezli Ulusal Yaban Hayatı Günü, yerel türleri ve onları koruyan barınaklarla kuruluşların emeğini görünür kılan bir farkındalık günüdür.",
     "emoji": "🌿",
     "category": "nature",
-    "sharingHook": "Doğanın güzelliğini paylaş"
+    "sharingHook": "Yaşadığı yerdeki yaban hayatını tanıyan kişiye gönder"
   },
   {
     "id": "09-05",
     "month": 9,
     "day": 5,
     "title": "Uluslararası Hayırseverlik Günü",
-    "description": "Uluslararası Hayırseverlik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hayırseverlik yalnız bağış miktarı değil; ihtiyacı dinlemek, güvenilir bir yapıyı desteklemek ve dayanışmayı süreklileştirmektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İyiliği gösterişsizce çoğaltan kişiye gönder"
   },
   {
     "id": "09-06",
@@ -2504,20 +2504,20 @@
     "month": 9,
     "day": 7,
     "title": "Mavi Gökyüzü İçin Temiz Hava Uluslararası Günü",
-    "description": "Mavi Gökyüzü İçin Temiz Hava Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Temiz hava sağlığın temelidir; ulaşım, enerji ve kent politikalarında kirleticileri azaltmak mavi gökyüzünü herkes için mümkün kılar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Daha temiz bir şehir isteyen biriyle paylaş"
   },
   {
     "id": "09-08",
     "month": 9,
     "day": 8,
     "title": "Dünya Okuryazarlık Günü",
-    "description": "Dünya Okuryazarlık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Okuryazarlık yalnız harfleri çözmek değil; bilgiye ulaşmak, hakları kullanmak ve kendi hikâyesini anlatabilmek için temel bir güçtür.",
     "emoji": "📚",
     "category": "knowledge",
-    "sharingHook": "Yeni bilgi öğren"
+    "sharingHook": "Sana okuma sevgisi kazandıran kişiye gönder"
   },
   {
     "id": "09-09",
@@ -2574,30 +2574,30 @@
     "month": 9,
     "day": 14,
     "title": "Haçın Yüceltilmesi Bayramı",
-    "description": "Haçın Yüceltilmesi Bayramı: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Haçın Yüceltilmesi Bayramı, Hristiyan geleneklerinde haçın inançtaki anlamını anan ve farklı kiliselerde ibadetle kutlanan dinî bir gündür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili inanç bağlamında saygıyla paylaş"
   },
   {
     "id": "09-15",
     "month": 9,
     "day": 15,
     "title": "Uluslararası Demokrasi Günü",
-    "description": "Uluslararası Demokrasi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Demokrasi yalnız seçim günü değil; ifade özgürlüğü, katılım, çoğulculuk, hukukun üstünlüğü ve kurumların hesap verebilirliğiyle her gün kurulur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Söz hakkının herkes için olduğuna inanan biriyle paylaş"
   },
   {
     "id": "09-16",
     "month": 9,
     "day": 16,
     "title": "Dünya Ozon Günü",
-    "description": "Dünya Ozon Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ozon tabakası zararlı morötesi ışınların büyük bölümünü süzer; onu incelten maddelerin azaltılması küresel iş birliğinin somut başarılarından biridir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bilimin dünyayı gerçekten değiştirebildiğine inanan kişiye gönder"
   },
   {
     "id": "09-17",
@@ -2634,10 +2634,10 @@
     "month": 9,
     "day": 20,
     "title": "Dünya Temizlik Günü",
-    "description": "Dünya Temizlik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Temizlik Günü, atığı toplamanın yanında nereden geldiğini görmeyi ve tekrar oluşmasını önleyecek sistemleri talep etmeyi de gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Mahallesini daha temiz bırakan biriyle paylaş"
   },
   {
     "id": "09-21",
@@ -2654,20 +2654,20 @@
     "month": 9,
     "day": 22,
     "title": "Dünya Arabasız Gün",
-    "description": "Dünya Arabasız Gün: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Arabasız bir gün; yürünebilir sokakların, güvenli bisiklet yollarının ve güçlü toplu taşımanın kent yaşamını nasıl değiştirebileceğini gösterir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şehri yürüyerek keşfedeceğin kişiye gönder"
   },
   {
     "id": "09-23",
     "month": 9,
     "day": 23,
     "title": "Uluslararası İşaret Dilleri Günü",
-    "description": "Uluslararası İşaret Dilleri Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İşaret dilleri tam ve doğal dillerdir; sağır toplulukların kültürünü, eğitimini ve kamusal yaşama eşit katılımını taşır.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Erişilebilir iletişimi önemseyen biriyle paylaş"
   },
   {
     "id": "09-24",
@@ -2684,10 +2684,10 @@
     "month": 9,
     "day": 25,
     "title": "Dünya Eczacılar Günü",
-    "description": "Dünya Eczacılar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Eczacılar ilaçların güvenli ve doğru kullanımında, aşılama ve sağlık danışmanlığında insanların en erişilebilir uzmanları arasında yer alır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sorusunu sabırla yanıtlayan bir eczacıya gönder"
   },
   {
     "id": "09-26",
@@ -2704,40 +2704,40 @@
     "month": 9,
     "day": 27,
     "title": "Dünya Turizm Günü",
-    "description": "Dünya Turizm Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Turizm doğru yönetildiğinde yerel geçimi ve kültürel alışverişi destekler; aşırı yük ve kaynak baskısı ise topluluklarla birlikte yönetilmelidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Gezdiği yere misafir gibi davranan kişiye gönder"
   },
   {
     "id": "09-28",
     "month": 9,
     "day": 28,
     "title": "Bilgiye Evrensel Erişim Uluslararası Günü",
-    "description": "Bilgiye Evrensel Erişim Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bilgiye erişim, insanların haklarını kullanabilmesi, kamu kararlarını anlayabilmesi ve kurumları denetleyebilmesi için temel önemdedir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şeffaflığın herkesin hakkı olduğunu düşünen biriyle paylaş"
   },
   {
     "id": "09-29",
     "month": 9,
     "day": 29,
     "title": "Gıda Kaybı ve İsrafı Konusunda Farkındalık Uluslararası Günü",
-    "description": "Gıda Kaybı ve İsrafı Konusunda Farkındalık Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Üretilen gıdanın kaybolması ya da çöpe gitmesi; suyu, toprağı, emeği ve enerjiyi de boşa harcar. Planlama ve doğru saklama fark yaratır.",
     "emoji": "🍽️",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Buzdolabındaki son malzemeyi bile değerlendiren kişiye gönder"
   },
   {
     "id": "09-30",
     "month": 9,
     "day": 30,
     "title": "Dünya Çeviri Günü",
-    "description": "Dünya Çeviri Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çevirmenler yalnız kelimeleri değil; niyeti, tonu ve kültürel bağlamı diller arasında taşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İki dil arasında köprü kuran kişiye gönder"
   },
   {
     "id": "10-01",
@@ -2774,20 +2774,20 @@
     "month": 10,
     "day": 4,
     "title": "Dünya Uzay Haftası (başlangıç)",
-    "description": "Dünya Uzay Haftası (başlangıç): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "4-10 Ekim Dünya Uzay Haftası, Sputnik 1'in fırlatılması ile Uzay Antlaşması'nın yürürlüğe girdiği tarihleri birbirine bağlar.",
     "emoji": "🚀",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "Bir hafta boyunca gökyüzü konuşacağın kişiye gönder"
   },
   {
     "id": "10-05",
     "month": 10,
     "day": 5,
     "title": "Dünya Öğretmenler Günü",
-    "description": "Dünya Öğretmenler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Öğretmenler yalnız ders anlatmaz; merakı korur, güvenli bir sınıf kurar ve bir öğrencinin kendine bakışını değiştirebilir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Hayatının yönünü değiştiren öğretmene gönder"
   },
   {
     "id": "10-06",
@@ -2804,10 +2804,10 @@
     "month": 10,
     "day": 7,
     "title": "Dünya Pamuk Günü",
-    "description": "Dünya Pamuk Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Pamuk milyonlarca insanın geçim kaynağı ve küresel tekstilin temel liflerinden biri; su, emek ve izlenebilir üretim koşulları önem taşıyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Giydiğinin nasıl üretildiğini merak eden biriyle paylaş"
   },
   {
     "id": "10-08",
@@ -2824,10 +2824,10 @@
     "month": 10,
     "day": 9,
     "title": "Dünya Posta Günü",
-    "description": "Dünya Posta Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Posta ağları yüzyıllardır insanları, belgeleri ve ticareti birbirine bağlıyor; bugün fiziksel ve dijital hizmetleri birlikte taşıyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Hâlâ el yazısı mektup göndereceğin kişiye gönder"
   },
   {
     "id": "10-10",
@@ -2854,10 +2854,10 @@
     "month": 10,
     "day": 12,
     "title": "İspanya Ulusal Günü",
-    "description": "İspanya Ulusal Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İspanya Ulusal Günü, Amerika'yla tarihsel bağları da vurgular; sömürgecilik mirası nedeniyle kutlamanın anlamı farklı topluluklarda tartışmalıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İspanya ve sömürgecilik bağlamını gözeterek paylaş"
   },
   {
     "id": "10-13",
@@ -2874,10 +2874,10 @@
     "month": 10,
     "day": 14,
     "title": "Dünya Standartlar Günü",
-    "description": "Dünya Standartlar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Standartlar görünmez ortak dil gibidir; cihazların birlikte çalışmasını, ölçümlerin tutmasını ve ürünlerin daha güvenli olmasını sağlar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Her şeyi ölçüp düzenleyen kişiye gönder"
   },
   {
     "id": "10-15",
@@ -2964,10 +2964,10 @@
     "month": 10,
     "day": 23,
     "title": "Uluslararası Kar Leoparı Günü",
-    "description": "Uluslararası Kar Leoparı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kar leoparları Orta ve Güney Asya'nın yüksek dağlarında yaşar; yaşam alanlarını korumak su kaynaklarını ve dağ topluluklarını da destekler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Dağların hayaletini keşfetmek isteyecek kişiye gönder"
   },
   {
     "id": "10-24",
@@ -3004,30 +3004,30 @@
     "month": 10,
     "day": 27,
     "title": "Dünya Görsel-İşitsel Miras Günü",
-    "description": "Dünya Görsel-İşitsel Miras Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Film, ses kaydı ve yayın arşivleri kolayca bozulabilen taşıyıcılarda toplumsal hafızayı saklar; korunmaları geleceğin geçmişi duyabilmesini sağlar.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Eski kayıtların peşine düşen kişiye gönder"
   },
   {
     "id": "10-28",
     "month": 10,
     "day": 28,
     "title": "Uluslararası Animasyon Günü",
-    "description": "Uluslararası Animasyon Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Animasyon çizgi, kukla, kil ya da pikseli hareket yanılsamasına dönüştürür; imkânsız görünen dünyalara zaman ve karakter verir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Birlikte animasyon maratonu yapacağın kişiye gönder"
   },
   {
     "id": "10-29",
     "month": 10,
     "day": 29,
     "title": "Uluslararası Bakım ve Destek Günü",
-    "description": "Uluslararası Bakım ve Destek Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bakım emeği çocuklardan yaşlılara, engelli bireylerden hastalara kadar yaşamı sürdürür; tanınması, paylaşılması ve desteklenmesi gerekir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Görünmeyen bakım emeğini üstlenen kişiye gönder"
   },
   {
     "id": "10-30",
@@ -3054,10 +3054,10 @@
     "month": 11,
     "day": 1,
     "title": "Tüm Azizler Günü",
-    "description": "Tüm Azizler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tüm Azizler Günü, birçok Hristiyan geleneğinde bilinen ve bilinmeyen azizleri anmak için ibadet ve ziyaretlerle geçirilen dinî bir gündür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili inanç bağlamında saygıyla paylaş"
   },
   {
     "id": "11-02",
@@ -3114,40 +3114,40 @@
     "month": 11,
     "day": 7,
     "title": "Uluslararası İnuit Günü",
-    "description": "Uluslararası İnuit Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Uluslararası İnuit Günü, İnuit kültürünü, dillerini ve haklarını kendi topluluklarının sesleriyle görünür kılar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İnuitlerin kendi seslerini merkeze alarak paylaş"
   },
   {
     "id": "11-08",
     "month": 11,
     "day": 8,
     "title": "Dünya Şehircilik Günü",
-    "description": "Dünya Şehircilik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Şehircilik, binaların ötesinde insanların konuta, ulaşıma, yeşil alana ve kamusal yaşama nasıl eriştiğini birlikte tasarlar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Daha yaşanabilir sokaklar hayal eden kişiye gönder"
   },
   {
     "id": "11-09",
     "month": 11,
     "day": 9,
-    "title": "Dünya Özgürlük Günü",
-    "description": "Dünya Özgürlük Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "title": "Dünya Özgürlük Günü (ABD)",
+    "description": "ABD'de ilan edilen Dünya Özgürlük Günü, 9 Kasım 1989'da Berlin Duvarı'nın açılmasını ve Doğu Avrupa'daki demokratik dönüşümü anar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tarihsel ve ülkeye özgü bağlamıyla paylaş"
   },
   {
     "id": "11-10",
     "month": 11,
     "day": 10,
     "title": "Barış ve Kalkınma için Dünya Bilim Günü",
-    "description": "Barış ve Kalkınma için Dünya Bilim Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bilim toplumdan kopuk değildir; barış ve sürdürülebilir kalkınma için açık bilgiye, etik sorumluluğa ve halkla diyaloğa ihtiyaç duyar.",
     "emoji": "👨",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Bilimi herkes için anlaşılır kılan kişiye gönder"
   },
   {
     "id": "11-11",
@@ -3204,10 +3204,10 @@
     "month": 11,
     "day": 16,
     "title": "Uluslararası Hoşgörü Günü",
-    "description": "Uluslararası Hoşgörü Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hoşgörü ilgisizlik değil; farklı hak ve kimliklerin eşitliğini kabul edip ayrımcılığa karşı durma sorumluluğudur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Farklılıkları gerçekten dinleyen kişiye gönder"
   },
   {
     "id": "11-17",
@@ -3244,30 +3244,30 @@
     "month": 11,
     "day": 20,
     "title": "Dünya Çocuk Günü",
-    "description": "Dünya Çocuk Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Çocuk Günü, Çocuk Hakları Sözleşmesi'nin kabul edildiği tarihte her çocuğun güvenlik, eğitim, sağlık, oyun ve söz hakkını hatırlatır.",
     "emoji": "👶",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çocukların sesine gerçekten yer açan kişiye gönder"
   },
   {
     "id": "11-21",
     "month": 11,
     "day": 21,
     "title": "Dünya Televizyon Günü",
-    "description": "Dünya Televizyon Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Televizyon, haberden eğlenceye ortak gündemi şekillendiren güçlü bir kamusal araç; temsil ve güvenilir bilgi sorumluluğunu da taşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Aynı dizinin finalini hâlâ tartıştığın kişiye gönder"
   },
   {
     "id": "11-22",
     "month": 11,
     "day": 22,
     "title": "Azize Cecilia Günü",
-    "description": "Azize Cecilia Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Azize Cecilia Günü, müziğin koruyucu azizi kabul edilen Cecilia'yı anıyor; dünyanın farklı yerlerinde konser ve kilise müziği gelenekleriyle yaşatılıyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Müziği hayatının dili yapan kişiye gönder"
   },
   {
     "id": "11-23",
@@ -3304,20 +3304,20 @@
     "month": 11,
     "day": 26,
     "title": "Dünya Sürdürülebilir Ulaşım Günü",
-    "description": "Dünya Sürdürülebilir Ulaşım Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sürdürülebilir ulaşım; hareketliliği düşük emisyonlu, güvenli, erişilebilir ve herkes için karşılanabilir hâle getirmeyi amaçlar.",
     "emoji": "⚽",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Şehirde daha iyi bir yol mümkün diyen biriyle paylaş"
   },
   {
     "id": "11-27",
     "month": 11,
     "day": 27,
     "title": "Sürdürülebilir Kalkınma için Bilime Katılım Uluslararası Günü",
-    "description": "Sürdürülebilir Kalkınma için Bilime Katılım Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sürdürülebilir kalkınma için bilime katılım, araştırmacıların yanında toplumların da soru sorma, bilgi üretme ve çözümü şekillendirme hakkını güçlendirir.",
     "emoji": "👨",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "Bilimi kapalı kapılardan çıkaran kişiyle paylaş"
   },
   {
     "id": "11-28",
@@ -3384,50 +3384,50 @@
     "month": 12,
     "day": 4,
     "title": "Dünya Bankalar Günü",
-    "description": "Dünya Bankalar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kalkınma bankaları uzun vadeli altyapı, iklim ve sosyal yatırımları finanse eder; şeffaflık ve kamusal fayda bu rolün temelidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Finansın toplumsal etkisini önemseyen biriyle paylaş"
   },
   {
     "id": "12-05",
     "month": 12,
     "day": 5,
     "title": "Dünya Gönüllüler Günü",
-    "description": "Dünya Gönüllüler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gönüllülük zaman, beceri ve dayanışmayı topluluk yararına paylaşmaktır; iyi gönüllülük yerel ihtiyacı dinler ve emeğin yerini almaya çalışmaz.",
     "emoji": "👨",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Zamanını iyiliğe dönüştüren gönüllüye gönder"
   },
   {
     "id": "12-06",
     "month": 12,
     "day": 6,
     "title": "Aziz Nikolaus Günü",
-    "description": "Aziz Nikolaus Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aziz Nikolaus Günü, cömertliğiyle tanınan 4. yüzyıl piskoposunu anar; Avrupa'daki hediye gelenekleri Noel Baba figürünü de etkiledi.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İyiliğini sessizce bırakan kişiye gönder"
   },
   {
     "id": "12-07",
     "month": 12,
     "day": 7,
     "title": "Dünya Sivil Havacılık Günü",
-    "description": "Dünya Sivil Havacılık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sivil havacılık insanları ve ekonomileri bağlarken ortak güvenlik standartlarına, erişilebilirliğe ve daha düşük iklim etkisine ihtiyaç duyar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Uçuş rotalarını ezbere bilen kişiye gönder"
   },
   {
     "id": "12-08",
     "month": 12,
     "day": 8,
     "title": "Meryem Ana'nın Günahsız Gebeliği Bayramı",
-    "description": "Meryem Ana'nın Günahsız Gebeliği Bayramı: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Günahsız Gebelik Bayramı, Katolik inancında Meryem'in kendi ana rahmine düştüğü andan itibaren ilk günahtan korunmuş olduğunu kutlar; İsa'nın doğumuyla karıştırılmamalıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili Katolik inanç bağlamında paylaş"
   },
   {
     "id": "12-09",
@@ -3454,10 +3454,10 @@
     "month": 12,
     "day": 11,
     "title": "Dünya Dağlar Günü",
-    "description": "Dünya Dağlar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dağlar tatlı suyun, biyolojik çeşitliliğin ve milyonlarca insanın yaşam alanıdır; iklim değişikliği yükseklerde de hızlı iz bırakır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Zirveye giden yolu sevdiğin kişiye gönder"
   },
   {
     "id": "12-12",
@@ -3474,10 +3474,10 @@
     "month": 12,
     "day": 13,
     "title": "Azize Lucia Günü",
-    "description": "Azize Lucia Günü (TR'de yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Azize Lucia Günü, özellikle İskandinav ülkelerinde kış karanlığında ışığı simgeleyen beyaz giysiler, mumlar ve şarkılarla kutlanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kışın ortasında ışık taşıyan kişiye gönder"
   },
   {
     "id": "12-14",
@@ -3494,30 +3494,30 @@
     "month": 12,
     "day": 15,
     "title": "Dünya Türk Dili Ailesi Günü",
-    "description": "Dünya Türk Dili Ailesi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Türk dili ailesi, geniş bir coğrafyada farklı tarih ve kültürleri taşıyan akraba dilleri buluşturur; çeşitlilik ortak mirasın parçasıdır.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Kelimelerin akrabalığını merak eden kişiye gönder"
   },
   {
     "id": "12-16",
     "month": 12,
     "day": 16,
     "title": "Las Posadas",
-    "description": "Las Posadas (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Las Posadas, 16-24 Aralık arasında Meksika ve bazı Latin Amerika topluluklarında Meryem ile Yusuf'un konaklama arayışını canlandıran dokuz gecelik gelenektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnız ilgili kültürel ve dinî gelenek bağlamında paylaş"
   },
   {
     "id": "12-17",
     "month": 12,
     "day": 17,
     "title": "Wright Kardeşler Günü",
-    "description": "Wright Kardeşler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "17 Aralık 1903'te Wright kardeşler motorlu ve kontrollü uçuşu gerçekleştirdi; birkaç saniyelik yolculuk ulaşım tarihini değiştirdi.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Uçma fikrine hâlâ hayran olan kişiye gönder"
   },
   {
     "id": "12-18",
@@ -3544,30 +3544,30 @@
     "month": 12,
     "day": 20,
     "title": "Uluslararası İnsani Dayanışma Günü",
-    "description": "Uluslararası İnsani Dayanışma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnsani dayanışma, ortak sorunlarda en çok etkilenenleri dinleyip sorumluluğu ve kaynakları adil biçimde paylaşmaktır.",
     "emoji": "🤝",
     "category": "community",
-    "sharingHook": "Toplumun parçası ol"
+    "sharingHook": "Kimseyi geride bırakmamaya çalışan kişiye gönder"
   },
   {
     "id": "12-21",
     "month": 12,
     "day": 21,
     "title": "Dünya Basketbol Günü",
-    "description": "Dünya Basketbol Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Basketbol, 1891'de kapalı alanda oynanacak bir kış sporu olarak başladı; bugün sokak potalarından dünya sahnesine uzanıyor.",
     "emoji": "⚽",
     "category": "sport",
-    "sharingHook": "Aktif yaşa"
+    "sharingHook": "Son saniye şutunu emanet edeceğin kişiye gönder"
   },
   {
     "id": "12-22",
     "month": 12,
     "day": 22,
-    "title": "Dongzhi Festivali (Kış Gündönümü Bayramı)",
-    "description": "Dongzhi Festivali (Kış Gündönümü Bayramı): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
-    "emoji": "🔔",
-    "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "title": "Kış Sofrası Günü",
+    "description": "WhaDay bugün kış sofrasını kutluyor: sıcak bir tabak, uzun bir sohbet ve dışarıdaki soğuğa karşı paylaşılan küçük bir alan.",
+    "emoji": "🍲",
+    "category": "social",
+    "sharingHook": "Kışın aynı sofrada ısınmak istediğin kişiye gönder"
   },
   {
     "id": "12-23",
@@ -3584,30 +3584,30 @@
     "month": 12,
     "day": 24,
     "title": "Noel Arifesi",
-    "description": "Noel Arifesi: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Noel Arifesi, birçok Hristiyan toplulukta İsa'nın doğum bayramından önce ibadet, aile buluşmaları ve yerel geleneklerle geçirilen gecedir.",
     "emoji": "🎄",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bu geceyi kutlayan birine kendi geleneğine saygıyla gönder"
   },
   {
     "id": "12-25",
     "month": 12,
     "day": 25,
     "title": "Noel",
-    "description": "Noel: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Noel, Hristiyanlıkta İsa'nın doğumunu kutlayan bayramdır; dinî ibadetlerin yanında çok farklı aile ve kültür gelenekleri taşır.",
     "emoji": "🎄",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Noel'i kutlayan birine sıcak bir dilekle gönder"
   },
   {
     "id": "12-26",
     "month": 12,
     "day": 26,
     "title": "Boxing Day",
-    "description": "Boxing Day (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Boxing Day, Birleşik Krallık ve bazı Commonwealth ülkelerinde Noel'in ertesi günü kutlanan resmî tatildir; yardım ve hizmet geleneği bugün alışveriş ve sporla da birleşir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Noel sonrası dinlenmeyi hak eden kişiye gönder"
   },
   {
     "id": "12-27",
