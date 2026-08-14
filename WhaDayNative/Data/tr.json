@@ -14,20 +14,20 @@
     "month": 1,
     "day": 2,
     "title": "Bilim Kurgu Günü",
-    "description": "Bilim Kurgu Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Isaac Asimov'un doğum günü, bilim kurgu meraklılarının bahanesine dönüşmüş.",
     "emoji": "🔬",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "Bir bilim kurgu severe ışınla"
   },
   {
     "id": "01-03",
     "month": 1,
     "day": 3,
     "title": "Uyku Festivali Günü",
-    "description": "Uyku Festivali Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yılın en yavaş günlerinden biri: alarmı ertelemek bugün neredeyse kültürel bir görev.",
     "emoji": "😴",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Uykucu arkadaşına gönder"
   },
   {
     "id": "01-04",
@@ -154,10 +154,10 @@
     "month": 1,
     "day": 16,
     "title": "Hiçbir Şey Günü",
-    "description": "Hiçbir Şey Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kutlama programı oldukça yoğun: hiçbir şey yapma, sonra onu da yarına bırak.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Programı hep dolu olana gönder"
   },
   {
     "id": "01-17",
@@ -174,10 +174,10 @@
     "month": 1,
     "day": 18,
     "title": "Winnie the Pooh Günü",
-    "description": "Winnie the Pooh Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bal kavanozu, kırmızı tişört ve yüz dönümlük ormanda büyümüş koca bir çocukluk hatırası.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çocukluğunu özleyen birine gönder"
   },
   {
     "id": "01-19",
@@ -194,20 +194,20 @@
     "month": 1,
     "day": 20,
     "title": "Penguen Farkındalık Günü",
-    "description": "Penguen Farkındalık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Smokin giymiş gibi dolaşan, kayarak işe giden ve soğuğu hiç mesele etmeyenler sahnede.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Penguen yürüyüşü yapan kişiye gönder"
   },
   {
     "id": "01-21",
     "month": 1,
     "day": 21,
     "title": "Sarılma Günü",
-    "description": "Sarılma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sarılmak için özel bir sebebe gerek yok; ama takvim bugün bahaneyi hazır etmiş.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sarılmak istediğin kişiye gönder"
   },
   {
     "id": "01-22",
@@ -284,10 +284,10 @@
     "month": 1,
     "day": 29,
     "title": "Bulmaca Günü",
-    "description": "Bulmaca Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bir parçayı saatlerce arayıp sonunda kutunun altında bulmanın resmî bahanesi.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Her şeyi çözebilen arkadaşına gönder"
   },
   {
     "id": "01-30",
@@ -354,10 +354,10 @@
     "month": 2,
     "day": 5,
     "title": "Dünya Nutella Günü",
-    "description": "Dünya Nutella Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bir kavanoz, bir kaşık ve paylaşmaya hiç niyeti olmayan milyonlarca insan.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Nutella'sını saklayan kişiye gönder"
   },
   {
     "id": "02-06",
@@ -394,10 +394,10 @@
     "month": 2,
     "day": 9,
     "title": "Ulusal Pizza Günü",
-    "description": "Ulusal Pizza Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnce hamur, kalın hamur ya da ananas tartışması: bugün herkes aynı masada.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Pizza borcu olan kişiye gönder"
   },
   {
     "id": "02-10",
@@ -444,10 +444,10 @@
     "month": 2,
     "day": 14,
     "title": "Sevgililer Günü",
-    "description": "Sevgililer Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Büyük jestlerden küçük notlara; bugün sevdiğini belli etmenin bahanesi hazır.",
     "emoji": "💕",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kalbinin sahibine gönder"
   },
   {
     "id": "02-15",
@@ -593,11 +593,11 @@
     "id": "02-29",
     "month": 2,
     "day": 29,
-    "title": "Nadir Hastalıklar Günü",
-    "description": "Nadir Hastalıklar Günü, nadir hastalıklarla yaşayan insanların görünürlüğünü ve sağlık hizmetlerine eşit erişimini desteklemek için anılır.",
-    "emoji": "🦓",
-    "category": "wellness",
-    "sharingHook": "Nadir olanı görünür kıl"
+    "title": "Fazladan Gün",
+    "description": "Takvim dört yılda bir sana fazladan bir gün veriyor. Onu sıradan harcamak tamamen senin seçimin.",
+    "emoji": "🗓️",
+    "category": "fun",
+    "sharingHook": "Fazladan günü birlikte değerlendireceğine gönder"
   },
   {
     "id": "03-01",
@@ -654,10 +654,10 @@
     "month": 3,
     "day": 6,
     "title": "Ulusal Oreo Günü",
-    "description": "Ulusal Oreo Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Önce kremayı mı yersin, süte mi batırırsın? Bugünün kişilik testi bu kadar basit.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Oreo’yu usulüne göre yiyene gönder"
   },
   {
     "id": "03-07",
@@ -684,10 +684,10 @@
     "month": 3,
     "day": 9,
     "title": "Ulusal Barbie Günü",
-    "description": "Ulusal Barbie Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Pembe yalnızca bir renk değil; bugün bütün bir evren, gardırop ve ruh hâli.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Pembe enerjisi taşıyan kişiye gönder"
   },
   {
     "id": "03-10",
@@ -734,10 +734,10 @@
     "month": 3,
     "day": 14,
     "title": "Uluslararası Matematik Günü (Pi Günü)",
-    "description": "Uluslararası Matematik Günü (Pi Günü): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "3,14 yalnızca bir sayı değil; matematikçilerin tatlı yiyebilmek için bulduğu kusursuz bahane.",
     "emoji": "🔬",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "En hesaplı arkadaşına gönder"
   },
   {
     "id": "03-15",
@@ -754,10 +754,10 @@
     "month": 3,
     "day": 16,
     "title": "Ulusal Panda Günü",
-    "description": "Ulusal Panda Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Günün planı: bambu ye, yuvarlan, kameraya bakmadan herkesi kendine hayran bırak.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Panda gibi yaşayan arkadaşına gönder"
   },
   {
     "id": "03-17",
@@ -794,10 +794,10 @@
     "month": 3,
     "day": 20,
     "title": "Dünya Mutluluk Günü",
-    "description": "Dünya Mutluluk Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mutluluk bazen büyük haber değil; sevdiğin birinden gelen iki satırlık mesajdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yüzünü güldüren kişiye gönder"
   },
   {
     "id": "03-21",
@@ -914,10 +914,10 @@
     "month": 4,
     "day": 1,
     "title": "1 Nisan Şakası",
-    "description": "1 Nisan Şakası: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bugün duyduğun her şeye küçük bir şüphe payı bırak. Bu cümle dahil.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kolay kanan arkadaşına gönder"
   },
   {
     "id": "04-02",
@@ -1244,10 +1244,10 @@
     "month": 5,
     "day": 4,
     "title": "Star Wars Günü",
-    "description": "Star Wars Günü (kelime oyunu, çevrilemez): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Uzak bir galaksi bugün biraz daha yakın. Güç seninle olsun; şarjın da yüzde yüz.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Galaksiyi birlikte kurtaracağına gönder"
   },
   {
     "id": "05-05",
@@ -1264,10 +1264,10 @@
     "month": 5,
     "day": 6,
     "title": "Uluslararası Diyet Yapmama Günü",
-    "description": "Uluslararası Diyet Yapmama Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yemek yalnızca sayı değildir. Bugün tabağa suçluluk değil, keyif koyma günü.",
     "emoji": "💪",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Birlikte güzel yemek yiyeceğine gönder"
   },
   {
     "id": "05-07",
@@ -1404,20 +1404,20 @@
     "month": 5,
     "day": 20,
     "title": "Dünya Arı Günü",
-    "description": "Dünya Arı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Küçük kanatlar, büyük iş: sofradaki çeşitliliğin görünmez kahramanları bugün başrolde.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Arı gibi çalışan kişiye gönder"
   },
   {
     "id": "05-21",
     "month": 5,
     "day": 21,
     "title": "Uluslararası Çay Günü",
-    "description": "Uluslararası Çay Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnce belli, kupa ya da termos fark etmez; iyi sohbetin yanında çayın yeri hazır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çay borcun olan kişiye gönder"
   },
   {
     "id": "05-22",
@@ -1834,10 +1834,10 @@
     "month": 7,
     "day": 2,
     "title": "Dünya UFO Günü",
-    "description": "Dünya UFO Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gökyüzündeki her ışık uçak değil. Ama uzaylılar geldiyse ilk kimi arayacağını biliyorsun.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Uzaylı istilasında arayacağına gönder"
   },
   {
     "id": "07-03",
@@ -1864,10 +1864,10 @@
     "month": 7,
     "day": 5,
     "title": "İşkolikler Günü",
-    "description": "Sürekli çalışanlara yapılacaklar listesinden başını kaldırıp kısa bir mola vermeyi hatırlatan eğlenceli bir gün.",
+    "description": "Yapılacaklar listesi senden kaçmıyor. Bugün bilgisayarı biraz erken kapatmayı başarı sayabiliriz.",
     "emoji": "💻",
     "category": "wellness",
-    "sharingHook": "Mesaiyi kapatamayan arkadaşınla paylaş"
+    "sharingHook": "Mesaiyi kapatamayan arkadaşına gönder"
   },
   {
     "id": "07-06",
@@ -1894,10 +1894,10 @@
     "month": 7,
     "day": 8,
     "title": "Ulusal Video Oyunu Günü",
-    "description": "Ulusal Video Oyunu Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Son bir bölüm, son bir maç, son bir görev… Bugün bu cümlenin kimseyi kandırmadığını kabul ediyoruz.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Geceyi oyunda bitirdiğine gönder"
   },
   {
     "id": "07-09",
@@ -1984,10 +1984,10 @@
     "month": 7,
     "day": 17,
     "title": "Dünya Emoji Günü",
-    "description": "Dünya Emoji Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bazen bir yüz, üç paragraftan daha çok şey anlatır. Özellikle de doğru seçilmişse.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sadece emojilerle konuşabildiğine gönder"
   },
   {
     "id": "07-18",
@@ -2114,20 +2114,20 @@
     "month": 7,
     "day": 30,
     "title": "Uluslararası Dostluk Günü",
-    "description": "Uluslararası Dostluk Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aynı şakaya yıllardır gülebiliyorsanız arkadaşlığın kullanım süresi henüz dolmamış demektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yıllardır aynı saçmalığı yaptığına gönder"
   },
   {
     "id": "07-31",
     "month": 7,
     "day": 31,
     "title": "Harry Potter'ın Doğum Günü",
-    "description": "Harry Potter'ın Doğum Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mektup hâlâ gelmediyse baykuş yolunu kaybetmiş olabilir. Umudu kesmek için erken.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Aynı binaya seçileceğine gönder"
   },
   {
     "id": "08-01",
@@ -2204,10 +2204,10 @@
     "month": 8,
     "day": 8,
     "title": "Dünya Kedi Günü",
-    "description": "Dünya Kedi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnsanlar kedileri evcilleştirdiğini sanıyor. Kedilerin bu konuda farklı bir anlatısı var.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bir kedi insanına gönder"
   },
   {
     "id": "08-09",
@@ -2254,10 +2254,10 @@
     "month": 8,
     "day": 13,
     "title": "Dünya Solaklar Günü",
-    "description": "Dünya Solaklar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya nüfusunun yaklaşık onda biri solak; bugün makaslarla verdikleri mücadeleyi alkışlıyoruz.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Solak arkadaşına gönder"
   },
   {
     "id": "08-14",
@@ -2384,10 +2384,10 @@
     "month": 8,
     "day": 26,
     "title": "Dünya Köpek Günü",
-    "description": "Dünya Köpek Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bugün yürüyüş biraz uzun, ödül maması biraz bol olabilir. İtiraz edeceklerini sanmıyoruz.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bir köpek insanına gönder"
   },
   {
     "id": "08-27",
@@ -2624,10 +2624,10 @@
     "month": 9,
     "day": 19,
     "title": "Uluslararası Korsan Gibi Konuş Günü",
-    "description": "Uluslararası Korsan Gibi Konuş Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bugün bütün cümleler ‘Arrr’ ile başlayabilir; dilbilgisi polisi güverteye çıkamaz.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tayfanın en şüpheli üyesine gönder"
   },
   {
     "id": "09-20",
@@ -2674,10 +2674,10 @@
     "month": 9,
     "day": 24,
     "title": "Dünya Goril Günü",
-    "description": "Gorilleri ve doğal yaşam alanlarını koruma çabalarına dikkat çeken uluslararası bir farkındalık günü.",
+    "description": "Güçlü görünümlerinin ardında aile bağları kuvvetli, yaşam alanları korunmaya ihtiyaç duyan yakın akrabalarımız var.",
     "emoji": "🦍",
     "category": "nature",
-    "sharingHook": "Doğayı korumayı önemseyen biriyle paylaş"
+    "sharingHook": "Vahşi yaşamı seven birine gönder"
   },
   {
     "id": "09-25",
@@ -2744,10 +2744,10 @@
     "month": 10,
     "day": 1,
     "title": "Dünya Kahve Günü",
-    "description": "Dünya Kahve Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sabah konuşmadan önce kahve isteyenlerin takvimde resmî olmasa da tartışmasız bir günü var.",
     "emoji": "☕",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kahvesiz konuşamayan kişiye gönder"
   },
   {
     "id": "10-02",
@@ -2944,10 +2944,10 @@
     "month": 10,
     "day": 21,
     "title": "Geleceğe Dönüş Günü",
-    "description": "Geleceğe Dönüş Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gelecek geldi, uçan kaykaylar hâlâ gecikti. DeLorean'ı olan haber versin.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Film replikleriyle yaşayan kişiye gönder"
   },
   {
     "id": "10-22",
@@ -2984,10 +2984,10 @@
     "month": 10,
     "day": 25,
     "title": "Dünya Makarna Günü",
-    "description": "Dünya Makarna Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Burgu, kalem, fiyonk ya da spagetti: doğru sos geldikten sonra şekil yalnızca ayrıntı.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Makarna yapmasını beklediğine gönder"
   },
   {
     "id": "10-26",
@@ -3044,10 +3044,10 @@
     "month": 10,
     "day": 31,
     "title": "Cadılar Bayramı",
-    "description": "Cadılar Bayramı: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kostümler, şekerler ve kapıyı çalanın kim olduğundan emin olamadığın tek gece.",
     "emoji": "👻",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "En ürkütücü arkadaşına gönder"
   },
   {
     "id": "11-01",
@@ -3174,10 +3174,10 @@
     "month": 11,
     "day": 13,
     "title": "Dünya Nezaket Günü",
-    "description": "Dünya Nezaket Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Küçük bir iyilik bazen bütün günün yönünü değiştirir. Bugün ilk adımı sen at.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İyi ki var dediğin kişiye gönder"
   },
   {
     "id": "11-14",
@@ -3234,10 +3234,10 @@
     "month": 11,
     "day": 19,
     "title": "Dünya Tuvalet Günü",
-    "description": "Dünya Tuvalet Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gülümseten adı bir yana, güvenli sanitasyon sağlığın ve insan onurunun temel parçalarından biri.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Gülümsetip düşündürmek için paylaş"
   },
   {
     "id": "11-20",
@@ -3574,10 +3574,10 @@
     "month": 12,
     "day": 23,
     "title": "Festivus",
-    "description": "Festivus (TR karşılığı yok, pop-kültür kökenli): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mükemmel bayram baskısına karşı biraz sade dekor, bolca dürüstlük ve isteğe bağlı güreş.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Bayram stresini paylaştığına gönder"
   },
   {
     "id": "12-24",
@@ -3634,29 +3634,29 @@
     "month": 12,
     "day": 29,
     "title": "Tick Tock Günü",
-    "description": "Tick Tock Günü (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yıl bitmeden yarım işleri kapatmak için son çağrı. Liste sana bakıyor, sen başka yere bakıyorsun.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Her şeyi son güne bırakana gönder"
   },
   {
     "id": "12-30",
     "month": 12,
     "day": 30,
     "title": "Bacon Günü",
-    "description": "Bacon Günü (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yılın sonuna çıtır bir dipnot: bugün kahvaltı tartışmalarının en dumanlı tarafı sahnede.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kahvaltıyı ciddiye alana gönder"
   },
   {
     "id": "12-31",
     "month": 12,
     "day": 31,
     "title": "Yılbaşı Gecesi",
-    "description": "Yılbaşı Gecesi: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bir yıl daha kapanıyor. En iyi anları sakla, geri kalanını gece yarısında bırak.",
     "emoji": "🎉",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yeni yıla birlikte gireceğin kişiye gönder"
   }
 ]

@@ -488,13 +488,13 @@ struct EditorialContent {
             tone: .warm
         ),
         "02-29": pair(
-            trFact: "Dört yılda bir gelen bu tarih, nadir hastalıklarla yaşayan insanların görünürlüğünü büyütüyor.",
-            trPrompt: "Nadir olanı görünür kıl",
-            trMessage: "Bugün Nadir Hastalıklar Günü. Nadir olmak görünmez olmak demek değil. 🦓 — WhaDay",
-            enFact: "This once-in-four-years date helps make people living with rare diseases more visible.",
-            enPrompt: "Make rare visible",
-            enMessage: "It's Rare Disease Day. Rare should never mean invisible. 🦓 — WhaDay",
-            tone: .mindful
+            trFact: "Takvim dört yılda bir sana fazladan bir gün veriyor. Onu sıradan harcamak tamamen senin seçimin.",
+            trPrompt: "Fazladan günü birlikte değerlendireceğine gönder",
+            trMessage: "Bugün Fazladan Gün. Dört yıldır bekliyoruz; bari güzel bir şey yapalım. 🗓️ — WhaDay",
+            enFact: "Every four years, the calendar hands you a bonus day. Spending it like any other day is entirely your choice.",
+            enPrompt: "Send to someone worth spending the bonus day with",
+            enMessage: "It's Bonus Day. We waited four years; let's at least do something good with it. 🗓️ — WhaDay",
+            tone: .playful
         ),
         "03-14": pair(
             trFact: "3,14 yalnızca bir sayı değil; matematikçilerin tatlı yiyebilmek için bulduğu kusursuz bahane.",
@@ -862,7 +862,7 @@ enum EditorialSymbol {
 
     private static let curated: [String: String] = [
         "01-02": "🚀", "01-03": "😴", "01-16": "🛋️", "01-18": "🍯", "01-20": "🐧", "01-21": "🫂", "01-29": "🧩", "02-05": "🍫",
-        "02-09": "🍕", "02-14": "❤️", "02-29": "🦓", "03-14": "🥧", "04-01": "👀",
+        "02-09": "🍕", "02-14": "❤️", "02-29": "🗓️", "03-14": "🥧", "04-01": "👀",
         "03-06": "🍪", "03-09": "🎀", "03-16": "🐼", "03-20": "☀️", "05-04": "🌌", "05-06": "🍽️",
         "05-20": "🐝", "05-21": "🫖", "07-02": "🛸", "07-05": "💻", "07-08": "🎮", "07-17": "😶", "07-30": "🫶", "07-31": "⚡️",
         "08-08": "🐈", "08-13": "✋", "08-26": "🐕", "09-19": "🏴‍☠️", "09-24": "🦍", "10-01": "☕️", "10-21": "⚡️",

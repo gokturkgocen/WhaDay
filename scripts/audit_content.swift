@@ -143,6 +143,16 @@ for id in allIDs.sorted() {
         semanticSafetyIssues.append("\(id) has a sensitive title but standard metadata")
     }
 
+    let movingObservanceTitles = [
+        "world maritime day", "dünya denizcilik günü",
+        "international day of cooperatives", "uluslararası kooperatifler günü",
+        "world day of remembrance for road traffic victims", "dünya trafik kazası kurbanlarını anma günü",
+        "rare disease day", "nadir hastalıklar günü"
+    ]
+    if movingObservanceTitles.contains(where: combinedTitle.contains) {
+        semanticSafetyIssues.append("\(id) stores a moving observance as a permanent date")
+    }
+
     if record.reviewState == "curated" {
         let hasLegacyDescription = trDay.description.contains("Dünya çapında kutlanan ve anılan önemli bir gün")
             || enDay.description.localizedCaseInsensitiveContains("A globally celebrated and observed day")

@@ -15,26 +15,26 @@
   },
   {
     "audience" : [
-      "curious-friend"
+      "friend"
     ],
-    "authority" : "editorial",
-    "category" : "science-and-curiosity",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "01-02",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🚀"
   },
   {
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "01-03",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "😴"
@@ -215,11 +215,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "01-16",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🛋️"
@@ -241,11 +241,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "01-18",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🍯"
@@ -266,26 +266,29 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "01-20",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🐧"
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "family",
+      "partner"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "relationships",
     "id" : "01-21",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🫂"
@@ -396,11 +399,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "science-and-curiosity",
     "id" : "01-29",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🧩"
@@ -486,13 +489,14 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "food-and-drink",
     "id" : "02-05",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🍫"
@@ -547,13 +551,14 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "food-and-drink",
     "id" : "02-09",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🍕"
@@ -627,13 +632,15 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "family",
+      "partner"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "relationships",
     "id" : "02-14",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "❤️"
@@ -845,11 +852,11 @@
     "authority" : "editorial",
     "category" : "playful",
     "id" : "02-29",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
-    "symbol" : "🦓"
+    "symbol" : "🗓️"
   },
   {
     "audience" : [
@@ -928,13 +935,14 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "food-and-drink",
     "id" : "03-06",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🍪"
@@ -967,15 +975,15 @@
   },
   {
     "audience" : [
-      "culture-lover"
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "culture-and-arts",
     "id" : "03-09",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🎀"
   },
   {
@@ -1032,15 +1040,15 @@
   },
   {
     "audience" : [
-      "curious-friend"
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "science-and-curiosity",
     "id" : "03-14",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🥧"
   },
   {
@@ -1063,15 +1071,16 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "03-16",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🐼"
   },
   {
@@ -1117,12 +1126,14 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "family",
+      "partner"
     ],
     "authority" : "official",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "03-20",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1300,11 +1311,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "celebrations",
     "id" : "04-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "👀"
@@ -1778,15 +1789,15 @@
   },
   {
     "audience" : [
-      "culture-lover"
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "culture-and-arts",
     "id" : "05-04",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🌌"
   },
   {
@@ -1804,13 +1815,14 @@
   },
   {
     "audience" : [
+      "food-companion",
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "food-and-drink",
     "id" : "05-06",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🍽️"
@@ -1994,15 +2006,16 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
     "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "05-20",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "source" : {
       "checkedAt" : "2026-08-14",
       "organization" : "Food and Agriculture Organization of the United Nations",
@@ -2012,15 +2025,21 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "food-and-drink",
     "id" : "05-21",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/tea-day"
+    },
     "symbol" : "🫖"
   },
   {
@@ -2632,15 +2651,15 @@
   },
   {
     "audience" : [
-      "curious-friend"
+      "friend"
     ],
-    "authority" : "editorial",
-    "category" : "science-and-curiosity",
+    "authority" : "cultural",
+    "category" : "playful",
     "id" : "07-02",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🛸"
   },
   {
@@ -2674,11 +2693,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "07-05",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "💻"
@@ -2713,11 +2732,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "07-08",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🎮"
@@ -2837,15 +2856,15 @@
   },
   {
     "audience" : [
-      "culture-lover"
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "culture-and-arts",
     "id" : "07-17",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "😶"
   },
   {
@@ -3018,24 +3037,29 @@
       "family",
       "partner"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "relationships",
     "id" : "07-30",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/international-day-friendship"
+    },
     "symbol" : "🫶"
   },
   {
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "07-31",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "⚡️"
@@ -3138,15 +3162,16 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "08-08",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🐈"
   },
   {
@@ -3215,11 +3240,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "08-13",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "✋"
@@ -3406,15 +3431,16 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "08-26",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🐕"
   },
   {
@@ -3756,11 +3782,11 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "09-19",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🏴‍☠️"
@@ -3824,15 +3850,16 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "animals-and-nature",
     "id" : "09-24",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🦍"
   },
   {
@@ -3915,15 +3942,21 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "food-and-drink",
     "id" : "10-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/international-coffee-day"
+    },
     "symbol" : "☕️"
   },
   {
@@ -4213,15 +4246,15 @@
   },
   {
     "audience" : [
-      "culture-lover"
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "culture-and-arts",
     "id" : "10-21",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "⚡️"
   },
   {
@@ -4270,13 +4303,14 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "food-and-drink",
     "id" : "10-25",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🍝"
@@ -4348,16 +4382,15 @@
   },
   {
     "audience" : [
-      "observer",
-      "community"
+      "friend"
     ],
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "10-31",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 5,
     "symbol" : "🎃"
   },
   {
@@ -4529,11 +4562,11 @@
       "family",
       "partner"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "relationships",
     "id" : "11-13",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "💛"
@@ -4622,13 +4655,18 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "11-19",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/toilet-day"
+    },
     "symbol" : "🚽"
   },
   {
@@ -5104,16 +5142,15 @@
   },
   {
     "audience" : [
-      "observer",
-      "community"
+      "friend"
     ],
     "authority" : "cultural",
-    "category" : "celebrations",
+    "category" : "culture-and-arts",
     "id" : "12-23",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 5,
     "symbol" : "✦"
   },
   {
@@ -5188,40 +5225,40 @@
     "audience" : [
       "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "playful",
     "id" : "12-29",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "⏳"
   },
   {
     "audience" : [
-      "food-companion"
+      "food-companion",
+      "friend"
     ],
-    "authority" : "editorial",
+    "authority" : "cultural",
     "category" : "food-and-drink",
     "id" : "12-30",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
     "shareability" : 5,
     "symbol" : "🥓"
   },
   {
     "audience" : [
-      "observer",
-      "community"
+      "friend"
     ],
     "authority" : "cultural",
     "category" : "celebrations",
     "id" : "12-31",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "culture-specific",
+    "reviewState" : "curated",
+    "scope" : "global-cultural",
     "sensitivity" : "standard",
-    "shareability" : 3,
+    "shareability" : 5,
     "symbol" : "✨"
   }
 ]

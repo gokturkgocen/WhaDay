@@ -382,6 +382,31 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertFalse(copy.fact.localizedCaseInsensitiveContains("premat"))
     }
 
+    func testEveryCuratedRecordUsesTheReviewedLocalizedCorpus() throws {
+        let metadata = DayMetadataStore.byID
+
+        for language in ["tr", "en"] {
+            let url = try XCTUnwrap(Bundle.main.url(forResource: language, withExtension: "json"))
+            let events = try JSONDecoder().decode([DayEvent].self, from: Data(contentsOf: url))
+                .map { $0.attaching(metadata[$0.id]) }
+
+            for event in events where event.metadata?.reviewState == .curated {
+                let copy = EditorialContent.forEvent(event, language: language)
+                XCTAssertEqual(copy.fact, event.description, "\(language)/\(event.id)")
+                XCTAssertEqual(copy.prompt, event.sharingHook, "\(language)/\(event.id)")
+            }
+        }
+    }
+
+    func testLeapDayIsAStableWhaDayPromptNotAMovingObservance() throws {
+        let event = try XCTUnwrap(DayEventStore.event(month: 2, day: 29))
+
+        XCTAssertEqual(event.title, "Fazladan Gün")
+        XCTAssertEqual(event.authority, .editorial)
+        XCTAssertEqual(event.metadata?.reviewState, .curated)
+        XCTAssertFalse(event.description.localizedCaseInsensitiveContains("nadir hastalık"))
+    }
+
     func testCalendarDataContainsLeapDayAndUniqueIdentifiers() {
         XCTAssertEqual(DayEventStore.days.count, 366)
         XCTAssertNotNil(DayEventStore.event(month: 2, day: 29))
@@ -738,7 +763,8 @@ final class EditorialContentTests: XCTestCase {
         let retiredMovingTitles = [
             "World Maritime Day", "Dünya Denizcilik Günü",
             "International Day of Cooperatives", "Uluslararası Kooperatifler Günü",
-            "World Day of Remembrance for Road Traffic Victims", "Dünya Trafik Kazası Kurbanlarını Anma Günü"
+            "World Day of Remembrance for Road Traffic Victims", "Dünya Trafik Kazası Kurbanlarını Anma Günü",
+            "Rare Disease Day", "Nadir Hastalıklar Günü"
         ]
 
         for title in retiredMovingTitles {

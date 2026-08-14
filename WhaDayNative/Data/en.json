@@ -14,20 +14,20 @@
     "month": 1,
     "day": 2,
     "title": "National Science Fiction Day",
-    "description": "National Science Fiction Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Isaac Asimov's birthday became a perfect excuse for science-fiction fans.",
     "emoji": "🔬",
     "category": "science",
-    "sharingHook": "Engage with science"
+    "sharingHook": "Beam it to a sci-fi fan"
   },
   {
     "id": "01-03",
     "month": 1,
     "day": 3,
     "title": "Festival of Sleep Day",
-    "description": "Festival of Sleep Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "One of the year's slowest days: hitting snooze is practically a cultural duty today.",
     "emoji": "😴",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your sleepiest friend"
   },
   {
     "id": "01-04",
@@ -154,10 +154,10 @@
     "month": 1,
     "day": 16,
     "title": "National Nothing Day",
-    "description": "National Nothing Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Today's agenda is packed: do nothing, then postpone the rest until tomorrow.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your chronically busy friend"
   },
   {
     "id": "01-17",
@@ -174,10 +174,10 @@
     "month": 1,
     "day": 18,
     "title": "National Winnie the Pooh Day",
-    "description": "National Winnie the Pooh Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A honey jar, a red shirt and a childhood memory raised in the Hundred Acre Wood.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone missing their childhood"
   },
   {
     "id": "01-19",
@@ -194,20 +194,20 @@
     "month": 1,
     "day": 20,
     "title": "Penguin Awareness Day",
-    "description": "Penguin Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "They dress for dinner, commute by sliding and never complain about the cold.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone with a penguin walk"
   },
   {
     "id": "01-21",
     "month": 1,
     "day": 21,
     "title": "National Hugging Day",
-    "description": "National Hugging Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "You never need a reason for a hug, but the calendar supplied one anyway.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who deserves a hug"
   },
   {
     "id": "01-22",
@@ -284,10 +284,10 @@
     "month": 1,
     "day": 29,
     "title": "National Puzzle Day",
-    "description": "National Puzzle Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "An official excuse to search for one piece for hours and find it under the box.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to the friend who solves everything"
   },
   {
     "id": "01-30",
@@ -354,10 +354,10 @@
     "month": 2,
     "day": 5,
     "title": "World Nutella Day",
-    "description": "World Nutella Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "One jar, one spoon and millions of people with absolutely no intention of sharing.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to the one hiding the jar"
   },
   {
     "id": "02-06",
@@ -394,10 +394,10 @@
     "month": 2,
     "day": 9,
     "title": "National Pizza Day",
-    "description": "National Pizza Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Thin crust, deep dish or the pineapple debate: everyone is at the same table today.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who owes you pizza"
   },
   {
     "id": "02-10",
@@ -444,10 +444,10 @@
     "month": 2,
     "day": 14,
     "title": "Valentine's Day",
-    "description": "Valentine's Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "From grand gestures to tiny notes, today comes with a ready-made reason to show some love.",
     "emoji": "💕",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your favorite person"
   },
   {
     "id": "02-15",
@@ -593,11 +593,11 @@
     "id": "02-29",
     "month": 2,
     "day": 29,
-    "title": "Rare Disease Day",
-    "description": "Rare Disease Day raises visibility for people living with rare conditions and supports equitable access to diagnosis and care.",
-    "emoji": "🦓",
-    "category": "wellness",
-    "sharingHook": "Make rare visible"
+    "title": "Bonus Day",
+    "description": "Every four years, the calendar hands you a bonus day. Spending it like any other day is entirely your choice.",
+    "emoji": "🗓️",
+    "category": "fun",
+    "sharingHook": "Send to someone worth spending the bonus day with"
   },
   {
     "id": "03-01",
@@ -654,10 +654,10 @@
     "month": 3,
     "day": 6,
     "title": "National Oreo Cookie Day",
-    "description": "National Oreo Cookie Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Twist first or dunk immediately? Today's personality test is that simple.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone with an Oreo ritual"
   },
   {
     "id": "03-07",
@@ -684,10 +684,10 @@
     "month": 3,
     "day": 9,
     "title": "National Barbie Day",
-    "description": "National Barbie Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Pink is not merely a color today; it is a universe, a wardrobe and a state of mind.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone with pink energy"
   },
   {
     "id": "03-10",
@@ -734,10 +734,10 @@
     "month": 3,
     "day": 14,
     "title": "International Day of Mathematics (Pi Day)",
-    "description": "International Day of Mathematics (Pi Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "3.14 is more than a number; it is a mathematician's perfect excuse to eat pie.",
     "emoji": "🔬",
     "category": "science",
-    "sharingHook": "Engage with science"
+    "sharingHook": "Send to your most calculated friend"
   },
   {
     "id": "03-15",
@@ -754,10 +754,10 @@
     "month": 3,
     "day": 16,
     "title": "National Panda Day",
-    "description": "National Panda Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Today's plan: eat bamboo, roll around and charm everyone without looking at the camera.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your panda-coded friend"
   },
   {
     "id": "03-17",
@@ -794,10 +794,10 @@
     "month": 3,
     "day": 20,
     "title": "International Day of Happiness",
-    "description": "International Day of Happiness: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Happiness is not always big news; sometimes it is a two-line message from someone you love.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who makes you smile"
   },
   {
     "id": "03-21",
@@ -914,10 +914,10 @@
     "month": 4,
     "day": 1,
     "title": "April Fools' Day",
-    "description": "April Fools' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Leave a little room for doubt in everything you hear today. Including this sentence.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your most gullible friend"
   },
   {
     "id": "04-02",
@@ -1244,10 +1244,10 @@
     "month": 5,
     "day": 4,
     "title": "Star Wars Day (\"May the 4th\")",
-    "description": "Star Wars Day (\"May the 4th\"): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A galaxy far, far away feels closer today. May your Force and battery both be full.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your galaxy-saving partner"
   },
   {
     "id": "05-05",
@@ -1264,10 +1264,10 @@
     "month": 5,
     "day": 6,
     "title": "International No Diet Day",
-    "description": "International No Diet Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Food is more than a number. Today is for putting enjoyment, not guilt, on the plate.",
     "emoji": "💪",
     "category": "wellness",
-    "sharingHook": "Take care of your health"
+    "sharingHook": "Send to your favorite dinner partner"
   },
   {
     "id": "05-07",
@@ -1404,20 +1404,20 @@
     "month": 5,
     "day": 20,
     "title": "World Bee Day",
-    "description": "World Bee Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Tiny wings, enormous work: the quiet heroes behind so much of our food take center stage.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to the busiest bee you know"
   },
   {
     "id": "05-21",
     "month": 5,
     "day": 21,
     "title": "International Tea Day",
-    "description": "International Tea Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Cup, glass or flask — tea already has a reserved seat beside a good conversation.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone you owe a cup of tea"
   },
   {
     "id": "05-22",
@@ -1834,10 +1834,10 @@
     "month": 7,
     "day": 2,
     "title": "World UFO Day",
-    "description": "World UFO Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Not every light in the sky is a plane. If aliens arrive, you already know who to call first.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your alien-invasion contact"
   },
   {
     "id": "07-03",
@@ -1864,10 +1864,10 @@
     "month": 7,
     "day": 5,
     "title": "Workaholics Day",
-    "description": "A playful reminder for people who are always working to step away from the list and take a short break.",
+    "description": "The to-do list is not going anywhere. Closing the laptop a little early counts as an achievement today.",
     "emoji": "💻",
     "category": "wellness",
-    "sharingHook": "Share with a friend who never clocks off"
+    "sharingHook": "Send to a friend who never clocks off"
   },
   {
     "id": "07-06",
@@ -1894,10 +1894,10 @@
     "month": 7,
     "day": 8,
     "title": "National Video Game Day",
-    "description": "National Video Game Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "One last level, one last match, one last quest — today we admit that line fools nobody.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your late-night gaming friend"
   },
   {
     "id": "07-09",
@@ -1984,10 +1984,10 @@
     "month": 7,
     "day": 17,
     "title": "World Emoji Day",
-    "description": "World Emoji Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Sometimes one tiny face says more than three paragraphs — especially when chosen well.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone fluent in emoji"
   },
   {
     "id": "07-18",
@@ -2114,20 +2114,20 @@
     "month": 7,
     "day": 30,
     "title": "International Day of Friendship",
-    "description": "International Day of Friendship: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "If you still laugh at the same joke after years, the friendship is nowhere near its expiry date.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your longtime partner in nonsense"
   },
   {
     "id": "07-31",
     "month": 7,
     "day": 31,
     "title": "Harry Potter's Birthday",
-    "description": "Harry Potter's Birthday: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "If the letter has not arrived, the owl may simply be lost. It is too early to give up hope.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your Hogwarts housemate"
   },
   {
     "id": "08-01",
@@ -2204,10 +2204,10 @@
     "month": 8,
     "day": 8,
     "title": "International Cat Day",
-    "description": "International Cat Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Humans think they domesticated cats. Cats tell that story very differently.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to a cat person"
   },
   {
     "id": "08-09",
@@ -2254,10 +2254,10 @@
     "month": 8,
     "day": 13,
     "title": "International Lefthanders Day",
-    "description": "International Lefthanders Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Roughly one in ten people is left-handed. Today we salute their lifelong battle with scissors.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your left-handed friend"
   },
   {
     "id": "08-14",
@@ -2384,10 +2384,10 @@
     "month": 8,
     "day": 26,
     "title": "International Dog Day",
-    "description": "International Dog Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The walk can be longer and the treats more generous today. We doubt they'll object.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to a dog person"
   },
   {
     "id": "08-27",
@@ -2624,10 +2624,10 @@
     "month": 9,
     "day": 19,
     "title": "International Talk Like a Pirate Day",
-    "description": "International Talk Like a Pirate Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Every sentence may begin with ‘Arrr’ today; the grammar police are not allowed on deck.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to the shadiest member of your crew"
   },
   {
     "id": "09-20",
@@ -2674,10 +2674,10 @@
     "month": 9,
     "day": 24,
     "title": "World Gorilla Day",
-    "description": "A global awareness day focused on gorillas and efforts to protect their natural habitats.",
+    "description": "Behind their powerful appearance are close relatives with strong family bonds and habitats that need protection.",
     "emoji": "🦍",
     "category": "nature",
-    "sharingHook": "Share with someone who cares about wildlife"
+    "sharingHook": "Send to someone who loves wildlife"
   },
   {
     "id": "09-25",
@@ -2744,10 +2744,10 @@
     "month": 10,
     "day": 1,
     "title": "International Coffee Day",
-    "description": "International Coffee Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "People who need coffee before conversation finally have an undisputed day on the calendar.",
     "emoji": "☕",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who runs on coffee"
   },
   {
     "id": "10-02",
@@ -2944,10 +2944,10 @@
     "month": 10,
     "day": 21,
     "title": "Back to the Future Day",
-    "description": "Back to the Future Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The future arrived, but hoverboards are still late. Anyone with a DeLorean, call us.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to the friend who speaks in movie quotes"
   },
   {
     "id": "10-22",
@@ -2984,10 +2984,10 @@
     "month": 10,
     "day": 25,
     "title": "World Pasta Day",
-    "description": "World Pasta Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Twists, tubes, bows or spaghetti — once the sauce arrives, shape is merely a detail.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who should cook pasta"
   },
   {
     "id": "10-26",
@@ -3044,10 +3044,10 @@
     "month": 10,
     "day": 31,
     "title": "Halloween",
-    "description": "Halloween: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Costumes, candy and the one night you can never be sure who is at the door.",
     "emoji": "👻",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to your spookiest friend"
   },
   {
     "id": "11-01",
@@ -3174,10 +3174,10 @@
     "month": 11,
     "day": 13,
     "title": "World Kindness Day",
-    "description": "World Kindness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A small act of kindness can redirect an entire day. Make the first move today.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone you're grateful for"
   },
   {
     "id": "11-14",
@@ -3234,10 +3234,10 @@
     "month": 11,
     "day": 19,
     "title": "World Toilet Day",
-    "description": "World Toilet Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Funny name aside, safe sanitation is a fundamental part of health and human dignity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share a smile and something important"
   },
   {
     "id": "11-20",
@@ -3574,10 +3574,10 @@
     "month": 12,
     "day": 23,
     "title": "Festivus",
-    "description": "Festivus: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A low-decor, high-honesty answer to holiday pressure, with optional wrestling.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Explore culture"
+    "sharingHook": "Send to your holiday-stress partner"
   },
   {
     "id": "12-24",
@@ -3634,29 +3634,29 @@
     "month": 12,
     "day": 29,
     "title": "Tick Tock Day",
-    "description": "Tick Tock Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Last call to close unfinished business before the year ends. The list is staring; you are looking away.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to a professional procrastinator"
   },
   {
     "id": "12-30",
     "month": 12,
     "day": 30,
     "title": "Bacon Day",
-    "description": "Bacon Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A crispy footnote near the end of the year: breakfast's smokiest debate takes the stage.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone serious about breakfast"
   },
   {
     "id": "12-31",
     "month": 12,
     "day": 31,
     "title": "New Year's Eve",
-    "description": "New Year's Eve: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Another year closes. Keep the best moments and leave the rest at midnight.",
     "emoji": "🎉",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone joining your next chapter"
   }
 ]
