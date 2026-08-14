@@ -127,13 +127,13 @@ for id in allIDs.sorted() {
 
     let combinedTitle = "\(trDay.title) \(enDay.title)".lowercased()
     let sensitiveTitleSignals = [
-        "abuse", "aggression", "chemical warfare", "child labour", "disappearance",
+        "abuse", "aggression", "aids", "blood donor", "chemical warfare", "child labour", "disabilities", "disappearance",
         "earthquake victims", "extremism", "genital mutilation", "hate speech", "holocaust",
         "islamophobia", "nuclear tests", "refugee", "sexual violence", "slavery", "suicide",
-        "terrorism", "violence against", "ayrımcılık", "cinsel şiddet", "çocuk işçiliği",
+        "terrorism", "violence against", "widows", "ayrımcılık", "cinsel şiddet", "çocuk işçiliği",
         "deprem kurban", "istismar", "islamofobi", "kadın sünnet", "kimyasal savaş",
-        "köle", "mülteci", "nefret söylemi", "nükleer deneme", "soykırım", "şiddet",
-        "terör", "zorla kaybed"
+        "engelliler", "hiv", "kan bağış", "köle", "mülteci", "nefret söylemi", "nükleer deneme", "soykırım", "şiddet",
+        "terör", "dul kadın", "zorla kaybed"
     ]
     let isPositiveNonviolenceTitle = combinedTitle.contains("non-violence")
         || combinedTitle.contains("nonviolence")

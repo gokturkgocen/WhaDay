@@ -34,10 +34,10 @@
     "month": 1,
     "day": 4,
     "title": "World Braille Day",
-    "description": "World Braille Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Braille is a tactile reading and writing system and an important tool for access to information, education and independent living.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the reminder that information should be accessible"
   },
   {
     "id": "01-05",
@@ -134,10 +134,10 @@
     "month": 1,
     "day": 14,
     "title": "World Logic Day",
-    "description": "World Logic Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Logic is more than symbols; it is a shared tool for testing claims, spotting contradictions and thinking more clearly.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to the friend who questions everything"
   },
   {
     "id": "01-15",
@@ -234,10 +234,10 @@
     "month": 1,
     "day": 24,
     "title": "International Day of Education",
-    "description": "International Day of Education: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Education is a human right, not a privilege; equal access to learning can change the future of people and communities.",
     "emoji": "📚",
     "category": "knowledge",
-    "sharingHook": "Learn something new"
+    "sharingHook": "Send to a teacher or learner who changed your life"
   },
   {
     "id": "01-25",
@@ -414,10 +414,10 @@
     "month": 2,
     "day": 11,
     "title": "International Day of Women and Girls in Science",
-    "description": "International Day of Women and Girls in Science: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Equal participation for women and girls in science broadens the questions we ask and strengthens the solutions we create.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to a woman or girl who loves science"
   },
   {
     "id": "02-12",
@@ -434,10 +434,10 @@
     "month": 2,
     "day": 13,
     "title": "World Radio Day",
-    "description": "World Radio Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Across more than a century, radio has kept bringing local languages, music, news and distant communities onto the same frequency.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone whose voice or show you miss"
   },
   {
     "id": "02-14",
@@ -474,10 +474,10 @@
     "month": 2,
     "day": 17,
     "title": "Global Tourism Resilience Day",
-    "description": "Global Tourism Resilience Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Resilient tourism protects more than travel; it supports communities whose livelihoods and local cultures depend on it.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone you want to explore somewhere new with"
   },
   {
     "id": "02-18",
@@ -504,20 +504,20 @@
     "month": 2,
     "day": 20,
     "title": "World Day of Social Justice",
-    "description": "World Day of Social Justice: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Social justice means access to rights, opportunity and safe working conditions should not depend on who you are.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with someone who wants a fairer world"
   },
   {
     "id": "02-21",
     "month": 2,
     "day": 21,
     "title": "International Mother Language Day",
-    "description": "International Mother Language Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A mother language carries more than communication; it holds memory, belonging and a way of seeing the world.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Explore culture"
+    "sharingHook": "Send to someone whose words you love"
   },
   {
     "id": "02-22",
@@ -814,10 +814,10 @@
     "month": 3,
     "day": 22,
     "title": "World Water Day",
-    "description": "World Water Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Access to clean, safe water is a human right; protecting water is a shared responsibility for health, nature and the future.",
     "emoji": "💧",
     "category": "nature",
-    "sharingHook": "Share nature's beauty"
+    "sharingHook": "Share with someone who cares about water and nature"
   },
   {
     "id": "03-23",
@@ -1124,20 +1124,20 @@
     "month": 4,
     "day": 22,
     "title": "International Mother Earth Day (Earth Day)",
-    "description": "International Mother Earth Day (Earth Day): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Earth Day reminds us that protecting climate and biodiversity is not a one-day gesture but a shared, everyday responsibility.",
     "emoji": "🎨",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone you want to protect the planet with"
   },
   {
     "id": "04-23",
     "month": 4,
     "day": 23,
     "title": "World Book and Copyright Day",
-    "description": "World Book and Copyright Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Books open doors into other lives, while copyright protects the work of the writers and creators who build those doors.",
     "emoji": "📚",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who always has a book recommendation"
   },
   {
     "id": "04-24",
@@ -1234,10 +1234,10 @@
     "month": 5,
     "day": 3,
     "title": "World Press Freedom Day",
-    "description": "World Press Freedom Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Free and independent journalism is essential for questioning power and helping the public reach verified information.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the value of independent journalism with care"
   },
   {
     "id": "05-04",
@@ -1564,10 +1564,10 @@
     "month": 6,
     "day": 5,
     "title": "World Environment Day",
-    "description": "World Environment Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Clean air, healthy ecosystems and livable cities are connected; protecting the environment means protecting life.",
     "emoji": "👨",
     "category": "nature",
-    "sharingHook": "Share nature's beauty"
+    "sharingHook": "Send to someone you can take one greener step with"
   },
   {
     "id": "06-06",
@@ -1594,10 +1594,10 @@
     "month": 6,
     "day": 8,
     "title": "World Oceans Day",
-    "description": "World Oceans Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Oceans regulate climate, shelter extraordinary life and sit at the heart of cycles that sustain the planet.",
     "emoji": "🌊",
     "category": "nature",
-    "sharingHook": "Share nature's beauty"
+    "sharingHook": "Send to someone you miss the sea with"
   },
   {
     "id": "06-09",
@@ -1654,10 +1654,10 @@
     "month": 6,
     "day": 14,
     "title": "World Blood Donor Day",
-    "description": "World Blood Donor Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Voluntary, regular blood donation helps maintain safe supplies for emergencies and ongoing treatment.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with care and direct eligibility questions to an official blood service"
   },
   {
     "id": "06-15",
@@ -1684,10 +1684,10 @@
     "month": 6,
     "day": 17,
     "title": "World Day to Combat Desertification and Drought",
-    "description": "World Day to Combat Desertification and Drought: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Protecting healthy soil and restoring degraded land support food security, biodiversity and resilience to drought.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with someone who cares about land and the future"
   },
   {
     "id": "06-18",
@@ -1724,10 +1724,10 @@
     "month": 6,
     "day": 21,
     "title": "International Day of Yoga",
-    "description": "International Day of Yoga: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Yoga is a longstanding practice that brings movement, breath and attention together. Consider this a small nudge to unroll the mat.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone you would stretch with"
   },
   {
     "id": "06-22",
@@ -1744,10 +1744,10 @@
     "month": 6,
     "day": 23,
     "title": "International Widows' Day",
-    "description": "International Widows' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Widows in many places face lost rights, economic insecurity and exclusion; visibility matters when it leads to access and dignity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with rights and dignity at the center"
   },
   {
     "id": "06-24",
@@ -1964,10 +1964,10 @@
     "month": 7,
     "day": 15,
     "title": "World Youth Skills Day",
-    "description": "World Youth Skills Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Investing in young people's skills is more than job preparation; it creates room and confidence to shape their own futures.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to a young person whose skills you believe in"
   },
   {
     "id": "07-16",
@@ -2214,10 +2214,10 @@
     "month": 8,
     "day": 9,
     "title": "International Day of the World's Indigenous Peoples",
-    "description": "International Day of the World's Indigenous Peoples: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Supporting Indigenous rights, languages and knowledge begins by making room for Indigenous voices, not speaking over them.",
     "emoji": "🌈",
     "category": "diversity",
-    "sharingHook": "Celebrate diversity"
+    "sharingHook": "Share by centering Indigenous voices"
   },
   {
     "id": "08-10",
@@ -2244,10 +2244,10 @@
     "month": 8,
     "day": 12,
     "title": "International Youth Day",
-    "description": "International Youth Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Young people are not merely spectators of the future; they deserve voice, resources and real participation in today's decisions.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to a young person whose ideas matter to you"
   },
   {
     "id": "08-13",
@@ -2314,10 +2314,10 @@
     "month": 8,
     "day": 19,
     "title": "World Humanitarian Day",
-    "description": "World Humanitarian Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Humanitarian workers take serious risks to save lives in crises; protecting civilians and aid teams is essential.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with civilians and aid workers in mind"
   },
   {
     "id": "08-20",
@@ -2554,10 +2554,10 @@
     "month": 9,
     "day": 12,
     "title": "United Nations Day for South-South Cooperation",
-    "description": "United Nations Day for South-South Cooperation: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "South-South cooperation helps countries with shared experience exchange knowledge, technology and solutions as equal partners.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the power of cooperation across borders"
   },
   {
     "id": "09-13",
@@ -2644,10 +2644,10 @@
     "month": 9,
     "day": 21,
     "title": "International Day of Peace",
-    "description": "International Day of Peace: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Peace is more than the absence of conflict; it is daily work for justice, human rights, dialogue and safety.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Send to someone who believes in peace"
   },
   {
     "id": "09-22",
@@ -2844,10 +2844,10 @@
     "month": 10,
     "day": 11,
     "title": "International Day of the Girl Child",
-    "description": "International Day of the Girl Child: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Girls have an equal human right to safety, education and a say in decisions about their own futures.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share girls' rights with care"
   },
   {
     "id": "10-12",
@@ -2884,20 +2884,20 @@
     "month": 10,
     "day": 15,
     "title": "International Day of Rural Women",
-    "description": "International Day of Rural Women: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Rural women are central to food systems and community life, yet often face barriers to land, finance and decision-making.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with rural women's work and rights in focus"
   },
   {
     "id": "10-16",
     "month": 10,
     "day": 16,
     "title": "World Food Day",
-    "description": "World Food Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Food is not only something to enjoy; it is a right. Ending hunger, reducing waste and supporting sustainable production are shared responsibilities.",
     "emoji": "🍽️",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with the right to food and less waste in focus"
   },
   {
     "id": "10-17",
@@ -2974,10 +2974,10 @@
     "month": 10,
     "day": 24,
     "title": "United Nations Day",
-    "description": "United Nations Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "United Nations Day recalls the promise that countries can work together for peace, human rights and shared challenges.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with someone who believes in global cooperation"
   },
   {
     "id": "10-25",
@@ -3354,10 +3354,10 @@
     "month": 12,
     "day": 1,
     "title": "World AIDS Day",
-    "description": "World AIDS Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Accurate HIV information, access to testing and treatment, and fighting stigma all save lives.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share accurate information without stigma"
   },
   {
     "id": "12-02",
@@ -3374,10 +3374,10 @@
     "month": 12,
     "day": 3,
     "title": "International Day of Persons with Disabilities",
-    "description": "International Day of Persons with Disabilities: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Accessibility is a right, not a favour. Barriers often lie in systems that exclude people, not in individuals.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share by centering disabled people's voices"
   },
   {
     "id": "12-04",
