@@ -106,12 +106,9 @@ struct ShareStudioView: View {
     private var formatControl: some View {
         Group {
             if dynamicTypeSize.isAccessibilitySize {
-                ScrollView(.horizontal) {
-                    HStack(spacing: 8) {
-                        formatButtons
-                    }
+                VStack(spacing: 8) {
+                    formatButtons
                 }
-                .scrollIndicators(.hidden)
             } else {
                 HStack(spacing: 8) {
                     formatButtons
@@ -314,8 +311,7 @@ struct ShareStudioView: View {
                 .appFont(size: 12, weight: .black, relativeTo: .callout)
                 .foregroundStyle(isSelected ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop))
                 .frame(
-                    minWidth: dynamicTypeSize.isAccessibilitySize ? 180 : 0,
-                    maxWidth: dynamicTypeSize.isAccessibilitySize ? 220 : .infinity,
+                    maxWidth: .infinity,
                     minHeight: 44
                 )
                 .padding(.horizontal, 8)
