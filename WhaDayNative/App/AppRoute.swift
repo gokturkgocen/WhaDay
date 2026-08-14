@@ -82,7 +82,7 @@ final class AppRouteCenter: ObservableObject {
 
     @Published private(set) var request: Request?
 
-    private init() {}
+    init() {}
 
     func open(_ route: AppRoute) {
         request = Request(route: route)

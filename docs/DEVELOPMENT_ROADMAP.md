@@ -103,12 +103,16 @@ Exit: accessibility is a supported experience, not a launch exception list.
 
 ## Phase 8 — Reliability and performance
 
-- [ ] Add content, route, notification, persistence and widget test suites.
-- [ ] Add date-boundary and lifecycle integration coverage.
-- [ ] Add localized UI smoke tests and share-render failure handling.
-- [ ] Recover safely from malformed on-device data.
-- [ ] Measure launch, scrolling, render time and memory regressions.
-- [ ] Remove project-owned compiler warnings.
+- [x] Add content, route, notification, persistence and widget test suites.
+- [x] Add date-boundary and lifecycle integration coverage.
+- [x] Add localized UI smoke tests and share-render failure handling.
+- [x] Recover safely from malformed on-device data.
+- [x] Measure launch, scrolling, render time and memory regressions.
+- [x] Remove project-owned compiler warnings.
+
+Evidence: [`RELIABILITY_EVIDENCE.md`](RELIABILITY_EVIDENCE.md). The remaining
+App Intents metadata message belongs to Xcode's UI-test bundle processor and is
+recorded separately from project-owned Swift compiler warnings.
 
 Exit: the same revision passes functional, visual and performance gates.
 

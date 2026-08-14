@@ -10,7 +10,14 @@ final class PersonalDayLibrary: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        self.savedIDs = Set(defaults.stringArray(forKey: storageKey) ?? [])
+        let storedIDs = defaults.stringArray(forKey: storageKey) ?? []
+        let validIDs = Set(DayEventStore.days.map(\.id))
+        self.savedIDs = Set(storedIDs).intersection(validIDs)
+
+        if defaults.object(forKey: storageKey) != nil,
+           savedIDs != Set(storedIDs) || defaults.stringArray(forKey: storageKey) == nil {
+            defaults.set(savedIDs.sorted(), forKey: storageKey)
+        }
     }
 
     func isSaved(_ event: DayEvent) -> Bool {

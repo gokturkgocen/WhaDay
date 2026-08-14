@@ -23,9 +23,23 @@ final class ReminderPreferences: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        self.isEnabled = defaults.bool(forKey: Key.enabled)
-        self.hour = defaults.object(forKey: Key.hour) == nil ? 9 : defaults.integer(forKey: Key.hour)
-        self.minute = defaults.object(forKey: Key.minute) == nil ? 0 : defaults.integer(forKey: Key.minute)
+        let storedEnabled = defaults.object(forKey: Key.enabled)
+        let storedHour = defaults.object(forKey: Key.hour)
+        let storedMinute = defaults.object(forKey: Key.minute)
+
+        self.isEnabled = (storedEnabled as? NSNumber)?.boolValue ?? false
+        self.hour = Self.sanitizedInteger(storedHour, defaultValue: 9, range: 0...23)
+        self.minute = Self.sanitizedInteger(storedMinute, defaultValue: 0, range: 0...59)
+
+        if storedEnabled != nil, !(storedEnabled is NSNumber) {
+            defaults.set(false, forKey: Key.enabled)
+        }
+        if storedHour != nil, (storedHour as? NSNumber)?.intValue != hour {
+            defaults.set(hour, forKey: Key.hour)
+        }
+        if storedMinute != nil, (storedMinute as? NSNumber)?.intValue != minute {
+            defaults.set(minute, forKey: Key.minute)
+        }
     }
 
     func setEnabled(_ enabled: Bool) {
@@ -47,5 +61,14 @@ final class ReminderPreferences: ObservableObject {
             minute: minute,
             savedIDs: savedIDs
         )
+    }
+
+    private static func sanitizedInteger(
+        _ value: Any?,
+        defaultValue: Int,
+        range: ClosedRange<Int>
+    ) -> Int {
+        guard let number = value as? NSNumber else { return defaultValue }
+        return min(max(number.intValue, range.lowerBound), range.upperBound)
     }
 }

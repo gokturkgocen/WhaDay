@@ -36,12 +36,14 @@ enum ReminderPlanBuilder {
     ) -> [PlannedReminder] {
         guard configuration.isEnabled else { return [] }
         let eventByID = Dictionary(uniqueKeysWithValues: events.map { ($0.id, $0) })
+        let safeHour = min(max(configuration.hour, 0), 23)
+        let safeMinute = min(max(configuration.minute, 0), 59)
 
         return (0..<min(max(daysAhead, 0), maximumScheduledDays)).compactMap { offset in
             guard let day = calendar.date(byAdding: .day, value: offset, to: now) else { return nil }
             var components = calendar.dateComponents([.year, .month, .day], from: day)
-            components.hour = configuration.hour
-            components.minute = configuration.minute
+            components.hour = safeHour
+            components.minute = safeMinute
             components.second = 0
 
             guard
