@@ -1,26 +1,45 @@
 # WhaDay 1.0 Release Readiness
 
-Last updated: 2026-08-13
+Last updated: 2026-08-14
 
-This file separates source completion from device, TestFlight and public-release gates. A successful local build is not a published app.
+This file separates development readiness from archive, TestFlight and
+public-release gates. Distribution work is outside the current development
+plan; a successful local build is not a published app.
 
 ## Verified locally
 
 - Native SwiftUI app and WidgetKit extension build for a generic iOS device.
-- Editorial/share suite passes all 16 tests.
-- Daily card, weekly picks, saved days, calendar and Share Studio were exercised in an iPhone 17 simulator.
+- All 366 Turkish and English records pass the strict content audit with no
+  generic copy, unreviewed records or semantic safety issues.
+- Unit, integration, reliability, performance and full-render suite passes all
+  53 tests with no skips.
+- All 4,392 date, language, style and output-format combinations render at the
+  exact expected dimensions.
+- The bilingual Home → Share Studio → Discover journey passes on compact,
+  standard and large simulator classes, including Accessibility XXXL and
+  Increased Contrast.
 - Turkish App Store metadata and a five-image 1320 × 2868 screenshot set match the current product.
 - App privacy manifest declares UserDefaults access, no tracking and no collected data.
 - Support and privacy pages are live over HTTPS and return HTTP 200:
   - `https://gokturkgocen.github.io/WhaDay/support/`
   - `https://gokturkgocen.github.io/WhaDay/privacy/`
 
+## Required before development-complete
+
+- Complete the core journey with VoiceOver on a physical device and verify
+  focus order, announcements and rotor behavior without relying on sight.
+- Test Story handoff with Instagram installed and Message handoff with WhatsApp
+  and Messages installed on a physical device; inspect the received artwork and
+  fallback paths.
+- Exercise notification grant, denial/recovery, notification tap and widget tap
+  on a physical device; each route must open the exact displayed event.
+- Record physical-device launch, scrolling and share-render observations.
+
+The tested revision and exact evidence are recorded in
+[`DEVELOPMENT_RC_EVIDENCE.md`](DEVELOPMENT_RC_EVIDENCE.md).
+
 ## Required before archive
 
-- Run VoiceOver, Dynamic Type and Reduce Motion checks on the release candidate.
-- Verify layouts on one compact iPhone size and one current large iPhone size.
-- Exercise save/restore, foreground date rollover and notification rescheduling after relaunch.
-- Test Story handoff with Instagram installed and 4:5 sharing with WhatsApp installed on a physical device.
 - Confirm App Group `group.com.gokturkgocen.whadayapp` is attached to both distribution App IDs and profiles.
 - Resolve the generic-device orientation warning or explicitly require full-screen portrait behavior.
 

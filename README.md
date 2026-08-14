@@ -21,7 +21,16 @@ edit `project.yml` and re-run `xcodegen generate` instead.
 
 The binding 1.0 product scope and completion gates are documented in
 [`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md). Implementation progress
-is tracked in [`docs/DEVELOPMENT_ROADMAP.md`](docs/DEVELOPMENT_ROADMAP.md).
+is tracked in [`docs/DEVELOPMENT_ROADMAP.md`](docs/DEVELOPMENT_ROADMAP.md), and
+the latest simulator-qualified candidate is recorded in
+[`docs/DEVELOPMENT_RC_EVIDENCE.md`](docs/DEVELOPMENT_RC_EVIDENCE.md).
+
+Run the strict editorial gate before treating a content revision as a release
+candidate:
+
+```sh
+swift scripts/audit_content.swift --strict
+```
 
 ## Structure
 

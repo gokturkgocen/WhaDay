@@ -19,7 +19,7 @@ not physical-device launch claims.
 - Date context refresh updates the instant, calendar/time zone and locale as
   one state transition; the resulting event ID and next boundary are covered.
 
-## Same-revision regression run
+## Current release-candidate regression
 
 Command:
 
@@ -31,16 +31,19 @@ xcodebuild test \
   CODE_SIGNING_ALLOWED=NO
 ```
 
-Result: `TEST SUCCEEDED`.
+Tested app/content revision: `5d78bd0`. Result: `TEST SUCCEEDED` in every
+operation.
 
-| Target | Executed | Passed | Skipped | Failed |
+| Operation | Executed | Passed | Skipped | Failed |
 | --- | ---: | ---: | ---: | ---: |
-| Unit, integration and render tests | 48 | 47 | 1 | 0 |
-| Localized accessibility and performance UI tests | 4 | 4 | 0 | 0 |
-| Total | 52 | 51 | 1 | 0 |
+| Unit, integration, reliability and full render matrix | 53 | 53 | 0 | 0 |
+| iPhone 17 localized accessibility and performance UI | 4 | 4 | 0 | 0 |
+| iPhone SE Accessibility XXXL + Increased Contrast journeys | 2 | 2 | 0 | 0 |
+| iPhone 17 Pro Max XXXL journeys | 2 | 2 | 0 | 0 |
+| Total scenario invocations | 61 | 61 | 0 | 0 |
 
-The single opt-in skip is the 4,392-render share matrix. Its full successful
-release-candidate run is recorded in `SHARE_MATRIX_EVIDENCE.md`.
+The opt-in 4,392-render gate was enabled for this run, so no test was skipped.
+Its detailed result is recorded in `SHARE_MATRIX_EVIDENCE.md`.
 
 Covered suites include editorial/content integrity, routing, date/time-zone and
 DST boundaries, reminders, persistence, widgets, full-year discovery
@@ -53,16 +56,16 @@ Measured during the same complete run:
 
 | Workload | Mean | Peak physical memory |
 | --- | ---: | ---: |
-| Decode 366 Turkish catalog records | 0.001 s | 45.2 MB |
-| Run 600 localized discovery queries | 0.291 s | 58.6 MB |
-| Render one 1080×1350 Editorial message card | 0.002 s | 48.2 MB |
-| Responsive first-frame launch | 1.290 s | — |
+| Decode 366 Turkish catalog records | 0.002 s | 32.0 MB |
+| Run 600 localized discovery queries | 0.833 s | 44.4 MB |
+| Render one 1080×1350 Editorial message card | 0.007 s | 34.7 MB |
+| Responsive first-frame launch | 1.337 s | — |
 | Calendar scroll deceleration signpost | 2.433 s | — |
 
-These measurements establish a reproducible simulator baseline. Xcode records
-the raw iterations in the result bundle; physical-device performance remains a
-final quality-gate check because simulator timings are not user-facing device
-guarantees.
+The unit workloads were measured in an isolated test process on the large
+simulator after the matrix run; launch and scroll were measured on iPhone 17.
+These values are conservative simulator baselines, not user-facing
+physical-device performance claims.
 
 ## Warning audit
 

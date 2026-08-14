@@ -39,7 +39,7 @@ day content and an unreachable sharing action. The layout was changed and the
 same two journeys then passed. The large-device pass later exposed truncated
 style descriptions; expanded horizontal cards now preserve the complete copy.
 
-## Combined regression run
+## Current-revision regression
 
 Command:
 
@@ -47,13 +47,24 @@ Command:
 xcodebuild test \
   -project WhaDay.xcodeproj \
   -scheme WhaDayNative \
-  -destination 'platform=iOS Simulator,id=<iPhone 17 Pro Max>' \
+  -destination 'platform=iOS Simulator,id=<target device>' \
   CODE_SIGNING_ALLOWED=NO
 ```
 
-Result: `TEST SUCCEEDED`; 42 tests executed, 41 passed, 1 skipped, 0 failed.
-The skipped test is the opt-in 4,392-render share matrix, whose successful full
-run is recorded separately in `SHARE_MATRIX_EVIDENCE.md`.
+App/content revision `5d78bd0` passed the bilingual core journey on all three
+simulator classes:
+
+| Device class | Setting | Tests | Result |
+| --- | --- | ---: | --- |
+| iPhone SE (3rd generation) | Accessibility XXXL + Increased Contrast | 2 | Passed |
+| iPhone 17 | Large | 2 | Passed |
+| iPhone 17 Pro Max | XXXL | 2 | Passed |
+
+All 24 current-revision screenshot attachments were produced. Representative
+standard and compact captures were manually reviewed: core actions remained
+reachable, the standard hierarchy had no visible clipping, and compact
+accessibility layouts used scrolling plus deliberate ellipsis for secondary
+discovery summaries rather than hiding the primary journey.
 
 ## Honest remaining gate
 

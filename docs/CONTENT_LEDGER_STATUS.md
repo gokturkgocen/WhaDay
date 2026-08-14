@@ -3,9 +3,8 @@
 Snapshot date: 2026-08-14  
 Dataset: `WhaDayNative/Data/metadata.json`
 
-This file records progress, not completion. The locale-neutral ledger is now
-structurally complete, but inferred bootstrap values remain a manual review
-queue. Source verification and editorial review are deliberately independent:
+The locale-neutral ledger and both localized corpora have completed the 1.0
+editorial gate. Source verification and editorial review remain deliberately independent:
 `source.checkedAt` records an exact date/title/source check, while `reviewState`
 records whether the user-facing copy has completed editorial or safety review.
 
@@ -15,7 +14,7 @@ records whether the user-facing copy has completed editorial or safety review.
 - Missing localized IDs: 0
 - Duplicate metadata IDs: 0
 - Official authority records without a source: 0
-- Primary-source records verified on 2026-08-14: 40
+- Source records verified on 2026-08-14: 250
 - Legacy bell symbols exposed through metadata: 0
 - Typed content categories: 12
 
@@ -23,46 +22,46 @@ records whether the user-facing copy has completed editorial or safety review.
 
 | Authority | Count | Meaning at this stage |
 | --- | ---: | --- |
-| Official | 40 | Exact primary pages were checked on 2026-08-14; user-facing copy is still in the editorial queue. |
-| Cultural | 41 | A tradition, faith or country-specific scope was inferred and must be reviewed. |
-| Editorial | 285 | No official status is claimed; title, date and social fit still require review. |
+| Official | 180 | Every official claim has a source and review date. |
+| Cultural | 120 | Faith, national and movement-origin dates name their cultural scope. |
+| Editorial | 66 | WhaDay-created prompts explicitly use `whaday-editorial` scope. |
 
 ## Safety queue
 
 | Sensitivity | Count | Promotion behavior |
 | --- | ---: | --- |
-| Standard | 319 | Eligible only after editorial review and shareability scoring. |
-| Considerate | 17 | Excluded from engagement-driven weekly promotion. |
-| Remembrance | 30 | Excluded from engagement promotion and rendered as a note, never an excuse. |
+| Standard | 270 | Eligible according to reviewed shareability and category. |
+| Considerate | 71 | Excluded from engagement-driven weekly promotion. |
+| Remembrance | 25 | Excluded from engagement promotion and rendered as a note, never an excuse. |
 
 ## Review queue
 
 | Review state | Count |
 | --- | ---: |
-| Needs editorial review | 319 |
-| Needs safety review | 47 |
-| Curated | 0 |
+| Needs editorial review | 0 |
+| Needs safety review | 0 |
+| Curated | 366 |
 
 ## Taxonomy distribution
 
 | Category | Count |
 | --- | ---: |
-| Playful | 165 |
-| Celebrations | 40 |
-| Remembrance | 30 |
-| Animals and nature | 25 |
-| Culture and arts | 21 |
-| Civil society | 20 |
-| Health and awareness | 17 |
-| Food and drink | 16 |
-| Science and curiosity | 13 |
-| Relationships | 9 |
-| Sport and movement | 7 |
-| Professions | 3 |
+| Civil society | 75 |
+| Animals and nature | 40 |
+| Culture and arts | 40 |
+| Celebrations | 39 |
+| Relationships | 36 |
+| Playful | 30 |
+| Health and awareness | 28 |
+| Remembrance | 25 |
+| Science and curiosity | 23 |
+| Food and drink | 17 |
+| Professions | 7 |
+| Sport and movement | 6 |
 
-The old 272-entry `awareness` bucket no longer drives the app. The current
-`playful` bucket is still too broad and is explicitly part of manual review;
-the bootstrap script must not be treated as final editorial judgment.
+The old 272-entry `awareness` bucket and its generic copy no longer drive any
+visible event. Both locales have zero legacy descriptions and zero default
+sharing hooks.
 
 ## Enforcement now active
 
@@ -80,5 +79,5 @@ with `--force`. Once manual review begins, edits belong in the ledger rather
 than in title-based inference rules.
 
 `swift scripts/audit_content.swift --write` regenerates the current quality
-snapshot. `--strict` is the eventual release-candidate gate and intentionally
-fails while any structural problem or unreviewed record remains.
+snapshot. `swift scripts/audit_content.swift --strict` now passes and remains
+the release-candidate content gate.

@@ -21,11 +21,11 @@ Exit: the contract can reject attractive but distracting feature work.
 
 - [x] Move authority, source, sensitivity and review state into data.
 - [x] Replace the broad legacy category model with a typed twelve-part taxonomy.
-- [ ] Review all 366 dates for fixed-date validity and cultural scope.
-- [ ] Rewrite Turkish content as native copy.
-- [ ] Adapt English content by intent rather than literal translation.
-- [ ] Attach primary sources to every official claim.
-- [ ] Remove visible dependence on generic fallback copy.
+- [x] Review all 366 dates for fixed-date validity and cultural scope.
+- [x] Rewrite Turkish content as native copy.
+- [x] Adapt English content by intent rather than literal translation.
+- [x] Attach primary sources to every official claim.
+- [x] Remove visible dependence on generic fallback copy.
 - [x] Add corpus-wide integrity, safety and length tests.
 
 Exit: every date is independently trustworthy and shareable.
@@ -118,13 +118,16 @@ Exit: the same revision passes functional, visual and performance gates.
 
 ## Phase 9 — Development quality gate
 
-- [ ] Execute the complete simulator scenario matrix.
+- [x] Execute the complete simulator scenario matrix.
 - [ ] Execute notification, widget and sharing scenarios on a physical device.
-- [ ] Clear every P0 and P1 defect.
-- [ ] Record P2 decisions without hiding them.
-- [ ] Produce a final evidence report tied to the tested revision.
+- [x] Clear every P0 and P1 defect found in the automated and simulator scope.
+- [x] Record P2 decisions without hiding them.
+- [x] Produce a final evidence report tied to the tested revision.
 
 Exit: every item in `PRODUCT_CONTRACT.md`'s definition of done is evidenced.
+
+Current simulator-qualified candidate and remaining physical-device gates are
+recorded in [`DEVELOPMENT_RC_EVIDENCE.md`](DEVELOPMENT_RC_EVIDENCE.md).
 
 ## Working protocol
 
