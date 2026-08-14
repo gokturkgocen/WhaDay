@@ -7,7 +7,8 @@ enum ShareCardRenderer {
         colors: ThemeColors,
         format: ShareCardFormat,
         style: ShareCardStyle = .editorial,
-        personalNote: String? = nil
+        personalNote: String? = nil,
+        language: String = DayEventStore.language
     ) -> UIImage? {
         let renderer = ImageRenderer(
             content: ShareCardView(
@@ -15,7 +16,8 @@ enum ShareCardRenderer {
                 colors: colors,
                 format: format,
                 style: style,
-                personalNote: personalNote
+                personalNote: personalNote,
+                language: language
             )
         )
         renderer.scale = 3

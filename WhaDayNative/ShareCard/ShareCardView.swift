@@ -25,20 +25,50 @@ enum ShareCardFormat: String, CaseIterable, Identifiable {
 
 enum ShareCardStyle: String, CaseIterable, Identifiable {
     case editorial
-    case midnight
-    case poster
+    case playful
+    case minimal
 
     var id: String { rawValue }
 
     var title: String {
         switch (self, DayEventStore.language) {
-        case (.editorial, "tr"): return "Almanak"
-        case (.midnight, "tr"): return "Gece Notu"
-        case (.poster, "tr"): return "Poster"
-        case (.editorial, _): return "Almanac"
-        case (.midnight, _): return "Midnight Note"
-        case (.poster, _): return "Poster"
+        case (.editorial, "tr"): return "Editoryal"
+        case (.playful, "tr"): return "Oyunbaz"
+        case (.minimal, "tr"): return "Minimal"
+        case (.editorial, _): return "Editorial"
+        case (.playful, _): return "Playful"
+        case (.minimal, _): return "Minimal"
         }
+    }
+
+    var purpose: String {
+        let tr = DayEventStore.language == "tr"
+        switch self {
+        case .editorial: return tr ? "Bilgi + bağlam" : "Fact + context"
+        case .playful: return tr ? "Büyük ve enerjik" : "Bold + energetic"
+        case .minimal: return tr ? "Sakin ve net" : "Calm + clear"
+        }
+    }
+}
+
+enum ShareCardLayout {
+    static func titleSize(characterCount: Int, format: ShareCardFormat) -> CGFloat {
+        switch (format, characterCount) {
+        case (.message, 111...): return 21
+        case (.message, 81...): return 24
+        case (.message, 56...): return 27
+        case (.message, 36...): return 31
+        case (.message, _): return 37
+        case (.story, 111...): return 24
+        case (.story, 81...): return 28
+        case (.story, 56...): return 33
+        case (.story, 36...): return 39
+        case (.story, _): return 47
+        }
+    }
+
+    static func verticalSafeInset(format: ShareCardFormat) -> CGFloat {
+        format == .story ? 84 : 24
     }
 }
 
@@ -48,22 +78,27 @@ struct ShareCardView: View {
     let format: ShareCardFormat
     let style: ShareCardStyle
     let personalNote: String?
+    let language: String
 
     init(
         event: DayEvent?,
         colors: ThemeColors,
         format: ShareCardFormat,
         style: ShareCardStyle = .editorial,
-        personalNote: String? = nil
+        personalNote: String? = nil,
+        language: String = DayEventStore.language
     ) {
         self.event = event
         self.colors = colors
         self.format = format
         self.style = style
         self.personalNote = personalNote
+        self.language = language
     }
 
-    private var editorial: EditorialContent? { event.map(EditorialContent.forEvent) }
+    private var editorial: EditorialContent? {
+        event.map { EditorialContent.forEvent($0, language: language) }
+    }
 
     private var dateText: String {
         var components = DateComponents()
@@ -72,7 +107,7 @@ struct ShareCardView: View {
         components.year = Calendar.current.component(.year, from: Date())
         guard let date = Calendar.current.date(from: components) else { return "" }
         let formatter = DateFormatter()
-        formatter.locale = DayEventStore.dateLocale
+        formatter.locale = language == "tr" ? Locale(identifier: "tr_TR") : Locale(identifier: "en_US")
         formatter.setLocalizedDateFormatFromTemplate("d MMMM")
         return formatter.string(from: date)
     }
@@ -86,16 +121,17 @@ struct ShareCardView: View {
             )
 
             glowField
-            fineGrid
+            decorativeLayer
 
             VStack(alignment: .leading, spacing: 0) {
                 cardHeader
-                Spacer(minLength: format == .story ? 34 : 20)
+                Spacer(minLength: format == .story ? 12 : 14)
                 selectedCard
-                Spacer(minLength: format == .story ? 28 : 18)
+                Spacer(minLength: format == .story ? 12 : 12)
                 cardFooter
             }
-            .padding(format == .story ? 28 : 24)
+            .padding(.horizontal, format == .story ? 28 : 24)
+            .padding(.vertical, ShareCardLayout.verticalSafeInset(format: format))
         }
         .frame(width: format.canvasSize.width, height: format.canvasSize.height)
         .clipped()
@@ -106,20 +142,20 @@ struct ShareCardView: View {
         switch style {
         case .editorial:
             vividCard
-        case .midnight:
-            midnightCard
-        case .poster:
+        case .playful:
             posterCard
+        case .minimal:
+            midnightCard
         }
     }
 
     private var cardHeader: some View {
         HStack(spacing: 8) {
             BrandMark(color: Color(hex: colors.secondary))
-                .frame(width: 25, height: 25)
-                .scaleEffect(0.58)
+                .frame(width: 21, height: 21)
+                .scaleEffect(0.50)
             Text("WHADAY")
-                .font(.system(size: 14, weight: .black, design: .rounded))
+                .font(.system(size: 11, weight: .black, design: .rounded))
                 .tracking(1)
 
             Spacer()
@@ -130,10 +166,11 @@ struct ShareCardView: View {
                 .opacity(0.62)
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
+        .opacity(0.82)
     }
 
     private var vividCard: some View {
-        VStack(alignment: .leading, spacing: format == .story ? 19 : 13) {
+        VStack(alignment: .leading, spacing: format == .story ? 14 : 11) {
             HStack(alignment: .center) {
                 Text(editorial?.eyebrow ?? "WHADAY")
                     .font(.system(size: 9, weight: .black, design: .rounded))
@@ -147,7 +184,7 @@ struct ShareCardView: View {
                 Spacer()
 
                 Text(event.map(EditorialSymbol.forEvent) ?? "✦")
-                    .font(.system(size: format == .story ? 48 : 38))
+                    .font(.system(size: format == .story ? 38 : 32))
                     .rotationEffect(.degrees(5))
             }
 
@@ -156,21 +193,21 @@ struct ShareCardView: View {
                 .tracking(-1.6)
                 .foregroundStyle(Color(hex: colors.ink))
                 .lineLimit(format == .story ? 5 : 4)
-                .minimumScaleFactor(0.58)
-                .fixedSize(horizontal: false, vertical: true)
+                .minimumScaleFactor(0.72)
+                .allowsTightening(true)
 
             Rectangle()
                 .fill(Color(hex: colors.ink).opacity(0.7))
                 .frame(height: 1.5)
 
             Text(editorial?.fact ?? Strings.noEventDesc)
-                .font(.system(size: format == .story ? 16 : 13, weight: .semibold, design: .rounded))
+                .font(.system(size: format == .story ? 14 : 12.5, weight: .semibold, design: .rounded))
                 .lineSpacing(format == .story ? 3 : 2)
                 .foregroundStyle(Color(hex: colors.ink).opacity(0.78))
-                .lineLimit(format == .story ? 5 : 4)
+                .lineLimit(3)
                 .minimumScaleFactor(0.72)
         }
-        .padding(format == .story ? 24 : 20)
+        .padding(format == .story ? 20 : 18)
         .background(
             LinearGradient(
                 colors: [Color(hex: colors.paper), Color(hex: colors.blob1)],
@@ -187,7 +224,7 @@ struct ShareCardView: View {
     }
 
     private var midnightCard: some View {
-        VStack(alignment: .leading, spacing: format == .story ? 22 : 15) {
+        VStack(alignment: .leading, spacing: format == .story ? 14 : 11) {
             HStack {
                 Text(editorial?.eyebrow ?? "WHADAY")
                     .font(.system(size: 9, weight: .black, design: .rounded))
@@ -197,7 +234,7 @@ struct ShareCardView: View {
                 Spacer()
 
                 Text(event.map(EditorialSymbol.forEvent) ?? "✦")
-                    .font(.system(size: format == .story ? 42 : 34))
+                    .font(.system(size: format == .story ? 34 : 30))
             }
 
             Text(event?.title ?? Strings.noEventTitle)
@@ -205,20 +242,21 @@ struct ShareCardView: View {
                 .tracking(-1.5)
                 .foregroundStyle(Color(hex: colors.onBackdrop))
                 .lineLimit(format == .story ? 5 : 4)
-                .minimumScaleFactor(0.58)
+                .minimumScaleFactor(0.72)
+                .allowsTightening(true)
 
             Capsule()
                 .fill(Color(hex: colors.accent))
                 .frame(width: 48, height: 4)
 
             Text(editorial?.fact ?? Strings.noEventDesc)
-                .font(.system(size: format == .story ? 15 : 12.5, weight: .semibold, design: .rounded))
+                .font(.system(size: format == .story ? 14 : 12.5, weight: .semibold, design: .rounded))
                 .lineSpacing(3)
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.68))
-                .lineLimit(format == .story ? 6 : 4)
+                .lineLimit(3)
                 .minimumScaleFactor(0.72)
         }
-        .padding(format == .story ? 26 : 21)
+        .padding(format == .story ? 21 : 18)
         .background(Color(hex: colors.backdropRaised).opacity(0.96))
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .overlay(
@@ -237,37 +275,38 @@ struct ShareCardView: View {
             )
 
             Text(event.map(EditorialSymbol.forEvent) ?? "✦")
-                .font(.system(size: format == .story ? 150 : 112))
+                .font(.system(size: format == .story ? 132 : 104))
                 .opacity(0.16)
                 .rotationEffect(.degrees(11))
                 .offset(x: format == .story ? 142 : 168, y: -30)
 
-            VStack(alignment: .leading, spacing: format == .story ? 20 : 13) {
+            VStack(alignment: .leading, spacing: format == .story ? 14 : 11) {
                 Text(dateText.uppercased())
                     .font(.system(size: 10, weight: .black, design: .monospaced))
                     .tracking(1.4)
 
-                Spacer(minLength: format == .story ? 56 : 24)
+                Spacer(minLength: format == .story ? 24 : 14)
 
                 Text(event?.title ?? Strings.noEventTitle)
                     .font(.system(size: titleSize + 1, weight: .black, design: .rounded))
                     .tracking(-1.8)
                     .lineLimit(format == .story ? 5 : 4)
-                    .minimumScaleFactor(0.55)
+                    .minimumScaleFactor(0.70)
+                    .allowsTightening(true)
 
                 Rectangle()
                     .fill(Color(hex: colors.ink))
                     .frame(height: 2)
 
                 Text(editorial?.fact ?? Strings.noEventDesc)
-                    .font(.system(size: format == .story ? 15 : 12.5, weight: .bold, design: .rounded))
+                    .font(.system(size: format == .story ? 14 : 12.5, weight: .bold, design: .rounded))
                     .lineSpacing(3)
-                    .lineLimit(format == .story ? 5 : 4)
+                    .lineLimit(3)
                     .minimumScaleFactor(0.7)
                     .opacity(0.75)
             }
             .foregroundStyle(Color(hex: colors.ink))
-            .padding(format == .story ? 25 : 20)
+            .padding(format == .story ? 21 : 18)
         }
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .overlay(
@@ -298,7 +337,7 @@ struct ShareCardView: View {
 
     private var footerLabel: String {
         let isRemembrance = editorial?.tone == .remembrance
-        if DayEventStore.language == "tr" {
+        if language == "tr" {
             return isRemembrance ? "GÜNÜN NOTU" : "GÜNÜN BAHANESİ"
         }
         return isRemembrance ? "TODAY'S NOTE" : "TODAY'S EXCUSE"
@@ -337,15 +376,29 @@ struct ShareCardView: View {
         }
     }
 
-    private var titleSize: CGFloat {
-        let count = event?.title.count ?? 0
-        if format == .message {
-            if count > 70 { return 26 }
-            if count > 42 { return 30 }
-            return 37
+    @ViewBuilder
+    private var decorativeLayer: some View {
+        switch style {
+        case .editorial:
+            fineGrid
+        case .playful:
+            ZStack {
+                RoundedRectangle(cornerRadius: 34)
+                    .stroke(Color(hex: colors.secondary).opacity(0.14), lineWidth: 18)
+                    .frame(width: 250, height: 250)
+                    .rotationEffect(.degrees(18))
+                    .offset(x: 145, y: -210)
+                Circle()
+                    .stroke(Color(hex: colors.accent).opacity(0.12), lineWidth: 14)
+                    .frame(width: 180)
+                    .offset(x: -155, y: format == .story ? 250 : 170)
+            }
+        case .minimal:
+            EmptyView()
         }
-        if count > 70 { return 31 }
-        if count > 42 { return 37 }
-        return 47
+    }
+
+    private var titleSize: CGFloat {
+        ShareCardLayout.titleSize(characterCount: event?.title.count ?? 0, format: format)
     }
 }

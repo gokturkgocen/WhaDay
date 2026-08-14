@@ -15,8 +15,10 @@ struct EditorialContent {
     let shareMessage: String
     let tone: EditorialTone
 
-    static func forEvent(_ event: DayEvent) -> EditorialContent {
-        let language = DayEventStore.language
+    static func forEvent(
+        _ event: DayEvent,
+        language: String = DayEventStore.language
+    ) -> EditorialContent {
         let tone = tone(for: event)
         let lens = lens(for: event, tone: tone)
 

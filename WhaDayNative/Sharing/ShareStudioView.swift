@@ -12,6 +12,7 @@ struct ShareStudioView: View {
     @State private var selectedPersonalization: SharePersonalization
     @State private var shareImage: UIImage?
     @State private var showingActivity = false
+    @State private var renderFailed = false
 
     private let personalizations: [SharePersonalization]
 
@@ -46,10 +47,20 @@ struct ShareStudioView: View {
         }
         .sheet(isPresented: $showingActivity) {
             if let shareImage {
-                ActivityShareView(items: [shareImage])
+                ActivityShareView(items: [shareImage, shareCaption])
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
             }
+        }
+        .alert(
+            DayEventStore.language == "tr" ? "Kart hazırlanamadı" : "Couldn't prepare the card",
+            isPresented: $renderFailed
+        ) {
+            Button(DayEventStore.language == "tr" ? "Tamam" : "OK", role: .cancel) {}
+        } message: {
+            Text(DayEventStore.language == "tr"
+                 ? "Lütfen başka bir tasarım seçip yeniden dene."
+                 : "Please choose another style and try again.")
         }
     }
 
@@ -170,18 +181,14 @@ struct ShareStudioView: View {
                 symbol: "paintpalette.fill"
             )
 
-            HStack(spacing: 8) {
-                ForEach(ShareCardStyle.allCases) { option in
-                    selectionPill(
-                        title: option.title,
-                        symbol: styleSymbol(option),
-                        isSelected: style == option
-                    ) {
-                        Haptics.triggerLight()
-                        style = option
+            ScrollView(.horizontal) {
+                HStack(spacing: 9) {
+                    ForEach(ShareCardStyle.allCases) { option in
+                        styleChoice(option)
                     }
                 }
             }
+            .scrollIndicators(.hidden)
         }
     }
 
@@ -225,7 +232,10 @@ struct ShareStudioView: View {
             format: format,
             style: style,
             personalNote: selectedPersonalization.note
-        ) else { return }
+        ) else {
+            renderFailed = true
+            return
+        }
 
         shareImage = image
 
@@ -241,6 +251,13 @@ struct ShareStudioView: View {
                 showingActivity = true
             }
         }
+    }
+
+    private var shareCaption: String {
+        if let note = selectedPersonalization.note {
+            return "\(note)\n\(event.title) · WhaDay"
+        }
+        return "\(event.title) · WhaDay"
     }
 
     private func sectionTitle(_ title: String, symbol: String) -> some View {
@@ -271,9 +288,35 @@ struct ShareStudioView: View {
     private func styleSymbol(_ style: ShareCardStyle) -> String {
         switch style {
         case .editorial: return "text.below.photo"
-        case .midnight: return "moon.stars.fill"
-        case .poster: return "rectangle.fill.on.rectangle.fill"
+        case .playful: return "sparkles"
+        case .minimal: return "circle.lefthalf.filled"
         }
+    }
+
+    private func styleChoice(_ option: ShareCardStyle) -> some View {
+        let isSelected = style == option
+        return Button {
+            Haptics.triggerLight()
+            withAnimation(.easeInOut(duration: 0.20)) { style = option }
+        } label: {
+            VStack(alignment: .leading, spacing: 6) {
+                Image(systemName: styleSymbol(option))
+                    .font(.system(size: 15, weight: .black))
+                Text(option.title)
+                    .font(.system(size: 13, weight: .black, design: .rounded))
+                Text(option.purpose)
+                    .font(.system(size: 10, weight: .bold, design: .rounded))
+                    .opacity(0.60)
+                    .lineLimit(1)
+            }
+            .foregroundStyle(isSelected ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop))
+            .padding(13)
+            .frame(width: 132, height: 92, alignment: .leading)
+            .background(isSelected ? Color(hex: colors.accent) : Color.white.opacity(0.07))
+            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.white.opacity(0.12), lineWidth: 1))
+        }
+        .buttonStyle(.plain)
     }
 }
 

@@ -65,12 +65,12 @@ Exit: reminders are useful, user-controlled and always open the right content.
 
 ## Phase 5 — Share Studio
 
-- [ ] Give Editorial, Playful and Minimal styles distinct visual jobs.
-- [ ] Refine separate 1080×1920 Story and 1080×1350 Message compositions.
-- [ ] Add long-title, sensitive-day and safe-area layout behavior.
-- [ ] Keep WhaDay attribution subtle and personal captions non-promotional.
-- [ ] Harden Instagram fallback and system share-sheet payloads.
-- [ ] Render and validate the full 4,392-image locale/style/format matrix.
+- [x] Give Editorial, Playful and Minimal styles distinct visual jobs.
+- [x] Refine separate 1080×1920 Story and 1080×1350 Message compositions.
+- [x] Add long-title, sensitive-day and safe-area layout behavior.
+- [x] Keep WhaDay attribution subtle and personal captions non-promotional.
+- [x] Harden Instagram fallback and system share-sheet payloads.
+- [x] Render and validate the full 4,392-image locale/style/format matrix.
 - [ ] Verify Instagram, WhatsApp and Messages on a physical device.
 
 Exit: every event produces artwork worth sending in its intended channel.

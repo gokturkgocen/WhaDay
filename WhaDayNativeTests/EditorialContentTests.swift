@@ -91,6 +91,11 @@ final class EditorialContentTests: XCTestCase {
                 )
                 XCTAssertEqual(image.cgImage?.width, Int(format.canvasSize.width * 3))
                 XCTAssertEqual(image.cgImage?.height, Int(format.canvasSize.height * 3))
+
+                let attachment = XCTAttachment(image: image)
+                attachment.name = "WhaDay-\(style.rawValue)-\(format.rawValue)-Preview"
+                attachment.lifetime = .keepAlways
+                add(attachment)
             }
         }
     }
@@ -112,6 +117,81 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertEqual(suggestions.count, 3)
         XCTAssertTrue(suggestions.contains(where: { $0.note == nil }))
         XCTAssertTrue(suggestions.contains(where: { $0.note != nil }))
+    }
+
+    func testSensitivePersonalizationNeverUsesCelebratoryPressure() throws {
+        let event = try XCTUnwrap(DayEventStore.event(id: "01-27"))
+
+        for language in ["tr", "en"] {
+            let suggestions = SharePersonalization.suggestions(for: event, language: language)
+            let combined = suggestions.compactMap(\.note).joined(separator: " ").lowercased()
+            XCTAssertTrue(suggestions.contains { $0.id == "plain" })
+            XCTAssertFalse(combined.contains("resmen senin günün"))
+            XCTAssertFalse(combined.contains("basically your day"))
+            XCTAssertFalse(combined.contains("bahane"))
+            XCTAssertFalse(combined.contains("excuse"))
+        }
+    }
+
+    func testShareLayoutReservesStorySafeZonesAndShrinksLongTitles() {
+        XCTAssertGreaterThanOrEqual(
+            ShareCardLayout.verticalSafeInset(format: .story) * 3,
+            250
+        )
+        XCTAssertEqual(ShareCardLayout.verticalSafeInset(format: .message), 24)
+        XCTAssertLessThan(
+            ShareCardLayout.titleSize(characterCount: 140, format: .story),
+            ShareCardLayout.titleSize(characterCount: 20, format: .story)
+        )
+        XCTAssertLessThan(
+            ShareCardLayout.titleSize(characterCount: 140, format: .message),
+            ShareCardLayout.titleSize(characterCount: 20, format: .message)
+        )
+    }
+
+    @MainActor
+    func testCompleteShareMatrixRendersWhenRequested() throws {
+        guard ProcessInfo.processInfo.environment["WHADAY_FULL_SHARE_MATRIX"] == "1" else {
+            throw XCTSkip("Set WHADAY_FULL_SHARE_MATRIX=1 for the 4,392-render release-candidate gate.")
+        }
+
+        var renderCount = 0
+        for language in ["tr", "en"] {
+            let url = try XCTUnwrap(Bundle.main.url(forResource: language, withExtension: "json"))
+            let data = try Data(contentsOf: url)
+            let events = try JSONDecoder().decode([DayEvent].self, from: data)
+                .map { $0.attaching(DayMetadataStore.byID[$0.id]) }
+            XCTAssertEqual(events.count, 366)
+
+            for event in events {
+                for style in ShareCardStyle.allCases {
+                    for format in ShareCardFormat.allCases {
+                        let rendered: UIImage? = autoreleasepool {
+                            ShareCardRenderer.render(
+                                event: event,
+                                colors: ThemeColors.forEvent(event),
+                                format: format,
+                                style: style,
+                                personalNote: SharePersonalization.suggestions(
+                                    for: event,
+                                    language: language
+                                ).first?.note,
+                                language: language
+                            )
+                        }
+                        let image = try XCTUnwrap(
+                            rendered,
+                            "\(language)/\(event.id)/\(style.rawValue)/\(format.rawValue)"
+                        )
+                        XCTAssertEqual(image.cgImage?.width, Int(format.canvasSize.width * 3))
+                        XCTAssertEqual(image.cgImage?.height, Int(format.canvasSize.height * 3))
+                        renderCount += 1
+                    }
+                }
+            }
+        }
+
+        XCTAssertEqual(renderCount, 4_392)
     }
 
     func testWeeklyPicksCrossTheYearBoundaryWithoutRepeatingDays() throws {
