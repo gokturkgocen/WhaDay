@@ -254,10 +254,10 @@
     "month": 1,
     "day": 26,
     "title": "Uluslararası Temiz Enerji Günü",
-    "description": "Uluslararası Temiz Enerji Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Temiz enerjiye geçiş; iklimi korurken güvenilir, erişilebilir ve uygun maliyetli enerjiye herkesin ulaşabilmesini de gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Enerjinin geleceğini önemseyen biriyle paylaş"
   },
   {
     "id": "01-27",
@@ -274,10 +274,10 @@
     "month": 1,
     "day": 28,
     "title": "Barış İçinde Bir Arada Yaşama Uluslararası Günü",
-    "description": "Barış İçinde Bir Arada Yaşama Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Barış içinde bir arada yaşamak farklılıkları yok saymak değil; eşit haklar, güven ve gündelik diyalog için ortak zemin kurmaktır.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Farklılıklarla birlikte yaşamaya inanan birine gönder"
   },
   {
     "id": "01-29",
@@ -294,10 +294,10 @@
     "month": 1,
     "day": 30,
     "title": "Şiddetsizlik ve Barış İçin Okul Günü",
-    "description": "Şiddetsizlik ve Barış İçin Okul Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Şiddetsizlik ve Barış İçin Okul Günü, eğitimin yalnızca bilgi değil; çatışmayı diyalogla çözme kültürü de taşıyabileceğini hatırlatır.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Barışı sınıfta büyüten bir öğretmene gönder"
   },
   {
     "id": "01-31",
@@ -324,20 +324,20 @@
     "month": 2,
     "day": 2,
     "title": "Dünya Sulak Alanlar Günü",
-    "description": "Dünya Sulak Alanlar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sulak alanlar suyu filtreler, taşkınları azaltır ve olağanüstü bir canlı çeşitliliğine yuva olur; kaybolduklarında etkisi kıyılarının çok ötesine ulaşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Doğayı yalnız manzara olarak görmeyen biriyle paylaş"
   },
   {
     "id": "02-03",
     "month": 2,
     "day": 3,
     "title": "Dört Papaz Günü",
-    "description": "Dört Papaz Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dört Papaz Günü, 1943'te batan Dorchester gemisinde can yeleklerini başkalarına verip hayatını kaybeden dört askerî din görevlisini anar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Cesaret ve fedakârlığı saygıyla an"
   },
   {
     "id": "02-04",
@@ -404,10 +404,10 @@
     "month": 2,
     "day": 10,
     "title": "Dünya Baklagiller Günü",
-    "description": "Dünya Baklagiller Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mercimek, nohut, fasulye ve diğer baklagiller; protein, lif ve toprağı destekleyen üretim özellikleriyle küçük ama güçlü gıdalardır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tencerede baklagile her zaman yer açan kişiye gönder"
   },
   {
     "id": "02-11",
@@ -464,10 +464,10 @@
     "month": 2,
     "day": 16,
     "title": "Litvanya Devlet Statüsünün Yeniden Kuruluşu Günü",
-    "description": "Litvanya Devlet Statüsünün Yeniden Kuruluşu Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "16 Şubat, Litvanya Konseyi'nin 1918'de bağımsız devleti yeniden kurduğunu ilan ettiği tarihtir; ülkenin iki modern devlet gününden biridir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Litvanya'yla bağı olan biriyle paylaş"
   },
   {
     "id": "02-17",
@@ -524,10 +524,10 @@
     "month": 2,
     "day": 22,
     "title": "Dünya Düşünme Günü",
-    "description": "Dünya Düşünme Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Düşünme Günü, izci kızlar ve kız rehberlerin kurucularının ortak doğum gününde dünya çapındaki hareketin dostluğunu kutlar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sana yeni yollar açan bir izciye gönder"
   },
   {
     "id": "02-23",
@@ -574,20 +574,20 @@
     "month": 2,
     "day": 27,
     "title": "Dünya STK Günü",
-    "description": "Dünya STK Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sivil toplum kuruluşları, toplulukların ihtiyacını görünür kılar, gönüllü emeği örgütler ve kamu politikalarının hesap verebilirliğini güçlendirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Emeğine güvendiğin bir sivil toplum çalışanına gönder"
   },
   {
     "id": "02-28",
     "month": 2,
     "day": 28,
     "title": "Ulusal Bilim Günü – Hindistan",
-    "description": "Ulusal Bilim Günü – Hindistan: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Hindistan Ulusal Bilim Günü, C. V. Raman'ın ışığın saçılmasına ilişkin keşfini 28 Şubat 1928'de duyurmasını anıyor.",
     "emoji": "🔬",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "Merakı deneyle sınayan birine gönder"
   },
   {
     "id": "02-29",
@@ -624,20 +624,20 @@
     "month": 3,
     "day": 3,
     "title": "Dünya Yaban Hayatı Günü",
-    "description": "Dünya Yaban Hayatı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yaban hayatı yalnız uzak coğrafyalardaki türlerden ibaret değil; sağlıklı ekosistemlerin ve insan yaşamının birbirine bağlı olduğunu gösterir.",
     "emoji": "🌿",
     "category": "nature",
-    "sharingHook": "Doğanın güzelliğini paylaş"
+    "sharingHook": "Vahşi yaşamı korumayı önemseyen biriyle paylaş"
   },
   {
     "id": "03-04",
     "month": 3,
     "day": 4,
     "title": "Sürdürülebilir Kalkınma için Dünya Mühendislik Günü",
-    "description": "Sürdürülebilir Kalkınma için Dünya Mühendislik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mühendislik; temiz sudan güvenli yapılara, enerjiden ulaşıma kadar sürdürülebilir çözümleri laboratuvardan gündelik hayata taşır.",
     "emoji": "👨",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Bir problemi görünce çözüm çizen mühendise gönder"
   },
   {
     "id": "03-05",
@@ -674,10 +674,10 @@
     "month": 3,
     "day": 8,
     "title": "Dünya Kadınlar Günü",
-    "description": "Dünya Kadınlar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Kadınlar Günü, kadınların toplumsal, ekonomik ve siyasi kazanımlarını kutlarken eşitlik için hâlâ gereken değişimi görünür kılar.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Eşitlik için alan açan bir kadına gönder"
   },
   {
     "id": "03-09",
@@ -694,20 +694,20 @@
     "month": 3,
     "day": 10,
     "title": "Uluslararası Kadın Hakimler Günü",
-    "description": "Uluslararası Kadın Hakimler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kadınların yargıda eşit temsil edilmesi, adalet kurumlarının toplumun deneyimlerini daha iyi yansıtmasına ve güveni güçlendirmesine yardımcı olur.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Adalete emeğini veren bir kadın hukukçuya gönder"
   },
   {
     "id": "03-11",
     "month": 3,
     "day": 11,
     "title": "Dünya Tesisatçılık Günü",
-    "description": "Dünya Tesisatçılık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Temiz suyun eve güvenle ulaşması ve atık suyun uzaklaştırılması, görünmeyen ama halk sağlığını her gün koruyan tesisat sistemlerine bağlıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bir sızıntıyı herkesten önce fark eden kişiye gönder"
   },
   {
     "id": "03-12",
@@ -724,10 +724,10 @@
     "month": 3,
     "day": 13,
     "title": "(Tayland) Ulusal Fil Günü",
-    "description": "(Tayland) Ulusal Fil Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tayland Ulusal Fil Günü, ülkenin kültürüyle güçlü bağları olan Asya fillerini ve yaşam alanlarını koruma ihtiyacına dikkat çeker.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Filleri hayranlıkla izleyen biriyle paylaş"
   },
   {
     "id": "03-14",
@@ -774,10 +774,10 @@
     "month": 3,
     "day": 18,
     "title": "Küresel Geri Dönüşüm Günü",
-    "description": "Küresel Geri Dönüşüm Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Geri dönüşüm tek başına atık sorununu çözmez; daha az tüketmek, yeniden kullanmak ve doğru ayrıştırmakla birlikte anlam kazanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Atığı azaltmak için somut adım atan biriyle paylaş"
   },
   {
     "id": "03-19",
@@ -804,10 +804,10 @@
     "month": 3,
     "day": 21,
     "title": "Dünya Şiir Günü",
-    "description": "Dünya Şiir Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Şiir, az kelimeyle geniş bir dünya kurar; bir dilin ritmini, hafızasını ve söylenmesi zor duyguları taşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sana bir dizeyle bütün günü değiştiren kişiye gönder"
   },
   {
     "id": "03-22",
@@ -824,10 +824,10 @@
     "month": 3,
     "day": 23,
     "title": "Dünya Meteoroloji Günü",
-    "description": "Dünya Meteoroloji Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Meteoroloji gözlemleri, hava tahmininden iklim takibine kadar yaşamı koruyan kararların temelini oluşturur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Hava durumunu senden önce kontrol eden kişiye gönder"
   },
   {
     "id": "03-24",
@@ -864,20 +864,20 @@
     "month": 3,
     "day": 27,
     "title": "Dünya Tiyatro Günü",
-    "description": "Dünya Tiyatro Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tiyatro aynı odada oyuncu ile seyirci arasında bir dünya kurar; her temsil o geceye ve o topluluğa özgü kalır.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Perde açıldığında yanında olsun istediğin kişiye gönder"
   },
   {
     "id": "03-28",
     "month": 3,
     "day": 28,
     "title": "Öğretmenler Günü (Çekya ve Slovakya)",
-    "description": "Öğretmenler Günü (Çekya ve Slovakya): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çekya ve Slovakya'da Öğretmenler Günü, eğitimi deneyim ve merakla buluşturan düşünür Jan Amos Comenius'un doğum gününde kutlanır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sana yalnız bilgiyi değil merakı da öğreten kişiye gönder"
   },
   {
     "id": "03-29",
@@ -894,10 +894,10 @@
     "month": 3,
     "day": 30,
     "title": "Uluslararası Sıfır Atık Günü",
-    "description": "Uluslararası Sıfır Atık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sıfır atık, çöpe daha iyi isim vermek değil; ürünleri ve sistemleri baştan daha az kaynak harcayacak biçimde tasarlamaktır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tek kullanımlık alışkanlıkları azaltan biriyle paylaş"
   },
   {
     "id": "03-31",
@@ -954,20 +954,20 @@
     "month": 4,
     "day": 5,
     "title": "Uluslararası Vicdan Günü",
-    "description": "Uluslararası Vicdan Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Vicdan, kararlarımızın başkaları üzerindeki etkisini fark etme yetisidir; barış kültürü küçük etik seçimlerle büyür.",
     "emoji": "🔬",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "Doğru olanı sessizken de yapan kişiye gönder"
   },
   {
     "id": "04-06",
     "month": 4,
     "day": 6,
     "title": "Kalkınma ve Barış için Spor Uluslararası Günü",
-    "description": "Kalkınma ve Barış için Spor Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Spor, doğru kurulduğunda takım çalışmasını, kapsayıcılığı ve çatışma sonrası toplulukların yeniden bağ kurmasını destekleyebilir.",
     "emoji": "👨",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Oyunun insanları birleştirdiğine inanan kişiye gönder"
   },
   {
     "id": "04-07",
@@ -1024,10 +1024,10 @@
     "month": 4,
     "day": 12,
     "title": "Uluslararası İnsanlı Uzay Uçuşu Günü",
-    "description": "Uluslararası İnsanlı Uzay Uçuşu Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "12 Nisan 1961'de Yuri Gagarin uzaya çıkan ilk insan oldu; bu yolculuk insanlı uzay uçuşunda yeni bir çağ açtı.",
     "emoji": "💡",
     "category": "science",
-    "sharingHook": "Bilime ilgi göster"
+    "sharingHook": "Gökyüzüne bakınca daha fazlasını hayal eden kişiye gönder"
   },
   {
     "id": "04-13",
@@ -1053,21 +1053,21 @@
     "id": "04-15",
     "month": 4,
     "day": 15,
-    "title": "Uluslararası Sağlıklı Yaşam (Wellness) Günü",
-    "description": "Uluslararası Sağlıklı Yaşam (Wellness) Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
-    "emoji": "💪",
-    "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "title": "İyi Hissetme Molası",
+    "description": "WhaDay'den küçük bir iyi hissetme molası: bugün seni gerçekten rahatlatan tek şeyi seç ve ona on dakikalık yer aç.",
+    "emoji": "🌤️",
+    "category": "social",
+    "sharingHook": "Birlikte küçük bir mola vermen gereken kişiye gönder"
   },
   {
     "id": "04-16",
     "month": 4,
     "day": 16,
     "title": "Dünya Ses Günü",
-    "description": "Dünya Ses Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ses; nefes, titreşim ve bedenin hassas koordinasyonuyla oluşur. Onu zorlamadan kullanmak ve kalıcı değişiklikte uzmana danışmak önemlidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sesini duymayı sevdiğin kişiye gönder"
   },
   {
     "id": "04-17",
@@ -1084,10 +1084,10 @@
     "month": 4,
     "day": 18,
     "title": "Dünya Anıtlar ve Sitler Günü",
-    "description": "Dünya Anıtlar ve Sitler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Anıtlar ve tarihî alanlar yalnız taş değil; toplulukların hafızasını taşıyan, korunması ve anlaşılması gereken ortak mirastır.",
     "emoji": "👨",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Birlikte zamanda yolculuk edeceğin kişiye gönder"
   },
   {
     "id": "04-19",
@@ -1104,20 +1104,20 @@
     "month": 4,
     "day": 20,
     "title": "Çince Dil Günü",
-    "description": "Çince Dil Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çince Dil Günü, yazı sisteminin ve farklı Çince çeşitlerinin edebiyat, düşünce ve küresel iletişimdeki zenginliğini kutlar.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Yeni bir karakter öğrenmek isteyecek kişiye gönder"
   },
   {
     "id": "04-21",
     "month": 4,
     "day": 21,
     "title": "Dünya Yaratıcılık ve Yenilikçilik Günü",
-    "description": "Dünya Yaratıcılık ve Yenilikçilik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yaratıcılık yeni fikir üretir; yenilikçilik o fikri insanların işine yarayan bir çözüme dönüştürür. İkisi de merakla başlar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Fikri gerçeğe dönüştüren kişiye gönder"
   },
   {
     "id": "04-22",
@@ -1144,10 +1144,10 @@
     "month": 4,
     "day": 24,
     "title": "Çok Taraflılık ve Barış İçin Diplomasi Uluslararası Günü",
-    "description": "Çok Taraflılık ve Barış İçin Diplomasi Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çok taraflı diplomasi, sınır aşan sorunlarda ülkelerin tek başına değil; kurallar, müzakere ve ortak sorumlulukla hareket etmesini sağlar.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Diyaloğun gücüne inanan biriyle paylaş"
   },
   {
     "id": "04-25",
@@ -1164,10 +1164,10 @@
     "month": 4,
     "day": 26,
     "title": "Dünya Fikri Mülkiyet Günü",
-    "description": "Dünya Fikri Mülkiyet Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Fikri mülkiyet; üreticinin emeğini korumakla bilginin, kültürün ve yeniliğin toplumda dolaşabilmesi arasında denge kurmaya çalışır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Fikirleri kadar emeğe de değer veren kişiye gönder"
   },
   {
     "id": "04-27",
@@ -1204,10 +1204,10 @@
     "month": 4,
     "day": 30,
     "title": "Uluslararası Caz Günü",
-    "description": "Uluslararası Caz Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Caz, doğaçlamayı ortak bir dile çevirir; müzisyenler aynı anda hem birbirini dinler hem de yeni bir yol açar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Doğaçlama bir geceye çıkacağın kişiye gönder"
   },
   {
     "id": "05-01",
@@ -1224,10 +1224,10 @@
     "month": 5,
     "day": 2,
     "title": "Dünya Ton Balığı Günü",
-    "description": "Dünya Ton Balığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ton balığı milyonlarca insan için gıda ve geçim kaynağıdır; sağlıklı stoklar için bilim temelli ve izlenebilir balıkçılık gerekir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Deniz ürünlerinin nereden geldiğini önemseyen biriyle paylaş"
   },
   {
     "id": "05-03",
@@ -1254,10 +1254,10 @@
     "month": 5,
     "day": 5,
     "title": "Dünya Portekizce Dili Günü",
-    "description": "Dünya Portekizce Dili Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Portekizce farklı kıtalarda yüz milyonlarca insanın dili; müzikten edebiyata çok sesli bir kültür coğrafyasını birbirine bağlar.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Sana bir Portekizce şarkı öğretecek kişiye gönder"
   },
   {
     "id": "05-06",
@@ -1304,10 +1304,10 @@
     "month": 5,
     "day": 10,
     "title": "Uluslararası Argan Günü",
-    "description": "Uluslararası Argan Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Argan ağacı Fas'ın kurak bölgelerinde toprağı ve geçim kaynaklarını destekler; yağı kadar dayanıklı ekosistemi de değerlidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bir ürünün ardındaki ekosistemi merak eden kişiyle paylaş"
   },
   {
     "id": "05-11",
@@ -1324,10 +1324,10 @@
     "month": 5,
     "day": 12,
     "title": "Uluslararası Bitki Sağlığı Günü",
-    "description": "Uluslararası Bitki Sağlığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bitki sağlığı; tarımı, ormanları, biyolojik çeşitliliği ve gıda güvenliğini zararlılarla hastalıklardan korumak demektir.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Bahçesinde her yaprağı kontrol eden kişiye gönder"
   },
   {
     "id": "05-13",
@@ -1354,50 +1354,50 @@
     "month": 5,
     "day": 15,
     "title": "Uluslararası Aile Günü",
-    "description": "Uluslararası Aile Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aile tek bir biçime sığmaz; güven, bakım ve aitlik duygusunu birlikte kuran insanların ilişkisiyle anlam kazanır.",
     "emoji": "🤝",
     "category": "community",
-    "sharingHook": "Toplumun parçası ol"
+    "sharingHook": "Ailem dediğin kişiye gönder"
   },
   {
     "id": "05-16",
     "month": 5,
     "day": 16,
     "title": "Uluslararası Işık Günü",
-    "description": "Uluslararası Işık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Işık bilimi; tıptan iletişime, enerjiden sanata kadar modern yaşamın görünür ve görünmez altyapısını kurar.",
     "emoji": "💡",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Dünyaya başka bir ışıkta bakan kişiye gönder"
   },
   {
     "id": "05-17",
     "month": 5,
     "day": 17,
     "title": "Dünya Telekomünikasyon ve Bilgi Toplumu Günü",
-    "description": "Dünya Telekomünikasyon ve Bilgi Toplumu Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Telekomünikasyon ağları insanları ve bilgiyi saniyeler içinde buluşturuyor; anlamlı erişim ise bağlantının güvenli, uygun fiyatlı ve kapsayıcı olmasını gerektiriyor.",
     "emoji": "🤝",
     "category": "community",
-    "sharingHook": "Toplumun parçası ol"
+    "sharingHook": "Mesafe ne olursa olsun ulaştığın kişiye gönder"
   },
   {
     "id": "05-18",
     "month": 5,
     "day": 18,
     "title": "Uluslararası Müzeler Günü",
-    "description": "Uluslararası Müzeler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Müzeler nesne toplamaktan fazlasını yapar; hafızayı korur, farklı anlatıları yan yana getirir ve merak için kamusal alan açar.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Birlikte bütün günü müzede geçireceğin kişiye gönder"
   },
   {
     "id": "05-19",
     "month": 5,
     "day": 19,
     "title": "Dünya Fair Play Günü",
-    "description": "Dünya Fair Play Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Fair play yalnız kurallara uymak değil; rakibe, hakeme ve oyunun ortak emeğine saygı göstermek demektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kaybederken de centilmen kalan kişiye gönder"
   },
   {
     "id": "05-20",
@@ -1424,10 +1424,10 @@
     "month": 5,
     "day": 22,
     "title": "Uluslararası Biyolojik Çeşitlilik Günü",
-    "description": "Uluslararası Biyolojik Çeşitlilik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Biyolojik çeşitlilik; gıdayı, suyu, sağlığı ve iklim direncini destekleyen canlı ağdır. Bir türün kaybı bütün sistemi etkileyebilir.",
     "emoji": "🌈",
     "category": "diversity",
-    "sharingHook": "Farklılığı kutla"
+    "sharingHook": "Yaşamın çeşitliliğini koruyan biriyle paylaş"
   },
   {
     "id": "05-23",
@@ -1444,20 +1444,20 @@
     "month": 5,
     "day": 24,
     "title": "Uluslararası Markhor Günü",
-    "description": "Uluslararası Markhor Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Markhor, Orta ve Güney Asya'nın dağlık bölgelerinde yaşayan yabani bir keçidir; korunması hem yaşam alanını hem yerel toplulukları destekler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Dağların en etkileyici sakinini keşfedecek kişiye gönder"
   },
   {
     "id": "05-25",
     "month": 5,
     "day": 25,
     "title": "Dünya Futbol Günü",
-    "description": "Dünya Futbol Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Futbol basit bir topu mahalle arasından dev stadyumlara taşıyan ortak dil; oyuna erişim ve güvenli alanlar herkes için önemli.",
     "emoji": "⚽",
     "category": "sport",
-    "sharingHook": "Aktif yaşa"
+    "sharingHook": "Maçın skorundan çok beraberliğini sevdiğin kişiye gönder"
   },
   {
     "id": "05-26",
@@ -1474,10 +1474,10 @@
     "month": 5,
     "day": 27,
     "title": "İç Barış",
-    "description": "İçinde uyum ve huzur ara.",
+    "description": "İç barış bütün sorunların bitmesi değil; belirsizliğin içinde bile kendi sesini duyabileceğin biraz alan bulmaktır.",
     "emoji": "☮️",
     "category": "mindfulness",
-    "sharingHook": "Huzura ulaş"
+    "sharingHook": "Yanında sessizliğin bile iyi geldiği kişiye gönder"
   },
   {
     "id": "05-28",
@@ -1494,20 +1494,20 @@
     "month": 5,
     "day": 29,
     "title": "Uluslararası BM Barış Gücü Askerleri Günü",
-    "description": "Uluslararası BM Barış Gücü Askerleri Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "BM barış gücü personeli, çatışma ortamlarında sivilleri koruma ve barış süreçlerini destekleme görevlerinde ciddi riskler üstlenir.",
     "emoji": "☮️",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Hizmette hayatını kaybedenleri saygıyla an"
   },
   {
     "id": "05-30",
     "month": 5,
     "day": 30,
     "title": "Uluslararası Patates Günü",
-    "description": "Uluslararası Patates Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Patates binlerce çeşidi, farklı iklimlere uyumu ve besleyici değeriyle dünya gıda sisteminde küçük görünenden çok daha büyük yer tutar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Patatesin her hâline evet diyen kişiye gönder"
   },
   {
     "id": "05-31",
@@ -1524,10 +1524,10 @@
     "month": 6,
     "day": 1,
     "title": "Küresel Ebeveynler Günü",
-    "description": "Küresel Ebeveynler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ebeveynlik bakım, zaman ve görünmeyen emek ister; ailelerin bu sorumluluğu güvenli hizmetler ve toplumsal destekle paylaşabilmesi gerekir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Emeğini gördüğün bir ebeveyne gönder"
   },
   {
     "id": "06-02",
@@ -1544,10 +1544,10 @@
     "month": 6,
     "day": 3,
     "title": "Dünya Bisiklet Günü",
-    "description": "Dünya Bisiklet Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bisiklet ulaşım, hareket ve özgürlük hissini iki tekerde birleştirir; güvenli yollar ve erişilebilir kentler sürüşü herkes için mümkün kılar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Birlikte uzun bir rota çevireceğin kişiye gönder"
   },
   {
     "id": "06-04",
@@ -1574,20 +1574,20 @@
     "month": 6,
     "day": 6,
     "title": "BM Rusça Dili Günü",
-    "description": "BM Rusça Dili Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Rusça Dil Günü, Aleksandr Puşkin'in doğum gününde Rusçanın edebiyat, bilim ve uluslararası iletişimdeki mirasını kutlar.",
     "emoji": "🎭",
     "category": "culture",
-    "sharingHook": "Kültürü keşfet ve öğren"
+    "sharingHook": "Sana yeni bir Rusça kelime öğretecek kişiye gönder"
   },
   {
     "id": "06-07",
     "month": 6,
     "day": 7,
     "title": "Dünya Gıda Güvenliği Günü",
-    "description": "Dünya Gıda Güvenliği Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gıda güvenliği tarladan mutfağa uzanan ortak zincirdir; temiz hazırlık, doğru saklama ve güvenilir denetim gıda kaynaklı hastalıkları azaltır.",
     "emoji": "🍽️",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Mutfakta hijyeni asla şansa bırakmayan kişiye gönder"
   },
   {
     "id": "06-08",
@@ -1614,20 +1614,20 @@
     "month": 6,
     "day": 10,
     "title": "Medeniyetler Arası Diyalog Günü",
-    "description": "Medeniyetler Arası Diyalog Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Medeniyetler arası diyalog, kültürleri tek tipe çevirmek değil; farklı tarihlerin ve dünya görüşlerinin birbirini dinleyebileceği alan kurmaktır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Merakla dinlemeyi bilen birine gönder"
   },
   {
     "id": "06-11",
     "month": 6,
     "day": 11,
     "title": "Uluslararası Oyun Günü",
-    "description": "Uluslararası Oyun Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Oyun çocukların öğrenme, ilişki kurma ve hayal gücünü geliştirme yollarından biridir; güvenli oyun alanı bir lüks değil ihtiyaçtır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İçindeki çocuğu oyuna çağıracağın kişiye gönder"
   },
   {
     "id": "06-12",
@@ -1674,10 +1674,10 @@
     "month": 6,
     "day": 16,
     "title": "Uluslararası Aile Havaleleri Günü",
-    "description": "Uluslararası Aile Havaleleri Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Aile havaleleri, göçmenlerin kazançlarından evdeki yakınlarına gönderdiği ve eğitimden sağlığa gündelik yaşamı destekleyen kaynaklardır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Mesafeyi emeğiyle kapatan aileleri düşünerek paylaş"
   },
   {
     "id": "06-17",
@@ -1754,20 +1754,20 @@
     "month": 6,
     "day": 24,
     "title": "Diplomaside Kadınlar Uluslararası Günü",
-    "description": "Diplomaside Kadınlar Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Diplomaside kadınların eşit temsili, barış ve dış politika kararlarına daha geniş deneyimlerin ve önceliklerin katılmasını sağlar.",
     "emoji": "👩",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Masada yer açan bir kadın lidere gönder"
   },
   {
     "id": "06-25",
     "month": 6,
     "day": 25,
     "title": "Dünya Denizciler Günü",
-    "description": "Dünya Denizciler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Denizciler küresel ticaretin büyük bölümünü görünmeden taşır; güvenli çalışma, dinlenme ve bağlantı hakları denizde de geçerlidir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Ufkun ötesinde çalışan bir denizciye gönder"
   },
   {
     "id": "06-26",
@@ -1784,10 +1784,10 @@
     "month": 6,
     "day": 27,
     "title": "Mikro, Küçük ve Orta Ölçekli İşletmeler Günü",
-    "description": "Mikro, Küçük ve Orta Ölçekli İşletmeler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Mikro, küçük ve orta işletmeler yerel istihdamın ve gündelik ekonominin omurgasıdır; finansmana ve dijital araçlara erişim büyümelerini belirler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Emeğiyle kendi işini büyüten kişiye gönder"
   },
   {
     "id": "06-28",
@@ -1804,20 +1804,20 @@
     "month": 6,
     "day": 29,
     "title": "Uluslararası Tropikal Bölgeler Günü",
-    "description": "Uluslararası Tropikal Bölgeler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tropikal bölgeler olağanüstü biyolojik ve kültürel çeşitlilik taşırken iklim değişikliği, eşitsizlik ve hızlı kentleşmenin baskısıyla karşı karşıya.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tropiklerin yalnız tatil fotoğrafı olmadığını bilen biriyle paylaş"
   },
   {
     "id": "06-30",
     "month": 6,
     "day": 30,
     "title": "Uluslararası Asteroid Günü",
-    "description": "Uluslararası Asteroid Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Asteroitleri izlemek, Güneş Sistemi'nin geçmişini anlamaya ve Dünya'ya yaklaşabilecek cisimler için erken hazırlık yapmaya yardımcı olur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Gökyüzündeki taşları bile merak eden kişiye gönder"
   },
   {
     "id": "07-01",
