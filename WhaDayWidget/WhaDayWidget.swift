@@ -16,6 +16,7 @@ private struct WidgetDayEvent: Codable {
 
 struct WhaDayEntry: TimelineEntry {
     let date: Date
+    let dayID: String?
     let emoji: String
     let title: String
     let paper: Color
@@ -28,7 +29,7 @@ struct WhaDayEntry: TimelineEntry {
 struct WhaDayProvider: TimelineProvider {
     func placeholder(in context: Context) -> WhaDayEntry {
         WhaDayEntry(
-            date: Date(), emoji: "✋", title: "Dünya Solaklar Günü",
+            date: Date(), dayID: "08-13", emoji: "✋", title: "Dünya Solaklar Günü",
             paper: Color(hex: "#B5A6FF") ?? .purple,
             ink: Color(hex: "#111218") ?? .black,
             secondary: Color(hex: "#D9FF66") ?? .green,
@@ -62,6 +63,7 @@ struct WhaDayProvider: TimelineProvider {
 
         return WhaDayEntry(
             date: date,
+            dayID: event?.id,
             emoji: displayEmoji(for: event),
             title: event?.title ?? defaults?.string(forKey: "widgetTitle") ?? "WhaDay",
             paper: Color(hex: defaults?.string(forKey: "widgetPaper") ?? palette.paper) ?? .white,
@@ -128,6 +130,7 @@ struct WhaDayWidgetView: View {
         }
         .padding(14)
         .containerBackground(Color(hex: "#0B0D12") ?? .black, for: .widget)
+        .widgetURL(entry.dayID.flatMap { URL(string: "whaday://day/\($0)") })
     }
 }
 

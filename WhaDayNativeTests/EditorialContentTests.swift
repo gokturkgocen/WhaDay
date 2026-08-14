@@ -317,6 +317,31 @@ final class EditorialContentTests: XCTestCase {
         )
     }
 
+    func testDayRoutesOpenOnlyRealCalendarDates() {
+        XCTAssertEqual(
+            AppRoute.parse(URL(string: "whaday://day/08-13")!),
+            .day(id: "08-13")
+        )
+        XCTAssertEqual(AppRoute.parse(URL(string: "whaday://home")!), .home)
+        XCTAssertEqual(AppRoute.parse(URL(string: "whaday://calendar")!), .discovery)
+        XCTAssertEqual(AppRoute.parse(URL(string: "whaday://discover")!), .discovery)
+        XCTAssertEqual(AppRoute.parse(URL(string: "whaday://settings")!), .settings)
+        XCTAssertEqual(AppRoute.parse(URL(string: "whaday://share/08-13")!), .share(id: "08-13"))
+        XCTAssertNil(AppRoute.parse(URL(string: "whaday://day/02-30")!))
+        XCTAssertNil(AppRoute.parse(URL(string: "https://example.com/day/08-13")!))
+        XCTAssertEqual(AppRoute.dayURL(id: "02-29")?.absoluteString, "whaday://day/02-29")
+        XCTAssertEqual(AppRoute.shareURL(id: "02-29")?.absoluteString, "whaday://share/02-29")
+    }
+
+    func testNotificationRouteUsesTheExactDayIdentifier() {
+        XCTAssertEqual(
+            AppRoute.notificationRoute(userInfo: ["dayId": "12-31", "type": "morning"]),
+            .day(id: "12-31")
+        )
+        XCTAssertNil(AppRoute.notificationRoute(userInfo: ["dayId": "13-01"]))
+        XCTAssertNil(AppRoute.notificationRoute(userInfo: ["type": "morning"]))
+    }
+
     func testSensitiveMetadataCannotBePromotedAsEngagementContent() {
         for metadata in DayMetadataStore.entries where metadata.sensitivity != .standard {
             XCTAssertFalse(metadata.canBePromotedForEngagement, metadata.id)

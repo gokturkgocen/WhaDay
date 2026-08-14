@@ -17,4 +17,17 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
     ) {
         completionHandler([.banner, .sound])
     }
+
+    nonisolated func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        if let route = AppRoute.notificationRoute(userInfo: response.notification.request.content.userInfo) {
+            Task { @MainActor in
+                AppRouteCenter.shared.open(route)
+            }
+        }
+        completionHandler()
+    }
 }

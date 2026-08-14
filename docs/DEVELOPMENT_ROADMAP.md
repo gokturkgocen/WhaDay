@@ -32,12 +32,12 @@ Exit: every date is independently trustworthy and shareable.
 
 ## Phase 2 — Date and routing foundation
 
-- [ ] Add one typed route model for home, day, discovery, settings and share.
-- [ ] Add event deep links and cold/warm launch routing.
-- [ ] Route notification and widget taps to the displayed event.
+- [x] Add one typed route model for home, day, discovery, settings and share.
+- [x] Add event deep links and cold/warm launch routing.
+- [x] Route notification and widget taps to the displayed event.
 - [ ] Refresh the active date at midnight and after time-zone changes.
 - [ ] Inject clock, calendar and locale dependencies for boundary tests.
-- [ ] Preserve selection across navigation and app lifecycle transitions.
+- [x] Preserve selection across navigation and app lifecycle transitions.
 
 Exit: every entry surface resolves to the same correct day.
 
@@ -78,7 +78,7 @@ Exit: every event produces artwork worth sending in its intended channel.
 ## Phase 6 — Widgets
 
 - [ ] Make widget data available before a prior app launch.
-- [ ] Add exact-event deep links.
+- [x] Add exact-event deep links.
 - [ ] Correct midnight timeline refresh and locale behavior.
 - [ ] Add a Lock Screen accessory rectangular family.
 - [ ] Remove playful fixed labels from sensitive entries.

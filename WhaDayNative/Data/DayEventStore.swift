@@ -12,6 +12,7 @@ enum DayEventStore {
     static let dateLocale: Locale = language == "tr" ? Locale(identifier: "tr_TR") : Locale(identifier: "en_US")
 
     static let days: [DayEvent] = load(language)
+    private static let daysByID = Dictionary(uniqueKeysWithValues: days.map { ($0.id, $0) })
 
     static func today() -> DayEvent? {
         let now = Date()
@@ -22,7 +23,11 @@ enum DayEventStore {
     }
 
     static func event(month: Int, day: Int) -> DayEvent? {
-        days.first { $0.month == month && $0.day == day }
+        event(id: String(format: "%02d-%02d", month, day))
+    }
+
+    static func event(id: String) -> DayEvent? {
+        daysByID[id]
     }
 
     private static func load(_ language: String) -> [DayEvent] {

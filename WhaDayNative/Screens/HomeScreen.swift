@@ -51,6 +51,15 @@ struct HomeScreen: View {
         .onChange(of: activeID) { _, _ in
             syncSideEffects(for: activeEvent)
         }
+        .onChange(of: selectedDay?.id) { _, newID in
+            guard let newID, newID != activeID else { return }
+            withAnimation(.easeInOut(duration: 0.28)) {
+                activeID = newID
+            }
+        }
+        .task(id: activeID) {
+            await refreshAtNextDayBoundary()
+        }
         .sheet(item: $contextEvent) { event in
             DayContextSheet(event: event, colors: ThemeColors.forEvent(event))
                 .presentationDetents([.medium, .large])
@@ -62,6 +71,43 @@ struct HomeScreen: View {
     private func syncSideEffects(for event: DayEvent?) {
         selectedDay = event
         WidgetDataWriter.save(event: event)
+    }
+
+    private func refreshAtNextDayBoundary() async {
+        let calendar = Calendar.current
+        let now = Date()
+        guard let nextDay = calendar.nextDate(
+            after: now,
+            matching: DateComponents(hour: 0, minute: 0, second: 1),
+            matchingPolicy: .nextTime
+        ) else {
+            return
+        }
+
+        let previousTodayID = DayEventStore.today()?.id
+        let delay = max(1, nextDay.timeIntervalSince(now))
+        do {
+            try await Task.sleep(for: .seconds(delay))
+        } catch {
+            return
+        }
+        guard !Task.isCancelled else { return }
+
+        let components = calendar.dateComponents([.month, .day], from: Date())
+        guard
+            let month = components.month,
+            let day = components.day,
+            let newToday = DayEventStore.event(month: month, day: day)
+        else {
+            return
+        }
+
+        // Keep an intentionally browsed day in place. Follow midnight only when
+        // the pager was showing the day that just ended.
+        if activeID == previousTodayID {
+            activeID = newToday.id
+        }
+        WidgetDataWriter.save(event: newToday)
     }
 
     private var header: some View {

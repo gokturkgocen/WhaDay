@@ -24,6 +24,9 @@ targets:
       path: WhaDayNative/Info.plist
       properties:
         CFBundleDisplayName: WhaDay
+        CFBundleURLTypes:
+          - CFBundleURLName: com.gokturkgocen.whadayapp
+            CFBundleURLSchemes: [whaday]
         ITSAppUsesNonExemptEncryption: false
         LSApplicationQueriesSchemes: [instagram-stories]
         LSRequiresIPhoneOS: true
