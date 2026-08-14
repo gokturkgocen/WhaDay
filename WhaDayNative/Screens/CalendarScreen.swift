@@ -187,7 +187,7 @@ struct CalendarScreen: View {
 
     private func featuredRow(_ pick: WeeklyPick) -> some View {
         let event = pick.event
-        let colors = ThemeColors.forCategory(event.category)
+        let colors = ThemeColors.forEvent(event)
         let editorial = EditorialContent.forEvent(event)
 
         return HStack(spacing: 10) {
@@ -240,7 +240,7 @@ struct CalendarScreen: View {
     }
 
     private func savedRow(_ event: DayEvent) -> some View {
-        let colors = ThemeColors.forCategory(event.category)
+        let colors = ThemeColors.forEvent(event)
 
         return HStack(spacing: 10) {
             Button {
@@ -298,7 +298,7 @@ struct CalendarScreen: View {
     private func dayRow(_ event: DayEvent) -> some View {
         let isToday = event.month == todayMonth && event.day == todayDay
         let isSelected = selectedDay.map { $0.id == event.id } ?? isToday
-        let colors = ThemeColors.forCategory(event.category)
+        let colors = ThemeColors.forEvent(event)
 
         return HStack(spacing: 10) {
             Button {

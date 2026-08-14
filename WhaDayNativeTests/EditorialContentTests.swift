@@ -14,7 +14,7 @@ final class EditorialContentTests: XCTestCase {
             category: "awareness",
             sharingHook: "Placeholder"
         )
-        let colors = ThemeColors.forCategory(event.category)
+        let colors = ThemeColors.forEvent(event)
         let story = try XCTUnwrap(ShareCardRenderer.render(event: event, colors: colors, format: .story))
         let message = try XCTUnwrap(ShareCardRenderer.render(event: event, colors: colors, format: .message))
 
@@ -49,7 +49,7 @@ final class EditorialContentTests: XCTestCase {
         let image = try XCTUnwrap(
             ShareCardRenderer.render(
                 event: event,
-                colors: ThemeColors.forCategory(event.category),
+                colors: ThemeColors.forEvent(event),
                 format: .story
             )
         )
@@ -75,7 +75,7 @@ final class EditorialContentTests: XCTestCase {
             category: "awareness",
             sharingHook: "Placeholder"
         )
-        let colors = ThemeColors.forCategory(event.category)
+        let colors = ThemeColors.forEvent(event)
 
         for style in ShareCardStyle.allCases {
             for format in ShareCardFormat.allCases {
@@ -268,6 +268,45 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertEqual(DayEventStore.days.count, 366)
         XCTAssertNotNil(DayEventStore.event(month: 2, day: 29))
         XCTAssertEqual(Set(DayEventStore.days.map(\.id)).count, DayEventStore.days.count)
+    }
+
+    func testEveryLocalizedDayHasLocaleNeutralMetadata() {
+        XCTAssertEqual(DayMetadataStore.entries.count, 366)
+        XCTAssertEqual(Set(DayMetadataStore.entries.map(\.id)).count, 366)
+        XCTAssertEqual(Set(DayMetadataStore.entries.map(\.id)), Set(DayEventStore.days.map(\.id)))
+
+        for event in DayEventStore.days {
+            let metadata = event.metadata
+            XCTAssertNotNil(metadata, event.id)
+            XCTAssertTrue(metadata?.hasValidShareability == true, event.id)
+            XCTAssertFalse(metadata?.symbol.isEmpty ?? true, event.id)
+            XCTAssertNotEqual(metadata?.symbol, "🔔", event.id)
+        }
+    }
+
+    func testOfficialAuthorityAlwaysHasAPrimarySourceRecord() {
+        for metadata in DayMetadataStore.entries where metadata.authority == .official {
+            XCTAssertNotNil(metadata.source, metadata.id)
+            XCTAssertFalse(metadata.source?.organization.isEmpty ?? true, metadata.id)
+            XCTAssertEqual(metadata.source?.url.scheme, "https", metadata.id)
+        }
+    }
+
+    func testSensitiveMetadataCannotBePromotedAsEngagementContent() {
+        for metadata in DayMetadataStore.entries where metadata.sensitivity != .standard {
+            XCTAssertFalse(metadata.canBePromotedForEngagement, metadata.id)
+            XCTAssertLessThanOrEqual(metadata.shareability, 2, metadata.id)
+            XCTAssertTrue(
+                metadata.reviewState == .needsSafetyReview || metadata.reviewState == .verified,
+                metadata.id
+            )
+        }
+    }
+
+    func testNewTaxonomyHasNoSingleGenericMajorityBucket() {
+        let counts = Dictionary(grouping: DayMetadataStore.entries, by: \.category).mapValues(\.count)
+        XCTAssertLessThan(counts.values.max() ?? 0, DayMetadataStore.entries.count / 2)
+        XCTAssertGreaterThanOrEqual(counts.keys.count, 10)
     }
 
     func testMovingObservancesAreNotStoredAsPermanentDates() {

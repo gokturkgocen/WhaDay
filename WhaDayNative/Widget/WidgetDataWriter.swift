@@ -8,7 +8,7 @@ enum WidgetDataWriter {
         guard let defaults = UserDefaults(suiteName: appGroupID) else { return }
 
         let currentEvent = DayEventStore.today() ?? event
-        let currentColors = ThemeColors.forCategory(currentEvent?.category)
+        let currentColors = ThemeColors.forEvent(currentEvent)
 
         defaults.set(currentEvent.map(EditorialSymbol.forEvent) ?? "✦", forKey: "widgetEmoji")
         defaults.set(currentEvent?.title ?? "WhaDay", forKey: "widgetTitle")

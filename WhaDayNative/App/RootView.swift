@@ -24,7 +24,7 @@ struct RootView: View {
                 )
             case .settings:
                 SettingsScreen(
-                    eventCategory: selectedDay?.category,
+                    eventCategory: selectedDay?.themeCategoryKey,
                     onBack: { screen = .home }
                 )
             case .home:

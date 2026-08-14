@@ -16,7 +16,7 @@ struct HomeScreen: View {
     }
 
     private var themeColors: ThemeColors {
-        ThemeColors.forCategory(activeEvent?.category)
+        ThemeColors.forEvent(activeEvent)
     }
 
     var body: some View {
@@ -52,7 +52,7 @@ struct HomeScreen: View {
             syncSideEffects(for: activeEvent)
         }
         .sheet(item: $contextEvent) { event in
-            DayContextSheet(event: event, colors: ThemeColors.forCategory(event.category))
+            DayContextSheet(event: event, colors: ThemeColors.forEvent(event))
                 .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
                 .presentationCornerRadius(32)
@@ -121,7 +121,7 @@ struct HomeScreen: View {
 
     private func dayPage(_ day: DayEvent) -> some View {
         let editorial = EditorialContent.forEvent(day)
-        let colors = ThemeColors.forCategory(day.category)
+        let colors = ThemeColors.forEvent(day)
 
         return VStack(spacing: 12) {
             HStack {

@@ -33,6 +33,6 @@ enum DayEventStore {
         else {
             return []
         }
-        return events
+        return events.map { $0.attaching(DayMetadataStore.byID[$0.id]) }
     }
 }

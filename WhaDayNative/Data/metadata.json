@@ -1,0 +1,4981 @@
+[
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎉"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "01-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🚀"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "😴"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "official",
+    "category" : "culture-and-arts",
+    "id" : "01-04",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎄"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎄"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "01-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "01-12",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🫶"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎉"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "official",
+    "category" : "science-and-curiosity",
+    "id" : "01-14",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/list"
+    },
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🛋️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍯"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "01-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🐧"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🫂"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "01-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "01-24",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "📚"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "remembrance",
+    "id" : "01-27",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "01-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "01-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🧩"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "01-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "01-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "02-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "02-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍫"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "02-06",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "02-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💕"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "02-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💕"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "02-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍕"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "02-11",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "👩"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "02-12",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "official",
+    "category" : "culture-and-arts",
+    "id" : "02-13",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/list"
+    },
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "❤️"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "02-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "02-17",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "02-20",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "official",
+    "category" : "culture-and-arts",
+    "id" : "02-21",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/list"
+    },
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "02-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "02-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "02-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🔬"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "02-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🦓"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "03-01",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "03-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "03-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "03-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "03-05",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "03-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍪"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "03-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "03-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "👩"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "03-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎀"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "03-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👩"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "03-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "03-12",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "03-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "03-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🥧"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "03-15",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "03-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🐼"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "03-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "03-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "03-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "03-20",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "03-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "official",
+    "category" : "animals-and-nature",
+    "id" : "03-22",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "💧"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "03-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "03-24",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "03-25",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "03-26",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "03-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "03-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "03-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "03-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "03-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👀"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "health-and-awareness",
+    "id" : "04-02",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💭"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "04-04",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "✊"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🔬"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "editorial",
+    "category" : "sport-and-movement",
+    "id" : "04-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "health-and-awareness",
+    "id" : "04-07",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns"
+    },
+    "symbol" : "🏥"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🧘"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "04-11",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "04-12",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "04-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💪"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💪"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "04-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "04-17",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💪"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "04-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "official",
+    "category" : "animals-and-nature",
+    "id" : "04-22",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "official",
+    "category" : "culture-and-arts",
+    "id" : "04-23",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/list"
+    },
+    "symbol" : "📚"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "04-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "04-25",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "04-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🏥"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "04-29",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "04-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✊"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "05-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "05-03",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/list"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "05-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌌"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🙏"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "05-08",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "05-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🌸"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-12",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🏥"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🌱"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "05-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "05-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "editorial",
+    "category" : "sport-and-movement",
+    "id" : "05-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "⚡️"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "official",
+    "category" : "animals-and-nature",
+    "id" : "05-20",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🐝"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "05-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🫖"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "05-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌈"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "05-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "editorial",
+    "category" : "sport-and-movement",
+    "id" : "05-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "⚽"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "05-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "05-28",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "colleague",
+      "professional"
+    ],
+    "authority" : "editorial",
+    "category" : "professions",
+    "id" : "05-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "05-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "05-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✊"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "editorial",
+    "category" : "sport-and-movement",
+    "id" : "06-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "⚡️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "06-04",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "👶"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "official",
+    "category" : "animals-and-nature",
+    "id" : "06-05",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "06-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "06-08",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🌊"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "⚖️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "editorial",
+    "category" : "sport-and-movement",
+    "id" : "06-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "⚡️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "06-12",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "06-14",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "06-15",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "06-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🫶"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "06-17",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "06-18",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "06-19",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "remembrance",
+    "id" : "06-20",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "official",
+    "category" : "sport-and-movement",
+    "id" : "06-21",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "⚡️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🌲"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "06-23",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👩"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "colleague",
+      "professional"
+    ],
+    "authority" : "editorial",
+    "category" : "professions",
+    "id" : "06-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "06-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🌈"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "06-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "06-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "cultural",
+    "category" : "playful",
+    "id" : "07-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "07-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🛸"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💻"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎮"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "07-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-12",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "07-15",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "07-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "😶"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "07-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "😴"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "07-28",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "07-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "07-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🫶"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "07-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "⚡️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "08-02",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "⭐"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🔥"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "08-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🐈"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "08-09",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🌈"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "08-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "08-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "08-12",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✋"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "08-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "08-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💖"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "08-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🔍"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "08-19",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "08-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "08-21",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "08-22",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "08-23",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "08-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "😄"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "08-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🐕"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "⚡"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "08-29",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "08-30",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "08-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "09-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "09-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "09-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "📚"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "09-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "09-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "📚"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "remembrance",
+    "id" : "09-09",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "📚"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "09-10",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "09-11",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "09-12",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "09-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "09-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "09-17",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "09-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🏴‍☠️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "09-21",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "09-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "09-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🦍"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "09-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "09-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "09-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "10-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "☕️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "10-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🚀"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "10-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "colleague",
+      "professional"
+    ],
+    "authority" : "editorial",
+    "category" : "professions",
+    "id" : "10-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "health-and-awareness",
+    "id" : "10-10",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns"
+    },
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "10-11",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "10-12",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "official",
+    "category" : "civil-society",
+    "id" : "10-15",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "👩"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "official",
+    "category" : "food-and-drink",
+    "id" : "10-16",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "10-18",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🌙"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "10-20",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "10-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "⚡️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "10-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "10-24",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "10-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍝"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "10-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "10-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "10-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🚀"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "10-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎃"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-01",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-02",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "11-03",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🙏"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💫"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "11-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "11-10",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "11-12",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "11-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "💛"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "11-14",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "☀️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "community"
+    ],
+    "authority" : "editorial",
+    "category" : "civil-society",
+    "id" : "11-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "11-17",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "💜"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "remembrance",
+    "id" : "11-18",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🚽"
+  },
+  {
+    "audience" : [
+      "friend",
+      "family",
+      "partner"
+    ],
+    "authority" : "editorial",
+    "category" : "relationships",
+    "id" : "11-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👶"
+  },
+  {
+    "audience" : [
+      "culture-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "culture-and-arts",
+    "id" : "11-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🎨"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "11-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🌟"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "11-25",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "👩"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "⚽"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🦋"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "11-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "11-30",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "☮️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "12-01",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "remembrance",
+    "id" : "12-02",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "official",
+    "category" : "playful",
+    "id" : "12-03",
+    "reviewState" : "source-linked",
+    "scope" : "international",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-04",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-05",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "👨"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-06",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "curious-friend"
+    ],
+    "authority" : "editorial",
+    "category" : "science-and-curiosity",
+    "id" : "12-07",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "💡"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-08",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-09",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "official",
+    "category" : "remembrance",
+    "id" : "12-10",
+    "reviewState" : "needs-safety-review",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕊️"
+  },
+  {
+    "audience" : [
+      "animal-or-nature-lover"
+    ],
+    "authority" : "editorial",
+    "category" : "animals-and-nature",
+    "id" : "12-11",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "🌿"
+  },
+  {
+    "audience" : [
+      "careful-sharing"
+    ],
+    "authority" : "editorial",
+    "category" : "health-and-awareness",
+    "id" : "12-12",
+    "reviewState" : "needs-safety-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "symbol" : "🏥"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-13",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-14",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-15",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🎭"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-16",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-17",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-18",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-19",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-20",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🤝"
+  },
+  {
+    "audience" : [
+      "teammate"
+    ],
+    "authority" : "editorial",
+    "category" : "sport-and-movement",
+    "id" : "12-21",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 4,
+    "symbol" : "⚽"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-22",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-23",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-24",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎄"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-25",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "🎄"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-26",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "12-27",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🍽️"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-28",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "✦"
+  },
+  {
+    "audience" : [
+      "friend"
+    ],
+    "authority" : "editorial",
+    "category" : "playful",
+    "id" : "12-29",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "⏳"
+  },
+  {
+    "audience" : [
+      "food-companion"
+    ],
+    "authority" : "editorial",
+    "category" : "food-and-drink",
+    "id" : "12-30",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "whaday-editorial",
+    "sensitivity" : "standard",
+    "shareability" : 5,
+    "symbol" : "🥓"
+  },
+  {
+    "audience" : [
+      "observer",
+      "community"
+    ],
+    "authority" : "cultural",
+    "category" : "celebrations",
+    "id" : "12-31",
+    "reviewState" : "needs-editorial-review",
+    "scope" : "culture-specific",
+    "sensitivity" : "standard",
+    "shareability" : 3,
+    "symbol" : "✨"
+  }
+]

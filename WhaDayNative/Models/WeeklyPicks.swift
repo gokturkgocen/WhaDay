@@ -26,6 +26,7 @@ enum WeeklyPicks {
 
             let editorial = EditorialContent.forEvent(event)
             guard editorial.tone != .remembrance else { return nil }
+            guard event.metadata?.canBePromotedForEngagement ?? true else { return nil }
 
             return (WeeklyPick(event: event, date: date, dayOffset: offset), score(event, editorial: editorial))
         }
@@ -55,18 +56,16 @@ enum WeeklyPicks {
             result += 4
         }
 
-        switch event.category {
-        case "fun", "social", "creative", "lifestyle", "science", "culture":
+        switch event.contentCategory {
+        case .relationships, .foodAndDrink, .animalsAndNature, .cultureAndArts,
+             .scienceAndCuriosity, .playful, .sportAndMovement:
             result += 2
-        case "growth", "reflection", "mindfulness", "wellness":
+        case .healthAndAwareness, .professions, .celebrations:
             result += 1
-        case "awareness":
-            // Generic awareness entries often need context rather than a casual
-            // “this made me think of you” share. A strong personal match can
-            // still lift one into the shortlist (for example, Lefthanders Day).
+        case .civilSociety:
             result -= 2
-        default:
-            break
+        case .remembrance:
+            result -= 100
         }
 
         switch DayProvenance.forEvent(event).kind {

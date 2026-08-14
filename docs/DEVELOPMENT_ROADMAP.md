@@ -19,14 +19,14 @@ Exit: the contract can reject attractive but distracting feature work.
 
 ## Phase 1 — Editorial content system
 
-- [ ] Move authority, source, sensitivity and review state into data.
-- [ ] Replace broad legacy categories with a balanced typed taxonomy.
+- [x] Move authority, source, sensitivity and review state into data.
+- [x] Replace the broad legacy category model with a typed twelve-part taxonomy.
 - [ ] Review all 366 dates for fixed-date validity and cultural scope.
 - [ ] Rewrite Turkish content as native copy.
 - [ ] Adapt English content by intent rather than literal translation.
 - [ ] Attach primary sources to every official claim.
 - [ ] Remove visible dependence on generic fallback copy.
-- [ ] Add corpus-wide integrity, safety and length tests.
+- [x] Add corpus-wide integrity, safety and length tests.
 
 Exit: every date is independently trustworthy and shareable.
 

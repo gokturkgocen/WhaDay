@@ -49,6 +49,10 @@ struct ThemeColors {
     static func forCategory(_ category: String?) -> ThemeColors {
         byCategory[category ?? "default"] ?? byCategory["default"]!
     }
+
+    static func forEvent(_ event: DayEvent?) -> ThemeColors {
+        forCategory(event?.themeCategoryKey)
+    }
 }
 
 extension Color {

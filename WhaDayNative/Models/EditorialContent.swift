@@ -60,6 +60,7 @@ struct EditorialContent {
     }
 
     private static func tone(for event: DayEvent) -> EditorialTone {
+        if event.sensitivity == .remembrance { return .remembrance }
         if verifiedFacts[event.id] != nil { return .remembrance }
 
         let normalized = event.title.lowercased()
@@ -69,11 +70,15 @@ struct EditorialContent {
         ]
         if remembranceWords.contains(where: normalized.contains) { return .remembrance }
 
-        switch event.category {
-        case "culture", "community", "diversity": return .warm
-        case "knowledge", "science", "growth": return .curious
-        case "peace", "mindfulness", "reflection", "wellness": return .mindful
-        default: return .playful
+        switch event.contentCategory {
+        case .relationships, .cultureAndArts, .celebrations, .professions:
+            return .warm
+        case .scienceAndCuriosity:
+            return .curious
+        case .healthAndAwareness, .civilSociety, .remembrance:
+            return .mindful
+        case .foodAndDrink, .animalsAndNature, .playful, .sportAndMovement:
+            return .playful
         }
     }
 
@@ -826,18 +831,20 @@ struct EditorialContent {
 
 enum EditorialSymbol {
     static func forEvent(_ event: DayEvent) -> String {
+        if let symbol = event.metadata?.symbol, !symbol.isEmpty { return symbol }
         if let curated = curated[event.id] { return curated }
         if event.emoji != "🔔" { return event.emoji }
 
-        switch event.category {
-        case "science", "knowledge": return "💡"
-        case "nature": return "🌿"
-        case "peace": return "🕊️"
-        case "wellness", "mindfulness": return "☀️"
-        case "community", "diversity": return "🤝"
-        case "culture": return "✦"
-        case "sport": return "⚡️"
-        default: return "✦"
+        switch event.contentCategory {
+        case .scienceAndCuriosity: return "💡"
+        case .animalsAndNature: return "🌿"
+        case .remembrance: return "🕊️"
+        case .healthAndAwareness: return "☀️"
+        case .relationships, .civilSociety, .professions: return "🤝"
+        case .cultureAndArts, .celebrations: return "✦"
+        case .sportAndMovement: return "⚡️"
+        case .foodAndDrink: return "🍽️"
+        case .playful: return "✦"
         }
     }
 
