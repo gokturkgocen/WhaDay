@@ -10,7 +10,7 @@ The release-candidate share-card gate rendered every supported combination:
 - Story (1080 x 1920) and Message (1080 x 1350) formats
 - 4,392 renders in total
 
-`EditorialContentTests.testCompleteShareMatrixRendersWhenRequested` completed with zero failures on an iPhone 17 / iOS 26.5 simulator at app/content revision `5d78bd0`. Every render returned an image at the exact expected pixel dimensions. The render loop completed in 15.278 seconds. The same test operation executed all 53 unit, integration, reliability, performance and render tests with zero failures and zero skips.
+`EditorialContentTests.testCompleteShareMatrixRendersWhenRequested` completed with zero failures on an iOS 26.5 simulator at app/content revision `e149f0b`. Every render returned an image at the exact expected pixel dimensions. The render loop completed in 9.400 seconds. The same test operation executed all 54 unit, integration, reliability, performance and render tests with zero failures and zero skips.
 
 This gate proves that the full matrix can be decoded and rendered without a nil image, crash, or output-dimension regression. It does not replace visual review of representative cards or delivery checks in Instagram, WhatsApp and Messages on a physical device.
 

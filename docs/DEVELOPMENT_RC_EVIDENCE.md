@@ -1,7 +1,8 @@
 # WhaDay 1.0 Development RC Evidence
 
 Date: 2026-08-14  
-Tested app/content revision: `5d78bd0`  
+Tested app/content revision: `e149f0b`
+
 Status: Simulator-qualified candidate; physical-device gates remain open.
 
 This report stops at development readiness. It does not claim archive,
@@ -22,7 +23,7 @@ TestFlight, App Store or public-release completion.
 
 | Gate | Result |
 | --- | --- |
-| Unit, integration, routing, notification, persistence and widget suite | 53/53 passed |
+| Unit, integration, routing, notification, persistence and widget suite | 54/54 passed |
 | Full two-locale, three-style, two-format share matrix | 4,392/4,392 rendered |
 | iPhone 17 Turkish and English core journey | 2/2 passed |
 | iPhone 17 UI performance scenarios | 2/2 passed |
@@ -46,6 +47,8 @@ manually inspected.
 - Single-line ellipsis on secondary Discovery summaries at extreme text sizes
   is intentional; the full prompt remains in accessibility output and the
   primary journey remains scrollable and reachable.
+- Story and Message format controls stack vertically at accessibility text
+  sizes so neither selected label begins outside the compact viewport.
 
 ## Physical-device gates still required
 
@@ -62,3 +65,16 @@ release candidate:
 
 These are external device gates, not inferred passes. Until they are executed,
 the honest label is **simulator-qualified development candidate**, not “finished.”
+
+## External configuration observed
+
+- Direct Instagram Story handoff now activates only when
+  `INSTAGRAM_SOURCE_APPLICATION_ID` is configured. Without that Meta source
+  application identifier, Story artwork uses the system share sheet instead of
+  opening an unreliable direct route.
+- A physical iPhone 16 was discovered on 2026-08-14, but the signed device build
+  stopped before compilation because Xcode exposed no account to `xcodebuild`
+  and the installed wildcard profile did not contain the WhaDay App Group.
+  The device later went offline and was not a resolvable destination for the
+  final candidate attempt. No physical-device gate is marked passed from these
+  attempts.

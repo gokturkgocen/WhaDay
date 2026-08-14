@@ -12,7 +12,7 @@ plan; a successful local build is not a published app.
 - All 366 Turkish and English records pass the strict content audit with no
   generic copy, unreviewed records or semantic safety issues.
 - Unit, integration, reliability, performance and full-render suite passes all
-  53 tests with no skips.
+  54 tests with no skips.
 - All 4,392 date, language, style and output-format combinations render at the
   exact expected dimensions.
 - The bilingual Home → Share Studio → Discover journey passes on compact,

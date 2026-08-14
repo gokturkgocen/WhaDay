@@ -51,7 +51,7 @@ xcodebuild test \
   CODE_SIGNING_ALLOWED=NO
 ```
 
-App/content revision `5d78bd0` passed the bilingual core journey on all three
+App/content revision `e149f0b` passed the bilingual core journey on all three
 simulator classes:
 
 | Device class | Setting | Tests | Result |
@@ -63,8 +63,9 @@ simulator classes:
 All 24 current-revision screenshot attachments were produced. Representative
 standard and compact captures were manually reviewed: core actions remained
 reachable, the standard hierarchy had no visible clipping, and compact
-accessibility layouts used scrolling plus deliberate ellipsis for secondary
-discovery summaries rather than hiding the primary journey.
+accessibility layouts used full-width vertical format controls, scrolling and
+deliberate ellipsis for secondary discovery summaries rather than hiding the
+primary journey.
 
 ## Honest remaining gate
 

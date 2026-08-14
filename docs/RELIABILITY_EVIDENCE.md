@@ -31,16 +31,16 @@ xcodebuild test \
   CODE_SIGNING_ALLOWED=NO
 ```
 
-Tested app/content revision: `5d78bd0`. Result: `TEST SUCCEEDED` in every
+Tested app/content revision: `e149f0b`. Result: `TEST SUCCEEDED` in every
 operation.
 
 | Operation | Executed | Passed | Skipped | Failed |
 | --- | ---: | ---: | ---: | ---: |
-| Unit, integration, reliability and full render matrix | 53 | 53 | 0 | 0 |
+| Unit, integration, reliability and full render matrix | 54 | 54 | 0 | 0 |
 | iPhone 17 localized accessibility and performance UI | 4 | 4 | 0 | 0 |
 | iPhone SE Accessibility XXXL + Increased Contrast journeys | 2 | 2 | 0 | 0 |
 | iPhone 17 Pro Max XXXL journeys | 2 | 2 | 0 | 0 |
-| Total scenario invocations | 61 | 61 | 0 | 0 |
+| Total scenario invocations | 62 | 62 | 0 | 0 |
 
 The opt-in 4,392-render gate was enabled for this run, so no test was skipped.
 Its detailed result is recorded in `SHARE_MATRIX_EVIDENCE.md`.
@@ -56,14 +56,14 @@ Measured during the same complete run:
 
 | Workload | Mean | Peak physical memory |
 | --- | ---: | ---: |
-| Decode 366 Turkish catalog records | 0.002 s | 32.0 MB |
-| Run 600 localized discovery queries | 0.833 s | 44.4 MB |
-| Render one 1080×1350 Editorial message card | 0.007 s | 34.7 MB |
-| Responsive first-frame launch | 1.337 s | — |
-| Calendar scroll deceleration signpost | 2.433 s | — |
+| Decode 366 Turkish catalog records | 0.002 s | 32.9 MB |
+| Run 600 localized discovery queries | 0.642 s | 45.3 MB |
+| Render one 1080×1350 Editorial message card | 0.005 s | 35.7 MB |
+| Responsive first-frame launch | 2.846 s | — |
+| Calendar scroll deceleration signpost | 2.432 s | — |
 
-The unit workloads were measured in an isolated test process on the large
-simulator after the matrix run; launch and scroll were measured on iPhone 17.
+The unit workloads were measured in an isolated test process on iPhone 17 after
+the matrix run; launch and scroll were measured on the same simulator class.
 These values are conservative simulator baselines, not user-facing
 physical-device performance claims.
 
