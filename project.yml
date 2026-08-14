@@ -30,6 +30,7 @@ targets:
             CFBundleURLSchemes: [whaday]
         ITSAppUsesNonExemptEncryption: false
         LSApplicationQueriesSchemes: [instagram-stories]
+        WhaDayInstagramSourceApplicationID: "$(INSTAGRAM_SOURCE_APPLICATION_ID)"
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
         UIRequiredDeviceCapabilities: [arm64]
@@ -45,6 +46,7 @@ targets:
         PRODUCT_NAME: WhaDayNative
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INSTAGRAM_SOURCE_APPLICATION_ID: ""
     dependencies:
       - target: WhaDayWidgetExtension
         embed: true

@@ -119,6 +119,21 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertTrue(suggestions.contains(where: { $0.note != nil }))
     }
 
+    @MainActor
+    func testInstagramStoryURLRequiresAConfiguredSourceApplication() throws {
+        XCTAssertNil(InstagramStorySharer.shareURL(sourceApplicationID: nil))
+        XCTAssertNil(InstagramStorySharer.shareURL(sourceApplicationID: ""))
+        XCTAssertNil(InstagramStorySharer.shareURL(sourceApplicationID: "$(UNEXPANDED_VALUE)"))
+
+        let url = try XCTUnwrap(
+            InstagramStorySharer.shareURL(sourceApplicationID: " 123456789 ")
+        )
+        XCTAssertEqual(
+            url.absoluteString,
+            "instagram-stories://share?source_application=123456789"
+        )
+    }
+
     func testSensitivePersonalizationNeverUsesCelebratoryPressure() throws {
         let event = try XCTUnwrap(DayEventStore.event(id: "01-27"))
 
