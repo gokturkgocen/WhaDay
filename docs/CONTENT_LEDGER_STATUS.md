@@ -5,9 +5,9 @@ Dataset: `WhaDayNative/Data/metadata.json`
 
 This file records progress, not completion. The locale-neutral ledger is now
 structurally complete, but inferred bootstrap values remain a manual review
-queue. A `source-linked` record has an institutional source attached; only a
-future `verified` state means its exact date, title, scope and source have been
-individually checked.
+queue. Source verification and editorial review are deliberately independent:
+`source.checkedAt` records an exact date/title/source check, while `reviewState`
+records whether the user-facing copy has completed editorial or safety review.
 
 ## Structural result
 
@@ -15,6 +15,7 @@ individually checked.
 - Missing localized IDs: 0
 - Duplicate metadata IDs: 0
 - Official authority records without a source: 0
+- Primary-source records verified on 2026-08-14: 40
 - Legacy bell symbols exposed through metadata: 0
 - Typed content categories: 12
 
@@ -22,7 +23,7 @@ individually checked.
 
 | Authority | Count | Meaning at this stage |
 | --- | ---: | --- |
-| Official | 40 | An institutional calendar source is attached; exact-entry verification remains required. |
+| Official | 40 | Exact primary pages were checked on 2026-08-14; user-facing copy is still in the editorial queue. |
 | Cultural | 41 | A tradition, faith or country-specific scope was inferred and must be reviewed. |
 | Editorial | 285 | No official status is claimed; title, date and social fit still require review. |
 
@@ -38,11 +39,9 @@ individually checked.
 
 | Review state | Count |
 | --- | ---: |
-| Needs editorial review | 287 |
+| Needs editorial review | 319 |
 | Needs safety review | 47 |
-| Source linked | 32 |
 | Curated | 0 |
-| Verified | 0 |
 
 ## Taxonomy distribution
 
@@ -79,3 +78,7 @@ The app and tests now require:
 The bootstrap script refuses to overwrite the ledger unless explicitly run
 with `--force`. Once manual review begins, edits belong in the ledger rather
 than in title-based inference rules.
+
+`swift scripts/audit_content.swift --write` regenerates the current quality
+snapshot. `--strict` is the eventual release-candidate gate and intentionally
+fails while any structural problem or unreviewed record remains.

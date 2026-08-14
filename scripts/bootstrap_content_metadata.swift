@@ -251,9 +251,7 @@ private let metadata = events.map { event -> Metadata in
         shareability: shareability(for: category, sensitivity: sensitivity),
         audience: audience(for: category, sensitivity: sensitivity),
         symbol: symbol,
-        reviewState: sensitivity == "standard"
-            ? (primarySource == nil ? "needs-editorial-review" : "source-linked")
-            : "needs-safety-review",
+        reviewState: sensitivity == "standard" ? "needs-editorial-review" : "needs-safety-review",
         scope: authority == "official" ? "international" : authority == "cultural" ? "culture-specific" : "whaday-editorial",
         source: primarySource
     )

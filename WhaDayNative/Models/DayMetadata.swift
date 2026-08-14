@@ -66,15 +66,42 @@ enum DaySensitivity: String, Codable, CaseIterable {
 enum DayReviewState: String, Codable, CaseIterable {
     case needsEditorialReview = "needs-editorial-review"
     case needsSafetyReview = "needs-safety-review"
-    case sourceLinked = "source-linked"
     case curated
-    case verified
 }
 
 struct DaySource: Codable, Equatable {
     let organization: String
     let url: URL
     let checkedAt: String?
+
+    var isVerified: Bool {
+        guard url.scheme == "https", let checkedAt else { return false }
+        let parts = checkedAt.split(separator: "-", omittingEmptySubsequences: false)
+        guard
+            parts.count == 3,
+            parts[0].count == 4,
+            parts[1].count == 2,
+            parts[2].count == 2,
+            let year = Int(parts[0]),
+            let month = Int(parts[1]),
+            let day = Int(parts[2])
+        else {
+            return false
+        }
+
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let components = DateComponents(
+            calendar: calendar,
+            timeZone: calendar.timeZone,
+            year: year,
+            month: month,
+            day: day
+        )
+        guard let date = calendar.date(from: components) else { return false }
+        return calendar.dateComponents([.year, .month, .day], from: date) ==
+            DateComponents(year: year, month: month, day: day)
+    }
 }
 
 struct DayMetadata: Codable, Equatable, Identifiable {

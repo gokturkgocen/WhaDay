@@ -289,7 +289,32 @@ final class EditorialContentTests: XCTestCase {
             XCTAssertNotNil(metadata.source, metadata.id)
             XCTAssertFalse(metadata.source?.organization.isEmpty ?? true, metadata.id)
             XCTAssertEqual(metadata.source?.url.scheme, "https", metadata.id)
+            XCTAssertTrue(metadata.source?.isVerified == true, metadata.id)
         }
+    }
+
+    func testSourceVerificationRequiresHTTPSAndARealCalendarDate() {
+        XCTAssertTrue(
+            DaySource(
+                organization: "UNESCO",
+                url: URL(string: "https://www.unesco.org/en/days/list")!,
+                checkedAt: "2026-08-14"
+            ).isVerified
+        )
+        XCTAssertFalse(
+            DaySource(
+                organization: "Example",
+                url: URL(string: "http://example.com/day")!,
+                checkedAt: "2026-08-14"
+            ).isVerified
+        )
+        XCTAssertFalse(
+            DaySource(
+                organization: "Example",
+                url: URL(string: "https://example.com/day")!,
+                checkedAt: "2026-02-30"
+            ).isVerified
+        )
     }
 
     func testSensitiveMetadataCannotBePromotedAsEngagementContent() {
@@ -297,7 +322,7 @@ final class EditorialContentTests: XCTestCase {
             XCTAssertFalse(metadata.canBePromotedForEngagement, metadata.id)
             XCTAssertLessThanOrEqual(metadata.shareability, 2, metadata.id)
             XCTAssertTrue(
-                metadata.reviewState == .needsSafetyReview || metadata.reviewState == .verified,
+                metadata.reviewState == .needsSafetyReview || metadata.reviewState == .curated,
                 metadata.id
             )
         }

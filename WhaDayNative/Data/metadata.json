@@ -46,13 +46,14 @@
     "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "01-04",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/braille-day"
     },
     "symbol" : "🎨"
   },
@@ -186,13 +187,14 @@
     "authority" : "official",
     "category" : "science-and-curiosity",
     "id" : "01-14",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "UNESCO",
-      "url" : "https://www.unesco.org/en/days/list"
+      "url" : "https://www.unesco.org/en/days/world-logic"
     },
     "symbol" : "💡"
   },
@@ -321,13 +323,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "01-24",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/education"
     },
     "symbol" : "📚"
   },
@@ -370,8 +373,9 @@
     "sensitivity" : "remembrance",
     "shareability" : 1,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/holocaust-remembrance"
     },
     "symbol" : "☮️"
   },
@@ -569,13 +573,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "02-11",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/women-girls-science"
     },
     "symbol" : "👩"
   },
@@ -599,13 +604,14 @@
     "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "02-13",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "UNESCO",
-      "url" : "https://www.unesco.org/en/days/list"
+      "url" : "https://www.unesco.org/en/days/world-radio"
     },
     "symbol" : "🎨"
   },
@@ -656,13 +662,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "02-17",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/tourism-resilience-day"
     },
     "symbol" : "✦"
   },
@@ -699,13 +706,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "02-20",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/social-justice-day"
     },
     "symbol" : "🤝"
   },
@@ -716,13 +724,14 @@
     "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "02-21",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "UNESCO",
-      "url" : "https://www.unesco.org/en/days/list"
+      "url" : "https://www.unesco.org/en/days/mother-language"
     },
     "symbol" : "🎭"
   },
@@ -1088,13 +1097,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "03-20",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/happiness-day"
     },
     "symbol" : "☀️"
   },
@@ -1118,13 +1128,14 @@
     "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "03-22",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/world-water"
     },
     "symbol" : "💧"
   },
@@ -1270,8 +1281,9 @@
     "sensitivity" : "considerate",
     "shareability" : 2,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/autism-day"
     },
     "symbol" : "☀️"
   },
@@ -1339,8 +1351,9 @@
     "sensitivity" : "considerate",
     "shareability" : 2,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "World Health Organization",
-      "url" : "https://www.who.int/campaigns"
+      "url" : "https://www.who.int/campaigns/world-health-day"
     },
     "symbol" : "🏥"
   },
@@ -1534,13 +1547,14 @@
     "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "04-22",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/earth-day"
     },
     "symbol" : "🎨"
   },
@@ -1551,13 +1565,14 @@
     "authority" : "official",
     "category" : "culture-and-arts",
     "id" : "04-23",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "UNESCO",
-      "url" : "https://www.unesco.org/en/days/list"
+      "url" : "https://www.unesco.org/en/days/world-book-and-copyright"
     },
     "symbol" : "📚"
   },
@@ -1685,13 +1700,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "05-03",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "UNESCO",
-      "url" : "https://www.unesco.org/en/days/list"
+      "url" : "https://www.unesco.org/en/days/press-freedom"
     },
     "symbol" : "✦"
   },
@@ -1913,13 +1929,14 @@
     "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "05-20",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "Food and Agriculture Organization of the United Nations",
+      "url" : "https://www.fao.org/world-bee-day/en"
     },
     "symbol" : "🐝"
   },
@@ -2126,13 +2143,14 @@
     "authority" : "official",
     "category" : "animals-and-nature",
     "id" : "06-05",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/environment"
     },
     "symbol" : "👨"
   },
@@ -2169,13 +2187,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "06-08",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/oceans"
     },
     "symbol" : "🌊"
   },
@@ -2251,13 +2270,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "06-14",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "World Health Organization",
-      "url" : "https://www.who.int/campaigns"
+      "url" : "https://www.who.int/campaigns/world-blood-donor-day"
     },
     "symbol" : "✦"
   },
@@ -2296,13 +2316,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "06-17",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/desertification-day"
     },
     "symbol" : "✦"
   },
@@ -2344,8 +2365,9 @@
     "sensitivity" : "remembrance",
     "shareability" : 1,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/refugee-day"
     },
     "symbol" : "🕊️"
   },
@@ -2356,13 +2378,14 @@
     "authority" : "official",
     "category" : "sport-and-movement",
     "id" : "06-21",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 4,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/yoga-day"
     },
     "symbol" : "⚡️"
   },
@@ -2386,13 +2409,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "06-23",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/international-widows-day"
     },
     "symbol" : "🤝"
   },
@@ -2681,13 +2705,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "07-15",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/world-youth-skills-day"
     },
     "symbol" : "✦"
   },
@@ -3016,13 +3041,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "08-09",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/worlds-indigenous-peoples"
     },
     "symbol" : "🌈"
   },
@@ -3059,13 +3085,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "08-12",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/youth"
     },
     "symbol" : "✦"
   },
@@ -3157,13 +3184,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "08-19",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/humanitarian-day"
     },
     "symbol" : "🤝"
   },
@@ -3441,8 +3469,9 @@
     "sensitivity" : "remembrance",
     "shareability" : 1,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/protect-education-attack"
     },
     "symbol" : "📚"
   },
@@ -3479,13 +3508,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "09-12",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/south-south-cooperation-day"
     },
     "symbol" : "✦"
   },
@@ -3600,13 +3630,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "09-21",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/peace"
     },
     "symbol" : "☮️"
   },
@@ -3857,8 +3888,9 @@
     "sensitivity" : "considerate",
     "shareability" : 2,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "World Health Organization",
-      "url" : "https://www.who.int/campaigns"
+      "url" : "https://www.who.int/campaigns/world-mental-health-day"
     },
     "symbol" : "👨"
   },
@@ -3869,13 +3901,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "10-11",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/girl-child"
     },
     "symbol" : "🤝"
   },
@@ -3926,13 +3959,14 @@
     "authority" : "official",
     "category" : "civil-society",
     "id" : "10-15",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 3,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/rural-women-day"
     },
     "symbol" : "👩"
   },
@@ -3943,13 +3977,14 @@
     "authority" : "official",
     "category" : "food-and-drink",
     "id" : "10-16",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/world-food-day"
     },
     "symbol" : "🍽️"
   },
@@ -4051,13 +4086,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "10-24",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/un-day"
     },
     "symbol" : "✦"
   },
@@ -4390,8 +4426,9 @@
     "sensitivity" : "remembrance",
     "shareability" : 1,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "url" : "https://www.un.org/en/observances/child-sexual-exploitation-prevention-and-healing-day"
     },
     "symbol" : "🕊️"
   },
@@ -4561,13 +4598,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "12-01",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
+      "checkedAt" : "2026-08-14",
       "organization" : "World Health Organization",
-      "url" : "https://www.who.int/campaigns"
+      "url" : "https://www.who.int/campaigns/world-aids-day"
     },
     "symbol" : "✦"
   },
@@ -4591,13 +4629,14 @@
     "authority" : "official",
     "category" : "playful",
     "id" : "12-03",
-    "reviewState" : "source-linked",
+    "reviewState" : "needs-editorial-review",
     "scope" : "international",
     "sensitivity" : "standard",
     "shareability" : 5,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/international-day-persons-disabilities"
     },
     "symbol" : "✦"
   },
@@ -4693,8 +4732,9 @@
     "sensitivity" : "remembrance",
     "shareability" : 1,
     "source" : {
-      "organization" : "United Nations",
-      "url" : "https://www.un.org/en/observances/list-days-weeks"
+      "checkedAt" : "2026-08-14",
+      "organization" : "UNESCO",
+      "url" : "https://www.unesco.org/en/days/human-rights"
     },
     "symbol" : "🕊️"
   },

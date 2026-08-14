@@ -30,7 +30,7 @@ struct DayProvenance: Equatable {
                     sourceURL: nil
                 )
             }
-            let isVerified = event.metadata?.reviewState == .verified
+            let isVerified = source.isVerified
             return DayProvenance(
                 kind: .official,
                 label: isVerified
