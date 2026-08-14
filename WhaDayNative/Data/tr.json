@@ -74,50 +74,50 @@
     "month": 1,
     "day": 8,
     "title": "Köpük Banyosu Günü",
-    "description": "Köpük Banyosu Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Takvimin bahanesi hazır: telefonu biraz uzağa bırak, suyu ısıt ve günü köpüklerin içinde sessize al.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bir saat kaybolup dinlenmesi gereken kişiye gönder"
   },
   {
     "id": "01-09",
     "month": 1,
     "day": 9,
     "title": "Statik Elektrik Günü",
-    "description": "Statik Elektrik Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kışın kapı koluyla arandaki minik elektrik savaşı bugün resmiyet kazandı. Saçlar havadaysa bilim çalışıyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Her dokunduğunda kıvılcım çıkaran arkadaşına gönder"
   },
   {
     "id": "01-10",
     "month": 1,
     "day": 10,
     "title": "Ev Bitkilerini Takdir Günü",
-    "description": "Ev Bitkilerini Takdir Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Ev bitkileri sessiz ev arkadaşlarıdır: biraz ışık, doğru miktarda su ve arada bir yaprak kontrolüyle karşılığını verirler.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Evi küçük bir ormana çeviren kişiye gönder"
   },
   {
     "id": "01-11",
     "month": 1,
     "day": 11,
     "title": "Süt Günü",
-    "description": "Süt Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sade, kahveli, kakaolu ya da bitkisel eşlikçisiyle: bugün bardağı çocukluk anılarına kaldırmak için küçük bir bahane.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kurabiyenin yanına mutlaka süt koyan kişiye gönder"
   },
   {
     "id": "01-12",
     "month": 1,
     "day": 12,
     "title": "Kızılları Öpme Günü",
-    "description": "Kızılları Öpme Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kızıl saçları kutlamanın kuralı basit: iltifat serbest, temas yalnızca karşılıklı istek varsa. Renk zaten bütün ilgiyi topluyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "En sevdiğin kızıl saçlı kişiye, rızayla, gönder"
   },
   {
     "id": "01-13",
@@ -144,10 +144,10 @@
     "month": 1,
     "day": 15,
     "title": "Şapka Günü",
-    "description": "Şapka Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Şapka bazen hava koşulu, bazen karakter gelişimidir. Bugün en iddialı olanı seçmek için takvimden izin çıktı.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Her kombini bir şapkayla tamamlayan kişiye gönder"
   },
   {
     "id": "01-16",
@@ -164,10 +164,10 @@
     "month": 1,
     "day": 17,
     "title": "Çocuk Mucitler Günü",
-    "description": "Çocuk Mucitler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Çocukların 'ya şöyle olsaydı?' sorusu çoğu icadın başladığı yere benzer. Bugün küçük fikirleri ciddiye alma günü.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Aklı sürekli yeni fikirlerle dolu bir çocuğa gönder"
   },
   {
     "id": "01-18",
@@ -214,20 +214,20 @@
     "month": 1,
     "day": 22,
     "title": "Puantiye Günü",
-    "description": "Puantiye Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Puantiye, kıyafetin noktalama işaretidir: cümle sade olsa bile enerjiyi bir anda değiştirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Dolabında mutlaka puantiyeli bir şey olan kişiye gönder"
   },
   {
     "id": "01-23",
     "month": 1,
     "day": 23,
     "title": "Turta Günü",
-    "description": "Turta Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tatlı ya da tuzlu, çıtır kenarlı bir turta masaya geldiğinde günün geri kalanı ikincil mesele olur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Son dilimi paylaşabileceğin kişiye gönder"
   },
   {
     "id": "01-24",
@@ -374,20 +374,20 @@
     "month": 2,
     "day": 7,
     "title": "Gül Günü",
-    "description": "Gül Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sevgililer Haftası'nın ilk bahanesi bir gül; ama asıl mesele, 'seni düşündüm' demenin küçük ve zarif bir yolunu bulmak.",
     "emoji": "💕",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Bugün durup dururken gül alasın gelen kişiye gönder"
   },
   {
     "id": "02-08",
     "month": 2,
     "day": 8,
     "title": "Evlilik Teklifi Günü",
-    "description": "Evlilik Teklifi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Adında evlilik teklifi var diye yüzük şart değil; birlikte bir yolculuk, kahve ya da gelecek planı önermek de gayet geçerli.",
     "emoji": "💕",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Birlikte yeni bir şeye evet diyeceğin kişiye gönder"
   },
   {
     "id": "02-09",
@@ -484,10 +484,10 @@
     "month": 2,
     "day": 18,
     "title": "Ulusal Pil Günü",
-    "description": "Ulusal Pil Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Piller sessizce hayatı taşır; kumandadan acil durum fenerine kadar. Bugün çekmeceyi kontrol edip bitenleri doğru noktaya bırakma günü.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Pili yüzde birde yaşamayı seven kişiye gönder"
   },
   {
     "id": "02-19",
@@ -614,10 +614,10 @@
     "month": 3,
     "day": 2,
     "title": "Uluslararası Kurtarılmış Kedi Günü",
-    "description": "Uluslararası Kurtarılmış Kedi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bir kurtarma kedisi eve yalnızca pati izi değil, kendi ritmini ve tuhaf küçük kurallarını da getirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Telefonu kedi fotoğraflarıyla dolu kişiye gönder"
   },
   {
     "id": "03-03",
@@ -664,10 +664,10 @@
     "month": 3,
     "day": 7,
     "title": "Ulusal Tahıl Gevreği Günü",
-    "description": "Ulusal Tahıl Gevreği Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kahvaltı gevreği hızlı bir öğün, gece atıştırması ve bazen çocukluğa açılan çıtır bir kapıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kâseye önce süt mü gevrek mi koyduğunu tartışacağın kişiye gönder"
   },
   {
     "id": "03-08",
@@ -884,10 +884,10 @@
     "month": 3,
     "day": 29,
     "title": "Dünya Piyano Günü",
-    "description": "Dünya Piyano Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Piyano Günü yılın 88. gününe yakın kutlanır; tuş sayısına küçük bir selam. Bugün tek bir parça bile odayı değiştirebilir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sana ilk üç notadan şarkıyı bulan kişiye gönder"
   },
   {
     "id": "03-30",
@@ -934,10 +934,10 @@
     "month": 4,
     "day": 3,
     "title": "Açıklık Anı",
-    "description": "Bugün neyin önemli olduğunu düşünmek için dur.",
+    "description": "Bazen çözüm daha çok düşünmek değil, gürültüyü azaltmaktır. Bugün tek bir meseleyi olduğu gibi görmeye yer aç.",
     "emoji": "💭",
     "category": "reflection",
-    "sharingHook": "Düşünme zamanı yap"
+    "sharingHook": "Kafanı bir cümleyle netleştiren kişiye gönder"
   },
   {
     "id": "04-04",
@@ -994,20 +994,20 @@
     "month": 4,
     "day": 9,
     "title": "Barışçıl Duruş",
-    "description": "Sakinliği kucakla ve iç barışını bul.",
+    "description": "Günün ortasına küçük bir virgül koy: omuzlarını indir, nefesini fark et ve hemen cevap vermek zorunda olmadığını hatırla.",
     "emoji": "🧘",
     "category": "mindfulness",
-    "sharingHook": "Barışa ulaş"
+    "sharingHook": "Birlikte biraz yavaşlaman gereken kişiye gönder"
   },
   {
     "id": "04-10",
     "month": 4,
     "day": 10,
     "title": "Kardeşler Günü",
-    "description": "Kardeşler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kardeşlik aynı çocukluğu farklı hatırlamak, eski şakaları hâlâ anlamak ve gerektiğinde tek mesajla yanında belirmektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Aynı evin farklı hikâyesini taşıyan kardeşine gönder"
   },
   {
     "id": "04-11",
@@ -1094,10 +1094,10 @@
     "month": 4,
     "day": 19,
     "title": "İç Güç",
-    "description": "İçindeki gücü hisset ve kendine güven.",
+    "description": "İç güç her zaman yüksek sesli değildir; bazen yeniden denemek, bazen sınır koymak, bazen de bugünlük durabilmektir.",
     "emoji": "💪",
     "category": "growth",
-    "sharingHook": "Gücüne inan"
+    "sharingHook": "Sessiz gücüne hayran olduğun kişiye gönder"
   },
   {
     "id": "04-20",
@@ -1174,10 +1174,10 @@
     "month": 4,
     "day": 27,
     "title": "Bağlantı",
-    "description": "Diğerleriyle anlamlı biçimde bağlan.",
+    "description": "Bazı insanlarla konuşma kaldığı yerden devam eder; aradan aylar geçse bile ilk cümlede mesafe kapanır.",
     "emoji": "🤝",
     "category": "awareness",
-    "sharingHook": "Bağlan ve paylaş"
+    "sharingHook": "Uzun süredir konuşmadığın hâlde hâlâ yakın hissettiğine gönder"
   },
   {
     "id": "04-28",
@@ -1274,10 +1274,10 @@
     "month": 5,
     "day": 7,
     "title": "Şükran Günü",
-    "description": "Nimetlerini say ve minnet duy.",
+    "description": "Şükran büyük cümle istemez. Tam zamanında gelen bir mesajı, iyi demlenmiş çayı ya da yanında duran kişiyi fark etmekle başlar.",
     "emoji": "🙏",
     "category": "reflection",
-    "sharingHook": "Minnet duy"
+    "sharingHook": "Bugün hayatında olduğu için teşekkür etmek istediğine gönder"
   },
   {
     "id": "05-08",
@@ -1314,10 +1314,10 @@
     "month": 5,
     "day": 11,
     "title": "Dikkatli Anı",
-    "description": "Bu anın içinde tamamen burada ol.",
+    "description": "Dikkat, günün en kıt kaynağı. Bugün bir işi yaparken yalnızca orada kalmayı dene; sekmeleri sonra da açabilirsin.",
     "emoji": "🌸",
     "category": "mindfulness",
-    "sharingHook": "Şu ana dikkat et"
+    "sharingHook": "Seni ana geri getiren kişiye gönder"
   },
   {
     "id": "05-12",
@@ -1334,20 +1334,20 @@
     "month": 5,
     "day": 13,
     "title": "Büyüme Yolculuğu",
-    "description": "Büyümeni kucakla ve ilerlemeyi kutla.",
+    "description": "Büyümek düz bir çizgi değildir; bazen hızlanır, bazen geri dönüp aynı dersi daha nazikçe öğrenirsin.",
     "emoji": "🌱",
     "category": "growth",
-    "sharingHook": "Gelişimi kutla"
+    "sharingHook": "Ne kadar yol aldığını bazen unutan kişiye gönder"
   },
   {
     "id": "05-14",
     "month": 5,
     "day": 14,
     "title": "Kendine Bakım Zamanı",
-    "description": "Kendine öncelik ver ve iyiliğini besle.",
+    "description": "Kendine bakım yalnızca mum yakmak değil; su içmek, randevu almak, hayır demek ve uykuyu ertelememek de bu listenin içinde.",
     "emoji": "☀️",
     "category": "awareness",
-    "sharingHook": "Kendine bakım yap"
+    "sharingHook": "Kendini listenin sonuna koyan kişiye gönder"
   },
   {
     "id": "05-15",
@@ -1464,10 +1464,10 @@
     "month": 5,
     "day": 26,
     "title": "Günlük Harika",
-    "description": "Günlük anılarda harika bul.",
+    "description": "Her gün büyük bir keşif sunmaz; bazen günün harikası ışığın duvara düşüşü, iyi bir cümle ya da tam zamanında esen rüzgârdır.",
     "emoji": "✨",
     "category": "awareness",
-    "sharingHook": "Günlüğü seç"
+    "sharingHook": "Küçük şeyleri fark etme yeteneğini sevdiğin kişiye gönder"
   },
   {
     "id": "05-27",
@@ -1604,10 +1604,10 @@
     "month": 6,
     "day": 9,
     "title": "Yaşam Dengesi",
-    "description": "Çalışma ve sağlık arasında denge bul.",
+    "description": "Denge her şeye eşit süre vermek değil; bugün neyin senden daha fazla ilgi istediğini doğru tartabilmektir.",
     "emoji": "⚖️",
     "category": "reflection",
-    "sharingHook": "Dengelemeyi öğren"
+    "sharingHook": "Hayatın terazisini birlikte düzelttiğin kişiye gönder"
   },
   {
     "id": "06-10",
@@ -1734,10 +1734,10 @@
     "month": 6,
     "day": 22,
     "title": "Dünya Yağmur Ormanları Günü",
-    "description": "Dünya Yağmur Ormanları Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yağmur ormanları iklimi, su döngülerini ve benzersiz canlı çeşitliliğini taşır. Uzak görünseler de gündelik hayatımıza bağlılar.",
     "emoji": "🌲",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Birlikte ormanda kaybolmak isteyeceğin kişiye gönder"
   },
   {
     "id": "06-23",
@@ -2034,10 +2034,10 @@
     "month": 7,
     "day": 22,
     "title": "Pi Yaklaşıklığı Günü",
-    "description": "Pi Yaklaşıklığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "22\/7, pi sayısına şaşırtıcı derecede yakın bir kesir. Matematiğin bazen ciddi, bazen de takvim kadar oyunbaz olduğunun kanıtı.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şakaları bile formülle anlatan kişiye gönder"
   },
   {
     "id": "07-23",
@@ -2074,20 +2074,20 @@
     "month": 7,
     "day": 26,
     "title": "Esperanto Günü",
-    "description": "Esperanto Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Esperanto, farklı dilleri konuşan insanların daha kolay buluşabilmesi için tasarlanmış bir dil; bugün merhaba demenin 'saluton' hâli.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Seninle her dilde anlaşabilen kişiye gönder"
   },
   {
     "id": "07-27",
     "month": 7,
     "day": 27,
     "title": "Uykucu Günü (Finlandiya)",
-    "description": "Uykucu Günü (Finlandiya): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Finlandiya'nın Uykucu Günü geleneğinde evin en geç kalkanı şakaların hedefi olur. Alarmı erteleyenler bugün dikkatli uyusun.",
     "emoji": "😴",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Beş alarmdan önce uyanmayan kişiye gönder"
   },
   {
     "id": "07-28",
@@ -2154,30 +2154,30 @@
     "month": 8,
     "day": 3,
     "title": "Yaratıcı Ruh",
-    "description": "Yaratıcılığını serbest bırak ve kendini ifade et.",
+    "description": "Yaratıcı ruh doğru malzemeyi beklemez; elindeki not, ses, renk ya da fikirle küçük bir şey başlatır.",
     "emoji": "🎨",
     "category": "growth",
-    "sharingHook": "Yaratıcı ol"
+    "sharingHook": "Bir fikri hemen dünyaya çıkaran kişiye gönder"
   },
   {
     "id": "08-04",
     "month": 8,
     "day": 4,
     "title": "Olumlu Enerji",
-    "description": "Olumluluğu yay ve iyimserliği kucakla.",
+    "description": "Olumlu enerji, her şey yolundaymış gibi davranmak değil; zor günün içinde bile işe yarayan küçük ihtimali görebilmektir.",
     "emoji": "⭐",
     "category": "awareness",
-    "sharingHook": "Olumlu ol"
+    "sharingHook": "Odaya girdiğinde havayı değiştiren kişiye gönder"
   },
   {
     "id": "08-05",
     "month": 8,
     "day": 5,
     "title": "Kişisel Güç",
-    "description": "Gücüne sahip ol ve kendine güven.",
+    "description": "Kişisel güç, kontrol edemediğin şeyleri zorlamak yerine kendi kararının başladığı yeri tanımaktır.",
     "emoji": "🔥",
     "category": "growth",
-    "sharingHook": "Gücü sahiplen"
+    "sharingHook": "Kendi gücünü yeniden hatırlaması gereken kişiye gönder"
   },
   {
     "id": "08-06",
@@ -2194,10 +2194,10 @@
     "month": 8,
     "day": 7,
     "title": "Bilinçli Yaşam",
-    "description": "Kasıtla ve bilinçli farkındalıkla yaşa.",
+    "description": "Bilinçli yaşamak her an kusursuz farkındalık değildir; otomatik pilottan çıktığını fark edip tekrar seçim yapabilmektir.",
     "emoji": "🌿",
     "category": "mindfulness",
-    "sharingHook": "Bilinçli yaşa"
+    "sharingHook": "Hayatı aceleye getirmeden yaşayan kişiye gönder"
   },
   {
     "id": "08-08",
@@ -2284,10 +2284,10 @@
     "month": 8,
     "day": 16,
     "title": "Şükran Kalbi",
-    "description": "Nimetleri takdir et ve derin minnet duy.",
+    "description": "Şükran bazen geriye bakınca görünür: atlatılan dönem, açılan kapı ve yol boyunca elini bırakmayan insanlar.",
     "emoji": "💖",
     "category": "reflection",
-    "sharingHook": "Takdir etmeyi seç"
+    "sharingHook": "İyi ki yolum kesişti dediğin kişiye gönder"
   },
   {
     "id": "08-17",
@@ -2304,10 +2304,10 @@
     "month": 8,
     "day": 18,
     "title": "Kendini Keşfet",
-    "description": "Kendini daha iyi tanı ve gerçeğini keşfet.",
+    "description": "Kendini keşfetmek gizli tek bir cevabı bulmak değil; neye yaklaştığını ve neden uzaklaştığını merakla izlemektir.",
     "emoji": "🔍",
     "category": "growth",
-    "sharingHook": "Kendini keşfet"
+    "sharingHook": "Kendin olmana alan açan kişiye gönder"
   },
   {
     "id": "08-19",
@@ -2374,10 +2374,10 @@
     "month": 8,
     "day": 25,
     "title": "Sevinç & Gülüş",
-    "description": "Sevinci kutla ve bugün mutluluğu bul.",
+    "description": "Bazı günlerin üretkenlik hedefi yalnızca iyi bir kahkaha olmalı. Bugün o hedef fazlasıyla yeterli.",
     "emoji": "😄",
     "category": "awareness",
-    "sharingHook": "Sevinç kutla"
+    "sharingHook": "En saçma anda seni güldüren kişiye gönder"
   },
   {
     "id": "08-26",
@@ -2404,10 +2404,10 @@
     "month": 8,
     "day": 28,
     "title": "Yenilenen Enerji",
-    "description": "Kendini yenile ve ruhunu tazele.",
+    "description": "Enerji her zaman kendiliğinden gelmez; bazen kısa bir yürüyüşten, sevdiğin şarkıdan ya da doğru kişiden ödünç alınır.",
     "emoji": "⚡",
     "category": "mindfulness",
-    "sharingHook": "Enerji yükle"
+    "sharingHook": "Pillerini tek mesajla dolduran kişiye gönder"
   },
   {
     "id": "08-29",
@@ -2464,10 +2464,10 @@
     "month": 9,
     "day": 3,
     "title": "Gökdelen Günü",
-    "description": "Gökdelen Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gökdelenler mühendislik kadar hayal gücü de taşır; zeminden bakınca baş döndüren fikir, kat kat gerçeğe dönüşür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şehirde hep yukarı bakarak yürüyen kişiye gönder"
   },
   {
     "id": "09-04",
@@ -2494,10 +2494,10 @@
     "month": 9,
     "day": 6,
     "title": "Ulusal Kitap Okuma Günü",
-    "description": "Ulusal Kitap Okuma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bir kitap bazen yeni bir dünya, bazen ihtiyacın olan tek cümledir. Bugün yarım bıraktığın sayfaya dönmek için iyi gün.",
     "emoji": "📚",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sana en iyi kitapları öneren kişiye gönder"
   },
   {
     "id": "09-07",
@@ -2564,10 +2564,10 @@
     "month": 9,
     "day": 13,
     "title": "Roald Dahl Günü",
-    "description": "Roald Dahl Günü (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Roald Dahl'ın dünyasında dev şeftaliler, çikolata fabrikaları ve kuralları ters yüz eden çocuklar var; bugün hayal gücü biraz taşabilir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çocukken aynı kitabı defalarca okuyan kişiye gönder"
   },
   {
     "id": "09-14",
@@ -2764,10 +2764,10 @@
     "month": 10,
     "day": 3,
     "title": "Sınıfın Kraliçeleri Günü",
-    "description": "Sınıfın Kraliçeleri Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "3 Ekim, Mean Girls evreninde tek bir soruyla tarihe geçti: 'Bugün günlerden ne?' Pembe giymek isteğe bağlı.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Alıntılarla konuştuğun Mean Girls hayranına gönder"
   },
   {
     "id": "10-04",
@@ -2924,10 +2924,10 @@
     "month": 10,
     "day": 19,
     "title": "Barışçıl Bilgelik",
-    "description": "Bilgelik ara ve sessiz anlayışı kucakla.",
+    "description": "Bilgelik her soruya cevap vermek değil; hangi sorunun aceleye gelmediğini ve ne zaman sessizce dinlemek gerektiğini bilmektir.",
     "emoji": "🌙",
     "category": "reflection",
-    "sharingHook": "Bilge ol"
+    "sharingHook": "Az konuşup çok şey anlatan kişiye gönder"
   },
   {
     "id": "10-20",
@@ -3034,10 +3034,10 @@
     "month": 10,
     "day": 30,
     "title": "Sınırsız Potansiyel",
-    "description": "Kendine ve sınırsız potansiyeline inan.",
+    "description": "Potansiyel bitmiş bir sonuç değil, henüz denemediğin yolların toplamıdır. Bugün birine başlamak yeterli.",
     "emoji": "🚀",
     "category": "growth",
-    "sharingHook": "Potansiyeline inan"
+    "sharingHook": "Kendine koyduğu sınırdan daha büyük olan kişiye gönder"
   },
   {
     "id": "10-31",
@@ -3074,20 +3074,20 @@
     "month": 11,
     "day": 3,
     "title": "Teşekkür Düşünceler",
-    "description": "Şükran ifade et ve teşekkürü yetiştir.",
+    "description": "Aklına iyi bir şey geldiyse sahibine söyle. İçinden edilen teşekkür güzeldir; gönderilen teşekkür ilişkiyi değiştirir.",
     "emoji": "🙏",
     "category": "awareness",
-    "sharingHook": "Teşekkür et"
+    "sharingHook": "Uzun zamandır teşekkür etmediğin kişiye gönder"
   },
   {
     "id": "11-04",
     "month": 11,
     "day": 4,
     "title": "Parlayan Işık",
-    "description": "Senin ışığın ol ve başkaları için parlayan ol.",
+    "description": "Işık olmak her zaman yolu bilmek değildir; bazen karanlıkta birinin yanında yeterince uzun kalmaktır.",
     "emoji": "💫",
     "category": "mindfulness",
-    "sharingHook": "Işık ol"
+    "sharingHook": "Zor zamanda yanında kalan kişiye gönder"
   },
   {
     "id": "11-05",
@@ -3274,10 +3274,10 @@
     "month": 11,
     "day": 23,
     "title": "Umut & Rüyalar",
-    "description": "Rüyalarının peşinden git ve ümidi besle.",
+    "description": "Umut, her şeyin kolay olacağına inanmak değil; zor olsa da sonraki adımın hâlâ mümkün olduğunu bilmektir.",
     "emoji": "🌟",
     "category": "growth",
-    "sharingHook": "Rüyaları sürürdür"
+    "sharingHook": "Hayallerini yarıda bırakmamasını istediğin kişiye gönder"
   },
   {
     "id": "11-24",
@@ -3324,10 +3324,10 @@
     "month": 11,
     "day": 28,
     "title": "Dönüşüm",
-    "description": "Değişimi kucakla ve dönüşümünü kutla.",
+    "description": "Dönüşüm bazen dışarıdan fark edilmez; aynı durumda bu kez farklı bir seçim yaptığında başlar.",
     "emoji": "🦋",
     "category": "reflection",
-    "sharingHook": "Değişimi kabul et"
+    "sharingHook": "Değişimine yakından tanık olduğun kişiye gönder"
   },
   {
     "id": "11-29",
@@ -3534,10 +3534,10 @@
     "month": 12,
     "day": 19,
     "title": "Sert Şekerleme Günü",
-    "description": "Sert Şekerleme Günü (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sert şeker biraz sabır ister: çiğnemeye çalışırsan yenilir, beklersen çocukluk tadı yavaşça ortaya çıkar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Çantasında her zaman şeker taşıyan kişiye gönder"
   },
   {
     "id": "12-20",
@@ -3614,10 +3614,10 @@
     "month": 12,
     "day": 27,
     "title": "Kuruyemişli Kek Günü",
-    "description": "Kuruyemişli Kek Günü (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Meyveli kek, tatil masasının en tartışmalı karakteri olabilir. Seveni sadık, sevmeyeni son derece nettir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Meyveli keki savunurken yalnız kalan kişiye gönder"
   },
   {
     "id": "12-28",

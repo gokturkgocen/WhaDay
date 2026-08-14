@@ -101,12 +101,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "01-08",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -114,12 +115,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "science-and-curiosity",
     "id" : "01-09",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -127,12 +129,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "animals-and-nature",
     "id" : "01-10",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -140,12 +143,13 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "food-and-drink",
     "id" : "01-11",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -154,13 +158,12 @@
   {
     "audience" : [
       "friend",
-      "family",
       "partner"
     ],
     "authority" : "editorial",
     "category" : "relationships",
     "id" : "01-12",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -200,12 +203,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "01-15",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -226,12 +230,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "science-and-curiosity",
     "id" : "01-17",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -295,12 +300,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "01-22",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -308,12 +314,13 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "food-and-drink",
     "id" : "01-23",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -533,13 +540,12 @@
   {
     "audience" : [
       "friend",
-      "family",
       "partner"
     ],
     "authority" : "editorial",
     "category" : "relationships",
     "id" : "02-07",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -548,13 +554,12 @@
   {
     "audience" : [
       "friend",
-      "family",
       "partner"
     ],
     "authority" : "editorial",
     "category" : "relationships",
     "id" : "02-08",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -703,12 +708,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "science-and-curiosity",
     "id" : "02-18",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -899,15 +905,16 @@
   },
   {
     "audience" : [
-      "animal-or-nature-lover"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "animals-and-nature",
     "id" : "03-02",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🌿"
   },
   {
@@ -970,12 +977,13 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "food-and-drink",
     "id" : "03-07",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1296,15 +1304,16 @@
   },
   {
     "audience" : [
-      "culture-lover"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "culture-and-arts",
     "id" : "03-29",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "🎨"
   },
   {
@@ -1371,12 +1380,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "04-03",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1464,12 +1474,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "04-09",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1477,12 +1488,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "04-10",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1610,12 +1622,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "04-19",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1729,12 +1742,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "04-27",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1880,12 +1894,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "05-07",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1938,12 +1953,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "05-11",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1964,12 +1980,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "05-13",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -1977,12 +1994,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "05-14",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -2152,12 +2170,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "05-26",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -2365,12 +2384,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "06-09",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -2581,12 +2601,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "animals-and-nature",
     "id" : "06-22",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3005,12 +3026,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "science-and-curiosity",
     "id" : "07-22",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3063,12 +3085,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "07-26",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3076,12 +3099,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "07-27",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3189,12 +3213,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "08-03",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3202,12 +3227,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "08-04",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3215,12 +3241,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "08-05",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3241,12 +3268,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "08-07",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3372,12 +3400,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "08-16",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3399,12 +3428,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "08-18",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3511,12 +3541,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "08-25",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3551,12 +3582,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "08-28",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3645,12 +3677,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "09-03",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -3684,15 +3717,16 @@
   },
   {
     "audience" : [
-      "culture-lover"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "culture-and-arts",
     "id" : "09-06",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
-    "shareability" : 4,
+    "shareability" : 5,
     "symbol" : "📚"
   },
   {
@@ -3795,12 +3829,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "culture-and-arts",
     "id" : "09-13",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4088,12 +4123,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "culture-and-arts",
     "id" : "10-03",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4338,12 +4374,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "10-19",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4502,12 +4539,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "10-30",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4560,13 +4598,12 @@
   {
     "audience" : [
       "friend",
-      "family",
       "partner"
     ],
     "authority" : "editorial",
     "category" : "relationships",
     "id" : "11-03",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4574,12 +4611,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "11-04",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4866,12 +4904,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "partner"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "relationships",
     "id" : "11-23",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -4941,12 +4980,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "playful",
     "id" : "11-28",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -5268,12 +5308,13 @@
   },
   {
     "audience" : [
-      "friend"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "food-and-drink",
     "id" : "12-19",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
@@ -5375,12 +5416,13 @@
   },
   {
     "audience" : [
-      "food-companion"
+      "friend",
+      "community"
     ],
     "authority" : "editorial",
     "category" : "food-and-drink",
     "id" : "12-27",
-    "reviewState" : "needs-editorial-review",
+    "reviewState" : "curated",
     "scope" : "whaday-editorial",
     "sensitivity" : "standard",
     "shareability" : 5,
