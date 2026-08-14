@@ -19,6 +19,7 @@ private enum CalendarMode {
 
 struct CalendarScreen: View {
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
+    @EnvironmentObject private var dateContext: AppDateContext
 
     let selectedDay: DayEvent?
     let onBack: () -> Void
@@ -28,11 +29,19 @@ struct CalendarScreen: View {
     @State private var scrollPosition: String?
 
     private let days = DayEventStore.days
-    private let todayMonth = Calendar.current.component(.month, from: Date())
-    private let todayDay = Calendar.current.component(.day, from: Date())
     private let baseColors = ThemeColors.forCategory("default")
 
-    private var weeklyPicks: [WeeklyPick] { WeeklyPicks.make() }
+    private var todayMonth: Int {
+        dateContext.calendar.component(.month, from: dateContext.now)
+    }
+
+    private var todayDay: Int {
+        dateContext.calendar.component(.day, from: dateContext.now)
+    }
+
+    private var weeklyPicks: [WeeklyPick] {
+        WeeklyPicks.make(from: dateContext.now, calendar: dateContext.calendar)
+    }
     private var savedEvents: [DayEvent] { personalLibrary.savedEvents() }
 
     private var items: [CalendarItem] {

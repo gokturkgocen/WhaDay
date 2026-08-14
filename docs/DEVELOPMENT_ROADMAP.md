@@ -35,8 +35,8 @@ Exit: every date is independently trustworthy and shareable.
 - [x] Add one typed route model for home, day, discovery, settings and share.
 - [x] Add event deep links and cold/warm launch routing.
 - [x] Route notification and widget taps to the displayed event.
-- [ ] Refresh the active date at midnight and after time-zone changes.
-- [ ] Inject clock, calendar and locale dependencies for boundary tests.
+- [x] Refresh the active date at midnight and after time-zone changes.
+- [x] Inject clock, calendar and locale dependencies for boundary tests.
 - [x] Preserve selection across navigation and app lifecycle transitions.
 
 Exit: every entry surface resolves to the same correct day.

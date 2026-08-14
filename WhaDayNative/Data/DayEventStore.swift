@@ -14,12 +14,11 @@ enum DayEventStore {
     static let days: [DayEvent] = load(language)
     private static let daysByID = Dictionary(uniqueKeysWithValues: days.map { ($0.id, $0) })
 
-    static func today() -> DayEvent? {
-        let now = Date()
-        let calendar = Calendar.current
-        let month = calendar.component(.month, from: now)
-        let day = calendar.component(.day, from: now)
-        return event(month: month, day: day)
+    static func today(
+        at date: Date = Date(),
+        calendar: Calendar = .current
+    ) -> DayEvent? {
+        event(id: DayDateResolver.dayID(at: date, calendar: calendar))
     }
 
     static func event(month: Int, day: Int) -> DayEvent? {

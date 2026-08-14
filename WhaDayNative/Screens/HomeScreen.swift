@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @EnvironmentObject private var dateContext: AppDateContext
+
     @Binding var selectedDay: DayEvent?
     let onOpenCalendar: () -> Void
     let onOpenSettings: () -> Void
@@ -43,7 +45,7 @@ struct HomeScreen: View {
         }
         .onAppear {
             if activeID == nil {
-                activeID = (selectedDay ?? DayEventStore.today())?.id ?? days.first?.id
+                activeID = (selectedDay ?? DayEventStore.event(id: dateContext.dayID))?.id ?? days.first?.id
                 syncSideEffects(for: activeEvent)
             }
             withAnimation(.easeOut(duration: 0.45)) { appeared = true }
@@ -57,8 +59,12 @@ struct HomeScreen: View {
                 activeID = newID
             }
         }
-        .task(id: activeID) {
-            await refreshAtNextDayBoundary()
+        .onChange(of: dateContext.dayID) { previousID, newID in
+            guard previousID != newID else { return }
+            if activeID == previousID {
+                activeID = newID
+            }
+            WidgetDataWriter.save(event: DayEventStore.event(id: newID))
         }
         .sheet(item: $contextEvent) { event in
             DayContextSheet(event: event, colors: ThemeColors.forEvent(event))
@@ -71,43 +77,6 @@ struct HomeScreen: View {
     private func syncSideEffects(for event: DayEvent?) {
         selectedDay = event
         WidgetDataWriter.save(event: event)
-    }
-
-    private func refreshAtNextDayBoundary() async {
-        let calendar = Calendar.current
-        let now = Date()
-        guard let nextDay = calendar.nextDate(
-            after: now,
-            matching: DateComponents(hour: 0, minute: 0, second: 1),
-            matchingPolicy: .nextTime
-        ) else {
-            return
-        }
-
-        let previousTodayID = DayEventStore.today()?.id
-        let delay = max(1, nextDay.timeIntervalSince(now))
-        do {
-            try await Task.sleep(for: .seconds(delay))
-        } catch {
-            return
-        }
-        guard !Task.isCancelled else { return }
-
-        let components = calendar.dateComponents([.month, .day], from: Date())
-        guard
-            let month = components.month,
-            let day = components.day,
-            let newToday = DayEventStore.event(month: month, day: day)
-        else {
-            return
-        }
-
-        // Keep an intentionally browsed day in place. Follow midnight only when
-        // the pager was showing the day that just ended.
-        if activeID == previousTodayID {
-            activeID = newToday.id
-        }
-        WidgetDataWriter.save(event: newToday)
     }
 
     private var header: some View {
@@ -293,10 +262,10 @@ struct HomeScreen: View {
 
     private func formattedDate(for event: DayEvent) -> String {
         var components = DateComponents()
-        components.year = Calendar.current.component(.year, from: Date())
+        components.year = dateContext.calendar.component(.year, from: dateContext.now)
         components.month = event.month
         components.day = event.day
-        guard let date = Calendar.current.date(from: components) else { return "" }
+        guard let date = dateContext.calendar.date(from: components) else { return "" }
 
         let formatter = DateFormatter()
         formatter.locale = DayEventStore.dateLocale

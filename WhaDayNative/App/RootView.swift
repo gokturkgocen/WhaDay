@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 private enum Screen {
     case home, calendar, settings
@@ -8,6 +9,7 @@ struct RootView: View {
     @Environment(\.scenePhase) private var scenePhase
     @StateObject private var personalLibrary = PersonalDayLibrary()
     @StateObject private var routeCenter = AppRouteCenter.shared
+    @StateObject private var dateContext = AppDateContext()
     @State private var screen: Screen = .home
     @State private var selectedDay: DayEvent?
     @State private var shareEvent: DayEvent?
@@ -38,9 +40,13 @@ struct RootView: View {
             }
         }
         .environmentObject(personalLibrary)
+        .environmentObject(dateContext)
         .task {
             Haptics.prepare()
             await NotificationScheduler.scheduleIfAuthorized()
+        }
+        .task {
+            await monitorDayBoundaries()
         }
         .onOpenURL { url in
             routeCenter.open(url)
@@ -56,7 +62,17 @@ struct RootView: View {
         }
         .onChange(of: scenePhase) { _, newPhase in
             guard newPhase == .active else { return }
+            dateContext.refresh()
             Task { await NotificationScheduler.scheduleIfAuthorized() }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.significantTimeChangeNotification)) { _ in
+            handleTemporalChange()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name.NSSystemTimeZoneDidChange)) { _ in
+            handleTemporalChange()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSLocale.currentLocaleDidChangeNotification)) { _ in
+            handleTemporalChange()
         }
     }
 
@@ -88,5 +104,29 @@ struct RootView: View {
         }
 
         routeCenter.consume(request.id)
+    }
+
+    private func handleTemporalChange() {
+        dateContext.refresh()
+        WidgetDataWriter.save(event: DayEventStore.event(id: dateContext.dayID))
+        Task { await NotificationScheduler.scheduleIfAuthorized() }
+    }
+
+    private func monitorDayBoundaries() async {
+        while !Task.isCancelled {
+            let now = Date()
+            let calendar = Calendar.current
+            guard let boundary = DayDateResolver.nextDayBoundary(after: now, calendar: calendar) else {
+                return
+            }
+
+            do {
+                try await Task.sleep(for: .seconds(max(1, boundary.timeIntervalSince(now))))
+            } catch {
+                return
+            }
+            guard !Task.isCancelled else { return }
+            handleTemporalChange()
+        }
     }
 }

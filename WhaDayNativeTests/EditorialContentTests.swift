@@ -342,6 +342,34 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertNil(AppRoute.notificationRoute(userInfo: ["type": "morning"]))
     }
 
+    func testDayResolutionUsesTheInjectedTimeZone() {
+        let instant = ISO8601DateFormatter().date(from: "2026-08-13T21:30:00Z")!
+        var istanbul = Calendar(identifier: .gregorian)
+        istanbul.timeZone = TimeZone(identifier: "Europe/Istanbul")!
+        var losAngeles = Calendar(identifier: .gregorian)
+        losAngeles.timeZone = TimeZone(identifier: "America/Los_Angeles")!
+
+        XCTAssertEqual(DayDateResolver.dayID(at: instant, calendar: istanbul), "08-14")
+        XCTAssertEqual(DayDateResolver.dayID(at: instant, calendar: losAngeles), "08-13")
+        XCTAssertEqual(DayEventStore.today(at: instant, calendar: istanbul)?.id, "08-14")
+        XCTAssertEqual(DayEventStore.today(at: instant, calendar: losAngeles)?.id, "08-13")
+    }
+
+    func testNextBoundaryIsTheNextLocalMidnight() {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(identifier: "Europe/Istanbul")!
+        let instant = ISO8601DateFormatter().date(from: "2026-08-13T21:30:00Z")!
+        let boundary = DayDateResolver.nextDayBoundary(after: instant, calendar: calendar)
+        let components = boundary.map { calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: $0) }
+
+        XCTAssertEqual(components?.year, 2026)
+        XCTAssertEqual(components?.month, 8)
+        XCTAssertEqual(components?.day, 15)
+        XCTAssertEqual(components?.hour, 0)
+        XCTAssertEqual(components?.minute, 0)
+        XCTAssertEqual(components?.second, 1)
+    }
+
     func testSensitiveMetadataCannotBePromotedAsEngagementContent() {
         for metadata in DayMetadataStore.entries where metadata.sensitivity != .standard {
             XCTAssertFalse(metadata.canBePromotedForEngagement, metadata.id)
