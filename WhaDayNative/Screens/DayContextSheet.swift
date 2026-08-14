@@ -46,12 +46,12 @@ struct DayContextSheet: View {
                     Text(personalLibrary.isSaved(event)
                          ? (DayEventStore.language == "tr" ? "Sonra göndermek için kaydedildi" : "Saved to send later")
                          : (DayEventStore.language == "tr" ? "Sonra göndermek için kaydet" : "Save to send later"))
-                        .font(.system(size: 14, weight: .black, design: .rounded))
+                        .appFont(size: 14, weight: .black, relativeTo: .headline)
 
                     Text(DayEventStore.language == "tr"
                          ? "Yalnızca bu cihazda saklanır."
                          : "Stored only on this device.")
-                        .font(.system(size: 11, weight: .semibold, design: .rounded))
+                        .appFont(size: 11, weight: .semibold, relativeTo: .caption)
                         .opacity(0.56)
                 }
 
@@ -63,16 +63,17 @@ struct DayContextSheet: View {
         }
         .buttonStyle(.plain)
         .contextCard(colors: colors)
+        .accessibilityValue(personalLibrary.isSaved(event) ? AccessibilityCopy.selected : "")
     }
 
     private var header: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
-                    .font(.system(size: 27, weight: .black, design: .rounded))
+                    .appFont(size: 27, weight: .black, relativeTo: .title)
                     .tracking(-0.8)
                 Text(event.title)
-                    .font(.system(size: 13, weight: .bold, design: .rounded))
+                    .appFont(size: 13, weight: .bold, relativeTo: .subheadline)
                     .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.58))
                     .lineLimit(2)
             }
@@ -82,11 +83,12 @@ struct DayContextSheet: View {
             Button { dismiss() } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 14, weight: .black))
-                    .frame(width: 40, height: 40)
+                    .frame(width: 44, height: 44)
                     .background(Color.white.opacity(0.08))
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Kapat" : "Close")
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
         .padding(.top, 8)
@@ -103,11 +105,11 @@ struct DayContextSheet: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(provenance.label)
-                    .font(.system(size: 15, weight: .black, design: .rounded))
+                    .appFont(size: 15, weight: .black, relativeTo: .headline)
                 Text(provenance.isOfficial
                      ? (DayEventStore.language == "tr" ? "Birincil kurum takvimiyle eşleşiyor" : "Matches a primary institution calendar")
                      : (DayEventStore.language == "tr" ? "Statüsü açıkça belirtilir" : "Its status is stated clearly"))
-                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                    .appFont(size: 12, weight: .semibold, relativeTo: .subheadline)
                     .opacity(0.58)
             }
             Spacer()
@@ -118,10 +120,10 @@ struct DayContextSheet: View {
     private var contextCard: some View {
         VStack(alignment: .leading, spacing: 12) {
             Label(DayEventStore.language == "tr" ? "WhaDay notu" : "WhaDay note", systemImage: "text.quote")
-                .font(.system(size: 14, weight: .black, design: .rounded))
+                .appFont(size: 14, weight: .black, relativeTo: .headline)
 
             Text(editorial.fact)
-                .font(.system(size: 18, weight: .bold, design: .rounded))
+                .appFont(size: 18, weight: .bold, relativeTo: .body)
                 .lineSpacing(4)
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.86))
         }
@@ -131,10 +133,10 @@ struct DayContextSheet: View {
     private var sourceCard: some View {
         VStack(alignment: .leading, spacing: 13) {
             Label(DayEventStore.language == "tr" ? "Statü ve kaynak" : "Status and source", systemImage: "link")
-                .font(.system(size: 14, weight: .black, design: .rounded))
+                .appFont(size: 14, weight: .black, relativeTo: .headline)
 
             Text(provenance.explanation)
-                .font(.system(size: 14, weight: .semibold, design: .rounded))
+                .appFont(size: 14, weight: .semibold, relativeTo: .body)
                 .lineSpacing(3)
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.66))
 
@@ -145,10 +147,10 @@ struct DayContextSheet: View {
                         Spacer()
                         Image(systemName: "arrow.up.right")
                     }
-                    .font(.system(size: 13, weight: .black, design: .rounded))
+                    .appFont(size: 13, weight: .black, relativeTo: .callout)
                     .foregroundStyle(Color(hex: colors.ink))
                     .padding(.horizontal, 15)
-                    .frame(height: 44)
+                    .frame(minHeight: 44)
                     .background(Color(hex: colors.accent))
                     .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
                 }
@@ -158,17 +160,28 @@ struct DayContextSheet: View {
     }
 }
 
-private extension View {
-    func contextCard(colors: ThemeColors) -> some View {
-        self
+private struct ContextCardModifier: ViewModifier {
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.colorSchemeContrast) private var contrast
+
+    let colors: ThemeColors
+
+    func body(content: Content) -> some View {
+        content
             .padding(18)
             .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundStyle(Color(hex: colors.onBackdrop))
-            .background(Color(hex: colors.backdropRaised).opacity(0.94))
+            .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.94))
             .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .strokeBorder(Color.white.opacity(0.11), lineWidth: 1)
+                    .strokeBorder(Color.white.opacity(contrast == .increased ? 0.34 : 0.11), lineWidth: contrast == .increased ? 2 : 1)
             )
+    }
+}
+
+private extension View {
+    func contextCard(colors: ThemeColors) -> some View {
+        modifier(ContextCardModifier(colors: colors))
     }
 }

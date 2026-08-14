@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var dateContext: AppDateContext
 
     @Binding var selectedDay: DayEvent?
@@ -27,23 +29,18 @@ struct HomeScreen: View {
         ZStack {
             AmbientTimelineView { elapsed in
                 EditorialBackground(colors: themeColors, elapsed: elapsed)
-                    .animation(.easeInOut(duration: 0.45), value: activeEvent?.category)
+                    .animation(reduceMotion ? nil : .easeInOut(duration: 0.45), value: activeEvent?.category)
             }
 
-            VStack(spacing: 0) {
-                header
-                dayPager
-
-                if let event = activeEvent {
-                    ActionButtons(
-                        event: event,
-                        prompt: EditorialContent.forEvent(event).prompt,
-                        colors: themeColors
-                    )
+            Group {
+                if dynamicTypeSize.isAccessibilitySize {
+                    accessibilityHome
+                } else {
+                    standardHome
                 }
             }
-            .opacity(appeared ? 1 : 0)
-            .offset(y: appeared ? 0 : 18)
+            .opacity(reduceMotion || appeared ? 1 : 0)
+            .offset(y: reduceMotion || appeared ? 0 : 18)
 
             if !hasCompletedCoach {
                 FirstUseCoachView(
@@ -55,7 +52,7 @@ struct HomeScreen: View {
                 .padding(.horizontal, 20)
                 .padding(.bottom, 92)
                 .frame(maxHeight: .infinity, alignment: .bottom)
-                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .transition(reduceMotion ? .identity : .move(edge: .bottom).combined(with: .opacity))
                 .zIndex(10)
             }
         }
@@ -64,14 +61,14 @@ struct HomeScreen: View {
                 activeID = (selectedDay ?? DayEventStore.event(id: dateContext.dayID))?.id ?? days.first?.id
                 syncSideEffects(for: activeEvent)
             }
-            withAnimation(.easeOut(duration: 0.45)) { appeared = true }
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.45)) { appeared = true }
         }
         .onChange(of: activeID) { _, _ in
             syncSideEffects(for: activeEvent)
         }
         .onChange(of: selectedDay?.id) { _, newID in
             guard let newID, newID != activeID else { return }
-            withAnimation(.easeInOut(duration: 0.28)) {
+            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.28)) {
                 activeID = newID
             }
         }
@@ -100,16 +97,79 @@ struct HomeScreen: View {
         if coachStep >= 2 {
             completeCoach()
         } else {
-            withAnimation(.spring(response: 0.35, dampingFraction: 0.84)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.35, dampingFraction: 0.84)) {
                 coachStep += 1
             }
         }
     }
 
     private func completeCoach() {
-        withAnimation(.easeInOut(duration: 0.24)) {
+        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.24)) {
             hasCompletedCoach = true
         }
+    }
+
+    private var standardHome: some View {
+        VStack(spacing: 0) {
+            header
+            dayPager
+
+            if let event = activeEvent {
+                actionButtons(for: event)
+            }
+        }
+    }
+
+    private var accessibilityHome: some View {
+        ScrollView {
+            VStack(spacing: 12) {
+                header
+
+                if let event = activeEvent {
+                    accessibilityDayNavigation(event)
+                    dayPage(event)
+                    actionButtons(for: event)
+                }
+            }
+            .padding(.bottom, 20)
+        }
+        .scrollIndicators(.hidden)
+    }
+
+    private func actionButtons(for event: DayEvent) -> some View {
+        ActionButtons(
+            event: event,
+            prompt: EditorialContent.forEvent(event).prompt,
+            colors: themeColors
+        )
+    }
+
+    private func accessibilityDayNavigation(_ event: DayEvent) -> some View {
+        HStack {
+            Button {
+                moveDay(from: event, offset: -1)
+            } label: {
+                Label(DayEventStore.language == "tr" ? "Önceki" : "Previous", systemImage: "chevron.left")
+                    .labelStyle(.iconOnly)
+            }
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Önceki gün" : "Previous day")
+            .minimumAccessibleTarget()
+
+            Spacer()
+
+            Button {
+                moveDay(from: event, offset: 1)
+            } label: {
+                Label(DayEventStore.language == "tr" ? "Sonraki" : "Next", systemImage: "chevron.right")
+                    .labelStyle(.iconOnly)
+            }
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Sonraki gün" : "Next day")
+            .minimumAccessibleTarget()
+        }
+        .appFont(size: 14, weight: .black, relativeTo: .headline)
+        .foregroundStyle(Color(hex: themeColors.onBackdrop))
+        .buttonStyle(.borderless)
+        .padding(.horizontal, 24)
     }
 
     private var header: some View {
@@ -120,8 +180,10 @@ struct HomeScreen: View {
                     .scaleEffect(0.68)
 
                 Text("WhaDay")
-                    .font(.system(size: 23, weight: .black, design: .rounded))
+                    .appFont(size: 23, weight: .black, relativeTo: .title2)
                     .tracking(-0.8)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.58)
             }
             .foregroundStyle(Color(hex: themeColors.onBackdrop))
 
@@ -149,6 +211,9 @@ struct HomeScreen: View {
                 .overlay(Circle().strokeBorder(Color.white.opacity(0.13), lineWidth: 1))
         }
         .buttonStyle(.plain)
+        .minimumAccessibleTarget()
+        .accessibilityLabel(headerButtonLabel(systemName))
+        .accessibilityIdentifier("home.\(systemName == "calendar" ? "calendar" : "settings")")
     }
 
     private var dayPager: some View {
@@ -173,23 +238,26 @@ struct HomeScreen: View {
 
         return VStack(spacing: 12) {
             HStack {
-                Text(formattedDate(for: day).uppercased())
-                    .font(.system(size: 12, weight: .black, design: .rounded))
+                Text((dynamicTypeSize.isAccessibilitySize ? formattedCompactDate(for: day) : formattedDate(for: day)).uppercased())
+                    .appFont(size: 12, weight: .black, relativeTo: .caption)
                     .tracking(1.2)
 
                 Spacer()
 
-                Text(dayPosition(day))
-                    .font(.system(size: 12, weight: .bold, design: .monospaced))
+                if !dynamicTypeSize.isAccessibilitySize {
+                    Text(dayPosition(day))
+                        .appFont(size: 12, weight: .bold, design: .monospaced, relativeTo: .caption)
+                }
             }
             .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.58))
             .padding(.horizontal, 28)
 
             VStack(alignment: .leading, spacing: 0) {
                 HStack(alignment: .top) {
-                    Text(editorial.eyebrow)
-                        .font(.system(size: 11, weight: .black, design: .rounded))
+                    Text(dynamicTypeSize.isAccessibilitySize ? accessibleEyebrow(for: editorial) : editorial.eyebrow)
+                        .appFont(size: 11, weight: .black, relativeTo: .caption)
                         .tracking(1.5)
+                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? 2 : 1)
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
                         .background(Color(hex: colors.ink).opacity(0.88))
@@ -210,10 +278,14 @@ struct HomeScreen: View {
                 Spacer(minLength: 12)
 
                 Text(day.title)
-                    .font(.system(size: titleSize(for: day.title), weight: .black, design: .rounded))
+                    .appFont(
+                        size: dynamicTypeSize.isAccessibilitySize ? 22 : titleSize(for: day.title),
+                        weight: .black,
+                        relativeTo: .largeTitle
+                    )
                     .tracking(-1.5)
                     .foregroundStyle(Color(hex: colors.ink))
-                    .lineLimit(4)
+                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 4)
                     .minimumScaleFactor(0.72)
                     .fixedSize(horizontal: false, vertical: true)
 
@@ -223,10 +295,10 @@ struct HomeScreen: View {
                     .padding(.vertical, 18)
 
                 Text(editorial.fact)
-                    .font(.system(size: 17, weight: .semibold, design: .rounded))
+                    .appFont(size: 17, weight: .semibold, relativeTo: .body)
                     .lineSpacing(3)
                     .foregroundStyle(Color(hex: colors.ink).opacity(0.82))
-                    .lineLimit(4)
+                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 4)
                     .minimumScaleFactor(0.86)
 
                 Spacer(minLength: 16)
@@ -239,10 +311,10 @@ struct HomeScreen: View {
                         Image(systemName: DayProvenance.forEvent(day).isOfficial ? "checkmark.seal.fill" : "info.circle.fill")
                         Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
                     }
-                    .font(.system(size: 12, weight: .black, design: .rounded))
+                    .appFont(size: 12, weight: .black, relativeTo: .caption)
                     .foregroundStyle(Color(hex: colors.ink).opacity(0.80))
                     .padding(.horizontal, 12)
-                    .frame(height: 34)
+                    .frame(minHeight: 44)
                     .background(Color(hex: colors.ink).opacity(0.10))
                     .clipShape(Capsule())
                 }
@@ -255,8 +327,8 @@ struct HomeScreen: View {
                         .frame(width: 22, height: 22)
                         .scaleEffect(0.52)
                     Text(editorial.prompt)
-                        .font(.system(size: 13, weight: .black, design: .rounded))
-                        .lineLimit(2)
+                        .appFont(size: 13, weight: .black, relativeTo: .callout)
+                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 2)
                 }
                 .foregroundStyle(Color(hex: colors.ink))
             }
@@ -279,6 +351,7 @@ struct HomeScreen: View {
             .padding(.bottom, 8)
         }
         .padding(.top, 4)
+        .accessibilityElement(children: .contain)
     }
 
     private func titleSize(for title: String) -> CGFloat {
@@ -304,5 +377,38 @@ struct HomeScreen: View {
         formatter.locale = DayEventStore.dateLocale
         formatter.setLocalizedDateFormatFromTemplate("d MMMM EEEE")
         return formatter.string(from: date)
+    }
+
+    private func formattedCompactDate(for event: DayEvent) -> String {
+        var components = DateComponents()
+        components.year = dateContext.calendar.component(.year, from: dateContext.now)
+        components.month = event.month
+        components.day = event.day
+        guard let date = dateContext.calendar.date(from: components) else { return "" }
+
+        let formatter = DateFormatter()
+        formatter.locale = DayEventStore.dateLocale
+        formatter.setLocalizedDateFormatFromTemplate("d MMM")
+        return formatter.string(from: date)
+    }
+
+    private func accessibleEyebrow(for editorial: EditorialContent) -> String {
+        if editorial.tone == .remembrance {
+            return DayEventStore.language == "tr" ? "NOT" : "NOTE"
+        }
+        return DayEventStore.language == "tr" ? "BUGÜN" : "TODAY"
+    }
+
+    private func headerButtonLabel(_ systemName: String) -> String {
+        if systemName == "calendar" {
+            return DayEventStore.language == "tr" ? "Takvimi aç" : "Open calendar"
+        }
+        return DayEventStore.language == "tr" ? "WhaDay hakkında ve ayarlar" : "About WhaDay and settings"
+    }
+
+    private func moveDay(from event: DayEvent, offset: Int) {
+        guard let index = days.firstIndex(of: event) else { return }
+        let newIndex = min(max(index + offset, days.startIndex), days.index(before: days.endIndex))
+        activeID = days[newIndex].id
     }
 }

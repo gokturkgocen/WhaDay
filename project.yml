@@ -88,3 +88,15 @@ targets:
       base:
         GENERATE_INFOPLIST_FILE: YES
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.tests
+
+  WhaDayNativeUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: WhaDayNativeUITests
+    dependencies:
+      - target: WhaDayNative
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.uitests

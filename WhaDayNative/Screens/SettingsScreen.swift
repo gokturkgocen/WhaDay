@@ -55,11 +55,12 @@ struct SettingsScreen: View {
                     .overlay(Circle().strokeBorder(Color.white.opacity(0.14), lineWidth: 1))
             }
             .buttonStyle(.plain)
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Geri" : "Back")
 
             Spacer()
 
             Text(DayEventStore.language == "tr" ? "WhaDay Hakkında" : "About WhaDay")
-                .font(.system(size: 21, weight: .black, design: .rounded))
+                .appFont(size: 21, weight: .black, relativeTo: .title2)
                 .foregroundStyle(Color(hex: colors.onBackdrop))
 
             Spacer()
@@ -72,13 +73,14 @@ struct SettingsScreen: View {
         VStack(alignment: .leading, spacing: 18) {
             BrandMark(color: Color(hex: colors.secondary))
             Text(DayEventStore.language == "tr" ? "Her gün, birine yazmak için yeni bir bahane." : "Every day, a new reason to text someone.")
-                .font(.system(size: 31, weight: .black, design: .rounded))
+                .appFont(size: 31, weight: .black, relativeTo: .largeTitle)
                 .tracking(-1)
                 .foregroundStyle(Color(hex: colors.onBackdrop))
+                .accessibilityAddTraits(.isHeader)
             Text(DayEventStore.language == "tr"
                  ? "WhaDay takvimdeki ilginç günleri, arkadaşlarınla paylaşabileceğin küçük anlara dönüştürür."
                  : "WhaDay turns curious calendar days into small moments worth sharing with friends.")
-                .font(.system(size: 16, weight: .semibold, design: .rounded))
+                .appFont(size: 16, weight: .semibold, relativeTo: .body)
                 .lineSpacing(3)
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.68))
         }
@@ -88,20 +90,21 @@ struct SettingsScreen: View {
     private var reminderCard: some View {
         VStack(alignment: .leading, spacing: 14) {
             Label(DayEventStore.language == "tr" ? "Günün bahanesini kaçırma" : "Never miss today's excuse", systemImage: "bell.badge")
-                .font(.system(size: 17, weight: .black, design: .rounded))
+                .appFont(size: 17, weight: .black, relativeTo: .headline)
+                .accessibilityAddTraits(.isHeader)
 
             Text(DayEventStore.language == "tr"
                  ? "Her sabah, o gün kime yazabileceğini hatırlatan tek bir kart."
                  : "One calm morning card with a reason to text someone that day.")
-                .font(.system(size: 14, weight: .semibold, design: .rounded))
+                .appFont(size: 14, weight: .semibold, relativeTo: .subheadline)
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.62))
 
             Toggle(isOn: reminderToggle) {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(DayEventStore.language == "tr" ? "Günlük hatırlatıcı" : "Daily reminder")
-                        .font(.system(size: 15, weight: .black, design: .rounded))
+                        .appFont(size: 15, weight: .black, relativeTo: .body)
                     Text(reminderStatusText)
-                        .font(.system(size: 11, weight: .semibold, design: .rounded))
+                        .appFont(size: 11, weight: .semibold, relativeTo: .caption)
                         .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
                 }
             }
@@ -110,12 +113,13 @@ struct SettingsScreen: View {
             if reminderPreferences.isEnabled {
                 HStack {
                     Label(DayEventStore.language == "tr" ? "Hatırlatma saati" : "Reminder time", systemImage: "clock.fill")
-                        .font(.system(size: 13, weight: .black, design: .rounded))
+                        .appFont(size: 13, weight: .black, relativeTo: .callout)
                     Spacer()
                     DatePicker("", selection: reminderTime, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                         .datePickerStyle(.compact)
                         .tint(Color(hex: colors.accent))
+                        .accessibilityLabel(DayEventStore.language == "tr" ? "Hatırlatma saati" : "Reminder time")
                 }
                 .padding(.horizontal, 14)
                 .frame(minHeight: 48)
@@ -129,10 +133,10 @@ struct SettingsScreen: View {
                     openURL(url)
                 } label: {
                     Label(DayEventStore.language == "tr" ? "Sistem Ayarlarını aç" : "Open System Settings", systemImage: "gear")
-                        .font(.system(size: 13, weight: .black, design: .rounded))
+                        .appFont(size: 13, weight: .black, relativeTo: .callout)
                         .foregroundStyle(Color(hex: colors.ink))
                         .padding(.horizontal, 16)
-                        .frame(height: 42)
+                        .frame(minHeight: 44)
                         .background(Color(hex: colors.accent))
                         .clipShape(Capsule())
                 }
@@ -216,8 +220,8 @@ struct SettingsScreen: View {
             Image(systemName: icon)
                 .frame(width: 28)
             VStack(alignment: .leading, spacing: 2) {
-                Text(title).font(.system(size: 14, weight: .black, design: .rounded))
-                Text(value).font(.system(size: 12, weight: .semibold, design: .rounded)).opacity(0.62)
+                Text(title).appFont(size: 14, weight: .black, relativeTo: .body)
+                Text(value).appFont(size: 12, weight: .semibold, relativeTo: .caption).opacity(0.62)
             }
             Spacer()
         }
@@ -225,17 +229,28 @@ struct SettingsScreen: View {
     }
 }
 
-private extension View {
-    func cardStyle(colors: ThemeColors) -> some View {
-        self
+private struct SettingsCardModifier: ViewModifier {
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.colorSchemeContrast) private var contrast
+
+    let colors: ThemeColors
+
+    func body(content: Content) -> some View {
+        content
             .padding(22)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color(hex: colors.backdropRaised).opacity(0.92))
+            .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.92))
             .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 26, style: .continuous)
-                    .strokeBorder(Color.white.opacity(0.11), lineWidth: 1)
+                    .strokeBorder(Color.white.opacity(contrast == .increased ? 0.34 : 0.11), lineWidth: contrast == .increased ? 2 : 1)
             )
             .shadow(color: Color.black.opacity(0.22), radius: 20, x: 0, y: 10)
+    }
+}
+
+private extension View {
+    func cardStyle(colors: ThemeColors) -> some View {
+        modifier(SettingsCardModifier(colors: colors))
     }
 }

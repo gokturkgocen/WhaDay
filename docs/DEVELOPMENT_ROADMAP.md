@@ -88,12 +88,16 @@ Exit: widgets remain correct and useful independently of the app process.
 
 ## Phase 7 — Accessibility and device matrix
 
-- [ ] Support all Dynamic Type sizes without losing core information.
+- [x] Support all Dynamic Type sizes without losing core information.
 - [ ] Complete VoiceOver labels, grouping, order and state announcements.
-- [ ] Honor Reduce Motion, Increase Contrast and Reduce Transparency.
-- [ ] Enforce 44-point targets and avoid color-only state.
-- [ ] Test compact, standard and large iPhones in both languages.
+- [x] Honor Reduce Motion, Increase Contrast and Reduce Transparency.
+- [x] Enforce 44-point targets and avoid color-only state.
+- [x] Test compact, standard and large iPhones in both languages.
 - [ ] Complete the core journey without sight.
+
+Evidence: [`ACCESSIBILITY_EVIDENCE.md`](ACCESSIBILITY_EVIDENCE.md). The two
+remaining items require an actual VoiceOver traversal; automated labels and UI
+identifiers are not treated as a substitute.
 
 Exit: accessibility is a supported experience, not a launch exception list.
 

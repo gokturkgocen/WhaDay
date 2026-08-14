@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct EditorialBackground: View {
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.colorSchemeContrast) private var contrast
+
     let colors: ThemeColors
     let elapsed: TimeInterval
 
@@ -15,21 +18,23 @@ struct EditorialBackground: View {
                     endPoint: .bottomTrailing
                 )
 
-                Circle()
-                    .fill(Color(hex: colors.accent).opacity(0.36))
-                    .frame(width: geometry.size.width * 1.05)
-                    .blur(radius: 90)
-                    .scaleEffect(0.94 + drift * 0.12)
-                    .position(x: geometry.size.width * 0.86, y: geometry.size.height * 0.16)
+                if !reduceTransparency && contrast != .increased {
+                    Circle()
+                        .fill(Color(hex: colors.accent).opacity(0.36))
+                        .frame(width: geometry.size.width * 1.05)
+                        .blur(radius: 90)
+                        .scaleEffect(0.94 + drift * 0.12)
+                        .position(x: geometry.size.width * 0.86, y: geometry.size.height * 0.16)
 
-                Circle()
-                    .fill(Color(hex: colors.secondary).opacity(0.18))
-                    .frame(width: geometry.size.width * 0.78)
-                    .blur(radius: 100)
-                    .position(x: geometry.size.width * 0.05, y: geometry.size.height * 0.87)
+                    Circle()
+                        .fill(Color(hex: colors.secondary).opacity(0.18))
+                        .frame(width: geometry.size.width * 0.78)
+                        .blur(radius: 100)
+                        .position(x: geometry.size.width * 0.05, y: geometry.size.height * 0.87)
 
-                grid(in: geometry.size)
-                    .foregroundStyle(Color.white.opacity(0.045))
+                    grid(in: geometry.size)
+                        .foregroundStyle(Color.white.opacity(0.045))
+                }
             }
             .clipped()
         }

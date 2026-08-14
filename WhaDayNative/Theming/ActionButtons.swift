@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ActionButtons: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+
     let event: DayEvent
     let prompt: String
     let colors: ThemeColors
@@ -15,14 +17,15 @@ struct ActionButtons: View {
             } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "paperplane.fill")
-                    Text(prompt)
-                        .lineLimit(1)
+                    Text(buttonTitle)
+                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 1)
                         .minimumScaleFactor(0.76)
+                        .fixedSize(horizontal: false, vertical: dynamicTypeSize.isAccessibilitySize)
                     Spacer(minLength: 4)
                     Image(systemName: "sparkles")
                         .font(.system(size: 13, weight: .black))
                 }
-                .font(.system(size: 16, weight: .black, design: .rounded))
+                .appFont(size: 16, weight: .black, relativeTo: .headline)
                 .foregroundStyle(Color(hex: colors.ink))
                 .padding(.horizontal, 20)
                 .frame(maxWidth: .infinity, minHeight: 56)
@@ -30,13 +33,18 @@ struct ActionButtons: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .shadow(color: Color(hex: colors.accent).opacity(0.22), radius: 18, x: 0, y: 9)
             }
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Gönderim Stüdyosunu aç. \(prompt)" : "Open Share Studio. \(prompt)")
+            .accessibilityIdentifier("home.share")
 
-            HStack(spacing: 16) {
-                studioCapability("message.fill", DayEventStore.language == "tr" ? "Mesaj" : "Message")
-                studioCapability("rectangle.portrait", "Story")
-                studioCapability("paintpalette.fill", DayEventStore.language == "tr" ? "3 tasarım" : "3 styles")
+            if !dynamicTypeSize.isAccessibilitySize {
+                HStack(spacing: 16) {
+                    studioCapability("message.fill", DayEventStore.language == "tr" ? "Mesaj" : "Message")
+                    studioCapability("rectangle.portrait", "Story")
+                    studioCapability("paintpalette.fill", DayEventStore.language == "tr" ? "3 tasarım" : "3 styles")
+                }
+                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
+                .accessibilityHidden(true)
             }
-            .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
         }
         .buttonStyle(.plain)
         .padding(.horizontal, 20)
@@ -52,6 +60,11 @@ struct ActionButtons: View {
 
     private func studioCapability(_ symbol: String, _ label: String) -> some View {
         Label(label, systemImage: symbol)
-            .font(.system(size: 11, weight: .bold, design: .rounded))
+            .appFont(size: 11, weight: .bold, relativeTo: .caption)
+    }
+
+    private var buttonTitle: String {
+        guard dynamicTypeSize.isAccessibilitySize else { return prompt }
+        return DayEventStore.language == "tr" ? "Paylaşım stüdyosunu aç" : "Open Share Studio"
     }
 }

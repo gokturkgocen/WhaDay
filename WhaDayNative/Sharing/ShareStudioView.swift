@@ -2,7 +2,10 @@ import SwiftUI
 import UIKit
 
 struct ShareStudioView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     let event: DayEvent
     let colors: ThemeColors
@@ -15,6 +18,10 @@ struct ShareStudioView: View {
     @State private var renderFailed = false
 
     private let personalizations: [SharePersonalization]
+
+    private var usesExpandedChoiceCards: Bool {
+        dynamicTypeSize >= .xxLarge
+    }
 
     init(event: DayEvent, colors: ThemeColors) {
         self.event = event
@@ -68,13 +75,13 @@ struct ShareStudioView: View {
         HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 4) {
                 Text(DayEventStore.language == "tr" ? "Gönderim Stüdyosu" : "Share Studio")
-                    .font(.system(size: 28, weight: .black, design: .rounded))
+                    .appFont(size: dynamicTypeSize.isAccessibilitySize ? 22 : 28, weight: .black, relativeTo: .title)
                     .tracking(-0.8)
 
                 Text(DayEventStore.language == "tr"
                      ? "Kartı kişiye ve kanala göre hazırla."
                      : "Make the card fit the person and the channel.")
-                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .appFont(size: 13, weight: .semibold, relativeTo: .subheadline)
                     .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.58))
             }
 
@@ -85,26 +92,44 @@ struct ShareStudioView: View {
             } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 14, weight: .black))
-                    .frame(width: 40, height: 40)
+                    .frame(width: 44, height: 44)
                     .background(Color.white.opacity(0.08))
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Kapat" : "Close")
+            .accessibilityIdentifier("share.close")
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
     }
 
     private var formatControl: some View {
-        HStack(spacing: 8) {
-            ForEach(ShareCardFormat.allCases) { option in
-                selectionPill(
-                    title: option.title,
-                    symbol: option == .story ? "rectangle.portrait" : "message.fill",
-                    isSelected: format == option
-                ) {
-                    Haptics.triggerLight()
-                    withAnimation(.easeInOut(duration: 0.22)) { format = option }
+        Group {
+            if dynamicTypeSize.isAccessibilitySize {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 8) {
+                        formatButtons
+                    }
                 }
+                .scrollIndicators(.hidden)
+            } else {
+                HStack(spacing: 8) {
+                    formatButtons
+                }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var formatButtons: some View {
+        ForEach(ShareCardFormat.allCases) { option in
+            selectionPill(
+                title: option.title,
+                symbol: option == .story ? "rectangle.portrait" : "message.fill",
+                isSelected: format == option
+            ) {
+                Haptics.triggerLight()
+                withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.22)) { format = option }
             }
         }
     }
@@ -126,11 +151,15 @@ struct ShareStudioView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .id("\(format.rawValue)-\(style.rawValue)-\(selectedPersonalization.id)")
             .transition(.opacity.combined(with: .scale(scale: 0.98)))
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(DayEventStore.language == "tr"
+                                ? "Kart önizlemesi, \(style.title), \(format.title)"
+                                : "Card preview, \(style.title), \(format.title)")
         }
         .frame(height: format == .story ? 350 : 300)
-        .animation(.easeInOut(duration: 0.22), value: format)
-        .animation(.easeInOut(duration: 0.22), value: style)
-        .animation(.easeInOut(duration: 0.22), value: selectedPersonalization.id)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.22), value: format)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.22), value: style)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.22), value: selectedPersonalization.id)
     }
 
     private var recipientSection: some View {
@@ -148,14 +177,14 @@ struct ShareStudioView: View {
                             selectedPersonalization = suggestion
                         } label: {
                             Text(suggestion.label)
-                                .font(.system(size: 13, weight: .black, design: .rounded))
+                                .appFont(size: 13, weight: .black, relativeTo: .callout)
                                 .foregroundStyle(
                                     selectedPersonalization == suggestion
                                     ? Color(hex: colors.ink)
                                     : Color(hex: colors.onBackdrop)
                                 )
                                 .padding(.horizontal, 15)
-                                .frame(height: 40)
+                                .frame(minHeight: 44)
                                 .background(
                                     selectedPersonalization == suggestion
                                     ? Color(hex: colors.accent)
@@ -167,6 +196,7 @@ struct ShareStudioView: View {
                                 )
                         }
                         .buttonStyle(.plain)
+                        .accessibilityValue(selectedPersonalization == suggestion ? AccessibilityCopy.selected : "")
                     }
                 }
             }
@@ -203,7 +233,7 @@ struct ShareStudioView: View {
                 Spacer()
                 Image(systemName: "arrow.up.right")
             }
-            .font(.system(size: 16, weight: .black, design: .rounded))
+            .appFont(size: 16, weight: .black, relativeTo: .headline)
             .foregroundStyle(Color(hex: colors.ink))
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, minHeight: 58)
@@ -212,10 +242,17 @@ struct ShareStudioView: View {
             .shadow(color: Color.black.opacity(0.26), radius: 20, x: 0, y: 10)
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("share.primary")
         .padding(.horizontal, 20)
         .padding(.top, 10)
         .padding(.bottom, 8)
-        .background(.ultraThinMaterial)
+        .background {
+            if reduceTransparency {
+                Color(hex: colors.backdropRaised)
+            } else {
+                Rectangle().fill(.ultraThinMaterial)
+            }
+        }
     }
 
     private var primaryButtonTitle: String {
@@ -262,7 +299,7 @@ struct ShareStudioView: View {
 
     private func sectionTitle(_ title: String, symbol: String) -> some View {
         Label(title, systemImage: symbol)
-            .font(.system(size: 15, weight: .black, design: .rounded))
+            .appFont(size: 15, weight: .black, relativeTo: .headline)
             .foregroundStyle(Color(hex: colors.onBackdrop))
     }
 
@@ -273,16 +310,21 @@ struct ShareStudioView: View {
         action: @escaping () -> Void
     ) -> some View {
         Button(action: action) {
-            Label(title, systemImage: symbol)
-                .font(.system(size: 12, weight: .black, design: .rounded))
+            Label(title, systemImage: isSelected ? "checkmark.circle.fill" : symbol)
+                .appFont(size: 12, weight: .black, relativeTo: .callout)
                 .foregroundStyle(isSelected ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop))
-                .frame(maxWidth: .infinity, minHeight: 42)
+                .frame(
+                    minWidth: dynamicTypeSize.isAccessibilitySize ? 180 : 0,
+                    maxWidth: dynamicTypeSize.isAccessibilitySize ? 220 : .infinity,
+                    minHeight: 44
+                )
                 .padding(.horizontal, 8)
                 .background(isSelected ? Color(hex: colors.accent) : Color.white.opacity(0.07))
                 .clipShape(Capsule())
                 .overlay(Capsule().strokeBorder(Color.white.opacity(0.12), lineWidth: 1))
         }
         .buttonStyle(.plain)
+        .accessibilityValue(isSelected ? AccessibilityCopy.selected : "")
     }
 
     private func styleSymbol(_ style: ShareCardStyle) -> String {
@@ -297,26 +339,29 @@ struct ShareStudioView: View {
         let isSelected = style == option
         return Button {
             Haptics.triggerLight()
-            withAnimation(.easeInOut(duration: 0.20)) { style = option }
+            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.20)) { style = option }
         } label: {
             VStack(alignment: .leading, spacing: 6) {
                 Image(systemName: styleSymbol(option))
                     .font(.system(size: 15, weight: .black))
                 Text(option.title)
-                    .font(.system(size: 13, weight: .black, design: .rounded))
+                    .appFont(size: 13, weight: .black, relativeTo: .headline)
                 Text(option.purpose)
-                    .font(.system(size: 10, weight: .bold, design: .rounded))
+                    .appFont(size: 10, weight: .bold, relativeTo: .caption)
                     .opacity(0.60)
-                    .lineLimit(1)
+                    .lineLimit(usesExpandedChoiceCards ? 2 : 1)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             .foregroundStyle(isSelected ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop))
             .padding(13)
-            .frame(width: 132, height: 92, alignment: .leading)
+            .frame(width: usesExpandedChoiceCards ? 230 : 132, alignment: .leading)
+            .frame(minHeight: 92, alignment: .leading)
             .background(isSelected ? Color(hex: colors.accent) : Color.white.opacity(0.07))
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.white.opacity(0.12), lineWidth: 1))
         }
         .buttonStyle(.plain)
+        .accessibilityValue(isSelected ? AccessibilityCopy.selected : "")
     }
 }
 

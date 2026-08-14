@@ -18,6 +18,10 @@ private enum CalendarMode {
 }
 
 struct CalendarScreen: View {
+    @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
     @EnvironmentObject private var dateContext: AppDateContext
 
@@ -144,7 +148,7 @@ struct CalendarScreen: View {
             .focused($searchFocused)
             .textInputAutocapitalization(.never)
             .autocorrectionDisabled()
-            .font(.system(size: 15, weight: .bold, design: .rounded))
+            .appFont(size: 15, weight: .bold, relativeTo: .body)
             .foregroundStyle(Color(hex: baseColors.onBackdrop))
 
             if !searchText.isEmpty {
@@ -154,15 +158,15 @@ struct CalendarScreen: View {
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.50))
-                        .frame(width: 32, height: 32)
+                        .frame(width: 44, height: 44)
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel(DayEventStore.language == "tr" ? "Aramayı temizle" : "Clear search")
             }
         }
         .padding(.horizontal, 16)
-        .frame(height: 50)
-        .background(Color.white.opacity(0.07))
+        .frame(minHeight: 50)
+        .background(Color.white.opacity(reduceTransparency ? 0.14 : 0.07))
         .clipShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 17).strokeBorder(Color.white.opacity(0.11), lineWidth: 1))
         .padding(.horizontal, 20)
@@ -174,15 +178,18 @@ struct CalendarScreen: View {
                 ForEach(DayDiscoveryFilter.allCases) { filter in
                     Button {
                         Haptics.triggerLight()
-                        withAnimation(.easeInOut(duration: 0.20)) { activeFilter = filter }
+                        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.20)) { activeFilter = filter }
                     } label: {
-                        Label(filter.title(language: DayEventStore.language), systemImage: filter.symbol)
-                            .font(.system(size: 12, weight: .black, design: .rounded))
+                        Label(
+                            filter.title(language: DayEventStore.language),
+                            systemImage: activeFilter == filter ? "checkmark.circle.fill" : filter.symbol
+                        )
+                            .appFont(size: 12, weight: .black, relativeTo: .callout)
                             .foregroundStyle(activeFilter == filter
                                              ? Color(hex: baseColors.ink)
                                              : Color(hex: baseColors.onBackdrop))
                             .padding(.horizontal, 14)
-                            .frame(height: 42)
+                            .frame(minHeight: 44)
                             .background(activeFilter == filter
                                         ? Color(hex: baseColors.accent)
                                         : Color.white.opacity(0.07))
@@ -190,6 +197,7 @@ struct CalendarScreen: View {
                             .overlay(Capsule().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
                     }
                     .buttonStyle(.plain)
+                    .accessibilityValue(activeFilter == filter ? AccessibilityCopy.selected : "")
                 }
             }
             .padding(.horizontal, 20)
@@ -202,11 +210,11 @@ struct CalendarScreen: View {
             Image(systemName: activeFilter == .saved ? "bookmark.slash" : "magnifyingglass")
                 .font(.system(size: 28, weight: .black))
             Text(DayEventStore.language == "tr" ? "Burada gün yok" : "No days here")
-                .font(.system(size: 20, weight: .black, design: .rounded))
+                .appFont(size: 20, weight: .black, relativeTo: .title2)
             Text(DayEventStore.language == "tr"
                  ? "Aramayı temizle veya başka bir filtre dene."
                  : "Clear the search or try another filter.")
-                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .appFont(size: 13, weight: .semibold, relativeTo: .body)
                 .opacity(0.58)
         }
         .foregroundStyle(Color(hex: baseColors.onBackdrop))
@@ -221,10 +229,10 @@ struct CalendarScreen: View {
             Spacer()
             VStack(spacing: 2) {
                 Text(headerEyebrow)
-                    .font(.system(size: 11, weight: .black, design: .rounded))
+                    .appFont(size: 11, weight: .black, relativeTo: .caption)
                     .tracking(1.5)
                 Text(headerTitle)
-                    .font(.system(size: 28, weight: .black, design: .rounded))
+                    .appFont(size: dynamicTypeSize.isAccessibilitySize ? 20 : 28, weight: .black, relativeTo: .title)
                     .tracking(-0.8)
             }
             .foregroundStyle(Color(hex: baseColors.onBackdrop))
@@ -233,7 +241,7 @@ struct CalendarScreen: View {
                 if mode == .discover {
                     showAllDays()
                 } else {
-                    withAnimation(.easeInOut(duration: 0.25)) { scrollPosition = todayID }
+                    withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.25)) { scrollPosition = todayID }
                 }
             }
         }
@@ -260,14 +268,14 @@ struct CalendarScreen: View {
         VStack(alignment: .leading, spacing: 14) {
             VStack(alignment: .leading, spacing: 6) {
                 Text(DayEventStore.language == "tr" ? "Bu hafta atmalıklar" : "Worth sending this week")
-                    .font(.system(size: 27, weight: .black, design: .rounded))
+                    .appFont(size: dynamicTypeSize.isAccessibilitySize ? 21 : 27, weight: .black, relativeTo: .title)
                     .tracking(-0.7)
                     .foregroundStyle(Color(hex: baseColors.onBackdrop))
 
                 Text(DayEventStore.language == "tr"
                      ? "Takvimin içinden, birini hatırlatma ihtimali en yüksek üç gün."
                      : "Three days from the calendar most likely to remind you of someone.")
-                    .font(.system(size: 14, weight: .semibold, design: .rounded))
+                    .appFont(size: 14, weight: .semibold, relativeTo: .body)
                     .lineSpacing(3)
                     .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.58))
             }
@@ -282,10 +290,10 @@ struct CalendarScreen: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Label(DayEventStore.language == "tr" ? "Sonra göndereceklerim" : "Saved to send later", systemImage: "bookmark.fill")
-                    .font(.system(size: 19, weight: .black, design: .rounded))
+                    .appFont(size: 19, weight: .black, relativeTo: .title3)
                 Spacer()
                 Text("\(savedEvents.count)")
-                    .font(.system(size: 12, weight: .black, design: .monospaced))
+                    .appFont(size: 12, weight: .black, design: .monospaced, relativeTo: .caption)
                     .padding(.horizontal, 9)
                     .frame(height: 26)
                     .background(Color.white.opacity(0.08))
@@ -312,10 +320,10 @@ struct CalendarScreen: View {
                 HStack(spacing: 13) {
                     VStack(spacing: 2) {
                         Text(shortWeekday(pick.date).uppercased())
-                            .font(.system(size: 9, weight: .black, design: .rounded))
+                            .appFont(size: 9, weight: .black, relativeTo: .caption2)
                             .tracking(0.7)
                         Text("\(event.day)")
-                            .font(.system(size: 22, weight: .black, design: .rounded))
+                            .appFont(size: 22, weight: .black, relativeTo: .title2)
                     }
                     .foregroundStyle(Color(hex: colors.ink))
                     .frame(width: 54, height: 58)
@@ -324,14 +332,14 @@ struct CalendarScreen: View {
 
                     VStack(alignment: .leading, spacing: 5) {
                         Text(event.title)
-                            .font(.system(size: 16, weight: .black, design: .rounded))
+                            .appFont(size: 16, weight: .black, relativeTo: .headline)
                             .foregroundStyle(Color(hex: colors.onBackdrop))
                             .lineLimit(2)
 
                         Text(editorial.prompt)
-                            .font(.system(size: 12, weight: .bold, design: .rounded))
+                            .appFont(size: 12, weight: .bold, relativeTo: .subheadline)
                             .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
-                            .lineLimit(1)
+                            .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -341,11 +349,12 @@ struct CalendarScreen: View {
                 }
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("\(shortWeekday(pick.date)), \(event.title). \(editorial.prompt)")
 
             saveButton(event, colors: colors)
         }
         .padding(12)
-        .background(Color(hex: colors.backdropRaised).opacity(0.95))
+        .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.95))
         .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
@@ -370,10 +379,10 @@ struct CalendarScreen: View {
 
                     VStack(alignment: .leading, spacing: 3) {
                         Text(event.title)
-                            .font(.system(size: 14, weight: .black, design: .rounded))
-                            .lineLimit(1)
+                            .appFont(size: 14, weight: .black, relativeTo: .headline)
+                            .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
                         Text(savedDate(event))
-                            .font(.system(size: 11, weight: .bold, design: .rounded))
+                            .appFont(size: 11, weight: .bold, relativeTo: .caption)
                             .opacity(0.52)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -381,11 +390,12 @@ struct CalendarScreen: View {
                 .foregroundStyle(Color(hex: colors.onBackdrop))
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("\(event.title), \(savedDate(event))")
 
             saveButton(event, colors: colors)
         }
         .padding(10)
-        .background(Color(hex: colors.backdropRaised).opacity(0.82))
+        .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.82))
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 
@@ -399,7 +409,7 @@ struct CalendarScreen: View {
                 Spacer()
                 Image(systemName: "arrow.right")
             }
-            .font(.system(size: 15, weight: .black, design: .rounded))
+            .appFont(size: 15, weight: .black, relativeTo: .headline)
             .foregroundStyle(Color(hex: baseColors.ink))
             .padding(.horizontal, 18)
             .frame(maxWidth: .infinity, minHeight: 54)
@@ -421,7 +431,7 @@ struct CalendarScreen: View {
             } label: {
                 HStack(spacing: 13) {
                     Text(String(format: "%02d", event.day))
-                        .font(.system(size: 16, weight: .black, design: .monospaced))
+                        .appFont(size: 16, weight: .black, design: .monospaced, relativeTo: .headline)
                         .foregroundStyle(Color(hex: colors.ink))
                         .frame(width: 46, height: 46)
                         .background(Color(hex: colors.secondary))
@@ -431,14 +441,14 @@ struct CalendarScreen: View {
                         .font(.system(size: 21))
 
                     Text(event.title)
-                        .font(.system(size: 15, weight: .bold, design: .rounded))
+                        .appFont(size: 15, weight: .bold, relativeTo: .body)
                         .foregroundStyle(Color(hex: colors.onBackdrop))
                         .lineLimit(2)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     if isToday {
                         Text(DayEventStore.language == "tr" ? "BUGÜN" : "TODAY")
-                            .font(.system(size: 9, weight: .black, design: .rounded))
+                            .appFont(size: 9, weight: .black, relativeTo: .caption2)
                             .tracking(0.8)
                             .foregroundStyle(Color(hex: colors.ink))
                             .padding(.horizontal, 8)
@@ -446,14 +456,22 @@ struct CalendarScreen: View {
                             .background(Color(hex: colors.accent))
                             .clipShape(Capsule())
                     }
+
+                    if differentiateWithoutColor && isSelected {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundStyle(Color(hex: colors.accent))
+                            .accessibilityLabel(AccessibilityCopy.selected)
+                    }
                 }
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("\(event.day), \(event.title)" + (isToday ? ", \(DayEventStore.language == "tr" ? "bugün" : "today")" : ""))
+            .accessibilityValue(isSelected ? AccessibilityCopy.selected : "")
 
             saveButton(event, colors: colors)
         }
         .padding(12)
-        .background(Color(hex: colors.backdropRaised).opacity(0.94))
+        .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.94))
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -476,6 +494,7 @@ struct CalendarScreen: View {
                 .overlay(Circle().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
         }
         .buttonStyle(.plain)
+        .minimumAccessibleTarget()
         .accessibilityLabel(personalLibrary.isSaved(event)
                             ? (DayEventStore.language == "tr" ? "Kaydı kaldır" : "Remove saved day")
                             : (DayEventStore.language == "tr" ? "Sonra göndermek için kaydet" : "Save to send later"))
@@ -495,18 +514,20 @@ struct CalendarScreen: View {
                 .overlay(Circle().strokeBorder(Color.white.opacity(0.14), lineWidth: 1))
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(circleButtonLabel(systemName))
+        .accessibilityIdentifier("calendar.\(systemName == "chevron.left" ? "back" : "action")")
     }
 
     private func monthHeader(_ month: Int) -> some View {
         Text(monthName(month).uppercased())
-            .font(.system(size: 22, weight: .black, design: .rounded))
+            .appFont(size: 22, weight: .black, relativeTo: .title2)
             .tracking(1)
             .foregroundStyle(Color(hex: baseColors.onBackdrop))
             .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func showAllDays() {
-        withAnimation(.easeInOut(duration: 0.25)) { mode = .allDays }
+        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.25)) { mode = .allDays }
         DispatchQueue.main.async { scrollPosition = todayID }
     }
 
@@ -534,5 +555,15 @@ struct CalendarScreen: View {
         formatter.locale = DayEventStore.dateLocale
         let symbols = formatter.standaloneMonthSymbols ?? []
         return symbols.indices.contains(month - 1) ? symbols[month - 1] : ""
+    }
+
+    private func circleButtonLabel(_ systemName: String) -> String {
+        if systemName == "chevron.left" {
+            return DayEventStore.language == "tr" ? "Geri" : "Back"
+        }
+        if mode == .discover {
+            return DayEventStore.language == "tr" ? "Tüm günleri aç" : "Open all days"
+        }
+        return DayEventStore.language == "tr" ? "Bugüne git" : "Go to today"
     }
 }

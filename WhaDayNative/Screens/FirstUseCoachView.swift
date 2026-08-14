@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct FirstUseCoachView: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+
     let step: Int
     let colors: ThemeColors
     let onNext: () -> Void
@@ -41,12 +43,12 @@ struct FirstUseCoachView: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 Text("\(step + 1) / 3 · \(content.title)")
-                    .font(.system(size: 14, weight: .black, design: .rounded))
-                    .lineLimit(1)
+                    .appFont(size: 14, weight: .black, relativeTo: .headline)
+                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
                     .minimumScaleFactor(0.78)
                 Text(content.body)
-                    .font(.system(size: 11, weight: .semibold, design: .rounded))
-                    .lineLimit(2)
+                    .appFont(size: 11, weight: .semibold, relativeTo: .caption)
+                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? 5 : 2)
                     .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.66))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -60,6 +62,7 @@ struct FirstUseCoachView: View {
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
+            .minimumAccessibleTarget()
             .accessibilityLabel(step == 2
                                 ? (DayEventStore.language == "tr" ? "İpuçlarını bitir" : "Finish tips")
                                 : (DayEventStore.language == "tr" ? "Sonraki ipucu" : "Next tip"))
@@ -78,7 +81,7 @@ struct FirstUseCoachView: View {
                 Image(systemName: "xmark")
                     .font(.system(size: 9, weight: .black))
                     .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.68))
-                    .frame(width: 28, height: 28)
+                    .frame(width: 44, height: 44)
             }
             .buttonStyle(.plain)
             .offset(x: 5, y: -7)
