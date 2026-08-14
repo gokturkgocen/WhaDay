@@ -54,12 +54,12 @@ Exit: a first-time user understands and reaches sharing without instruction.
 
 ## Phase 4 — Save and reminder loop
 
-- [ ] Separate the in-app reminder preference from system authorization.
-- [ ] Add a user-selected reminder time and an Open Settings recovery action.
-- [ ] Merge saved-day context into one calm daily notification.
-- [ ] Prevent duplicate requests and respect the system pending-request limit.
-- [ ] Replan safely after clock, time-zone, locale and content changes.
-- [ ] Test denied, revoked, long-absence and multiple-saved-day scenarios.
+- [x] Separate the in-app reminder preference from system authorization.
+- [x] Add a user-selected reminder time and an Open Settings recovery action.
+- [x] Merge saved-day context into one calm daily notification.
+- [x] Prevent duplicate requests and respect the system pending-request limit.
+- [x] Replan safely after clock, time-zone, locale and content changes.
+- [x] Test denied, revoked, long-absence and multiple-saved-day scenarios.
 
 Exit: reminders are useful, user-controlled and always open the right content.
 

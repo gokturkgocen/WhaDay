@@ -10,6 +10,7 @@ struct RootView: View {
     @StateObject private var personalLibrary = PersonalDayLibrary()
     @StateObject private var routeCenter = AppRouteCenter.shared
     @StateObject private var dateContext = AppDateContext()
+    @StateObject private var reminderPreferences = ReminderPreferences()
     @State private var screen: Screen = .home
     @State private var selectedDay: DayEvent?
     @State private var shareEvent: DayEvent?
@@ -41,9 +42,10 @@ struct RootView: View {
         }
         .environmentObject(personalLibrary)
         .environmentObject(dateContext)
+        .environmentObject(reminderPreferences)
         .task {
             Haptics.prepare()
-            await NotificationScheduler.scheduleIfAuthorized()
+            await NotificationScheduler.scheduleIfNeeded(configuration: reminderConfiguration)
         }
         .task {
             await monitorDayBoundaries()
@@ -60,10 +62,13 @@ struct RootView: View {
         .onChange(of: routeCenter.request?.id, initial: true) { _, _ in
             handleRouteRequest()
         }
+        .onChange(of: reminderConfiguration) { _, configuration in
+            Task { await NotificationScheduler.scheduleIfNeeded(configuration: configuration) }
+        }
         .onChange(of: scenePhase) { _, newPhase in
             guard newPhase == .active else { return }
             dateContext.refresh()
-            Task { await NotificationScheduler.scheduleIfAuthorized() }
+            Task { await NotificationScheduler.scheduleIfNeeded(configuration: reminderConfiguration) }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.significantTimeChangeNotification)) { _ in
             handleTemporalChange()
@@ -109,7 +114,11 @@ struct RootView: View {
     private func handleTemporalChange() {
         dateContext.refresh()
         WidgetDataWriter.save(event: DayEventStore.event(id: dateContext.dayID))
-        Task { await NotificationScheduler.scheduleIfAuthorized() }
+        Task { await NotificationScheduler.scheduleIfNeeded(configuration: reminderConfiguration) }
+    }
+
+    private var reminderConfiguration: ReminderConfiguration {
+        reminderPreferences.configuration(savedIDs: personalLibrary.savedIDs)
     }
 
     private func monitorDayBoundaries() async {

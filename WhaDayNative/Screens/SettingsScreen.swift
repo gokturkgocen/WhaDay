@@ -1,7 +1,13 @@
 import SwiftUI
+import UIKit
 import UserNotifications
 
 struct SettingsScreen: View {
+    @Environment(\.openURL) private var openURL
+    @Environment(\.scenePhase) private var scenePhase
+    @EnvironmentObject private var personalLibrary: PersonalDayLibrary
+    @EnvironmentObject private var reminderPreferences: ReminderPreferences
+
     let eventCategory: String?
     let onBack: () -> Void
 
@@ -25,6 +31,13 @@ struct SettingsScreen: View {
             .scrollIndicators(.hidden)
         }
         .task { notificationStatus = await NotificationScheduler.authorizationStatus() }
+        .onChange(of: scenePhase) { _, phase in
+            guard phase == .active else { return }
+            Task {
+                notificationStatus = await NotificationScheduler.authorizationStatus()
+                await reschedule()
+            }
+        }
     }
 
     private var header: some View {
@@ -83,33 +96,108 @@ struct SettingsScreen: View {
                 .font(.system(size: 14, weight: .semibold, design: .rounded))
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.62))
 
-            if notificationStatus == .authorized || notificationStatus == .provisional {
-                Label(DayEventStore.language == "tr" ? "Bildirimler açık" : "Notifications are on", systemImage: "checkmark.circle.fill")
-                    .font(.system(size: 14, weight: .black, design: .rounded))
-                    .foregroundStyle(Color(hex: colors.accent))
-            } else if notificationStatus == .notDetermined {
-                Button(DayEventStore.language == "tr" ? "Bildirimleri aç" : "Turn on notifications") {
-                    Task {
-                        if await NotificationScheduler.requestPermission() {
-                            await NotificationScheduler.scheduleAll()
-                        }
-                        notificationStatus = await NotificationScheduler.authorizationStatus()
-                    }
+            Toggle(isOn: reminderToggle) {
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(DayEventStore.language == "tr" ? "Günlük hatırlatıcı" : "Daily reminder")
+                        .font(.system(size: 15, weight: .black, design: .rounded))
+                    Text(reminderStatusText)
+                        .font(.system(size: 11, weight: .semibold, design: .rounded))
+                        .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
                 }
-                .font(.system(size: 14, weight: .black, design: .rounded))
-                    .foregroundStyle(Color(hex: colors.ink))
-                .padding(.horizontal, 16)
-                .frame(height: 42)
-                .background(Color(hex: colors.accent))
-                .clipShape(Capsule())
-            } else {
-                Text(DayEventStore.language == "tr" ? "Bildirimler sistem ayarlarından kapalı." : "Notifications are disabled in System Settings.")
-                    .font(.system(size: 13, weight: .bold, design: .rounded))
-                    .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.58))
+            }
+            .tint(Color(hex: colors.accent))
+
+            if reminderPreferences.isEnabled {
+                HStack {
+                    Label(DayEventStore.language == "tr" ? "Hatırlatma saati" : "Reminder time", systemImage: "clock.fill")
+                        .font(.system(size: 13, weight: .black, design: .rounded))
+                    Spacer()
+                    DatePicker("", selection: reminderTime, displayedComponents: .hourAndMinute)
+                        .labelsHidden()
+                        .datePickerStyle(.compact)
+                        .tint(Color(hex: colors.accent))
+                }
+                .padding(.horizontal, 14)
+                .frame(minHeight: 48)
+                .background(Color.white.opacity(0.06))
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            }
+
+            if reminderPreferences.isEnabled && notificationStatus == .denied {
+                Button {
+                    guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+                    openURL(url)
+                } label: {
+                    Label(DayEventStore.language == "tr" ? "Sistem Ayarlarını aç" : "Open System Settings", systemImage: "gear")
+                        .font(.system(size: 13, weight: .black, design: .rounded))
+                        .foregroundStyle(Color(hex: colors.ink))
+                        .padding(.horizontal, 16)
+                        .frame(height: 42)
+                        .background(Color(hex: colors.accent))
+                        .clipShape(Capsule())
+                }
+                .buttonStyle(.plain)
             }
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
         .cardStyle(colors: colors)
+    }
+
+    private var reminderToggle: Binding<Bool> {
+        Binding(
+            get: { reminderPreferences.isEnabled },
+            set: { isEnabled in
+                reminderPreferences.setEnabled(isEnabled)
+                Task {
+                    if isEnabled && notificationStatus == .notDetermined {
+                        _ = await NotificationScheduler.requestPermission()
+                        notificationStatus = await NotificationScheduler.authorizationStatus()
+                    }
+                    await reschedule()
+                }
+            }
+        )
+    }
+
+    private var reminderTime: Binding<Date> {
+        Binding(
+            get: {
+                Calendar.current.date(
+                    from: DateComponents(
+                        year: 2001,
+                        month: 1,
+                        day: 1,
+                        hour: reminderPreferences.hour,
+                        minute: reminderPreferences.minute
+                    )
+                ) ?? Date()
+            },
+            set: { date in
+                let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+                reminderPreferences.setTime(hour: components.hour ?? 9, minute: components.minute ?? 0)
+            }
+        )
+    }
+
+    private var reminderStatusText: String {
+        let tr = DayEventStore.language == "tr"
+        guard reminderPreferences.isEnabled else { return tr ? "WhaDay içinde kapalı" : "Off in WhaDay" }
+        switch notificationStatus {
+        case .authorized, .provisional, .ephemeral:
+            return tr ? "Açık · her gün tek bildirim" : "On · one notification each day"
+        case .denied:
+            return tr ? "İstek açık, sistem izni kapalı" : "Wanted here, blocked by iOS"
+        case .notDetermined:
+            return tr ? "Açınca iOS izin soracak" : "iOS will ask when enabled"
+        @unknown default:
+            return tr ? "Sistem durumu bilinmiyor" : "System status unavailable"
+        }
+    }
+
+    private func reschedule() async {
+        await NotificationScheduler.scheduleIfNeeded(
+            configuration: reminderPreferences.configuration(savedIDs: personalLibrary.savedIDs)
+        )
     }
 
     private var detailsCard: some View {

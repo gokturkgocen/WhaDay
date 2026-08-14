@@ -1,91 +1,172 @@
 import Foundation
 import UserNotifications
 
-/// One calm, social morning reminder per day.
-///
-/// iOS caps pending local notifications at 64/app. This schedules a rolling ~60-day window
-/// and re-runs on every relevant foreground rather than
-/// registering one request per day of content — a straight port of the RN version (which only
-/// ever looked 7 days ahead) would silently start failing once the day-content gap is filled
-/// toward covering the full year.
+struct PlannedReminder: Equatable {
+    let identifier: String
+    let eventID: String
+    let fireDate: Date
+    let title: String
+    let body: String
+}
+
+enum ReminderAuthorizationPolicy {
+    static func permitsScheduling(_ status: UNAuthorizationStatus) -> Bool {
+        switch status {
+        case .authorized, .provisional, .ephemeral:
+            return true
+        case .notDetermined, .denied:
+            return false
+        @unknown default:
+            return false
+        }
+    }
+}
+
+enum ReminderPlanBuilder {
+    static let maximumScheduledDays = 60
+    static let identifierPrefix = "whaday-reminder-"
+
+    static func make(
+        configuration: ReminderConfiguration,
+        now: Date,
+        calendar: Calendar,
+        events: [DayEvent],
+        language: String,
+        daysAhead: Int = maximumScheduledDays
+    ) -> [PlannedReminder] {
+        guard configuration.isEnabled else { return [] }
+        let eventByID = Dictionary(uniqueKeysWithValues: events.map { ($0.id, $0) })
+
+        return (0..<min(max(daysAhead, 0), maximumScheduledDays)).compactMap { offset in
+            guard let day = calendar.date(byAdding: .day, value: offset, to: now) else { return nil }
+            var components = calendar.dateComponents([.year, .month, .day], from: day)
+            components.hour = configuration.hour
+            components.minute = configuration.minute
+            components.second = 0
+
+            guard
+                let fireDate = calendar.date(from: components),
+                fireDate > now
+            else {
+                return nil
+            }
+
+            let eventID = DayDateResolver.dayID(at: day, calendar: calendar)
+            guard let event = eventByID[eventID] else { return nil }
+            let copy = copy(
+                for: event,
+                isSaved: configuration.savedIDs.contains(event.id),
+                language: language
+            )
+            let yyyy = String(format: "%04d", components.year ?? 0)
+            let mm = String(format: "%02d", components.month ?? 0)
+            let dd = String(format: "%02d", components.day ?? 0)
+            let identifier = "\(identifierPrefix)\(yyyy)-\(mm)-\(dd)-\(event.id)"
+
+            return PlannedReminder(
+                identifier: identifier,
+                eventID: event.id,
+                fireDate: fireDate,
+                title: copy.title,
+                body: copy.body
+            )
+        }
+    }
+
+    private static func copy(
+        for event: DayEvent,
+        isSaved: Bool,
+        language: String
+    ) -> (title: String, body: String) {
+        let isTurkish = language == "tr"
+        let symbol = EditorialSymbol.forEvent(event)
+        let editorial = EditorialContent.forEvent(event)
+
+        if editorial.tone == .remembrance {
+            return (
+                isTurkish ? "\(symbol) Bugünün notu" : "\(symbol) Today's note",
+                "\(event.title). \(editorial.fact)"
+            )
+        }
+
+        if isSaved {
+            return (
+                isTurkish ? "\(symbol) Kaydettiğin gün bugün" : "\(symbol) A day you saved is here",
+                "\(event.title) · \(editorial.prompt)"
+            )
+        }
+
+        return (
+            isTurkish
+                ? "\(symbol) Bugün birine yazmak için bahanen var"
+                : "\(symbol) You have a reason to text someone today",
+            "\(event.title) · \(editorial.prompt)"
+        )
+    }
+}
+
+/// Maintains one rolling reminder per day without touching notifications that
+/// do not belong to WhaDay's daily reminder feature.
 @MainActor
 enum NotificationScheduler {
-    private static let daysAhead = 60
     private static let center = UNUserNotificationCenter.current()
 
     static func requestPermission() async -> Bool {
         (try? await center.requestAuthorization(options: [.alert, .sound, .badge])) ?? false
     }
 
-    static func scheduleIfAuthorized() async {
-        let settings = await center.notificationSettings()
-        guard settings.authorizationStatus == .authorized || settings.authorizationStatus == .provisional else { return }
-        await scheduleAll()
-    }
-
     static func authorizationStatus() async -> UNAuthorizationStatus {
         await center.notificationSettings().authorizationStatus
     }
 
-    static func scheduleAll() async {
-        center.removeAllPendingNotificationRequests()
+    static func scheduleIfNeeded(configuration: ReminderConfiguration) async {
+        let status = await authorizationStatus()
+        guard configuration.isEnabled, ReminderAuthorizationPolicy.permitsScheduling(status) else {
+            await clearScheduled()
+            return
+        }
+        await replaceSchedule(configuration: configuration)
+    }
+
+    static func clearScheduled() async {
+        let identifiers = await center.pendingNotificationRequests()
+            .map(\.identifier)
+            .filter { $0.hasPrefix(ReminderPlanBuilder.identifierPrefix) }
+        if !identifiers.isEmpty {
+            center.removePendingNotificationRequests(withIdentifiers: identifiers)
+        }
+    }
+
+    private static func replaceSchedule(configuration: ReminderConfiguration) async {
+        await clearScheduled()
 
         let calendar = Calendar.current
-        let now = Date()
+        let plan = ReminderPlanBuilder.make(
+            configuration: configuration,
+            now: Date(),
+            calendar: calendar,
+            events: DayEventStore.days,
+            language: DayEventStore.language
+        )
 
-        for offset in 0..<daysAhead {
-            guard let date = calendar.date(byAdding: .day, value: offset, to: now) else { continue }
-            let month = calendar.component(.month, from: date)
-            let day = calendar.component(.day, from: date)
+        for reminder in plan {
+            let content = UNMutableNotificationContent()
+            content.title = reminder.title
+            content.body = reminder.body
+            content.sound = .default
+            content.userInfo = ["dayId": reminder.eventID, "type": "daily-reminder"]
 
-            if let event = DayEventStore.event(month: month, day: day) {
-                await add(tag: "morning", event: event, fireDay: date, hour: 9,
-                          title: morningTitle(event), body: morningBody(event))
-            }
+            let components = calendar.dateComponents(
+                [.year, .month, .day, .hour, .minute],
+                from: reminder.fireDate
+            )
+            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+            let request = UNNotificationRequest(
+                identifier: reminder.identifier,
+                content: content,
+                trigger: trigger
+            )
+            try? await center.add(request)
         }
-    }
-
-    private static func add(tag: String, event: DayEvent, fireDay: Date, hour: Int, title: String, body: String) async {
-        var components = Calendar.current.dateComponents([.year, .month, .day], from: fireDay)
-        components.hour = hour
-        components.minute = 0
-
-        guard let fireDate = Calendar.current.date(from: components), fireDate > Date() else { return }
-
-        let content = UNMutableNotificationContent()
-        content.title = title
-        content.body = body
-        content.sound = .default
-        content.userInfo = ["dayId": event.id, "type": tag]
-
-        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
-        let yyyy = components.year.map(String.init) ?? "0"
-        let mm = String(format: "%02d", components.month ?? 0)
-        let dd = String(format: "%02d", components.day ?? 0)
-        let identifier = "\(tag)-\(event.id)-\(yyyy)-\(mm)-\(dd)"
-
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-        try? await center.add(request)
-    }
-
-    private static func morningTitle(_ event: DayEvent) -> String {
-        let symbol = EditorialSymbol.forEvent(event)
-        let editorial = EditorialContent.forEvent(event)
-        if editorial.tone == .remembrance {
-            return DayEventStore.language == "tr"
-                ? "\(symbol) Bugünün notu"
-                : "\(symbol) Today's note"
-        }
-        return DayEventStore.language == "tr"
-            ? "\(symbol) Bugün birine yazmak için bahanen var"
-            : "\(symbol) You have a reason to text someone today"
-    }
-
-    private static func morningBody(_ event: DayEvent) -> String {
-        let editorial = EditorialContent.forEvent(event)
-        if editorial.tone == .remembrance {
-            return "\(event.title). \(editorial.fact)"
-        }
-        return "\(event.title) · \(editorial.prompt)"
     }
 }

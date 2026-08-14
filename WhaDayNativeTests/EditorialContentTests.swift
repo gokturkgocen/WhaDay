@@ -1,4 +1,5 @@
 import XCTest
+import UserNotifications
 @testable import WhaDayNative
 
 final class EditorialContentTests: XCTestCase {
@@ -429,6 +430,113 @@ final class EditorialContentTests: XCTestCase {
             XCTAssertTrue(first.allSatisfy { $0.event.sensitivity == .standard })
             XCTAssertTrue(first.allSatisfy { $0.event.metadata?.canBePromotedForEngagement == true })
         }
+    }
+
+    func testReminderPlanStaysWithinTheSystemBudgetAndHasNoDuplicates() {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let now = ISO8601DateFormatter().date(from: "2026-01-01T08:00:00Z")!
+        let configuration = ReminderConfiguration(
+            isEnabled: true,
+            hour: 9,
+            minute: 15,
+            savedIDs: []
+        )
+        let plan = ReminderPlanBuilder.make(
+            configuration: configuration,
+            now: now,
+            calendar: calendar,
+            events: DayEventStore.days,
+            language: "tr",
+            daysAhead: 500
+        )
+
+        XCTAssertEqual(plan.count, ReminderPlanBuilder.maximumScheduledDays)
+        XCTAssertEqual(Set(plan.map(\.identifier)).count, plan.count)
+        XCTAssertTrue(plan.allSatisfy { $0.fireDate > now })
+        XCTAssertTrue(plan.allSatisfy { $0.identifier.hasPrefix(ReminderPlanBuilder.identifierPrefix) })
+        XCTAssertTrue(plan.allSatisfy {
+            let time = calendar.dateComponents([.hour, .minute], from: $0.fireDate)
+            return time.hour == 9 && time.minute == 15
+        })
+    }
+
+    func testReminderPlanSkipsPastTimeAndCarriesSavedContext() {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let now = ISO8601DateFormatter().date(from: "2026-01-01T10:00:00Z")!
+        let configuration = ReminderConfiguration(
+            isEnabled: true,
+            hour: 9,
+            minute: 0,
+            savedIDs: ["01-01", "01-02"]
+        )
+        let plan = ReminderPlanBuilder.make(
+            configuration: configuration,
+            now: now,
+            calendar: calendar,
+            events: DayEventStore.days,
+            language: "tr"
+        )
+
+        XCTAssertEqual(plan.first?.eventID, "01-02")
+        XCTAssertTrue(plan.first?.title.contains("Kaydettiğin") == true)
+        XCTAssertEqual(Set(plan.map(\.identifier)).count, plan.count)
+        XCTAssertTrue(plan.allSatisfy { $0.fireDate > now })
+    }
+
+    func testReminderAuthorizationAndDisabledPreferenceAreIndependent() {
+        XCTAssertFalse(ReminderAuthorizationPolicy.permitsScheduling(.notDetermined))
+        XCTAssertFalse(ReminderAuthorizationPolicy.permitsScheduling(.denied))
+        XCTAssertTrue(ReminderAuthorizationPolicy.permitsScheduling(.authorized))
+        XCTAssertTrue(ReminderAuthorizationPolicy.permitsScheduling(.provisional))
+
+        let disabled = ReminderConfiguration(isEnabled: false, hour: 9, minute: 0, savedIDs: [])
+        XCTAssertTrue(
+            ReminderPlanBuilder.make(
+                configuration: disabled,
+                now: Date(),
+                calendar: .current,
+                events: DayEventStore.days,
+                language: "en"
+            ).isEmpty
+        )
+    }
+
+    func testReminderPlanRebuildsFromANewNowAfterALongAbsence() {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let returnDate = ISO8601DateFormatter().date(from: "2027-12-31T08:00:00Z")!
+        let configuration = ReminderConfiguration(isEnabled: true, hour: 9, minute: 0, savedIDs: [])
+        let plan = ReminderPlanBuilder.make(
+            configuration: configuration,
+            now: returnDate,
+            calendar: calendar,
+            events: DayEventStore.days,
+            language: "en"
+        )
+
+        XCTAssertEqual(plan.first?.eventID, "12-31")
+        XCTAssertEqual(plan.count, ReminderPlanBuilder.maximumScheduledDays)
+        XCTAssertTrue(plan.contains { $0.identifier.contains("2028-01-01") })
+    }
+
+    @MainActor
+    func testReminderPreferencePersistsSeparatelyFromAuthorization() {
+        let suiteName = "ReminderPreferencesTests-\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suiteName)!
+        defer { defaults.removePersistentDomain(forName: suiteName) }
+
+        let first = ReminderPreferences(defaults: defaults)
+        XCTAssertFalse(first.isEnabled)
+        XCTAssertEqual(first.hour, 9)
+        first.setEnabled(true)
+        first.setTime(hour: 18, minute: 45)
+
+        let restored = ReminderPreferences(defaults: defaults)
+        XCTAssertTrue(restored.isEnabled)
+        XCTAssertEqual(restored.hour, 18)
+        XCTAssertEqual(restored.minute, 45)
     }
 
     func testSensitiveMetadataCannotBePromotedAsEngagementContent() {
