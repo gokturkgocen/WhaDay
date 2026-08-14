@@ -60,7 +60,7 @@ system surfaces.
 - Small, medium and Lock Screen daily widgets
 - Message and Story share artwork in three visual styles
 - Instagram Story, WhatsApp, Messages and system share-sheet handoff
-- VoiceOver, Dynamic Type and Reduce Motion support
+- Dynamic Type, Reduce Motion and baseline screen-reader labeling
 - Offline-first operation
 
 ## Explicitly out of scope for 1.0
@@ -100,7 +100,7 @@ revision:
 - Every combination of 366 dates, two languages, three share styles and two
   formats renders without clipping or missing content.
 - The core flow passes on a compact and a large supported iPhone.
-- The core flow is completable with VoiceOver and accessibility text sizes.
+- The core flow is completable at accessibility text sizes.
 - Reduce Motion stops continuous and large decorative movement.
 - Leap-day, year-boundary, midnight, time-zone and daylight-saving tests pass.
 - Real-device Instagram Story, WhatsApp and Messages handoffs pass.

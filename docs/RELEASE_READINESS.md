@@ -26,8 +26,6 @@ plan; a successful local build is not a published app.
 
 ## Required before development-complete
 
-- Complete the core journey with VoiceOver on a physical device and verify
-  focus order, announcements and rotor behavior without relying on sight.
 - Test Story handoff with Instagram installed and Message handoff with WhatsApp
   and Messages installed on a physical device; inspect the received artwork and
   fallback paths.

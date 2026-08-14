@@ -1,7 +1,8 @@
 # Accessibility Evidence
 
 Date: 2026-08-14  
-Scope: development-time simulator validation; physical-device VoiceOver remains open.
+Scope: development-time simulator validation. Manual physical-device VoiceOver
+certification is intentionally outside the WhaDay 1.0 completion gate.
 
 ## Implemented behavior
 
@@ -67,10 +68,9 @@ accessibility layouts used full-width vertical format controls, scrolling and
 deliberate ellipsis for secondary discovery summaries rather than hiding the
 primary journey.
 
-## Honest remaining gate
+## Product decision
 
 Automated accessibility identifiers and screenshots do not prove a coherent
-VoiceOver traversal. Before accessibility can be called fully complete, the
-Home → day context → Share Studio → Discover journey must be completed with
-VoiceOver on a physical device, checking focus order, rotor behavior and share
-sheet handoff without sight.
+VoiceOver traversal. The app retains its labels, grouping and state values, but
+manual physical-device VoiceOver certification was explicitly deferred on
+2026-08-14 and is not claimed by this evidence report.

@@ -55,13 +55,15 @@ manually inspected.
 Development must not be called complete until these checks pass on the actual
 release candidate:
 
-1. Complete Home → context → Share Studio → Discover with VoiceOver and without
-   relying on sight; verify focus order, state announcements and rotor behavior.
-2. Deliver Story artwork to Instagram and Message artwork to WhatsApp and
+1. Deliver Story artwork to Instagram and Message artwork to WhatsApp and
    Messages, then verify the received image and fallback paths.
-3. Exercise notification permission grant, denial/recovery, scheduled tap and
+2. Exercise notification permission grant, denial/recovery, scheduled tap and
    widget tap on device; each must open the exact displayed event.
-4. Record physical-device launch, scrolling and share-render observations.
+3. Record physical-device launch, scrolling and share-render observations.
+
+Manual VoiceOver certification was removed from the 1.0 completion gate by
+product decision on 2026-08-14; the existing accessibility implementation is
+retained without claiming a physical-device VoiceOver pass.
 
 These are external device gates, not inferred passes. Until they are executed,
 the honest label is **simulator-qualified development candidate**, not “finished.”
