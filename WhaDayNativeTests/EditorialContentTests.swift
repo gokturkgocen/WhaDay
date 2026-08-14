@@ -351,6 +351,66 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertEqual(Set(DayEventStore.days.map(\.id)).count, DayEventStore.days.count)
     }
 
+    func testWidgetCatalogLoadsBothLocalesBeforeTheAppWritesSharedState() throws {
+        let metadataURL = try XCTUnwrap(Bundle.main.url(forResource: "metadata", withExtension: "json"))
+        let metadata = try Data(contentsOf: metadataURL)
+
+        for language in ["tr", "en"] {
+            let localizedURL = try XCTUnwrap(Bundle.main.url(forResource: language, withExtension: "json"))
+            let events = try WidgetDayCatalog.decode(
+                localizedData: Data(contentsOf: localizedURL),
+                metadataData: metadata
+            )
+
+            XCTAssertEqual(events.count, 366)
+            XCTAssertNotNil(events.first { $0.id == "02-29" })
+            XCTAssertEqual(events.first { $0.id == "01-27" }?.sensitivity, .remembrance)
+            XCTAssertEqual(events.first { $0.id == "12-10" }?.symbol, "🕊️")
+        }
+    }
+
+    func testWidgetCatalogFallsBackWhenMetadataIsCorrupt() throws {
+        let localized = Data("""
+        [{"id":"08-13","month":8,"day":13,"title":"Left-Handers Day","emoji":"✋","category":"fun"}]
+        """.utf8)
+        let events = try WidgetDayCatalog.decode(
+            localizedData: localized,
+            metadataData: Data("not-json".utf8)
+        )
+
+        XCTAssertEqual(events.count, 1)
+        XCTAssertEqual(events[0].symbol, "✋")
+        XCTAssertEqual(events[0].themeKey, "fun")
+        XCTAssertEqual(events[0].sensitivity, .standard)
+    }
+
+    func testWidgetRefreshUsesTheNextLocalMidnightAcrossDST() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = try XCTUnwrap(TimeZone(identifier: "America/New_York"))
+        let date = try XCTUnwrap(calendar.date(from: DateComponents(
+            year: 2026,
+            month: 3,
+            day: 8,
+            hour: 12
+        )))
+        let refresh = WidgetDayCatalog.nextLocalMidnight(after: date, calendar: calendar)
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: refresh)
+
+        XCTAssertEqual(components.year, 2026)
+        XCTAssertEqual(components.month, 3)
+        XCTAssertEqual(components.day, 9)
+        XCTAssertEqual(components.hour, 0)
+        XCTAssertEqual(components.minute, 0)
+        XCTAssertGreaterThan(refresh, date)
+    }
+
+    func testWidgetLanguageSelectionUsesTurkishOnlyForTurkishLocales() {
+        XCTAssertEqual(WidgetDayCatalog.languageCode(preferredLanguages: ["tr-TR"]), "tr")
+        XCTAssertEqual(WidgetDayCatalog.languageCode(preferredLanguages: ["en-US"]), "en")
+        XCTAssertEqual(WidgetDayCatalog.languageCode(preferredLanguages: ["de-DE"]), "en")
+        XCTAssertEqual(WidgetDayCatalog.languageCode(preferredLanguages: []), "en")
+    }
+
     func testEveryLocalizedDayHasLocaleNeutralMetadata() {
         XCTAssertEqual(DayMetadataStore.entries.count, 366)
         XCTAssertEqual(Set(DayMetadataStore.entries.map(\.id)).count, 366)

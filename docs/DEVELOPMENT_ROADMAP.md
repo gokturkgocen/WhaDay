@@ -77,12 +77,12 @@ Exit: every event produces artwork worth sending in its intended channel.
 
 ## Phase 6 — Widgets
 
-- [ ] Make widget data available before a prior app launch.
+- [x] Make widget data available before a prior app launch.
 - [x] Add exact-event deep links.
-- [ ] Correct midnight timeline refresh and locale behavior.
-- [ ] Add a Lock Screen accessory rectangular family.
-- [ ] Remove playful fixed labels from sensitive entries.
-- [ ] Add VoiceOver labels and graceful corruption fallback.
+- [x] Correct midnight timeline refresh and locale behavior.
+- [x] Add a Lock Screen accessory rectangular family.
+- [x] Remove playful fixed labels from sensitive entries.
+- [x] Add VoiceOver labels and graceful corruption fallback.
 
 Exit: widgets remain correct and useful independently of the app process.
 

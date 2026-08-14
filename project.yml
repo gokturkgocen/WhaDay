@@ -20,6 +20,7 @@ targets:
     platform: iOS
     sources:
       - path: WhaDayNative
+      - path: Shared
     info:
       path: WhaDayNative/Info.plist
       properties:
@@ -53,6 +54,13 @@ targets:
     platform: iOS
     sources:
       - path: WhaDayWidget
+      - path: Shared
+      - path: WhaDayNative/Data/tr.json
+        buildPhase: resources
+      - path: WhaDayNative/Data/en.json
+        buildPhase: resources
+      - path: WhaDayNative/Data/metadata.json
+        buildPhase: resources
     info:
       path: WhaDayWidget/Info.plist
       properties:
