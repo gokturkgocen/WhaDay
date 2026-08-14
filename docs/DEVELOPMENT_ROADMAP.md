@@ -43,12 +43,12 @@ Exit: every entry surface resolves to the same correct day.
 
 ## Phase 3 — First-use and discovery
 
-- [ ] Add a dismissible, contextual three-step first-use coach.
-- [ ] Request notification permission only after demonstrated value.
-- [ ] Add lightweight title search and five high-signal filters.
-- [ ] Expand saved dates beyond the current preview list.
-- [ ] Make weekly picks diverse, deterministic and sensitivity-aware.
-- [ ] Test weekly selection across every start date in a full year.
+- [x] Add a dismissible, contextual three-step first-use coach.
+- [x] Request notification permission only after demonstrated value.
+- [x] Add lightweight title search and five high-signal filters.
+- [x] Expand saved dates beyond the current preview list.
+- [x] Make weekly picks diverse, deterministic and sensitivity-aware.
+- [x] Test weekly selection across every start date in a full year.
 
 Exit: a first-time user understands and reaches sharing without instruction.
 

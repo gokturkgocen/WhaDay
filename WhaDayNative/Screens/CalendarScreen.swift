@@ -27,6 +27,9 @@ struct CalendarScreen: View {
 
     @State private var mode: CalendarMode = .discover
     @State private var scrollPosition: String?
+    @State private var searchText = ""
+    @State private var activeFilter: DayDiscoveryFilter = .all
+    @FocusState private var searchFocused: Bool
 
     private let days = DayEventStore.days
     private let baseColors = ThemeColors.forCategory("default")
@@ -44,8 +47,18 @@ struct CalendarScreen: View {
     }
     private var savedEvents: [DayEvent] { personalLibrary.savedEvents() }
 
+    private var visibleDays: [DayEvent] {
+        DayDiscoveryQuery.apply(
+            to: days,
+            searchText: searchText,
+            filter: activeFilter,
+            savedIDs: personalLibrary.savedIDs,
+            locale: DayEventStore.dateLocale
+        )
+    }
+
     private var items: [CalendarItem] {
-        let grouped = Dictionary(grouping: days, by: \.month)
+        let grouped = Dictionary(grouping: visibleDays, by: \.month)
         return grouped.keys.sorted().flatMap { month in
             [.month(month)] + (grouped[month] ?? []).map(CalendarItem.event)
         }
@@ -90,24 +103,116 @@ struct CalendarScreen: View {
     }
 
     private var allDaysView: some View {
-        ScrollView {
-            LazyVStack(alignment: .leading, spacing: 10) {
-                ForEach(items) { item in
-                    switch item {
-                    case .month(let month):
-                        monthHeader(month)
-                            .padding(.top, month == 1 ? 0 : 22)
-                    case .event(let event):
-                        dayRow(event)
+        VStack(spacing: 12) {
+            searchField
+            filterBar
+
+            ScrollView {
+                if visibleDays.isEmpty {
+                    emptyResults
+                } else {
+                    LazyVStack(alignment: .leading, spacing: 10) {
+                        ForEach(items) { item in
+                            switch item {
+                            case .month(let month):
+                                monthHeader(month)
+                                    .padding(.top, month == visibleDays.first?.month ? 0 : 22)
+                            case .event(let event):
+                                dayRow(event)
+                            }
+                        }
                     }
+                    .scrollTargetLayout()
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 40)
                 }
             }
-            .scrollTargetLayout()
-            .padding(.horizontal, 20)
-            .padding(.bottom, 40)
+            .scrollPosition(id: $scrollPosition, anchor: .center)
+            .scrollDismissesKeyboard(.interactively)
+            .scrollIndicators(.hidden)
         }
-        .scrollPosition(id: $scrollPosition, anchor: .center)
+    }
+
+    private var searchField: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.52))
+            TextField(
+                DayEventStore.language == "tr" ? "Günlerde ara" : "Search days",
+                text: $searchText
+            )
+            .focused($searchFocused)
+            .textInputAutocapitalization(.never)
+            .autocorrectionDisabled()
+            .font(.system(size: 15, weight: .bold, design: .rounded))
+            .foregroundStyle(Color(hex: baseColors.onBackdrop))
+
+            if !searchText.isEmpty {
+                Button {
+                    searchText = ""
+                    searchFocused = false
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.50))
+                        .frame(width: 32, height: 32)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(DayEventStore.language == "tr" ? "Aramayı temizle" : "Clear search")
+            }
+        }
+        .padding(.horizontal, 16)
+        .frame(height: 50)
+        .background(Color.white.opacity(0.07))
+        .clipShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 17).strokeBorder(Color.white.opacity(0.11), lineWidth: 1))
+        .padding(.horizontal, 20)
+    }
+
+    private var filterBar: some View {
+        ScrollView(.horizontal) {
+            HStack(spacing: 8) {
+                ForEach(DayDiscoveryFilter.allCases) { filter in
+                    Button {
+                        Haptics.triggerLight()
+                        withAnimation(.easeInOut(duration: 0.20)) { activeFilter = filter }
+                    } label: {
+                        Label(filter.title(language: DayEventStore.language), systemImage: filter.symbol)
+                            .font(.system(size: 12, weight: .black, design: .rounded))
+                            .foregroundStyle(activeFilter == filter
+                                             ? Color(hex: baseColors.ink)
+                                             : Color(hex: baseColors.onBackdrop))
+                            .padding(.horizontal, 14)
+                            .frame(height: 42)
+                            .background(activeFilter == filter
+                                        ? Color(hex: baseColors.accent)
+                                        : Color.white.opacity(0.07))
+                            .clipShape(Capsule())
+                            .overlay(Capsule().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 20)
+        }
         .scrollIndicators(.hidden)
+    }
+
+    private var emptyResults: some View {
+        VStack(spacing: 12) {
+            Image(systemName: activeFilter == .saved ? "bookmark.slash" : "magnifyingglass")
+                .font(.system(size: 28, weight: .black))
+            Text(DayEventStore.language == "tr" ? "Burada gün yok" : "No days here")
+                .font(.system(size: 20, weight: .black, design: .rounded))
+            Text(DayEventStore.language == "tr"
+                 ? "Aramayı temizle veya başka bir filtre dene."
+                 : "Clear the search or try another filter.")
+                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .opacity(0.58)
+        }
+        .foregroundStyle(Color(hex: baseColors.onBackdrop))
+        .frame(maxWidth: .infinity)
+        .padding(.top, 70)
+        .padding(.horizontal, 30)
     }
 
     private var header: some View {
@@ -414,10 +519,10 @@ struct CalendarScreen: View {
 
     private func savedDate(_ event: DayEvent) -> String {
         var components = DateComponents()
-        components.year = Calendar.current.component(.year, from: Date())
+        components.year = dateContext.calendar.component(.year, from: dateContext.now)
         components.month = event.month
         components.day = event.day
-        guard let date = Calendar.current.date(from: components) else { return "" }
+        guard let date = dateContext.calendar.date(from: components) else { return "" }
         let formatter = DateFormatter()
         formatter.locale = DayEventStore.dateLocale
         formatter.setLocalizedDateFormatFromTemplate("d MMMM")

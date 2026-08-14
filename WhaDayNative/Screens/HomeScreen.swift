@@ -10,6 +10,8 @@ struct HomeScreen: View {
     @State private var activeID: String?
     @State private var contextEvent: DayEvent?
     @State private var appeared = false
+    @AppStorage("firstUseCoachStep") private var coachStep = 0
+    @AppStorage("hasCompletedFirstUseCoach") private var hasCompletedCoach = false
 
     private let days = DayEventStore.days
 
@@ -42,6 +44,20 @@ struct HomeScreen: View {
             }
             .opacity(appeared ? 1 : 0)
             .offset(y: appeared ? 0 : 18)
+
+            if !hasCompletedCoach {
+                FirstUseCoachView(
+                    step: min(max(coachStep, 0), 2),
+                    colors: themeColors,
+                    onNext: advanceCoach,
+                    onDismiss: completeCoach
+                )
+                .padding(.horizontal, 20)
+                .padding(.bottom, 92)
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .zIndex(10)
+            }
         }
         .onAppear {
             if activeID == nil {
@@ -77,6 +93,23 @@ struct HomeScreen: View {
     private func syncSideEffects(for event: DayEvent?) {
         selectedDay = event
         WidgetDataWriter.save(event: event)
+    }
+
+    private func advanceCoach() {
+        Haptics.triggerLight()
+        if coachStep >= 2 {
+            completeCoach()
+        } else {
+            withAnimation(.spring(response: 0.35, dampingFraction: 0.84)) {
+                coachStep += 1
+            }
+        }
+    }
+
+    private func completeCoach() {
+        withAnimation(.easeInOut(duration: 0.24)) {
+            hasCompletedCoach = true
+        }
     }
 
     private var header: some View {

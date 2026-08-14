@@ -370,6 +370,67 @@ final class EditorialContentTests: XCTestCase {
         XCTAssertEqual(components?.second, 1)
     }
 
+    func testDiscoverySearchIsCaseAndDiacriticInsensitive() {
+        let results = DayDiscoveryQuery.apply(
+            to: DayEventStore.days,
+            searchText: "SOLAKLAR",
+            filter: .all,
+            savedIDs: [],
+            locale: Locale(identifier: "tr_TR")
+        )
+        XCTAssertTrue(results.contains { $0.id == "08-13" })
+    }
+
+    func testDiscoveryFiltersUseMetadataAndSavedState() {
+        let events = DayEventStore.days
+        let official = DayDiscoveryQuery.apply(
+            to: events,
+            searchText: "",
+            filter: .official,
+            savedIDs: [],
+            locale: DayEventStore.dateLocale
+        )
+        XCTAssertFalse(official.isEmpty)
+        XCTAssertTrue(official.allSatisfy { $0.authority == .official })
+
+        let saved = DayDiscoveryQuery.apply(
+            to: events,
+            searchText: "",
+            filter: .saved,
+            savedIDs: ["08-13", "08-26"],
+            locale: DayEventStore.dateLocale
+        )
+        XCTAssertEqual(Set(saved.map(\.id)), ["08-13", "08-26"])
+
+        let sendable = DayDiscoveryQuery.apply(
+            to: events,
+            searchText: "",
+            filter: .sendable,
+            savedIDs: [],
+            locale: DayEventStore.dateLocale
+        )
+        XCTAssertTrue(sendable.allSatisfy { $0.sensitivity == .standard && $0.shareability >= 4 })
+    }
+
+    func testWeeklyPicksAreStableAndSafeForEveryStartDateInALeapYear() {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let start = calendar.date(from: DateComponents(year: 2024, month: 1, day: 1))!
+
+        for offset in 0..<366 {
+            let date = calendar.date(byAdding: .day, value: offset, to: start)!
+            let first = WeeklyPicks.make(from: date, calendar: calendar)
+            let second = WeeklyPicks.make(from: date, calendar: calendar)
+
+            XCTAssertEqual(first, second, "Unstable picks at day offset \(offset)")
+            XCTAssertEqual(Set(first.map(\.id)).count, first.count, "Repeated pick at day offset \(offset)")
+            XCTAssertEqual(first.map(\.dayOffset), first.map(\.dayOffset).sorted(), "Unsorted picks at day offset \(offset)")
+            XCTAssertTrue(first.allSatisfy { $0.dayOffset >= 0 && $0.dayOffset < 7 })
+            XCTAssertTrue(first.allSatisfy { $0.event.sensitivity == .standard })
+            XCTAssertTrue(first.allSatisfy { $0.event.metadata?.canBePromotedForEngagement == true })
+        }
+    }
+
     func testSensitiveMetadataCannotBePromotedAsEngagementContent() {
         for metadata in DayMetadataStore.entries where metadata.sensitivity != .standard {
             XCTAssertFalse(metadata.canBePromotedForEngagement, metadata.id)
