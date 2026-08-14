@@ -127,13 +127,20 @@ for id in allIDs.sorted() {
 
     let combinedTitle = "\(trDay.title) \(enDay.title)".lowercased()
     let sensitiveTitleSignals = [
-        "abuse", "aggression", "aids", "blood donor", "chemical warfare", "child labour", "disabilities", "disappearance",
-        "earthquake victims", "extremism", "genital mutilation", "hate speech", "holocaust",
-        "islamophobia", "nuclear tests", "refugee", "sexual violence", "slavery", "suicide",
-        "terrorism", "violence against", "widows", "ayrımcılık", "cinsel şiddet", "çocuk işçiliği",
-        "deprem kurban", "istismar", "islamofobi", "kadın sünnet", "kimyasal savaş",
-        "engelliler", "hiv", "kan bağış", "köle", "mülteci", "nefret söylemi", "nükleer deneme", "soykırım", "şiddet",
-        "terör", "dul kadın", "zorla kaybed"
+        "abuse", "african descent", "aggression", "aids", "albinism", "blood donor", "breastfeeding",
+        "cerebral palsy", "chagas", "chemical warfare", "child labour", "colonialism", "conjoined twins",
+        "crimes against journalists", "disabilities", "disappearance", "drowning", "earthquake victims",
+        "equal pay", "exploitation of the environment in war", "extremism", "genital mutilation", "hate speech",
+        "holocaust", "impunity", "intersex", "islamophobia", "migrants", "nuclear tests", "nuclear weapons",
+        "obstetric fistula", "palestinian people", "poverty", "refugee", "romani", "sex workers",
+        "sexual violence", "slavery", "stuttering", "suicide", "tobacco", "transgender", "tsunami",
+        "terrorism", "violence against", "widows", "afrika köken", "albinizm", "ayrımcılık", "boğulma",
+        "çocuk işçiliği", "cinsel şiddet", "dul kadın", "engelliler", "eşit ücret", "filistin halkı",
+        "göçmenler", "hiv", "istismar", "islamofobi", "kadın sünnet", "kan bağış", "kekemelik",
+        "kimyasal savaş", "köle", "mülteci", "nefret söylemi", "nükleer deneme", "nükleer silah",
+        "obstetrik fistül", "romanlar", "seks işçileri", "serebral palsi", "sömürgecilik", "soykırım",
+        "tütün", "trans görünürlük", "tsunami", "şiddet", "terör", "yapışık ikiz", "yoksulluğun",
+        "zorla kaybed"
     ]
     let isPositiveNonviolenceTitle = combinedTitle.contains("non-violence")
         || combinedTitle.contains("nonviolence")

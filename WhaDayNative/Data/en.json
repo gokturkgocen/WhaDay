@@ -314,10 +314,10 @@
     "month": 2,
     "day": 1,
     "title": "World Hijab Day",
-    "description": "World Hijab Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "World Hijab Day invites people to listen to women who wear hijab in their own voices, without reducing them to a single story.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share by centering the voices of women who wear hijab"
   },
   {
     "id": "02-02",
@@ -344,10 +344,10 @@
     "month": 2,
     "day": 4,
     "title": "International Day of Human Fraternity",
-    "description": "International Day of Human Fraternity: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Human fraternity is not about erasing differences in belief, culture or opinion; it is about living with them in equality and mutual respect.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone you can stand beside across differences"
   },
   {
     "id": "02-05",
@@ -494,10 +494,10 @@
     "month": 2,
     "day": 19,
     "title": "Iwo Jima Day",
-    "description": "Iwo Jima Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The Battle of Iwo Jima began on 19 February 1945 and became one of the Pacific War's fiercest battles; its losses are remembered alongside the human cost of war.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Remember the losses and human cost of war with care"
   },
   {
     "id": "02-20",
@@ -534,10 +534,10 @@
     "month": 2,
     "day": 23,
     "title": "Defender of the Fatherland Day",
-    "description": "Defender of the Fatherland Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Defender of the Fatherland Day is a military-linked commemoration and holiday in Russia and some former Soviet states whose meaning varies by country and period.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share only with its specific cultural context"
   },
   {
     "id": "02-24",
@@ -554,10 +554,10 @@
     "month": 2,
     "day": 25,
     "title": "People Power Day (EDSA Anniversary)",
-    "description": "People Power Day (EDSA Anniversary): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The 1986 People Power movement marked the moment millions in the Philippines used nonviolent protest to oppose authoritarian rule and demand democratic change.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with someone who believes in democratic participation"
   },
   {
     "id": "02-26",
@@ -714,10 +714,10 @@
     "month": 3,
     "day": 12,
     "title": "World Day Against Cyber-Censorship",
-    "description": "World Day Against Cyber-Censorship: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Standing against cyber-censorship means defending internet access, freedom of expression and journalists' ability to work without online repression.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who defends a free and open internet"
   },
   {
     "id": "03-13",
@@ -904,10 +904,10 @@
     "month": 3,
     "day": 31,
     "title": "International Transgender Day of Visibility",
-    "description": "International Transgender Day of Visibility: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Transgender Day of Visibility celebrates trans lives and contributions while drawing attention to discrimination, violence and inequality.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Amplify trans voices with care"
   },
   {
     "id": "04-01",
@@ -984,10 +984,10 @@
     "month": 4,
     "day": 8,
     "title": "International Romani Day",
-    "description": "International Romani Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "International Romani Day celebrates Roma language and culture while highlighting the call for equal rights and an end to anti-Roma racism.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share by centering Roma voices and culture"
   },
   {
     "id": "04-09",
@@ -1044,10 +1044,10 @@
     "month": 4,
     "day": 14,
     "title": "World Chagas Disease Day",
-    "description": "World Chagas Disease Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Chagas is a parasitic disease that can cause serious heart and digestive problems if untreated; early diagnosis and access to care matter.",
     "emoji": "💪",
     "category": "wellness",
-    "sharingHook": "Take care of your health"
+    "sharingHook": "Share only reliable health information about Chagas"
   },
   {
     "id": "04-15",
@@ -1184,10 +1184,10 @@
     "month": 4,
     "day": 28,
     "title": "World Day for Safety and Health at Work",
-    "description": "World Day for Safety and Health at Work: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "A safe and healthy working environment is a fundamental right; preventing occupational injury and disease is an ongoing responsibility for employers and institutions.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Take care of your health"
+    "sharingHook": "Share the right to safe work with context"
   },
   {
     "id": "04-29",
@@ -1214,10 +1214,10 @@
     "month": 5,
     "day": 1,
     "title": "International Workers' Day \/ May Day",
-    "description": "International Workers' Day \/ May Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "May Day highlights worker solidarity and the long history of struggles for decent work, fair pay, organizing and safety.",
     "emoji": "✊",
     "category": "action",
-    "sharingHook": "Take positive action"
+    "sharingHook": "Share the value of labour and solidarity"
   },
   {
     "id": "05-02",
@@ -1434,10 +1434,10 @@
     "month": 5,
     "day": 23,
     "title": "International Day to End Obstetric Fistula",
-    "description": "International Day to End Obstetric Fistula: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Obstetric fistula is largely preventable and treatable; access to quality maternity care and timely treatment is critical to women's health and dignity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with women's health and dignity in focus"
   },
   {
     "id": "05-24",
@@ -1514,10 +1514,10 @@
     "month": 5,
     "day": 31,
     "title": "World No-Tobacco Day",
-    "description": "World No-Tobacco Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Tobacco use is a preventable cause of disease and death; supporting tobacco-free lives requires accurate information, protective policy and access to help.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share reliable health information about tobacco"
   },
   {
     "id": "06-01",
@@ -1534,10 +1534,10 @@
     "month": 6,
     "day": 2,
     "title": "International Sex Workers' Day",
-    "description": "International Sex Workers' Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "2 June centers sex workers' own calls for safety, health and human rights in the face of violence, stigma and discrimination.",
     "emoji": "✊",
     "category": "action",
-    "sharingHook": "Take positive action"
+    "sharingHook": "Center sex workers' own voices and safety"
   },
   {
     "id": "06-03",
@@ -1644,10 +1644,10 @@
     "month": 6,
     "day": 13,
     "title": "International Albinism Awareness Day",
-    "description": "International Albinism Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Albinism is an inherited genetic condition; myths can fuel discrimination and violence, while access to sun protection and eye care matters.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Amplify people with albinism using accurate information"
   },
   {
     "id": "06-14",
@@ -1794,10 +1794,10 @@
     "month": 6,
     "day": 28,
     "title": "International LGBTQ+ Pride Day",
-    "description": "International LGBTQ+ Pride Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "28 June marks the legacy of the Stonewall uprising and celebrates the Pride movement's call for LGBTQ+ visibility, equality and safety.",
     "emoji": "🌈",
     "category": "diversity",
-    "sharingHook": "Celebrate diversity"
+    "sharingHook": "Send to someone whose courage to be themselves you celebrate"
   },
   {
     "id": "06-29",
@@ -1994,10 +1994,10 @@
     "month": 7,
     "day": 18,
     "title": "Nelson Mandela International Day",
-    "description": "Nelson Mandela International Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Nelson Mandela International Day encourages everyday community action in the spirit of Mandela's work for justice, reconciliation and human dignity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone who turns good intentions into action"
   },
   {
     "id": "07-19",
@@ -2064,10 +2064,10 @@
     "month": 7,
     "day": 25,
     "title": "World Drowning Prevention Day",
-    "description": "World Drowning Prevention Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Drowning is often preventable; close supervision, safe barriers, swimming and rescue skills, and lifejackets can reduce risk.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share water-safety information responsibly"
   },
   {
     "id": "07-26",
@@ -2134,10 +2134,10 @@
     "month": 8,
     "day": 1,
     "title": "World Breastfeeding Week (başlangıç)",
-    "description": "World Breastfeeding Week (başlangıç): A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "World Breastfeeding Week, 1-7 August, highlights breastfeeding support; every family's circumstances differ, and good support should be informed, accessible and free of judgment.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with different family circumstances in mind"
   },
   {
     "id": "08-02",
@@ -2434,10 +2434,10 @@
     "month": 8,
     "day": 31,
     "title": "International Day for People of African Descent",
-    "description": "International Day for People of African Descent: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The International Day for People of African Descent recognizes the African diaspora's contributions while strengthening calls for equality against slavery's legacy and systemic racism.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Center the voices of people of African descent"
   },
   {
     "id": "09-01",
@@ -2614,10 +2614,10 @@
     "month": 9,
     "day": 18,
     "title": "International Equal Pay Day",
-    "description": "International Equal Pay Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Equal pay for work of equal value is essential to economic independence and gender equality; the pay gap cannot be reduced to personal choices.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the call for equal pay with care"
   },
   {
     "id": "09-19",
@@ -2694,10 +2694,10 @@
     "month": 9,
     "day": 26,
     "title": "International Day for the Total Elimination of Nuclear Weapons",
-    "description": "International Day for the Total Elimination of Nuclear Weapons: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Nuclear weapons cause indiscriminate humanitarian harm that can last for generations; their total elimination is essential to lasting security.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the call for nuclear disarmament with context"
   },
   {
     "id": "09-27",
@@ -2794,10 +2794,10 @@
     "month": 10,
     "day": 6,
     "title": "World Cerebral Palsy Day",
-    "description": "World Cerebral Palsy Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Cerebral palsy is a group of conditions affecting movement and posture, experienced very differently from person to person; accessibility and individual goals come first.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Center the lived experience of people with cerebral palsy"
   },
   {
     "id": "10-07",
@@ -2814,10 +2814,10 @@
     "month": 10,
     "day": 8,
     "title": "International Lesbian Day",
-    "description": "International Lesbian Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "International Lesbian Day is a community-led celebration of lesbian lives, culture, visibility and solidarity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Send to someone whose visibility and joy you celebrate"
   },
   {
     "id": "10-09",
@@ -2864,10 +2864,10 @@
     "month": 10,
     "day": 13,
     "title": "International Day for Disaster Risk Reduction",
-    "description": "International Day for Disaster Risk Reduction: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Disaster risk reduction means building safer infrastructure, early warning, accessible plans and community preparedness before hazards become disasters.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share verified preparedness without spreading fear"
   },
   {
     "id": "10-14",
@@ -2904,10 +2904,10 @@
     "month": 10,
     "day": 17,
     "title": "International Day for the Eradication of Poverty",
-    "description": "International Day for the Eradication of Poverty: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Poverty is not a personal failure; it is connected to structural inequality that restricts access to rights, income, housing and services.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with the dignity of people experiencing poverty at the center"
   },
   {
     "id": "10-18",
@@ -2954,10 +2954,10 @@
     "month": 10,
     "day": 22,
     "title": "International Stuttering Awareness Day",
-    "description": "International Stuttering Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Stuttering is a natural variation of speech; listening patiently and not finishing someone's sentences unless asked are simple forms of respect.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Center the voices of people who stutter"
   },
   {
     "id": "10-23",
@@ -2994,10 +2994,10 @@
     "month": 10,
     "day": 26,
     "title": "Intersex Awareness Day",
-    "description": "Intersex Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Intersex people are born with natural variations in sex characteristics; bodily autonomy, accurate information and freedom from stigma are essential.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Amplify intersex voices with care"
   },
   {
     "id": "10-27",
@@ -3064,10 +3064,10 @@
     "month": 11,
     "day": 2,
     "title": "International Day to End Impunity for Crimes against Journalists",
-    "description": "International Day to End Impunity for Crimes against Journalists: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Impunity for attacks on journalists threatens both individuals and the public's access to information; accountability is part of press freedom.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share with journalists' safety and accountability in focus"
   },
   {
     "id": "11-03",
@@ -3094,20 +3094,20 @@
     "month": 11,
     "day": 5,
     "title": "World Tsunami Awareness Day",
-    "description": "World Tsunami Awareness Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Tsunami awareness means recognizing natural warning signs, following official alerts and knowing evacuation routes from the coast to higher ground before an emergency.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share verified preparedness without spreading fear"
   },
   {
     "id": "11-06",
     "month": 11,
     "day": 6,
     "title": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
-    "description": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "War harms more than people; it can damage water, soil and ecosystems for years and deepen the hardship faced by civilians.",
     "emoji": "👨",
     "category": "peace",
-    "sharingHook": "Be a voice for peace"
+    "sharingHook": "Share the environmental and human cost of war with care"
   },
   {
     "id": "11-07",
@@ -3154,10 +3154,10 @@
     "month": 11,
     "day": 11,
     "title": "Armistice Day \/ Remembrance Day \/ Veterans Day",
-    "description": "Armistice Day \/ Remembrance Day \/ Veterans Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "On the anniversary of the 1918 Armistice, 11 November is observed under different names to remember war dead, veterans and the cost of peace.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Remember loss and the value of peace with care"
   },
   {
     "id": "11-12",
@@ -3284,10 +3284,10 @@
     "month": 11,
     "day": 24,
     "title": "World Conjoined Twins Day",
-    "description": "World Conjoined Twins Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Conjoined twinning is a rare congenital condition, and each person's medical circumstances and lived experience differ; dignity and quality care should come before curiosity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Center the dignity and lived experience of conjoined twins"
   },
   {
     "id": "11-25",
@@ -3334,10 +3334,10 @@
     "month": 11,
     "day": 29,
     "title": "International Day of Solidarity with the Palestinian People",
-    "description": "International Day of Solidarity with the Palestinian People: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "This United Nations day expresses solidarity with the inalienable rights, human dignity and self-determination of the Palestinian people.",
     "emoji": "🤝",
     "category": "community",
-    "sharingHook": "Be part of community"
+    "sharingHook": "Share by centering Palestinian rights and human dignity"
   },
   {
     "id": "11-30",
@@ -3434,10 +3434,10 @@
     "month": 12,
     "day": 9,
     "title": "International Anti-Corruption Day",
-    "description": "International Anti-Corruption Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Corruption erodes public resources and trust; transparency, independent oversight and accountability protect services that belong to everyone.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share the call for transparency and accountability"
   },
   {
     "id": "12-10",
@@ -3484,10 +3484,10 @@
     "month": 12,
     "day": 14,
     "title": "International Day against Colonialism in All its Forms and Manifestations",
-    "description": "International Day against Colonialism in All its Forms and Manifestations: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The International Day against Colonialism highlights colonialism's continuing political, economic and cultural consequences and affirms peoples' right to self-determination.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Center the voices of peoples affected by colonialism"
   },
   {
     "id": "12-15",
@@ -3524,10 +3524,10 @@
     "month": 12,
     "day": 18,
     "title": "International Migrants Day",
-    "description": "International Migrants Day: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "Migrants' rights do not depend on migration status; safe work, access to justice and protection from discrimination are matters of human dignity.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share migrants' rights and voices with care"
   },
   {
     "id": "12-19",
@@ -3624,10 +3624,10 @@
     "month": 12,
     "day": 28,
     "title": "Day of the Holy Innocents",
-    "description": "Day of the Holy Innocents: A globally celebrated and observed day. Many countries hold official events and awareness activities.",
+    "description": "The Day of the Holy Innocents is a Christian observance remembering the children killed in the Gospel account of King Herod.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Raise awareness"
+    "sharingHook": "Share respectfully and only with its religious and historical context"
   },
   {
     "id": "12-29",

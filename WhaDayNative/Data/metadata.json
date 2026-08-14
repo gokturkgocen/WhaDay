@@ -438,16 +438,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "02-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Hijab Day",
+      "url" : "https://worldhijabday.com/"
+    },
+    "symbol" : "🧕"
   },
   {
     "audience" : [
@@ -477,16 +482,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "02-04",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
   },
   {
     "audience" : [
@@ -706,16 +716,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "remembrance",
     "id" : "02-19",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "US Naval History and Heritage Command",
+      "url" : "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-042/h-042-1.html"
+    },
+    "symbol" : "🕯️"
   },
   {
     "audience" : [
@@ -768,16 +783,16 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "02-23",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "culture-specific",
     "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "shareability" : 3,
+    "symbol" : "📜"
   },
   {
     "audience" : [
@@ -795,16 +810,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "civil-society",
     "id" : "02-25",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Official Gazette of the Republic of the Philippines",
+      "url" : "https://www.officialgazette.gov.ph/featured/edsa-the-original-people-power-revolution/"
+    },
+    "symbol" : "🕊️"
   },
   {
     "audience" : [
@@ -1015,16 +1035,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "civil-society",
     "id" : "03-12",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Reporters Without Borders",
+      "url" : "https://rsf.org/en/world-day-against-cyber-censorship"
+    },
+    "symbol" : "🌐"
   },
   {
     "audience" : [
@@ -1297,16 +1322,21 @@
   },
   {
     "audience" : [
-      "community"
+      "careful-sharing"
     ],
     "authority" : "editorial",
     "category" : "civil-society",
     "id" : "03-31",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 3,
-    "symbol" : "🤝"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "GLAAD",
+      "url" : "https://glaad.org/tdov/"
+    },
+    "symbol" : "🏳️‍⚧️"
   },
   {
     "audience" : [
@@ -1416,16 +1446,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "civil-society",
     "id" : "04-08",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Council of Europe",
+      "url" : "https://www.coe.int/en/web/roma-and-travellers/international-roma-day"
+    },
+    "symbol" : "☸️"
   },
   {
     "audience" : [
@@ -1500,16 +1535,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "health-and-awareness",
     "id" : "04-14",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "💪"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-chagas-disease-day"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -1702,16 +1742,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "04-28",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "🏥"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Labour Organization",
+      "url" : "https://www.ilo.org/resource/world-day-28-april"
+    },
+    "symbol" : "🦺"
   },
   {
     "audience" : [
@@ -1746,15 +1791,20 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "civil-society",
     "id" : "05-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Labour Organization",
+      "url" : "https://www.ilo.org/"
+    },
     "symbol" : "✊"
   },
   {
@@ -2058,16 +2108,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "health-and-awareness",
     "id" : "05-23",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -2168,16 +2223,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "health-and-awareness",
     "id" : "05-31",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-no-tobacco-day"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -2194,16 +2254,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "civil-society",
     "id" : "06-02",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✊"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Global Network of Sex Work Projects",
+      "url" : "https://www.nswp.org/event/international-sex-workers-day"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -2357,16 +2422,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "06-13",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "☀️"
   },
   {
     "audience" : [
@@ -2605,11 +2675,16 @@
     "authority" : "editorial",
     "category" : "civil-society",
     "id" : "06-28",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 3,
-    "symbol" : "🌈"
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "US National Park Service",
+      "url" : "https://www.nps.gov/ston/index.htm"
+    },
+    "symbol" : "🏳️‍🌈"
   },
   {
     "audience" : [
@@ -2871,16 +2946,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "07-18",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
   },
   {
     "audience" : [
@@ -2965,16 +3045,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "health-and-awareness",
     "id" : "07-25",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns/world-drowning-prevention-day"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -3068,16 +3153,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "health-and-awareness",
     "id" : "08-01",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Health Organization",
+      "url" : "https://www.who.int/campaigns"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -3510,16 +3600,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "08-31",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🌍"
   },
   {
     "audience" : [
@@ -3770,16 +3865,21 @@
   },
   {
     "audience" : [
-      "community"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
+    "authority" : "official",
     "category" : "civil-society",
     "id" : "09-18",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 3,
-    "symbol" : "🤝"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "⚖️"
   },
   {
     "audience" : [
@@ -3880,16 +3980,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "remembrance",
     "id" : "09-26",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕯️"
   },
   {
     "audience" : [
@@ -4022,16 +4127,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "health-and-awareness",
     "id" : "10-06",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "World Cerebral Palsy Day",
+      "url" : "https://worldcpday.org/"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -4050,14 +4160,14 @@
     "audience" : [
       "community"
     ],
-    "authority" : "editorial",
-    "category" : "civil-society",
+    "authority" : "cultural",
+    "category" : "culture-and-arts",
     "id" : "10-08",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 3,
-    "symbol" : "🤝"
+    "shareability" : 4,
+    "symbol" : "🏳️‍🌈"
   },
   {
     "audience" : [
@@ -4125,16 +4235,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "10-13",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🛟"
   },
   {
     "audience" : [
@@ -4187,16 +4302,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "10-17",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🤝"
   },
   {
     "audience" : [
@@ -4262,16 +4382,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
     "authority" : "editorial",
-    "category" : "playful",
+    "category" : "health-and-awareness",
     "id" : "10-22",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "International Stuttering Association",
+      "url" : "https://isastutter.org/what-we-do/isad/"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -4320,16 +4445,21 @@
   },
   {
     "audience" : [
-      "community"
+      "careful-sharing"
     ],
     "authority" : "editorial",
     "category" : "civil-society",
     "id" : "10-26",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 3,
-    "symbol" : "🤝"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "interACT",
+      "url" : "https://interactadvocates.org/intersex-awareness-day/"
+    },
+    "symbol" : "🟡"
   },
   {
     "audience" : [
@@ -4411,16 +4541,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "11-02",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "📰"
   },
   {
     "audience" : [
@@ -4452,29 +4587,39 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "11-05",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🌊"
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "remembrance",
     "id" : "11-06",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "👨"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕯️"
   },
   {
     "audience" : [
@@ -4530,16 +4675,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "remembrance",
     "id" : "11-11",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "Commonwealth War Graves Commission",
+      "url" : "https://www.cwgc.org/our-work/commemorations/armistice-day/"
+    },
+    "symbol" : "🕯️"
   },
   {
     "audience" : [
@@ -4729,16 +4879,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "health-and-awareness",
     "id" : "11-24",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🫶"
   },
   {
     "audience" : [
@@ -4799,16 +4954,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "11-29",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "🤝"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕊️"
   },
   {
     "audience" : [
@@ -4951,16 +5111,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "community"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "12-09",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
+    "reviewState" : "curated",
+    "scope" : "international",
     "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "shareability" : 4,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "⚖️"
   },
   {
     "audience" : [
@@ -5027,16 +5192,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "12-14",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🕊️"
   },
   {
     "audience" : [
@@ -5080,16 +5250,21 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "official",
+    "category" : "civil-society",
     "id" : "12-18",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "considerate",
+    "shareability" : 2,
+    "source" : {
+      "checkedAt" : "2026-08-14",
+      "organization" : "United Nations",
+      "url" : "https://www.un.org/en/observances/list-days-weeks"
+    },
+    "symbol" : "🧳"
   },
   {
     "audience" : [
@@ -5213,16 +5388,16 @@
   },
   {
     "audience" : [
-      "friend"
+      "careful-sharing"
     ],
-    "authority" : "editorial",
-    "category" : "playful",
+    "authority" : "cultural",
+    "category" : "remembrance",
     "id" : "12-28",
-    "reviewState" : "needs-editorial-review",
-    "scope" : "whaday-editorial",
-    "sensitivity" : "standard",
-    "shareability" : 5,
-    "symbol" : "✦"
+    "reviewState" : "curated",
+    "scope" : "international",
+    "sensitivity" : "remembrance",
+    "shareability" : 1,
+    "symbol" : "🕯️"
   },
   {
     "audience" : [

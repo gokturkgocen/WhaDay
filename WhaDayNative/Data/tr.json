@@ -314,10 +314,10 @@
     "month": 2,
     "day": 1,
     "title": "Dünya Başörtüsü Günü",
-    "description": "Dünya Başörtüsü Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Başörtüsü Günü, başörtüsü takan kadınların seçimlerini ve deneyimlerini kendi seslerinden dinlemeye; onları tek bir hikâyeye indirgememeye çağırır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Başörtüsü takan kadınların kendi sesini öne çıkararak paylaş"
   },
   {
     "id": "02-02",
@@ -344,10 +344,10 @@
     "month": 2,
     "day": 4,
     "title": "Uluslararası İnsan Kardeşliği Günü",
-    "description": "Uluslararası İnsan Kardeşliği Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnsan kardeşliği; inanç, kültür ve görüş farklılıklarını silmek değil, bu farklılıklarla eşitlik ve karşılıklı saygı içinde yaşayabilmektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Farklılıklarla yan yana durabildiğin kişiye gönder"
   },
   {
     "id": "02-05",
@@ -494,10 +494,10 @@
     "month": 2,
     "day": 19,
     "title": "Iwo Jima’yı Anma Günü",
-    "description": "Iwo Jima Günü (TR karşılığı yaygın değil): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "19 Şubat 1945'te başlayan Iwo Jima Muharebesi, Pasifik Savaşı'nın en ağır çatışmalarından biriydi; bugün kayıplar savaşın insani bedeliyle birlikte anılıyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kayıpları ve savaşın bedelini saygıyla an"
   },
   {
     "id": "02-20",
@@ -534,10 +534,10 @@
     "month": 2,
     "day": 23,
     "title": "Anavatanı Savunma Günü",
-    "description": "Anavatanı Savunma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Anavatanı Savunma Günü, Rusya ve bazı eski Sovyet ülkelerinde askerî hizmetle ilişkilendirilen, anlamı ülkeye ve döneme göre değişen bir anma ve tatil günüdür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnızca ilgili kültürel bağlam içinde paylaş"
   },
   {
     "id": "02-24",
@@ -554,10 +554,10 @@
     "month": 2,
     "day": 25,
     "title": "Halk Gücü Günü",
-    "description": "Halk Gücü Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "1986'daki Halk Gücü hareketi, Filipinler'de milyonların şiddetsiz protestolarla otoriter yönetime karşı çıkıp demokratik değişim talep ettiği dönüm noktasıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Demokratik katılımın gücüne inanan biriyle paylaş"
   },
   {
     "id": "02-26",
@@ -714,10 +714,10 @@
     "month": 3,
     "day": 12,
     "title": "Siber Sansüre Karşı Dünya Günü",
-    "description": "Siber Sansüre Karşı Dünya Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Siber sansüre karşı durmak; internete erişimi, ifade özgürlüğünü ve gazetecilerin çevrimiçi baskı olmadan çalışabilmesini savunmaktır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Özgür ve açık interneti savunan birine gönder"
   },
   {
     "id": "03-13",
@@ -904,10 +904,10 @@
     "month": 3,
     "day": 31,
     "title": "Uluslararası Trans Görünürlük Günü",
-    "description": "Uluslararası Trans Görünürlük Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Trans Görünürlük Günü, trans bireylerin yaşamlarını ve katkılarını kutlarken ayrımcılık, şiddet ve eşitsizlik deneyimlerini de görünür kılar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Trans bireylerin kendi seslerini özenle büyüt"
   },
   {
     "id": "04-01",
@@ -984,10 +984,10 @@
     "month": 4,
     "day": 8,
     "title": "Dünya Romanlar Günü",
-    "description": "Dünya Romanlar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Romanlar Günü, Roman dili ve kültürünü kutlarken Romanlara yönelik ırkçılık ve dışlanmaya karşı eşit hak talebini de görünür kılar.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Romanların kendi sesini ve kültürünü merkeze alarak paylaş"
   },
   {
     "id": "04-09",
@@ -1044,10 +1044,10 @@
     "month": 4,
     "day": 14,
     "title": "Dünya Chagas Hastalığı Günü",
-    "description": "Dünya Chagas Hastalığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Chagas, tedavi edilmediğinde ciddi kalp ve sindirim sorunlarına yol açabilen paraziter bir hastalıktır; erken tanı ve bakıma erişim önemlidir.",
     "emoji": "💪",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Chagas hakkında yalnızca güvenilir sağlık bilgisi paylaş"
   },
   {
     "id": "04-15",
@@ -1184,10 +1184,10 @@
     "month": 4,
     "day": 28,
     "title": "Dünya İş Sağlığı ve Güvenliği Günü",
-    "description": "Dünya İş Sağlığı ve Güvenliği Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Güvenli ve sağlıklı çalışma ortamı temel bir haktır; önlenebilir kazaları ve meslek hastalıklarını azaltmak işverenler ve kurumlar için sürekli sorumluluktur.",
     "emoji": "🏥",
     "category": "wellness",
-    "sharingHook": "Sağlığına dikkat et"
+    "sharingHook": "Güvenli çalışma hakkını bağlamıyla paylaş"
   },
   {
     "id": "04-29",
@@ -1214,10 +1214,10 @@
     "month": 5,
     "day": 1,
     "title": "Emek ve Dayanışma Günü (1 Mayıs)",
-    "description": "Emek ve Dayanışma Günü (1 Mayıs): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "1 Mayıs, işçilerin dayanışmasını ve insanca çalışma, adil ücret, örgütlenme ve güvenlik mücadelelerinin uzun tarihini görünür kılar.",
     "emoji": "✊",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Emeğin ve dayanışmanın değerini paylaş"
   },
   {
     "id": "05-02",
@@ -1434,10 +1434,10 @@
     "month": 5,
     "day": 23,
     "title": "Obstetrik Fistülü Sona Erdirme Uluslararası Günü",
-    "description": "Obstetrik Fistülü Sona Erdirme Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Obstetrik fistül büyük ölçüde önlenebilir ve tedavi edilebilir; nitelikli doğum bakımına ve zamanında tedaviye erişim kadınların sağlığı ve onuru için kritiktir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kadınların sağlığını ve onurunu gözeterek paylaş"
   },
   {
     "id": "05-24",
@@ -1514,10 +1514,10 @@
     "month": 5,
     "day": 31,
     "title": "Dünya Tütünsüz Günü",
-    "description": "Dünya Tütünsüz Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tütün kullanımı önlenebilir hastalık ve ölüm nedenlerinden biridir; dumansız yaşamı desteklemek doğru bilgiye, koruyucu politikalara ve yardıma erişim gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Tütün konusunda güvenilir sağlık bilgisiyle paylaş"
   },
   {
     "id": "06-01",
@@ -1534,10 +1534,10 @@
     "month": 6,
     "day": 2,
     "title": "Uluslararası Seks İşçileri Günü",
-    "description": "Uluslararası Seks İşçileri Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "2 Haziran, seks işçilerinin şiddet, damgalama ve ayrımcılığa karşı güvenlik, sağlık ve insan hakları taleplerini kendi sesleriyle duyurduğu bir gündür.",
     "emoji": "✊",
     "category": "action",
-    "sharingHook": "Olumlu bir eylem al"
+    "sharingHook": "Seks işçilerinin kendi seslerini ve güvenliğini merkeze al"
   },
   {
     "id": "06-03",
@@ -1644,10 +1644,10 @@
     "month": 6,
     "day": 13,
     "title": "Uluslararası Albinizm Farkındalık Günü",
-    "description": "Uluslararası Albinizm Farkındalık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Albinizm kalıtsal bir genetik durumdur; yanlış inanışlar bazı yerlerde ayrımcılık ve şiddeti beslerken güneşten korunma ve göz sağlığına erişim önem taşır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Albinizmli bireylerin sesini doğru bilgiyle büyüt"
   },
   {
     "id": "06-14",
@@ -1794,10 +1794,10 @@
     "month": 6,
     "day": 28,
     "title": "Uluslararası LGBTQ+ Onur Günü",
-    "description": "Uluslararası LGBTQ+ Onur Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "28 Haziran, Stonewall ayaklanmasının yıldönümünden doğan Onur hareketinin LGBTQ+ bireyler için görünürlük, eşitlik ve güvenlik talebini kutlar.",
     "emoji": "🌈",
     "category": "diversity",
-    "sharingHook": "Farklılığı kutla"
+    "sharingHook": "Kendisi olma cesaretini kutladığın kişiye gönder"
   },
   {
     "id": "06-29",
@@ -1994,10 +1994,10 @@
     "month": 7,
     "day": 18,
     "title": "Nelson Mandela Uluslararası Günü",
-    "description": "Nelson Mandela Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Nelson Mandela Günü, Mandela'nın adalet, uzlaşma ve insan onuru için verdiği mücadelenin gündelik toplumsal eylemlerle sürdürülmesini teşvik eder.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İyiliği eyleme dönüştüren birine gönder"
   },
   {
     "id": "07-19",
@@ -2064,10 +2064,10 @@
     "month": 7,
     "day": 25,
     "title": "Dünya Boğulmaları Önleme Günü",
-    "description": "Dünya Boğulmaları Önleme Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Boğulmalar çoğu zaman önlenebilir; yakın gözetim, güvenli bariyerler, yüzme ve kurtarma becerileri ile can yeleği kullanımı riski azaltabilir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Su güvenliği bilgisini sorumlulukla paylaş"
   },
   {
     "id": "07-26",
@@ -2134,10 +2134,10 @@
     "month": 8,
     "day": 1,
     "title": "Dünya Emzirme Haftası (başlangıç)",
-    "description": "Dünya Emzirme Haftası (başlangıç): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Dünya Emzirme Haftası 1-7 Ağustos'ta emzirme desteğine dikkat çeker; her ailenin koşulları farklıdır ve doğru destek yargısız, bilgili ve erişilebilir olmalıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Ailelerin farklı koşullarını gözeterek paylaş"
   },
   {
     "id": "08-02",
@@ -2434,10 +2434,10 @@
     "month": 8,
     "day": 31,
     "title": "Afrika Kökenlilerin Uluslararası Günü",
-    "description": "Afrika Kökenlilerin Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Afrika Kökenlilerin Uluslararası Günü, Afrika diasporasının katkılarını görünür kılarken kölelik mirası ve sistemik ırkçılığa karşı eşitlik talebini güçlendirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Afrika kökenli insanların kendi seslerini merkeze al"
   },
   {
     "id": "09-01",
@@ -2614,10 +2614,10 @@
     "month": 9,
     "day": 18,
     "title": "Uluslararası Eşit Ücret Günü",
-    "description": "Uluslararası Eşit Ücret Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Eşit değerde işe eşit ücret, ekonomik bağımsızlık ve toplumsal cinsiyet eşitliği için temel bir haktır; ücret farkı kişisel tercihlerle açıklanamaz.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Eşit emeğe eşit ücret talebini özenle paylaş"
   },
   {
     "id": "09-19",
@@ -2694,10 +2694,10 @@
     "month": 9,
     "day": 26,
     "title": "Nükleer Silahların Tümüyle Ortadan Kaldırılması İçin Uluslararası Gün",
-    "description": "Nükleer Silahların Tümüyle Ortadan Kaldırılması İçin Uluslararası Gün: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Nükleer silahlar ayrım gözetmeyen ve kuşaklar boyu sürebilen insani sonuçlar doğurur; tamamen ortadan kaldırılmaları kalıcı güvenliğin şartıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Nükleer silahsızlanma çağrısını bağlamıyla paylaş"
   },
   {
     "id": "09-27",
@@ -2794,10 +2794,10 @@
     "month": 10,
     "day": 6,
     "title": "Dünya Serebral Palsi Günü",
-    "description": "Dünya Serebral Palsi Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Serebral palsi hareket ve duruşu etkileyen, kişiden kişiye çok farklı yaşanan bir grup durumdur; erişilebilirlik ve bireyin kendi hedefleri merkezdedir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Serebral palsili bireylerin kendi deneyimini öne çıkar"
   },
   {
     "id": "10-07",
@@ -2814,10 +2814,10 @@
     "month": 10,
     "day": 8,
     "title": "Uluslararası Lezbiyen Günü",
-    "description": "Uluslararası Lezbiyen Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Uluslararası Lezbiyen Günü, lezbiyenlerin yaşamlarını, kültürünü ve dayanışmasını görünür kılan topluluk temelli bir kutlamadır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Görünürlüğünü ve neşesini kutladığın kişiye gönder"
   },
   {
     "id": "10-09",
@@ -2864,10 +2864,10 @@
     "month": 10,
     "day": 13,
     "title": "Uluslararası Afet Riskinin Azaltılması Günü",
-    "description": "Uluslararası Afet Riskinin Azaltılması Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Afet riskini azaltmak, tehlike gerçekleşmeden önce güvenli yapılar, erken uyarı, erişilebilir planlar ve topluluk hazırlığı kurmak demektir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Hazırlık bilgisini korkutmadan, doğrulanmış biçimde paylaş"
   },
   {
     "id": "10-14",
@@ -2904,10 +2904,10 @@
     "month": 10,
     "day": 17,
     "title": "Uluslararası Yoksulluğun Ortadan Kaldırılması Günü",
-    "description": "Uluslararası Yoksulluğun Ortadan Kaldırılması Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yoksulluk kişisel bir başarısızlık değil; haklara, gelire, barınmaya ve hizmetlere erişimi sınırlayan yapısal eşitsizliklerle bağlantılıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yoksulluk yaşayanların onurunu merkeze alarak paylaş"
   },
   {
     "id": "10-18",
@@ -2954,10 +2954,10 @@
     "month": 10,
     "day": 22,
     "title": "Uluslararası Kekemelik Farkındalığı Günü",
-    "description": "Uluslararası Kekemelik Farkındalığı Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Kekemelik konuşmanın doğal çeşitlerinden biridir; sabırla dinlemek ve kişi istemedikçe cümlesini tamamlamamak saygılı iletişimin basit bir parçasıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kekemeliği olan kişilerin kendi sesini öne çıkar"
   },
   {
     "id": "10-23",
@@ -2994,10 +2994,10 @@
     "month": 10,
     "day": 26,
     "title": "İnterseks Farkındalık Günü",
-    "description": "İnterseks Farkındalık Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "İnterseks bireyler cinsiyet özelliklerindeki doğal çeşitliliklerle doğar; bedensel özerklik, doğru bilgi ve damgalanmadan yaşama hakkı esastır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "İnterseks bireylerin kendi seslerini özenle büyüt"
   },
   {
     "id": "10-27",
@@ -3064,10 +3064,10 @@
     "month": 11,
     "day": 2,
     "title": "Gazetecilere Yönelik Suçlarda Cezasızlıkla Mücadele Uluslararası Günü",
-    "description": "Gazetecilere Yönelik Suçlarda Cezasızlıkla Mücadele Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Gazetecilere yönelik saldırıların cezasız kalması yalnızca bireyleri değil, toplumun bilgiye erişimini de tehdit eder; hesap verebilirlik basın özgürlüğünün parçasıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Gazetecilerin güvenliğini ve hesap verebilirliği gözeterek paylaş"
   },
   {
     "id": "11-03",
@@ -3094,20 +3094,20 @@
     "month": 11,
     "day": 5,
     "title": "Dünya Tsunami Bilinci Günü",
-    "description": "Dünya Tsunami Bilinci Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Tsunami bilinci; doğal uyarı işaretlerini tanımayı, resmî uyarıları izlemeyi ve kıyıdan yüksek bölgelere giden tahliye rotasını önceden bilmeyi gerektirir.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Doğrulanmış hazırlık bilgisini korkutmadan paylaş"
   },
   {
     "id": "11-06",
     "month": 11,
     "day": 6,
     "title": "Savaşlarda ve Silahlı Çatışmalarda Çevrenin Sömürülmesinin Önlenmesi Uluslararası Günü",
-    "description": "Savaşlarda ve Silahlı Çatışmalarda Çevrenin Sömürülmesinin Önlenmesi Uluslararası Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Savaşın zararı insanlarla sınırlı kalmaz; su, toprak ve ekosistemlerde yıllarca süren tahribat yaratır ve sivillerin yaşam koşullarını ağırlaştırır.",
     "emoji": "👨",
     "category": "peace",
-    "sharingHook": "Barış için bir ses ol"
+    "sharingHook": "Savaşın çevresel ve insani bedelini saygıyla paylaş"
   },
   {
     "id": "11-07",
@@ -3154,10 +3154,10 @@
     "month": 11,
     "day": 11,
     "title": "Ateşkes ve Anma Günü",
-    "description": "Ateşkes Günü \/ Anma Günü (ülkeye göre farklı adlandırılır): Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "11 Kasım, 1918 Ateşkesi'nin yıldönümünde farklı ülkelerde savaşta hayatını kaybedenleri, gazileri ve barışın bedelini farklı adlarla anıyor.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Kayıpları ve barışın değerini saygıyla an"
   },
   {
     "id": "11-12",
@@ -3284,10 +3284,10 @@
     "month": 11,
     "day": 24,
     "title": "Dünya Yapışık İkizler Günü",
-    "description": "Dünya Yapışık İkizler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yapışık ikizlik nadir bir doğumsal durumdur ve her bireyin tıbbi koşulları ile yaşam deneyimi farklıdır; merak değil saygı ve nitelikli bakım öne çıkmalıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yapışık ikizlerin onurunu ve kendi deneyimlerini merkeze al"
   },
   {
     "id": "11-25",
@@ -3334,10 +3334,10 @@
     "month": 11,
     "day": 29,
     "title": "Filistin Halkı ile Uluslararası Dayanışma Günü",
-    "description": "Filistin Halkı ile Uluslararası Dayanışma Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Bu Birleşmiş Milletler günü, Filistin halkının devredilemez haklarını, insan onurunu ve kendi geleceğini belirleme hakkını destekleyen dayanışmayı görünür kılar.",
     "emoji": "🤝",
     "category": "community",
-    "sharingHook": "Toplumun parçası ol"
+    "sharingHook": "Filistinlilerin haklarını ve insan onurunu merkeze alarak paylaş"
   },
   {
     "id": "11-30",
@@ -3434,10 +3434,10 @@
     "month": 12,
     "day": 9,
     "title": "Dünya Yolsuzlukla Mücadele Günü",
-    "description": "Dünya Yolsuzlukla Mücadele Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Yolsuzluk kamu kaynaklarını ve güveni aşındırır; şeffaflık, bağımsız denetim ve hesap verebilirlik herkesin hakkı olan hizmetleri korur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Şeffaflık ve hesap verebilirlik talebini paylaş"
   },
   {
     "id": "12-10",
@@ -3484,10 +3484,10 @@
     "month": 12,
     "day": 14,
     "title": "Her Türü ve Tezahürüyle Sömürgeciliğe Karşı Uluslararası Gün",
-    "description": "Her Türü ve Tezahürüyle Sömürgeciliğe Karşı Uluslararası Gün: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Sömürgeciliğe Karşı Uluslararası Gün, sömürgeciliğin süren siyasi, ekonomik ve kültürel sonuçlarını görünür kılarak halkların kendi kaderini tayin hakkını savunur.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Sömürgecilikten etkilenen halkların kendi sesini merkeze al"
   },
   {
     "id": "12-15",
@@ -3524,10 +3524,10 @@
     "month": 12,
     "day": 18,
     "title": "Dünya Göçmenler Günü",
-    "description": "Dünya Göçmenler Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Göçmenlerin hakları, göç statülerinden bağımsızdır; güvenli çalışma, adalete erişim ve ayrımcılıktan korunma insan onurunun parçasıdır.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Göçmenlerin haklarını ve kendi seslerini özenle paylaş"
   },
   {
     "id": "12-19",
@@ -3624,10 +3624,10 @@
     "month": 12,
     "day": 28,
     "title": "Masum Çocuklar Günü",
-    "description": "Masum Çocuklar Günü: Dünya çapında kutlanan ve anılan önemli bir gün. Birçok ülkede resmi etkinlik ve farkındalık çalışmaları yapılmaktadır.",
+    "description": "Masum Çocuklar Günü, Hristiyan geleneğinde İncil'deki Kral Hirodes anlatısında öldürülen çocukları anan dinî bir gündür.",
     "emoji": "🔔",
     "category": "awareness",
-    "sharingHook": "Farkındalık yayarak bilgilendir"
+    "sharingHook": "Yalnızca dinî ve tarihsel bağlamıyla, saygıyla paylaş"
   },
   {
     "id": "12-29",
