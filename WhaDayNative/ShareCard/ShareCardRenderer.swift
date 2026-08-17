@@ -6,7 +6,7 @@ enum ShareCardRenderer {
         event: DayEvent?,
         colors: ThemeColors,
         format: ShareCardFormat,
-        style: ShareCardStyle = .editorial,
+        style: ShareCardStyle = .playful,
         personalNote: String? = nil,
         language: String = DayEventStore.language
     ) -> UIImage? {

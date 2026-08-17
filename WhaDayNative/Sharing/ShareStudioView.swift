@@ -10,7 +10,7 @@ struct ShareStudioView: View {
     let colors: ThemeColors
 
     @State private var format: ShareCardFormat = .message
-    @State private var style: ShareCardStyle = .editorial
+    @State private var style: ShareCardStyle = .playful
     @State private var selectedPersonalization: SharePersonalization
     @State private var shareImage: UIImage?
     @State private var showingActivity = false
