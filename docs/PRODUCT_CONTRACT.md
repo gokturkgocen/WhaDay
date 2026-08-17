@@ -83,7 +83,9 @@ user.
 - More languages beyond Turkish and English
 
 These are not rejected forever. They are excluded because they do not need to
-exist for the core promise to feel complete.
+exist for the core promise to feel complete. Intended post-1.0 direction,
+including the sealed personal day that would relax several of these non-goals,
+is recorded in [`POST_1_0_BACKLOG.md`](POST_1_0_BACKLOG.md).
 
 ## Core experience budgets
 

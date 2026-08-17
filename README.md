@@ -26,6 +26,8 @@ The binding 1.0 product scope and completion gates are documented in
 is tracked in [`docs/DEVELOPMENT_ROADMAP.md`](docs/DEVELOPMENT_ROADMAP.md), and
 the latest simulator-qualified candidate is recorded in
 [`docs/DEVELOPMENT_RC_EVIDENCE.md`](docs/DEVELOPMENT_RC_EVIDENCE.md).
+Planned post-1.0 direction is recorded in
+[`docs/POST_1_0_BACKLOG.md`](docs/POST_1_0_BACKLOG.md).
 
 Run the strict editorial gate before treating a content revision as a release
 candidate:
