@@ -4,28 +4,29 @@ import WidgetKit
 struct WidgetPalette {
     let paper: Color
     let ink: Color
-    let secondary: Color
     let accent: Color
 
     static func forTheme(_ theme: String) -> WidgetPalette {
-        let values: (String, String, String, String)
+        let accent: String
         switch theme {
-        case "nature": values = ("#B9EA76", "#111218", "#E5FF9B", "#78D46E")
-        case "science": values = ("#8BB8FF", "#111218", "#7FF0FF", "#668CFF")
-        case "peace": values = ("#91D9FF", "#111218", "#C5A7FF", "#6ABEFF")
-        case "culture": values = ("#FFC857", "#111218", "#FFED9A", "#FFB13D")
-        case "lifestyle": values = ("#FFB067", "#111218", "#FFE16A", "#FF8D58")
-        case "health": values = ("#7FE5D1", "#111218", "#B8FFEA", "#49CEB5")
-        case "social", "community": values = ("#C5A7FF", "#111218", "#FF9ED6", "#A77CFF")
-        case "diversity": values = ("#FF9BD2", "#111218", "#FFE36A", "#CA7DFF")
-        case "sport", "fun": values = ("#75DBFF", "#111218", "#C5FF5A", "#59BEFF")
-        default: values = ("#B5A6FF", "#111218", "#D9FF66", "#8F86FF")
+        case "nature": accent = "#829B77"
+        case "science": accent = "#8297BA"
+        case "peace": accent = "#879EAE"
+        case "culture": accent = "#B79B69"
+        case "lifestyle": accent = "#B18A72"
+        case "health": accent = "#78A49B"
+        case "social": accent = "#A18DAA"
+        case "community": accent = "#9A8AA7"
+        case "diversity": accent = "#A78C9F"
+        case "sport": accent = "#7898A8"
+        case "fun": accent = "#7FA3B5"
+        default: accent = "#929292"
         }
+
         return WidgetPalette(
-            paper: Color(hex: values.0) ?? .white,
-            ink: Color(hex: values.1) ?? .black,
-            secondary: Color(hex: values.2) ?? .green,
-            accent: Color(hex: values.3) ?? .purple
+            paper: Color(hex: "#F2F0E8") ?? .white,
+            ink: Color(hex: "#11110F") ?? .black,
+            accent: Color(hex: accent) ?? .gray
         )
     }
 }
@@ -39,15 +40,35 @@ struct WhaDayEntry: TimelineEntry {
     let language: String
     let sensitivity: WidgetDaySensitivity
 
+    private var locale: Locale {
+        Locale(identifier: language == "tr" ? "tr_TR" : "en_US")
+    }
+
+    var dayNumber: String {
+        String(Calendar.autoupdatingCurrent.component(.day, from: date))
+    }
+
+    var month: String {
+        date
+            .formatted(.dateTime.month(.abbreviated).locale(locale))
+            .uppercased(with: locale)
+    }
+
+    var weekday: String {
+        date
+            .formatted(.dateTime.weekday(.wide).locale(locale))
+            .uppercased(with: locale)
+    }
+
     var eyebrow: String {
-        if language == "tr" {
-            return sensitivity == .standard ? "BUGÜNÜN BAHANESİ" : "BUGÜNÜN NOTU"
+        if sensitivity == .standard {
+            return language == "tr" ? "BUGÜN" : "TODAY"
         }
-        return sensitivity == .standard ? "TODAY'S EXCUSE" : "TODAY'S NOTE"
+        return language == "tr" ? "BUGÜNÜN NOTU" : "TODAY'S NOTE"
     }
 
     var accessibilitySummary: String {
-        "\(eyebrow.capitalized). \(title)"
+        "\(dayNumber) \(month). \(title)"
     }
 }
 
@@ -56,7 +77,7 @@ struct WhaDayProvider: TimelineProvider {
         WhaDayEntry(
             date: Date(),
             dayID: "08-13",
-            symbol: "✋",
+            symbol: "✦",
             title: "Dünya Solaklar Günü",
             palette: .forTheme("fun"),
             language: "tr",
@@ -124,81 +145,176 @@ struct WhaDayWidgetView: View {
     let entry: WhaDayEntry
 
     var body: some View {
-        Group {
-            if family == .accessoryRectangular {
-                accessoryView
-                    .containerBackground(.clear, for: .widget)
-            } else {
-                homeScreenView
-                    .containerBackground(Color(hex: "#0B0D12") ?? .black, for: .widget)
-            }
-        }
-        .widgetURL(entry.dayID.flatMap { URL(string: "whaday://day/\($0)") })
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(entry.accessibilitySummary)
-        .accessibilityHint(entry.language == "tr" ? "Günü WhaDay'de açar" : "Opens the day in WhaDay")
+        content
+            .widgetURL(entry.dayID.flatMap { URL(string: "whaday://day/\($0)") })
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(entry.accessibilitySummary)
+            .accessibilityHint(entry.language == "tr" ? "Günü WhaDay'de açar" : "Opens the day in WhaDay")
     }
 
-    private var homeScreenView: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                WhaDayWidgetMark(color: entry.palette.secondary)
-                Text("WHADAY")
-                    .font(.system(size: 10, weight: .black, design: .rounded))
-                    .tracking(0.7)
-                Spacer()
-                Text(entry.symbol).font(.system(size: 24))
+    @ViewBuilder
+    private var content: some View {
+        switch family {
+        case .systemMedium:
+            mediumView
+                .containerBackground(entry.palette.paper, for: .widget)
+        case .accessoryRectangular:
+            rectangularAccessoryView
+                .containerBackground(.clear, for: .widget)
+        case .accessoryInline:
+            inlineAccessoryView
+                .containerBackground(.clear, for: .widget)
+        case .accessoryCircular:
+            circularAccessoryView
+                .containerBackground(.clear, for: .widget)
+        default:
+            smallView
+                .containerBackground(entry.palette.paper, for: .widget)
+        }
+    }
+
+    private var smallView: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            dateHeader
+
+            Spacer(minLength: 12)
+
+            accentRule(width: 28)
+
+            Text(entry.title)
+                .font(.system(size: 20, weight: .semibold, design: .serif))
+                .tracking(-0.65)
+                .foregroundStyle(entry.palette.ink)
+                .lineLimit(4)
+                .minimumScaleFactor(0.72)
+                .padding(.top, 10)
+
+            Spacer(minLength: 8)
+
+            wordmark
+        }
+    }
+
+    private var mediumView: some View {
+        HStack(spacing: 17) {
+            VStack(alignment: .leading, spacing: 0) {
+                Text(entry.month)
+                    .font(.system(size: 10, weight: .semibold, design: .default))
+                    .tracking(1.5)
+                    .foregroundStyle(entry.palette.ink.opacity(0.5))
+
+                Text(entry.dayNumber)
+                    .font(.system(size: 46, weight: .medium, design: .serif))
+                    .tracking(-1.5)
+                    .foregroundStyle(entry.palette.ink)
+                    .padding(.top, -2)
+
+                Spacer(minLength: 10)
+
+                wordmark
             }
-            .foregroundStyle(Color(hex: "#F4F2EA") ?? .white)
+            .frame(width: 75, alignment: .leading)
 
-            Spacer(minLength: 2)
+            Rectangle()
+                .fill(entry.palette.ink.opacity(0.12))
+                .frame(width: 1)
 
-            VStack(alignment: .leading, spacing: 5) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text(entry.eyebrow)
-                    .font(.system(size: 8, weight: .black, design: .rounded))
-                    .tracking(0.9)
-                    .opacity(0.68)
+                    .font(.system(size: 9, weight: .semibold))
+                    .tracking(1.45)
+                    .foregroundStyle(entry.palette.ink.opacity(0.48))
+
+                Spacer(minLength: 12)
+
+                accentRule(width: 34)
 
                 Text(entry.title)
-                    .font(.system(size: family == .systemSmall ? 17 : 21, weight: .black, design: .rounded))
-                    .tracking(-0.5)
-                    .lineLimit(family == .systemSmall ? 3 : 2)
-                    .minimumScaleFactor(0.68)
+                    .font(.system(size: 23, weight: .semibold, design: .serif))
+                    .tracking(-0.75)
+                    .foregroundStyle(entry.palette.ink)
+                    .lineLimit(3)
+                    .minimumScaleFactor(0.72)
+                    .padding(.top, 10)
+
+                Spacer(minLength: 0)
             }
-            .foregroundStyle(entry.palette.ink)
-            .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(
-                LinearGradient(
-                    colors: [entry.palette.paper, entry.palette.accent],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
-        .padding(14)
     }
 
-    private var accessoryView: some View {
-        HStack(spacing: 8) {
-            Text(entry.symbol)
-                .font(.system(size: 22))
-                .accessibilityHidden(true)
+    private var rectangularAccessoryView: some View {
+        HStack(spacing: 10) {
+            Rectangle()
+                .fill(.primary)
+                .frame(width: 2)
+                .widgetAccentable()
 
             VStack(alignment: .leading, spacing: 2) {
-                Text(entry.eyebrow)
-                    .font(.system(size: 8, weight: .black, design: .rounded))
-                    .tracking(0.6)
+                Text("\(entry.dayNumber) \(entry.month) · \(entry.eyebrow)")
+                    .font(.system(size: 9, weight: .semibold))
+                    .tracking(0.7)
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
+
                 Text(entry.title)
-                    .font(.system(size: 13, weight: .bold, design: .rounded))
+                    .font(.system(size: 14, weight: .semibold, design: .serif))
                     .lineLimit(2)
-                    .minimumScaleFactor(0.75)
+                    .minimumScaleFactor(0.76)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var inlineAccessoryView: some View {
+        Text("\(entry.dayNumber) \(entry.month) · \(entry.title)")
+            .lineLimit(1)
+    }
+
+    private var circularAccessoryView: some View {
+        VStack(spacing: -2) {
+            Text(entry.dayNumber)
+                .font(.system(size: 25, weight: .semibold, design: .serif))
+            Text(entry.month)
+                .font(.system(size: 8, weight: .bold))
+                .tracking(0.8)
+        }
         .widgetAccentable()
+    }
+
+    private var dateHeader: some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text("\(entry.dayNumber) \(entry.month)")
+                .font(.system(size: 10, weight: .semibold))
+                .tracking(1.35)
+
+            Spacer(minLength: 6)
+
+            Text(entry.weekday)
+                .font(.system(size: 9, weight: .medium))
+                .tracking(0.9)
+        }
+        .foregroundStyle(entry.palette.ink.opacity(0.48))
+    }
+
+    private var wordmark: some View {
+        HStack(spacing: 6) {
+            WhaDayWidgetMark(color: entry.palette.ink)
+                .frame(width: 12, height: 12)
+
+            Text("WHADAY")
+                .font(.system(size: 9, weight: .semibold))
+                .tracking(1.45)
+                .foregroundStyle(entry.palette.ink.opacity(0.82))
+        }
+    }
+
+    private func accentRule(width: CGFloat) -> some View {
+        Rectangle()
+            .fill(entry.palette.accent)
+            .frame(width: width, height: 2)
+            .widgetAccentable()
+            .accessibilityHidden(true)
     }
 }
 
@@ -210,13 +326,15 @@ private struct WhaDayWidgetMark: View {
             ForEach(0..<6, id: \.self) { index in
                 Capsule()
                     .fill(color)
-                    .frame(width: 3, height: 11)
-                    .offset(y: -4)
+                    .frame(width: 2, height: 8)
+                    .offset(y: -3)
                     .rotationEffect(.degrees(Double(index) * 60))
             }
-            Circle().fill(color).frame(width: 3, height: 3)
+            Circle()
+                .fill(color)
+                .frame(width: 2, height: 2)
         }
-        .frame(width: 18, height: 18)
+        .frame(width: 12, height: 12)
         .accessibilityHidden(true)
     }
 }
@@ -230,9 +348,43 @@ struct WhaDayWidget: Widget {
             WhaDayWidgetView(entry: entry)
         }
         .configurationDisplayName("WhaDay")
-        .description("Open today's day and share it with someone.")
-        .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular])
+        .description("Keep today's day close.")
+        .supportedFamilies([
+            .systemSmall,
+            .systemMedium,
+            .accessoryRectangular,
+            .accessoryInline,
+            .accessoryCircular,
+        ])
     }
+}
+
+#Preview(as: .systemSmall) {
+    WhaDayWidget()
+} timeline: {
+    WhaDayEntry(
+        date: .now,
+        dayID: "08-13",
+        symbol: "✦",
+        title: "Dünya Solaklar Günü",
+        palette: .forTheme("fun"),
+        language: "tr",
+        sensitivity: .standard
+    )
+}
+
+#Preview(as: .systemMedium) {
+    WhaDayWidget()
+} timeline: {
+    WhaDayEntry(
+        date: .now,
+        dayID: "08-13",
+        symbol: "✦",
+        title: "Dünya Solaklar Günü",
+        palette: .forTheme("fun"),
+        language: "tr",
+        sensitivity: .standard
+    )
 }
 
 private extension Color {
