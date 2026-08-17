@@ -41,6 +41,12 @@ final class WhaDayAccessibilityUITests: XCTestCase {
         XCTAssertTrue(app.buttons["share.close"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["share.primary"].exists)
         attachScreenshot(named: "\(prefix)-Share-Studio")
+
+        let storyFormat = app.buttons["share.format.story"]
+        XCTAssertTrue(storyFormat.exists)
+        storyFormat.tap()
+        attachScreenshot(named: "\(prefix)-Share-Story")
+
         app.buttons["share.close"].tap()
 
         let calendar = app.buttons["home.calendar"]

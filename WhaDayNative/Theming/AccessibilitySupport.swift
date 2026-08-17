@@ -25,7 +25,7 @@ extension View {
     func appFont(
         size: CGFloat,
         weight: Font.Weight = .regular,
-        design: Font.Design = .rounded,
+        design: Font.Design = .default,
         relativeTo textStyle: Font.TextStyle = .body
     ) -> some View {
         modifier(ScaledAppFontModifier(

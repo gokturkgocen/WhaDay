@@ -27,10 +27,7 @@ struct HomeScreen: View {
 
     var body: some View {
         ZStack {
-            AmbientTimelineView { elapsed in
-                EditorialBackground(colors: themeColors, elapsed: elapsed)
-                    .animation(reduceMotion ? nil : .easeInOut(duration: 0.45), value: activeEvent?.category)
-            }
+            EditorialBackground(colors: themeColors, elapsed: 0)
 
             Group {
                 if dynamicTypeSize.isAccessibilitySize {
@@ -40,7 +37,7 @@ struct HomeScreen: View {
                 }
             }
             .opacity(reduceMotion || appeared ? 1 : 0)
-            .offset(y: reduceMotion || appeared ? 0 : 18)
+            .offset(y: reduceMotion || appeared ? 0 : 10)
 
             if !hasCompletedCoach {
                 FirstUseCoachView(
@@ -50,7 +47,7 @@ struct HomeScreen: View {
                     onDismiss: completeCoach
                 )
                 .padding(.horizontal, 20)
-                .padding(.bottom, 92)
+                .padding(.bottom, 86)
                 .frame(maxHeight: .infinity, alignment: .bottom)
                 .transition(reduceMotion ? .identity : .move(edge: .bottom).combined(with: .opacity))
                 .zIndex(10)
@@ -61,14 +58,16 @@ struct HomeScreen: View {
                 activeID = (selectedDay ?? DayEventStore.event(id: dateContext.dayID))?.id ?? days.first?.id
                 syncSideEffects(for: activeEvent)
             }
-            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.45)) { appeared = true }
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.32)) {
+                appeared = true
+            }
         }
         .onChange(of: activeID) { _, _ in
             syncSideEffects(for: activeEvent)
         }
         .onChange(of: selectedDay?.id) { _, newID in
             guard let newID, newID != activeID else { return }
-            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.28)) {
+            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.22)) {
                 activeID = newID
             }
         }
@@ -83,29 +82,7 @@ struct HomeScreen: View {
             DayContextSheet(event: event, colors: ThemeColors.forEvent(event))
                 .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(32)
-        }
-    }
-
-    private func syncSideEffects(for event: DayEvent?) {
-        selectedDay = event
-        WidgetDataWriter.save(event: event)
-    }
-
-    private func advanceCoach() {
-        Haptics.triggerLight()
-        if coachStep >= 2 {
-            completeCoach()
-        } else {
-            withAnimation(reduceMotion ? nil : .spring(response: 0.35, dampingFraction: 0.84)) {
-                coachStep += 1
-            }
-        }
-    }
-
-    private func completeCoach() {
-        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.24)) {
-            hasCompletedCoach = true
+                .presentationCornerRadius(24)
         }
     }
 
@@ -115,86 +92,54 @@ struct HomeScreen: View {
             dayPager
 
             if let event = activeEvent {
-                actionButtons(for: event)
+                ActionButtons(
+                    event: event,
+                    prompt: EditorialContent.forEvent(event).prompt,
+                    colors: themeColors
+                )
             }
         }
     }
 
     private var accessibilityHome: some View {
         ScrollView {
-            VStack(spacing: 12) {
+            VStack(spacing: 0) {
                 header
 
                 if let event = activeEvent {
                     accessibilityDayNavigation(event)
                     dayPage(event)
-                    actionButtons(for: event)
+                    ActionButtons(
+                        event: event,
+                        prompt: EditorialContent.forEvent(event).prompt,
+                        colors: themeColors
+                    )
                 }
             }
-            .padding(.bottom, 20)
+            .padding(.bottom, 16)
         }
         .scrollIndicators(.hidden)
     }
 
-    private func actionButtons(for event: DayEvent) -> some View {
-        ActionButtons(
-            event: event,
-            prompt: EditorialContent.forEvent(event).prompt,
-            colors: themeColors
-        )
-    }
-
-    private func accessibilityDayNavigation(_ event: DayEvent) -> some View {
-        HStack {
-            Button {
-                moveDay(from: event, offset: -1)
-            } label: {
-                Label(DayEventStore.language == "tr" ? "Önceki" : "Previous", systemImage: "chevron.left")
-                    .labelStyle(.iconOnly)
-            }
-            .accessibilityLabel(DayEventStore.language == "tr" ? "Önceki gün" : "Previous day")
-            .minimumAccessibleTarget()
-
-            Spacer()
-
-            Button {
-                moveDay(from: event, offset: 1)
-            } label: {
-                Label(DayEventStore.language == "tr" ? "Sonraki" : "Next", systemImage: "chevron.right")
-                    .labelStyle(.iconOnly)
-            }
-            .accessibilityLabel(DayEventStore.language == "tr" ? "Sonraki gün" : "Next day")
-            .minimumAccessibleTarget()
-        }
-        .appFont(size: 14, weight: .black, relativeTo: .headline)
-        .foregroundStyle(Color(hex: themeColors.onBackdrop))
-        .buttonStyle(.borderless)
-        .padding(.horizontal, 24)
-    }
-
     private var header: some View {
-        HStack(spacing: 12) {
-            HStack(spacing: 7) {
-                BrandMark(color: Color(hex: themeColors.secondary))
-                    .frame(width: 26, height: 26)
-                    .scaleEffect(0.68)
+        HStack(spacing: 10) {
+            BrandMark(color: Color(hex: themeColors.onBackdrop))
+                .frame(width: 16, height: 16)
+                .scaleEffect(0.34)
 
-                Text("WhaDay")
-                    .appFont(size: 23, weight: .black, relativeTo: .title2)
-                    .tracking(-0.8)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.58)
-            }
-            .foregroundStyle(Color(hex: themeColors.onBackdrop))
+            Text("WHADAY")
+                .appFont(size: 12, weight: .semibold, relativeTo: .caption)
+                .tracking(2.2)
 
             Spacer()
 
-            headerButton(systemName: "info", action: onOpenSettings)
+            headerButton(systemName: "info.circle", action: onOpenSettings)
             headerButton(systemName: "calendar", action: onOpenCalendar)
         }
+        .foregroundStyle(Color(hex: themeColors.onBackdrop))
         .padding(.horizontal, 22)
-        .padding(.top, 10)
-        .padding(.bottom, 8)
+        .padding(.top, 8)
+        .padding(.bottom, 4)
     }
 
     private func headerButton(systemName: String, action: @escaping () -> Void) -> some View {
@@ -203,12 +148,9 @@ struct HomeScreen: View {
             action()
         } label: {
             Image(systemName: systemName)
-                .font(.system(size: 17, weight: .bold))
-                .foregroundStyle(Color(hex: themeColors.onBackdrop))
-                .frame(width: 42, height: 42)
-                .background(Color.white.opacity(0.08))
-                .clipShape(Circle())
-                .overlay(Circle().strokeBorder(Color.white.opacity(0.13), lineWidth: 1))
+                .font(.system(size: 16, weight: .medium))
+                .foregroundStyle(Color(hex: themeColors.onBackdrop).opacity(0.82))
+                .frame(width: 44, height: 44)
         }
         .buttonStyle(.plain)
         .minimumAccessibleTarget()
@@ -236,129 +178,105 @@ struct HomeScreen: View {
         let editorial = EditorialContent.forEvent(day)
         let colors = ThemeColors.forEvent(day)
 
-        return VStack(spacing: 12) {
-            HStack {
+        return VStack(alignment: .leading, spacing: 0) {
+            HStack(alignment: .firstTextBaseline) {
                 Text((dynamicTypeSize.isAccessibilitySize ? formattedCompactDate(for: day) : formattedDate(for: day)).uppercased())
-                    .appFont(size: 12, weight: .black, relativeTo: .caption)
-                    .tracking(1.2)
+                    .appFont(size: 11, weight: .medium, relativeTo: .caption)
+                    .tracking(1.5)
 
                 Spacer()
 
-                if !dynamicTypeSize.isAccessibilitySize {
-                    Text(dayPosition(day))
-                        .appFont(size: 12, weight: .bold, design: .monospaced, relativeTo: .caption)
-                }
+                Text(dayPosition(day))
+                    .appFont(size: 11, weight: .medium, design: .monospaced, relativeTo: .caption)
             }
-            .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.58))
-            .padding(.horizontal, 28)
+            .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.48))
 
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(alignment: .top) {
-                    Text(dynamicTypeSize.isAccessibilitySize ? accessibleEyebrow(for: editorial) : editorial.eyebrow)
-                        .appFont(size: 11, weight: .black, relativeTo: .caption)
-                        .tracking(1.5)
-                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? 2 : 1)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 8)
-                        .background(Color(hex: colors.ink).opacity(0.88))
-                        .foregroundStyle(Color(hex: colors.onBackdrop))
-                        .clipShape(Capsule())
+            Spacer(minLength: dynamicTypeSize.isAccessibilitySize ? 22 : 34)
 
-                    Spacer()
+            Rectangle()
+                .fill(Color(hex: colors.accent))
+                .frame(width: 36, height: 2)
+                .accessibilityHidden(true)
 
-                    Text(EditorialSymbol.forEvent(day))
-                        .font(.system(size: 42))
-                        .frame(width: 74, height: 74)
-                        .background(Color(hex: colors.secondary).opacity(0.9))
-                        .clipShape(Circle())
-                        .overlay(Circle().strokeBorder(Color(hex: colors.ink).opacity(0.18), lineWidth: 1))
-                        .rotationEffect(.degrees(5))
-                }
+            Text(day.title)
+                .font(.system(
+                    size: dynamicTypeSize.isAccessibilitySize ? 34 : titleSize(for: day.title),
+                    weight: .semibold,
+                    design: .serif
+                ))
+                .tracking(-1.35)
+                .foregroundStyle(Color(hex: colors.onBackdrop))
+                .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 4)
+                .minimumScaleFactor(0.74)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.top, 18)
 
-                Spacer(minLength: 12)
+            Text(editorial.fact)
+                .appFont(size: 17, weight: .regular, relativeTo: .body)
+                .lineSpacing(4)
+                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.67))
+                .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 5)
+                .minimumScaleFactor(0.86)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.top, 20)
 
-                Text(day.title)
-                    .appFont(
-                        size: dynamicTypeSize.isAccessibilitySize ? 22 : titleSize(for: day.title),
-                        weight: .black,
-                        relativeTo: .largeTitle
-                    )
-                    .tracking(-1.5)
-                    .foregroundStyle(Color(hex: colors.ink))
-                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 4)
-                    .minimumScaleFactor(0.72)
-                    .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 22)
 
-                Rectangle()
-                    .fill(Color(hex: colors.ink))
-                    .frame(height: 2)
-                    .padding(.vertical, 18)
-
-                Text(editorial.fact)
-                    .appFont(size: 17, weight: .semibold, relativeTo: .body)
-                    .lineSpacing(3)
-                    .foregroundStyle(Color(hex: colors.ink).opacity(0.82))
-                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 4)
-                    .minimumScaleFactor(0.86)
-
-                Spacer(minLength: 16)
-
-                Button {
-                    Haptics.triggerLight()
-                    contextEvent = day
-                } label: {
-                    HStack(spacing: 7) {
-                        Image(systemName: DayProvenance.forEvent(day).isOfficial ? "checkmark.seal.fill" : "info.circle.fill")
-                        Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
-                    }
-                    .appFont(size: 12, weight: .black, relativeTo: .caption)
-                    .foregroundStyle(Color(hex: colors.ink).opacity(0.80))
-                    .padding(.horizontal, 12)
-                    .frame(minHeight: 44)
-                    .background(Color(hex: colors.ink).opacity(0.10))
-                    .clipShape(Capsule())
-                }
-                .buttonStyle(.plain)
-
-                Spacer(minLength: 12)
-
+            Button {
+                Haptics.triggerLight()
+                contextEvent = day
+            } label: {
                 HStack(spacing: 8) {
-                    BrandMark(color: Color(hex: colors.accent))
-                        .frame(width: 22, height: 22)
-                        .scaleEffect(0.52)
-                    Text(editorial.prompt)
-                        .appFont(size: 13, weight: .black, relativeTo: .callout)
-                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 2)
+                    Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
+                    Image(systemName: "arrow.up.right")
+                        .font(.system(size: 11, weight: .semibold))
                 }
-                .foregroundStyle(Color(hex: colors.ink))
+                .appFont(size: 13, weight: .semibold, relativeTo: .callout)
+                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.78))
+                .frame(minHeight: 44)
             }
-            .padding(24)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            .background(
-                LinearGradient(
-                    colors: [Color(hex: colors.paper), Color(hex: colors.blob1)],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 34, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 34, style: .continuous)
-                    .strokeBorder(Color.white.opacity(0.20), lineWidth: 1)
-            )
-            .shadow(color: Color(hex: colors.accent).opacity(0.22), radius: 28, x: 0, y: 16)
-            .padding(.horizontal, 20)
-            .padding(.bottom, 8)
+            .buttonStyle(.plain)
         }
-        .padding(.top, 4)
+        .padding(.horizontal, 28)
+        .padding(.top, 10)
+        .padding(.bottom, 8)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .accessibilityElement(children: .contain)
     }
 
+    private func accessibilityDayNavigation(_ event: DayEvent) -> some View {
+        HStack {
+            Button {
+                moveDay(from: event, offset: -1)
+            } label: {
+                Label(DayEventStore.language == "tr" ? "Önceki" : "Previous", systemImage: "chevron.left")
+                    .labelStyle(.iconOnly)
+            }
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Önceki gün" : "Previous day")
+            .minimumAccessibleTarget()
+
+            Spacer()
+
+            Button {
+                moveDay(from: event, offset: 1)
+            } label: {
+                Label(DayEventStore.language == "tr" ? "Sonraki" : "Next", systemImage: "chevron.right")
+                    .labelStyle(.iconOnly)
+            }
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Sonraki gün" : "Next day")
+            .minimumAccessibleTarget()
+        }
+        .appFont(size: 14, weight: .semibold, relativeTo: .headline)
+        .foregroundStyle(Color(hex: themeColors.onBackdrop))
+        .buttonStyle(.borderless)
+        .padding(.horizontal, 24)
+    }
+
     private func titleSize(for title: String) -> CGFloat {
-        if title.count > 78 { return 29 }
-        if title.count > 52 { return 33 }
-        if title.count > 34 { return 38 }
-        return 44
+        if title.count > 88 { return 34 }
+        if title.count > 62 { return 39 }
+        if title.count > 40 { return 44 }
+        return 50
     }
 
     private func dayPosition(_ event: DayEvent) -> String {
@@ -392,13 +310,6 @@ struct HomeScreen: View {
         return formatter.string(from: date)
     }
 
-    private func accessibleEyebrow(for editorial: EditorialContent) -> String {
-        if editorial.tone == .remembrance {
-            return DayEventStore.language == "tr" ? "NOT" : "NOTE"
-        }
-        return DayEventStore.language == "tr" ? "BUGÜN" : "TODAY"
-    }
-
     private func headerButtonLabel(_ systemName: String) -> String {
         if systemName == "calendar" {
             return DayEventStore.language == "tr" ? "Takvimi aç" : "Open calendar"
@@ -410,5 +321,27 @@ struct HomeScreen: View {
         guard let index = days.firstIndex(of: event) else { return }
         let newIndex = min(max(index + offset, days.startIndex), days.index(before: days.endIndex))
         activeID = days[newIndex].id
+    }
+
+    private func syncSideEffects(for event: DayEvent?) {
+        selectedDay = event
+        WidgetDataWriter.save(event: event)
+    }
+
+    private func advanceCoach() {
+        Haptics.triggerLight()
+        if coachStep >= 2 {
+            completeCoach()
+        } else {
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.22)) {
+                coachStep += 1
+            }
+        }
+    }
+
+    private func completeCoach() {
+        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.20)) {
+            hasCompletedCoach = true
+        }
     }
 }

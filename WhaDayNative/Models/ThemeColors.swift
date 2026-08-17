@@ -7,43 +7,49 @@ struct ThemeColors {
     let blob3: String
     let accent: String
 
-    var paper: String { gradient[0] }
-    var ink: String { "#111218" }
-    var secondary: String { blob2 }
-    var backdrop: String { "#0B0D12" }
-    var backdropRaised: String { "#171A22" }
-    var onBackdrop: String { "#F4F2EA" }
+    var paper: String { "#F2F0E8" }
+    var ink: String { "#11110F" }
+    var secondary: String { accent }
+    var backdrop: String { "#090909" }
+    var backdropRaised: String { "#171717" }
+    var onBackdrop: String { "#F3F2ED" }
 
-    // A nocturnal palette: the interface stays calm and dark while each day
-    // gets one vivid, highly shareable colour pairing.
+    // WhaDay stays neutral and editorial. Categories only change the restrained
+    // signal colour; they never replace the product's black, paper and ink.
     static let byCategory: [String: ThemeColors] = [
-        "wellness": palette("#9BE8C0", "#4FC98C", "#D9FF66", "#145C45", "#65D69E"),
-        "motivation": palette("#FFE36A", "#FF9F43", "#FF7A45", "#744313", "#FFBE3D"),
-        "nature": palette("#B9EA76", "#63C68A", "#E5FF9B", "#245B3C", "#78D46E"),
-        "awareness": palette("#AFA8FF", "#766BFF", "#8DE7FF", "#37316F", "#8F86FF"),
-        "social": palette("#C5A7FF", "#8E68F8", "#FF9ED6", "#49356E", "#A77CFF"),
-        "creative": palette("#FF9BD2", "#FF6AAE", "#FFD166", "#7A2856", "#FF75B9"),
-        "culture": palette("#FFC857", "#F29D49", "#FFED9A", "#6D4515", "#FFB13D"),
-        "fun": palette("#75DBFF", "#4D8DFF", "#C5FF5A", "#224C75", "#59BEFF"),
-        "health": palette("#7FE5D1", "#3CBFA9", "#B8FFEA", "#155E55", "#49CEB5"),
-        "lifestyle": palette("#FFB067", "#FF7657", "#FFE16A", "#753C25", "#FF8D58"),
-        "science": palette("#8BB8FF", "#5E74FF", "#7FF0FF", "#2A3F79", "#668CFF"),
-        "tech": palette("#7DE3F0", "#4B9CFF", "#AEFFCB", "#205A6A", "#55C6E2"),
-        "national": palette("#8FB6FF", "#5A72E8", "#FFE36A", "#2A3B72", "#6E8DF4"),
-        "action": palette("#FFE36A", "#FF9F43", "#FF7A45", "#744313", "#FFBE3D"),
-        "community": palette("#C5A7FF", "#8E68F8", "#8DE7FF", "#49356E", "#A77CFF"),
-        "diversity": palette("#FF9BD2", "#8F86FF", "#FFE36A", "#63336C", "#CA7DFF"),
-        "growth": palette("#B9EA76", "#63C68A", "#E5FF9B", "#245B3C", "#78D46E"),
-        "knowledge": palette("#8BB8FF", "#5E74FF", "#7FF0FF", "#2A3F79", "#668CFF"),
-        "mindfulness": palette("#9BE8C0", "#4FC98C", "#D9FF66", "#145C45", "#65D69E"),
-        "peace": palette("#91D9FF", "#718EFF", "#C5A7FF", "#2E4D75", "#6ABEFF"),
-        "reflection": palette("#C1A6E8", "#8B69C6", "#8DE7FF", "#493666", "#A785D8"),
-        "sport": palette("#75DBFF", "#4D8DFF", "#C5FF5A", "#224C75", "#59BEFF"),
-        "default": palette("#B5A6FF", "#766BFF", "#D9FF66", "#37316F", "#8F86FF"),
+        "wellness": palette("#8EAA9A"),
+        "motivation": palette("#C6A15B"),
+        "nature": palette("#829B77"),
+        "awareness": palette("#8E9EBD"),
+        "social": palette("#A18DAA"),
+        "creative": palette("#B58D83"),
+        "culture": palette("#B79B69"),
+        "fun": palette("#7FA3B5"),
+        "health": palette("#78A49B"),
+        "lifestyle": palette("#B18A72"),
+        "science": palette("#8297BA"),
+        "tech": palette("#76A0A8"),
+        "national": palette("#8496B5"),
+        "action": palette("#B79A61"),
+        "community": palette("#9A8AA7"),
+        "diversity": palette("#A78C9F"),
+        "growth": palette("#849B79"),
+        "knowledge": palette("#7F94B3"),
+        "mindfulness": palette("#8BA399"),
+        "peace": palette("#879EAE"),
+        "reflection": palette("#998DA8"),
+        "sport": palette("#7898A8"),
+        "default": palette("#929292"),
     ]
 
-    private static func palette(_ paper: String, _ blob1: String, _ blob2: String, _ blob3: String, _ accent: String) -> ThemeColors {
-        ThemeColors(gradient: [paper, "#111218"], blob1: blob1, blob2: blob2, blob3: blob3, accent: accent)
+    private static func palette(_ accent: String) -> ThemeColors {
+        ThemeColors(
+            gradient: ["#F2F0E8", "#090909"],
+            blob1: "#E7E4DB",
+            blob2: accent,
+            blob3: "#242424",
+            accent: accent
+        )
     }
 
     static func forCategory(_ category: String?) -> ThemeColors {

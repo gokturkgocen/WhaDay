@@ -13,9 +13,9 @@ struct FirstUseCoachView: View {
         switch step {
         case 0:
             return (
-                "hand.draw.fill",
+                "arrow.left.and.right",
                 tr ? "Günler arasında kaydır" : "Swipe through the days",
-                tr ? "Bugünün bahanesinden komşu günlere tek hareketle geç." : "Move from today's reason to nearby days in one gesture."
+                tr ? "Önceki ve sonraki günlere tek hareketle geç." : "Move to the previous or next day in one gesture."
             )
         case 1:
             return (
@@ -25,41 +25,39 @@ struct FirstUseCoachView: View {
             )
         default:
             return (
-                "paperplane.fill",
-                tr ? "Kişiye göre gönder" : "Make it personal",
-                tr ? "Alttaki düğme kartı mesaj veya Story formatında hazırlar." : "The button below prepares a message or Story card."
+                "square.and.arrow.up",
+                tr ? "Kartı paylaş" : "Share the card",
+                tr ? "Kartı mesaj veya Story ölçüsünde hazırla." : "Prepare the card for a message or Story."
             )
         }
     }
 
     var body: some View {
-        HStack(spacing: 14) {
-            Image(systemName: content.symbol)
-                .font(.system(size: 18, weight: .black))
-                .foregroundStyle(Color(hex: colors.ink))
-                .frame(width: 44, height: 44)
-                .background(Color(hex: colors.secondary))
-                .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-
+        HStack(spacing: 12) {
             VStack(alignment: .leading, spacing: 4) {
-                Text("\(step + 1) / 3 · \(content.title)")
-                    .appFont(size: 14, weight: .black, relativeTo: .headline)
+                HStack(spacing: 7) {
+                    Text(String(format: "%02d", step + 1))
+                        .appFont(size: 10, weight: .medium, design: .monospaced, relativeTo: .caption)
+                        .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.42))
+                    Text(content.title)
+                        .appFont(size: 14, weight: .semibold, relativeTo: .headline)
+                }
                     .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
                     .minimumScaleFactor(0.78)
                 Text(content.body)
-                    .appFont(size: 11, weight: .semibold, relativeTo: .caption)
+                    .appFont(size: 11, weight: .regular, relativeTo: .caption)
                     .lineLimit(dynamicTypeSize.isAccessibilitySize ? 5 : 2)
-                    .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.66))
+                    .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
             Button(action: onNext) {
                 Image(systemName: step == 2 ? "checkmark" : "chevron.right")
-                    .font(.system(size: 14, weight: .black))
+                    .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(Color(hex: colors.ink))
                     .frame(width: 40, height: 40)
-                    .background(Color(hex: colors.accent))
-                    .clipShape(Circle())
+                    .background(Color(hex: colors.onBackdrop))
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             }
             .buttonStyle(.plain)
             .minimumAccessibleTarget()
@@ -69,13 +67,12 @@ struct FirstUseCoachView: View {
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
         .padding(14)
-        .background(Color(hex: colors.backdropRaised).opacity(0.97))
-        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .background(Color(hex: colors.backdropRaised))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay(
-            RoundedRectangle(cornerRadius: 24, style: .continuous)
-                .strokeBorder(Color(hex: colors.accent).opacity(0.34), lineWidth: 1)
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
         )
-        .shadow(color: .black.opacity(0.30), radius: 24, x: 0, y: 12)
         .overlay(alignment: .topTrailing) {
             Button(action: onDismiss) {
                 Image(systemName: "xmark")
