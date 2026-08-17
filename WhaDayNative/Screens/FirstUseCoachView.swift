@@ -54,9 +54,9 @@ struct FirstUseCoachView: View {
             Button(action: onNext) {
                 Image(systemName: step == 2 ? "checkmark" : "chevron.right")
                     .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(Color(hex: colors.ink))
+                    .foregroundStyle(Color(hex: colors.paper))
                     .frame(width: 40, height: 40)
-                    .background(Color(hex: colors.onBackdrop))
+                    .background(Color(hex: colors.ink))
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             }
             .buttonStyle(.plain)
@@ -71,7 +71,7 @@ struct FirstUseCoachView: View {
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
+                .strokeBorder(Color(hex: colors.ink).opacity(0.10), lineWidth: 1)
         )
         .overlay(alignment: .topTrailing) {
             Button(action: onDismiss) {

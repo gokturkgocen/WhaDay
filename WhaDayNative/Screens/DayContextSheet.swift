@@ -84,7 +84,7 @@ struct DayContextSheet: View {
                 Image(systemName: "xmark")
                     .font(.system(size: 14, weight: .black))
                     .frame(width: 44, height: 44)
-                    .background(Color.white.opacity(0.08))
+                    .background(Color(hex: colors.ink).opacity(0.06))
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
@@ -175,7 +175,7 @@ private struct ContextCardModifier: ViewModifier {
             .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .strokeBorder(Color.white.opacity(contrast == .increased ? 0.34 : 0.11), lineWidth: contrast == .increased ? 2 : 1)
+                    .strokeBorder(Color(hex: colors.ink).opacity(contrast == .increased ? 0.34 : 0.11), lineWidth: contrast == .increased ? 2 : 1)
             )
     }
 }

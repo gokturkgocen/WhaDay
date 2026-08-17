@@ -23,10 +23,10 @@ struct ActionButtons: View {
                     .font(.system(size: 14, weight: .semibold))
             }
             .appFont(size: 16, weight: .semibold, relativeTo: .headline)
-            .foregroundStyle(Color(hex: colors.ink))
+            .foregroundStyle(Color(hex: colors.paper))
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, minHeight: 56)
-            .background(Color(hex: colors.onBackdrop))
+            .background(Color(hex: colors.ink))
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
         }
         .accessibilityLabel(DayEventStore.language == "tr" ? "Paylaş. \(prompt)" : "Share. \(prompt)")

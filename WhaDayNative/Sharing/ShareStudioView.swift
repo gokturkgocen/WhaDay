@@ -110,11 +110,11 @@ struct ShareStudioView: View {
                         .appFont(size: 13, weight: .semibold, relativeTo: .callout)
                         .foregroundStyle(
                             format == option
-                            ? Color(hex: colors.ink)
+                            ? Color(hex: colors.paper)
                             : Color(hex: colors.onBackdrop).opacity(0.58)
                         )
                         .frame(maxWidth: .infinity, minHeight: 40)
-                        .background(format == option ? Color(hex: colors.onBackdrop) : Color.clear)
+                        .background(format == option ? Color(hex: colors.ink) : Color.clear)
                         .clipShape(RoundedRectangle(cornerRadius: 9, style: .continuous))
                 }
                 .buttonStyle(.plain)
@@ -145,7 +145,7 @@ struct ShareStudioView: View {
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
+                    .strokeBorder(Color(hex: colors.ink).opacity(0.10), lineWidth: 1)
             )
             .id("\(format.rawValue)-\(style.rawValue)-\(selectedPersonalization.id)")
             .transition(.opacity)
@@ -190,13 +190,13 @@ struct ShareStudioView: View {
                                 .frame(minHeight: 42)
                                 .background(
                                     selectedPersonalization == suggestion
-                                    ? Color.white.opacity(0.12)
+                                    ? Color(hex: colors.ink).opacity(0.08)
                                     : Color.clear
                                 )
                                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                        .strokeBorder(Color.white.opacity(0.12), lineWidth: 1)
+                                        .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
                                 )
                         }
                         .buttonStyle(.plain)
@@ -222,7 +222,7 @@ struct ShareStudioView: View {
                     .frame(height: 30)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5, style: .continuous)
-                            .strokeBorder(Color.white.opacity(0.12), lineWidth: 1)
+                            .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
                     )
 
                 Text(option.title)
@@ -232,11 +232,11 @@ struct ShareStudioView: View {
             .foregroundStyle(Color(hex: colors.onBackdrop))
             .padding(9)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(isSelected ? Color.white.opacity(0.10) : Color.clear)
+            .background(isSelected ? Color(hex: colors.ink).opacity(0.08) : Color.clear)
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .strokeBorder(Color.white.opacity(isSelected ? 0.30 : 0.10), lineWidth: 1)
+                    .strokeBorder(Color(hex: colors.ink).opacity(isSelected ? 0.30 : 0.10), lineWidth: 1)
             )
         }
         .buttonStyle(.plain)
@@ -264,10 +264,10 @@ struct ShareStudioView: View {
                     .font(.system(size: 14, weight: .semibold))
             }
             .appFont(size: 16, weight: .semibold, relativeTo: .headline)
-            .foregroundStyle(Color(hex: colors.ink))
+            .foregroundStyle(Color(hex: colors.paper))
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, minHeight: 56)
-            .background(Color(hex: colors.onBackdrop))
+            .background(Color(hex: colors.ink))
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
         }
         .buttonStyle(.plain)

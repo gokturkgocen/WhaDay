@@ -10,9 +10,9 @@ struct ThemeColors {
     var paper: String { "#F2F0E8" }
     var ink: String { "#11110F" }
     var secondary: String { accent }
-    var backdrop: String { "#090909" }
-    var backdropRaised: String { "#171717" }
-    var onBackdrop: String { "#F3F2ED" }
+    var backdrop: String { "#F2F0E8" }
+    var backdropRaised: String { "#E7E4DB" }
+    var onBackdrop: String { "#11110F" }
 
     // WhaDay stays neutral and editorial. Categories only change the restrained
     // signal colour; they never replace the product's black, paper and ink.

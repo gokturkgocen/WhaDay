@@ -110,7 +110,7 @@ struct ShareCardView: View {
 
     private var foregroundColor: Color {
         switch style {
-        case .editorial: Color(hex: colors.onBackdrop)
+        case .editorial: Color(hex: colors.paper)
         case .playful, .minimal: Color(hex: colors.ink)
         }
     }
