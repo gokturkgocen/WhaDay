@@ -5,6 +5,7 @@ struct ShareStudioView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dismiss) private var dismiss
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @EnvironmentObject private var purchaseStore: PurchaseStore
 
     let event: DayEvent
     let colors: ThemeColors
@@ -15,6 +16,7 @@ struct ShareStudioView: View {
     @State private var shareImage: UIImage?
     @State private var showingActivity = false
     @State private var renderFailed = false
+    @State private var showingPlus = false
 
     private let personalizations: [SharePersonalization]
 
@@ -55,6 +57,12 @@ struct ShareStudioView: View {
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
             }
+        }
+        .sheet(isPresented: $showingPlus) {
+            PlusPaywallView(colors: colors)
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
+                .presentationCornerRadius(28)
         }
         .alert(
             DayEventStore.language == "tr" ? "Kart hazırlanamadı" : "Couldn't prepare the card",
@@ -210,8 +218,13 @@ struct ShareStudioView: View {
 
     private func styleChoice(_ option: ShareCardStyle) -> some View {
         let isSelected = style == option
+        let isLocked = option.requiresPlus && !purchaseStore.isPlusUnlocked
         return Button {
             Haptics.triggerLight()
+            guard !isLocked else {
+                showingPlus = true
+                return
+            }
             withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.18)) {
                 style = option
             }
@@ -225,9 +238,17 @@ struct ShareStudioView: View {
                             .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
                     )
 
-                Text(option.title)
-                    .appFont(size: 12, weight: .semibold, relativeTo: .callout)
-                    .lineLimit(1)
+                HStack(spacing: 5) {
+                    Text(option.title)
+                        .lineLimit(1)
+
+                    if isLocked {
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 8, weight: .semibold))
+                            .accessibilityHidden(true)
+                    }
+                }
+                .appFont(size: 12, weight: .semibold, relativeTo: .callout)
             }
             .foregroundStyle(Color(hex: colors.onBackdrop))
             .padding(9)
@@ -240,7 +261,11 @@ struct ShareStudioView: View {
             )
         }
         .buttonStyle(.plain)
-        .accessibilityValue(isSelected ? AccessibilityCopy.selected : "")
+        .accessibilityValue(
+            isLocked
+            ? (DayEventStore.language == "tr" ? "WhaDay+ gerekir" : "Requires WhaDay+")
+            : (isSelected ? AccessibilityCopy.selected : "")
+        )
         .accessibilityIdentifier("share.style.\(option.rawValue)")
     }
 

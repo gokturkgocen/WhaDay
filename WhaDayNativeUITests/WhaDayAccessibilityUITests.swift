@@ -14,6 +14,33 @@ final class WhaDayAccessibilityUITests: XCTestCase {
         try exerciseCoreJourney(language: "en", locale: "en_US", prefix: "EN")
     }
 
+    func testWhaDayPlusIsAvailableWithoutInterruptingTheCoreJourney() throws {
+        let app = XCUIApplication()
+        app.launchArguments = [
+            "-AppleLanguages", "(tr)",
+            "-AppleLocale", "tr_TR",
+            "-hasCompletedFirstUseCoach", "YES"
+        ]
+        app.launch()
+
+        XCTAssertTrue(app.buttons["home.settings"].waitForExistence(timeout: 5))
+        app.buttons["home.settings"].tap()
+
+        let plusEntry = app.buttons["settings.plus"]
+        XCTAssertTrue(plusEntry.waitForExistence(timeout: 5))
+        for _ in 0..<6 where !plusEntry.isHittable {
+            app.swipeUp()
+        }
+        XCTAssertTrue(plusEntry.isHittable)
+        plusEntry.tap()
+
+        XCTAssertTrue(app.buttons["plus.close"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["plus.purchase"].exists)
+        XCTAssertTrue(app.buttons["plus.restore"].exists)
+        attachScreenshot(named: "TR-Plus-Paywall")
+        app.buttons["plus.close"].tap()
+    }
+
     private func exerciseCoreJourney(
         language: String,
         locale: String,

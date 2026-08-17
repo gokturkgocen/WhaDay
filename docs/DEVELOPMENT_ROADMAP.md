@@ -130,6 +130,21 @@ Exit: every item in `PRODUCT_CONTRACT.md`'s definition of done is evidenced.
 Current simulator-qualified candidate and remaining physical-device gates are
 recorded in [`DEVELOPMENT_RC_EVIDENCE.md`](DEVELOPMENT_RC_EVIDENCE.md).
 
+## Phase 10 — Sustainable monetization
+
+- [x] Add a one-time WhaDay+ StoreKit 2 entitlement with purchase and restore.
+- [x] Keep Ivory and every core product loop free; gate only Graphite and Tone.
+- [x] Add an editorial paywall that appears only after explicit user intent.
+- [x] Integrate UMP consent handling and non-personalized Google native ads.
+- [x] Restrict ads to one low-frequency placement at the end of free Discovery.
+- [x] Prevent ad initialization for an already entitled WhaDay+ user.
+- [x] Add an inappropriate-ad reporting route and ad-privacy controls.
+- [ ] Validate purchase, restore, Ask to Buy and refund/revocation paths in sandbox.
+- [ ] Supply production AdMob identifiers and validate the UMP message on a device.
+
+Exit: monetization is optional, honest, restorable and cannot interrupt the
+daily card, widgets or act of sharing.
+
 ## Working protocol
 
 - Complete phases in dependency order; do not postpone content or

@@ -30,6 +30,10 @@ enum ShareCardStyle: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    var requiresPlus: Bool {
+        self != .playful
+    }
+
     var title: String {
         switch (self, DayEventStore.language) {
         case (.editorial, "tr"): return "Grafit"

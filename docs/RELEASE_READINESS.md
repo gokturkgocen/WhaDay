@@ -1,6 +1,6 @@
 # WhaDay 1.0 Release Readiness
 
-Last updated: 2026-08-14
+Last updated: 2026-08-17
 
 This file separates development readiness from archive, TestFlight and
 public-release gates. Distribution work is outside the current development
@@ -11,15 +11,19 @@ plan; a successful local build is not a published app.
 - Native SwiftUI app and WidgetKit extension build for a generic iOS device.
 - All 366 Turkish and English records pass the strict content audit with no
   generic copy, unreviewed records or semantic safety issues.
-- Unit, integration, reliability, performance and full-render suite passes all
-  54 tests with no skips.
+- Unit, integration, reliability and performance suites pass all 56 executed
+  tests with one intentional skip for the separately verified full-render
+  matrix.
 - All 4,392 date, language, style and output-format combinations render at the
   exact expected dimensions.
 - The bilingual Home → Share Studio → Discover journey passes on compact,
   standard and large simulator classes, including Accessibility XXXL and
   Increased Contrast.
 - Turkish App Store metadata and a five-image 1320 × 2868 screenshot set match the current product.
-- App privacy manifest declares UserDefaults access, no tracking and no collected data.
+- WhaDay's privacy manifest declares its local UserDefaults access. Embedded
+  Google Mobile Ads and UMP privacy manifests are included in the built app;
+  production App Privacy answers must include their declared advertising,
+  device, coarse-location, interaction, performance and diagnostic data uses.
 - Support and privacy pages are live over HTTPS and return HTTP 200:
   - `https://gokturkgocen.github.io/WhaDay/support/`
   - `https://gokturkgocen.github.io/WhaDay/privacy/`
@@ -40,6 +44,10 @@ The tested revision and exact evidence are recorded in
 
 - Confirm App Group `group.com.gokturkgocen.whadayapp` is attached to both distribution App IDs and profiles.
 - Resolve the generic-device orientation warning or explicitly require full-screen portrait behavior.
+- Create the non-consumable WhaDay+ product with ID
+  `com.gokturkgocen.whaday.plus.lifetime` and confirm its final localized price.
+- Replace the intentionally blank Release AdMob App ID and native ad-unit ID,
+  publish the UMP consent message and repeat privacy/device validation.
 
 ## App Store Connect gates
 

@@ -24,6 +24,8 @@ struct CalendarScreen: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
     @EnvironmentObject private var dateContext: AppDateContext
+    @EnvironmentObject private var purchaseStore: PurchaseStore
+    @EnvironmentObject private var advertisingStore: AdvertisingStore
 
     let selectedDay: DayEvent?
     let onBack: () -> Void
@@ -87,6 +89,10 @@ struct CalendarScreen: View {
                 }
             }
         }
+        .task(id: purchaseStore.isLoading) {
+            guard !purchaseStore.isLoading else { return }
+            await advertisingStore.prepareIfEligible(isPlusUnlocked: purchaseStore.isPlusUnlocked)
+        }
     }
 
     private var discoveryView: some View {
@@ -99,6 +105,10 @@ struct CalendarScreen: View {
                 }
 
                 openCalendarButton
+
+                if !purchaseStore.isPlusUnlocked {
+                    DiscoveryNativeAdCard(colors: baseColors)
+                }
             }
             .padding(.horizontal, 20)
             .padding(.bottom, 40)

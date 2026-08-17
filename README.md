@@ -5,7 +5,9 @@ Native iOS app (SwiftUI) that turns each calendar day into a reason to text some
 The app includes a daily card, a weekly shortlist of shareable days, an on-device
 "send later" library, a source/status layer, one calm morning reminder, a WidgetKit widget,
 and a Share Studio that produces channel-specific message and Story cards in three visual
-styles. It does not request contact access or require an account.
+styles. It does not request contact access or require an account. The optional one-time
+WhaDay+ purchase unlocks two additional share appearances and removes the free Discovery
+screen's low-frequency native ad.
 
 ## Development
 

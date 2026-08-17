@@ -14,6 +14,11 @@ settings:
     TARGETED_DEVICE_FAMILY: "1"
     SWIFT_VERSION: "6.0"
 
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
+    from: 13.7.0
+
 targets:
   WhaDayNative:
     type: application
@@ -31,6 +36,8 @@ targets:
         ITSAppUsesNonExemptEncryption: false
         LSApplicationQueriesSchemes: [instagram-stories]
         WhaDayInstagramSourceApplicationID: "$(INSTAGRAM_SOURCE_APPLICATION_ID)"
+        GADApplicationIdentifier: "$(GAD_APPLICATION_IDENTIFIER)"
+        WhaDayNativeAdUnitIdentifier: "$(WHADAY_NATIVE_AD_UNIT_IDENTIFIER)"
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
         UIRequiredDeviceCapabilities: [arm64]
@@ -47,9 +54,16 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INSTAGRAM_SOURCE_APPLICATION_ID: ""
+        GAD_APPLICATION_IDENTIFIER: ""
+        WHADAY_NATIVE_AD_UNIT_IDENTIFIER: ""
+      configs:
+        Debug:
+          GAD_APPLICATION_IDENTIFIER: ca-app-pub-3940256099942544~1458002511
+          WHADAY_NATIVE_AD_UNIT_IDENTIFIER: ca-app-pub-3940256099942544/3986624511
     dependencies:
       - target: WhaDayWidgetExtension
         embed: true
+      - package: GoogleMobileAds
 
   WhaDayWidgetExtension:
     type: app-extension
@@ -102,3 +116,25 @@ targets:
       base:
         GENERATE_INFOPLIST_FILE: YES
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.uitests
+
+schemes:
+  WhaDayNative:
+    build:
+      targets:
+        WhaDayNative: all
+        WhaDayNativeTests: [test]
+        WhaDayNativeUITests: [test]
+    run:
+      config: Debug
+      storeKitConfiguration: WhaDayNative/Purchases/WhaDay.storekit
+    test:
+      config: Debug
+      targets:
+        - name: WhaDayNativeTests
+        - name: WhaDayNativeUITests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

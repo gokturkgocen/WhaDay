@@ -2,6 +2,20 @@ import XCTest
 @testable import WhaDayNative
 
 final class ReliabilityTests: XCTestCase {
+    func testOnlyIvoryShareStyleIsFree() {
+        XCTAssertFalse(ShareCardStyle.playful.requiresPlus)
+        XCTAssertTrue(ShareCardStyle.editorial.requiresPlus)
+        XCTAssertTrue(ShareCardStyle.minimal.requiresPlus)
+    }
+
+    @MainActor
+    func testForcedPlusEntitlementUnlocksWithoutStorefront() {
+        let store = PurchaseStore(forcePlusForTesting: true)
+
+        XCTAssertTrue(store.isPlusUnlocked)
+        XCTAssertFalse(store.isLoading)
+    }
+
     @MainActor
     func testRouteCenterIgnoresInvalidURLsAndCannotConsumeANewerRequest() throws {
         let center = AppRouteCenter()

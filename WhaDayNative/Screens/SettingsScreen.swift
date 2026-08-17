@@ -7,11 +7,14 @@ struct SettingsScreen: View {
     @Environment(\.scenePhase) private var scenePhase
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
     @EnvironmentObject private var reminderPreferences: ReminderPreferences
+    @EnvironmentObject private var purchaseStore: PurchaseStore
+    @EnvironmentObject private var advertisingStore: AdvertisingStore
 
     let eventCategory: String?
     let onBack: () -> Void
 
     @State private var notificationStatus: UNAuthorizationStatus = .notDetermined
+    @State private var showingPlus = false
     private var colors: ThemeColors { ThemeColors.forCategory(eventCategory ?? "default") }
 
     var body: some View {
@@ -22,6 +25,7 @@ struct SettingsScreen: View {
                 VStack(alignment: .leading, spacing: 20) {
                     header
                     manifestoCard
+                    plusCard
                     reminderCard
                     detailsCard
                 }
@@ -31,6 +35,12 @@ struct SettingsScreen: View {
             .scrollIndicators(.hidden)
         }
         .task { notificationStatus = await NotificationScheduler.authorizationStatus() }
+        .sheet(isPresented: $showingPlus) {
+            PlusPaywallView(colors: colors)
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
+                .presentationCornerRadius(28)
+        }
         .onChange(of: scenePhase) { _, phase in
             guard phase == .active else { return }
             Task {
@@ -147,6 +157,63 @@ struct SettingsScreen: View {
         .cardStyle(colors: colors)
     }
 
+    private var plusCard: some View {
+        Button {
+            Haptics.triggerLight()
+            showingPlus = true
+        } label: {
+            HStack(alignment: .center, spacing: 16) {
+                VStack(alignment: .leading, spacing: 7) {
+                    Text("WHADAY+")
+                        .appFont(size: 11, weight: .semibold, relativeTo: .caption)
+                        .tracking(1.8)
+                        .foregroundStyle(Color(hex: colors.accent))
+
+                    Text(plusTitle)
+                        .appFont(size: 19, weight: .semibold, relativeTo: .headline)
+                        .foregroundStyle(Color(hex: colors.onBackdrop))
+
+                    Text(plusSubtitle)
+                        .appFont(size: 13, weight: .regular, relativeTo: .subheadline)
+                        .lineSpacing(2)
+                        .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.60))
+                }
+
+                Spacer(minLength: 12)
+
+                Image(systemName: purchaseStore.isPlusUnlocked ? "checkmark" : "arrow.up.right")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Color(hex: colors.onBackdrop))
+                    .frame(width: 38, height: 38)
+                    .background(Color(hex: colors.onBackdrop).opacity(0.07))
+                    .clipShape(Circle())
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .cardStyle(colors: colors)
+        .accessibilityIdentifier("settings.plus")
+    }
+
+    private var plusTitle: String {
+        if purchaseStore.isPlusUnlocked {
+            return DayEventStore.language == "tr" ? "Plus etkin" : "Plus is active"
+        }
+        return DayEventStore.language == "tr" ? "Daha fazla görünüm" : "More ways to share"
+    }
+
+    private var plusSubtitle: String {
+        if purchaseStore.isPlusUnlocked {
+            return DayEventStore.language == "tr"
+                ? "Grafit, Ton ve reklamsız deneyim açık."
+                : "Graphite, Tone and the ad-free experience are unlocked."
+        }
+        let fallback = DayEventStore.language == "tr" ? "tek seferlik satın alma" : "one-time purchase"
+        return DayEventStore.language == "tr"
+            ? "Grafit, Ton ve reklamsız deneyim · \(purchaseStore.displayPrice ?? fallback)"
+            : "Graphite, Tone and no ads · \(purchaseStore.displayPrice ?? fallback)"
+    }
+
     private var reminderToggle: Binding<Bool> {
         Binding(
             get: { reminderPreferences.isEnabled },
@@ -208,7 +275,35 @@ struct SettingsScreen: View {
         VStack(spacing: 14) {
             detailRow(icon: "globe", title: DayEventStore.language == "tr" ? "Dil" : "Language", value: DayEventStore.language == "tr" ? "Türkçe · Sistem dili" : "English · System language")
             Divider().overlay(Color.white.opacity(0.10))
-            detailRow(icon: "hand.raised", title: DayEventStore.language == "tr" ? "Gizlilik" : "Privacy", value: DayEventStore.language == "tr" ? "Takip yok · Veri toplama yok" : "No tracking · No data collection")
+            detailRow(
+                icon: "hand.raised",
+                title: DayEventStore.language == "tr" ? "Gizlilik" : "Privacy",
+                value: DayEventStore.language == "tr"
+                    ? "Hesap yok · rehber erişimi yok"
+                    : "No account · no contacts access"
+            )
+            if advertisingStore.privacyOptionsRequired && !purchaseStore.isPlusUnlocked {
+                Divider().overlay(Color.white.opacity(0.10))
+                Button {
+                    advertisingStore.presentPrivacyOptions()
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "slider.horizontal.3")
+                            .frame(width: 28)
+                        Text(DayEventStore.language == "tr" ? "Reklam gizliliğini yönet" : "Manage ad privacy")
+                            .appFont(size: 14, weight: .black, relativeTo: .body)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 11, weight: .semibold))
+                            .opacity(0.45)
+                    }
+                    .foregroundStyle(Color(hex: colors.onBackdrop))
+                    .frame(minHeight: 44)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("settings.adPrivacy")
+            }
             Divider().overlay(Color.white.opacity(0.10))
             detailRow(icon: "number", title: DayEventStore.language == "tr" ? "Sürüm" : "Version", value: "1.0")
         }
