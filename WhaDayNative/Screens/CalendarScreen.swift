@@ -277,18 +277,27 @@ struct CalendarScreen: View {
     private var weeklySection: some View {
         VStack(alignment: .leading, spacing: 14) {
             VStack(alignment: .leading, spacing: 6) {
-                Text(DayEventStore.language == "tr" ? "Bu hafta atmalıklar" : "Worth sending this week")
-                    .appFont(size: dynamicTypeSize.isAccessibilitySize ? 21 : 27, weight: .black, relativeTo: .title)
-                    .tracking(-0.7)
+                Text(DayEventStore.language == "tr" ? "Birine ulaşmak için üç neden" : "Three reasons to reach out")
+                    .font(.system(
+                        size: dynamicTypeSize.isAccessibilitySize ? 30 : 38,
+                        weight: .semibold,
+                        design: .serif
+                    ))
+                    .tracking(-1.1)
                     .foregroundStyle(Color(hex: baseColors.onBackdrop))
 
                 Text(DayEventStore.language == "tr"
-                     ? "Takvimin içinden, birini hatırlatma ihtimali en yüksek üç gün."
-                     : "Three days from the calendar most likely to remind you of someone.")
-                    .appFont(size: 14, weight: .semibold, relativeTo: .body)
-                    .lineSpacing(3)
+                     ? "Takvimden seçildi. Birini hatırlatırsa, gönder."
+                     : "Selected from the calendar. If it reminds you of someone, send it.")
+                    .appFont(size: 15, weight: .regular, relativeTo: .body)
+                    .lineSpacing(2)
                     .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.58))
             }
+
+            Rectangle()
+                .fill(Color(hex: baseColors.onBackdrop).opacity(0.14))
+                .frame(height: 1)
+                .padding(.vertical, 4)
 
             ForEach(weeklyPicks) { pick in
                 featuredRow(pick)
@@ -328,26 +337,29 @@ struct CalendarScreen: View {
                 onSelectDay(event)
             } label: {
                 HStack(spacing: 13) {
-                    VStack(spacing: 2) {
+                    Rectangle()
+                        .fill(Color(hex: colors.accent))
+                        .frame(width: 3, height: 54)
+                        .clipShape(Capsule())
+
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text(String(format: "%02d", event.day))
+                            .font(.system(size: 24, weight: .semibold, design: .serif))
                         Text(shortWeekday(pick.date).uppercased())
-                            .appFont(size: 9, weight: .black, relativeTo: .caption2)
-                            .tracking(0.7)
-                        Text("\(event.day)")
-                            .appFont(size: 22, weight: .black, relativeTo: .title2)
+                            .appFont(size: 9, weight: .bold, relativeTo: .caption2)
+                            .tracking(1.1)
                     }
-                    .foregroundStyle(Color(hex: colors.ink))
-                    .frame(width: 54, height: 58)
-                    .background(Color(hex: colors.secondary))
-                    .clipShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
+                    .foregroundStyle(Color(hex: colors.onBackdrop))
+                    .frame(width: 54, alignment: .leading)
 
                     VStack(alignment: .leading, spacing: 5) {
                         Text(event.title)
-                            .appFont(size: 16, weight: .black, relativeTo: .headline)
+                            .appFont(size: 17, weight: .semibold, relativeTo: .headline)
                             .foregroundStyle(Color(hex: colors.onBackdrop))
                             .lineLimit(2)
 
                         Text(editorial.prompt)
-                            .appFont(size: 12, weight: .bold, relativeTo: .subheadline)
+                            .appFont(size: 12, weight: .regular, relativeTo: .subheadline)
                             .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.56))
                             .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
                     }
@@ -363,13 +375,12 @@ struct CalendarScreen: View {
 
             saveButton(event, colors: colors)
         }
-        .padding(12)
-        .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.95))
-        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .strokeBorder(Color(hex: colors.accent).opacity(0.24), lineWidth: 1)
-        )
+        .padding(.vertical, 13)
+        .overlay(alignment: .bottom) {
+            Rectangle()
+                .fill(Color(hex: colors.onBackdrop).opacity(0.12))
+                .frame(height: 1)
+        }
     }
 
     private func savedRow(_ event: DayEvent) -> some View {
@@ -414,17 +425,22 @@ struct CalendarScreen: View {
             showAllDays()
         } label: {
             HStack {
-                Image(systemName: "calendar")
-                Text(DayEventStore.language == "tr" ? "Tüm 366 günü aç" : "Open all 366 days")
+                Text(DayEventStore.language == "tr" ? "Takvimi aç" : "Open the calendar")
                 Spacer()
-                Image(systemName: "arrow.right")
+                Text("366")
+                    .appFont(size: 12, weight: .bold, design: .monospaced, relativeTo: .caption)
+                    .opacity(0.55)
+                Image(systemName: "arrow.up.right")
+                    .font(.system(size: 13, weight: .semibold))
             }
-            .appFont(size: 15, weight: .black, relativeTo: .headline)
-            .foregroundStyle(Color(hex: baseColors.ink))
-            .padding(.horizontal, 18)
-            .frame(maxWidth: .infinity, minHeight: 54)
-            .background(Color(hex: baseColors.accent))
-            .clipShape(RoundedRectangle(cornerRadius: 19, style: .continuous))
+            .appFont(size: 15, weight: .semibold, relativeTo: .headline)
+            .foregroundStyle(Color(hex: baseColors.onBackdrop))
+            .padding(.horizontal, 16)
+            .frame(maxWidth: .infinity, minHeight: 52)
+            .overlay {
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .strokeBorder(Color(hex: baseColors.onBackdrop).opacity(0.24), lineWidth: 1)
+            }
         }
         .buttonStyle(.plain)
     }
