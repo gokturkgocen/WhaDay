@@ -4,8 +4,8 @@ Native SwiftUI iPhone app that turns each calendar date into a reason to text
 someone: a daily editorial card, weekly discovery, an on-device saved-day
 library, one calm morning reminder, a WidgetKit widget, and a Share Studio that
 renders channel-specific Message and Story artwork. No account, no contact
-access, offline-first. A one-time WhaDay+ purchase unlocks two extra share
-appearances and removes the single Discovery ad.
+access, no advertising, offline-first. A one-time WhaDay+ purchase unlocks two
+extra share appearances.
 
 Work happens on the `native-swiftui` branch, which is 44 commits ahead of
 `main` and has never been merged — `main` is still the abandoned React Native
@@ -84,10 +84,15 @@ xcrun devicectl device install app --device 00008140-000104193478801C /Volumes/X
   setting.
 - **Monetization**: StoreKit 2, one non-consumable
   `com.gokturkgocen.whaday.plus.lifetime` (`PurchaseStore`), editorial paywall
-  shown only after explicit intent (`PlusPaywallView`). Google Mobile Ads via
-  SPM, one non-personalized native ad at the end of free Discovery only; the ad
-  SDK is not initialized for an entitled user. Debug uses Google's test ad ids;
-  Release ids are intentionally blank.
+  shown only after explicit intent (`PlusPaywallView`). It unlocks the Graphite
+  and Tone share appearances and nothing else. Price decided at ₺74.99 base
+  (Turkey); rationale in `docs/APP_STORE_ANSWERS.md`.
+- **No advertising.** 1.0 ships with no ad, attribution or analytics SDK. The
+  consent-gated Google native ad was built and then deliberately removed so
+  App Privacy can honestly answer "Data Not Collected"; the implementation
+  survives in git history (see the commit removing `WhaDayNative/Advertising/`)
+  if it is ever revived. Do not reintroduce it without revisiting
+  `docs/PRODUCT_CONTRACT.md`, the public privacy page and App Privacy.
 - Ambient/editorial backgrounds compute every element's phase as a pure trig
   function of one shared elapsed time under a single `TimelineView(.animation)`
   — no per-element animation state.
@@ -123,9 +128,10 @@ xcrun devicectl device install app --device 00008140-000104193478801C /Volumes/X
   notification grant/denial/tap and widget tap routing, and device launch and
   scroll observations. See `docs/RELEASE_READINESS.md`.
 - StoreKit sandbox validation (purchase, restore, Ask to Buy, refund/revocation)
-  not yet run.
-- Production AdMob App ID and native ad-unit ID still blank; UMP consent message
-  unpublished.
+  not yet run. The WhaDay+ product does not exist in App Store Connect yet.
+- App Store Connect answer sheet (App Privacy, export compliance, age rating,
+  review notes) is written out in `docs/APP_STORE_ANSWERS.md` and still needs to
+  be entered by hand.
 - `LICENSE` is self-contradictory — MIT text at the top, "kopyalanması yasak" /
   "all rights reserved" at the bottom — and the repo is public on GitHub. Needs
   a decision, not a patch.

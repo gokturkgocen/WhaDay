@@ -135,12 +135,12 @@ recorded in [`DEVELOPMENT_RC_EVIDENCE.md`](DEVELOPMENT_RC_EVIDENCE.md).
 - [x] Add a one-time WhaDay+ StoreKit 2 entitlement with purchase and restore.
 - [x] Keep Ivory and every core product loop free; gate only Graphite and Tone.
 - [x] Add an editorial paywall that appears only after explicit user intent.
-- [x] Integrate UMP consent handling and non-personalized Google native ads.
-- [x] Restrict ads to one low-frequency placement at the end of free Discovery.
+- [x] Build, then deliberately remove, the consent-gated native ad path. 1.0
+      ships with no advertising SDK; the work is preserved in git history for a
+      later release rather than shipped inert.
 - [x] Prevent ad initialization for an already entitled WhaDay+ user.
 - [x] Add an inappropriate-ad reporting route and ad-privacy controls.
 - [ ] Validate purchase, restore, Ask to Buy and refund/revocation paths in sandbox.
-- [ ] Supply production AdMob identifiers and validate the UMP message on a device.
 
 Exit: monetization is optional, honest, restorable and cannot interrupt the
 daily card, widgets or act of sharing.

@@ -8,7 +8,7 @@ Bu dosya App Store Connect'te kullanılacak metinlerin kaynak belgesidir. Ana di
 - Davranış döngüsü: Günü keşfet → aklına gelen kişiyi bul → estetik kartı gönder.
 - Birincil kategori: Lifestyle
 - İkincil kategori: Entertainment
-- Gelir modeli (1.0): Ücretsiz çekirdek; tek seferlik WhaDay+ ve Keşfet'te sınırlı reklam.
+- Gelir modeli (1.0): Ücretsiz çekirdek; yalnızca tek seferlik WhaDay+. Reklam yok.
 
 ## Türkçe
 
@@ -38,9 +38,9 @@ WhaDay, yılın her günü için küçük bir hikâye, şaşırtıcı bir bilgi 
 • WhatsApp ve diğer mesajlaşma uygulamaları için 4:5 kart paylaş
 • İstersen günlük hatırlatıcıyı aç
 • Widget ile bugünün bahanesini ana ekranında gör
-• WhaDay+ ile Grafit ve Ton görünümlerini aç, reklamları kaldır
+• WhaDay+ ile Grafit ve Ton görünümlerini aç
 
-Hesap yok. Abonelik yok. Sonsuz akış yok. Ücretsiz sürümde reklam yalnızca Keşfet'in sonunda, düşük sıklıkta gösterilir; WhaDay+ tek seferlik satın alımla reklamları kaldırır.
+Hesap yok. Abonelik yok. Reklam yok. Sonsuz akış yok. WhaDay+ tek seferlik bir satın alımdır ve yalnızca iki ek paylaşım görünümü açar.
 
 Bazı anma ve farkındalık günleri, günün anlamına uygun daha ölçülü bir dille sunulur.
 
@@ -72,15 +72,15 @@ WhaDay turns every date into a small discovery: a curious occasion, a memorable 
 • Share a 4:5 card through WhatsApp and other messaging apps
 • Turn on an optional daily reminder
 • Keep today's occasion on your Home Screen with the widget
-• Unlock Graphite and Tone and remove ads with WhaDay+
+• Unlock Graphite and Tone with WhaDay+
 
-No account. No subscription. No endless feed. The free version shows a low-frequency ad only at the end of Discover; a one-time WhaDay+ purchase removes ads.
+No account. No subscription. No ads. No endless feed. WhaDay+ is a one-time purchase that unlocks two extra share appearances.
 
 Remembrance and awareness dates use a more thoughtful tone that respects the meaning of the day.
 
 ## App Review notu
 
-WhaDay does not require an account or payment for its core experience. WhaDay+ is an optional non-consumable purchase that unlocks Graphite and Tone sharing appearances and removes ads; purchases can be restored. All calendar content ships inside the app. Notification permission is requested only after the user enables reminders in Settings. The free version may request one non-personalized native ad at the end of Discover after consent requirements are resolved. No ads appear on Home, in sharing, or in widgets. Sharing uses a generated image and the standard iOS share sheet; if Instagram is installed, the Story action can open Instagram directly. The widget and the main app exchange only the current day and visual theme through the App Group `group.com.gokturkgocen.whadayapp`.
+WhaDay does not require an account or payment for its core experience. WhaDay+ is an optional non-consumable purchase that unlocks the Graphite and Tone sharing appearances; purchases can be restored. The app contains no advertising SDK and collects no data. All calendar content ships inside the app. Notification permission is requested only after the user enables reminders in Settings. Sharing uses a generated image and the standard iOS share sheet; if Instagram is installed, the Story action can open Instagram directly. The widget and the main app exchange only the current day and visual theme through the App Group `group.com.gokturkgocen.whadayapp`.
 
 ## Canlı mağaza URL'leri
 
@@ -109,5 +109,4 @@ WhaDay does not require an account or payment for its core experience. WhaDay+ i
 - Xcode Accounts altında Team `3R9ULKMUXY` için aktif oturum.
 - App Group'un iki App ID'ye bağlandığı güncel development ve distribution profilleri.
 - Instagram yüklü gerçek cihazda doğrudan Story geçişi; WhatsApp yüklü gerçek cihazda 4:5 kart kontrolü.
-- App Store Connect'te `com.gokturkgocen.whaday.plus.lifetime` non-consumable ürününün açılması ve fiyatının kesinleştirilmesi.
-- AdMob üretim App ID/native ad unit ID ve UMP mesajının oluşturulması; Release yapılandırmasındaki boş kimliklerin değiştirilmesi.
+- App Store Connect'te `com.gokturkgocen.whaday.plus.lifetime` non-consumable ürününün ₺74,99 ile açılması; karar ve gerekçesi [`APP_STORE_ANSWERS.md`](APP_STORE_ANSWERS.md) içinde.

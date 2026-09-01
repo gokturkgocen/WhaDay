@@ -23,10 +23,10 @@ plan; a successful local build is not a published app.
   are regenerated against the ivory release candidate; the fifth slot is held
   back because the only Settings framing available exposes a simulator StoreKit
   price rather than the real App Store price.
-- WhaDay's privacy manifest declares its local UserDefaults access. Embedded
-  Google Mobile Ads and UMP privacy manifests are included in the built app;
-  production App Privacy answers must include their declared advertising,
-  device, coarse-location, interaction, performance and diagnostic data uses.
+- WhaDay's privacy manifest declares its local UserDefaults access and nothing
+  else. No advertising or attribution SDK is linked, so App Privacy is answered
+  as "Data Not Collected". Verified by inspecting the Release `.app`: no
+  GoogleMobileAds or UserMessagingPlatform framework is embedded.
 - Support and privacy pages are live over HTTPS and return HTTP 200:
   - `https://gokturkgocen.github.io/WhaDay/support/`
   - `https://gokturkgocen.github.io/WhaDay/privacy/`
@@ -49,8 +49,6 @@ The tested revision and exact evidence are recorded in
 - Resolve the generic-device orientation warning or explicitly require full-screen portrait behavior.
 - Create the non-consumable WhaDay+ product with ID
   `com.gokturkgocen.whaday.plus.lifetime` and confirm its final localized price.
-- Replace the intentionally blank Release AdMob App ID and native ad-unit ID,
-  publish the UMP consent message and repeat privacy/device validation.
 
 ## App Store Connect gates
 

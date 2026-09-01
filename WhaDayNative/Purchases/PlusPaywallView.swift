@@ -88,8 +88,6 @@ struct PlusPaywallView: View {
             featureRow("rectangle.3.group", copy.appearances)
             Divider().overlay(Color(hex: colors.ink).opacity(0.10))
             featureRow("sparkles.rectangle.stack", copy.futureTemplates)
-            Divider().overlay(Color(hex: colors.ink).opacity(0.10))
-            featureRow("hand.raised", copy.noAds)
         }
     }
 
@@ -181,7 +179,6 @@ private struct Copy {
     let subtitle: String
     let appearances: String
     let futureTemplates: String
-    let noAds: String
     let buy: String
     let active: String
     let restore: String
@@ -191,10 +188,9 @@ private struct Copy {
     init(turkish: Bool) {
         if turkish {
             title = "Daha fazla görünüm. Daha az gürültü."
-            subtitle = "WhaDay+ paylaşım araçlarını genişletir ve ücretsiz deneyimdeki reklamları kaldırır. Tek seferlik satın alımdır."
+            subtitle = "WhaDay+ paylaşım stüdyosunu iki ek görünümle genişletir. Tek seferlik satın alımdır."
             appearances = "Grafit ve Ton paylaşım görünümleri"
             futureTemplates = "Gelecek premium editoryal şablonlar"
-            noAds = "Reklamsız WhaDay deneyimi"
             buy = "WhaDay+’ı aç"
             active = "WhaDay+ etkin"
             restore = "Satın alımları geri yükle"
@@ -202,10 +198,9 @@ private struct Copy {
             finePrint = "Tek seferlik satın alma · abonelik yok"
         } else {
             title = "More ways to share. Less noise."
-            subtitle = "WhaDay+ expands the sharing studio and removes ads from the free experience. It's a one-time purchase."
+            subtitle = "WhaDay+ expands the sharing studio with two extra appearances. It's a one-time purchase."
             appearances = "Graphite and Tone share appearances"
             futureTemplates = "Future premium editorial templates"
-            noAds = "An ad-free WhaDay experience"
             buy = "Unlock WhaDay+"
             active = "WhaDay+ active"
             restore = "Restore purchases"

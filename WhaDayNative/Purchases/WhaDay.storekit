@@ -1,102 +1,123 @@
 {
-  "appPolicies" : {
-    "eula" : "",
-    "policies" : [
-
-    ]
+  "appPolicies": {
+    "eula": "",
+    "policies": []
   },
-  "identifier" : "E87CD99D",
-  "nonRenewingSubscriptions" : [
-
-  ],
-  "products" : [
+  "identifier": "E87CD99D",
+  "nonRenewingSubscriptions": [],
+  "products": [
     {
-      "displayPrice" : "149.99",
-      "familyShareable" : true,
-      "internalID" : "65D5D71A",
-      "localizations" : [
+      "displayPrice": "74.99",
+      "familyShareable": true,
+      "internalID": "65D5D71A",
+      "localizations": [
         {
-          "description" : "Grafit ve Ton paylaşım görünümleri, gelecek premium şablonlar ve reklamsız WhaDay deneyimi.",
-          "displayName" : "WhaDay+",
-          "locale" : "tr_TR"
+          "description": "Grafit ve Ton paylaşım görünümleri ve gelecek premium şablonlar.",
+          "displayName": "WhaDay+",
+          "locale": "tr_TR"
         },
         {
-          "description" : "Graphite and Tone share appearances, future premium templates, and an ad-free WhaDay experience.",
-          "displayName" : "WhaDay+",
-          "locale" : "en_US"
+          "description": "Graphite and Tone share appearances, plus future premium templates.",
+          "displayName": "WhaDay+",
+          "locale": "en_US"
         }
       ],
-      "productID" : "com.gokturkgocen.whaday.plus.lifetime",
-      "referenceName" : "WhaDay+ Lifetime",
-      "type" : "NonConsumable"
+      "productID": "com.gokturkgocen.whaday.plus.lifetime",
+      "referenceName": "WhaDay+ Lifetime",
+      "type": "NonConsumable"
     }
   ],
-  "settings" : {
-    "_askToBuyEnabled" : false,
-    "_billingGracePeriodEnabled" : false,
-    "_billingIssuesEnabled" : false,
-    "_compatibilityTimeRate" : {
-      "3" : 6
+  "settings": {
+    "_askToBuyEnabled": false,
+    "_billingGracePeriodEnabled": false,
+    "_billingIssuesEnabled": false,
+    "_compatibilityTimeRate": {
+      "3": 6
     },
-    "_disableDialogs" : false,
-    "_failTransactionsEnabled" : false,
-    "_locale" : "tr_TR",
-    "_renewalBillingIssuesEnabled" : false,
-    "_storefront" : "TUR",
-    "_storeKitErrors" : [
+    "_disableDialogs": false,
+    "_failTransactionsEnabled": false,
+    "_locale": "tr_TR",
+    "_renewalBillingIssuesEnabled": false,
+    "_storefront": "TUR",
+    "_storeKitErrors": [
       {
-        "current" : { "index" : 2, "type" : "generic" },
-        "enabled" : false,
-        "name" : "Load Products"
+        "current": {
+          "index": 2,
+          "type": "generic"
+        },
+        "enabled": false,
+        "name": "Load Products"
       },
       {
-        "current" : { "index" : 1, "type" : "purchase" },
-        "enabled" : false,
-        "name" : "Purchase"
+        "current": {
+          "index": 1,
+          "type": "purchase"
+        },
+        "enabled": false,
+        "name": "Purchase"
       },
       {
-        "current" : { "index" : 0, "type" : "verification" },
-        "enabled" : false,
-        "name" : "Verification"
+        "current": {
+          "index": 0,
+          "type": "verification"
+        },
+        "enabled": false,
+        "name": "Verification"
       },
       {
-        "current" : { "index" : 2, "type" : "generic" },
-        "enabled" : false,
-        "name" : "App Store Sync"
+        "current": {
+          "index": 2,
+          "type": "generic"
+        },
+        "enabled": false,
+        "name": "App Store Sync"
       },
       {
-        "current" : { "index" : 2, "type" : "generic" },
-        "enabled" : false,
-        "name" : "Subscription Status"
+        "current": {
+          "index": 2,
+          "type": "generic"
+        },
+        "enabled": false,
+        "name": "Subscription Status"
       },
       {
-        "current" : { "index" : 3, "type" : "generic" },
-        "enabled" : false,
-        "name" : "App Transaction"
+        "current": {
+          "index": 3,
+          "type": "generic"
+        },
+        "enabled": false,
+        "name": "App Transaction"
       },
       {
-        "current" : { "index" : 3, "type" : "generic" },
-        "enabled" : false,
-        "name" : "Manage Subscriptions Sheet"
+        "current": {
+          "index": 3,
+          "type": "generic"
+        },
+        "enabled": false,
+        "name": "Manage Subscriptions Sheet"
       },
       {
-        "current" : { "index" : 0, "type" : "refund request" },
-        "enabled" : false,
-        "name" : "Refund Request Sheet"
+        "current": {
+          "index": 0,
+          "type": "refund request"
+        },
+        "enabled": false,
+        "name": "Refund Request Sheet"
       },
       {
-        "current" : { "index" : 4, "type" : "generic" },
-        "enabled" : false,
-        "name" : "Offer Code Redeem Sheet"
+        "current": {
+          "index": 4,
+          "type": "generic"
+        },
+        "enabled": false,
+        "name": "Offer Code Redeem Sheet"
       }
     ],
-    "_timeRate" : 1003
+    "_timeRate": 1003
   },
-  "subscriptionGroups" : [
-
-  ],
-  "version" : {
-    "major" : 6,
-    "minor" : 3
+  "subscriptionGroups": [],
+  "version": {
+    "major": 6,
+    "minor": 3
   }
 }

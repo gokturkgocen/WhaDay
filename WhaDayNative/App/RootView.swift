@@ -12,7 +12,6 @@ struct RootView: View {
     @StateObject private var dateContext = AppDateContext()
     @StateObject private var reminderPreferences = ReminderPreferences()
     @StateObject private var purchaseStore = PurchaseStore()
-    @StateObject private var advertisingStore = AdvertisingStore()
     @State private var screen: Screen = .home
     @State private var selectedDay: DayEvent?
     @State private var shareEvent: DayEvent?
@@ -46,7 +45,6 @@ struct RootView: View {
         .environmentObject(dateContext)
         .environmentObject(reminderPreferences)
         .environmentObject(purchaseStore)
-        .environmentObject(advertisingStore)
         .task {
             Haptics.prepare()
             await NotificationScheduler.scheduleIfNeeded(configuration: reminderConfiguration)
@@ -73,11 +71,6 @@ struct RootView: View {
             guard newPhase == .active else { return }
             dateContext.refresh()
             Task { await NotificationScheduler.scheduleIfNeeded(configuration: reminderConfiguration) }
-        }
-        .onChange(of: purchaseStore.isPlusUnlocked) { _, isUnlocked in
-            if isUnlocked {
-                advertisingStore.deactivate()
-            }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.significantTimeChangeNotification)) { _ in
             handleTemporalChange()

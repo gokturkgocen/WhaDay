@@ -47,10 +47,9 @@ are part of the design system rather than exceptions handled at the end.
 
 The core product works without an account, contact access, analytics SDK,
 social graph or network connection. Sharing happens through user-initiated
-system surfaces. The free Discovery screen may load one clearly labeled,
-non-personalized native ad after consent requirements are resolved. WhaDay+
-removes ads and the advertising SDK is not initialized for an already entitled
-user.
+system surfaces. WhaDay 1.0 ships with no advertising SDK of any kind: the app
+collects nothing, contacts no network for content, and its only paid surface is
+the optional WhaDay+ purchase.
 
 ## WhaDay 1.0 scope
 
@@ -64,7 +63,6 @@ user.
 - Message and Story share artwork, with Ivory free and Graphite/Tone in WhaDay+
 - Instagram Story, WhatsApp, Messages and system share-sheet handoff
 - One-time, non-consumable WhaDay+ purchase with restore support
-- A low-frequency native ad only at the end of free Discovery
 - Dynamic Type, Reduce Motion and baseline screen-reader labeling
 - Offline-first operation
 
@@ -76,8 +74,8 @@ user.
 - User-created calendar dates and calendar import
 - Streaks, points, badges and competitive gamification
 - Subscriptions, consumables and recurring billing
-- Interstitial, rewarded, launch, home, share-flow or widget advertising
-- Personalized advertising and App Tracking Transparency prompts
+- Advertising of any kind, and any advertising or attribution SDK
+- App Tracking Transparency prompts
 - Remote AI-generated daily content
 - Android, iPad, macOS, watchOS and Live Activities
 - More languages beyond Turkish and English
@@ -93,7 +91,6 @@ is recorded in [`POST_1_0_BACKLOG.md`](POST_1_0_BACKLOG.md).
 - The system share sheet is reachable from the home card in no more than three
   meaningful taps.
 - No permission prompt appears before the user sees product value.
-- No ad request occurs before Discovery is opened and consent eligibility is resolved.
 - No purchase is required to discover, save, remind, use widgets or share with Ivory.
 - A saved day, notification and widget always resolve to the same event ID.
 - The app never describes an editorial prompt as official.

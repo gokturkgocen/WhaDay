@@ -8,7 +8,6 @@ struct SettingsScreen: View {
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
     @EnvironmentObject private var reminderPreferences: ReminderPreferences
     @EnvironmentObject private var purchaseStore: PurchaseStore
-    @EnvironmentObject private var advertisingStore: AdvertisingStore
 
     let eventCategory: String?
     let onBack: () -> Void
@@ -205,13 +204,13 @@ struct SettingsScreen: View {
     private var plusSubtitle: String {
         if purchaseStore.isPlusUnlocked {
             return DayEventStore.language == "tr"
-                ? "Grafit, Ton ve reklamsız deneyim açık."
-                : "Graphite, Tone and the ad-free experience are unlocked."
+                ? "Grafit ve Ton görünümleri açık."
+                : "Graphite and Tone appearances are unlocked."
         }
         let fallback = DayEventStore.language == "tr" ? "tek seferlik satın alma" : "one-time purchase"
         return DayEventStore.language == "tr"
-            ? "Grafit, Ton ve reklamsız deneyim · \(purchaseStore.displayPrice ?? fallback)"
-            : "Graphite, Tone and no ads · \(purchaseStore.displayPrice ?? fallback)"
+            ? "Grafit ve Ton paylaşım görünümleri · \(purchaseStore.displayPrice ?? fallback)"
+            : "Graphite and Tone share appearances · \(purchaseStore.displayPrice ?? fallback)"
     }
 
     private var reminderToggle: Binding<Bool> {
@@ -282,28 +281,6 @@ struct SettingsScreen: View {
                     ? "Hesap yok · rehber erişimi yok"
                     : "No account · no contacts access"
             )
-            if advertisingStore.privacyOptionsRequired && !purchaseStore.isPlusUnlocked {
-                Divider().overlay(Color.white.opacity(0.10))
-                Button {
-                    advertisingStore.presentPrivacyOptions()
-                } label: {
-                    HStack(spacing: 12) {
-                        Image(systemName: "slider.horizontal.3")
-                            .frame(width: 28)
-                        Text(DayEventStore.language == "tr" ? "Reklam gizliliğini yönet" : "Manage ad privacy")
-                            .appFont(size: 14, weight: .black, relativeTo: .body)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 11, weight: .semibold))
-                            .opacity(0.45)
-                    }
-                    .foregroundStyle(Color(hex: colors.onBackdrop))
-                    .frame(minHeight: 44)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("settings.adPrivacy")
-            }
             Divider().overlay(Color.white.opacity(0.10))
             detailRow(icon: "number", title: DayEventStore.language == "tr" ? "Sürüm" : "Version", value: "1.0")
         }
