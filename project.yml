@@ -25,6 +25,8 @@ targets:
     platform: iOS
     sources:
       - path: WhaDayNative
+        excludes:
+          - Purchases/WhaDay.storekit
       - path: Shared
     info:
       path: WhaDayNative/Info.plist

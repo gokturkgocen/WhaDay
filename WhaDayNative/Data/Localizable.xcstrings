@@ -1,7 +1,21 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@" : {
+
+    },
+    "%@ / 3 · %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ / 3 · %2$@"
+          }
+        }
+      }
+    },
     "noEventDesc" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -18,6 +32,7 @@
       }
     },
     "noEventTitle" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -34,6 +49,7 @@
       }
     },
     "shareOnStory" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -48,6 +64,12 @@
           }
         }
       }
+    },
+    "WhaDay" : {
+
+    },
+    "WHADAY" : {
+
     }
   },
   "version" : "1.1"

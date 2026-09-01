@@ -19,7 +19,10 @@ plan; a successful local build is not a published app.
 - The bilingual Home → Share Studio → Discover journey passes on compact,
   standard and large simulator classes, including Accessibility XXXL and
   Increased Contrast.
-- Turkish App Store metadata and a five-image 1320 × 2868 screenshot set match the current product.
+- Turkish App Store metadata is current. Four 1320 × 2868 screenshots (`01`-`04`)
+  are regenerated against the ivory release candidate; the fifth slot is held
+  back because the only Settings framing available exposes a simulator StoreKit
+  price rather than the real App Store price.
 - WhaDay's privacy manifest declares its local UserDefaults access. Embedded
   Google Mobile Ads and UMP privacy manifests are included in the built app;
   production App Privacy answers must include their declared advertising,
