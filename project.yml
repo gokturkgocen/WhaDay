@@ -27,6 +27,7 @@ targets:
       path: WhaDayNative/Info.plist
       properties:
         CFBundleDisplayName: WhaDay
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         CFBundleURLTypes:
           - CFBundleURLName: com.gokturkgocen.whadayapp
             CFBundleURLSchemes: [whaday]
@@ -70,6 +71,7 @@ targets:
       path: WhaDayWidget/Info.plist
       properties:
         CFBundleDisplayName: WhaDay Widget
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     entitlements:
