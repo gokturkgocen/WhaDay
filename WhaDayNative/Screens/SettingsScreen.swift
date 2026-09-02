@@ -21,15 +21,13 @@ struct SettingsScreen: View {
             EditorialBackground(colors: colors, elapsed: 0)
 
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 0) {
                     header
-                    manifestoCard
-                    plusCard
-                    reminderCard
-                    detailsCard
+                    editorialIntro
+                    settingsSection
                 }
-                .padding(.horizontal, 20)
-                .padding(.bottom, 36)
+                .padding(.horizontal, 22)
+                .padding(.bottom, 44)
             }
             .scrollIndicators(.hidden)
         }
@@ -50,42 +48,43 @@ struct SettingsScreen: View {
     }
 
     private var header: some View {
-        HStack {
+        HStack(spacing: 10) {
+            BrandMark(color: Color(hex: colors.onBackdrop))
+                .frame(width: 16, height: 16)
+                .scaleEffect(0.34)
+
+            Text("WHADAY")
+                .appFont(size: 12, weight: .semibold, relativeTo: .caption)
+                .tracking(2.2)
+
+            Spacer()
+
             Button {
                 Haptics.triggerLight()
                 onBack()
             } label: {
                 Image(systemName: "chevron.left")
-                    .font(.system(size: 16, weight: .black))
-                    .foregroundStyle(Color(hex: colors.onBackdrop))
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.82))
                     .frame(width: 44, height: 44)
-                    .background(Color.white.opacity(0.07))
-                    .clipShape(Circle())
-                    .overlay(Circle().strokeBorder(Color.white.opacity(0.14), lineWidth: 1))
             }
             .buttonStyle(.plain)
             .accessibilityLabel(DayEventStore.language == "tr" ? "Geri" : "Back")
-
-            Spacer()
-
-            Text(DayEventStore.language == "tr" ? "WhaDay Hakkında" : "About WhaDay")
-                .appFont(size: 21, weight: .black, relativeTo: .title2)
-                .foregroundStyle(Color(hex: colors.onBackdrop))
-
-            Spacer()
-            Color.clear.frame(width: 44, height: 44)
         }
         .padding(.top, 10)
+        .foregroundStyle(Color(hex: colors.onBackdrop))
     }
 
-    private var manifestoCard: some View {
+    private var editorialIntro: some View {
         VStack(alignment: .leading, spacing: 18) {
-            BrandMark(color: Color(hex: colors.secondary))
-            Text(DayEventStore.language == "tr" ? "Her gün, birine yazmak için yeni bir bahane." : "Every day, a new reason to text someone.")
-                .appFont(size: 31, weight: .black, relativeTo: .largeTitle)
-                .tracking(-1)
+            Text(DayEventStore.language == "tr" ? "WhaDay Hakkında" : "About WhaDay")
+                .font(.system(size: 42, weight: .semibold, design: .serif))
+                .tracking(-1.4)
                 .foregroundStyle(Color(hex: colors.onBackdrop))
                 .accessibilityAddTraits(.isHeader)
+            Rectangle()
+                .fill(Color(hex: colors.accent))
+                .frame(width: 36, height: 2)
             Text(DayEventStore.language == "tr"
                  ? "WhaDay takvimdeki ilginç günleri, arkadaşlarınla paylaşabileceğin küçük anlara dönüştürür."
                  : "WhaDay turns curious calendar days into small moments worth sharing with friends.")
@@ -93,7 +92,8 @@ struct SettingsScreen: View {
                 .lineSpacing(3)
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.68))
         }
-        .cardStyle(colors: colors)
+        .padding(.top, 46)
+        .padding(.bottom, 42)
     }
 
     private var reminderCard: some View {
@@ -153,7 +153,8 @@ struct SettingsScreen: View {
             }
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
-        .cardStyle(colors: colors)
+        .padding(.vertical, 24)
+        .overlay(alignment: .top) { Divider().overlay(Color(hex: colors.onBackdrop).opacity(0.14)) }
     }
 
     private var plusCard: some View {
@@ -170,27 +171,29 @@ struct SettingsScreen: View {
 
                     Text(plusTitle)
                         .appFont(size: 19, weight: .semibold, relativeTo: .headline)
-                        .foregroundStyle(Color(hex: colors.onBackdrop))
+                        .foregroundStyle(Color(hex: colors.paper))
 
                     Text(plusSubtitle)
                         .appFont(size: 13, weight: .regular, relativeTo: .subheadline)
                         .lineSpacing(2)
-                        .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.60))
+                        .foregroundStyle(Color(hex: colors.paper).opacity(0.66))
                 }
 
                 Spacer(minLength: 12)
 
                 Image(systemName: purchaseStore.isPlusUnlocked ? "checkmark" : "arrow.up.right")
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(Color(hex: colors.onBackdrop))
+                    .foregroundStyle(Color(hex: colors.paper))
                     .frame(width: 38, height: 38)
-                    .background(Color(hex: colors.onBackdrop).opacity(0.07))
+                    .background(Color(hex: colors.paper).opacity(0.12))
                     .clipShape(Circle())
             }
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .cardStyle(colors: colors)
+        .padding(.vertical, 24)
+        .background(Color(hex: colors.onBackdrop))
+        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
         .accessibilityIdentifier("settings.plus")
     }
 
@@ -270,10 +273,13 @@ struct SettingsScreen: View {
         )
     }
 
-    private var detailsCard: some View {
-        VStack(spacing: 14) {
+    private var settingsSection: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            plusCard
+            reminderCard
+            VStack(spacing: 14) {
             detailRow(icon: "globe", title: DayEventStore.language == "tr" ? "Dil" : "Language", value: DayEventStore.language == "tr" ? "Türkçe · Sistem dili" : "English · System language")
-            Divider().overlay(Color.white.opacity(0.10))
+            Divider().overlay(Color(hex: colors.onBackdrop).opacity(0.14))
             detailRow(
                 icon: "hand.raised",
                 title: DayEventStore.language == "tr" ? "Gizlilik" : "Privacy",
@@ -281,10 +287,12 @@ struct SettingsScreen: View {
                     ? "Hesap yok · rehber erişimi yok"
                     : "No account · no contacts access"
             )
-            Divider().overlay(Color.white.opacity(0.10))
+            Divider().overlay(Color(hex: colors.onBackdrop).opacity(0.14))
             detailRow(icon: "number", title: DayEventStore.language == "tr" ? "Sürüm" : "Version", value: "1.0")
+            }
+            .padding(.vertical, 24)
+            .overlay(alignment: .top) { Divider().overlay(Color(hex: colors.onBackdrop).opacity(0.14)) }
         }
-        .cardStyle(colors: colors)
     }
 
     private func detailRow(icon: String, title: String, value: String) -> some View {
