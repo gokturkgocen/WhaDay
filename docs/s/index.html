@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhaDay — Ortak Takvim Daveti</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    .space-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 32px 24px;
+      margin: 24px 0;
+      text-align: center;
+      backdrop-filter: blur(20px);
+    }
+    .space-emoji {
+      font-size: 58px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .space-title {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .space-desc {
+      font-size: 15px;
+      opacity: 0.8;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .space-author {
+      font-size: 13px;
+      opacity: 0.6;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav>
+      <a class="brand" href="../"><span class="mark">✱</span>WhaDay</a>
+    </nav>
+
+    <div class="space-card" id="card">
+      <span class="space-author" id="author">Ortak Takvim Daveti</span>
+      <span class="space-emoji" id="emoji">❤️</span>
+      <h1 class="space-title" id="title">Bizim Takvimimiz</h1>
+      <p class="space-desc" id="desc">Özel günlerinizi, anılarınızı ve geri sayım sayaçlarınızı canlı olarak paylaşmak için ortak alana katıl.</p>
+
+      <div class="actions">
+        <a class="button primary" id="openAppBtn" href="#">WhaDay'de Aç ve Katıl</a>
+        <a class="button" href="https://apps.apple.com/tr/app/whaday/id6802225434">Uygulamayı İndir</a>
+      </div>
+    </div>
+
+    <footer>© 2026 WhaDay · Çiftler ve Arkadaşlar İçin Ortak Takvim</footer>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const d = params.get('d');
+    if (d) {
+      const appUrl = 'whaday://space?d=' + encodeURIComponent(d);
+      document.getElementById('openAppBtn').href = appUrl;
+
+      // Try automatic open on mobile
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        setTimeout(() => {
+          window.location.href = appUrl;
+        }, 300);
+      }
+
+      // Try decoding payload for browser preview
+      try {
+        let base64 = d.replace(/-/g, '+').replace(/_/g, '/');
+        while (base64.length % 4 !== 0) base64 += '=';
+        const json = decodeURIComponent(escape(atob(base64)));
+        const data = JSON.parse(json);
+        if (data.t) document.getElementById('title').innerText = data.t;
+        if (data.e) document.getElementById('emoji').innerText = data.e;
+        if (data.c) document.getElementById('author').innerText = data.c + " seni ortak takvime davet etti";
+      } catch (err) {
+        console.log("Preview decode skipped", err);
+      }
+    }
+  </script>
+</body>
+</html>

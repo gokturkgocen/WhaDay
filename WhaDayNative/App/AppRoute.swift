@@ -8,15 +8,22 @@ enum AppRoute: Equatable, Sendable {
     case settings
     case share(id: String)
     case incomingCustomDay(CustomDayRecord)
+    case incomingSpaceInvite(SharedSpace)
 
     static func parse(_ url: URL) -> AppRoute? {
-        // Universal web link (e.g. https://gokturkgocen.github.io/WhaDay/c/?d=...)
-        if (url.scheme == "https" || url.scheme == "http"),
-           url.path.contains("/c") {
-            if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+        // Universal web links
+        if url.scheme == "https" || url.scheme == "http" {
+            if url.path.contains("/c"),
+               let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
                let payload = components.queryItems?.first(where: { $0.name == "d" })?.value,
                let customDay = CustomDayRecord.from(shareablePayload: payload) {
                 return .incomingCustomDay(customDay)
+            }
+            if url.path.contains("/s"),
+               let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+               let payload = components.queryItems?.first(where: { $0.name == "d" })?.value,
+               let space = SharedSpace.from(shareablePayload: payload) {
+                return .incomingSpaceInvite(space)
             }
         }
 
@@ -34,6 +41,13 @@ enum AppRoute: Equatable, Sendable {
                let payload = components.queryItems?.first(where: { $0.name == "d" })?.value,
                let customDay = CustomDayRecord.from(shareablePayload: payload) {
                 return .incomingCustomDay(customDay)
+            }
+            return nil
+        case "space":
+            if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+               let payload = components.queryItems?.first(where: { $0.name == "d" })?.value,
+               let space = SharedSpace.from(shareablePayload: payload) {
+                return .incomingSpaceInvite(space)
             }
             return nil
         case "calendar", "discover":

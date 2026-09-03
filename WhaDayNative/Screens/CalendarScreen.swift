@@ -24,6 +24,7 @@ struct CalendarScreen: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
     @EnvironmentObject private var customDayStore: CustomDayStore
+    @EnvironmentObject private var spaceManager: SharedSpaceManager
     @EnvironmentObject private var dateContext: AppDateContext
     @EnvironmentObject private var purchaseStore: PurchaseStore
 
@@ -35,10 +36,17 @@ struct CalendarScreen: View {
     @State private var scrollPosition: String?
     @State private var searchText = ""
     @State private var activeFilter: DayDiscoveryFilter = .all
+    @State private var showingCreateSpace = false
+    @State private var selectedSpace: SharedSpace?
     @FocusState private var searchFocused: Bool
 
     private var days: [DayEvent] {
-        customDayStore.effectiveDays()
+        let base = customDayStore.effectiveDays()
+        let shared = spaceManager.allSharedDays()
+        if shared.isEmpty { return base }
+        var map = Dictionary(uniqueKeysWithValues: base.map { ($0.id, $0) })
+        for s in shared { map[s.id] = s }
+        return base.map { map[$0.id] ?? $0 }
     }
     private let baseColors = ThemeColors.forCategory("default")
 
@@ -91,11 +99,23 @@ struct CalendarScreen: View {
                 }
             }
         }
+        .sheet(isPresented: $showingCreateSpace) {
+            CreateSpaceSheet(colors: baseColors) { newSpace in
+                selectedSpace = newSpace
+            }
+            .presentationDetents([.large])
+        }
+        .sheet(item: $selectedSpace) { space in
+            SharedSpaceDetailView(space: space, colors: baseColors) { event in
+                onSelectDay(event)
+            }
+        }
     }
 
     private var discoveryView: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 28) {
+                sharedSpacesSection
                 weeklySection
 
                 if !savedEvents.isEmpty {
@@ -266,6 +286,135 @@ struct CalendarScreen: View {
             return DayEventStore.language == "tr" ? "Keşfet" : "Discover"
         }
         return DayEventStore.language == "tr" ? "Takvim" : "Calendar"
+    }
+
+    private var sharedSpacesSection: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack {
+                HStack(spacing: 8) {
+                    Image(systemName: "person.2.fill")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundStyle(Color(hex: baseColors.accent))
+
+                    Text(DayEventStore.language == "tr" ? "BİZİM TAKVİMİMİZ" : "OUR CALENDAR")
+                        .appFont(size: 12, weight: .black, relativeTo: .caption)
+                        .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.6))
+                        .tracking(1.2)
+                }
+
+                Spacer()
+
+                Button {
+                    Haptics.triggerLight()
+                    showingCreateSpace = true
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "plus")
+                            .font(.system(size: 11, weight: .black))
+                        Text(DayEventStore.language == "tr" ? "Yeni Alan" : "New Space")
+                            .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
+                    .background(Color.white.opacity(0.1))
+                    .foregroundStyle(Color(hex: baseColors.onBackdrop))
+                    .clipShape(Capsule())
+                }
+                .buttonStyle(.plain)
+            }
+
+            if spaceManager.spaces.isEmpty {
+                Button {
+                    Haptics.triggerLight()
+                    showingCreateSpace = true
+                } label: {
+                    HStack(spacing: 14) {
+                        Text("❤️")
+                            .font(.system(size: 32))
+                            .frame(width: 52, height: 52)
+                            .background(Color(hex: baseColors.accent).opacity(0.3))
+                            .clipShape(Circle())
+
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(DayEventStore.language == "tr" ? "Ortak Takvim Başlat" : "Create Shared Space")
+                                .appFont(size: 15, weight: .black, relativeTo: .headline)
+                                .foregroundStyle(Color(hex: baseColors.onBackdrop))
+
+                            Text(DayEventStore.language == "tr"
+                                 ? "Çiftin veya yakın arkadaşınla özel günleri canlı paylaşın."
+                                 : "Share special days and countdowns live.")
+                                .appFont(size: 12, weight: .medium, relativeTo: .caption)
+                                .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.6))
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 12, weight: .bold))
+                            .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.4))
+                    }
+                    .padding(14)
+                    .background(Color.white.opacity(0.06))
+                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                }
+                .buttonStyle(.plain)
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(spaceManager.spaces) { space in
+                            Button {
+                                Haptics.triggerLight()
+                                selectedSpace = space
+                            } label: {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    HStack(spacing: 8) {
+                                        Text(space.emoji)
+                                            .font(.system(size: 24))
+
+                                        Text(space.title)
+                                            .appFont(size: 15, weight: .black, relativeTo: .headline)
+                                            .foregroundStyle(Color(hex: baseColors.onBackdrop))
+                                            .lineLimit(1)
+
+                                        Spacer(minLength: 4)
+
+                                        Image(systemName: "chevron.right")
+                                            .font(.system(size: 10, weight: .bold))
+                                            .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.4))
+                                    }
+
+                                    // Next event in space if any
+                                    let spaceEvents = spaceManager.events(for: space.id)
+                                    if let next = spaceEvents.min(by: { $0.daysRemaining() < $1.daysRemaining() }) {
+                                        let days = next.daysRemaining()
+                                        HStack(spacing: 4) {
+                                            Text(next.emoji)
+                                                .font(.system(size: 12))
+                                            Text("\(next.title) · \(days == 0 ? (DayEventStore.language == "tr" ? "Bugün!" : "Today!") : "\(days)g")")
+                                                .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                                                .foregroundStyle(Color(hex: baseColors.accent))
+                                        }
+                                        .padding(.horizontal, 8)
+                                        .padding(.vertical, 3)
+                                        .background(Color(hex: baseColors.accent).opacity(0.18))
+                                        .clipShape(Capsule())
+                                    } else {
+                                        Text(DayEventStore.language == "tr" ? "Henüz gün eklenmedi" : "No days yet")
+                                            .appFont(size: 11, weight: .medium, relativeTo: .caption2)
+                                            .foregroundStyle(Color(hex: baseColors.onBackdrop).opacity(0.5))
+                                    }
+                                }
+                                .padding(14)
+                                .frame(width: 220, alignment: .leading)
+                                .background(Color.white.opacity(0.08))
+                                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+            }
+        }
     }
 
     private var weeklySection: some View {

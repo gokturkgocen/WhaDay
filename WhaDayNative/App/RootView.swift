@@ -10,6 +10,7 @@ struct RootView: View {
     @StateObject private var personalLibrary = PersonalDayLibrary()
     @StateObject private var customDayStore = CustomDayStore.shared
     @StateObject private var capsuleCloudManager = CapsuleCloudManager.shared
+    @StateObject private var spaceManager = SharedSpaceManager.shared
     @StateObject private var routeCenter = AppRouteCenter.shared
     @StateObject private var dateContext = AppDateContext()
     @StateObject private var reminderPreferences = ReminderPreferences()
@@ -18,6 +19,7 @@ struct RootView: View {
     @State private var selectedDay: DayEvent?
     @State private var shareEvent: DayEvent?
     @State private var incomingCustomDay: CustomDayRecord?
+    @State private var incomingSpaceInvite: SharedSpace?
 
     var body: some View {
         Group {
@@ -47,6 +49,7 @@ struct RootView: View {
         .environmentObject(personalLibrary)
         .environmentObject(customDayStore)
         .environmentObject(capsuleCloudManager)
+        .environmentObject(spaceManager)
         .environmentObject(dateContext)
         .environmentObject(reminderPreferences)
         .environmentObject(purchaseStore)
@@ -70,6 +73,14 @@ struct RootView: View {
             CustomDayImportSheet(record: record) { event in
                 selectedDay = event
                 screen = .home
+            }
+            .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
+            .presentationCornerRadius(32)
+        }
+        .sheet(item: $incomingSpaceInvite) { space in
+            JoinSpaceSheet(space: space) { _ in
+                screen = .calendar
             }
             .presentationDetents([.large])
             .presentationDragIndicator(.visible)
@@ -127,6 +138,8 @@ struct RootView: View {
             shareEvent = event
         case .incomingCustomDay(let record):
             incomingCustomDay = record
+        case .incomingSpaceInvite(let space):
+            incomingSpaceInvite = space
         }
 
         routeCenter.consume(request.id)
