@@ -7,8 +7,19 @@ enum AppRoute: Equatable, Sendable {
     case discovery
     case settings
     case share(id: String)
+    case incomingCustomDay(CustomDayRecord)
 
     static func parse(_ url: URL) -> AppRoute? {
+        // Universal web link (e.g. https://gokturkgocen.github.io/WhaDay/c/?d=...)
+        if (url.scheme == "https" || url.scheme == "http"),
+           url.path.contains("/c") {
+            if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+               let payload = components.queryItems?.first(where: { $0.name == "d" })?.value,
+               let customDay = CustomDayRecord.from(shareablePayload: payload) {
+                return .incomingCustomDay(customDay)
+            }
+        }
+
         guard url.scheme?.lowercased() == "whaday" else { return nil }
 
         switch url.host?.lowercased() {
@@ -18,6 +29,13 @@ enum AppRoute: Equatable, Sendable {
             let id = url.pathComponents.dropFirst().first ?? ""
             guard isValidDayID(id) else { return nil }
             return .day(id: id)
+        case "custom":
+            if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+               let payload = components.queryItems?.first(where: { $0.name == "d" })?.value,
+               let customDay = CustomDayRecord.from(shareablePayload: payload) {
+                return .incomingCustomDay(customDay)
+            }
+            return nil
         case "calendar", "discover":
             return .discovery
         case "settings":

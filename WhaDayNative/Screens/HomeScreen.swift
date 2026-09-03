@@ -4,6 +4,7 @@ struct HomeScreen: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var dateContext: AppDateContext
+    @EnvironmentObject private var customDayStore: CustomDayStore
 
     @Binding var selectedDay: DayEvent?
     let onOpenCalendar: () -> Void
@@ -15,10 +16,13 @@ struct HomeScreen: View {
     @AppStorage("firstUseCoachStep") private var coachStep = 0
     @AppStorage("hasCompletedFirstUseCoach") private var hasCompletedCoach = false
 
-    private let days = DayEventStore.days
+    private var days: [DayEvent] {
+        customDayStore.effectiveDays()
+    }
 
     private var activeEvent: DayEvent? {
-        days.first { $0.id == activeID }
+        guard let id = activeID else { return nil }
+        return customDayStore.effectiveEvent(for: id)
     }
 
     private var themeColors: ThemeColors {
@@ -183,6 +187,20 @@ struct HomeScreen: View {
                 Text((dynamicTypeSize.isAccessibilitySize ? formattedCompactDate(for: day) : formattedDate(for: day)).uppercased())
                     .appFont(size: 11, weight: .medium, relativeTo: .caption)
                     .tracking(1.5)
+
+                if customDayStore.isCustom(dayID: day.id) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "sparkles")
+                            .font(.system(size: 9, weight: .black))
+                        Text(DayEventStore.language == "tr" ? "KİŞİSEL" : "CUSTOM")
+                            .appFont(size: 9, weight: .black, relativeTo: .caption2)
+                    }
+                    .foregroundStyle(Color(hex: colors.ink))
+                    .padding(.horizontal, 7)
+                    .padding(.vertical, 3)
+                    .background(Color(hex: colors.accent))
+                    .clipShape(Capsule())
+                }
 
                 Spacer()
 

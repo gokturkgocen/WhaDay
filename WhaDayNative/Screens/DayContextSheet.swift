@@ -3,9 +3,13 @@ import SwiftUI
 struct DayContextSheet: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
+    @EnvironmentObject private var customDayStore: CustomDayStore
 
     let event: DayEvent
     let colors: ThemeColors
+
+    @State private var showingCustomEditor = false
+    @State private var showingShareSheet = false
 
     private var editorial: EditorialContent { EditorialContent.forEvent(event) }
     private var provenance: DayProvenance { DayProvenance.forEvent(event) }
@@ -17,6 +21,8 @@ struct DayContextSheet: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     header
+                    customDayCard
+                    timeCapsuleCard
                     identityCard
                     contextCard
                     saveCard
@@ -27,6 +33,142 @@ struct DayContextSheet: View {
             }
             .scrollIndicators(.hidden)
         }
+        .sheet(isPresented: $showingCustomEditor) {
+            CustomDayEditorSheet(
+                dayID: event.id,
+                month: event.month,
+                day: event.day,
+                colors: colors,
+                existingRecord: customDayStore.customDay(for: event.id),
+                defaultEvent: DayEventStore.event(id: event.id)
+            )
+            .presentationDetents([.large])
+        }
+        .sheet(isPresented: $showingShareSheet) {
+            if let custom = customDayStore.customDay(for: event.id), let url = custom.webShareURL() {
+                CustomShareActivityView(items: [
+                    "\(custom.emoji) \(custom.title)\n\(custom.description)\n\nBu günü WhaDay takvimine ekle: \(url.absoluteString)"
+                ])
+                .presentationDetents([.medium, .large])
+            }
+        }
+    }
+
+    private var customDayCard: some View {
+        Group {
+            if customDayStore.isCustom(dayID: event.id) {
+                VStack(alignment: .leading, spacing: 14) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "sparkles")
+                            .font(.system(size: 18, weight: .bold))
+                            .foregroundStyle(Color(hex: colors.ink))
+                            .frame(width: 40, height: 40)
+                            .background(Color(hex: colors.accent))
+                            .clipShape(Circle())
+
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(DayEventStore.language == "tr" ? "Kişisel Özel Günün" : "Personal Custom Day")
+                                .appFont(size: 14, weight: .black, relativeTo: .headline)
+                            Text(DayEventStore.language == "tr" ? "Bu günü sen belirledin veya arkadaşından ekledin." : "Defined by you or added from a friend.")
+                                .appFont(size: 11, weight: .medium, relativeTo: .caption)
+                                .opacity(0.6)
+                        }
+                    }
+
+                    HStack(spacing: 8) {
+                        Button {
+                            showingShareSheet = true
+                        } label: {
+                            HStack(spacing: 6) {
+                                Image(systemName: "square.and.arrow.up")
+                                    .font(.system(size: 12, weight: .bold))
+                                Text(DayEventStore.language == "tr" ? "Paylaş" : "Share")
+                                    .appFont(size: 12, weight: .bold, relativeTo: .caption)
+                            }
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 8)
+                            .background(Color(hex: colors.accent))
+                            .foregroundStyle(Color(hex: colors.ink))
+                            .clipShape(Capsule())
+                        }
+                        .buttonStyle(.plain)
+
+                        Button {
+                            showingCustomEditor = true
+                        } label: {
+                            HStack(spacing: 6) {
+                                Image(systemName: "pencil")
+                                    .font(.system(size: 12, weight: .bold))
+                                Text(DayEventStore.language == "tr" ? "Düzenle" : "Edit")
+                                    .appFont(size: 12, weight: .bold, relativeTo: .caption)
+                            }
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 8)
+                            .background(Color(hex: colors.ink).opacity(0.06))
+                            .foregroundStyle(Color(hex: colors.onBackdrop))
+                            .clipShape(Capsule())
+                        }
+                        .buttonStyle(.plain)
+
+                        Spacer()
+
+                        Button {
+                            customDayStore.remove(for: event.id)
+                        } label: {
+                            Text(DayEventStore.language == "tr" ? "Orijinale Dön" : "Reset")
+                                .appFont(size: 11, weight: .semibold, relativeTo: .caption2)
+                                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.5))
+                                .underline()
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .contextCard(colors: colors)
+            } else {
+                Button {
+                    Haptics.triggerLight()
+                    showingCustomEditor = true
+                } label: {
+                    HStack(spacing: 13) {
+                        Image(systemName: "wand.and.stars")
+                            .font(.system(size: 18, weight: .black))
+                            .foregroundStyle(Color(hex: colors.ink))
+                            .frame(width: 44, height: 44)
+                            .background(Color(hex: colors.accent))
+                            .clipShape(Circle())
+
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(DayEventStore.language == "tr" ? "Bu Günü Özelleştir" : "Personalize This Day")
+                                .appFont(size: 14, weight: .black, relativeTo: .headline)
+
+                            Text(DayEventStore.language == "tr"
+                                 ? "Doğum gününü veya özel bir anını ata, arkadaşlarına yolla."
+                                 : "Set your birthday or anniversary and share it.")
+                                .appFont(size: 11, weight: .semibold, relativeTo: .caption)
+                                .opacity(0.56)
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 12, weight: .black))
+                            .opacity(0.4)
+                    }
+                }
+                .buttonStyle(.plain)
+                .contextCard(colors: colors)
+            }
+        }
+    }
+
+    private var timeCapsuleCard: some View {
+        TimeCapsuleSection(
+            capsuleID: event.id,
+            targetMonth: event.month,
+            targetDay: event.day,
+            dayTitle: event.title,
+            colors: colors
+        )
     }
 
     private var saveCard: some View {
@@ -184,4 +326,14 @@ private extension View {
     func contextCard(colors: ThemeColors) -> some View {
         modifier(ContextCardModifier(colors: colors))
     }
+}
+
+private struct CustomShareActivityView: UIViewControllerRepresentable {
+    let items: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }

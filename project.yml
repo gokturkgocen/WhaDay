@@ -9,8 +9,8 @@ settings:
   base:
     CODE_SIGN_STYLE: Automatic
     DEVELOPMENT_TEAM: "3R9ULKMUXY"
-    CURRENT_PROJECT_VERSION: "3"
-    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "6"
+    MARKETING_VERSION: "1.0.1"
     TARGETED_DEVICE_FAMILY: "1"
     SWIFT_VERSION: "6.0"
 
@@ -27,7 +27,8 @@ targets:
       path: WhaDayNative/Info.plist
       properties:
         CFBundleDisplayName: WhaDay
-        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "1.0.1"
+        CFBundleVersion: "6"
         CFBundleURLTypes:
           - CFBundleURLName: com.gokturkgocen.whadayapp
             CFBundleURLSchemes: [whaday]
@@ -45,8 +46,14 @@ targets:
       properties:
         com.apple.security.application-groups:
           - group.com.gokturkgocen.whadayapp
+        com.apple.developer.icloud-container-identifiers:
+          - iCloud.com.gokturkgocen.whadayapp
+        com.apple.developer.icloud-services:
+          - CloudKit
     settings:
       base:
+        MARKETING_VERSION: "1.0.1"
+        CURRENT_PROJECT_VERSION: "6"
         PRODUCT_NAME: WhaDayNative
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -54,6 +61,7 @@ targets:
     dependencies:
       - target: WhaDayWidgetExtension
         embed: true
+      - sdk: CloudKit.framework
 
   WhaDayWidgetExtension:
     type: app-extension
@@ -71,7 +79,8 @@ targets:
       path: WhaDayWidget/Info.plist
       properties:
         CFBundleDisplayName: WhaDay Widget
-        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "1.0.1"
+        CFBundleVersion: "6"
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     entitlements:
@@ -81,6 +90,8 @@ targets:
           - group.com.gokturkgocen.whadayapp
     settings:
       base:
+        MARKETING_VERSION: "1.0.1"
+        CURRENT_PROJECT_VERSION: "6"
         PRODUCT_NAME: "$(TARGET_NAME)"
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.WhaDayWidget
 

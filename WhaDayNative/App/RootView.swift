@@ -8,6 +8,8 @@ private enum Screen {
 struct RootView: View {
     @Environment(\.scenePhase) private var scenePhase
     @StateObject private var personalLibrary = PersonalDayLibrary()
+    @StateObject private var customDayStore = CustomDayStore.shared
+    @StateObject private var capsuleCloudManager = CapsuleCloudManager.shared
     @StateObject private var routeCenter = AppRouteCenter.shared
     @StateObject private var dateContext = AppDateContext()
     @StateObject private var reminderPreferences = ReminderPreferences()
@@ -15,6 +17,7 @@ struct RootView: View {
     @State private var screen: Screen = .home
     @State private var selectedDay: DayEvent?
     @State private var shareEvent: DayEvent?
+    @State private var incomingCustomDay: CustomDayRecord?
 
     var body: some View {
         Group {
@@ -42,6 +45,8 @@ struct RootView: View {
             }
         }
         .environmentObject(personalLibrary)
+        .environmentObject(customDayStore)
+        .environmentObject(capsuleCloudManager)
         .environmentObject(dateContext)
         .environmentObject(reminderPreferences)
         .environmentObject(purchaseStore)
@@ -60,6 +65,18 @@ struct RootView: View {
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
                 .presentationCornerRadius(32)
+        }
+        .sheet(item: $incomingCustomDay) { record in
+            CustomDayImportSheet(record: record) { event in
+                selectedDay = event
+                screen = .home
+            }
+            .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
+            .presentationCornerRadius(32)
+        }
+        .onChange(of: customDayStore.customDays) { _, _ in
+            handleTemporalChange()
         }
         .onChange(of: routeCenter.request?.id, initial: true) { _, _ in
             handleRouteRequest()
@@ -101,13 +118,15 @@ struct RootView: View {
         case .settings:
             screen = .settings
         case .share(let id):
-            guard let event = DayEventStore.event(id: id) else {
+            guard let event = customDayStore.effectiveEvent(for: id) ?? DayEventStore.event(id: id) else {
                 routeCenter.consume(request.id)
                 return
             }
             selectedDay = event
             screen = .home
             shareEvent = event
+        case .incomingCustomDay(let record):
+            incomingCustomDay = record
         }
 
         routeCenter.consume(request.id)
@@ -115,7 +134,7 @@ struct RootView: View {
 
     private func handleTemporalChange() {
         dateContext.refresh()
-        WidgetDataWriter.save(event: DayEventStore.event(id: dateContext.dayID))
+        WidgetDataWriter.save(event: customDayStore.effectiveEvent(for: dateContext.dayID))
         Task { await NotificationScheduler.scheduleIfNeeded(configuration: reminderConfiguration) }
     }
 

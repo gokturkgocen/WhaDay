@@ -23,6 +23,7 @@ struct CalendarScreen: View {
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var personalLibrary: PersonalDayLibrary
+    @EnvironmentObject private var customDayStore: CustomDayStore
     @EnvironmentObject private var dateContext: AppDateContext
     @EnvironmentObject private var purchaseStore: PurchaseStore
 
@@ -36,7 +37,9 @@ struct CalendarScreen: View {
     @State private var activeFilter: DayDiscoveryFilter = .all
     @FocusState private var searchFocused: Bool
 
-    private let days = DayEventStore.days
+    private var days: [DayEvent] {
+        customDayStore.effectiveDays()
+    }
     private let baseColors = ThemeColors.forCategory("default")
 
     private var todayMonth: Int {
