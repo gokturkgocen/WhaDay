@@ -5,6 +5,9 @@ struct HomeScreen: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var dateContext: AppDateContext
     @EnvironmentObject private var customDayStore: CustomDayStore
+    @EnvironmentObject private var soundtrackStore: DaySoundtrackStore
+    @EnvironmentObject private var betStore: DayBetStore
+    @EnvironmentObject private var capsuleCloudManager: CapsuleCloudManager
 
     @Binding var selectedDay: DayEvent?
     let onOpenCalendar: () -> Void
@@ -238,19 +241,27 @@ struct HomeScreen: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, 20)
 
+            interactiveBadges(for: day, colors: colors)
+
             Spacer(minLength: 22)
 
             Button {
                 Haptics.triggerLight()
                 contextEvent = day
             } label: {
-                HStack(spacing: 8) {
-                    Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
+                HStack(spacing: 6) {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 12, weight: .bold))
+                    Text(DayEventStore.language == "tr" ? "Günün Alanı: Notlar & İddia" : "Day Club: Notes & Bets")
                     Image(systemName: "arrow.up.right")
-                        .font(.system(size: 11, weight: .semibold))
+                        .font(.system(size: 10, weight: .semibold))
                 }
-                .appFont(size: 13, weight: .semibold, relativeTo: .callout)
-                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.78))
+                .appFont(size: 12, weight: .bold, relativeTo: .callout)
+                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.85))
+                .padding(.horizontal, 14)
+                .padding(.vertical, 8)
+                .background(Color(hex: colors.ink).opacity(0.06))
+                .clipShape(Capsule())
                 .frame(minHeight: 44)
             }
             .buttonStyle(.plain)
@@ -260,6 +271,62 @@ struct HomeScreen: View {
         .padding(.bottom, 8)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .accessibilityElement(children: .contain)
+    }
+
+    @ViewBuilder
+    private func interactiveBadges(for day: DayEvent, colors: ThemeColors) -> some View {
+        let st = soundtrackStore.soundtrack(for: day.id)
+        let bets = betStore.bets(for: day.id)
+        let notes = capsuleCloudManager.notes(for: day.id)
+        let hasAny = st != nil || !bets.isEmpty || !notes.isEmpty
+
+        if hasAny {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    if let st = st {
+                        HStack(spacing: 5) {
+                            Text("🎵")
+                                .font(.system(size: 11))
+                            Text(st.trackTitle)
+                                .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                                .lineLimit(1)
+                        }
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color(hex: colors.accent).opacity(0.25))
+                        .clipShape(Capsule())
+                    }
+
+                    if let bet = bets.first {
+                        HStack(spacing: 5) {
+                            Text("🤝")
+                                .font(.system(size: 11))
+                            Text("\(bet.partyA) vs \(bet.partyB)")
+                                .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                                .lineLimit(1)
+                        }
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color(hex: colors.ink).opacity(0.08))
+                        .clipShape(Capsule())
+                    }
+
+                    if !notes.isEmpty {
+                        HStack(spacing: 5) {
+                            Text("🔏")
+                                .font(.system(size: 11))
+                            Text("\(notes.count) \(DayEventStore.language == "tr" ? "not" : "notes")")
+                                .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                        }
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color(hex: colors.ink).opacity(0.08))
+                        .clipShape(Capsule())
+                    }
+                }
+            }
+            .padding(.top, 10)
+        }
     }
 
     private func accessibilityDayNavigation(_ event: DayEvent) -> some View {

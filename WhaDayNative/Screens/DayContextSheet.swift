@@ -23,12 +23,11 @@ struct DayContextSheet: View {
                     header
                     soundtrackCard
                     betCard
-                    customDayCard
                     timeCapsuleCard
-                    identityCard
+                    customDayCard
                     contextCard
                     saveCard
-                    sourceCard
+                    editorialFooter
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 30)
@@ -229,7 +228,7 @@ struct DayContextSheet: View {
     private var header: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text(DayEventStore.language == "tr" ? "Neden bugün?" : "Why today?")
+                Text(DayEventStore.language == "tr" ? "Günün Alanı" : "Day Club")
                     .appFont(size: 27, weight: .black, relativeTo: .title)
                     .tracking(-0.8)
                 Text(event.title)
@@ -254,29 +253,6 @@ struct DayContextSheet: View {
         .padding(.top, 8)
     }
 
-    private var identityCard: some View {
-        HStack(spacing: 13) {
-            Image(systemName: provenance.isOfficial ? "checkmark.seal.fill" : provenance.kind == .cultural ? "globe.europe.africa.fill" : "sparkles")
-                .font(.system(size: 22, weight: .bold))
-                .foregroundStyle(Color(hex: colors.ink))
-                .frame(width: 48, height: 48)
-                .background(Color(hex: colors.accent))
-                .clipShape(Circle())
-
-            VStack(alignment: .leading, spacing: 4) {
-                Text(provenance.label)
-                    .appFont(size: 15, weight: .black, relativeTo: .headline)
-                Text(provenance.isOfficial
-                     ? (DayEventStore.language == "tr" ? "Birincil kurum takvimiyle eşleşiyor" : "Matches a primary institution calendar")
-                     : (DayEventStore.language == "tr" ? "Statüsü açıkça belirtilir" : "Its status is stated clearly"))
-                    .appFont(size: 12, weight: .semibold, relativeTo: .subheadline)
-                    .opacity(0.58)
-            }
-            Spacer()
-        }
-        .contextCard(colors: colors)
-    }
-
     private var contextCard: some View {
         VStack(alignment: .leading, spacing: 12) {
             Label(DayEventStore.language == "tr" ? "WhaDay notu" : "WhaDay note", systemImage: "text.quote")
@@ -290,33 +266,40 @@ struct DayContextSheet: View {
         .contextCard(colors: colors)
     }
 
-    private var sourceCard: some View {
-        VStack(alignment: .leading, spacing: 13) {
-            Label(DayEventStore.language == "tr" ? "Statü ve kaynak" : "Status and source", systemImage: "link")
-                .appFont(size: 14, weight: .black, relativeTo: .headline)
+    private var editorialFooter: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 8) {
+                Image(systemName: provenance.isOfficial ? "checkmark.seal.fill" : "globe.europe.africa.fill")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Color(hex: colors.accent))
+
+                Text(DayEventStore.language == "tr" ? "EDİTORYAL KÜNYE" : "EDITORIAL PROVENANCE")
+                    .font(.system(size: 10, weight: .black, design: .monospaced))
+                    .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.5))
+                    .tracking(1.2)
+            }
 
             Text(provenance.explanation)
-                .appFont(size: 14, weight: .semibold, relativeTo: .body)
-                .lineSpacing(3)
-                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.66))
+                .appFont(size: 12, weight: .medium, relativeTo: .caption)
+                .lineSpacing(2)
+                .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.6))
 
             if let name = provenance.sourceName, let url = provenance.sourceURL {
                 Link(destination: url) {
-                    HStack {
+                    HStack(spacing: 4) {
                         Text(name)
-                        Spacer()
                         Image(systemName: "arrow.up.right")
+                            .font(.system(size: 9, weight: .bold))
                     }
-                    .appFont(size: 13, weight: .black, relativeTo: .callout)
-                    .foregroundStyle(Color(hex: colors.ink))
-                    .padding(.horizontal, 15)
-                    .frame(minHeight: 44)
-                    .background(Color(hex: colors.accent))
-                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(Color(hex: colors.accent))
                 }
             }
         }
-        .contextCard(colors: colors)
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(hex: colors.backdropRaised).opacity(0.5))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
     }
 }
 
