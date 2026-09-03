@@ -21,6 +21,8 @@ struct DayContextSheet: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     header
+                    soundtrackCard
+                    betCard
                     customDayCard
                     timeCapsuleCard
                     identityCard
@@ -159,6 +161,22 @@ struct DayContextSheet: View {
                 .contextCard(colors: colors)
             }
         }
+    }
+
+    private var soundtrackCard: some View {
+        SoundtrackSectionView(
+            dayID: event.id,
+            colors: colors
+        )
+    }
+
+    private var betCard: some View {
+        BetSectionView(
+            dayID: event.id,
+            targetMonth: event.month,
+            targetDay: event.day,
+            colors: colors
+        )
     }
 
     private var timeCapsuleCard: some View {
