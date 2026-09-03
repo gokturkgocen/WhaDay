@@ -53,4 +53,13 @@ struct CapsuleNote: Identifiable, Codable, Equatable, Sendable {
         let date = Calendar.current.date(from: comps) ?? Date()
         return formatter.string(from: date)
     }
+
+    /// Formatted creation time/date.
+    var formattedTime: String {
+        let formatter = DateFormatter()
+        formatter.locale = DayEventStore.dateLocale
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter.string(from: createdAt)
+    }
 }

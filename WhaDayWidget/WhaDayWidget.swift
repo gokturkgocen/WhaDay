@@ -340,6 +340,13 @@ private struct WhaDayWidgetMark: View {
 }
 
 @main
+struct WhaDayWidgetBundle: WidgetBundle {
+    var body: some Widget {
+        WhaDayWidget()
+        SharedSpaceCountdownWidget()
+    }
+}
+
 struct WhaDayWidget: Widget {
     let kind = "WhaDayWidget"
 
@@ -349,6 +356,305 @@ struct WhaDayWidget: Widget {
         }
         .configurationDisplayName("WhaDay")
         .description("Keep today's day close.")
+        .supportedFamilies([
+            .systemSmall,
+            .systemMedium,
+            .accessoryRectangular,
+            .accessoryInline,
+            .accessoryCircular,
+        ])
+    }
+}
+
+struct SharedSpaceEntry: TimelineEntry {
+    let date: Date
+    let upcoming: UpcomingSharedEventData?
+    let language: String
+}
+
+struct SharedSpaceProvider: TimelineProvider {
+    func placeholder(in context: Context) -> SharedSpaceEntry {
+        SharedSpaceEntry(
+            date: Date(),
+            upcoming: UpcomingSharedEventData(
+                spaceID: "sample",
+                spaceTitle: "Bizim Günümüz",
+                spaceEmoji: "❤️",
+                eventTitle: "Marmaris Tatili",
+                eventEmoji: "🏖️",
+                month: 9,
+                day: 15,
+                daysRemaining: 12
+            ),
+            language: "tr"
+        )
+    }
+
+    func getSnapshot(in context: Context, completion: @escaping (SharedSpaceEntry) -> Void) {
+        let language = WidgetDayCatalog.languageCode(preferredLanguages: Locale.preferredLanguages)
+        let data = SharedSpaceWidgetDataStore.load()
+        completion(SharedSpaceEntry(date: Date(), upcoming: data, language: language))
+    }
+
+    func getTimeline(in context: Context, completion: @escaping (Timeline<SharedSpaceEntry>) -> Void) {
+        let now = Date()
+        let language = WidgetDayCatalog.languageCode(preferredLanguages: Locale.preferredLanguages)
+        let data = SharedSpaceWidgetDataStore.load()
+        let calendar = Calendar.autoupdatingCurrent
+        completion(Timeline(
+            entries: [SharedSpaceEntry(date: now, upcoming: data, language: language)],
+            policy: .after(WidgetDayCatalog.nextLocalMidnight(after: now, calendar: calendar))
+        ))
+    }
+}
+
+struct SharedSpaceWidgetView: View {
+    @Environment(\.widgetFamily) private var family
+    let entry: SharedSpaceEntry
+
+    private var palette: WidgetPalette {
+        WidgetPalette.forTheme("culture")
+    }
+
+    var body: some View {
+        content
+            .widgetURL(targetURL)
+    }
+
+    private var targetURL: URL? {
+        if let up = entry.upcoming {
+            let dayID = String(format: "%02d-%02d", up.month, up.day)
+            return URL(string: "whaday://day/\(dayID)")
+        }
+        return URL(string: "whaday://calendar")
+    }
+
+    @ViewBuilder
+    private var content: some View {
+        switch family {
+        case .systemMedium:
+            mediumView
+                .containerBackground(palette.paper, for: .widget)
+        case .accessoryRectangular:
+            rectangularAccessoryView
+                .containerBackground(.clear, for: .widget)
+        case .accessoryInline:
+            inlineAccessoryView
+                .containerBackground(.clear, for: .widget)
+        case .accessoryCircular:
+            circularAccessoryView
+                .containerBackground(.clear, for: .widget)
+        default:
+            smallView
+                .containerBackground(palette.paper, for: .widget)
+        }
+    }
+
+    private var smallView: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            if let up = entry.upcoming {
+                HStack(spacing: 4) {
+                    Text(up.spaceEmoji)
+                        .font(.system(size: 14))
+                    Text(up.spaceTitle.uppercased())
+                        .font(.system(size: 10, weight: .black, design: .monospaced))
+                        .foregroundStyle(palette.ink.opacity(0.55))
+                        .lineLimit(1)
+                }
+
+                Spacer()
+
+                Text(up.eventEmoji)
+                    .font(.system(size: 28))
+                    .padding(.bottom, 2)
+
+                Text(up.eventTitle)
+                    .font(.system(size: 15, weight: .bold, design: .serif))
+                    .foregroundStyle(palette.ink)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.85)
+
+                Spacer()
+
+                countdownBadge(up.daysRemaining)
+            } else {
+                Text("❤️")
+                    .font(.system(size: 24))
+                Spacer()
+                Text(entry.language == "tr" ? "Bizim Sayacımız" : "Our Countdown")
+                    .font(.system(size: 14, weight: .bold, design: .serif))
+                    .foregroundStyle(palette.ink)
+                Text(entry.language == "tr" ? "Ortak bir gün ekle" : "Add a shared day")
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundStyle(palette.ink.opacity(0.6))
+                Spacer()
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var mediumView: some View {
+        HStack(alignment: .center, spacing: 16) {
+            if let up = entry.upcoming {
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack(spacing: 4) {
+                        Text(up.spaceEmoji)
+                            .font(.system(size: 14))
+                        Text(up.spaceTitle.uppercased())
+                            .font(.system(size: 10, weight: .black, design: .monospaced))
+                            .foregroundStyle(palette.ink.opacity(0.55))
+                            .lineLimit(1)
+                    }
+
+                    Spacer()
+
+                    HStack(spacing: 6) {
+                        Text(up.eventEmoji)
+                            .font(.system(size: 26))
+                        Text(up.eventTitle)
+                            .font(.system(size: 17, weight: .bold, design: .serif))
+                            .foregroundStyle(palette.ink)
+                            .lineLimit(2)
+                    }
+
+                    Spacer()
+
+                    Text(formattedDate(month: up.month, day: up.day))
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(palette.ink.opacity(0.6))
+                }
+
+                Spacer()
+
+                VStack(spacing: 4) {
+                    if up.daysRemaining == 0 {
+                        Text("🎉")
+                            .font(.system(size: 32))
+                        Text(entry.language == "tr" ? "BUGÜN!" : "TODAY!")
+                            .font(.system(size: 14, weight: .black))
+                            .foregroundStyle(palette.accent)
+                    } else {
+                        Text("\(up.daysRemaining)")
+                            .font(.system(size: 36, weight: .black, design: .rounded))
+                            .foregroundStyle(palette.ink)
+                        Text(entry.language == "tr" ? "GÜN KALDI" : "DAYS LEFT")
+                            .font(.system(size: 9, weight: .black, design: .monospaced))
+                            .foregroundStyle(palette.ink.opacity(0.5))
+                    }
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .background(palette.ink.opacity(0.06))
+                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            } else {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("❤️ " + (entry.language == "tr" ? "Bizim Sayacımız" : "Our Countdown"))
+                        .font(.system(size: 16, weight: .bold, design: .serif))
+                        .foregroundStyle(palette.ink)
+                    Text(entry.language == "tr" ? "Çiftin veya arkadaşlarınla ortak günlerini ve canlı sayacını burada gör." : "See your shared days and countdown here.")
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundStyle(palette.ink.opacity(0.6))
+                }
+            }
+        }
+    }
+
+    private var rectangularAccessoryView: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            if let up = entry.upcoming {
+                HStack(spacing: 4) {
+                    Text(up.spaceEmoji)
+                    Text(up.spaceTitle)
+                        .font(.system(size: 11, weight: .bold))
+                        .lineLimit(1)
+                }
+                Text("\(up.eventEmoji) \(up.eventTitle)")
+                    .font(.system(size: 12, weight: .semibold))
+                    .lineLimit(1)
+                Text(up.daysRemaining == 0 ? (entry.language == "tr" ? "BUGÜN! 🎉" : "TODAY! 🎉") : (entry.language == "tr" ? "\(up.daysRemaining) gün kaldı" : "\(up.daysRemaining) days left"))
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(.secondary)
+            } else {
+                Text("❤️ Bizim Sayacımız")
+                    .font(.system(size: 12, weight: .bold))
+                Text(entry.language == "tr" ? "Henüz gün eklenmedi" : "No days yet")
+                    .font(.system(size: 10))
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var inlineAccessoryView: some View {
+        if let up = entry.upcoming {
+            Text("\(up.spaceEmoji) \(up.eventTitle): \(up.daysRemaining == 0 ? (entry.language == "tr" ? "Bugün!" : "Today!") : "\(up.daysRemaining)g")")
+        } else {
+            Text("❤️ Bizim Sayacımız")
+        }
+    }
+
+    @ViewBuilder
+    private var circularAccessoryView: some View {
+        if let up = entry.upcoming {
+            VStack(spacing: 0) {
+                Text(up.spaceEmoji)
+                    .font(.system(size: 12))
+                Text("\(up.daysRemaining)")
+                    .font(.system(size: 16, weight: .black))
+                Text(entry.language == "tr" ? "GÜN" : "DAYS")
+                    .font(.system(size: 8, weight: .bold))
+            }
+        } else {
+            Text("❤️")
+        }
+    }
+
+    private func countdownBadge(_ days: Int) -> some View {
+        HStack(spacing: 4) {
+            if days == 0 {
+                Text(entry.language == "tr" ? "BUGÜN! 🎉" : "TODAY! 🎉")
+                    .font(.system(size: 11, weight: .black))
+                    .foregroundStyle(palette.paper)
+            } else if days == 1 {
+                Text(entry.language == "tr" ? "YARIN" : "TOMORROW")
+                    .font(.system(size: 11, weight: .black))
+                    .foregroundStyle(palette.paper)
+            } else {
+                Text("\(days)")
+                    .font(.system(size: 12, weight: .black))
+                    .foregroundStyle(palette.paper)
+                Text(entry.language == "tr" ? "GÜN KALDI" : "DAYS LEFT")
+                    .font(.system(size: 8, weight: .bold, design: .monospaced))
+                    .foregroundStyle(palette.paper.opacity(0.85))
+            }
+        }
+        .padding(.horizontal, 9)
+        .padding(.vertical, 5)
+        .background(palette.accent)
+        .clipShape(Capsule())
+    }
+
+    private func formattedDate(month: Int, day: Int) -> String {
+        var comps = DateComponents()
+        comps.month = month
+        comps.day = day
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: entry.language == "tr" ? "tr_TR" : "en_US")
+        formatter.dateFormat = "d MMMM"
+        let date = Calendar.current.date(from: comps) ?? Date()
+        return formatter.string(from: date)
+    }
+}
+
+struct SharedSpaceCountdownWidget: Widget {
+    let kind = "SharedSpaceWidget"
+
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: SharedSpaceProvider()) { entry in
+            SharedSpaceWidgetView(entry: entry)
+        }
+        .configurationDisplayName("Bizim Sayacımız")
+        .description("Çiftin veya arkadaş grubunla ortak günün canlı geri sayımı.")
         .supportedFamilies([
             .systemSmall,
             .systemMedium,

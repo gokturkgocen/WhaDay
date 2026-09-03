@@ -95,3 +95,39 @@ enum WidgetDayCatalog {
         }
     }
 }
+
+struct UpcomingSharedEventData: Codable, Equatable, Sendable {
+    let spaceID: String
+    let spaceTitle: String
+    let spaceEmoji: String
+    let eventTitle: String
+    let eventEmoji: String
+    let month: Int
+    let day: Int
+    let daysRemaining: Int
+}
+
+enum SharedSpaceWidgetDataStore {
+    static let appGroupID = "group.com.gokturkgocen.whadayapp"
+    static let storageKey = "widget_upcoming_shared_event"
+
+    static func load() -> UpcomingSharedEventData? {
+        guard
+            let defaults = UserDefaults(suiteName: appGroupID),
+            let data = defaults.data(forKey: storageKey),
+            let decoded = try? JSONDecoder().decode(UpcomingSharedEventData.self, from: data)
+        else {
+            return nil
+        }
+        return decoded
+    }
+
+    static func save(_ event: UpcomingSharedEventData?) {
+        guard let defaults = UserDefaults(suiteName: appGroupID) else { return }
+        if let event = event, let data = try? JSONEncoder().encode(event) {
+            defaults.set(data, forKey: storageKey)
+        } else {
+            defaults.removeObject(forKey: storageKey)
+        }
+    }
+}

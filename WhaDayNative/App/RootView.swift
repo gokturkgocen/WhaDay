@@ -11,6 +11,7 @@ struct RootView: View {
     @StateObject private var customDayStore = CustomDayStore.shared
     @StateObject private var capsuleCloudManager = CapsuleCloudManager.shared
     @StateObject private var spaceManager = SharedSpaceManager.shared
+    @StateObject private var timeMachineManager = TimeMachineManager.shared
     @StateObject private var routeCenter = AppRouteCenter.shared
     @StateObject private var dateContext = AppDateContext()
     @StateObject private var reminderPreferences = ReminderPreferences()
@@ -50,6 +51,7 @@ struct RootView: View {
         .environmentObject(customDayStore)
         .environmentObject(capsuleCloudManager)
         .environmentObject(spaceManager)
+        .environmentObject(timeMachineManager)
         .environmentObject(dateContext)
         .environmentObject(reminderPreferences)
         .environmentObject(purchaseStore)

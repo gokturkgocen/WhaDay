@@ -32,7 +32,8 @@ enum ReminderPlanBuilder {
         calendar: Calendar,
         events: [DayEvent],
         language: String,
-        daysAhead: Int = maximumScheduledDays
+        daysAhead: Int = maximumScheduledDays,
+        anniversaryLookup: ((Date) -> (title: String, body: String)?)? = nil
     ) -> [PlannedReminder] {
         guard configuration.isEnabled else { return [] }
         let eventByID = Dictionary(uniqueKeysWithValues: events.map { ($0.id, $0) })
@@ -60,6 +61,7 @@ enum ReminderPlanBuilder {
                 isSaved: configuration.savedIDs.contains(event.id),
                 language: language
             )
+            let anniversary = anniversaryLookup?(day)
             let yyyy = String(format: "%04d", components.year ?? 0)
             let mm = String(format: "%02d", components.month ?? 0)
             let dd = String(format: "%02d", components.day ?? 0)
@@ -69,8 +71,8 @@ enum ReminderPlanBuilder {
                 identifier: identifier,
                 eventID: event.id,
                 fireDate: fireDate,
-                title: copy.title,
-                body: copy.body
+                title: anniversary?.title ?? copy.title,
+                body: anniversary?.body ?? copy.body
             )
         }
     }
@@ -143,13 +145,18 @@ enum NotificationScheduler {
         await clearScheduled()
 
         let calendar = Calendar.current
-        let plan = ReminderPlanBuilder.make(
-            configuration: configuration,
-            now: Date(),
-            calendar: calendar,
-            events: DayEventStore.days,
-            language: DayEventStore.language
-        )
+        let plan = await MainActor.run {
+            ReminderPlanBuilder.make(
+                configuration: configuration,
+                now: Date(),
+                calendar: calendar,
+                events: DayEventStore.days,
+                language: DayEventStore.language,
+                anniversaryLookup: { date in
+                    TimeMachineManager.shared.anniversaryNotificationContent(referenceDate: date, calendar: calendar)
+                }
+            )
+        }
 
         for reminder in plan {
             let content = UNMutableNotificationContent()

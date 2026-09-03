@@ -1,6 +1,7 @@
 import CloudKit
 import Combine
 import Foundation
+import WidgetKit
 
 @MainActor
 final class SharedSpaceManager: ObservableObject {
@@ -245,6 +246,25 @@ final class SharedSpaceManager: ObservableObject {
             groupDefaults?.set(eventsData, forKey: eventsStorageKey)
             standardDefaults.set(eventsData, forKey: eventsStorageKey)
         }
+
+        // Update widget store with upcoming shared event
+        if let upcoming = nextUpcomingEvent() {
+            let widgetData = UpcomingSharedEventData(
+                spaceID: upcoming.space.id,
+                spaceTitle: upcoming.space.title,
+                spaceEmoji: upcoming.space.emoji,
+                eventTitle: upcoming.event.title,
+                eventEmoji: upcoming.event.emoji,
+                month: upcoming.event.month,
+                day: upcoming.event.day,
+                daysRemaining: upcoming.daysRemaining
+            )
+            SharedSpaceWidgetDataStore.save(widgetData)
+        } else {
+            SharedSpaceWidgetDataStore.save(nil)
+        }
+
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     private static func loadCache(

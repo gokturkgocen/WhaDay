@@ -37,6 +37,7 @@ struct CalendarScreen: View {
     @State private var searchText = ""
     @State private var activeFilter: DayDiscoveryFilter = .all
     @State private var showingCreateSpace = false
+    @State private var showingTimeMachine = false
     @State private var selectedSpace: SharedSpace?
     @FocusState private var searchFocused: Bool
 
@@ -109,6 +110,12 @@ struct CalendarScreen: View {
             SharedSpaceDetailView(space: space, colors: baseColors) { event in
                 onSelectDay(event)
             }
+        }
+        .sheet(isPresented: $showingTimeMachine) {
+            TimeMachineSheet(colors: baseColors) { event in
+                onSelectDay(event)
+            }
+            .presentationDetents([.large])
         }
     }
 
@@ -304,23 +311,43 @@ struct CalendarScreen: View {
 
                 Spacer()
 
-                Button {
-                    Haptics.triggerLight()
-                    showingCreateSpace = true
-                } label: {
-                    HStack(spacing: 4) {
-                        Image(systemName: "plus")
-                            .font(.system(size: 11, weight: .black))
-                        Text(DayEventStore.language == "tr" ? "Yeni Alan" : "New Space")
-                            .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                HStack(spacing: 8) {
+                    Button {
+                        Haptics.triggerLight()
+                        showingTimeMachine = true
+                    } label: {
+                        HStack(spacing: 4) {
+                            Text("🕰️")
+                                .font(.system(size: 11))
+                            Text(DayEventStore.language == "tr" ? "Zaman Makinesi" : "Memories")
+                                .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                        }
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color.white.opacity(0.1))
+                        .foregroundStyle(Color(hex: baseColors.onBackdrop))
+                        .clipShape(Capsule())
                     }
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 5)
-                    .background(Color.white.opacity(0.1))
-                    .foregroundStyle(Color(hex: baseColors.onBackdrop))
-                    .clipShape(Capsule())
+                    .buttonStyle(.plain)
+
+                    Button {
+                        Haptics.triggerLight()
+                        showingCreateSpace = true
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: "plus")
+                                .font(.system(size: 11, weight: .black))
+                            Text(DayEventStore.language == "tr" ? "Yeni Alan" : "New Space")
+                                .appFont(size: 11, weight: .bold, relativeTo: .caption2)
+                        }
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color.white.opacity(0.1))
+                        .foregroundStyle(Color(hex: baseColors.onBackdrop))
+                        .clipShape(Capsule())
+                    }
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
             }
 
             if spaceManager.spaces.isEmpty {
