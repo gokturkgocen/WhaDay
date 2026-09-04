@@ -9,8 +9,8 @@ settings:
   base:
     CODE_SIGN_STYLE: Automatic
     DEVELOPMENT_TEAM: "3R9ULKMUXY"
-    CURRENT_PROJECT_VERSION: "7"
-    MARKETING_VERSION: "1.0.1"
+    CURRENT_PROJECT_VERSION: "8"
+    MARKETING_VERSION: "1.1.0"
     TARGETED_DEVICE_FAMILY: "1"
     SWIFT_VERSION: "6.0"
 
@@ -27,8 +27,8 @@ targets:
       path: WhaDayNative/Info.plist
       properties:
         CFBundleDisplayName: WhaDay
-        CFBundleShortVersionString: "1.0.1"
-        CFBundleVersion: "7"
+        CFBundleShortVersionString: "1.1.0"
+        CFBundleVersion: "8"
         CFBundleURLTypes:
           - CFBundleURLName: com.gokturkgocen.whadayapp
             CFBundleURLSchemes: [whaday]
@@ -52,8 +52,8 @@ targets:
           - CloudKit
     settings:
       base:
-        MARKETING_VERSION: "1.0.1"
-        CURRENT_PROJECT_VERSION: "7"
+        MARKETING_VERSION: "1.1.0"
+        CURRENT_PROJECT_VERSION: "8"
         PRODUCT_NAME: WhaDayNative
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -68,6 +68,8 @@ targets:
     platform: iOS
     sources:
       - path: WhaDayWidget
+        excludes:
+          - "**/*.DS_Store"
       - path: Shared
       - path: WhaDayNative/Data/tr.json
         buildPhase: resources
@@ -79,8 +81,8 @@ targets:
       path: WhaDayWidget/Info.plist
       properties:
         CFBundleDisplayName: WhaDay Widget
-        CFBundleShortVersionString: "1.0.1"
-        CFBundleVersion: "7"
+        CFBundleShortVersionString: "1.1.0"
+        CFBundleVersion: "8"
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     entitlements:
@@ -90,8 +92,8 @@ targets:
           - group.com.gokturkgocen.whadayapp
     settings:
       base:
-        MARKETING_VERSION: "1.0.1"
-        CURRENT_PROJECT_VERSION: "7"
+        MARKETING_VERSION: "1.1.0"
+        CURRENT_PROJECT_VERSION: "8"
         PRODUCT_NAME: "$(TARGET_NAME)"
         PRODUCT_BUNDLE_IDENTIFIER: com.gokturkgocen.whadayapp.WhaDayWidget
 
