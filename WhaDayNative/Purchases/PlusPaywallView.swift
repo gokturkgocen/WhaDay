@@ -138,7 +138,7 @@ struct PlusPaywallView: View {
                 .padding(.horizontal, 20)
                 .frame(maxWidth: .infinity, minHeight: 58)
                 .background(Color(hex: colors.ink))
-                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
             .disabled(purchaseStore.isPurchasing || purchaseStore.isPlusUnlocked)

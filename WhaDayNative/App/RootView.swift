@@ -73,7 +73,7 @@ struct RootView: View {
             ShareStudioView(event: event, colors: ThemeColors.forEvent(event))
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(32)
+                .presentationCornerRadius(0)
         }
         .sheet(item: $incomingCustomDay) { record in
             CustomDayImportSheet(record: record) { event in
@@ -82,7 +82,7 @@ struct RootView: View {
             }
             .presentationDetents([.large])
             .presentationDragIndicator(.visible)
-            .presentationCornerRadius(32)
+            .presentationCornerRadius(0)
         }
         .sheet(item: $incomingSpaceInvite) { space in
             JoinSpaceSheet(space: space) { _ in
@@ -90,7 +90,7 @@ struct RootView: View {
             }
             .presentationDetents([.large])
             .presentationDragIndicator(.visible)
-            .presentationCornerRadius(32)
+            .presentationCornerRadius(0)
         }
         .onChange(of: customDayStore.customDays) { _, _ in
             handleTemporalChange()

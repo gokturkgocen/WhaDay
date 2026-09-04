@@ -89,7 +89,7 @@ struct HomeScreen: View {
             DayContextSheet(event: event, colors: ThemeColors.forEvent(event))
                 .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(24)
+                .presentationCornerRadius(0)
         }
     }
 
@@ -202,7 +202,9 @@ struct HomeScreen: View {
                     .padding(.horizontal, 7)
                     .padding(.vertical, 3)
                     .background(Color(hex: colors.accent))
-                    .clipShape(Capsule())
+                    .overlay(alignment: .bottom) {
+                        Rectangle().fill(Color(hex: colors.ink).opacity(0.28)).frame(height: 1)
+                    }
                 }
 
                 Spacer()
@@ -260,11 +262,14 @@ struct HomeScreen: View {
                 .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.85))
                 .padding(.horizontal, 14)
                 .padding(.vertical, 8)
-                .background(Color(hex: colors.ink).opacity(0.06))
-                .clipShape(Capsule())
+                .background(Color(hex: colors.ink).opacity(0.04))
+                .overlay(alignment: .bottom) {
+                    Rectangle().fill(Color(hex: colors.onBackdrop).opacity(0.22)).frame(height: 1)
+                }
                 .frame(minHeight: 44)
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier(day.id == activeID ? "home.dayContext" : "home.dayContext.inactive")
         }
         .padding(.horizontal, 28)
         .padding(.top, 10)
@@ -294,7 +299,9 @@ struct HomeScreen: View {
                         .padding(.horizontal, 10)
                         .padding(.vertical, 5)
                         .background(Color(hex: colors.accent).opacity(0.25))
-                        .clipShape(Capsule())
+                        .overlay(alignment: .bottom) {
+                            Rectangle().fill(Color(hex: colors.accent)).frame(height: 1)
+                        }
                     }
 
                     if let bet = bets.first {
@@ -308,7 +315,9 @@ struct HomeScreen: View {
                         .padding(.horizontal, 10)
                         .padding(.vertical, 5)
                         .background(Color(hex: colors.ink).opacity(0.08))
-                        .clipShape(Capsule())
+                        .overlay(alignment: .bottom) {
+                            Rectangle().fill(Color(hex: colors.onBackdrop).opacity(0.18)).frame(height: 1)
+                        }
                     }
 
                     if !notes.isEmpty {
@@ -321,7 +330,9 @@ struct HomeScreen: View {
                         .padding(.horizontal, 10)
                         .padding(.vertical, 5)
                         .background(Color(hex: colors.ink).opacity(0.08))
-                        .clipShape(Capsule())
+                        .overlay(alignment: .bottom) {
+                            Rectangle().fill(Color(hex: colors.onBackdrop).opacity(0.18)).frame(height: 1)
+                        }
                     }
                 }
             }

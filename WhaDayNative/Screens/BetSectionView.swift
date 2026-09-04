@@ -43,7 +43,7 @@ struct BetSectionView: View {
                     .padding(.vertical, 5)
                     .background(Color(hex: colors.ink).opacity(0.06))
                     .foregroundStyle(Color(hex: colors.onBackdrop))
-                    .clipShape(Capsule())
+                    .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             }
@@ -58,7 +58,7 @@ struct BetSectionView: View {
                             .font(.system(size: 26))
                             .frame(width: 44, height: 44)
                             .background(Color(hex: colors.accent).opacity(0.2))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
 
                         VStack(alignment: .leading, spacing: 2) {
                             Text(DayEventStore.language == "tr" ? "Bu Güne Bir İddia Mühürle" : "Seal a Bet for This Day")
@@ -76,7 +76,7 @@ struct BetSectionView: View {
                     }
                     .padding(12)
                     .background(Color(hex: colors.backdropRaised).opacity(0.7))
-                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             } else {
@@ -142,7 +142,7 @@ struct BetSectionView: View {
                             .padding(.vertical, 5)
                             .background(Color(hex: colors.accent))
                             .foregroundStyle(Color(hex: colors.ink))
-                            .clipShape(Capsule())
+                            .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -170,7 +170,7 @@ struct BetSectionView: View {
                                 .padding(.vertical, 8)
                                 .background(Color(hex: colors.accent))
                                 .foregroundStyle(Color(hex: colors.ink))
-                                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                                .clipShape(Rectangle())
                         }
                         .buttonStyle(.plain)
 
@@ -183,7 +183,7 @@ struct BetSectionView: View {
                                 .padding(.vertical, 8)
                                 .background(Color(hex: colors.ink).opacity(0.08))
                                 .foregroundStyle(Color(hex: colors.ink))
-                                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                                .clipShape(Rectangle())
                         }
                         .buttonStyle(.plain)
                     }
@@ -193,9 +193,9 @@ struct BetSectionView: View {
         }
         .padding(14)
         .background(Color(hex: colors.backdropRaised).opacity(0.94))
-        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
+            Rectangle()
                 .strokeBorder(Color(hex: colors.ink).opacity(0.1), lineWidth: 1)
         )
     }

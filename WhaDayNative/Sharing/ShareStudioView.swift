@@ -62,7 +62,7 @@ struct ShareStudioView: View {
             PlusPaywallView(colors: colors)
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(28)
+                .presentationCornerRadius(0)
         }
         .alert(
             DayEventStore.language == "tr" ? "Kart hazırlanamadı" : "Couldn't prepare the card",
@@ -123,7 +123,7 @@ struct ShareStudioView: View {
                         )
                         .frame(maxWidth: .infinity, minHeight: 40)
                         .background(format == option ? Color(hex: colors.ink) : Color.clear)
-                        .clipShape(RoundedRectangle(cornerRadius: 9, style: .continuous))
+                        .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
                 .accessibilityValue(format == option ? AccessibilityCopy.selected : "")
@@ -132,7 +132,7 @@ struct ShareStudioView: View {
         }
         .padding(3)
         .background(Color(hex: colors.backdropRaised))
-        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .clipShape(Rectangle())
     }
 
     private var cardPreview: some View {
@@ -150,9 +150,9 @@ struct ShareStudioView: View {
             .scaleEffect(scale, anchor: .topLeading)
             .frame(width: canvas.width * scale, height: canvas.height * scale, alignment: .topLeading)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+            .clipShape(Rectangle())
             .overlay(
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                Rectangle()
                     .strokeBorder(Color(hex: colors.ink).opacity(0.10), lineWidth: 1)
             )
             .id("\(format.rawValue)-\(style.rawValue)-\(selectedPersonalization.id)")
@@ -201,9 +201,9 @@ struct ShareStudioView: View {
                                     ? Color(hex: colors.ink).opacity(0.08)
                                     : Color.clear
                                 )
-                                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                .clipShape(Rectangle())
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                    Rectangle()
                                         .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
                                 )
                         }
@@ -230,11 +230,11 @@ struct ShareStudioView: View {
             }
         } label: {
             VStack(alignment: .leading, spacing: 9) {
-                RoundedRectangle(cornerRadius: 5, style: .continuous)
+                Rectangle()
                     .fill(styleSwatch(option))
                     .frame(height: 30)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 5, style: .continuous)
+                        Rectangle()
                             .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
                     )
 
@@ -254,9 +254,9 @@ struct ShareStudioView: View {
             .padding(9)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(isSelected ? Color(hex: colors.ink).opacity(0.08) : Color.clear)
-            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+            .clipShape(Rectangle())
             .overlay(
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                Rectangle()
                     .strokeBorder(Color(hex: colors.ink).opacity(isSelected ? 0.30 : 0.10), lineWidth: 1)
             )
         }
@@ -293,7 +293,7 @@ struct ShareStudioView: View {
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, minHeight: 56)
             .background(Color(hex: colors.ink))
-            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .clipShape(Rectangle())
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("share.primary")
@@ -346,10 +346,7 @@ struct ShareStudioView: View {
     }
 
     private func sectionTitle(_ title: String) -> some View {
-        Text(title.uppercased())
-            .appFont(size: 10, weight: .semibold, relativeTo: .caption)
-            .tracking(1.4)
-            .foregroundStyle(Color(hex: colors.onBackdrop).opacity(0.46))
+        EditorialSectionLabel(title: title, color: Color(hex: colors.onBackdrop))
     }
 }
 

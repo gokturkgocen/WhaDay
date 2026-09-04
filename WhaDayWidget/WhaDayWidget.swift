@@ -323,16 +323,18 @@ private struct WhaDayWidgetMark: View {
 
     var body: some View {
         ZStack {
-            ForEach(0..<6, id: \.self) { index in
-                Capsule()
-                    .fill(color)
-                    .frame(width: 2, height: 8)
-                    .offset(y: -3)
-                    .rotationEffect(.degrees(Double(index) * 60))
-            }
-            Circle()
+            Rectangle()
                 .fill(color)
-                .frame(width: 2, height: 2)
+                .frame(width: 10, height: 1)
+                .offset(y: -4)
+            Rectangle()
+                .fill(color)
+                .frame(width: 1, height: 10)
+                .offset(x: -4)
+            Rectangle()
+                .fill(color)
+                .frame(width: 3, height: 3)
+                .offset(x: 2, y: 2)
         }
         .frame(width: 12, height: 12)
         .accessibilityHidden(true)
@@ -545,7 +547,12 @@ struct SharedSpaceWidgetView: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(palette.ink.opacity(0.06))
-                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .clipShape(Rectangle())
+                .overlay(alignment: .leading) {
+                    Rectangle()
+                        .fill(palette.accent)
+                        .frame(width: 2)
+                }
             } else {
                 VStack(alignment: .leading, spacing: 6) {
                     Text("❤️ " + (entry.language == "tr" ? "Bizim Sayacımız" : "Our Countdown"))
@@ -631,7 +638,10 @@ struct SharedSpaceWidgetView: View {
         .padding(.horizontal, 9)
         .padding(.vertical, 5)
         .background(palette.accent)
-        .clipShape(Capsule())
+        .clipShape(Rectangle())
+        .overlay(alignment: .bottom) {
+            Rectangle().fill(palette.ink.opacity(0.24)).frame(height: 1)
+        }
     }
 
     private func formattedDate(month: Int, day: Int) -> String {

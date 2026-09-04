@@ -36,7 +36,7 @@ struct SettingsScreen: View {
             PlusPaywallView(colors: colors)
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(28)
+                .presentationCornerRadius(0)
         }
         .onChange(of: scenePhase) { _, phase in
             guard phase == .active else { return }
@@ -70,6 +70,7 @@ struct SettingsScreen: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel(DayEventStore.language == "tr" ? "Geri" : "Back")
+            .accessibilityIdentifier("settings.back")
         }
         .padding(.top, 10)
         .foregroundStyle(Color(hex: colors.onBackdrop))
@@ -133,7 +134,7 @@ struct SettingsScreen: View {
                 .padding(.horizontal, 14)
                 .frame(minHeight: 48)
                 .background(Color.white.opacity(0.06))
-                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .clipShape(Rectangle())
             }
 
             if reminderPreferences.isEnabled && notificationStatus == .denied {
@@ -147,7 +148,7 @@ struct SettingsScreen: View {
                         .padding(.horizontal, 16)
                         .frame(minHeight: 44)
                         .background(Color(hex: colors.accent))
-                        .clipShape(Capsule())
+                        .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             }
@@ -186,14 +187,14 @@ struct SettingsScreen: View {
                     .foregroundStyle(Color(hex: colors.paper))
                     .frame(width: 38, height: 38)
                     .background(Color(hex: colors.paper).opacity(0.12))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
             }
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .padding(.vertical, 24)
         .background(Color(hex: colors.onBackdrop))
-        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .clipShape(Rectangle())
         .accessibilityIdentifier("settings.plus")
     }
 
@@ -310,22 +311,11 @@ struct SettingsScreen: View {
 }
 
 private struct SettingsCardModifier: ViewModifier {
-    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
-    @Environment(\.colorSchemeContrast) private var contrast
-
     let colors: ThemeColors
 
     func body(content: Content) -> some View {
         content
-            .padding(22)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.92))
-            .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 26, style: .continuous)
-                    .strokeBorder(Color.white.opacity(contrast == .increased ? 0.34 : 0.11), lineWidth: contrast == .increased ? 2 : 1)
-            )
-            .shadow(color: Color.black.opacity(0.22), radius: 20, x: 0, y: 10)
+            .editorialSurface(colors: colors, emphasis: true, padding: 22)
     }
 }
 

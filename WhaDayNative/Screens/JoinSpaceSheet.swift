@@ -30,7 +30,7 @@ struct JoinSpaceSheet: View {
                             .font(.system(size: 14, weight: .black))
                             .frame(width: 44, height: 44)
                             .background(Color(hex: colors.ink).opacity(0.06))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -66,9 +66,9 @@ struct JoinSpaceSheet: View {
                 }
                 .padding(24)
                 .background(Color(hex: colors.ink).opacity(0.05))
-                .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+                .clipShape(Rectangle())
                 .overlay(
-                    RoundedRectangle(cornerRadius: 28, style: .continuous)
+                    Rectangle()
                         .stroke(Color(hex: colors.ink).opacity(0.1), lineWidth: 1)
                 )
 
@@ -87,9 +87,9 @@ struct JoinSpaceSheet: View {
                     .foregroundStyle(Color(hex: colors.ink))
                     .padding(14)
                     .background(Color(hex: colors.backdropRaised).opacity(0.94))
-                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .clipShape(Rectangle())
                     .overlay(
-                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                        Rectangle()
                             .stroke(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
                     )
                 }
@@ -114,7 +114,7 @@ struct JoinSpaceSheet: View {
                         .padding(.vertical, 16)
                         .background(isValid ? Color(hex: colors.accent) : Color(hex: colors.ink).opacity(0.1))
                         .foregroundStyle(isValid ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop).opacity(0.4))
-                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                        .clipShape(Rectangle())
                     }
                     .disabled(!isValid || isJoining)
                     .buttonStyle(.plain)

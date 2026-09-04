@@ -65,7 +65,7 @@ struct DayContextSheet: View {
                             .foregroundStyle(Color(hex: colors.ink))
                             .frame(width: 40, height: 40)
                             .background(Color(hex: colors.accent))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
 
                         VStack(alignment: .leading, spacing: 2) {
                             Text(DayEventStore.language == "tr" ? "Kişisel Özel Günün" : "Personal Custom Day")
@@ -90,7 +90,7 @@ struct DayContextSheet: View {
                             .padding(.vertical, 8)
                             .background(Color(hex: colors.accent))
                             .foregroundStyle(Color(hex: colors.ink))
-                            .clipShape(Capsule())
+                            .clipShape(Rectangle())
                         }
                         .buttonStyle(.plain)
 
@@ -107,7 +107,7 @@ struct DayContextSheet: View {
                             .padding(.vertical, 8)
                             .background(Color(hex: colors.ink).opacity(0.06))
                             .foregroundStyle(Color(hex: colors.onBackdrop))
-                            .clipShape(Capsule())
+                            .clipShape(Rectangle())
                         }
                         .buttonStyle(.plain)
 
@@ -136,7 +136,7 @@ struct DayContextSheet: View {
                             .foregroundStyle(Color(hex: colors.ink))
                             .frame(width: 44, height: 44)
                             .background(Color(hex: colors.accent))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
 
                         VStack(alignment: .leading, spacing: 3) {
                             Text(DayEventStore.language == "tr" ? "Bu Günü Özelleştir" : "Personalize This Day")
@@ -199,7 +199,7 @@ struct DayContextSheet: View {
                     .foregroundStyle(Color(hex: colors.ink))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.accent))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
 
                 VStack(alignment: .leading, spacing: 3) {
                     Text(personalLibrary.isSaved(event)
@@ -229,7 +229,7 @@ struct DayContextSheet: View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text(DayEventStore.language == "tr" ? "Günün Alanı" : "Day Club")
-                    .appFont(size: 27, weight: .black, relativeTo: .title)
+                    .font(.system(size: 34, weight: .semibold, design: .serif))
                     .tracking(-0.8)
                 Text(event.title)
                     .appFont(size: 13, weight: .bold, relativeTo: .subheadline)
@@ -244,10 +244,11 @@ struct DayContextSheet: View {
                     .font(.system(size: 14, weight: .black))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.ink).opacity(0.06))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
             .accessibilityLabel(DayEventStore.language == "tr" ? "Kapat" : "Close")
+            .accessibilityIdentifier("dayContext.close")
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
         .padding(.top, 8)
@@ -299,27 +300,17 @@ struct DayContextSheet: View {
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(hex: colors.backdropRaised).opacity(0.5))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .clipShape(Rectangle())
     }
 }
 
 private struct ContextCardModifier: ViewModifier {
-    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
-    @Environment(\.colorSchemeContrast) private var contrast
-
     let colors: ThemeColors
 
     func body(content: Content) -> some View {
         content
-            .padding(18)
-            .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundStyle(Color(hex: colors.onBackdrop))
-            .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.94))
-            .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .strokeBorder(Color(hex: colors.ink).opacity(contrast == .increased ? 0.34 : 0.11), lineWidth: contrast == .increased ? 2 : 1)
-            )
+            .editorialSurface(colors: colors)
     }
 }
 

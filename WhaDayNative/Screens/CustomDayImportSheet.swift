@@ -35,7 +35,7 @@ struct CustomDayImportSheet: View {
                             .font(.system(size: 14, weight: .black))
                             .frame(width: 44, height: 44)
                             .background(Color(hex: colors.ink).opacity(0.06))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -75,9 +75,9 @@ struct CustomDayImportSheet: View {
                 }
                 .padding(24)
                 .background(Color(hex: colors.ink).opacity(0.05))
-                .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+                .clipShape(Rectangle())
                 .overlay(
-                    RoundedRectangle(cornerRadius: 28, style: .continuous)
+                    Rectangle()
                         .stroke(Color(hex: colors.ink).opacity(0.1), lineWidth: 1)
                 )
 
@@ -106,7 +106,7 @@ struct CustomDayImportSheet: View {
                         .padding(.vertical, 16)
                         .background(Color(hex: colors.accent))
                         .foregroundStyle(Color(hex: colors.ink))
-                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                        .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
 

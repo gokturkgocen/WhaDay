@@ -50,13 +50,6 @@ let turkishShots = [
         kicker: "3 ESTETİK TASARIM",
         headline: "Story’ye de\nmesaja da hazır.",
         accent: NSColor(calibratedRed: 0.97, green: 0.55, blue: 0.83, alpha: 1)
-    ),
-    StoreShot(
-        source: "05-settings-tr.png",
-        output: "05-her-sabah-surpriz.jpg",
-        kicker: "İSTEĞE BAĞLI HATIRLATICI",
-        headline: "Her sabah küçük\nbir sürpriz.",
-        accent: NSColor(calibratedRed: 1.00, green: 0.70, blue: 0.38, alpha: 1)
     )
 ]
 
@@ -88,13 +81,6 @@ let englishShots = [
         kicker: "3 DISTINCT STYLES",
         headline: "Ready for Stories.\nReady for messages.",
         accent: NSColor(calibratedRed: 0.97, green: 0.55, blue: 0.83, alpha: 1)
-    ),
-    StoreShot(
-        source: "05-settings-en.png",
-        output: "05-morning-surprise.jpg",
-        kicker: "OPTIONAL REMINDER",
-        headline: "A tiny surprise\nevery morning.",
-        accent: NSColor(calibratedRed: 1.00, green: 0.70, blue: 0.38, alpha: 1)
     )
 ]
 

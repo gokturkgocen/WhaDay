@@ -41,6 +41,43 @@ final class WhaDayAccessibilityUITests: XCTestCase {
         app.buttons["plus.close"].tap()
     }
 
+    func testTurkishEditorialSurfaceGallery() throws {
+        let app = XCUIApplication()
+        app.launchArguments = [
+            "-AppleLanguages", "(tr)",
+            "-AppleLocale", "tr_TR",
+            "-hasCompletedFirstUseCoach", "YES",
+            "-seedDemoSharedSpace"
+        ]
+
+        app.launch()
+        XCTAssertTrue(app.buttons["home.settings"].waitForExistence(timeout: 5))
+        app.buttons["home.settings"].tap()
+        XCTAssertTrue(app.buttons["settings.back"].waitForExistence(timeout: 5))
+        attachScreenshot(named: "TR-Editorial-Settings")
+
+        app.buttons["settings.back"].tap()
+        let dayContextButton = app.buttons["home.dayContext"]
+        XCTAssertTrue(dayContextButton.waitForExistence(timeout: 5))
+        dayContextButton.tap()
+        XCTAssertTrue(app.buttons["dayContext.close"].waitForExistence(timeout: 5))
+        attachScreenshot(named: "TR-Editorial-Day-Context")
+
+        app.buttons["dayContext.close"].tap()
+        app.buttons["home.calendar"].tap()
+        XCTAssertTrue(app.buttons["calendar.spaceItem"].waitForExistence(timeout: 5))
+        attachScreenshot(named: "TR-Discovery-With-Space")
+
+        app.buttons["calendar.spaceItem"].tap()
+        XCTAssertTrue(app.buttons["sharedSpace.close"].waitForExistence(timeout: 5))
+        attachScreenshot(named: "TR-Editorial-Shared-Space")
+
+        app.buttons["sharedSpace.close"].tap()
+        XCTAssertTrue(app.buttons["calendar.action"].waitForExistence(timeout: 5))
+        app.buttons["calendar.action"].tap()
+        attachScreenshot(named: "TR-Editorial-All-Days")
+    }
+
     private func exerciseCoreJourney(
         language: String,
         locale: String,

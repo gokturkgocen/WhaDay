@@ -198,8 +198,8 @@ struct CalendarScreen: View {
         .padding(.horizontal, 16)
         .frame(minHeight: 50)
         .background(Color.white.opacity(reduceTransparency ? 0.14 : 0.07))
-        .clipShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: 17).strokeBorder(Color.white.opacity(0.11), lineWidth: 1))
+        .clipShape(Rectangle())
+        .overlay(Rectangle().strokeBorder(Color.white.opacity(0.11), lineWidth: 1))
         .padding(.horizontal, 20)
     }
 
@@ -224,8 +224,8 @@ struct CalendarScreen: View {
                             .background(activeFilter == filter
                                         ? Color(hex: baseColors.accent)
                                         : Color.white.opacity(0.07))
-                            .clipShape(Capsule())
-                            .overlay(Capsule().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
+                            .clipShape(Rectangle())
+                            .overlay(Rectangle().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
                     }
                     .buttonStyle(.plain)
                     .accessibilityValue(activeFilter == filter ? AccessibilityCopy.selected : "")
@@ -263,7 +263,11 @@ struct CalendarScreen: View {
                     .appFont(size: 11, weight: .black, relativeTo: .caption)
                     .tracking(1.5)
                 Text(headerTitle)
-                    .appFont(size: dynamicTypeSize.isAccessibilitySize ? 20 : 28, weight: .black, relativeTo: .title)
+                    .font(.system(
+                        size: dynamicTypeSize.isAccessibilitySize ? 24 : 32,
+                        weight: .semibold,
+                        design: .serif
+                    ))
                     .tracking(-0.8)
             }
             .foregroundStyle(Color(hex: baseColors.onBackdrop))
@@ -326,7 +330,7 @@ struct CalendarScreen: View {
                         .padding(.vertical, 5)
                         .background(Color.white.opacity(0.1))
                         .foregroundStyle(Color(hex: baseColors.onBackdrop))
-                        .clipShape(Capsule())
+                        .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
 
@@ -344,7 +348,7 @@ struct CalendarScreen: View {
                         .padding(.vertical, 5)
                         .background(Color.white.opacity(0.1))
                         .foregroundStyle(Color(hex: baseColors.onBackdrop))
-                        .clipShape(Capsule())
+                        .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -360,7 +364,7 @@ struct CalendarScreen: View {
                             .font(.system(size: 32))
                             .frame(width: 52, height: 52)
                             .background(Color(hex: baseColors.accent).opacity(0.3))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
 
                         VStack(alignment: .leading, spacing: 3) {
                             Text(DayEventStore.language == "tr" ? "Ortak Takvim Başlat" : "Create Shared Space")
@@ -382,7 +386,7 @@ struct CalendarScreen: View {
                     }
                     .padding(14)
                     .background(Color.white.opacity(0.06))
-                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             } else {
@@ -424,7 +428,7 @@ struct CalendarScreen: View {
                                         .padding(.horizontal, 8)
                                         .padding(.vertical, 3)
                                         .background(Color(hex: baseColors.accent).opacity(0.18))
-                                        .clipShape(Capsule())
+                                        .clipShape(Rectangle())
                                     } else {
                                         Text(DayEventStore.language == "tr" ? "Henüz gün eklenmedi" : "No days yet")
                                             .appFont(size: 11, weight: .medium, relativeTo: .caption2)
@@ -432,11 +436,12 @@ struct CalendarScreen: View {
                                     }
                                 }
                                 .padding(14)
-                                .frame(width: 220, alignment: .leading)
+                                .frame(width: 250, alignment: .leading)
                                 .background(Color.white.opacity(0.08))
-                                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                                .clipShape(Rectangle())
                             }
                             .buttonStyle(.plain)
+                            .accessibilityIdentifier("calendar.spaceItem")
                         }
                     }
                 }
@@ -486,7 +491,7 @@ struct CalendarScreen: View {
                     .padding(.horizontal, 9)
                     .frame(height: 26)
                     .background(Color.white.opacity(0.08))
-                    .clipShape(Capsule())
+                    .clipShape(Rectangle())
             }
             .foregroundStyle(Color(hex: baseColors.onBackdrop))
 
@@ -510,7 +515,7 @@ struct CalendarScreen: View {
                     Rectangle()
                         .fill(Color(hex: colors.accent))
                         .frame(width: 3, height: 54)
-                        .clipShape(Capsule())
+                        .clipShape(Rectangle())
 
                     VStack(alignment: .leading, spacing: 1) {
                         Text(String(format: "%02d", event.day))
@@ -566,7 +571,7 @@ struct CalendarScreen: View {
                         .font(.system(size: 22))
                         .frame(width: 42, height: 42)
                         .background(Color(hex: colors.secondary).opacity(0.90))
-                        .clipShape(Circle())
+                        .clipShape(Rectangle())
 
                     VStack(alignment: .leading, spacing: 3) {
                         Text(event.title)
@@ -587,7 +592,7 @@ struct CalendarScreen: View {
         }
         .padding(10)
         .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.82))
-        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .clipShape(Rectangle())
     }
 
     private var openCalendarButton: some View {
@@ -608,7 +613,7 @@ struct CalendarScreen: View {
             .padding(.horizontal, 16)
             .frame(maxWidth: .infinity, minHeight: 52)
             .overlay {
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                Rectangle()
                     .strokeBorder(Color(hex: baseColors.onBackdrop).opacity(0.24), lineWidth: 1)
             }
         }
@@ -631,7 +636,7 @@ struct CalendarScreen: View {
                         .foregroundStyle(Color(hex: colors.ink))
                         .frame(width: 46, height: 46)
                         .background(Color(hex: colors.secondary))
-                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                        .clipShape(Rectangle())
 
                     Text(EditorialSymbol.forEvent(event))
                         .font(.system(size: 21))
@@ -650,7 +655,7 @@ struct CalendarScreen: View {
                             .padding(.horizontal, 8)
                             .padding(.vertical, 6)
                             .background(Color(hex: colors.accent))
-                            .clipShape(Capsule())
+                            .clipShape(Rectangle())
                     }
 
                     if differentiateWithoutColor && isSelected {
@@ -668,12 +673,16 @@ struct CalendarScreen: View {
         }
         .padding(12)
         .background(Color(hex: colors.backdropRaised).opacity(reduceTransparency ? 1 : 0.94))
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
+            Rectangle()
                 .strokeBorder(isSelected ? Color(hex: colors.accent) : Color.white.opacity(0.10), lineWidth: isSelected ? 2 : 1)
         )
-        .shadow(color: Color(hex: colors.accent).opacity(isSelected ? 0.18 : 0), radius: 16, x: 0, y: 8)
+        .overlay(alignment: .leading) {
+            Rectangle()
+                .fill(Color(hex: colors.accent))
+                .frame(width: isSelected ? 3 : 1)
+        }
     }
 
     private func saveButton(_ event: DayEvent, colors: ThemeColors) -> some View {
@@ -686,8 +695,8 @@ struct CalendarScreen: View {
                 .foregroundStyle(personalLibrary.isSaved(event) ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop))
                 .frame(width: 40, height: 40)
                 .background(personalLibrary.isSaved(event) ? Color(hex: colors.accent) : Color.white.opacity(0.07))
-                .clipShape(Circle())
-                .overlay(Circle().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
+                .clipShape(Rectangle())
+                .overlay(Rectangle().strokeBorder(Color.white.opacity(0.10), lineWidth: 1))
         }
         .buttonStyle(.plain)
         .minimumAccessibleTarget()
@@ -706,8 +715,8 @@ struct CalendarScreen: View {
                 .foregroundStyle(Color(hex: baseColors.onBackdrop))
                 .frame(width: 44, height: 44)
                 .background(Color.white.opacity(0.07))
-                .clipShape(Circle())
-                .overlay(Circle().strokeBorder(Color.white.opacity(0.14), lineWidth: 1))
+                .clipShape(Rectangle())
+                .overlay(Rectangle().strokeBorder(Color.white.opacity(0.14), lineWidth: 1))
         }
         .buttonStyle(.plain)
         .accessibilityLabel(circleButtonLabel(systemName))

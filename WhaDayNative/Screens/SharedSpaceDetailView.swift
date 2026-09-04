@@ -62,9 +62,10 @@ struct SharedSpaceDetailView: View {
                     .font(.system(size: 15, weight: .bold))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.ink).opacity(0.06))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("sharedSpace.close")
 
             Spacer()
 
@@ -81,7 +82,7 @@ struct SharedSpaceDetailView: View {
                 .padding(.vertical, 8)
                 .background(Color(hex: colors.accent))
                 .foregroundStyle(Color(hex: colors.ink))
-                .clipShape(Capsule())
+                .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
         }
@@ -123,7 +124,7 @@ struct SharedSpaceDetailView: View {
                     .padding(.vertical, 12)
                     .background(Color(hex: colors.ink).opacity(0.06))
                     .foregroundStyle(Color(hex: colors.ink))
-                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             }
@@ -131,9 +132,9 @@ struct SharedSpaceDetailView: View {
         }
         .padding(18)
         .background(Color(hex: colors.backdropRaised).opacity(0.94))
-        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 24, style: .continuous)
+            Rectangle()
                 .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
         )
     }
@@ -159,7 +160,7 @@ struct SharedSpaceDetailView: View {
                 .frame(maxWidth: .infinity)
                 .padding(24)
                 .background(Color(hex: colors.backdropRaised).opacity(0.6))
-                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .clipShape(Rectangle())
             } else {
                 ForEach(events) { ev in
                     Button {
@@ -172,7 +173,7 @@ struct SharedSpaceDetailView: View {
                                 .font(.system(size: 28))
                                 .frame(width: 48, height: 48)
                                 .background(Color(hex: colors.accent).opacity(0.3))
-                                .clipShape(Circle())
+                                .clipShape(Rectangle())
 
                             VStack(alignment: .leading, spacing: 3) {
                                 Text(ev.title)
@@ -194,11 +195,11 @@ struct SharedSpaceDetailView: View {
                                 .padding(.horizontal, 9)
                                 .padding(.vertical, 5)
                                 .background(remaining == 0 ? Color(hex: colors.accent) : Color(hex: colors.ink).opacity(0.08))
-                                .clipShape(Capsule())
+                                .clipShape(Rectangle())
                         }
                         .padding(14)
                         .background(Color(hex: colors.backdropRaised).opacity(0.94))
-                        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -208,9 +209,9 @@ struct SharedSpaceDetailView: View {
 
     private var membersText: String {
         if space.members.count <= 1 {
-            return DayEventStore.language == "tr" ? "1 üye (\(space.creatorName))" : "1 member"
+            return DayEventStore.language == "tr" ? "1 üye" : "1 member"
         }
-        return "\(space.members.count) \(DayEventStore.language == "tr" ? "üye" : "members"): \(space.members.joined(separator: ", "))"
+        return DayEventStore.language == "tr" ? "\(space.members.count) üye · Canlı senkronize" : "\(space.members.count) members · Live sync"
     }
 
     private func countdownText(_ days: Int) -> String {

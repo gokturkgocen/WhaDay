@@ -67,7 +67,7 @@ struct NewCapsuleNoteSheet: View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text(DayEventStore.language == "tr" ? "Zaman Kapsülüne Not Yaz" : "Add Capsule Note")
-                    .appFont(size: 24, weight: .black, relativeTo: .title2)
+                    .font(.system(size: 30, weight: .semibold, design: .serif))
                     .tracking(-0.6)
                 Text("\(dayTitle) · \(formattedDate)")
                     .appFont(size: 14, weight: .bold, relativeTo: .subheadline)
@@ -81,7 +81,7 @@ struct NewCapsuleNoteSheet: View {
                     .font(.system(size: 14, weight: .black))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.ink).opacity(0.06))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
         }
@@ -108,9 +108,9 @@ struct NewCapsuleNoteSheet: View {
         }
         .padding(16)
         .background(Color(hex: colors.accent).opacity(0.25))
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
+            Rectangle()
                 .stroke(Color(hex: colors.accent).opacity(0.5), lineWidth: 1)
         )
     }
@@ -183,7 +183,7 @@ struct NewCapsuleNoteSheet: View {
             .padding(.vertical, 16)
             .background(isValid ? Color(hex: colors.accent) : Color(hex: colors.ink).opacity(0.1))
             .foregroundStyle(isValid ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop).opacity(0.4))
-            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .clipShape(Rectangle())
         }
         .disabled(!isValid || isSubmitting)
         .buttonStyle(.plain)
@@ -210,14 +210,7 @@ struct NewCapsuleNoteSheet: View {
 private extension View {
     func cardStyle(colors: ThemeColors) -> some View {
         self
-            .padding(18)
-            .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundStyle(Color(hex: colors.onBackdrop))
-            .background(Color(hex: colors.backdropRaised).opacity(0.94))
-            .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
-            )
+            .editorialSurface(colors: colors)
     }
 }

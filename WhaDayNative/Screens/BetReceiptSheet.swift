@@ -34,7 +34,7 @@ struct BetReceiptSheet: View {
                             .font(.system(size: 14, weight: .black))
                             .frame(width: 44, height: 44)
                             .background(Color(hex: colors.ink).opacity(0.06))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -59,7 +59,7 @@ struct BetReceiptSheet: View {
                     .padding(.vertical, 16)
                     .background(Color(hex: colors.accent))
                     .foregroundStyle(Color(hex: colors.ink))
-                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             }
@@ -150,13 +150,13 @@ struct BetReceiptSheet: View {
             }
             .padding(10)
             .background(Color(hex: colors.accent).opacity(0.15))
-            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+            .clipShape(Rectangle())
         }
         .padding(22)
         .background(Color(hex: colors.backdropRaised).opacity(0.98))
-        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 24, style: .continuous)
+            Rectangle()
                 .strokeBorder(Color(hex: colors.ink).opacity(0.16), lineWidth: 1.5)
         )
     }

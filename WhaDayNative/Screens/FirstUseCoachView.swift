@@ -57,7 +57,7 @@ struct FirstUseCoachView: View {
                     .foregroundStyle(Color(hex: colors.paper))
                     .frame(width: 40, height: 40)
                     .background(Color(hex: colors.ink))
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
             .minimumAccessibleTarget()
@@ -68,9 +68,9 @@ struct FirstUseCoachView: View {
         .foregroundStyle(Color(hex: colors.onBackdrop))
         .padding(14)
         .background(Color(hex: colors.backdropRaised))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
+            Rectangle()
                 .strokeBorder(Color(hex: colors.ink).opacity(0.10), lineWidth: 1)
         )
         .overlay(alignment: .topTrailing) {

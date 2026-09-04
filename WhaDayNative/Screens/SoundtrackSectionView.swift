@@ -39,7 +39,7 @@ struct SoundtrackSectionView: View {
                         .padding(.vertical, 5)
                         .background(Color(hex: colors.ink).opacity(0.06))
                         .foregroundStyle(Color(hex: colors.onBackdrop))
-                        .clipShape(Capsule())
+                        .clipShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             }
@@ -64,15 +64,15 @@ struct SoundtrackSectionView: View {
         HStack(spacing: 14) {
             // Spinning Vinyl Disc
             ZStack {
-                Circle()
+                Rectangle()
                     .fill(Color(hex: colors.ink))
                     .frame(width: 44, height: 44)
 
-                Circle()
+                Rectangle()
                     .stroke(Color.white.opacity(0.2), lineWidth: 1.5)
                     .frame(width: 32, height: 32)
 
-                Circle()
+                Rectangle()
                     .fill(Color(hex: colors.accent))
                     .frame(width: 14, height: 14)
             }
@@ -106,13 +106,13 @@ struct SoundtrackSectionView: View {
                     .padding(.vertical, 8)
                     .background(Color(hex: colors.accent))
                     .foregroundStyle(Color(hex: colors.ink))
-                    .clipShape(Capsule())
+                    .clipShape(Rectangle())
                 }
             }
         }
         .padding(14)
         .background(Color(hex: colors.backdropRaised).opacity(0.94))
-        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .clipShape(Rectangle())
     }
 
     private var emptySoundtrackButton: some View {
@@ -130,7 +130,7 @@ struct SoundtrackSectionView: View {
             }
             .padding(12)
             .background(Color(hex: colors.backdropRaised).opacity(0.7))
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .clipShape(Rectangle())
         }
         .buttonStyle(.plain)
     }
@@ -168,7 +168,7 @@ private struct EditSoundtrackSheet: View {
                             .font(.system(size: 13, weight: .bold))
                             .frame(width: 36, height: 36)
                             .background(Color(hex: colors.ink).opacity(0.06))
-                            .clipShape(Circle())
+                            .clipShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -178,17 +178,17 @@ private struct EditSoundtrackSheet: View {
                     TextField(DayEventStore.language == "tr" ? "Şarkı Adı (Örn: One More Time)" : "Song Title", text: $trackTitle)
                         .padding(12)
                         .background(Color(hex: colors.backdropRaised))
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .clipShape(Rectangle())
 
                     TextField(DayEventStore.language == "tr" ? "Sanatçı (Örn: Daft Punk)" : "Artist Name", text: $artistName)
                         .padding(12)
                         .background(Color(hex: colors.backdropRaised))
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .clipShape(Rectangle())
 
                     TextField(DayEventStore.language == "tr" ? "Spotify / Apple Music Linki (İsteğe bağlı)" : "Music Link (Optional)", text: $musicURL)
                         .padding(12)
                         .background(Color(hex: colors.backdropRaised))
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .clipShape(Rectangle())
                 }
 
                 Spacer()
@@ -209,7 +209,7 @@ private struct EditSoundtrackSheet: View {
                         .padding(.vertical, 14)
                         .background(isValid ? Color(hex: colors.accent) : Color(hex: colors.ink).opacity(0.1))
                         .foregroundStyle(isValid ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop).opacity(0.4))
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                        .clipShape(Rectangle())
                 }
                 .disabled(!isValid)
                 .buttonStyle(.plain)

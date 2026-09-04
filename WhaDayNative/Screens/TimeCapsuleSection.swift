@@ -63,7 +63,7 @@ struct TimeCapsuleSection: View {
                         .padding(.horizontal, 8)
                         .padding(.vertical, 3)
                         .background(Color(hex: colors.accent))
-                        .clipShape(Capsule())
+                        .clipShape(Rectangle())
                 }
             }
 
@@ -88,16 +88,16 @@ struct TimeCapsuleSection: View {
                 .padding(.vertical, 12)
                 .background(Color(hex: colors.ink).opacity(0.06))
                 .foregroundStyle(Color(hex: colors.onBackdrop))
-                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(hex: colors.backdropRaised).opacity(0.94))
-        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 24, style: .continuous)
+            Rectangle()
                 .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
         )
         .task {
@@ -184,7 +184,7 @@ struct TimeCapsuleSection: View {
                     }
                     .padding(12)
                     .background(Color(hex: colors.ink).opacity(0.04))
-                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    .clipShape(Rectangle())
                 }
             }
         }

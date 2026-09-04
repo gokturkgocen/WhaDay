@@ -50,7 +50,7 @@ struct NewBetSheet: View {
                     Text("🤝")
                         .font(.system(size: 24))
                     Text(DayEventStore.language == "tr" ? "İddia Mühürle" : "Seal a Bet")
-                        .appFont(size: 24, weight: .black, relativeTo: .title2)
+                        .font(.system(size: 30, weight: .semibold, design: .serif))
                         .tracking(-0.6)
                 }
 
@@ -68,7 +68,7 @@ struct NewBetSheet: View {
                     .font(.system(size: 14, weight: .black))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.ink).opacity(0.06))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
         }
@@ -158,7 +158,7 @@ struct NewBetSheet: View {
         }
         .padding(14)
         .background(Color(hex: colors.accent).opacity(0.2))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .clipShape(Rectangle())
     }
 
     private var submitButton: some View {
@@ -179,7 +179,7 @@ struct NewBetSheet: View {
             .padding(.vertical, 16)
             .background(isValid ? Color(hex: colors.accent) : Color(hex: colors.ink).opacity(0.1))
             .foregroundStyle(isValid ? Color(hex: colors.ink) : Color(hex: colors.onBackdrop).opacity(0.4))
-            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .clipShape(Rectangle())
         }
         .disabled(!isValid || isSubmitting)
         .buttonStyle(.plain)
@@ -208,14 +208,7 @@ struct NewBetSheet: View {
 private extension View {
     func cardStyle(colors: ThemeColors) -> some View {
         self
-            .padding(16)
-            .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundStyle(Color(hex: colors.onBackdrop))
-            .background(Color(hex: colors.backdropRaised).opacity(0.94))
-            .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 22, style: .continuous)
-                    .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
-            )
+            .editorialSurface(colors: colors, padding: 16)
     }
 }

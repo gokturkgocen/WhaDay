@@ -42,7 +42,7 @@ struct TimeMachineSheet: View {
                     Text("🕰️")
                         .font(.system(size: 24))
                     Text(DayEventStore.language == "tr" ? "Zaman Makinesi" : "Time Machine")
-                        .appFont(size: 24, weight: .black, relativeTo: .title2)
+                        .font(.system(size: 30, weight: .semibold, design: .serif))
                         .tracking(-0.6)
                 }
 
@@ -60,7 +60,7 @@ struct TimeMachineSheet: View {
                     .font(.system(size: 14, weight: .black))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.ink).opacity(0.06))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
             }
             .buttonStyle(.plain)
         }
@@ -109,9 +109,9 @@ struct TimeMachineSheet: View {
         }
         .padding(16)
         .background(Color(hex: colors.backdropRaised).opacity(0.96))
-        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .clipShape(Rectangle())
         .overlay(
-            RoundedRectangle(cornerRadius: 22, style: .continuous)
+            Rectangle()
                 .strokeBorder(Color(hex: colors.accent), lineWidth: 1.5)
         )
     }
@@ -133,7 +133,7 @@ struct TimeMachineSheet: View {
         }
         .padding(10)
         .background(Color(hex: colors.ink).opacity(0.04))
-        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .clipShape(Rectangle())
     }
 
     private var memoriesArchiveSection: some View {
@@ -162,7 +162,7 @@ struct TimeMachineSheet: View {
                 .frame(maxWidth: .infinity)
                 .padding(28)
                 .background(Color(hex: colors.backdropRaised).opacity(0.7))
-                .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+                .clipShape(Rectangle())
             } else {
                 ForEach(timeMachine.memories) { mem in
                     memoryCard(mem)
@@ -178,7 +178,7 @@ struct TimeMachineSheet: View {
                     .font(.system(size: 26))
                     .frame(width: 44, height: 44)
                     .background(Color(hex: colors.accent).opacity(0.2))
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(mem.title)
@@ -205,7 +205,7 @@ struct TimeMachineSheet: View {
                     .padding(.horizontal, 8)
                     .padding(.vertical, 4)
                     .background(Color(hex: colors.ink).opacity(0.06))
-                    .clipShape(Capsule())
+                    .clipShape(Rectangle())
             }
 
             if !mem.notes.isEmpty {
@@ -216,12 +216,12 @@ struct TimeMachineSheet: View {
                 }
                 .padding(10)
                 .background(Color(hex: colors.ink).opacity(0.04))
-                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                .clipShape(Rectangle())
             }
         }
         .padding(14)
         .background(Color(hex: colors.backdropRaised).opacity(0.94))
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .clipShape(Rectangle())
     }
 
     private func notePreviewRow(_ note: CapsuleNote) -> some View {

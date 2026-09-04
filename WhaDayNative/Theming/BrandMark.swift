@@ -5,16 +5,18 @@ struct BrandMark: View {
 
     var body: some View {
         ZStack {
-            ForEach(0..<6, id: \.self) { index in
-                Capsule()
-                    .fill(color)
-                    .frame(width: 7, height: 26)
-                    .offset(y: -10)
-                    .rotationEffect(.degrees(Double(index) * 60))
-            }
-            Circle()
+            Rectangle()
                 .fill(color)
-                .frame(width: 7, height: 7)
+                .frame(width: 30, height: 2)
+                .offset(y: -12)
+            Rectangle()
+                .fill(color)
+                .frame(width: 2, height: 30)
+                .offset(x: -12)
+            Rectangle()
+                .fill(color)
+                .frame(width: 10, height: 10)
+                .offset(x: 7, y: 7)
         }
         .frame(width: 42, height: 42)
         .accessibilityHidden(true)

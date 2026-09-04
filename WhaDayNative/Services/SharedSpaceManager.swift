@@ -33,7 +33,28 @@ final class SharedSpaceManager: ObservableObject {
         self.standardDefaults = standardDefaults
         self.isCloudKitEnabled = enableCloudSync
 
-        let (loadedSpaces, loadedEvents) = Self.loadCache(groupDefaults: groupDefaults, standardDefaults: standardDefaults)
+        var (loadedSpaces, loadedEvents) = Self.loadCache(groupDefaults: groupDefaults, standardDefaults: standardDefaults)
+        if ProcessInfo.processInfo.arguments.contains("-seedDemoSharedSpace") {
+            let demoSpace = SharedSpace(
+                id: "demo-couple-space",
+                title: "Göktürk & Ekin ❤️",
+                emoji: "❤️",
+                creatorName: "Göktürk",
+                members: ["Göktürk", "Ekin"]
+            )
+            let demoEvent = SharedSpaceEvent(
+                id: "demo-event-1",
+                spaceID: "demo-couple-space",
+                month: 9,
+                day: 18,
+                title: "Yıldönümümüz",
+                description: "Roma tatili",
+                emoji: "✈️",
+                addedBy: "Ekin"
+            )
+            loadedSpaces = [demoSpace]
+            loadedEvents = ["demo-couple-space": [demoEvent]]
+        }
         self.spaces = loadedSpaces
         self.eventsBySpace = loadedEvents
     }

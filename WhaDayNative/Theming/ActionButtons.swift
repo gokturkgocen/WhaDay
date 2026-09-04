@@ -27,7 +27,9 @@ struct ActionButtons: View {
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, minHeight: 56)
             .background(Color(hex: colors.ink))
-            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .overlay(alignment: .top) {
+                Rectangle().fill(Color(hex: colors.accent)).frame(height: 2)
+            }
         }
         .accessibilityLabel(DayEventStore.language == "tr" ? "Paylaş. \(prompt)" : "Share. \(prompt)")
         .accessibilityIdentifier("home.share")
@@ -39,7 +41,7 @@ struct ActionButtons: View {
             ShareStudioView(event: event, colors: colors)
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(24)
+                .presentationCornerRadius(0)
         }
     }
 
