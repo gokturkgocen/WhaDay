@@ -72,15 +72,20 @@ struct PlusPaywallView: View {
                 dismiss()
             } label: {
                 Image(systemName: "xmark")
-                    .font(.system(size: 14, weight: .medium))
+                    .font(.system(size: 13, weight: .bold))
                     .foregroundStyle(Color(hex: colors.ink))
-                    .frame(width: 44, height: 44)
+                    .frame(width: 36, height: 36)
+                    .background(Color(hex: colors.ink).opacity(0.06))
+                    .clipShape(Rectangle())
+                    .overlay(Rectangle().strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1))
             }
             .buttonStyle(.plain)
+            .minimumAccessibleTarget()
             .accessibilityLabel(DayEventStore.language == "tr" ? "Kapat" : "Close")
             .accessibilityIdentifier("plus.close")
         }
-        .padding(.top, 8)
+        .padding(.top, 24)
+        .padding(.bottom, 8)
     }
 
     private var features: some View {

@@ -105,17 +105,21 @@ struct CalendarScreen: View {
                 selectedSpace = newSpace
             }
             .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
         .sheet(item: $selectedSpace) { space in
             SharedSpaceDetailView(space: space, colors: baseColors) { event in
                 onSelectDay(event)
             }
+            .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
         .sheet(isPresented: $showingTimeMachine) {
             TimeMachineSheet(colors: baseColors) { event in
                 onSelectDay(event)
             }
             .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
     }
 

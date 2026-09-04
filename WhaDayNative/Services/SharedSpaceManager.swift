@@ -39,10 +39,10 @@ final class SharedSpaceManager: ObservableObject {
                 id: "demo-couple-space",
                 title: "Göktürk & Ekin ❤️",
                 emoji: "❤️",
-                creatorName: "Göktürk",
-                members: ["Göktürk", "Ekin"]
+                creatorName: "Ekin",
+                members: ["Ekin", "Partner"]
             )
-            let demoEvent = SharedSpaceEvent(
+            let demoEvent1 = SharedSpaceEvent(
                 id: "demo-event-1",
                 spaceID: "demo-couple-space",
                 month: 9,
@@ -52,8 +52,28 @@ final class SharedSpaceManager: ObservableObject {
                 emoji: "✈️",
                 addedBy: "Ekin"
             )
+            let demoEvent2 = SharedSpaceEvent(
+                id: "demo-event-2",
+                spaceID: "demo-couple-space",
+                month: 10,
+                day: 24,
+                title: "İlk Kahvemiz",
+                description: "Kadıköy sahil",
+                emoji: "☕️",
+                addedBy: "Ekin"
+            )
+            let demoEvent3 = SharedSpaceEvent(
+                id: "demo-event-3",
+                spaceID: "demo-couple-space",
+                month: 12,
+                day: 31,
+                title: "Yılbaşı Kaçamağı",
+                description: "Kapadokya",
+                emoji: "✨",
+                addedBy: "Ekin"
+            )
             loadedSpaces = [demoSpace]
-            loadedEvents = ["demo-couple-space": [demoEvent]]
+            loadedEvents = ["demo-couple-space": [demoEvent1, demoEvent2, demoEvent3]]
         }
         self.spaces = loadedSpaces
         self.eventsBySpace = loadedEvents

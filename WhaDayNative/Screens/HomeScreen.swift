@@ -87,9 +87,8 @@ struct HomeScreen: View {
         }
         .sheet(item: $contextEvent) { event in
             DayContextSheet(event: event, colors: ThemeColors.forEvent(event))
-                .presentationDetents([.medium, .large])
+                .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
-                .presentationCornerRadius(0)
         }
     }
 

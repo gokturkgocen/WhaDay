@@ -58,13 +58,17 @@ struct SharedSpaceDetailView: View {
     private var header: some View {
         HStack {
             Button { dismiss() } label: {
-                Image(systemName: "arrow.left")
-                    .font(.system(size: 15, weight: .bold))
-                    .frame(width: 44, height: 44)
+                Image(systemName: "xmark")
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundStyle(Color(hex: colors.ink))
+                    .frame(width: 36, height: 36)
                     .background(Color(hex: colors.ink).opacity(0.06))
                     .clipShape(Rectangle())
+                    .overlay(Rectangle().strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1))
             }
             .buttonStyle(.plain)
+            .minimumAccessibleTarget()
+            .accessibilityLabel(DayEventStore.language == "tr" ? "Kapat" : "Close")
             .accessibilityIdentifier("sharedSpace.close")
 
             Spacer()
@@ -74,20 +78,23 @@ struct SharedSpaceDetailView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "person.badge.plus")
-                        .font(.system(size: 13, weight: .bold))
+                        .font(.system(size: 12, weight: .bold))
                     Text(DayEventStore.language == "tr" ? "Davet Et" : "Invite")
                         .appFont(size: 12, weight: .bold, relativeTo: .caption)
                 }
                 .padding(.horizontal, 14)
-                .padding(.vertical, 8)
+                .frame(height: 36)
                 .background(Color(hex: colors.accent))
                 .foregroundStyle(Color(hex: colors.ink))
                 .clipShape(Rectangle())
+                .overlay(Rectangle().strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1))
             }
             .buttonStyle(.plain)
+            .minimumAccessibleTarget()
         }
         .foregroundStyle(Color(hex: colors.onBackdrop))
-        .padding(.top, 8)
+        .padding(.top, 24)
+        .padding(.bottom, 8)
     }
 
     private var spaceHeroCard: some View {
