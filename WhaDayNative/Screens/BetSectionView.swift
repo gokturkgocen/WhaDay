@@ -85,6 +85,7 @@ struct BetSectionView: View {
                 }
             }
         }
+        .accessibilityIdentifier("dayContext.betSection")
         .sheet(isPresented: $showingNewBetSheet) {
             NewBetSheet(
                 dayID: dayID,
@@ -93,10 +94,12 @@ struct BetSectionView: View {
                 colors: colors
             ) { _ in }
             .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
         .sheet(item: $activeReceiptBet) { bet in
             BetReceiptSheet(bet: bet, colors: colors)
                 .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
         }
     }
 

@@ -100,6 +100,7 @@ struct TimeCapsuleSection: View {
             Rectangle()
                 .strokeBorder(Color(hex: colors.ink).opacity(0.12), lineWidth: 1)
         )
+        .accessibilityIdentifier("dayContext.capsuleSection")
         .task {
             await cloudManager.fetchNotes(for: capsuleID)
         }
@@ -112,6 +113,7 @@ struct TimeCapsuleSection: View {
                 colors: colors
             )
             .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
     }
 

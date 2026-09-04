@@ -24,6 +24,12 @@ struct RootView: View {
     @State private var incomingCustomDay: CustomDayRecord?
     @State private var incomingSpaceInvite: SharedSpace?
 
+    init() {
+        if let dayID = StoreScreenshotFixtures.dayID {
+            _selectedDay = State(initialValue: DayEventStore.event(id: dayID))
+        }
+    }
+
     var body: some View {
         Group {
             switch screen {

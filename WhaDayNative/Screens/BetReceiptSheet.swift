@@ -69,6 +69,7 @@ struct BetReceiptSheet: View {
         .sheet(isPresented: $showingShareSheet) {
             ReceiptShareSheet(items: [shareText])
                 .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
         }
     }
 

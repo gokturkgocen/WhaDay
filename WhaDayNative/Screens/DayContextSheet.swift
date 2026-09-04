@@ -52,6 +52,7 @@ struct DayContextSheet: View {
                     "\(custom.emoji) \(custom.title)\n\(custom.description)\n\nBu günü WhaDay takvimine ekle: \(url.absoluteString)"
                 ])
                 .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
             }
         }
     }

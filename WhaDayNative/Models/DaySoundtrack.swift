@@ -57,7 +57,11 @@ final class DaySoundtrackStore: ObservableObject {
 
         let decoder = JSONDecoder()
         let data = groupDefaults?.data(forKey: storageKey) ?? standardDefaults.data(forKey: storageKey)
-        self.soundtracksByDay = data.flatMap { try? decoder.decode([String: DaySoundtrack].self, from: $0) } ?? [:]
+        var loaded = data.flatMap { try? decoder.decode([String: DaySoundtrack].self, from: $0) } ?? [:]
+        if let soundtrack = StoreScreenshotFixtures.soundtrack {
+            loaded[soundtrack.dayID] = soundtrack
+        }
+        self.soundtracksByDay = loaded
     }
 
     func soundtrack(for dayID: String) -> DaySoundtrack? {

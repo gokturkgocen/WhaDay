@@ -17,7 +17,11 @@ final class DayBetStore: ObservableObject {
     ) {
         self.groupDefaults = UserDefaults(suiteName: appGroupID)
         self.standardDefaults = standardDefaults
-        self.betsByDay = Self.load(groupDefaults: groupDefaults, standardDefaults: standardDefaults, storageKey: storageKey)
+        var loaded = Self.load(groupDefaults: groupDefaults, standardDefaults: standardDefaults, storageKey: storageKey)
+        if let bet = StoreScreenshotFixtures.bet {
+            loaded[bet.dayID] = [bet]
+        }
+        self.betsByDay = loaded
     }
 
     func bets(for dayID: String) -> [DayBet] {

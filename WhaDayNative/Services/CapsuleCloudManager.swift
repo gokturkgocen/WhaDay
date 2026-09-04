@@ -26,7 +26,11 @@ final class CapsuleCloudManager: ObservableObject {
         self.database = container.publicCloudDatabase
         self.cacheDefaults = cacheDefaults
         self.isCloudKitEnabled = enableCloudSync
-        self.notesByCapsule = loadCache()
+        var loaded = loadCache()
+        if let dayID = StoreScreenshotFixtures.dayID {
+            loaded[dayID] = StoreScreenshotFixtures.capsuleNotes
+        }
+        self.notesByCapsule = loaded
     }
 
     // MARK: - Query

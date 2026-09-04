@@ -80,6 +80,7 @@ struct CustomDayEditorSheet: View {
                     "\(selectedEmoji) \(title) (\(formattedDate))\n\(descriptionText)\n\nBu günü WhaDay takvimine ekle: \(url.absoluteString)"
                 ])
                 .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
             }
         }
     }

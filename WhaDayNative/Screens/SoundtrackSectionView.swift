@@ -50,6 +50,7 @@ struct SoundtrackSectionView: View {
                 emptySoundtrackButton
             }
         }
+        .accessibilityIdentifier("dayContext.soundtrackSection")
         .sheet(isPresented: $showingEditSheet) {
             EditSoundtrackSheet(
                 dayID: dayID,
@@ -57,6 +58,7 @@ struct SoundtrackSectionView: View {
                 colors: colors
             )
             .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
         }
     }
 

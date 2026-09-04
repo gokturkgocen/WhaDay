@@ -78,6 +78,36 @@ final class WhaDayAccessibilityUITests: XCTestCase {
         attachScreenshot(named: "TR-Editorial-All-Days")
     }
 
+    func testTurkishStoreDayClubGallery() throws {
+        let app = XCUIApplication()
+        app.launchArguments = [
+            "-AppleLanguages", "(tr)",
+            "-AppleLocale", "tr_TR",
+            "-hasCompletedFirstUseCoach", "YES",
+            "-seedStoreDayClub",
+            "-storeScreenshotDay", "09-18"
+        ]
+
+        app.launch()
+        XCTAssertTrue(app.buttons["home.dayContext"].waitForExistence(timeout: 5))
+        app.buttons["home.dayContext"].tap()
+        XCTAssertTrue(app.buttons["dayContext.close"].waitForExistence(timeout: 5))
+
+        attachScreenshot(named: "TR-Store-Soundtrack")
+
+        dragContent(in: app, fromY: 0.72, toY: 0.48)
+        attachScreenshot(named: "TR-Store-Bet")
+
+        dragContent(in: app, fromY: 0.72, toY: 0.42)
+        attachScreenshot(named: "TR-Store-Capsule")
+    }
+
+    private func dragContent(in app: XCUIApplication, fromY: CGFloat, toY: CGFloat) {
+        let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: fromY))
+        let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: toY))
+        start.press(forDuration: 0.05, thenDragTo: end)
+    }
+
     private func exerciseCoreJourney(
         language: String,
         locale: String,

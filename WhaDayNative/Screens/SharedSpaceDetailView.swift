@@ -44,6 +44,7 @@ struct SharedSpaceDetailView: View {
                 // Refreshed automatically
             }
             .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
         .sheet(isPresented: $showingShareInvite) {
             if let url = inviteURL {
@@ -51,6 +52,7 @@ struct SharedSpaceDetailView: View {
                     "\(space.emoji) '\(space.title)' ortak takvimimize katıl:\n\(url.absoluteString)"
                 ])
                 .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
             }
         }
     }

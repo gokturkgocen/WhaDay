@@ -42,7 +42,7 @@ let shots = [
     ),
     HybridShot(
         concept: "03-bet-certificate.png",
-        appScreen: "day-club.png",
+        appScreen: "03-bet-tr.png",
         output: "03-o-gunun-iddiasi.jpg",
         headline: "O GÜNÜN\nİDDİASI",
         subtitle: "Arkadaşınla iddiayı mühürle; zafer makbuzu hazır.",
@@ -50,7 +50,7 @@ let shots = [
     ),
     HybridShot(
         concept: "04-time-capsule.png",
-        appScreen: "day-club.png",
+        appScreen: "04-capsule-tr.png",
         output: "04-muhurlu-kapsul.jpg",
         headline: "MÜHÜRLÜ ZAMAN\nKAPSÜLÜ",
         subtitle: "Bugünün notu, tam bir yıl sonra geri gelsin.",
@@ -58,7 +58,7 @@ let shots = [
     ),
     HybridShot(
         concept: "05-soundtrack.png",
-        appScreen: "day-club.png",
+        appScreen: "05-soundtrack-tr.png",
         output: "05-gunun-sarkisi.jpg",
         headline: "GÜNÜN\nŞARKISI",
         subtitle: "Güne bir soundtrack iliştir; birlikte hatırlayın.",
