@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "3R9ULKMUXY.com.gokturkgocen.whadayapp"
+        ],
+        "components": [
+          {
+            "/": "/WhaDay/c/*",
+            "comment": "Custom day share links"
+          },
+          {
+            "/": "/WhaDay/s/*",
+            "comment": "Shared space invite links"
+          }
+        ]
+      }
+    ]
+  }
+}

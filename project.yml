@@ -50,6 +50,8 @@ targets:
           - iCloud.com.gokturkgocen.whadayapp
         com.apple.developer.icloud-services:
           - CloudKit
+        com.apple.developer.associated-domains:
+          - applinks:gokturkgocen.github.io
     settings:
       base:
         MARKETING_VERSION: "1.1.0"
