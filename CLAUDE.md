@@ -122,16 +122,45 @@ xcrun devicectl device install app --device 00008140-000104193478801C /Volumes/X
 - Physical device is the real verification surface; a simulator pass is a quick
   check, not the gate.
 
+## App Store Connect access
+
+The `asc` CLI (github.com/rorkai/App-Store-Connect-CLI, installed via
+`brew install asc`) is authenticated against this app's App Store Connect
+account: a Team-type Admin API key is stored in the system Keychain under the
+name `WhaDay` (`asc auth status` to confirm, `asc auth login` to re-register if
+it's missing). This is machine-wide and account-wide, not scoped to any one
+Claude Code session — any session on this Mac can run `asc` against this app's
+real App Store Connect data. Prefer it over asking the user to do ASC work by
+hand; `docs/APP_STORE_ANSWERS.md` has the answer sheet already written out for
+what still needs entering.
+
+## Do not submit — release is paused for a design overhaul
+
+As of 2026-09-09: **do not submit anything to App Store review** — not a new
+app version, not the WhaDay+ in-app purchase — until told otherwise. The app's
+design is about to change completely, and the decision is to ship the redesign
+and every pending item together in one build/submission rather than trickling
+out small updates.
+
+Current state, left exactly as-is until that decision changes:
+
+- **App**: v1.1.0 is live (`READY_FOR_SALE`). Build 12 is uploaded and `VALID`
+  but deliberately not attached to any App Store version — it sat behind a
+  universal-links feature judged not worth a same-week second review, and now
+  behind the redesign as well.
+- **WhaDay+** (`com.gokturkgocen.whaday.plus.lifetime`): exists in ASC, state
+  `READY_TO_SUBMIT`. Localizations (TR/EN) and the review screenshot are done.
+  Price is USD 3.99 (Türkiye's decision, not the ₺74.99 the earlier session in
+  this repo had proposed — don't overwrite it).
+- Physical-device gates (Instagram/WhatsApp/Messages handoff, notification and
+  widget tap routing) and StoreKit sandbox validation (purchase, restore, Ask
+  to Buy, refund) are still unrun. Fold them into the same eventual submission
+  pass rather than doing them piecemeal now.
+- `docs/RELEASE_READINESS.md` and `docs/APP_STORE_ANSWERS.md` describe the
+  pre-redesign state and will need a pass once the new design lands.
+
 ## Open items
 
-- Physical-device gates remain open: Instagram/WhatsApp/Messages handoff,
-  notification grant/denial/tap and widget tap routing, and device launch and
-  scroll observations. See `docs/RELEASE_READINESS.md`.
-- StoreKit sandbox validation (purchase, restore, Ask to Buy, refund/revocation)
-  not yet run. The WhaDay+ product does not exist in App Store Connect yet.
-- App Store Connect answer sheet (App Privacy, export compliance, age rating,
-  review notes) is written out in `docs/APP_STORE_ANSWERS.md` and still needs to
-  be entered by hand.
 - `LICENSE` is self-contradictory — MIT text at the top, "kopyalanması yasak" /
   "all rights reserved" at the bottom — and the repo is public on GitHub. Needs
   a decision, not a patch.
